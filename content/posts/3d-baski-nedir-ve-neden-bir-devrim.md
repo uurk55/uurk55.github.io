@@ -3,7 +3,7 @@ title: "3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönü�
 date: 2023-10-28T14:00:00+03:00
 draft: false
 cover:
-    image: "/images/kapak-gorseli.jpg" # Öne Çıkan Görsel
+    image: "/images/kapak-gorseli.png" # Öne Çıkan Görsel
     alt: "3D yazıcı parlayan bir ampul basıyor"
     caption: "Fikirleriniz artık sadece bir 'yazdır' komutu kadar uzağınızda."
     relative: false
@@ -21,7 +21,7 @@ Karmaşık mühendislik jargonunu bir kenara bırakalım. 3D baskının temel ma
 
 Bir doğum günü pastası yaparken ne yaparsınız? Önce ilk kat keki koyar, üzerine krema sürer, sonra ikinci katı... İşte 3D yazıcı da, dijital bir tasarım dosyasını – ki biz buna genellikle **STL dosyası** diyoruz – alıp, onu yüzlerce, hatta binlerce mikroskobik incelikte yatay katmana böler. Sonra bu katmanları, erimiş plastik (**Filament**) veya UV ışığıyla sertleşen özel bir sıvı (**Reçine**) gibi malzemelerle bir tepsinin üzerinde üst üste sererek inşa eder. Sabırla, katman katman, o dijital hayal, elinizle tutabileceğiniz üç boyutlu bir nesneye dönüşür.
 
-![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim.jpg "3D Baskının Kalbi: Katmanlı Üretim")
+![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim.png "3D Baskının Kalbi: Katmanlı Üretim")
 
 ### Geleneksel Üretimden Farkı Ne?
 
@@ -47,7 +47,7 @@ Artık ihtiyacınız olan tek şey bir bilgisayar ve bir 3D yazıcı. Kendi evin
 
 "Bir ürünü basıp satmak nasıl pasif olabilir ki?" diye sorduğunuzu duyar gibiyim. 3D baskının gücü, onu geleneksel bir "aktif gelir" modelinden ayıran **otomasyon** ve **ölçeklenebilirlik** potansiyelinde yatar. Buna "yarı pasif gelir" demek en doğrusu olur.
 
-![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme.jpg "Katma Değeri Yüksek Kişiye Özel Ürünler")
+![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme.png "Katma Değeri Yüksek Kişiye Özel Ürünler")
 
 ### "Kişiye Özel"in Büyüsü: Seri Üretimin Yapamadığını Yapın
 

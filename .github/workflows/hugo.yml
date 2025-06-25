@@ -57,7 +57,7 @@ jobs:
         with:
           path: ./public
 
-    # Dağıtım işi
+  # Dağıtım işi
   deploy:
     environment:
       name: github-pages
@@ -66,18 +66,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id  GitHub depona git. **"Actions"** sekmesine tıkla.
-2.  Sol taraftaki menüde **"Caches"** (Önbellekler) seçeneğini göreceksin. Ona tıkla.
-3.  Eğer orada bir veya daha fazla önbellek listeleniyorsa, hepsini seç ve **"Delete"** (Sil) butonuna basarak sil. Eğer boşsa, bu adımı atla.
-
-**2. Adım: Boş Bir `commit` ile Dağıtımı Tetiklemek**
-
-Şimdi, hiçbir dosyayı değiştirmeden, sadece "Hey, ben bir değişiklik yaptım, her şeyi yeniden yap!" demek için boş bir `commit` göndereceğiz.
-
-1.  Komut İstemi'ni aç (`edu3d-blog` klasöründe).
-2.  Aşağıdaki özel komutu çalıştır. Bu komut, hiçbir dosya değişikliği olmasa bile yeni bir `commit` oluşturmaya zorlar.
-    ```bash
-    git commit --: deployment
+        id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}

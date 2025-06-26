@@ -1,0 +1,14 @@
+/* Ana Vurgu ve Link Renklerini Değiştirme */
+:root {
+    --primary: #FF7F50; /* Bu bizim ana turuncu rengimiz */
+}
+
+/* Linklerin üzerine gelindiğinde rengi biraz daha koyu yapalım */
+a:hover {
+    color: #E57345; /* Turuncunun biraz daha koyu bir tonu */
+}
+
+/* Sol taraftaki profil kutusundaki butonların rengini ayarlama */
+.profile-mode .button:hover {
+    background: #FF7F50 !important;
+}

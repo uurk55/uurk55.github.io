@@ -1,44 +1,42 @@
-baseURL = "https://uurk55.github.io/"
+baseURL = "https://edu3dmodel.com/" # <-- GÜNCELLENDİ
 languageCode = "tr-tr"
 title = "Edu 3D Model Dünyası"
 theme = "PaperMod"
+paginate = 5 # Ana sayfada kaç yazı gösterileceği
 
+# ANA PARAMETRELER
 [params]
-  description = "Sadece model değil, gelir de üretin. 3D baskı ile pasif geliri öğrenin."
+  description = "Fikirlerini 3D Ürüne Dönüştür, Gelir Elde Et!"
   author = "uurk55"
-  defaultTheme = "auto"
+  defaultTheme = "auto" # "light" veya "dark" olarak zorlayabilirsin
   ShowShareButtons = true
   ShowReadingTime = true
+  ShowPostNavLinks = true
+
+# SOL TARAFTAKİ PROFİL KUTUSU (LOGO BURADA)
+[params.profileMode]
+  enabled = true
+  title = "Edu 3D Model Dünyası"
+  subtitle = "Fikirlerini Ürüne Dönüştür"
+  imageUrl = "/logo.png"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "Edu 3D Model Logosu"
   
-  logo = "logo.png" 
-  logo_width = 35 
-  logo_height = 35 
+  [[params.profileMode.buttons]]
+    name = "Tüm Yazılar"
+    url = "/posts"
+  
+  [[params.profileMode.buttons]]
+    name = "Hakkımda"
+    url = "/about" # İleride oluşturacağız
 
-[params.homeInfoParams]
-  Title = "Hoş Geldiniz! 👋"
-  Content = "3D yazıcı tutkusunu pasif gelire dönüştürmek isteyenler için kaynak merkezi."
-
+# SOSYAL MEDYA İKONLARI
 [[params.socialIcons]]
   name = "instagram"
   url = "https://www.instagram.com/edu3dmodel/"
 
-[params.profileMode]
-  enabled = true # Profil modunu aktif et
-  title = "Edu 3D Model Dünyası" # Logonun yanında görünecek başlık
-  subtitle = "Fikirlerini Ürüne Dönüştür" # Başlığın altındaki alt başlık
-  imageUrl = "/logo.png" # Resmin yolu. /static/logo.png'a işaret eder.
-  imageWidth = 120 # Resmin genişliği (piksel)
-  imageHeight = 120 # Resmin yüksekliği (piksel)
-  imageTitle = "Edu 3D Model Logosu" # Resmin üzerine gelince görünecek yazı
-  
-  [[params.profileMode.buttons]]
-    name = "Yazılar"
-    url = "/posts"
-
-  [[params.profileMode.buttons]]
-    name = "Hakkımda"
-    url = "/about" # İleride oluşturacağımız sayfa
-
+# SAĞ ÜST MENÜ
 [menu]
   [[menu.main]]
     identifier = "arsiv"
@@ -50,3 +48,8 @@ theme = "PaperMod"
     name = "Arama"
     url = "/search/"
     weight = 20
+  [[menu.main]]
+    identifier = "etiketler"
+    name = "Etiketler"
+    url = "/tags/"
+    weight = 30

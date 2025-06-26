@@ -10,10 +10,9 @@ theme = "PaperMod"
   ShowShareButtons = true
   ShowReadingTime = true
   
- profileMode:
-    enabled: true
-    imageUrl: "/logo.png"
-    imageTitle: "Edu 3D Model Dünyası Logosu"
+  logo = "logo.png" 
+  logo_width = 35 
+  logo_height = 35 
 
 [params.homeInfoParams]
   Title = "Hoş Geldiniz! 👋"

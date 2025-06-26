@@ -22,3 +22,31 @@ a:hover {
 .menu-item.active {
     color: #E57345 !important; /* (GÜÇLENDİRİLDİ) */
 }
+/* --- YAZI İÇİ RENKLENDİRME --- */
+
+/* Yazı içindeki tüm başlıkları (H1, H2, H3...) hedef alalım */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: #FF7F50 !important;
+}
+
+/* Yazı içindeki normal linkleri de garantileyelim */
+.post-content a {
+    color: #E57345 !important; /* Linklere biraz daha koyu bir turuncu verelim ki metinden ayrılsın */
+    text-decoration: underline !important; /* Altını çizelim ki link olduğu anlaşılsın */
+}
+
+/* Yazı içindeki linklerin üzerine gelince daha da belirgin olsun */
+.post-content a:hover {
+    color: #FF7F50 !important;
+}
+
+/* Yazıların altındaki etiket (tag) linkleri */
+.post-tags a {
+    background: #FF7F50 !important;
+    color: white !important;
+}

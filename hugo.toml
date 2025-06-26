@@ -15,8 +15,6 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowPostNavLinks = true
 
-  # ÖZEL CSS'İ MANUEL YÜKLEME
-  custom_css = ["css/extended.css"] 
 
 # SOL TARAFTAKİ PROFİL KUTUSU (LOGO BURADA)
 [params.profileMode]

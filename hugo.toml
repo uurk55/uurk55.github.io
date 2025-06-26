@@ -9,9 +9,6 @@ theme = "PaperMod"
   defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = true
-
-[params]
-  # ... mevcut diğer parametrelerin ...
   
   # LOGO AYARI
   logo = "logo.jpg" # Eğer dosya adın farklıysa veya svg ise ona göre değiştir.

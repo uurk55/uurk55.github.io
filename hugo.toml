@@ -2,7 +2,9 @@ baseURL = "https://edu3dmodel.com/" # <-- GÜNCELLENDİ
 languageCode = "tr-tr"
 title = "Edu 3D Model Dünyası"
 theme = "PaperMod"
-paginate = 5 # Ana sayfada kaç yazı gösterileceği
+# Sayfalama Ayarları (Ana sayfada kaç yazı gösterileceği)
+[pagination]
+  pagerSize = 5
 
 # ANA PARAMETRELER
 [params]

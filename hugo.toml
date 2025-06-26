@@ -22,7 +22,22 @@ theme = "PaperMod"
   name = "instagram"
   url = "https://www.instagram.com/edu3dmodel/"
 
+[params.profileMode]
+  enabled = true # Profil modunu aktif et
+  title = "Edu 3D Model Dünyası" # Logonun yanında görünecek başlık
+  subtitle = "Fikirlerini Ürüne Dönüştür" # Başlığın altındaki alt başlık
+  imageUrl = "/logo.png" # Resmin yolu. /static/logo.png'a işaret eder.
+  imageWidth = 120 # Resmin genişliği (piksel)
+  imageHeight = 120 # Resmin yüksekliği (piksel)
+  imageTitle = "Edu 3D Model Logosu" # Resmin üzerine gelince görünecek yazı
+  
+  [[params.profileMode.buttons]]
+    name = "Yazılar"
+    url = "/posts"
 
+  [[params.profileMode.buttons]]
+    name = "Hakkımda"
+    url = "/about" # İleride oluşturacağımız sayfa
 
 [menu]
   [[menu.main]]

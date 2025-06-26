@@ -10,10 +10,10 @@ theme = "PaperMod"
   ShowShareButtons = true
   ShowReadingTime = true
   
-  # LOGO AYARI
-  logo = "logo.png" # Eğer dosya adın farklıysa veya svg ise ona göre değiştir.
-  logo_width = 35 # Logonun genişliği (piksel)
-  logo_height = 35 # Logonun yüksekliği (piksel)
+ profileMode:
+    enabled: true
+    imageUrl: "/logo.png"
+    imageTitle: "Edu 3D Model Dünyası Logosu"
 
 [params.homeInfoParams]
   Title = "Hoş Geldiniz! 👋"

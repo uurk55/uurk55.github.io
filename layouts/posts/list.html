@@ -7,13 +7,18 @@
     {{- end }}
 </div>
 
-{{/* --- Öne Çıkan Yazılar --- */}}
-{{ $featuredPages := where .Site.RegularPages "Params.featured" true }}
-{{ if $featuredPages }}
+{{/* --- Tüm Yazıları Tarihe Göre Al ve Sayfalandır --- */}}
+{{ $pages := where .Site.RegularPages.ByDate.Reverse "Type" "in" .Site.Params.mainSections }}
+{{ $paginator := .Paginate $pages 6 }}
+
+{{/* --- Öne Çıkan Yazıları Bul --- */}}
+{{ $featured := where $pages "Params.featured" true }}
+
+{{ if $featured }}
 <div class="featured-posts">
     <h2>Öne Çıkan Yazılar</h2>
     <div class="post-grid">
-        {{ range first 2 $featuredPages }}
+        {{ range first 2 $featured }}
             {{ .Render "summary-card" }}
         {{ end }}
     </div>
@@ -21,11 +26,7 @@
 <hr class="custom-hr">
 {{ end }}
 
-
-{{/* --- Diğer Tüm Yazılar --- */}}
 <h2>Tüm Yazılar</h2>
-{{ $regularPages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-{{ $paginator := .Paginate $regularPages 6 }}
 <div class="post-grid">
     {{ range $paginator.Pages }}
         {{ .Render "summary-card" }}
@@ -40,21 +41,20 @@
 {{/* --- Tekrar Kullanılabilir Yazı Kartı Şablonu --- */}}
 {{ define "summary-card" }}
 <article class="post-entry">
-    {{- $cover := .Params.cover }}
-    {{- if $cover }}
-        {{- if $cover.image }}
-        <a class="entry-cover" href="{{ .Permalink }}">
-            <img src="{{ $cover.image | absURL }}" alt="{{ $cover.alt | default .Title }}" loading="lazy">
-        </a>
-        {{- end }}
-    {{- end }}
+    {{- with .Params.cover -}}
+    {{- if .image -}}
+    <a class="entry-cover" href="{{ .Permalink }}">
+        <img src="{{ .image | absURL }}" alt="{{ .alt | default $.Title }}" loading="lazy">
+    </a>
+    {{- end -}}
+    {{- end -}}
     <header class="entry-header">
         <h2>
             <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
         </h2>
     </header>
     <footer class="entry-footer">
-        {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min
+        <span title='{{ .Date.Format "2006-01-02 15:04:05" }}'>{{ .Date.Format "January 2, 2006" }}</span> · {{ .ReadingTime }} min
     </footer>
 </article>
 {{ end }}
@@ -75,24 +75,27 @@
     border-radius: 8px;
 }
 .post-entry {
-    border: 1px solid #e0e0e0;
+    background: var(--card-background);
+    border: 1px solid var(--card-border);
     border-radius: 8px;
     overflow: hidden;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 .post-entry:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
 }
 .post-entry .entry-header, .post-entry .entry-footer {
     padding: 0 15px;
 }
 .post-entry .entry-header {
     padding-top: 15px;
+    min-height: 80px; /* Başlıklar için sabit yükseklik */
 }
 .post-entry .entry-footer {
     padding-bottom: 15px;
     font-size: 0.8em;
-    color: #757575;
+    color: var(--secondary);
 }
 .custom-hr {
     margin: 40px 0;

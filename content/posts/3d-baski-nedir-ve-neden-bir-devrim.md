@@ -1,12 +1,14 @@
 ---
 title: "3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı"
-date: 2023-10-28T14:00:00+03:00
+date: 2025-06-25T14:00:00+03:00
 draft: false
 cover:
     image: "/images/kapak-gorseli.png" # Öne Çıkan Görsel
     alt: "3D yazıcı parlayan bir ampul basıyor"
     caption: "Fikirleriniz artık sadece bir 'yazdır' komutu kadar uzağınızda."
     relative: false
+categories: ["Başlangıç Rehberi"]
+tags: ["3d baskı", "temel bilgiler", "pasif gelir"]
 ---
 
 Hiç aklınıza gelen parlak bir fikrin, bir "yazdır" tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı... Bu artık bilim kurgu filmlerine özgü bir sahne değil, **3D Baskı** veya teknik adıyla **Katmanlı Üretim (Additive Manufacturing)** teknolojisinin ta kendisi!

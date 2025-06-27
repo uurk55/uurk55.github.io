@@ -69,35 +69,29 @@ theme = "PaperMod"
   url = "mailto:edu3dmodel@gmail.com"
 
 
-# SAĞ ÜST MENÜ (YENİ DÜZEN)
+# SAĞ ÜST MENÜ (TEMİZ VE DOĞRU VERSİYON)
 [menu]
   [[menu.main]]
-    identifier = "anasayfa"
     name = "Anasayfa"
     url = "/"
-    weight = 5  # YENİ EKLENDİ (En başa koymak için düşük değer)
+    weight = 10
   [[menu.main]]
-    identifier = "yazilarim"
     name = "Yazılarım"
-    url = "/posts/"
-    weight = 10 # YENİ EKLENDİ
+    url = "/posts"
+    weight = 20
   [[menu.main]]
-    identifier = "arama"
-    name = "Arama"
-    url = "/search/"
-    weight = 60
-  [[menu.main]]
-    identifier = "etiketler"
     name = "Etiketler"
-    url = "/tags/"
+    url = "/tags"
     weight = 30
   [[menu.main]]
-    identifier = "iletisim"
     name = "İletişim"
     url = "/iletisim"
     weight = 40
   [[menu.main]]
-    identifier = "tavsiyelerim"
     name = "Tavsiyelerim"
     url = "/tavsiyelerim"
     weight = 50
+  [[menu.main]]
+    name = "Arama"
+    url = "/search"
+    weight = 60

@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+<div class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Content }}
+        <div class="page-content">{{ .Content }}</div>
+    {{- end }}
+</div>
+
+{{/* Öne Çıkan Yazılar Bölümü */}}
+{{ $featured := where .Site.RegularPages "Params.featured" "==" true }}
+{{ if $featured }}
+<div class="featured-posts">
+    <h2>Öne Çıkan Yazılar</h2>
+    <div class="post-grid">
+        {{ range first 2 $featured }}
+            {{ .Render "summary-card" }}
+        {{ end }}
+    </div>
+</div>
+<hr>
+{{ end }}
+
+{{/* Diğer Yazılar Bölümü */}}
+{{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "in" .Site.Params.mainSections) 6 }}
+<div class="post-grid">
+    {{ range $paginator.Pages }}
+        {{ if not .Params.featured }}
+            {{ .Render "summary-card" }}
+        {{ end }}
+    {{ end }}
+</div>
+
+{{ .Render "pagination" }}
+
+{{ end }}
+
+{{ define "summary-card" }}
+<article class="post-entry">
+    {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInList }}
+    {{- if not $isHidden }}
+    <a class="entry-cover" href="{{ .Permalink }}">
+        {{ .Scratch.Set "cover" (dict "src" .Params.cover.image "alt" .Params.cover.alt "caption" .Params.cover.caption) }}
+        {{ partial "cover.html" . }}
+    </a>
+    {{- end }}
+    <header class="entry-header">
+        <h2>
+            <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+        </h2>
+    </header>
+    <div class="entry-content">
+        <p>{{ .Summary | plainify | safeHTML }}</p>
+    </div>
+    <footer class="entry-footer">
+        {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+    </footer>
+</article>
+{{ end }}
+
+<style>
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.post-entry .entry-cover img {
+    height: 200px; /* Görsel yüksekliğini sabitle */
+    object-fit: cover; /* Resmi kutuya sığdır */
+}
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: 1fr; /* Mobilde tek sütun yap */
+    }
+}
+</style>

@@ -9,6 +9,7 @@ cover:
     relative: false
 categories: ["Başlangıç Rehberi", "Teknoloji Karşılaştırma"]
 tags: ["fdm", "sla", "yazıcı seçimi", "karşılaştırma"]
+featured: true  # <-- BU SATIRI EKLE
 ---
 
 Bir önceki yazımızda 3D baskı dünyasının sihirli kapısını hep birlikte aralamıştık. Fikirlerimizi nasıl fiziksel nesnelere dönüştürebileceğimizi gördük. Peki, o kapıdan içeri girdik diyelim, karşımızda iki ana yol var: **FDM** ve **SLA**. Bu iki isim, 3D baskı yolculuğunuzda en sık duyacağınız terimler olacak.

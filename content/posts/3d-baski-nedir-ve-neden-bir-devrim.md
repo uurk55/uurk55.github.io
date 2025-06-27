@@ -9,6 +9,7 @@ cover:
     relative: false
 categories: ["Başlangıç Rehberi"]
 tags: ["3d baskı", "temel bilgiler", "pasif gelir"]
+featured: true 
 ---
 
 Hiç aklınıza gelen parlak bir fikrin, bir "yazdır" tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı... Bu artık bilim kurgu filmlerine özgü bir sahne değil, **3D Baskı** veya teknik adıyla **Katmanlı Üretim (Additive Manufacturing)** teknolojisinin ta kendisi!

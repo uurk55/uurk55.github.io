@@ -3,20 +3,16 @@ languageCode = "tr-tr"
 title = "Edu 3D Model Dünyası"
 theme = "PaperMod"
 
-# ANA SINIFLANDIRMA (TAXONOMY) TANIMLAMALARI
-# Bu bölüm, Hugo'ya 'categories' ve 'tags' adında sınıflandırmalar olduğunu söyler.
 [taxonomies]
   category = "categories"
   tag = "tags"
   series = "series"
 
-# GÜVENLİK AYARLARI
 [markup.goldmark.renderer]
   unsafe = true
 
-# ANA PARAMETRELER BÖLÜMÜ
 [params]
-  description = "Fikirlerini 3D Ürüne Dönüştür, Gelir Elde Et!"
+  description = "3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası'nda A'dan Z'ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!"
   author = "uurk55"
   defaultTheme = "auto"
   ShowShareButtons = true
@@ -26,7 +22,6 @@ theme = "PaperMod"
   ShowRelatedPosts = true
   mainSections = ["posts"]
 
-# SOL TARAFTAKİ PROFİL KUTUSU
 [params.profileMode]
   enabled = true
   title = "Edu 3D Model Dünyası"
@@ -49,12 +44,10 @@ theme = "PaperMod"
     name = "Tavsiyelerim"
     url = "/tavsiyelerim"
 
-# SOSYAL MEDYA İKONLARI
 [[params.socialIcons]]
   name = "instagram"
   url = "https://www.instagram.com/edu3dmodel/"
 
-# SAĞ ÜST MENÜ
 [menu]
   [[menu.main]]
     identifier = "arsiv"

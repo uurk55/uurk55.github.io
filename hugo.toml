@@ -39,7 +39,7 @@ theme = "PaperMod"
 [params.profileMode]
   enabled = true
   title = "Edu 3D Model Dünyası"
-  subtitle = "Fikirlerini Ürüne Dönüştür"
+  subtitle = "3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası'nda A'dan Z'ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!"
   imageUrl = "/logo.png"
   imageWidth = 120
   imageHeight = 120
@@ -61,6 +61,9 @@ theme = "PaperMod"
 [[params.socialIcons]]
   name = "instagram"
   url = "https://www.instagram.com/edu3dmodel/"
+[[params.socialIcons]]
+  name = "Mail"
+  url = "mailto:edu3dmodel@gmail.com"
 
 [menu]
   [[menu.main]]

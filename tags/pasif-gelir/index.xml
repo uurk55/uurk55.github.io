@@ -15,40 +15,6 @@
       <guid>https://edu3dmodel.com/posts/3d-baski-nedir-ve-neden-bir-devrim/</guid>
       <description>&lt;p&gt;Hiç aklınıza gelen parlak bir fikrin, bir &amp;ldquo;yazdır&amp;rdquo; tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı&amp;hellip; Bu artık bilim kurgu filmlerine özgü bir sahne değil, &lt;strong&gt;3D Baskı&lt;/strong&gt; veya teknik adıyla &lt;strong&gt;Katmanlı Üretim (Additive Manufacturing)&lt;/strong&gt; teknolojisinin ta kendisi!&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Edu 3D Model Dünyası&amp;quot;na hoş geldiniz! Burası, o parlak fikirleri sadece hayal etmekle kalmayıp, onları nasıl birer fiziksel ürüne ve hatta bir gelir kapısına dönüştürebileceğinizi öğreneceğiniz yer. Bu ilk yazımızda, sizi koltuğunuza yaslanıp &amp;ldquo;Vay canına, bu gerçekten mümkün mü?&amp;rdquo; dedirtecek o sihirli dünyanın kapısını aralayacağız ve temel kavramları netleştireceğiz.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Hiç aklınıza gelen parlak bir fikrin, bir &ldquo;yazdır&rdquo; tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı&hellip; Bu artık bilim kurgu filmlerine özgü bir sahne değil, <strong>3D Baskı</strong> veya teknik adıyla <strong>Katmanlı Üretim (Additive Manufacturing)</strong> teknolojisinin ta kendisi!</p>
-<p>&ldquo;Edu 3D Model Dünyası&quot;na hoş geldiniz! Burası, o parlak fikirleri sadece hayal etmekle kalmayıp, onları nasıl birer fiziksel ürüne ve hatta bir gelir kapısına dönüştürebileceğinizi öğreneceğiniz yer. Bu ilk yazımızda, sizi koltuğunuza yaslanıp &ldquo;Vay canına, bu gerçekten mümkün mü?&rdquo; dedirtecek o sihirli dünyanın kapısını aralayacağız ve temel kavramları netleştireceğiz.</p>
-<h2 id="en-basit-haliyle-3d-baskı-nedir">En Basit Haliyle 3D Baskı Nedir?</h2>
-<p>Karmaşık mühendislik jargonunu bir kenara bırakalım. 3D baskının temel mantığı, adında saklıdır: Katmanlar halinde inşa etmek.</p>
-<h3 id="katman-katman-inşa-etmek-dijitalden-fiziğe-yolculuk">Katman Katman İnşa Etmek: Dijitalden Fiziğe Yolculuk</h3>
-<p>Bir doğum günü pastası yaparken ne yaparsınız? Önce ilk kat keki koyar, üzerine krema sürer, sonra ikinci katı&hellip; İşte 3D yazıcı da, dijital bir tasarım dosyasını – ki biz buna genellikle <strong>STL dosyası</strong> diyoruz – alıp, onu yüzlerce, hatta binlerce mikroskobik incelikte yatay katmana böler. Sonra bu katmanları, erimiş plastik (<strong>Filament</strong>) veya UV ışığıyla sertleşen özel bir sıvı (<strong>Reçine</strong>) gibi malzemelerle bir tepsinin üzerinde üst üste sererek inşa eder. Sabırla, katman katman, o dijital hayal, elinizle tutabileceğiniz üç boyutlu bir nesneye dönüşür.</p>
-<p><img alt="3D yazıcı nozulu katmanları seriyor" loading="lazy" src="/images/katmanli-uretim.png" title="3D Baskının Kalbi: Katmanlı Üretim"></p>
-<h3 id="geleneksel-üretimden-farkı-ne">Geleneksel Üretimden Farkı Ne?</h3>
-<p>3D Baskı, &ldquo;yoktan var etme&rdquo; sanatıdır. Sadece ihtiyaç duyduğu kadar malzemeyi, tam olarak olması gereken yere, katman katman ekler. Sonuç?</p>
-<ol>
-<li><strong>Minimum Atık:</strong> Malzeme israfı çok daha azdır.</li>
-<li><strong>Tasarım Özgürlüğü:</strong> Geleneksel yöntemlerle üretilmesi imkansız olan iç içe geçmiş, karmaşık ve organik geometriler rahatlıkla üretilebilir.</li>
-</ol>
-<h2 id="peki-3d-baskı-neden-gerçek-bir-devrim">Peki, 3D Baskı Neden Gerçek Bir Devrim?</h2>
-<p>Çünkü bu teknoloji, üretim kurallarını yeniden yazıyor ve gücü, büyük fabrikaların tekelinden alıp hepimizin evine ve atölyesine getiriyor.</p>
-<h3 id="sanayiden-mimariye-her-sektör-için-bir-çözüm">Sanayiden Mimariye, Her Sektör İçin Bir Çözüm</h3>
-<ul>
-<li>Bir <strong>mimar</strong>, tasarladığı binanın fiziksel bir maketini bir gecede 3D yazıcıdan alabiliyor.</li>
-<li>Bir <strong>diş hekimi</strong>, hastasına özel bir diş teli veya gece plağını kendi kliniğinde saatler içinde üretebiliyor.</li>
-<li>Bir <strong>ürün tasarımcısı</strong>, yeni bir kulaklık modelinin ilk prototipini 3D yazıcıda basıp, ergonomisini anında test edebiliyor.</li>
-</ul>
-<h3 id="güç-artık-bireylerde-kişisel-üretimin-yükselişi">Güç Artık Bireylerde: Kişisel Üretimin Yükselişi</h3>
-<p>Artık ihtiyacınız olan tek şey bir bilgisayar ve bir 3D yazıcı. Kendi evinizin konforunda, bir <strong>&ldquo;mikro fabrika&rdquo;</strong> sahibi oluyorsunuz. Kırılan bir parçayı basabilir, özgün bir saksı tasarlayabilir veya yepyeni bir alet icat edebilirsiniz.</p>
-<h2 id="pasif-gelir-arayanlar-için-3d-baskı-neden-bir-altın-madeni">Pasif Gelir Arayanlar İçin 3D Baskı Neden Bir Altın Madeni?</h2>
-<p>&ldquo;Bir ürünü basıp satmak nasıl pasif olabilir ki?&rdquo; diye sorduğunuzu duyar gibiyim. 3D baskının gücü, onu geleneksel bir &ldquo;aktif gelir&rdquo; modelinden ayıran <strong>otomasyon</strong> ve <strong>ölçeklenebilirlik</strong> potansiyelinde yatar. Buna &ldquo;yarı pasif gelir&rdquo; demek en doğrusu olur.</p>
-<p><img alt="Kişiselleştirilmiş 3D Baskı ürünleri" loading="lazy" src="/images/kisisellestirme.png" title="Katma Değeri Yüksek Kişiye Özel Ürünler"></p>
-<h3 id="kişiye-özelin-büyüsü-seri-üretimin-yapamadığını-yapın">&ldquo;Kişiye Özel&quot;in Büyüsü: Seri Üretimin Yapamadığını Yapın</h3>
-<p>Müşterilerinize, başka hiçbir yerde bulamayacakları, tamamen onlara özel, kişiselleştirilmiş ürünler sunabilirsiniz. Ve insanlar, kendilerini özel hissettiren ürünler için her zaman daha fazlasını ödemeye hazırdır.</p>
-<h3 id="makineniz-sizin-için-çalışır-otomasyon-ve-stoksuz-üretim">Makineniz Sizin İçin Çalışır: Otomasyon ve Stoksuz Üretim</h3>
-<p>Bir müşteri sipariş verdiğinde, siz &ldquo;yazdır&rdquo; tuşuna basarsınız. <strong>İşte o andan itibaren iş &ldquo;pasifleşir&rdquo;.</strong> 4, 8, hatta 12 saat sürecek bir baskı boyunca siz başka bir işinizle ilgilenebilirsiniz. Yazıcınız, sizin için sessizce çalışır.</p>
-<h2 id="ilk-adımı-atmaya-hazır-mısınız">İlk Adımı Atmaya Hazır Mısınız?</h2>
-<p>Bu, yolculuğumuzun sadece ilk adımıydı. Aklınızdaki bir sonraki soruyu tahmin edebiliyoruz: <strong>&ldquo;Peki, hangi teknolojiyle başlamalıyım? FDM mi, SLA mi?&rdquo;</strong></p>
-<p>İşte tam da bu sorunun cevabını, bu serinin bir sonraki yazısında masaya yatıracağız. Blogumuzu takipte kalın, çünkü daha yeni başlıyoruz!</p>
-]]></content:encoded>
     </item>
   </channel>
 </rss>

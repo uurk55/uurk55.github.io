@@ -15,6 +15,89 @@
       <guid>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</guid>
       <description>&lt;p&gt;Bir önceki yazımızda 3D baskı dünyasının sihirli kapısını hep birlikte aralamıştık. Fikirlerimizi nasıl fiziksel nesnelere dönüştürebileceğimizi gördük. Peki, o kapıdan içeri girdik diyelim, karşımızda iki ana yol var: &lt;strong&gt;FDM&lt;/strong&gt; ve &lt;strong&gt;SLA&lt;/strong&gt;. Bu iki isim, 3D baskı yolculuğunuzda en sık duyacağınız terimler olacak.&lt;/p&gt;
 &lt;p&gt;Bu yazımızın amacı, &amp;ldquo;Hangisi daha iyidir?&amp;rdquo; gibi bir savaşı körüklemek değil. Tam aksine, pusulayı size çevirip, &amp;ldquo;Sizin hedefleriniz, bütçeniz ve hayalleriniz için hangisi daha doğrudur?&amp;rdquo; sorusuna net bir cevap bulmanızı sağlamak.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Bir önceki yazımızda 3D baskı dünyasının sihirli kapısını hep birlikte aralamıştık. Fikirlerimizi nasıl fiziksel nesnelere dönüştürebileceğimizi gördük. Peki, o kapıdan içeri girdik diyelim, karşımızda iki ana yol var: <strong>FDM</strong> ve <strong>SLA</strong>. Bu iki isim, 3D baskı yolculuğunuzda en sık duyacağınız terimler olacak.</p>
+<p>Bu yazımızın amacı, &ldquo;Hangisi daha iyidir?&rdquo; gibi bir savaşı körüklemek değil. Tam aksine, pusulayı size çevirip, &ldquo;Sizin hedefleriniz, bütçeniz ve hayalleriniz için hangisi daha doğrudur?&rdquo; sorusuna net bir cevap bulmanızı sağlamak.</p>
+<h3 id="bölüm-1-fdm-teknolojisi---en-yaygın-ve-erişilebilir-güç">BÖLÜM 1: FDM TEKNOLOJİSİ - En Yaygın ve Erişilebilir Güç</h3>
+<p>FDM (Fused Deposition Modeling), aslında adından çok daha basit bir teknoloji. Gözünüzde canlandırmanın en kolay yolu, son derece hassas ve robotik bir <strong>sıcak tutkal tabancası</strong> hayal etmektir. Bu tabanca, plastik bir ipi (biz buna <strong>filament</strong> diyoruz) alıyor, onu hassas bir şekilde eritiyor ve bir tepsinin üzerine katman katman sererek, dijital tasarımınızı adeta ilmek ilmek dokuyor.</p>
+<p><img alt="Modern bir FDM 3D yazıcı bir prototip basıyor" loading="lazy" src="/images/fdm-printer-in-action.jpg" title="FDM: Fonksiyonellik ve Dayanıklılık"></p>
+<p><strong>Avantajları Nelerdir?</strong></p>
+<ul>
+<li><strong>Cebinizi Düşünür:</strong> Hem FDM yazıcıların kendisi hem de kullandıkları filamentler, diğer teknolojilere göre oldukça uygun fiyatlıdır. Başlangıç için mükemmeldir.</li>
+<li><strong>Savaşçı Gibi Sağlam:</strong> FDM ile basılan parçalar, özellikle PLA, PETG ve ABS gibi malzemelerle üretildiğinde, mekanik strese karşı oldukça dayanıklıdır. Şahsen ben, kırılan veya bozulan birçok ev eşyasının yerine FDM ile bastığım parçaları kullanıyorum ve hala ilk günkü gibi sağlamlar!</li>
+<li><strong>Renk ve Malzeme Cümbüşü:</strong> Ahşap görünümlüden, esnek ve hatta karanlıkta parlayana kadar inanılmaz bir malzeme çeşitliliği sunar.</li>
+<li><strong>Geniş Çalışma Alanı:</strong> Genellikle FDM yazıcılar, daha büyük nesneler basmanıza olanak tanıyan daha geniş baskı tablalarına sahiptir.</li>
+</ul>
+<p><strong>Peki Hiç Dezavantajı Yok mu?</strong></p>
+<ul>
+<li><strong>Detayların Bedeli:</strong> FDM&rsquo;nin en büyük handikapı, katman çizgilerinin belirgin olmasıdır. Çok ince ve pürüzsüz detaylar gerektiren heykeller veya minyatürler için en iyi seçenek olmayabilir.</li>
+<li><strong>Sabır Testi:</strong> Baskı kalitesini artırmak için katman yüksekliğini düşürdüğünüzde, baskı süreleri saatlerce, hatta günlerce uzayabilir.</li>
+</ul>
+<p><strong>Kısacası FDM Kimler İçin İdeal?</strong>
+Eğer amacınız fonksiyonel prototipler oluşturmak, evdeki pratik sorunları çözmek, büyük dekoratif objeler basmak veya bu işe kısıtlı bir bütçeyle başlamaksa, FDM sizin için en güvenilir ve en mantıklı başlangıç noktasıdır. Benim gibi, hayatınızı kolaylaştıracak pratik ürünler veya eviniz için ufak tefek dekorasyonlar yapmayı seviyorsanız, FDM&rsquo;ye bayılacaksınız.</p>
+<h3 id="bölüm-2-sla-teknolojisi---detay-sanatçisi">BÖLÜM 2: SLA TEKNOLOJİSİ - DETAY SANATÇISI</h3>
+<p>Şimdi FDM&rsquo;nin pratik dünyasından ayrılıp, adeta bir simyacının laboratuvarına giriyoruz. Karşınızda SLA (Stereolithography) Teknolojisi! Eğer FDM robotik bir sıcak tutkal tabancasıysa, SLA da kontrollü bir şekilde ışıkla resim yapan bir <strong>sihirbazdır.</strong></p>
+<p><img alt="Bir SLA yazıcı reçine havuzundan detaylı bir figür çıkarıyor" loading="lazy" src="/images/sla-printer-in-action.jpg" title="SLA: Detay ve Hassasiyetin Zirvesi"></p>
+<p><strong>Nasıl Çalışır?</strong>
+Gözünüzde <strong>sihirli bir sıvı</strong> canlandırın. SLA yazıcı, içi ışığa duyarlı, akışkan bir polimer olan <strong>reçine (resin)</strong> ile dolu bir hazne kullanır. Bir lazer veya dijital bir ekran, bu sıvının en altından yukarıya doğru, katman katman UV ışığı yansıtır. Işığın değdiği her nokta anında katılaşır. Bu işlem, nesneniz reçine havuzundan yavaşça ve zarif bir şekilde yükselene kadar tekrarlanır.</p>
+<p><strong>Avantajları Nelerdir?</strong></p>
+<ul>
+<li><strong>Göz Kamaştıran Detaylar:</strong> SLA&rsquo;nın şov yaptığı yer burasıdır. Katman çizgileri neredeyse görünmezdir. Yüzeyler inanılmaz pürüzsüz ve en ince detaylar mükemmel bir netlikle ortaya çıkar.</li>
+<li><strong>Üstün Hassasiyet:</strong> Çok küçük ve karmaşık geometriler için rakipsizdir. Mücevherat veya dişçilik gibi hassasiyet gerektiren alanların vazgeçilmezidir.</li>
+<li><strong>Hız (Doğru Koşullarda):</strong> Baskı tablasına sığdırdığınız 10 küçük minyatür figürü basmakla, sadece 1 tanesini basmak arasında süre olarak çok az fark vardır.</li>
+</ul>
+<p><strong>Peki Bu Büyünün Bedeli Ne?</strong></p>
+<ul>
+<li><strong>Cebinizi Biraz Daha Zorlar:</strong> Hem SLA yazıcılar hem de kullandıkları reçineler, FDM alternatiflerine göre daha maliyetlidir.</li>
+<li><strong>&ldquo;İşin Hamallığı&rdquo; Baskıdan Sonra Başlar:</strong> Baskı bittiğinde işiniz bitmez. Parçanın önce özel alkollerle yıkanması, ardından ek bir UV ışığı kaynağında tam olarak sertleşmesi için &ldquo;pişirilmesi&rdquo; gerekir.</li>
+<li><strong>Kırılgan Yapı:</strong> Standart reçineler genellikle FDM plastikleri kadar esnek veya dayanıklı değildir.</li>
+<li><strong>Güvenlik Önlemleri Şart:</strong> Reçine buharları zehirli olabilir, bu nedenle iyi havalandırılan bir ortamda, eldivenle çalışmak zorunludur.</li>
+</ul>
+<p><strong>Kısacası SLA Kimler İçin İdeal?</strong>
+Eğer amacınız masaüstü oyunları için detaylı minyatürler, koleksiyonluk figürler, hassas mücevher kalıpları veya pürüzsüz yüzeyli sanatsal objeler üretip satmaksa, SLA&rsquo;nın sunduğu kalite, ödediğiniz ekstra maliyete ve harcadığınız emeğe kesinlikle değecektir.</p>
+<h3 id="bölüm-3-teknolojilerin-karşilaşmasi">BÖLÜM 3: TEKNOLOJİLERİN KARŞILAŞMASI</h3>
+<p>İki teknolojinin de ne olduğunu anladık. Şimdi onları, bir ürün geliştirmeden önce kendinize sormanız gereken en önemli başlıklar altında yan yana koyalım.</p>
+<p><strong>Detay ve Yüzey Kalitesi</strong>
+Eğer üreteceğiniz ürünün en kritik özelliği pürüzsüz yüzeyler ve mikroskobik detaylarsa, <strong>SLA</strong> teknolojisi burada öne çıkar. <strong>FDM</strong> ise daha çok fonksiyonel amaçlar için yeterli bir yüzey kalitesi sunar, ancak katman çizgileri her zaman bir miktar belirgin olacaktır.</p>
+<p><strong>Maliyet ve Erişilebilirlik</strong>
+Bu yolculuğa başlarken bütçeniz öncelikliyse, <strong>FDM</strong> teknolojisi çok daha erişilebilir bir başlangıç noktasıdır. Hem yazıcıların ilk alım maliyeti hem de filamentlerin fiyatı, SLA reçinelerine ve ilgili ekipmanlarına kıyasla önemli ölçüde daha düşüktür.</p>
+<p><strong>Ürün Sağlamlığı ve Kullanım Amacı</strong>
+Ürettiğiniz parçanın mekanik strese, düşmelere veya bükülmelere dayanması gerekiyor mu? Cevap evet ise, <strong>FDM</strong>&rsquo;nin kullandığı plastikler bu konuda daha güvenilir bir performans sergiler. Standart <strong>SLA</strong> reçineleri ise genellikle daha kırılgandır.</p>
+<p><strong>Kullanım Süreci ve Ekstra Emek</strong>
+&ldquo;Yazdır tuşuna bas ve hayatına devam et&rdquo; kolaylığına en yakın deneyimi <strong>FDM</strong> sunar. <strong>SLA</strong> ise daha çok adanmışlık isteyen bir süreçtir; baskı sonrası yıkama ve kürleme gibi ekstra adımları vardır.</p>
+<h3 id="özet-karar-vermeden-önce-kendinize-sormanız-gereken-sorular">Özet: Karar Vermeden Önce Kendinize Sormanız Gereken Sorular</h3>
+<p>&ldquo;Peki, tüm bunlar benim için ne anlama geliyor?&rdquo; diye sorduğunuzu duyar gibiyim. İşte size özel yol haritanızı çizecek olan sorular:</p>
+<ul>
+<li><strong>&ldquo;Benim için en önemli şey, ürünümün göz alıcı detayları ve pürüzsüz yüzeyi mi, yoksa düşük maliyetle hızlıca üretime başlayabilmek mi?&rdquo;</strong></li>
+<li><strong>&ldquo;Üreteceğim ürünler, rafta duracak sanatsal objeler mi olacak, yoksa günlük hayatta kullanılacak sağlam ve fonksiyonel parçalar mı?&rdquo;</strong></li>
+<li><strong>&ldquo;Bu işe ne kadar zaman ve ek emek ayırmaya hazırım? Sadece baskı süreciyle mi ilgilenmek istiyorum, yoksa baskı sonrası yıkama ve kürleme gibi adımlarla uğraşabilir miyim?&rdquo;</strong></li>
+</ul>
+<p>Bu üç sorunun cevabı, sizi FDM veya SLA kapılarından hangisinin sizin için doğru olduğuna doğal bir şekilde yönlendirecektir.</p>
+<h3 id="bölüm-4-hedefinize-göre-karar-ani">BÖLÜM 4: HEDEFİNİZE GÖRE KARAR ANI</h3>
+<p>Yukarıdaki sorulara verdiğiniz cevaplar, sizi yavaş yavaş bir yöne doğru itmeye başlamıştır. Şimdi bu kararı, potansiyel ürün fikirleri üzerinden daha da netleştirelim.</p>
+<p><strong>Eğer Aklınızdaki Ürünler Şunlarsa&hellip;</strong></p>
+<ul>
+<li>İsim yazılabilen kişiselleştirilmiş saksılar,</li>
+<li>Duvarlar için geometrik ve modern süsler,</li>
+<li>Laptop ve telefonlar için ergonomik standlar&hellip;
+&hellip;bu durumda, sizin için <strong>sağlamlık, büyük baskı hacmi ve düşük maliyet</strong>, genellikle mikroskobik detaylardan daha önemli olacaktır. Bu da pusulanızın <strong>FDM</strong> teknolojisini gösterme ihtimalini artırır.</li>
+</ul>
+<p><strong>Yoksa Aklınızdaki Ürünler Daha Çok Bunlar Mı?</strong></p>
+<ul>
+<li>Masaüstü rol yapma oyunları için detaylı minyatür karakterler,</li>
+<li>Koleksiyonerler için favori film veya oyun kahramanlarının yüksek çözünürlüklü büstleri,</li>
+<li>Butik takı tasarımcılarının döküm için kullanacağı hassas ve pürüzsüz kalıplar&hellip;
+&hellip;bu durumda ise, müşterinizin para ödeyeceği asıl değer <strong>kusursuz detay ve pürüzsüz yüzey kalitesidir.</strong> Bu da sizi, daha yüksek başlangıç maliyetine ve ek emeğe rağmen <strong>SLA</strong> teknolojisine yatırım yapmaya yönlendirebilir.</li>
+</ul>
+<h3 id="sonuç">SONUÇ</h3>
+<p>Gördüğünüz gibi, 3D baskı dünyasında &ldquo;en iyi&rdquo; teknoloji diye bir şey yok; sadece <strong>sizin hedeflerinize en uygun teknoloji</strong> var. Biri, bir maraton koşucusunun güvenilir ve dayanıklı ayakkabısı gibiyken, diğeri bir balerinin zarif ve hassas pisi pisi gibidir. Önemli olan, hangi dansı yapmak istediğinize karar vermeniz.</p>
+<p>Bu yazı, umuyoruz ki pusulanızı ayarlamanıza ve kendi yolunuzu çizmenize yardımcı olmuştur. Peki, bir teknolojiye karar verdiniz diyelim. Aklınızdaki bir sonraki soru ne olurdu?</p>
+<ul>
+<li>Eğer pusulanız <strong>FDM</strong>&lsquo;yi gösteriyorsa, muhtemelen şunu merak ediyorsunuz: &ldquo;Piyasada yüzlerce model varken, benim için en iyi başlangıç FDM yazıcısı hangisi?&rdquo;</li>
+<li>Eğer tercihiniz <strong>SLA</strong>&rsquo;nın sunduğu detaylardan yana olduysa, aklınızdaki soru şudur: &ldquo;Hangi SLA yazıcısı daha kullanıcı dostu ve başlangıç için hangi reçineleri kullanmalıyım?&rdquo;</li>
+</ul>
+<p>Merak etmeyin, yalnız değilsiniz. Önümüzdeki rehber yazılarımızda, her iki teknoloji için de en iyi başlangıç modellerini, bütçe dostu seçenekleri ve ilk adımlarınızı nasıl atacağınızı detaylıca masaya yatıracağız.</p>
+<p>Bizi takipte kalın, çünkü yolculuğumuz daha yeni başlıyor!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı</title>
@@ -23,6 +106,40 @@
       <guid>https://edu3dmodel.com/posts/3d-baski-nedir-ve-neden-bir-devrim/</guid>
       <description>&lt;p&gt;Hiç aklınıza gelen parlak bir fikrin, bir &amp;ldquo;yazdır&amp;rdquo; tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı&amp;hellip; Bu artık bilim kurgu filmlerine özgü bir sahne değil, &lt;strong&gt;3D Baskı&lt;/strong&gt; veya teknik adıyla &lt;strong&gt;Katmanlı Üretim (Additive Manufacturing)&lt;/strong&gt; teknolojisinin ta kendisi!&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Edu 3D Model Dünyası&amp;quot;na hoş geldiniz! Burası, o parlak fikirleri sadece hayal etmekle kalmayıp, onları nasıl birer fiziksel ürüne ve hatta bir gelir kapısına dönüştürebileceğinizi öğreneceğiniz yer. Bu ilk yazımızda, sizi koltuğunuza yaslanıp &amp;ldquo;Vay canına, bu gerçekten mümkün mü?&amp;rdquo; dedirtecek o sihirli dünyanın kapısını aralayacağız ve temel kavramları netleştireceğiz.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Hiç aklınıza gelen parlak bir fikrin, bir &ldquo;yazdır&rdquo; tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı&hellip; Bu artık bilim kurgu filmlerine özgü bir sahne değil, <strong>3D Baskı</strong> veya teknik adıyla <strong>Katmanlı Üretim (Additive Manufacturing)</strong> teknolojisinin ta kendisi!</p>
+<p>&ldquo;Edu 3D Model Dünyası&quot;na hoş geldiniz! Burası, o parlak fikirleri sadece hayal etmekle kalmayıp, onları nasıl birer fiziksel ürüne ve hatta bir gelir kapısına dönüştürebileceğinizi öğreneceğiniz yer. Bu ilk yazımızda, sizi koltuğunuza yaslanıp &ldquo;Vay canına, bu gerçekten mümkün mü?&rdquo; dedirtecek o sihirli dünyanın kapısını aralayacağız ve temel kavramları netleştireceğiz.</p>
+<h2 id="en-basit-haliyle-3d-baskı-nedir">En Basit Haliyle 3D Baskı Nedir?</h2>
+<p>Karmaşık mühendislik jargonunu bir kenara bırakalım. 3D baskının temel mantığı, adında saklıdır: Katmanlar halinde inşa etmek.</p>
+<h3 id="katman-katman-inşa-etmek-dijitalden-fiziğe-yolculuk">Katman Katman İnşa Etmek: Dijitalden Fiziğe Yolculuk</h3>
+<p>Bir doğum günü pastası yaparken ne yaparsınız? Önce ilk kat keki koyar, üzerine krema sürer, sonra ikinci katı&hellip; İşte 3D yazıcı da, dijital bir tasarım dosyasını – ki biz buna genellikle <strong>STL dosyası</strong> diyoruz – alıp, onu yüzlerce, hatta binlerce mikroskobik incelikte yatay katmana böler. Sonra bu katmanları, erimiş plastik (<strong>Filament</strong>) veya UV ışığıyla sertleşen özel bir sıvı (<strong>Reçine</strong>) gibi malzemelerle bir tepsinin üzerinde üst üste sererek inşa eder. Sabırla, katman katman, o dijital hayal, elinizle tutabileceğiniz üç boyutlu bir nesneye dönüşür.</p>
+<p><img alt="3D yazıcı nozulu katmanları seriyor" loading="lazy" src="/images/katmanli-uretim.png" title="3D Baskının Kalbi: Katmanlı Üretim"></p>
+<h3 id="geleneksel-üretimden-farkı-ne">Geleneksel Üretimden Farkı Ne?</h3>
+<p>3D Baskı, &ldquo;yoktan var etme&rdquo; sanatıdır. Sadece ihtiyaç duyduğu kadar malzemeyi, tam olarak olması gereken yere, katman katman ekler. Sonuç?</p>
+<ol>
+<li><strong>Minimum Atık:</strong> Malzeme israfı çok daha azdır.</li>
+<li><strong>Tasarım Özgürlüğü:</strong> Geleneksel yöntemlerle üretilmesi imkansız olan iç içe geçmiş, karmaşık ve organik geometriler rahatlıkla üretilebilir.</li>
+</ol>
+<h2 id="peki-3d-baskı-neden-gerçek-bir-devrim">Peki, 3D Baskı Neden Gerçek Bir Devrim?</h2>
+<p>Çünkü bu teknoloji, üretim kurallarını yeniden yazıyor ve gücü, büyük fabrikaların tekelinden alıp hepimizin evine ve atölyesine getiriyor.</p>
+<h3 id="sanayiden-mimariye-her-sektör-için-bir-çözüm">Sanayiden Mimariye, Her Sektör İçin Bir Çözüm</h3>
+<ul>
+<li>Bir <strong>mimar</strong>, tasarladığı binanın fiziksel bir maketini bir gecede 3D yazıcıdan alabiliyor.</li>
+<li>Bir <strong>diş hekimi</strong>, hastasına özel bir diş teli veya gece plağını kendi kliniğinde saatler içinde üretebiliyor.</li>
+<li>Bir <strong>ürün tasarımcısı</strong>, yeni bir kulaklık modelinin ilk prototipini 3D yazıcıda basıp, ergonomisini anında test edebiliyor.</li>
+</ul>
+<h3 id="güç-artık-bireylerde-kişisel-üretimin-yükselişi">Güç Artık Bireylerde: Kişisel Üretimin Yükselişi</h3>
+<p>Artık ihtiyacınız olan tek şey bir bilgisayar ve bir 3D yazıcı. Kendi evinizin konforunda, bir <strong>&ldquo;mikro fabrika&rdquo;</strong> sahibi oluyorsunuz. Kırılan bir parçayı basabilir, özgün bir saksı tasarlayabilir veya yepyeni bir alet icat edebilirsiniz.</p>
+<h2 id="pasif-gelir-arayanlar-için-3d-baskı-neden-bir-altın-madeni">Pasif Gelir Arayanlar İçin 3D Baskı Neden Bir Altın Madeni?</h2>
+<p>&ldquo;Bir ürünü basıp satmak nasıl pasif olabilir ki?&rdquo; diye sorduğunuzu duyar gibiyim. 3D baskının gücü, onu geleneksel bir &ldquo;aktif gelir&rdquo; modelinden ayıran <strong>otomasyon</strong> ve <strong>ölçeklenebilirlik</strong> potansiyelinde yatar. Buna &ldquo;yarı pasif gelir&rdquo; demek en doğrusu olur.</p>
+<p><img alt="Kişiselleştirilmiş 3D Baskı ürünleri" loading="lazy" src="/images/kisisellestirme.png" title="Katma Değeri Yüksek Kişiye Özel Ürünler"></p>
+<h3 id="kişiye-özelin-büyüsü-seri-üretimin-yapamadığını-yapın">&ldquo;Kişiye Özel&quot;in Büyüsü: Seri Üretimin Yapamadığını Yapın</h3>
+<p>Müşterilerinize, başka hiçbir yerde bulamayacakları, tamamen onlara özel, kişiselleştirilmiş ürünler sunabilirsiniz. Ve insanlar, kendilerini özel hissettiren ürünler için her zaman daha fazlasını ödemeye hazırdır.</p>
+<h3 id="makineniz-sizin-için-çalışır-otomasyon-ve-stoksuz-üretim">Makineniz Sizin İçin Çalışır: Otomasyon ve Stoksuz Üretim</h3>
+<p>Bir müşteri sipariş verdiğinde, siz &ldquo;yazdır&rdquo; tuşuna basarsınız. <strong>İşte o andan itibaren iş &ldquo;pasifleşir&rdquo;.</strong> 4, 8, hatta 12 saat sürecek bir baskı boyunca siz başka bir işinizle ilgilenebilirsiniz. Yazıcınız, sizin için sessizce çalışır.</p>
+<h2 id="ilk-adımı-atmaya-hazır-mısınız">İlk Adımı Atmaya Hazır Mısınız?</h2>
+<p>Bu, yolculuğumuzun sadece ilk adımıydı. Aklınızdaki bir sonraki soruyu tahmin edebiliyoruz: <strong>&ldquo;Peki, hangi teknolojiyle başlamalıyım? FDM mi, SLA mi?&rdquo;</strong></p>
+<p>İşte tam da bu sorunun cevabını, bu serinin bir sonraki yazısında masaya yatıracağız. Blogumuzu takipte kalın, çünkü daha yeni başlıyoruz!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>3D Baskı ile Pasif Gelire İlk Adımlar</title>
@@ -30,6 +147,8 @@
       <pubDate>Sat, 28 Oct 2023 12:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/posts/ilk-adimlar/</guid>
       <description>&lt;p&gt;Bu yolculuğa hoş geldiniz! Burası, 3D yazıcı teknolojisini kullanarak nasıl ek gelir elde edebileceğinizi öğreneceğiniz yer olacak.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Bu yolculuğa hoş geldiniz! Burası, 3D yazıcı teknolojisini kullanarak nasıl ek gelir elde edebileceğinizi öğreneceğiniz yer olacak.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -12,6 +12,8 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowPostNavLinks = true
 
+  mainSections = ["posts"]
+
   # YAZI SONUNDA BENZER YAZILARI GÖSTER
   ShowRelatedPosts = true
 

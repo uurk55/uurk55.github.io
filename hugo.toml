@@ -1,41 +1,28 @@
-baseURL = "https://edu3dmodel.com/" # <-- GÜNCELLENDİ
+baseURL = "https://edu3dmodel.com/"
 languageCode = "tr-tr"
 title = "Edu 3D Model Dünyası"
 theme = "PaperMod"
 
-# ANA PARAMETRELER
+# ANA SINIFLANDIRMA (TAXONOMY) TANIMLAMALARI
+# Bu bölüm, Hugo'ya 'categories' ve 'tags' adında sınıflandırmalar olduğunu söyler.
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# ANA PARAMETRELER BÖLÜMÜ
 [params]
   description = "Fikirlerini 3D Ürüne Dönüştür, Gelir Elde Et!"
   author = "uurk55"
-  defaultTheme = "auto" # "light" veya "dark" olarak zorlayabilirsin
+  defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
-
+  ShowRelatedPosts = true
   mainSections = ["posts"]
 
-  # YAZI SONUNDA BENZER YAZILARI GÖSTER
-  ShowRelatedPosts = true
-
-  ShowFullTextinRSS = true
- 
-  # YAZI METADATA AYARLARI (YENİ BÖLÜM)
-  [params.taxonomies]
-    category = "categories"
-    tag = "tags"
-    series = "series"
-
-  [params.assets]
-    disableFingerprinting = true
-
-  [params.cover]
-    hiddenInList = false
-    hiddenInSingle = false
-
-
-
-# SOL TARAFTAKİ PROFİL KUTUSU (LOGO BURADA)
+# SOL TARAFTAKİ PROFİL KUTUSU
 [params.profileMode]
   enabled = true
   title = "Edu 3D Model Dünyası"
@@ -48,18 +35,15 @@ theme = "PaperMod"
   [[params.profileMode.buttons]]
     name = "Tüm Yazılar"
     url = "/posts"
-  
   [[params.profileMode.buttons]]
     name = "Hakkımda"
-    url = "/about" # İleride oluşturacağız
-
+    url = "/about"
   [[params.profileMode.buttons]]
-  name = "İletişim"
-  url = "/iletisim"
-
+    name = "İletişim"
+    url = "/iletisim"
   [[params.profileMode.buttons]]
-  name = "Tavsiyelerim"
-  url = "/tavsiyelerim"
+    name = "Tavsiyelerim"
+    url = "/tavsiyelerim"
 
 # SOSYAL MEDYA İKONLARI
 [[params.socialIcons]]
@@ -88,7 +72,6 @@ theme = "PaperMod"
     name = "İletişim"
     url = "/iletisim"
     weight = 40
-  # SAĞ ÜST MENÜ
   [[menu.main]]
     identifier = "tavsiyelerim"
     name = "Tavsiyelerim"

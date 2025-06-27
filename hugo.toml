@@ -34,6 +34,10 @@ theme = "PaperMod"
     name = "Hakkımda"
     url = "/about" # İleride oluşturacağız
 
+  [[params.profileMode.buttons]]
+  name = "İletişim"
+  url = "/iletisim"
+
 # SOSYAL MEDYA İKONLARI
 [[params.socialIcons]]
   name = "instagram"
@@ -56,3 +60,9 @@ theme = "PaperMod"
     name = "Etiketler"
     url = "/tags/"
     weight = 30
+  [[menu.main]]
+    identifier = "iletisim"
+    name = "İletişim"
+    url = "/iletisim"
+    weight = 40
+  

@@ -22,6 +22,20 @@ theme = "PaperMod"
   ShowRelatedPosts = true
   mainSections = ["posts"]
 
+  # YORUM SİSTEMİ AYARLARI
+  [params.giscus]
+    repo = "uurk55/uurk55.github.io"
+    repoId = "R_kgDOPBdhHw"
+    category = "Announcements"
+    categoryId = "DIC_kwDOPBdhH84CsGnw"
+    lang = "tr"
+    mapping = "pathname"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "light"
+    loading = "lazy"
+
 [params.profileMode]
   enabled = true
   title = "Edu 3D Model Dünyası"

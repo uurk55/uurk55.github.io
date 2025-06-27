@@ -68,4 +68,9 @@ theme = "PaperMod"
     name = "İletişim"
     url = "/iletisim"
     weight = 40
-  
+  # SAĞ ÜST MENÜ
+  [[menu.main]]
+    identifier: "tavsiyelerim"
+    name: "Tavsiyelerim"
+    url: "/tavsiyelerim"
+    weight: 50

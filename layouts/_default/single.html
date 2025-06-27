@@ -1,0 +1,83 @@
+{{ define "main" }}
+<article class="post-single">
+    <header class="post-header">
+        {{ partial "breadcrumbs.html" . }}
+        <h1 class="post-title">
+            {{ .Title }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+        
+        {{- if not .Params.hidemeta }}
+        <div class="post-meta">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+             · 
+            <span>{{ .ReadingTime }} min read</span>
+            
+            {{- with .Params.categories -}}
+             · 
+            <span class="post-categories">
+                {{- range . -}}
+                <a href="{{ "categories/" | absURL }}{{ . | urlize }}/">
+                    {{- . -}}
+                </a>
+                {{- end -}}
+            </span>
+            {{- end -}}
+        </div>
+        {{- end }}
+    </header>
+    
+    {{- if .Params.cover.image -}}
+    <div class="post-cover">
+        <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+        {{- if .Params.cover.caption -}}
+        <p class="post-cover-caption">{{ .Params.cover.caption }}</p>
+        {{- end -}}
+    </div>
+    {{- end -}}
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    <footer class="post-footer">
+        {{- with .Params.tags -}}
+        <ul class="post-tags">
+            {{- range . -}}
+            <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>
+            {{- end -}}
+        </ul>
+        {{- end -}}
+    </footer>
+
+    {{/* --- YORUM BÖLÜMÜ BURADA --- */}}
+    {{- if .Params.comments }}
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        
+<script src="https://giscus.app/client.js"
+        data-repo="uurk55/uurk55.github.io"
+        data-repo-id="R_kgDOPBdhHw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPBdhH84CsGnw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="tr"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div>
+    {{- end }}
+    
+</article>
+{{ end }}

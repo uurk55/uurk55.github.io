@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Edu 3D Model Dünyası</title>
-    <link>https://edu3dmodel.com/posts/</link>
-    <description>Recent content in Posts on Edu 3D Model Dünyası</description>
+    <title>Başlangıç Rehberi on Edu 3D Model Dünyası</title>
+    <link>https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/</link>
+    <description>Recent content in Başlangıç Rehberi on Edu 3D Model Dünyası</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>tr-tr</language>
     <lastBuildDate>Thu, 26 Jun 2025 11:00:00 +0300</lastBuildDate>
-    <atom:link href="https://edu3dmodel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?</title>
       <link>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</link>
@@ -23,13 +23,6 @@
       <guid>https://edu3dmodel.com/posts/3d-baski-nedir-ve-neden-bir-devrim/</guid>
       <description>&lt;p&gt;Hiç aklınıza gelen parlak bir fikrin, bir &amp;ldquo;yazdır&amp;rdquo; tuşuna basarak masanızda beliriverdiğini hayal ettiniz mi? Telefonunuz için o mükemmel standı, en sevdiğiniz oyun karakterinin detaylı bir figürünü ya da mutfakta işinizi kolaylaştıracak o küçük, dahiyane aparatı&amp;hellip; Bu artık bilim kurgu filmlerine özgü bir sahne değil, &lt;strong&gt;3D Baskı&lt;/strong&gt; veya teknik adıyla &lt;strong&gt;Katmanlı Üretim (Additive Manufacturing)&lt;/strong&gt; teknolojisinin ta kendisi!&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Edu 3D Model Dünyası&amp;quot;na hoş geldiniz! Burası, o parlak fikirleri sadece hayal etmekle kalmayıp, onları nasıl birer fiziksel ürüne ve hatta bir gelir kapısına dönüştürebileceğinizi öğreneceğiniz yer. Bu ilk yazımızda, sizi koltuğunuza yaslanıp &amp;ldquo;Vay canına, bu gerçekten mümkün mü?&amp;rdquo; dedirtecek o sihirli dünyanın kapısını aralayacağız ve temel kavramları netleştireceğiz.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3D Baskı ile Pasif Gelire İlk Adımlar</title>
-      <link>https://edu3dmodel.com/posts/ilk-adimlar/</link>
-      <pubDate>Sat, 28 Oct 2023 12:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/ilk-adimlar/</guid>
-      <description>&lt;p&gt;Bu yolculuğa hoş geldiniz! Burası, 3D yazıcı teknolojisini kullanarak nasıl ek gelir elde edebileceğinizi öğreneceğiniz yer olacak.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

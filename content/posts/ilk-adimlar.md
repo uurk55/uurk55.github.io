@@ -1,7 +1,6 @@
 ---
 title: "3D Baskı ile Pasif Gelire İlk Adımlar"
 date: 2023-10-28T12:00:00+03:00
-weight: 10
 draft: false
 ---
 

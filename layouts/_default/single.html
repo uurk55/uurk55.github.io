@@ -53,25 +53,8 @@
         </ul>
         {{- end -}}
         
-        {{/* Sadece 'posts' bölümündeki yazılarda Önceki/Sonraki navigasyonunu göster */}}
-        {{ if eq .Section "posts" }}
-            {{- if .Site.Params.ShowPostNavLinks -}}
-            <nav class="post-nav">
-                {{- with .NextPage.ByWeight -}}
-                <a class="prev" href="{{ .Permalink }}">
-                    <span class="arrow">←</span>
-                    <span class="title">{{ .Title }}</span>
-                </a>
-                {{- end -}}
-                {{- with .PrevPage.ByWeight -}}
-                <a class="next" href="{{ .Permalink }}">
-                    <span class="title">{{ .Title }}</span>
-                    <span class="arrow">→</span>
-                </a>
-                {{- end -}}
-            </nav>
-            {{- end }}
-        {{ end }}
+        {{/* Önceki/Sonraki navigasyon bölümü tamamen kaldırıldı */}}
+        
     </footer>
 </article>
 {{ end }}

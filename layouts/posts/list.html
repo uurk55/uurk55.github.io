@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main class="main">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{- if .Description }}
+        <p class="page-description">{{ .Description }}</p>
+        {{- end }}
+    </header>
+
+    {{- $pages := .Paginator.Pages -}}
+    {{- if .IsHome -}}
+        {{- $pages = .Site.RegularPages -}}
+    {{- end -}}
+    
+    {{- range $pages }}
+    <article class="post-entry">
+        {{- $cover := .Params.cover -}}
+        {{- if and $cover (not $cover.hiddenInList) }}
+        <a class="entry-cover" href="{{ .Permalink }}">
+            <img src="{{ $cover.image | absURL }}" alt="{{ $cover.alt | default .Title }}" loading="lazy">
+        </a>
+        {{- end }}
+        <header class="entry-header">
+            <h2>
+                <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+            </h2>
+        </header>
+        <div class="entry-content">
+            <p>{{ .Summary | plainify | safeHTML }}...</p>
+        </div>
+        <footer class="entry-footer">
+            <span title='{{ .Date.Format "2006-01-02 15:04:05" }}'>{{ .Date.Format "January 2, 2006" }}</span>
+            {{- with .Params.categories -}}
+             · 
+            <span class="post-categories">
+                {{- range . -}}
+                    <a href="{{ "categories/" | absURL }}{{ . | urlize }}/" rel="tag">{{ . }}</a>
+                {{- end -}}
+            </span>
+            {{- end -}}
+        </footer>
+    </article>
+    {{- end }}
+
+    {{- partial "pagination.html" . -}}
+
+</main>
+{{ end }}

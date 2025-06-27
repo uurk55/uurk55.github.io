@@ -1,35 +1,29 @@
 {{ define "main" }}
 
-<div class="page-header">
+<div class.="page-header">
     <h1>{{ .Title }}</h1>
-    {{- if .Content }}
-        <div class="page-content">{{ .Content }}</div>
-    {{- end }}
 </div>
 
-{{/* --- Tüm Yazıları Tarihe Göre Al ve Sayfalandır --- */}}
-{{ $pages := where .Site.RegularPages.ByDate.Reverse "Type" "in" .Site.Params.mainSections }}
-{{ $paginator := .Paginate $pages 6 }}
-
-{{/* --- Öne Çıkan Yazıları Bul --- */}}
-{{ $featured := where $pages "Params.featured" true }}
-
-{{ if $featured }}
-<div class="featured-posts">
-    <h2>Öne Çıkan Yazılar</h2>
-    <div class="post-grid">
-        {{ range first 2 $featured }}
-            {{ .Render "summary-card" }}
-        {{ end }}
-    </div>
-</div>
-<hr class="custom-hr">
-{{ end }}
-
-<h2>Tüm Yazılar</h2>
+{{ $paginator := .Paginate .Pages 6 }}
 <div class="post-grid">
     {{ range $paginator.Pages }}
-        {{ .Render "summary-card" }}
+        <article class="post-entry">
+            <a href="{{ .Permalink }}">
+                {{ with .Params.cover }}
+                    <div class="entry-cover">
+                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $.Title }}" loading="lazy">
+                    </div>
+                {{ end }}
+                <div class="entry-text-wrapper">
+                    <header class="entry-header">
+                        <h2>{{ .Title }}</h2>
+                    </header>
+                    <footer class="entry-footer">
+                        <span title='{{ .Date.Format "2006-01-02 15:04:05" }}'>{{ .Date.Format "January 2, 2006" }}</span>
+                    </footer>
+                </div>
+            </a>
+        </article>
     {{ end }}
 </div>
 
@@ -37,68 +31,45 @@
 
 {{ end }}
 
-
-{{/* --- Tekrar Kullanılabilir Yazı Kartı Şablonu --- */}}
-{{ define "summary-card" }}
-<article class="post-entry">
-    {{- with .Params.cover -}}
-    {{- if .image -}}
-    <a class="entry-cover" href="{{ .Permalink }}">
-        <img src="{{ .image | absURL }}" alt="{{ .alt | default $.Title }}" loading="lazy">
-    </a>
-    {{- end -}}
-    {{- end -}}
-    <header class="entry-header">
-        <h2>
-            <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
-        </h2>
-    </header>
-    <footer class="entry-footer">
-        <span title='{{ .Date.Format "2006-01-02 15:04:05" }}'>{{ .Date.Format "January 2, 2006" }}</span> · {{ .ReadingTime }} min
-    </footer>
-</article>
-{{ end }}
-
-
-{{/* --- Sayfa Stilleri --- */}}
 {{ define "css" }}
 <style>
 .post-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    list-style: none;
+    padding: 0;
 }
-.post-entry .entry-cover img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.post-entry {
+.post-entry a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: var(--card-background);
     border: 1px solid var(--card-border);
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.3s, transform 0.3s;
+    height: 100%;
 }
-.post-entry:hover {
+.post-entry a:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transform: translateY(-5px);
 }
-.post-entry .entry-header, .post-entry .entry-footer {
-    padding: 0 15px;
+.post-entry .entry-cover img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
-.post-entry .entry-header {
-    padding-top: 15px;
-    min-height: 80px; /* Başlıklar için sabit yükseklik */
+.post-entry .entry-text-wrapper {
+    padding: 15px;
+}
+.post-entry .entry-header h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
 }
 .post-entry .entry-footer {
-    padding-bottom: 15px;
     font-size: 0.8em;
     color: var(--secondary);
-}
-.custom-hr {
-    margin: 40px 0;
 }
 @media (max-width: 768px) {
     .post-grid {

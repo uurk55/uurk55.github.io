@@ -110,6 +110,29 @@ Endişelenmeyin, yalnız değilsiniz. Bu rehberi, tam da bu kafa karışıklığ
 .cta-button:hover {
     background-color: #E57345 !important;
 }
+</style>
+
+/* SAĞ ÜST MENÜYÜ DÜZENLEME */
+.header .menu {
+    display: flex; /* Menüyü esnek kutu yap */
+    align-items: center; /* Dikey olarak ortala */
+}
+
+/* ARAMA İKONUNU EN SAĞA YASLAMA */
+.menu-item-arama {
+    margin-left: auto; /* Otomatik sol boşluk bırakarak en sağa iter */
+    padding-right: 0 !important; /* Sağdaki fazlalık boşluğu kaldır */
+}
+
+/* İKONUN GÖRÜNÜMÜNÜ AYARLAMA */
+.menu-item-arama a {
+    padding-top: 5px !important;
+}
+.menu-item-arama svg {
+    stroke: var(--content); /* İkon rengini metin rengiyle aynı yap */
+    height: 20px;
+    width: 20px;
+}
 </style><meta property="og:url" content="https://edu3dmodel.com/posts/3d-yazici-satin-alma-rehberi/">
   <meta property="og:site_name" content="Edu 3D Model Dünyası">
   <meta property="og:title" content="3D Yazıcı Satın Alma Rehberi: Hangi 3D Yazıcıyı Almalısınız? (FDM & SLA)">
@@ -240,11 +263,6 @@ Endişelenmeyin, yalnız değilsiniz. Bu rehberi, tam da bu kafa karışıklığ
                 </a>
             </li>
             <li>
-                <a href="https://edu3dmodel.com/search/" title="Arama">
-                    <span>Arama</span>
-                </a>
-            </li>
-            <li>
                 <a href="https://edu3dmodel.com/tags/" title="Etiketler">
                     <span>Etiketler</span>
                 </a>
@@ -257,6 +275,11 @@ Endişelenmeyin, yalnız değilsiniz. Bu rehberi, tam da bu kafa karışıklığ
             <li>
                 <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
                     <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search/" title="&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; class=&#34;feather feather-search&#34;&gt;&lt;circle cx=&#34;11&#34; cy=&#34;11&#34; r=&#34;8&#34;&gt;&lt;/circle&gt;&lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;16.65&#34; y2=&#34;16.65&#34;&gt;&lt;/line&gt;&lt;/svg&gt;">
+                    <span>&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; class=&#34;feather feather-search&#34;&gt;&lt;circle cx=&#34;11&#34; cy=&#34;11&#34; r=&#34;8&#34;&gt;&lt;/circle&gt;&lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;16.65&#34; y2=&#34;16.65&#34;&gt;&lt;/line&gt;&lt;/svg&gt;</span>
                 </a>
             </li>
         </ul>

@@ -70,7 +70,7 @@ theme = "PaperMod"
     weight = 40
   # SAĞ ÜST MENÜ
   [[menu.main]]
-    identifier: "tavsiyelerim"
-    name: "Tavsiyelerim"
-    url: "/tavsiyelerim"
-    weight: 50
+    identifier = "tavsiyelerim"
+    name = "Tavsiyelerim"
+    url = "/tavsiyelerim"
+    weight = 50

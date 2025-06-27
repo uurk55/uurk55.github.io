@@ -17,7 +17,6 @@
              · 
             <span>{{ .ReadingTime }} min read</span>
             
-            {{/* --- KATEGORİ GÖSTERME KODU BURADA --- */}}
             {{- with .Params.categories -}}
              · 
             <span class="post-categories">
@@ -54,22 +53,25 @@
         </ul>
         {{- end -}}
         
-        {{- if (.Site.Params.ShowPostNavLinks) -}}
-        <nav class="post-nav">
-            {{- with .NextInSection -}}
-            <a class="prev" href="{{ .Permalink }}">
-                <span class="arrow">←</span>
-                <span class="title">{{ .Title }}</span>
-            </a>
-            {{- end -}}
-            {{- with .PreviousInSection -}}
-            <a class="next" href="{{ .Permalink }}">
-                <span class="title">{{ .Title }}</span>
-                <span class="arrow">→</span>
-            </a>
-            {{- end -}}
-        </nav>
-        {{- end -}}
+        {{/* Sadece 'posts' bölümündeki yazılarda Önceki/Sonraki navigasyonunu göster */}}
+        {{ if eq .Section "posts" }}
+            {{- if .Site.Params.ShowPostNavLinks -}}
+            <nav class="post-nav">
+                {{- with .NextInSection -}}
+                <a class="prev" href="{{ .Permalink }}">
+                    <span class="arrow">←</span>
+                    <span class="title">{{ .Title }}</span>
+                </a>
+                {{- end -}}
+                {{- with .PreviousInSection -}}
+                <a class="next" href="{{ .Permalink }}">
+                    <span class="title">{{ .Title }}</span>
+                    <span class="arrow">→</span>
+                </a>
+                {{- end -}}
+            </nav>
+            {{- end }}
+        {{ end }}
     </footer>
 </article>
 {{ end }}

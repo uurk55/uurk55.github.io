@@ -10,6 +10,10 @@ theme = "PaperMod"
   tag = "tags"
   series = "series"
 
+# GÜVENLİK AYARLARI
+[markup.goldmark.renderer]
+  unsafe = true
+
 # ANA PARAMETRELER BÖLÜMÜ
 [params]
   description = "Fikirlerini 3D Ürüne Dönüştür, Gelir Elde Et!"

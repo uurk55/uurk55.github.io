@@ -46,7 +46,7 @@ theme = "PaperMod"
   imageTitle = "Edu 3D Model Logosu"
   
   [[params.profileMode.buttons]]
-    name = "Tüm Yazılar"
+    name = "Yazılarım"
     url = "/posts"
   [[params.profileMode.buttons]]
     name = "Hakkımda"
@@ -54,9 +54,7 @@ theme = "PaperMod"
   [[params.profileMode.buttons]]
     name = "İletişim"
     url = "/iletisim"
-  [[params.profileMode.buttons]]
-    name = "Tavsiyelerim"
-    url = "/tavsiyelerim"
+
 
 [[params.socialIcons]]
   name = "instagram"
@@ -65,12 +63,19 @@ theme = "PaperMod"
   name = "Mail"
   url = "mailto:edu3dmodel@gmail.com"
 
+
+# SAĞ ÜST MENÜ (YENİ DÜZEN)
 [menu]
   [[menu.main]]
-    identifier = "arsiv"
-    name = "Arşiv"
-    url = "/archives/"
-    weight = 10
+    identifier = "anasayfa"
+    name = "Anasayfa"
+    url = "/"
+    weight = 5  # YENİ EKLENDİ (En başa koymak için düşük değer)
+  [[menu.main]]
+    identifier = "yazilarim"
+    name = "Yazılarım"
+    url = "/posts/"
+    weight = 10 # YENİ EKLENDİ
   [[menu.main]]
     identifier = "arama"
     name = "Arama"

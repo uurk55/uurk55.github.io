@@ -1,6 +1,7 @@
 ---
 title: "3D Yazıcı Satın Alma Rehberi: Hangi 3D Yazıcıyı Almalısınız? (FDM & SLA)"
 date: 2025-06-27T12:00:00+03:00
+weight: 40
 draft: false
 cover:
     image: "/images/yazici-rehberi-cover.jpg"

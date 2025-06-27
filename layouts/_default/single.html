@@ -57,13 +57,13 @@
         {{ if eq .Section "posts" }}
             {{- if .Site.Params.ShowPostNavLinks -}}
             <nav class="post-nav">
-                {{- with .NextInSection -}}
+                {{- with .NextPage.ByWeight -}}
                 <a class="prev" href="{{ .Permalink }}">
                     <span class="arrow">←</span>
                     <span class="title">{{ .Title }}</span>
                 </a>
                 {{- end -}}
-                {{- with .PreviousInSection -}}
+                {{- with .PrevPage.ByWeight -}}
                 <a class="next" href="{{ .Permalink }}">
                     <span class="title">{{ .Title }}</span>
                     <span class="arrow">→</span>

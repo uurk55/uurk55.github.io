@@ -144,80 +144,48 @@
 
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body class="list" id="top"><header class="header">
     <nav class="nav">
-        <div class="logo">
-            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://edu3dmodel.com/" title="Anasayfa">
-                    <span>Anasayfa</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edu3dmodel.com/posts/" title="Yazılarım">
-                    <span>Yazılarım</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edu3dmodel.com/tags/" title="Etiketler">
-                    <span class="active">Etiketler</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
-                    <span>İletişim</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
-                    <span>Tavsiyelerim</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://edu3dmodel.com/search/" title="&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; class=&#34;feather feather-search&#34;&gt;&lt;circle cx=&#34;11&#34; cy=&#34;11&#34; r=&#34;8&#34;&gt;&lt;/circle&gt;&lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;16.65&#34; y2=&#34;16.65&#34;&gt;&lt;/line&gt;&lt;/svg&gt;">
-                    <span>&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; class=&#34;feather feather-search&#34;&gt;&lt;circle cx=&#34;11&#34; cy=&#34;11&#34; r=&#34;8&#34;&gt;&lt;/circle&gt;&lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;16.65&#34; y2=&#34;16.65&#34;&gt;&lt;/line&gt;&lt;/svg&gt;</span>
-                </a>
-            </li>
+        <div class="logo"><a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a><div class="logo-switches">
+    <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+</div></div>
+        <ul class="menu"><li class="menu-item">
+                <a href="/" title="Anasayfa">Anasayfa</a>
+            </li><li class="menu-item">
+                <a href="/posts/" title="Yazılarım">Yazılarım</a>
+            </li><li class="menu-item">
+                <a href="/tags/" title="Etiketler">Etiketler</a>
+            </li><li class="menu-item">
+                <a href="/iletisim" title="İletişim">İletişim</a>
+            </li><li class="menu-item">
+                <a href="/tavsiyelerim" title="Tavsiyelerim">Tavsiyelerim</a>
+            </li><li class="menu-item menu-item-arama">
+                <a href="/search/" title="Arama"><span class="search-icon">Arama</span></a>
+            </li><li class="menu-item-search"><a id="search-trigger" aria-label="Arama" title="Arama">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </a></li>
         </ul>
     </nav>
-</header>
-<main class="main">
+</header><main class="main">
 <header class="page-header">
     <h1>Tags</h1>
 </header>

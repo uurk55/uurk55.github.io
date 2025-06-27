@@ -18,6 +18,16 @@ theme = "PaperMod"
   # YAZI SONUNDA BENZER YAZILARI GÖSTER
   ShowRelatedPosts = true
 
+  ShowFullTextinRSS = true
+
+  [params.assets]
+    disableFingerprinting = true
+
+  [params.cover]
+    hiddenInList = false
+    hiddenInSingle = false
+
+
 
 # SOL TARAFTAKİ PROFİL KUTUSU (LOGO BURADA)
 [params.profileMode]
@@ -40,6 +50,10 @@ theme = "PaperMod"
   [[params.profileMode.buttons]]
   name = "İletişim"
   url = "/iletisim"
+
+  [[params.profileMode.buttons]]
+  name = "Tavsiyelerim"
+  url = "/tavsiyelerim"
 
 # SOSYAL MEDYA İKONLARI
 [[params.socialIcons]]

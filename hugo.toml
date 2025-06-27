@@ -19,6 +19,12 @@ theme = "PaperMod"
   ShowRelatedPosts = true
 
   ShowFullTextinRSS = true
+ 
+  # YAZI METADATA AYARLARI (YENİ BÖLÜM)
+  [params.taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
 
   [params.assets]
     disableFingerprinting = true

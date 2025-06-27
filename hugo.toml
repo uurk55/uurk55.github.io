@@ -15,6 +15,9 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowPostNavLinks = true
 
+  # YAZI SONUNDA BENZER YAZILARI GÖSTER
+  ShowRelatedPosts = true
+
 
 # SOL TARAFTAKİ PROFİL KUTUSU (LOGO BURADA)
 [params.profileMode]

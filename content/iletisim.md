@@ -1,6 +1,6 @@
 ---
 title: "İletişim"
-date: 2023-11-06T10:00:00+03:00
+date: 2025-05-05T10:00:00+03:00
 draft: false
 hidemeta: true
 comments: false
@@ -14,6 +14,7 @@ Benimle iletişime geçmek, bir proje hakkında konuşmak, işbirliği teklif et
 
 Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.
 
+{{< rawhtml >}}
 <form
   action="https://formspree.io/f/xnnvoyvj"  <-- BURAYI KENDİ URL'N İLE DEĞİŞTİR
   method="POST"
@@ -32,6 +33,7 @@ Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.
   </label>
   <button type="submit">Mesajı Gönder</button>
 </form>
+{{< /rawhtml >}}
 
 ---
 
@@ -53,6 +55,7 @@ Güncel paylaşımlarımı takip etmek ve hızlı sorular sormak için:
 
 *Edu 3D Model Dünyası'na gösterdiğiniz ilgi için teşekkür ederim!*
 
+{{< rawhtml >}}
 <style>
     form {
         display: flex;
@@ -80,7 +83,7 @@ Güncel paylaşımlarımı takip etmek ve hızlı sorular sormak için:
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
-        background-color: #FF7F50; /* Bizim turuncu rengimiz */
+        background-color: #FF7F50;
         color: white;
         font-size: 1rem;
         font-weight: bold;
@@ -91,3 +94,4 @@ Güncel paylaşımlarımı takip etmek ve hızlı sorular sormak için:
         background-color: #E57345;
     }
 </style>
+{{< /rawhtml >}}

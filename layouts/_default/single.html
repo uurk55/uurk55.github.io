@@ -1,0 +1,75 @@
+{{ define "main" }}
+<article class="post-single">
+    <header class="post-header">
+        {{ partial "breadcrumbs.html" . }}
+        <h1 class="post-title">
+            {{ .Title }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+        
+        {{- if not .Params.hidemeta }}
+        <div class="post-meta">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+             · 
+            <span>{{ .ReadingTime }} min read</span>
+            
+            {{/* --- KATEGORİ GÖSTERME KODU BURADA --- */}}
+            {{- with .Params.categories -}}
+             · 
+            <span class="post-categories">
+                {{- range . -}}
+                <a href="{{ "categories/" | absURL }}{{ . | urlize }}/">
+                    {{- . -}}
+                </a>
+                {{- end -}}
+            </span>
+            {{- end -}}
+        </div>
+        {{- end }}
+    </header>
+    
+    {{- if .Params.cover.image -}}
+    <div class="post-cover">
+        <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+        {{- if .Params.cover.caption -}}
+        <p class="post-cover-caption">{{ .Params.cover.caption }}</p>
+        {{- end -}}
+    </div>
+    {{- end -}}
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    <footer class="post-footer">
+        {{- with .Params.tags -}}
+        <ul class="post-tags">
+            {{- range . -}}
+            <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>
+            {{- end -}}
+        </ul>
+        {{- end -}}
+        
+        {{- if (.Site.Params.ShowPostNavLinks) -}}
+        <nav class="post-nav">
+            {{- with .NextInSection -}}
+            <a class="prev" href="{{ .Permalink }}">
+                <span class="arrow">←</span>
+                <span class="title">{{ .Title }}</span>
+            </a>
+            {{- end -}}
+            {{- with .PreviousInSection -}}
+            <a class="next" href="{{ .Permalink }}">
+                <span class="title">{{ .Title }}</span>
+                <span class="arrow">→</span>
+            </a>
+            {{- end -}}
+        </nav>
+        {{- end -}}
+    </footer>
+</article>
+{{ end }}

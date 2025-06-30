@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar | Edu 3D Model Dünyası</title>
+<meta name="keywords" content="sla kurulum, reçine yazıcı, güvenlik, yıkama ve kürleme, ilk baskı">
+<meta name="description" content="3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA&rsquo;nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak.
+Bu SLA yazıcı kurulum rehberi, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur yıkama ve kürleme (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!">
+<meta name="author" content="uurk55">
+<link rel="canonical" href="https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edu3dmodel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edu3dmodel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edu3dmodel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+     
+    .post-meta .post-categories a, .post-tags li a {
+        display: inline-block;
+        background-color: #FF7F50;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .post-meta .post-categories a:hover, .post-tags li a:hover {
+        background-color: #E57345;
+        color: white !important;
+    }
+    .post-tags {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .post-tags li {
+        display: inline-block;
+    }
+
+     
+    .cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 8px;
+        background-color: var(--code-bg);
+        border: 1px solid var(--card-border);
+    }
+    .cta-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF7F50 !important;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+        background-color: #E57345 !important;
+    }
+
+    
+</style><meta property="og:url" content="https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/">
+  <meta property="og:site_name" content="Edu 3D Model Dünyası">
+  <meta property="og:title" content="SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar">
+  <meta property="og:description" content="3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA’nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak.
+Bu SLA yazıcı kurulum rehberi, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur yıkama ve kürleme (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-12T11:00:00+03:00">
+    <meta property="article:modified_time" content="2025-04-12T11:00:00+03:00">
+    <meta property="article:tag" content="Sla Kurulum">
+    <meta property="article:tag" content="Reçine Yazıcı">
+    <meta property="article:tag" content="Güvenlik">
+    <meta property="article:tag" content="Yıkama Ve Kürleme">
+    <meta property="article:tag" content="Ilk Baskı">
+    <meta property="og:image" content="https://edu3dmodel.com/images/sla-kurulum-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edu3dmodel.com/images/sla-kurulum-cover.jpg">
+<meta name="twitter:title" content="SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar">
+<meta name="twitter:description" content="3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA&rsquo;nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak.
+Bu SLA yazıcı kurulum rehberi, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur yıkama ve kürleme (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edu3dmodel.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar",
+      "item": "https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar",
+  "name": "SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar",
+  "description": "3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA\u0026rsquo;nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak.\nBu SLA yazıcı kurulum rehberi, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur yıkama ve kürleme (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!\n",
+  "keywords": [
+    "sla kurulum", "reçine yazıcı", "güvenlik", "yıkama ve kürleme", "ilk baskı"
+  ],
+  "articleBody": "3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA’nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak.\nBu SLA yazıcı kurulum rehberi, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur yıkama ve kürleme (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!\nBölüm 1: Atölyenizi Hazırlayın - Önce Güvenlik! Baskı kalitesinden önce, en önemli kuralı masaya yatıralım: Sıvı reçine bir kimyasaldır ve ciddiye alınmalıdır. Doğrudan cilde temas etmemeli ve buharları solunmamalıdır. Ancak doğruAnlaştık, haklısın. Bir önceki metin, tüm adımları tek bir blokta birleştirmeye çalıştığı için biraz karışık ve okunması zor olmuş olabilir.\nBaşlamadan Önce Hazırlamanız Gerekenler:\nİyi Havalandırılan Bir Alan: Yazıcınızı yaşadığınız odadan uzakta, penceresi sürekli açık kalabilen bir alana kurun. Kişisel Koruyucu Ekipman (PPE): Reçineyle her temasınızda mutlaka nitril eldiven, koruyucu gözlük ve maske kullanın. Yüzey Koruması: Masanızın üzerini, dökülmelere karşı büyük bir silikon mat veya karton ile kaplayın. Yanınızda bolca kağıt havlu bulundurun. Bölüm 2: Mekanik Kurulum ve Tabla Kalibrasyonu Güvenli çalışma alanınız hazır olduğuna göre, şimdi makinenin kendisini hazırlayalım. SLA yazıcıların mekanik kurulumu genellikle basittir, ancak tabla kalibrasyonu hayati öneme sahiptir.\nKalibrasyon Adımları:\nReçine Haznesini Çıkarın: Bu adımda sadece çıplak LCD ekran üzerinde çalışacağız. Baskı Tablasını Gevşetin: Üzerindeki vidaları, tabla serbestçe hareket edebilecek kadar gevşetin. Kalibrasyon Kağıdını Yerleştirin: Üreticinin verdiği kalibrasyon kartını (veya bir A4 kağıdını) LCD ekranın üzerine koyun. “Home” Konumuna Gönderin: Menüden, tablayı en alt pozisyona indiren komutu çalıştırın. Sabitleyin ve Sıkın: Tabla kağıdın üzerine oturduğunda, bir elinizle hafifçe bastırırken diğer elinizle vidaları dengeli bir şekilde sıkın. “Set Z=0” Ayarını Yapın: Menüden bu komutu bularak yazıcıya sıfır noktasını öğretin. Bölüm 3: Reçineyi Hazırlama ve İlk Baskıyı Başlatma Bu adımlarda yavaş ve dikkatli olmak, başarılı bir baskının anahtarıdır.\nReçineyi Hazırlama: Yeni bir reçine şişesini, içinde hava kabarcıkları oluşturmadan, en az 30 saniye boyunca yavaşça alt üst ederek çalkalayın. Baskıyı Başlatma: Eldivenleriniz takılıyken, reçineyi haznenin “MAX” çizgisini geçmeyecek kadar dökün. Yazıcıyla gelen USB bellekten bir test modeli seçin ve “Print” tuşuna basın. İlk 10-15 dakika boyunca, baskının tablaya yapışıp yapışmadığını gözlemleyin.\nBölüm 4: Yıkama ve Kürleme - Eserinizi Ortaya Çıkarma Sanatı Baskınız bitti ama işiniz bitmedi! O yapışkan nesneyi şimdi son haline getireceğiz.\n1. Baskıyı Sökme: Eldivenlerinizle, baskı tablasını yazıcıdan çıkarın. Bir spatula yardımıyla modeli dikkatlice tabladan ayırın. 2. Yıkama (Wash): Amacımız, modelin üzerindeki kürlenmemiş sıvı reçineyi temizlemek. Bunun için, bir yıkama istasyonu veya iki ayrı kapta izopropil alkol (IPA) kullanabilirsiniz. 3. Kürleme (Cure): Yıkanmış ve tamamen kurutulmuş model, nihai gücüne ulaşmak için UV ışığıyla sertleştirilmelidir. Bu işlemi bir kürleme istasyonu ile veya modeli birkaç saatliğine doğrudan güneş ışığına bırakarak yapabilirsiniz.\nSONUÇ İşte bu kadar! Güvenli bir çalışma alanı kurmaktan, o yapışkan ilk baskıyı pırıl pırıl bir sanat eserine dönüştürmeye kadar, bir SLA yazıcıyla ilk başarılı üretiminizi yapmanın tüm adımlarını tamamladınız. Gördüğünüz gibi, reçine baskı FDM’den farklı bir disiplin ve dikkat gerektiriyor, ancak sunduğu inanılmaz detay ve yüzey kalitesi, harcanan bu emeğe kesinlikle değiyor.\n",
+  "wordCount" : "544",
+  "inLanguage": "en",
+  "image":"https://edu3dmodel.com/images/sla-kurulum-cover.jpg","datePublished": "2025-04-12T11:00:00+03:00",
+  "dateModified": "2025-04-12T11:00:00+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "uurk55"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edu 3D Model Dünyası",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edu3dmodel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edu3dmodel.com/" title="Anasayfa">
+                    <span>Anasayfa</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/posts" title="Yazılarım">
+                    <span>Yazılarım</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tags" title="Etiketler">
+                    <span>Etiketler</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
+                    <span>İletişim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
+                    <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search" title="Arama">
+                    <span>Arama</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="post-single">
+    <header class="post-header">
+        <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
+        <h1 class="post-title">
+            SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar
+        </h1>
+        <div class="post-meta">
+            <span>April 12, 2025</span>
+             · 
+            <span>3 min read</span> · 
+            <span class="post-categories"><a href="https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/">Başlangıç Rehberi</a><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></span></div>
+    </header><div class="post-cover">
+        <img src="https://edu3dmodel.com/images/sla-kurulum-cover.jpg" alt="Modern bir SLA yazıcı, yanında koruyucu ekipmanlar ve bir reçine şişesi ile bir atölye masasında duruyor"><p class="post-cover-caption">Detayların dünyasına hoş geldiniz. İlk kural: Önce güvenlik.</p></div><div class="post-content">
+        <p>3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA&rsquo;nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, <strong>güvenlik</strong> olacak.</p>
+<p>Bu <strong>SLA yazıcı kurulum rehberi</strong>, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur <strong>yıkama ve kürleme</strong> (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!</p>
+<h3 id="bölüm-1-atölyenizi-hazırlayın---önce-güvenlik">Bölüm 1: Atölyenizi Hazırlayın - Önce Güvenlik!</h3>
+<p>Baskı kalitesinden önce, en önemli kuralı masaya yatıralım: <strong>Sıvı reçine bir kimyasaldır ve ciddiye alınmalıdır.</strong> Doğrudan cilde temas etmemeli ve buharları solunmamalıdır. Ancak doğruAnlaştık, haklısın. Bir önceki metin, tüm adımları tek bir blokta birleştirmeye çalıştığı için biraz karışık ve okunması zor olmuş olabilir.</p>
+<p><img alt="Kişisel koruyucu ekipmanlar: Nitril eldiven, gözlük ve maske bir masada duruyor" loading="lazy" src="/images/sla-guvenlik-ekipman.jpg"></p>
+<p><strong>Başlamadan Önce Hazırlamanız Gerekenler:</strong></p>
+<ol>
+<li><strong>İyi Havalandırılan Bir Alan:</strong> Yazıcınızı yaşadığınız odadan uzakta, penceresi sürekli açık kalabilen bir alana kurun.</li>
+<li><strong>Kişisel Koruyucu Ekipman (PPE):</strong> Reçineyle her temasınızda mutlaka <strong>nitril eldiven, koruyucu gözlük ve maske</strong> kullanın.</li>
+<li><strong>Yüzey Koruması:</strong> Masanızın üzerini, dökülmelere karşı büyük bir <strong>silikon mat</strong> veya karton ile kaplayın. Yanınızda bolca kağıt havlu bulundurun.</li>
+</ol>
+<h3 id="bölüm-2-mekanik-kurulum-ve-tabla-kalibrasyonu">Bölüm 2: Mekanik Kurulum ve Tabla Kalibrasyonu</h3>
+<p>Güvenli çalışma alanınız hazır olduğuna göre, şimdi makinenin kendisini hazırlayalım. SLA yazıcıların mekanik kurulumu genellikle basittir, ancak tabla kalibrasyonu <strong>hayati öneme sahiptir.</strong></p>
+<p><img alt="Bir kişinin SLA yazıcının baskı tablası ile LCD ekranı arasına bir kalibrasyon kartı koyması" loading="lazy" src="/images/sla-kurulum-kalibrasyon.jpg"></p>
+<p><strong>Kalibrasyon Adımları:</strong></p>
+<ol>
+<li><strong>Reçine Haznesini Çıkarın:</strong> Bu adımda sadece çıplak LCD ekran üzerinde çalışacağız.</li>
+<li><strong>Baskı Tablasını Gevşetin:</strong> Üzerindeki vidaları, tabla serbestçe hareket edebilecek kadar gevşetin.</li>
+<li><strong>Kalibrasyon Kağıdını Yerleştirin:</strong> Üreticinin verdiği kalibrasyon kartını (veya bir A4 kağıdını) LCD ekranın üzerine koyun.</li>
+<li><strong>&ldquo;Home&rdquo; Konumuna Gönderin:</strong> Menüden, tablayı en alt pozisyona indiren komutu çalıştırın.</li>
+<li><strong>Sabitleyin ve Sıkın:</strong> Tabla kağıdın üzerine oturduğunda, bir elinizle hafifçe bastırırken diğer elinizle vidaları dengeli bir şekilde sıkın.</li>
+<li><strong>&ldquo;Set Z=0&rdquo; Ayarını Yapın:</strong> Menüden bu komutu bularak yazıcıya sıfır noktasını öğretin.</li>
+</ol>
+<h3 id="bölüm-3-reçineyi-hazırlama-ve-ilk-baskıyı-başlatma">Bölüm 3: Reçineyi Hazırlama ve İlk Baskıyı Başlatma</h3>
+<p>Bu adımlarda yavaş ve dikkatli olmak, başarılı bir baskının anahtarıdır.</p>
+<p><strong>Reçineyi Hazırlama:</strong> Yeni bir reçine şişesini, içinde hava kabarcıkları oluşturmadan, <strong>en az 30 saniye boyunca yavaşça alt üst ederek çalkalayın.</strong>
+<strong>Baskıyı Başlatma:</strong> Eldivenleriniz takılıyken, reçineyi haznenin &ldquo;MAX&rdquo; çizgisini geçmeyecek kadar dökün. Yazıcıyla gelen USB bellekten bir test modeli seçin ve &ldquo;Print&rdquo; tuşuna basın. İlk 10-15 dakika boyunca, baskının tablaya yapışıp yapışmadığını gözlemleyin.</p>
+<h3 id="bölüm-4-yıkama-ve-kürleme---eserinizi-ortaya-çıkarma-sanatı">Bölüm 4: Yıkama ve Kürleme - Eserinizi Ortaya Çıkarma Sanatı</h3>
+<p>Baskınız bitti ama işiniz bitmedi! O yapışkan nesneyi şimdi son haline getireceğiz.</p>
+<p><strong>1. Baskıyı Sökme:</strong> Eldivenlerinizle, baskı tablasını yazıcıdan çıkarın. Bir spatula yardımıyla modeli dikkatlice tabladan ayırın.
+<strong>2. Yıkama (Wash):</strong> Amacımız, modelin üzerindeki kürlenmemiş sıvı reçineyi temizlemek. Bunun için, bir <strong>yıkama istasyonu</strong> veya iki ayrı kapta <strong>izopropil alkol (IPA)</strong> kullanabilirsiniz.
+<strong>3. Kürleme (Cure):</strong> Yıkanmış ve tamamen kurutulmuş model, nihai gücüne ulaşmak için UV ışığıyla sertleştirilmelidir. Bu işlemi bir <strong>kürleme istasyonu</strong> ile veya modeli birkaç saatliğine <strong>doğrudan güneş ışığına</strong> bırakarak yapabilirsiniz.</p>
+<p><img alt="Bir yıkama ve kürleme istasyonunun içinde dönen ve UV ışığı alan bir 3D model" loading="lazy" src="/images/sla-wash-cure.jpg"></p>
+<h3 id="sonuç">SONUÇ</h3>
+<p>İşte bu kadar! Güvenli bir çalışma alanı kurmaktan, o yapışkan ilk baskıyı pırıl pırıl bir sanat eserine dönüştürmeye kadar, bir SLA yazıcıyla ilk başarılı üretiminizi yapmanın tüm adımlarını tamamladınız. Gördüğünüz gibi, reçine baskı FDM&rsquo;den farklı bir disiplin ve dikkat gerektiriyor, ancak sunduğu inanılmaz detay ve yüzey kalitesi, harcanan bu emeğe kesinlikle değiyor.</p>
+
+    </div>
+
+    <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/sla-kurulum/">sla kurulum</a></li><li><a href="https://edu3dmodel.com/tags/re%C3%A7ine-yaz%C4%B1c%C4%B1/">reçine yazıcı</a></li><li><a href="https://edu3dmodel.com/tags/g%C3%BCvenlik/">güvenlik</a></li><li><a href="https://edu3dmodel.com/tags/y%C4%B1kama-ve-k%C3%BCrleme/">yıkama ve kürleme</a></li><li><a href="https://edu3dmodel.com/tags/ilk-bask%C4%B1/">ilk baskı</a></li></ul>
+        <div class="cta-box">
+            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+        </div>
+    </footer>
+
+    
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        <script src="https://giscus.app/client.js"
+            data-repo="uurk55/uurk55.github.io"
+            data-repo-id="R_kgDOMX0zYw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOMX0zY84CfIeL"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="tr"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    
+</article>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edu3dmodel.com/">Edu 3D Model Dünyası</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

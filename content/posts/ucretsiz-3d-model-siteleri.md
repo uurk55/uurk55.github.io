@@ -1,6 +1,6 @@
 ---
-title: "En İyi 5 Ücretsiz 3D Model Sitesi (STL İndir) - 2024"
-date: 2023-11-22T11:00:00+03:00
+title: "En İyi 5 Ücretsiz 3D Model Sitesi (STL İndir) - 2025"
+date: 2025-04-19T11:00:00+03:00
 draft: false
 cover:
     image: "/images/3d-model-siteleri-cover.jpg"

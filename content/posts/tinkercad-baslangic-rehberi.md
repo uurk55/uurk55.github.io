@@ -16,7 +16,6 @@ comments: true
 
 Karşınızda **Autodesk Tinkercad**: 3D modellemenin en basit, en eğlenceli ve en erişilebilir hali. Tinkercad'i, **dijital LEGO oynamak** gibi düşünebilirsiniz. Karmaşık çizimler yerine, temel geometrik şekilleri (küpleri, silindirleri, küreleri) birleştirerek, keserek ve şekillendirerek hayalinizdeki objeyi yaratırsınız.
 
-(/images/tinkercad.jpg)
 
 Bu rehber, 'ben tasarımcı değilim' diyen herkesin yanıldığını kanıtlamak için hazırlandı. Bu yazının sonunda, hiçbir ön bilgiye sahip olmadan, 3D yazıcınızda basmaya hazır ilk özgün modelinizi yaratmış olacaksınız.
 

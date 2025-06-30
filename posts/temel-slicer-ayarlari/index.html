@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar | Edu 3D Model Dünyası</title>
+<meta name="keywords" content="slicer ayarları, cura ayarları, 3d baskı kalitesi, katman yüksekliği, dolgu">
+<meta name="description" content="Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &ldquo;Yazdır&rdquo; tuşuna basıyorsunuz ve sonuç&hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.
+Slicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir &ldquo;yemek tarifine&rdquo; dönüştüren şefinizdir. Modele, &ldquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?&rdquo; gibi tüm talimatları veren program budur.">
+<meta name="author" content="uurk55">
+<link rel="canonical" href="https://edu3dmodel.com/posts/temel-slicer-ayarlari/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edu3dmodel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edu3dmodel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edu3dmodel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edu3dmodel.com/posts/temel-slicer-ayarlari/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+     
+    .post-meta .post-categories a, .post-tags li a {
+        display: inline-block;
+        background-color: #FF7F50;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .post-meta .post-categories a:hover, .post-tags li a:hover {
+        background-color: #E57345;
+        color: white !important;
+    }
+    .post-tags {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .post-tags li {
+        display: inline-block;
+    }
+
+     
+    .cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 8px;
+        background-color: var(--code-bg);
+        border: 1px solid var(--card-border);
+    }
+    .cta-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF7F50 !important;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+        background-color: #E57345 !important;
+    }
+
+    
+</style><meta property="og:url" content="https://edu3dmodel.com/posts/temel-slicer-ayarlari/">
+  <meta property="og:site_name" content="Edu 3D Model Dünyası">
+  <meta property="og:title" content="Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar">
+  <meta property="og:description" content="Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. “Yazdır” tuşuna basıyorsunuz ve sonuç… bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.
+Slicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir “yemek tarifine” dönüştüren şefinizdir. Modele, “Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?” gibi tüm talimatları veren program budur.">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-26T11:00:00+03:00">
+    <meta property="article:modified_time" content="2025-04-26T11:00:00+03:00">
+    <meta property="article:tag" content="Slicer Ayarları">
+    <meta property="article:tag" content="Cura Ayarları">
+    <meta property="article:tag" content="3d Baskı Kalitesi">
+    <meta property="article:tag" content="Katman Yüksekliği">
+    <meta property="article:tag" content="Dolgu">
+    <meta property="og:image" content="https://edu3dmodel.com/images/slicer-ayar-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edu3dmodel.com/images/slicer-ayar-cover.jpg">
+<meta name="twitter:title" content="Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar">
+<meta name="twitter:description" content="Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &ldquo;Yazdır&rdquo; tuşuna basıyorsunuz ve sonuç&hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.
+Slicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir &ldquo;yemek tarifine&rdquo; dönüştüren şefinizdir. Modele, &ldquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?&rdquo; gibi tüm talimatları veren program budur.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edu3dmodel.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar",
+      "item": "https://edu3dmodel.com/posts/temel-slicer-ayarlari/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar",
+  "name": "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar",
+  "description": "Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. \u0026ldquo;Yazdır\u0026rdquo; tuşuna basıyorsunuz ve sonuç\u0026hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.\nSlicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir \u0026ldquo;yemek tarifine\u0026rdquo; dönüştüren şefinizdir. Modele, \u0026ldquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?\u0026rdquo; gibi tüm talimatları veren program budur.\n",
+  "keywords": [
+    "slicer ayarları", "cura ayarları", "3d baskı kalitesi", "katman yüksekliği", "dolgu"
+  ],
+  "articleBody": "Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. “Yazdır” tuşuna basıyorsunuz ve sonuç… bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.\nSlicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir “yemek tarifine” dönüştüren şefinizdir. Modele, “Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?” gibi tüm talimatları veren program budur.\nNeyse ki, bu mutfağın kontrolü tamamen sizde! Bu rehberde, indirdiğiniz bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek en kritik 5 temel slicer ayarını öğreneceksiniz.\nİlk Adım: Modeli Dilimleyiciye Yükleme Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi Ultimaker Cura ve PrusaSlicer‘dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine sürükleyip bırakın.\nModeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.\n1. Katman Yüksekliği (Layer Height): Kalite vs. Hız Bu ayarı, bir resmi çizerken kullandığınız kalemin ucu gibi düşünebilirsiniz.\nKalın Uçlu Kalem (Yüksek Değer, örn: 0.28mm): Baskı çok hızlı biter ama katman çizgileri belirgin olur. İnce Uçlu Kalem (Düşük Değer, örn: 0.12mm): Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır. Pratik Kural: Çoğu günlük baskı için 0.20mm harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!\n2. Dolgu (Infill): Sağlamlık vs. Malzeme Tüketimi Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır. Slicer’da bu ayarı genellikle yüzde olarak görürsünüz.\n%10-20 (Standart Dolgu): Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir. %25-50 (Fonksiyonel Dolgu): Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir. Ayrıca Dolgu Deseni (Infill Pattern) de önemlidir. Hız için Grid, çok yönlü sağlamlık için Cubic, esneklik ve havalı bir görünüm için ise Gyroid en popüler seçeneklerdir. Pratik Kural: 15% dolgu yoğunluğu ve Cubic deseni, çoğu proje için en iyi dengedir.\n3. Hız (Print Speed): Acele İşe Şeytan Karışır mı? Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, “ringing” (yüzeyde dalgalanma) gibi hatalara, zayıf katman yapışmasına ve detay kaybına yol açabilir.\nModern dilimleyiciler, baskının farklı bölümleri için farklı hızlar ayarlamanıza olanak tanır. Altın Kural: Baskının görünen yüzü olan Dış Duvar Hızını (Outer Wall Speed) her zaman genel hızınızdan daha yavaş tutun. Pratik Kural: Yeni bir filamenti veya karmaşık bir modeli denerken, 50-60mm/s gibi mütevazı bir genel hızla başlayın.\n4. Destekler (Supports): Yer Çekimine Meydan Okuma Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin “havada kalacak” kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren 45-50 dereceyi aştığında destek gerekir.\nDestek Tipi: Karmaşık ve organik şekilli modeller (figürler gibi) için Tree (Ağaç) destekler harikadır. Daha az malzeme harcar ve sökmesi daha kolaydır. Yerleşim: Mümkün olduğunca Touching Buildplate (Sadece Tablaya Değen) seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir. 5. Tabla Yapışması (Bed Adhesion): İlk Katman Garantisi Baskınızın tabladan ayrılıp bir “spagetti yığınına” dönüşmesini engellemek için bu ayarlara hakim olmalısınız.\nSkirt (Etek): Modele değmeyen, baskı başlamadan önce nozzle’ı temizleyen dış hatlardır. Neredeyse her zaman kullanın. Brim (Kenarlık): Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır. Raft (Sal): Modelin altına basılan kalın bir plastik “sal\"dır. Sadece son çare olarak kullanılır, çünkü çok fazla malzeme ve zaman harcar. !(/images/tabla-yapisma.jpg)\nSonuç: Artık Kontrol Sizde! Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, Slicer’ın standart kalite profillerinden biriyle başlayıp, bu temel ayarlarla korkmadan oynamak, küçük değişiklikler yapıp sonuçlarını gözlemlemektir. Artık bir şefin mutfağındaki tüm baharatları tanıyorsunuz. Şimdi o baharatları kullanarak kendi özel tarifinizi yaratma zamanı!\n",
+  "wordCount" : "657",
+  "inLanguage": "en",
+  "image":"https://edu3dmodel.com/images/slicer-ayar-cover.jpg","datePublished": "2025-04-26T11:00:00+03:00",
+  "dateModified": "2025-04-26T11:00:00+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "uurk55"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edu3dmodel.com/posts/temel-slicer-ayarlari/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edu 3D Model Dünyası",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edu3dmodel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edu3dmodel.com/" title="Anasayfa">
+                    <span>Anasayfa</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/posts" title="Yazılarım">
+                    <span>Yazılarım</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tags" title="Etiketler">
+                    <span>Etiketler</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
+                    <span>İletişim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
+                    <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search" title="Arama">
+                    <span>Arama</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="post-single">
+    <header class="post-header">
+        <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
+        <h1 class="post-title">
+            Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar
+        </h1>
+        <div class="post-meta">
+            <span>April 26, 2025</span>
+             · 
+            <span>4 min read</span> · 
+            <span class="post-categories"><a href="https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/">Başlangıç Rehberi</a><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></span></div>
+    </header><div class="post-cover">
+        <img src="https://edu3dmodel.com/images/slicer-ayar-cover.jpg" alt="Bir bilgisayar ekranında 3D slicer yazılımı ve yanında mükemmel basılmış bir 3D obje"><p class="post-cover-caption">Mükemmel baskının sırrı, doğru tarifte gizlidir. Mutfağın kontrolünü elinize alın!</p></div><div class="post-content">
+        <p>Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &ldquo;Yazdır&rdquo; tuşuna basıyorsunuz ve sonuç&hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani <strong>Dilimleyici (Slicer)</strong> yazılımında.</p>
+<p><strong>Slicer nedir?</strong> En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir &ldquo;yemek tarifine&rdquo; dönüştüren şefinizdir. Modele, &ldquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?&rdquo; gibi tüm talimatları veren program budur.</p>
+<p>Neyse ki, bu mutfağın kontrolü tamamen sizde! Bu rehberde, indirdiğiniz bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek <strong>en kritik 5 temel slicer ayarını</strong> öğreneceksiniz.</p>
+<h3 id="ilk-adım-modeli-dilimleyiciye-yükleme">İlk Adım: Modeli Dilimleyiciye Yükleme</h3>
+<p>Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi <strong>Ultimaker Cura</strong> ve <strong>PrusaSlicer</strong>&lsquo;dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine <strong>sürükleyip bırakın.</strong></p>
+<p><img alt="Bir STL dosyasının Cura veya PrusaSlicer arayüzüne sürüklenip bırakıldığı anı gösteren ekran görüntüsü" loading="lazy" src="/images/slicer-import.jpg"></p>
+<p>Modeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.</p>
+<hr>
+<h3 id="1-katman-yüksekliği-layer-height-kalite-vs-hız">1. Katman Yüksekliği (Layer Height): Kalite vs. Hız</h3>
+<p>Bu ayarı, bir resmi çizerken kullandığınız kalemin ucu gibi düşünebilirsiniz.</p>
+<ul>
+<li><strong>Kalın Uçlu Kalem (Yüksek Değer, örn: 0.28mm):</strong> Baskı çok hızlı biter ama katman çizgileri belirgin olur.</li>
+<li><strong>İnce Uçlu Kalem (Düşük Değer, örn: 0.12mm):</strong> Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır.</li>
+</ul>
+<p><img alt="Aynı 3D modelin farklı katman yükseklikleriyle basılmış iki versiyonu yan yana: Biri pürüzsüz, diğeri belirgin katman çizgili" loading="lazy" src="/images/slicer-layer-height.jpg"></p>
+<p><strong>Pratik Kural:</strong> Çoğu günlük baskı için <code>0.20mm</code> harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!</p>
+<h3 id="2-dolgu-infill-sağlamlık-vs-malzeme-tüketimi">2. Dolgu (Infill): Sağlamlık vs. Malzeme Tüketimi</h3>
+<p>Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır. Slicer&rsquo;da bu ayarı genellikle yüzde olarak görürsünüz.</p>
+<ul>
+<li><strong>%10-20 (Standart Dolgu):</strong> Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir.</li>
+<li><strong>%25-50 (Fonksiyonel Dolgu):</strong> Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir.</li>
+</ul>
+<p>Ayrıca <strong>Dolgu Deseni (Infill Pattern)</strong> de önemlidir. Hız için <code>Grid</code>, çok yönlü sağlamlık için <code>Cubic</code>, esneklik ve havalı bir görünüm için ise <code>Gyroid</code> en popüler seçeneklerdir. <strong>Pratik Kural:</strong> <code>15%</code> dolgu yoğunluğu ve <code>Cubic</code> deseni, çoğu proje için en iyi dengedir.</p>
+<h3 id="3-hız-print-speed-acele-işe-şeytan-karışır-mı">3. Hız (Print Speed): Acele İşe Şeytan Karışır mı?</h3>
+<p>Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, &ldquo;ringing&rdquo; (yüzeyde dalgalanma) gibi hatalara, zayıf katman yapışmasına ve detay kaybına yol açabilir.</p>
+<p>Modern dilimleyiciler, baskının farklı bölümleri için farklı hızlar ayarlamanıza olanak tanır. <strong>Altın Kural:</strong> Baskının görünen yüzü olan <strong>Dış Duvar Hızını (Outer Wall Speed)</strong> her zaman genel hızınızdan daha yavaş tutun. <strong>Pratik Kural:</strong> Yeni bir filamenti veya karmaşık bir modeli denerken, <strong>50-60mm/s</strong> gibi mütevazı bir genel hızla başlayın.</p>
+<h3 id="4-destekler-supports-yer-çekimine-meydan-okuma">4. Destekler (Supports): Yer Çekimine Meydan Okuma</h3>
+<p>Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin &ldquo;havada kalacak&rdquo; kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren <strong>45-50 dereceyi</strong> aştığında destek gerekir.</p>
+<p><img alt="Örnek görüntüsü" loading="lazy" src="/images/slicer-supports.jpg"></p>
+<ul>
+<li><strong>Destek Tipi:</strong> Karmaşık ve organik şekilli modeller (figürler gibi) için <strong>Tree (Ağaç)</strong> destekler harikadır. Daha az malzeme harcar ve sökmesi daha kolaydır.</li>
+<li><strong>Yerleşim:</strong> Mümkün olduğunca <strong>Touching Buildplate (Sadece Tablaya Değen)</strong> seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir.</li>
+</ul>
+<h3 id="5-tabla-yapışması-bed-adhesion-ilk-katman-garantisi">5. Tabla Yapışması (Bed Adhesion): İlk Katman Garantisi</h3>
+<p>Baskınızın tabladan ayrılıp bir &ldquo;spagetti yığınına&rdquo; dönüşmesini engellemek için bu ayarlara hakim olmalısınız.</p>
+<ol>
+<li><strong>Skirt (Etek):</strong> Modele değmeyen, baskı başlamadan önce nozzle&rsquo;ı temizleyen dış hatlardır. <strong>Neredeyse her zaman kullanın.</strong></li>
+<li><strong>Brim (Kenarlık):</strong> Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır.</li>
+<li><strong>Raft (Sal):</strong> Modelin altına basılan kalın bir plastik &ldquo;sal&quot;dır. <strong>Sadece son çare olarak kullanılır,</strong> çünkü çok fazla malzeme ve zaman harcar.</li>
+</ol>
+<p>!(/images/tabla-yapisma.jpg)</p>
+<h3 id="sonuç-artık-kontrol-sizde">Sonuç: Artık Kontrol Sizde!</h3>
+<p>Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, Slicer&rsquo;ın standart kalite profillerinden biriyle başlayıp, bu temel ayarlarla korkmadan oynamak, küçük değişiklikler yapıp sonuçlarını gözlemlemektir. Artık bir şefin mutfağındaki tüm baharatları tanıyorsunuz. Şimdi o baharatları kullanarak kendi özel tarifinizi yaratma zamanı!</p>
+
+    </div>
+
+    <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1/">slicer ayarları</a></li><li><a href="https://edu3dmodel.com/tags/cura-ayarlar%C4%B1/">cura ayarları</a></li><li><a href="https://edu3dmodel.com/tags/3d-bask%C4%B1-kalitesi/">3d baskı kalitesi</a></li><li><a href="https://edu3dmodel.com/tags/katman-y%C3%BCksekli%C4%9Fi/">katman yüksekliği</a></li><li><a href="https://edu3dmodel.com/tags/dolgu/">dolgu</a></li></ul>
+        <div class="cta-box">
+            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+        </div>
+    </footer>
+
+    
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        <script src="https://giscus.app/client.js"
+            data-repo="uurk55/uurk55.github.io"
+            data-repo-id="R_kgDOMX0zYw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOMX0zY84CfIeL"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="tr"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    
+</article>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edu3dmodel.com/">Edu 3D Model Dünyası</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

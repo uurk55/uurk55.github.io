@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Katman Yüksekliği on Edu 3D Model Dünyası</title>
+    <link>https://edu3dmodel.com/tags/katman-y%C3%BCksekli%C4%9Fi/</link>
+    <description>Recent content in Katman Yüksekliği on Edu 3D Model Dünyası</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Sat, 26 Apr 2025 11:00:00 +0300</lastBuildDate>
+    <atom:link href="https://edu3dmodel.com/tags/katman-y%C3%BCksekli%C4%9Fi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar</title>
+      <link>https://edu3dmodel.com/posts/temel-slicer-ayarlari/</link>
+      <pubDate>Sat, 26 Apr 2025 11:00:00 +0300</pubDate>
+      <guid>https://edu3dmodel.com/posts/temel-slicer-ayarlari/</guid>
+      <description>&lt;p&gt;Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &amp;ldquo;Yazdır&amp;rdquo; tuşuna basıyorsunuz ve sonuç&amp;hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani &lt;strong&gt;Dilimleyici (Slicer)&lt;/strong&gt; yazılımında.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Slicer nedir?&lt;/strong&gt; En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir &amp;ldquo;yemek tarifine&amp;rdquo; dönüştüren şefinizdir. Modele, &amp;ldquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?&amp;rdquo; gibi tüm talimatları veren program budur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

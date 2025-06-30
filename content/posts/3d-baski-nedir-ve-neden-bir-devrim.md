@@ -1,6 +1,6 @@
 ---
 title: "3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı"
-date: 2025-06-25T14:00:00+03:00
+date: 2025-03-08T14:00:00+03:00
 draft: false
 cover:
     image: "/images/kapak-gorseli.png" # Öne Çıkan Görsel

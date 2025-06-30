@@ -1,6 +1,6 @@
 ---
 title: "FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?"
-date: 2025-06-26T11:00:00+03:00
+date: 2025-03-15T11:00:00+03:00
 draft: false
 cover:
     image: "/images/fdm-vs-sla-cover.jpg" # Öne Çıkan Görsel

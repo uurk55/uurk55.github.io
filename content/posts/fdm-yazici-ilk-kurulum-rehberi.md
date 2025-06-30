@@ -1,6 +1,6 @@
 ---
 title: "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya"
-date: 2025-06-30T10:00:00+03:00
+date: 2025-04-05T10:00:00+03:00
 draft: false
 cover:
     image: "/images/kurulum-rehberi-cover.jpg"

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya | Edu 3D Model Dünyası</title>
+<meta name="keywords" content="fdm kurulum, 3d yazıcı kurulum, ilk baskı, tabla kalibrasyonu, montaj">
+<meta name="description" content="O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.
+İşte bu yüzden, FDM 3D yazıcı ilk kurulum sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!">
+<meta name="author" content="uurk55">
+<link rel="canonical" href="https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edu3dmodel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edu3dmodel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edu3dmodel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+     
+    .post-meta .post-categories a, .post-tags li a {
+        display: inline-block;
+        background-color: #FF7F50;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .post-meta .post-categories a:hover, .post-tags li a:hover {
+        background-color: #E57345;
+        color: white !important;
+    }
+    .post-tags {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .post-tags li {
+        display: inline-block;
+    }
+
+     
+    .cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 8px;
+        background-color: var(--code-bg);
+        border: 1px solid var(--card-border);
+    }
+    .cta-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF7F50 !important;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+        background-color: #E57345 !important;
+    }
+
+    
+</style><meta property="og:url" content="https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/">
+  <meta property="og:site_name" content="Edu 3D Model Dünyası">
+  <meta property="og:title" content="FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya">
+  <meta property="og:description" content="O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.
+İşte bu yüzden, FDM 3D yazıcı ilk kurulum sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-30T10:00:00+03:00">
+    <meta property="article:modified_time" content="2025-06-30T10:00:00+03:00">
+    <meta property="article:tag" content="Fdm Kurulum">
+    <meta property="article:tag" content="3d Yazıcı Kurulum">
+    <meta property="article:tag" content="Ilk Baskı">
+    <meta property="article:tag" content="Tabla Kalibrasyonu">
+    <meta property="article:tag" content="Montaj">
+    <meta property="og:image" content="https://edu3dmodel.com/images/kurulum-rehberi-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edu3dmodel.com/images/kurulum-rehberi-cover.jpg">
+<meta name="twitter:title" content="FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya">
+<meta name="twitter:description" content="O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.
+İşte bu yüzden, FDM 3D yazıcı ilk kurulum sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edu3dmodel.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya",
+      "item": "https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya",
+  "name": "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya",
+  "description": "O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.\nİşte bu yüzden, FDM 3D yazıcı ilk kurulum sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!\n",
+  "keywords": [
+    "fdm kurulum", "3d yazıcı kurulum", "ilk baskı", "tabla kalibrasyonu", "montaj"
+  ],
+  "articleBody": "O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.\nİşte bu yüzden, FDM 3D yazıcı ilk kurulum sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!\n(Not: Eğer bir SLA (reçine) yazıcı aldıysanız, endişelenmeyin! Yakında yayınlayacağımız size özel, detaylı kurulum rehberini bekleyin!)\nAdım 1: Kontrollü Kutu Açılımı ve Mekanik Montaj Kutuyu bir an önce yırtıp açma isteğinizi bastırın ve derin bir nefes alın. Başarılı bir 3D yazıcı montajı, kontrollü bir başlangıçla olur. İlk olarak, kutu içinden çıkan kullanım kılavuzundaki parça listesiyle kutu içeriğini karşılaştırarak envanter kontrolü yapın. Eksik bir parça varsa, ilerlemeden satıcıyla iletişime geçin.\nMontaj sırasında hem basılı kılavuzu hem de üreticinin YouTube’daki montaj videosunu aynı anda takip etmek en iyi yöntemdir. Taşıma sırasında gevşeyebilecek vidaları, özellikle de ana iskeleti oluşturanları kontrol edin ve sıkın. Altın Kural: Eksen tekerlekleri ne çok sıkı ne de çok gevşek olmalı; hafif bir dirençle, takılmadan dönmelidir. Sağlam ve oynamayan bir iskelet, “katman kayması” gibi sorunları önlemenin ilk adımıdır.\nAdım 2: Tabla Kalibrasyonu - Başarının Temeli Şimdi, tüm baskılarınızın kalitesini belirleyecek olan ayara geldik: Tabla Kalibrasyonu (Bed Leveling). Amaç, baskı ucunun (nozzle) baskı tablasının her noktasına eşit ve doğru mesafede olmasını sağlamaktır. Bu mesafe yanlışsa, baskınız ya tablaya yapışmaz ya da nozzle tıkanır.\nEğer yazıcınızda Otomatik Tabla Kalibrasyonu (ABL) varsa, bu işlemi başlatın ve ardından menüden “Z-Offset” ayarını yapın. Bir A4 kağıdını nozzle ile tabla arasına koyarak, kağıdın hafifçe sürtünerek hareket ettiği noktayı bulana kadar Z-Offset değerini ayarlayın. Eğer manuel kalibrasyon yapıyorsanız, bu kağıt testini tablanın dört köşesi ve ortası için, tekerlekleri çevirerek en az iki tur boyunca tekrarlayın.\nAdım 3: Filamenti Yükleme ve İlk Isıtma Yazıcınızın iskeleti sağlam, tablası ise ayarlı. Artık ona, eserlerini yaratacağı “mürekkebi”, yani filamenti verme zamanı.\nAltın Kural: Filamentin ucunu ASLA serbest bırakmayın! Eğer ucu serbest bırakırsanız, makara kendi kendine gevşeyebilir ve baskının ortasında takılıp her şeyi mahvedecek bir düğüm oluşturabilir.\nYazıcınızın menüsünden “Preheat PLA” (PLA için Ön Isıtma) seçeneğiyle nozzle’ı ısıtın. Isındıktan sonra, filamenti extruder mekanizmasından yavaşça itin. Ucundan erimiş plastiğin düzgün bir şekilde aktığını gördüğünüzde ve rengi tamamen oturduğunda, yazıcınız baskıya hazırdır.\nAdım 4: İlk Test Baskısı - O Sihirli An Artık o büyülü “yazdır” tuşuna basma zamanı. Kendi modelinizi dilimlemeden önce, genellikle yazıcının SD kartında gelen calibration_cube.gcode gibi hazır bir test dosyasını basarak makinenin doğruluğunu test etmek en iyi yoldur.\nEN KRİTİK AN: İLK KATMAN Baskıyı başlattıktan sonra gözünüzü ilk katmandan ayırmayın. Plastik tablaya güzelce yapışıyor mu? Çizgiler ne çok ezilmiş ne de çok yuvarlak mı? Eğer ilk katmanda bir sorun görürseniz, baskıyı durdurun ve Z-offset ayarınızı çok küçük bir miktar değiştirip tekrar deneyin.\nİlk 2-3 katman sorunsuz atıldıysa, artık arkanıza yaslanıp makinenizin sihrini izleyebilirsiniz. Baskı bittiğinde tablanın soğumasını bekleyin ve parçanızı alın.\nTebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, yeni FDM yazıcınızla olan maceranızın ilk somut kanıtıdır.\n",
+  "wordCount" : "555",
+  "inLanguage": "en",
+  "image":"https://edu3dmodel.com/images/kurulum-rehberi-cover.jpg","datePublished": "2025-06-30T10:00:00+03:00",
+  "dateModified": "2025-06-30T10:00:00+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "uurk55"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edu 3D Model Dünyası",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edu3dmodel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edu3dmodel.com/" title="Anasayfa">
+                    <span>Anasayfa</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/posts" title="Yazılarım">
+                    <span>Yazılarım</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tags" title="Etiketler">
+                    <span>Etiketler</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
+                    <span>İletişim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
+                    <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search" title="Arama">
+                    <span>Arama</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="post-single">
+    <header class="post-header">
+        <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
+        <h1 class="post-title">
+            FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya
+        </h1>
+        <div class="post-meta">
+            <span>June 30, 2025</span>
+             · 
+            <span>3 min read</span> · 
+            <span class="post-categories"><a href="https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/">Başlangıç Rehberi</a><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></span></div>
+    </header><div class="post-cover">
+        <img src="https://edu3dmodel.com/images/kurulum-rehberi-cover.jpg" alt="Bir masanın üzerinde yeni kurulmuş bir FDM 3D yazıcı ve yanında başarılı bir test baskısı duruyor"><p class="post-cover-caption">Bu yolculuktaki en heyecanlı an: Fikirden gerçeğe ilk adım.</p></div><div class="post-content">
+        <p>O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyoruz. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.</p>
+<p>İşte bu yüzden, <strong>FDM 3D yazıcı ilk kurulum</strong> sürecinde size adım adım eşlik edecek bu rehberi hazırladık. Amacımız, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni <strong>FDM yazıcınızla</strong> sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!</p>
+<p><em>(Not: Eğer bir SLA (reçine) yazıcı aldıysanız, endişelenmeyin! Yakında yayınlayacağımız size özel, detaylı kurulum rehberini bekleyin!)</em></p>
+<h3 id="adım-1-kontrollü-kutu-açılımı-ve-mekanik-montaj">Adım 1: Kontrollü Kutu Açılımı ve Mekanik Montaj</h3>
+<p>Kutuyu bir an önce yırtıp açma isteğinizi bastırın ve derin bir nefes alın. Başarılı bir <strong>3D yazıcı montajı</strong>, kontrollü bir başlangıçla olur. İlk olarak, kutu içinden çıkan kullanım kılavuzundaki parça listesiyle kutu içeriğini karşılaştırarak envanter kontrolü yapın. Eksik bir parça varsa, ilerlemeden satıcıyla iletişime geçin.</p>
+<p><img alt="Bir kişinin 3D yazıcı montaj kılavuzuna bakarak parçaları birleştirmesi" loading="lazy" src="/images/kurulum-montaj.jpg"></p>
+<p>Montaj sırasında hem basılı kılavuzu hem de üreticinin YouTube&rsquo;daki montaj videosunu aynı anda takip etmek en iyi yöntemdir. Taşıma sırasında gevşeyebilecek vidaları, özellikle de ana iskeleti oluşturanları kontrol edin ve sıkın. <strong>Altın Kural:</strong> Eksen tekerlekleri ne çok sıkı ne de çok gevşek olmalı; hafif bir dirençle, takılmadan dönmelidir. Sağlam ve oynamayan bir iskelet, &ldquo;katman kayması&rdquo; gibi sorunları önlemenin ilk adımıdır.</p>
+<h3 id="adım-2-tabla-kalibrasyonu---başarının-temeli">Adım 2: Tabla Kalibrasyonu - Başarının Temeli</h3>
+<p>Şimdi, tüm baskılarınızın kalitesini belirleyecek olan ayara geldik: <strong>Tabla Kalibrasyonu (Bed Leveling).</strong> Amaç, baskı ucunun (nozzle) baskı tablasının her noktasına eşit ve doğru mesafede olmasını sağlamaktır. Bu mesafe yanlışsa, baskınız ya tablaya yapışmaz ya da nozzle tıkanır.</p>
+<p><img alt="Bir kişinin tabla kalibrasyonu yaparken nozul ile tabla arasına bir A4 kağıt koyması" loading="lazy" src="/images/kurulum-kalibrasyon.jpg"></p>
+<p>Eğer yazıcınızda <strong>Otomatik Tabla Kalibrasyonu (ABL)</strong> varsa, bu işlemi başlatın ve ardından menüden &ldquo;Z-Offset&rdquo; ayarını yapın. Bir A4 kağıdını nozzle ile tabla arasına koyarak, kağıdın hafifçe sürtünerek hareket ettiği noktayı bulana kadar Z-Offset değerini ayarlayın. Eğer manuel kalibrasyon yapıyorsanız, bu kağıt testini tablanın dört köşesi ve ortası için, tekerlekleri çevirerek en az iki tur boyunca tekrarlayın.</p>
+<h3 id="adım-3-filamenti-yükleme-ve-ilk-isıtma">Adım 3: Filamenti Yükleme ve İlk Isıtma</h3>
+<p>Yazıcınızın iskeleti sağlam, tablası ise ayarlı. Artık ona, eserlerini yaratacağı &ldquo;mürekkebi&rdquo;, yani filamenti verme zamanı.</p>
+<p><strong>Altın Kural:</strong> Filamentin ucunu <strong>ASLA</strong> serbest bırakmayın! Eğer ucu serbest bırakırsanız, makara kendi kendine gevşeyebilir ve baskının ortasında takılıp her şeyi mahvedecek bir düğüm oluşturabilir.</p>
+<p><img alt="Bir kişinin filamentin ucunu 3D yazıcının extruder mekanizmasına takması" loading="lazy" src="/images/kurulum-filament-yukleme.jpg"></p>
+<p>Yazıcınızın menüsünden &ldquo;Preheat PLA&rdquo; (PLA için Ön Isıtma) seçeneğiyle nozzle&rsquo;ı ısıtın. Isındıktan sonra, filamenti extruder mekanizmasından yavaşça itin. Ucundan erimiş plastiğin düzgün bir şekilde aktığını gördüğünüzde ve rengi tamamen oturduğunda, yazıcınız baskıya hazırdır.</p>
+<h3 id="adım-4-ilk-test-baskısı---o-sihirli-an">Adım 4: İlk Test Baskısı - O Sihirli An</h3>
+<p>Artık o büyülü &ldquo;yazdır&rdquo; tuşuna basma zamanı. Kendi modelinizi dilimlemeden önce, genellikle yazıcının SD kartında gelen <code>calibration_cube.gcode</code> gibi hazır bir test dosyasını basarak makinenin doğruluğunu test etmek en iyi yoldur.</p>
+<p><strong>EN KRİTİK AN: İLK KATMAN</strong>
+Baskıyı başlattıktan sonra gözünüzü ilk katmandan ayırmayın. Plastik tablaya güzelce yapışıyor mu? Çizgiler ne çok ezilmiş ne de çok yuvarlak mı? Eğer ilk katmanda bir sorun görürseniz, baskıyı durdurun ve Z-offset ayarınızı çok küçük bir miktar değiştirip tekrar deneyin.</p>
+<p><img alt="Bir 3D yazıcının ilk katmanı mükemmel bir şekilde çizmesi - yakın çekim makro fotoğraf" loading="lazy" src="/images/kurulum-ilk-katman.jpg"></p>
+<p>İlk 2-3 katman sorunsuz atıldıysa, artık arkanıza yaslanıp makinenizin sihrini izleyebilirsiniz. Baskı bittiğinde tablanın soğumasını bekleyin ve parçanızı alın.</p>
+<p><strong>Tebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, yeni FDM yazıcınızla olan maceranızın ilk somut kanıtıdır.</strong></p>
+
+    </div>
+
+    <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/fdm-kurulum/">fdm kurulum</a></li><li><a href="https://edu3dmodel.com/tags/3d-yaz%C4%B1c%C4%B1-kurulum/">3d yazıcı kurulum</a></li><li><a href="https://edu3dmodel.com/tags/ilk-bask%C4%B1/">ilk baskı</a></li><li><a href="https://edu3dmodel.com/tags/tabla-kalibrasyonu/">tabla kalibrasyonu</a></li><li><a href="https://edu3dmodel.com/tags/montaj/">montaj</a></li></ul>
+        <div class="cta-box">
+            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+        </div>
+    </footer>
+
+    
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        <script src="https://giscus.app/client.js"
+            data-repo="uurk55/uurk55.github.io"
+            data-repo-id="R_kgDOMX0zYw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOMX0zY84CfIeL"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="tr"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    
+</article>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edu3dmodel.com/">Edu 3D Model Dünyası</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

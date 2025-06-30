@@ -6,13 +6,20 @@
     <description>Recent content in Categories on Edu 3D Model Dünyası</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>tr-tr</language>
-    <lastBuildDate>Sat, 12 Apr 2025 11:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 11:00:00 +0300</lastBuildDate>
     <atom:link href="https://edu3dmodel.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Başlangıç Rehberi</title>
       <link>https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/</link>
-      <pubDate>Sat, 12 Apr 2025 11:00:00 +0300</pubDate>
+      <pubDate>Sat, 19 Apr 2025 11:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/categories/ba%C5%9Flang%C4%B1%C3%A7-rehberi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kaynaklar</title>
+      <link>https://edu3dmodel.com/categories/kaynaklar/</link>
+      <pubDate>Sat, 19 Apr 2025 11:00:00 +0300</pubDate>
+      <guid>https://edu3dmodel.com/categories/kaynaklar/</guid>
       <description></description>
     </item>
     <item>
@@ -34,13 +41,6 @@
       <link>https://edu3dmodel.com/categories/teknoloji-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma/</link>
       <pubDate>Sat, 15 Mar 2025 11:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/categories/teknoloji-kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kaynaklar</title>
-      <link>https://edu3dmodel.com/categories/kaynaklar/</link>
-      <pubDate>Wed, 22 Nov 2023 11:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/categories/kaynaklar/</guid>
       <description></description>
     </item>
   </channel>

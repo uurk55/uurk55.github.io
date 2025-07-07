@@ -110,6 +110,6 @@ Bu yazı, umuyoruz ki pusulanızı ayarlamanıza ve kendi yolunuzu çizmenize ya
 *   Eğer pusulanız **FDM**'yi gösteriyorsa, muhtemelen şunu merak ediyorsunuz: "Piyasada yüzlerce model varken, benim için en iyi başlangıç FDM yazıcısı hangisi?"
 *   Eğer tercihiniz **SLA**'nın sunduğu detaylardan yana olduysa, aklınızdaki soru şudur: "Hangi SLA yazıcısı daha kullanıcı dostu ve başlangıç için hangi reçineleri kullanmalıyım?"
 
-Merak etmeyin, yalnız değilsiniz. Önümüzdeki rehber yazılarımızda, her iki teknoloji için de en iyi başlangıç modellerini, bütçe dostu seçenekleri ve ilk adımlarınızı nasıl atacağınızı detaylıca masaya yatıracağız.
+Merak etmeyin, yalnız değilsiniz. [3D Yazıcı Satın Alma Rehberi: Hangi 3D Yazıcıyı Almalısınız? (FDM & SLA)]({{< ref "posts/3d-yazici-satin-alma-rehberi.md" >}}) yazımızda, her iki teknoloji için de en iyi başlangıç modellerini, bütçe dostu seçenekleri ve ilk adımlarınızı nasıl atacağınızı detaylıca masaya yatıracağız.
 
 Bizi takipte kalın, çünkü yolculuğumuz daha yeni başlıyor!

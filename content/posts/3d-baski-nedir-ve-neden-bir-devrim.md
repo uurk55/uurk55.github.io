@@ -65,4 +65,4 @@ Bir müşteri sipariş verdiğinde, siz "yazdır" tuşuna basarsınız. **İşte
 
 Bu, yolculuğumuzun sadece ilk adımıydı. Aklınızdaki bir sonraki soruyu tahmin edebiliyoruz: **"Peki, hangi teknolojiyle başlamalıyım? FDM mi, SLA mi?"**
 
-İşte tam da bu sorunun cevabını, bu serinin bir sonraki yazısında masaya yatıracağız. Blogumuzu takipte kalın, çünkü daha yeni başlıyoruz!
+İşte tam da bu sorunun cevabını, [FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?]({{< ref "posts/fdm-vs-sla-rehberi.md" >}}) yazısında masaya yatıracağız. Blogumuzu takipte kalın, çünkü daha yeni başlıyoruz!

@@ -99,6 +99,9 @@ Peki ya sizin için önemli olan fonksiyonellikten çok, göz alıcı detaylar v
 
 Günün sonunda, **en iyi başlangıç 3D yazıcısı** diye tek bir cevap yoktur; sadece **sizin kişiliğinize, projenize ve hedeflerinize en uygun başlangıç profili** vardır. Bu sorulara verdiğiniz samimi cevaplar, sizi bu profillerden birine yönlendirecek ve yüzlerce model arasından aramanızı çok daha dar bir alana indirgeyecektir.
 
-Peki, ideal yazıcı profilinizi buldunuz ve o harika makineyi sipariş ettiniz diyelim. Sırada ne var? Elbette, o makineyi besleyecek olan hammadde!
+Peki, ideal yazıcı profilinizi buldunuz ve o harika makineyi sipariş ettiniz diyelim. Şimdi sırada iki önemli adım var: O makineyi doğru bir şekilde kurmak ve doğru malzemeyi seçmek! Bu konularda size yardımcı olacak rehberlerimiz:
 
-Bir sonraki rehber yazımızda, **"Yeni Başlayanlar İçin Malzeme Rehberi: PLA, PETG, ABS ve Reçine Çeşitleri Arasındaki Farklar Nelerdir?"** konusunu masaya yatıracağız. Bizi takipte kalın!
+*   **[FDM 3D Yazıcı İlk Kurulum Rehberi]({{< ref "posts/fdm-yazici-ilk-kurulum-rehberi.md" >}})**
+*   **[Yeni Başlayanlar İçin Malzeme Rehberi: PLA, PETG ve Dahası]({{< ref "posts/3d-baski-malzeme-rehberi.md" >}})** 
+
+Bizi takipte kalın!

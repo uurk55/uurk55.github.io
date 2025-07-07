@@ -112,4 +112,4 @@ Bu rehberde, 3D baskı meraklılarının en çok kullandığı, milyonlarca tasa
 4.  **Geleceğe Yatırım Yapın: MakerWorld**
     Eğer bir Bambu Lab yazıcınız varsa veya almayı düşünüyorsanız, **MakerWorld**'ün "tek tıkla baskı" ekosistemine mutlaka dahil olun.
 
-Artık "ne bassam?" diye düşünmek için bir bahaneniz kalmadı. Yazıcınızı hazırlayın, bu sitelerden bir model seçin ve üretmeye başlayın! Mutlu baskılar!
+Artık "ne bassam?" diye düşünmek için bir bahaneniz kalmadı. Yazıcınızı hazırlayın, bu sitelerden bir model seçin ve onu baskıya hazırlamak için **[Temel Slicer Ayarları Rehberimizi]({{< ref "posts/temel-slicer-ayarlari.md" >}})** kullanarak dilimleyin. Eğer kendi özgün modelinizi yapmak isterseniz, **[Tinkercad Başlangıç Rehberimiz]({{< ref "posts/tinkercad-baslangic-rehberi.md" >}})** size yol gösterecektir. Mutlu baskılar!

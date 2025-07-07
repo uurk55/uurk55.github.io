@@ -74,4 +74,4 @@ Baskınızın tabladan ayrılıp bir "spagetti yığınına" dönüşmesini enge
 
 ### Sonuç: Artık Kontrol Sizde!
 
-Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, Slicer'ın standart kalite profillerinden biriyle başlayıp, bu temel ayarlarla korkmadan oynamak, küçük değişiklikler yapıp sonuçlarını gözlemlemektir. Artık bir şefin mutfağındaki tüm baharatları tanıyorsunuz. Şimdi o baharatları kullanarak kendi özel tarifinizi yaratma zamanı!
+Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, **[En Yaygın 3D Baskı Hataları ve Çözümleri kılavuzumuza]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** mutlaka göz atın. Artık başkalarının modellerini dilimlemekte ustalaştığınıza göre, belki de **[Tinkercad ile kendi modelinizi tasarlamanın]({{< ref "posts/tinkercad-baslangic-rehberi.md" >}})** zamanı gelmiştir. Mutfağın kontrolü artık sizde!

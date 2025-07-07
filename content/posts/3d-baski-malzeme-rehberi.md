@@ -86,4 +86,4 @@ Eğer bir SLA yazıcınız varsa, sizin mühimmatınız reçinelerdir. İşte en
 
 Artık temel malzemeleri tanıyorsunuz. Unutmayın, "en iyi" malzeme diye bir şey yok; sadece **sizin projenize en uygun malzeme** var. Bir sonraki projenize başlamadan önce kendinize sorun: "Bu ürünün ne kadar sağlam olması gerekiyor? Isıya maruz kalacak mı? En önemli şey görünüşü mü, yoksa işlevi mi?"
 
-Bu soruların cevabı, sizi doğru filament veya reçineye yönlendirecektir. Mutlu baskılar!
+Bu soruların cevabı, sizi doğru filament veya reçineye yönlendirecektir. Artık doğru malzemeyle ne basacağınızı bilmiyorsanız, **[ücretsiz 3D model siteleri rehberimize]({{< ref "posts/ucretsiz-3d-model-siteleri.md" >}})** göz atabilir veya baskı sırasında bir sorunla karşılaşırsanız **[en yaygın 3D baskı hataları ve çözümleri kılavuzumuzu]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** kullanabilirsiniz. Mutlu baskılar!

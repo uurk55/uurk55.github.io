@@ -55,4 +55,4 @@ Baskıyı başlattıktan sonra gözünüzü ilk katmandan ayırmayın. Plastik t
 
 İlk 2-3 katman sorunsuz atıldıysa, artık arkanıza yaslanıp makinenizin sihrini izleyebilirsiniz. Baskı bittiğinde tablanın soğumasını bekleyin ve parçanızı alın.
 
-**Tebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, yeni FDM yazıcınızla olan maceranızın ilk somut kanıtıdır.**
+Tebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, sizin başarınızın ilk somut kanıtıdır. Şimdi bu test baskısından daha ileri gitmek için, **[Temel Slicer Ayarları Rehberimizi]({{< ref "posts/temel-slicer-ayarlari.md" >}})** okuyarak baskı kalitenizi nasıl artıracağınızı öğrenebilirsiniz. Eğer baskı sırasında bir sorun yaşarsanız, **[3D Baskı Hataları Kılavuzumuz]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** her zaman yanınızda!

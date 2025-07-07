@@ -98,8 +98,8 @@ Bu rehber, sizin "arıza tespit" kılavuzunuz olacak. En sık karşılaşılan *
 
 ### Sonuç: Hatalar, Birer Öğretmendir
 
-Unutmayın, 3D baskıda başarısızlık, sürecin doğal bir parçasıdır. Her çözdüğünüz sorun, sizi daha bilgili ve daha yetenekli bir üretici yapacaktır. Bu rehberi bir "ilk yardım çantası" gibi elinizin altında tutun ve baskılarınızın tadını çıkarın!
+Unutmayın, 3D baskıda başarısızlık, sürecin doğal bir parçasıdır. Her çözdüğünüz sorun, sizi daha bilgili ve daha yetenekli bir üretici yapacaktır. Bu rehberi bir "ilk yardım çantası" gibi elinizin altında tutun. Unutmayın, birçok hata yanlış **[malzeme seçiminden]({{< ref "posts/3d-baski-malzeme-rehberi.md" >}})** veya eksik bir **[ilk kurulum adımından]({{< ref "posts/fdm-yazici-ilk-kurulum-rehberi.md" >}})** kaynaklanabilir. Bu temel rehberlerimize geri dönüp her şeyin doğru olduğundan emin olmaktan çekinmeyin.
 
 ---
-Peki, tüm bu hatalardan kaçınıp, daha da ileri gitmek isterseniz? Bir sonraki rehber yazımızda, sizi "basıcı" olmaktan "tasarımcı" olmaya taşıyacak ilk adımı atacağız ve **"Yeni Başlayanlar İçin Tinkercad Rehberi"** ile kendi basit 3D modellerinizi nasıl yapabileceğinizi öğreneceğiz.
+Peki, tüm bu hatalardan kaçınıp, daha da ileri gitmek isterseniz? Bir sonraki rehber yazımızda, sizi "basıcı" olmaktan "tasarımcı" olmaya taşıyacak ilk adımı atacağız ve **[Yeni Başlayanlar İçin Tinkercad Rehberi]({{< ref "posts/tinkercad-baslangic-rehberi.md" >}})** ile kendi basit 3D modellerinizi nasıl yapabileceğinizi öğreneceğiz.
 ---

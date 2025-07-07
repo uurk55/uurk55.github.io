@@ -62,4 +62,4 @@ Tebrikler! Az önce yaptığınız şey, sadece bir 3D model çizmekten çok dah
 
 Unutmayın, Fusion 360'ın gücü, alttaki **zaman çizelgesinde (timeline)** gizlidir. Yaptığınız her adımı geri dönüp düzenleyebilme özgürlüğü, sizi bir probleme mühendislik çözümleri üreten bir probleme çözücüye dönüştürür.
 
-Peki, bu harika tasarımları yapıp bastıktan sonra, onları pürüzlü ve katman çizgileriyle mi bırakacağız? Elbette hayır! Bir sonraki rehberimizde, **"Baskılarınızı Profesyonel Gösterecek 5 Yüzey İşleme Tekniği"** ile zımparalamadan boyamaya, baskılarınıza o "satışa hazır" görünümü nasıl vereceğinizi anlatacağız. Takipte kalın!
+Peki, bu harika tasarımları yapıp bastıktan sonra, onları pürüzlü ve katman çizgileriyle mi bırakacağız? Elbette hayır! Şimdi, bu tasarımlara o "satışa hazır" görünümü kazandırma zamanı. Bir sonraki durağımız, zımparalamadan boyamaya kadar tüm sırları öğreneceğiniz **[3D Baskı Yüzey İşleme Rehberimizdir]({{< ref "posts/3d-baski-yuzey-isleme-teknikleri.md" >}})**.

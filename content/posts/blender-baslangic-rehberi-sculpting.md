@@ -67,4 +67,6 @@ Tebrikler! Üst menüden `File > Export > Stl (.stl)` seçeneğini seçerek mode
 
 Az önce yaptığınız şey, sadece bir saksı tasarlamak değildi. Tinkercad'in geometrik dünyasından, Blender'ın organik ve sanatsal dünyasına başarılı bir geçiş yaptınız. Artık sadece küpleri birleştirmekle kalmıyor, dijital bir kile şekil verebiliyorsunuz.
 
-Bu, 3D modelleme yolculuğunuzda yepyeni bir kapı araladı. Unutmayın, Blender devasa bir program ve biz bugün sadece bir fırça darbesi attık. Gelecekteki rehberlerimizde, bu güçlü aracın diğer sırlarını da keşfetmeye devam edeceğiz. Ama şimdilik, kendi ellerinizle 'yonttuğunuz' o ilk organik modelin baskısını almanın tadını çıkarın!
+Bu, 3D modelleme yolculuğunuzda yepyeni bir kapı araladı. Unutmayın, Blender devasa bir program ve biz bugün sadece bir fırça darbesi attık. Gelecekteki rehberlerimizde, bu güçlü aracın diğer sırlarını da keşfetmeye devam edeceğiz. Artık dijital heykeltıraşlığa ilk adımı attığınıza göre, belki de bir mühendis gibi düşünmenin zamanı gelmiştir. Ölçüleri hassas, birbiriyle mükemmel uyumlu ve kolayca değiştirilebilen fonksiyonel parçalar tasarlamak isterseniz, bir sonraki durağınız **[Fusion 360 Başlangıç Rehberimizdir]({{< ref "posts/fusion-360-baslangic-rehberi.md" >}})**.
+
+Ama şimdilik, kendi ellerinizle 'yonttuğunuz' o ilk organik modelin baskısını almanın tadını çıkarın!

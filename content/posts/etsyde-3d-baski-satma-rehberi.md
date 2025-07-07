@@ -3,7 +3,7 @@ title: "Etsy'de 3D Baskı Satma Rehberi: Dükkan Açmaktan İlk Satışa (2025)"
 date: 2025-05-31T10:00:00+03:00
 draft: false
 cover:
-    image: "/images/etsy-rehberi-cover.jpg"
+    image: "/images/etsy-rehberi-cover.png"
     alt: "Bir dizüstü bilgisayarda açık olan Etsy dükkanı ve yanında 3D baskı ürünler"
     caption: "Hobinizi gelire dönüştürmenin en popüler yolu. Girişimcilik başlıyor!"
     relative: false
@@ -43,7 +43,7 @@ Bu, en önemli kuraldır. Akıllı telefonunuzla bile harikalar yaratabilirsiniz
 *   **Sade Arka Plan:** Ürününüzün yıldız olmasına izin verin. Düz beyaz bir karton veya ahşap bir masa yüzeyi kullanın.
 *   **Farklı Açılar:** Etsy'nin sunduğu 10 fotoğraf hakkının hepsini kullanın. Ürünü önden, yandan, detaylarından ve en önemlisi **kullanım halindeyken** çekin.
 
-![Farklı açılardan çekilmiş, iyi aydınlatılmış, temiz bir arka plana sahip 3D baskı bir ürünün fotoğraf kolajı](/images/etsy-urun-fotografi.jpg)
+![Farklı açılardan çekilmiş, iyi aydınlatılmış, temiz bir arka plana sahip 3D baskı bir ürünün fotoğraf kolajı](/images/etsy-urun-fotografi.png)
 
 #### 2. Ürün Başlığı: Google ve Etsy'nin Sizi Bulmasını Sağlayın (Etsy SEO)
 Başlığınız, müşterinin arama kutusuna ne yazacağını düşünerek oluşturulmalıdır.
@@ -63,7 +63,7 @@ Fiyatınızı belirlerken şu üç ana unsuru içermelidir:
 2.  **Zaman ve İşçilik Maliyeti:** Hem yazıcının çalışma süresini (elektrik, aşınma) hem de sizin baskı sonrası harcadığınız emeği (temizlik, zımpara, paketleme) hesaba katın.
 3.  **Kâr Marjı ve Diğer Giderler:** Bu maliyetlerin üzerine kârınızı ekleyin. Etsy komisyonlarını ve kargo maliyetini (eğer ücretsizse) eklemeyi unutmayın!
 
-![Bir hesap makinesi, filament makarası ve 3D baskı bir ürünün olduğu, fiyatlandırma konseptini anlatan bir fotoğraf](/images/etsy-fiyatlandirma.jpg)
+![Bir hesap makinesi, filament makarası ve 3D baskı bir ürünün olduğu, fiyatlandırma konseptini anlatan bir fotoğraf](/images/etsy-fiyatlandirma.png)
 
 #### İlk Satışınızı Yapmak: Dükkanı Harekete Geçirme
 *   **İlk Müşterileriniz Arkadaşlarınız Olsun:** Çekinmeyin! Yakın çevrenizden küçük bir ürün satın alarak ve dükkanınıza 5 yıldızlı bir yorum bırakarak size destek olmalarını isteyin. Olumlu yorumlar, yeni müşteriler için en büyük güven işaretidir.

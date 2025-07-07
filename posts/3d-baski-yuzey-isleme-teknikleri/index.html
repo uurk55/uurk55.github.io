@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik | Edu 3D Model Dünyası</title>
+<meta name="keywords" content="yüzey işleme, zımparalama, aseton, 3d baskı boyama, post-processing">
+<meta name="description" content="Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: Yüzey İşleme (Post-Processing).
+Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve &ldquo;satışa hazır&rdquo; bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.">
+<meta name="author" content="uurk55">
+<link rel="canonical" href="https://edu3dmodel.com/posts/3d-baski-yuzey-isleme-teknikleri/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edu3dmodel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edu3dmodel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edu3dmodel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edu3dmodel.com/posts/3d-baski-yuzey-isleme-teknikleri/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+     
+    .post-meta .post-categories a, .post-tags li a {
+        display: inline-block;
+        background-color: #FF7F50;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .post-meta .post-categories a:hover, .post-tags li a:hover {
+        background-color: #E57345;
+        color: white !important;
+    }
+    .post-tags {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .post-tags li {
+        display: inline-block;
+    }
+
+     
+    .cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 8px;
+        background-color: var(--code-bg);
+        border: 1px solid var(--card-border);
+    }
+    .cta-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF7F50 !important;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+        background-color: #E57345 !important;
+    }
+
+    
+</style><meta property="og:url" content="https://edu3dmodel.com/posts/3d-baski-yuzey-isleme-teknikleri/">
+  <meta property="og:site_name" content="Edu 3D Model Dünyası">
+  <meta property="og:title" content="3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik">
+  <meta property="og:description" content="Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: Yüzey İşleme (Post-Processing).
+Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve “satışa hazır” bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-31T11:00:00+03:00">
+    <meta property="article:modified_time" content="2025-05-31T11:00:00+03:00">
+    <meta property="article:tag" content="Yüzey Işleme">
+    <meta property="article:tag" content="Zımparalama">
+    <meta property="article:tag" content="Aseton">
+    <meta property="article:tag" content="3d Baskı Boyama">
+    <meta property="article:tag" content="Post-Processing">
+    <meta property="og:image" content="https://edu3dmodel.com/images/yuzey-isleme-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edu3dmodel.com/images/yuzey-isleme-cover.png">
+<meta name="twitter:title" content="3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik">
+<meta name="twitter:description" content="Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: Yüzey İşleme (Post-Processing).
+Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve &ldquo;satışa hazır&rdquo; bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edu3dmodel.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik",
+      "item": "https://edu3dmodel.com/posts/3d-baski-yuzey-isleme-teknikleri/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik",
+  "name": "3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik",
+  "description": "Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: Yüzey İşleme (Post-Processing).\nYüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve \u0026ldquo;satışa hazır\u0026rdquo; bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.\n",
+  "keywords": [
+    "yüzey işleme", "zımparalama", "aseton", "3d baskı boyama", "post-processing"
+  ],
+  "articleBody": "Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: Yüzey İşleme (Post-Processing).\nYüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve “satışa hazır” bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.\nBu rehberde, herkesin evinde veya atölyesinde uygulayabileceği, en etkili yüzey işleme tekniklerini adım adım inceleyeceğiz. Bu tekniklerle, katman çizgilerini nasıl yok edeceğinizi öğrenecek ve hobici baskılarınızı, müşterilerinizin hayran kalacağı profesyonel eserlere dönüştüreceksiniz.\nTeknik 1: Zımparalama ve Dolgu Macunu (Temel Adım) Her şeyin başlangıcı ve en temel teknik budur. Başarının sırrı, kademeli olarak daha ince taneli zımparalara geçmektir.\nKaba Zımparalama (120-220 Grit): İlk katman çizgilerini ve büyük kusurları gidermek için. Orta Zımparalama (320-400 Grit): Kaba zımparanın çiziklerini gidermek için. İnce Zımparalama (600+ Grit): Boyaya hazır, pürüzsüz bir yüzey için. Profesyonel İpucu: Özellikle 400 grit ve üzeri zımparalarda ıslak zımparalama (wet sanding) yapmak, çok daha pürüzsüz bir yüzey sağlar. Bazen zımparanın kapatamadığı boşlukları doldurmak için hobi macunları (putty) kullanabilir, kuruduktan sonra tekrar zımparalayabilirsiniz.\nTeknik 2: Astarlama (Boyanın Temeli) Profesyonel bir boya işinin sırrı, altında yatan temeldedir: Astar (Primer). Genellikle sprey formunda satılan astar, zımparanın bıraktığı en küçük çizikleri bile doldurur ve boyanın plastik yüzeye çok daha iyi yapışmasını sağlar. İnce katmanlar halinde, iyi havalandırılan bir yerde uygulayın.\nTeknik 3: Aseton Buharı (Sadece ABS İçin!) UYARI: Bu teknik, son derece dikkat ve güvenlik önlemi gerektirir. Aseton buharları yanıcı ve zehirlidir. Çok iyi havalandırılan bir yerde, ateş kaynaklarından uzakta ve koruyucu ekipmanla yapılmalıdır. Bu teknik PLA veya PETG üzerinde İŞE YARAMAZ!\nAseton buharları, ABS plastiğinin dış yüzeyini hafifçe eriterek katman çizgilerini tamamen yok eder ve parlak, enjeksiyon kalıplama ile üretilmiş gibi bir görünüm kazandırır. Cam bir kavanoz ve asetona batırılmış kağıt havlularla basit bir “buhar odası” oluşturarak uygulanabilir.\nTeknik 4: Isı Tabancası Kullanımı (Hızlı Rötuşlar) Baskınızın yüzeyindeki örümcek ağı gibi ince iplikçikleri (stringing) veya küçük beyaz stres izlerini temizlemek için bir ısı tabancasını en düşük ayarında, hızlıca yüzeyde gezdirin. Sıcak hava, bu ince kusurların anında büzüşerek kaybolmasını sağlar. Dikkat: Isıyı tek bir noktada çok uzun tutmayın!\nTeknik 5: Boyama (Son Sanatsal Dokunuş) Artık elinizde pürüzsüz ve astarlanmış bir tuval var.\nAkrilik Boyalar: Yeni başlayanlar için en iyi seçenektir. Su bazlıdır ve kolay temizlenir. Sprey Boyalar: Geniş ve tek renkli yüzeyler için idealdir. Vernik (Clear Coat): Boyama işlemi bittikten sonra, modelinizin üzerine mat veya parlak bir sprey vernik atarak boyayı koruma altına alın. Peki Ya SLA (Reçine) Baskılar? SLA baskılar zaten pürüzsüzdür, ancak onların da profesyonel bir görünüme kavuşması için farklı adımlara ihtiyaçları vardır.\nDestek İzlerini Giderme: En önemli adım budur. İnce uçlu bir yan keski ile destekleri kesin ve kalan küçük pürüzleri çok ince taneli (600-1200 grit) ıslak zımpara ile nazikçe yok edin. Parlaklık/Matlık Ayarlama: Mat bir görünüm için mat sprey vernik, cam gibi parlak bir yüzey için ise parlak sprey vernik veya ince bir katman şeffaf UV reçinesi kullanabilirsiniz. Boşluk Doldurma: Desteklerin bıraktığı inatçı çukurları, bir miktar UV reçinesi ile doldurup UV el feneri ile anında kürleyebilirsiniz. Sonuç: Ürününüz Artık Satışa Hazır Bu temel FDM teknikleri ve SLA’ya özel ipuçları ile, artık elinizdeki ham plastik parçasını, gururla sergileyebileceğiniz veya satışa sunabileceğiniz bitmiş bir ürüne nasıl dönüştüreceğinizi biliyorsunuz.\nArtık teknik ve estetik becerilerimizi tamamladığımıza göre, bir sonraki büyük adımımız FAZ 3: Para Kazanma ve Girişimcilik olacak. İlk olarak, “Etsy’de 3D Baskı Dükkanı Açma Rehberi” ile bu potansiyeli nasıl gerçek bir iş modeline dönüştüreceğimizi adım adım inceleyeceğiz. Takipte kalın!\n",
+  "wordCount" : "591",
+  "inLanguage": "en",
+  "image":"https://edu3dmodel.com/images/yuzey-isleme-cover.png","datePublished": "2025-05-31T11:00:00+03:00",
+  "dateModified": "2025-05-31T11:00:00+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "uurk55"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edu3dmodel.com/posts/3d-baski-yuzey-isleme-teknikleri/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edu 3D Model Dünyası",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edu3dmodel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edu3dmodel.com/" title="Anasayfa">
+                    <span>Anasayfa</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/posts" title="Yazılarım">
+                    <span>Yazılarım</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tags" title="Etiketler">
+                    <span>Etiketler</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
+                    <span>İletişim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
+                    <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search" title="Arama">
+                    <span>Arama</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="post-single">
+    <header class="post-header">
+        <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
+        <h1 class="post-title">
+            3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik
+        </h1>
+        <div class="post-meta">
+            <span>May 31, 2025</span>
+             · 
+            <span>3 min read</span> · 
+            <span class="post-categories"><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a><a href="https://edu3dmodel.com/categories/ileri-seviye/">İleri Seviye</a></span></div>
+    </header><div class="post-cover">
+        <img src="https://edu3dmodel.com/images/yuzey-isleme-cover.png" alt="Bir kişinin elleri, pürüzlü bir 3D baskıyı zımparalayarak pürüzsüz hale getiriyor"><p class="post-cover-caption">Gerçek sihir, baskı bittikten sonra başlar. Ürünlerinize hak ettiği değeri verin.</p></div><div class="post-content">
+        <p>Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: <strong>Yüzey İşleme (Post-Processing).</strong></p>
+<p>Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve &ldquo;satışa hazır&rdquo; bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.</p>
+<p>Bu rehberde, herkesin evinde veya atölyesinde uygulayabileceği, <strong>en etkili yüzey işleme tekniklerini</strong> adım adım inceleyeceğiz. Bu tekniklerle, <strong>katman çizgilerini nasıl yok edeceğinizi</strong> öğrenecek ve hobici baskılarınızı, müşterilerinizin hayran kalacağı profesyonel eserlere dönüştüreceksiniz.</p>
+<h3 id="teknik-1-zımparalama-ve-dolgu-macunu-temel-adım">Teknik 1: Zımparalama ve Dolgu Macunu (Temel Adım)</h3>
+<p>Her şeyin başlangıcı ve en temel teknik budur. Başarının sırrı, <strong>kademeli olarak</strong> daha ince taneli zımparalara geçmektir.</p>
+<ul>
+<li><strong>Kaba Zımparalama (120-220 Grit):</strong> İlk katman çizgilerini ve büyük kusurları gidermek için.</li>
+<li><strong>Orta Zımparalama (320-400 Grit):</strong> Kaba zımparanın çiziklerini gidermek için.</li>
+<li><strong>İnce Zımparalama (600+ Grit):</strong> Boyaya hazır, pürüzsüz bir yüzey için.</li>
+</ul>
+<p><strong>Profesyonel İpucu:</strong> Özellikle 400 grit ve üzeri zımparalarda <strong>ıslak zımparalama (wet sanding)</strong> yapmak, çok daha pürüzsüz bir yüzey sağlar. Bazen zımparanın kapatamadığı boşlukları doldurmak için <strong>hobi macunları (putty)</strong> kullanabilir, kuruduktan sonra tekrar zımparalayabilirsiniz.</p>
+<p><img alt="Farklı grit numaralarına sahip zımpara kağıtları ve bir 3D baskı parçası" loading="lazy" src="/images/yuzey-zimparalama.png"></p>
+<h3 id="teknik-2-astarlama-boyanın-temeli">Teknik 2: Astarlama (Boyanın Temeli)</h3>
+<p>Profesyonel bir boya işinin sırrı, altında yatan temeldedir: <strong>Astar (Primer).</strong> Genellikle sprey formunda satılan astar, zımparanın bıraktığı en küçük çizikleri bile doldurur ve boyanın plastik yüzeye çok daha iyi yapışmasını sağlar. İnce katmanlar halinde, iyi havalandırılan bir yerde uygulayın.</p>
+<p><img alt="Bir kişinin, eldiven takarak bir 3D baskı modele sprey astar uyguladığı an" loading="lazy" src="/images/yuzey-astarlama.png"></p>
+<h3 id="teknik-3-aseton-buharı-sadece-abs-için">Teknik 3: Aseton Buharı (Sadece ABS İçin!)</h3>
+<p><strong>UYARI: Bu teknik, son derece dikkat ve güvenlik önlemi gerektirir. Aseton buharları yanıcı ve zehirlidir. Çok iyi havalandırılan bir yerde, ateş kaynaklarından uzakta ve koruyucu ekipmanla yapılmalıdır. Bu teknik PLA veya PETG üzerinde İŞE YARAMAZ!</strong></p>
+<p>Aseton buharları, ABS plastiğinin dış yüzeyini hafifçe eriterek katman çizgilerini tamamen yok eder ve parlak, enjeksiyon kalıplama ile üretilmiş gibi bir görünüm kazandırır. Cam bir kavanoz ve asetona batırılmış kağıt havlularla basit bir &ldquo;buhar odası&rdquo; oluşturarak uygulanabilir.</p>
+<p><img alt="Aseton buharına maruz kalmadan önceki ve sonraki bir ABS baskısının karşılaştırması. Sonraki versiyon parlak ve pürüzsüz." loading="lazy" src="/images/yuzey-aseton.png"></p>
+<h3 id="teknik-4-isı-tabancası-kullanımı-hızlı-rötuşlar">Teknik 4: Isı Tabancası Kullanımı (Hızlı Rötuşlar)</h3>
+<p>Baskınızın yüzeyindeki örümcek ağı gibi ince iplikçikleri (stringing) veya küçük beyaz stres izlerini temizlemek için bir ısı tabancasını en düşük ayarında, hızlıca yüzeyde gezdirin. Sıcak hava, bu ince kusurların anında büzüşerek kaybolmasını sağlar. Dikkat: Isıyı tek bir noktada çok uzun tutmayın!</p>
+<h3 id="teknik-5-boyama-son-sanatsal-dokunuş">Teknik 5: Boyama (Son Sanatsal Dokunuş)</h3>
+<p>Artık elinizde pürüzsüz ve astarlanmış bir tuval var.</p>
+<ul>
+<li><strong>Akrilik Boyalar:</strong> Yeni başlayanlar için en iyi seçenektir. Su bazlıdır ve kolay temizlenir.</li>
+<li><strong>Sprey Boyalar:</strong> Geniş ve tek renkli yüzeyler için idealdir.</li>
+<li><strong>Vernik (Clear Coat):</strong> Boyama işlemi bittikten sonra, modelinizin üzerine mat veya parlak bir sprey vernik atarak boyayı koruma altına alın.</li>
+</ul>
+<p><img alt="Farklı fırçalar ve akrilik boyalarla bir 3D baskı figürünün detaylarının boyandığı bir an" loading="lazy" src="/images/yuzey-boyama.png"></p>
+<hr>
+<hr class="custom-hr">
+<h3 id="peki-ya-sla-reçine-baskılar">Peki Ya SLA (Reçine) Baskılar?</h3>
+<p>SLA baskılar zaten pürüzsüzdür, ancak onların da profesyonel bir görünüme kavuşması için farklı adımlara ihtiyaçları vardır.</p>
+<p><img alt="Bir kişinin, elinde ince bir maket bıçağı ve zımpara ile SLA ile basılmış bir minyatür figürün destek izlerini temizlemesi" loading="lazy" src="/images/yuzey-sla-isleme.png"></p>
+<ol>
+<li><strong>Destek İzlerini Giderme:</strong> En önemli adım budur. İnce uçlu bir yan keski ile destekleri kesin ve kalan küçük pürüzleri çok ince taneli (600-1200 grit) ıslak zımpara ile nazikçe yok edin.</li>
+<li><strong>Parlaklık/Matlık Ayarlama:</strong> Mat bir görünüm için mat sprey vernik, cam gibi parlak bir yüzey için ise parlak sprey vernik veya ince bir katman şeffaf UV reçinesi kullanabilirsiniz.</li>
+<li><strong>Boşluk Doldurma:</strong> Desteklerin bıraktığı inatçı çukurları, bir miktar UV reçinesi ile doldurup UV el feneri ile anında kürleyebilirsiniz.</li>
+</ol>
+<h3 id="sonuç-ürününüz-artık-satışa-hazır">Sonuç: Ürününüz Artık Satışa Hazır</h3>
+<p>Bu temel FDM teknikleri ve SLA&rsquo;ya özel ipuçları ile, artık elinizdeki ham plastik parçasını, gururla sergileyebileceğiniz veya satışa sunabileceğiniz bitmiş bir ürüne nasıl dönüştüreceğinizi biliyorsunuz.</p>
+<p>Artık teknik ve estetik becerilerimizi tamamladığımıza göre, bir sonraki büyük adımımız <strong>FAZ 3: Para Kazanma ve Girişimcilik</strong> olacak. İlk olarak, <strong>&ldquo;Etsy&rsquo;de 3D Baskı Dükkanı Açma Rehberi&rdquo;</strong> ile bu potansiyeli nasıl gerçek bir iş modeline dönüştüreceğimizi adım adım inceleyeceğiz. Takipte kalın!</p>
+
+    </div>
+
+    <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/y%C3%BCzey-i%C5%9Fleme/">yüzey işleme</a></li><li><a href="https://edu3dmodel.com/tags/z%C4%B1mparalama/">zımparalama</a></li><li><a href="https://edu3dmodel.com/tags/aseton/">aseton</a></li><li><a href="https://edu3dmodel.com/tags/3d-bask%C4%B1-boyama/">3d baskı boyama</a></li><li><a href="https://edu3dmodel.com/tags/post-processing/">post-processing</a></li></ul>
+        <div class="cta-box">
+            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+        </div>
+    </footer>
+
+    
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        <script src="https://giscus.app/client.js"
+            data-repo="uurk55/uurk55.github.io"
+            data-repo-id="R_kgDOMX0zYw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOMX0zY84CfIeL"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="tr"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    
+</article>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edu3dmodel.com/">Edu 3D Model Dünyası</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

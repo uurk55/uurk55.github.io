@@ -25,7 +25,7 @@ Karmaşık mühendislik jargonunu bir kenara bırakalım. 3D baskının temel ma
 
 Bir doğum günü pastası yaparken ne yaparsınız? Önce ilk kat keki koyar, üzerine krema sürer, sonra ikinci katı... İşte 3D yazıcı da, dijital bir tasarım dosyasını – ki biz buna genellikle **STL dosyası** diyoruz – alıp, onu yüzlerce, hatta binlerce mikroskobik incelikte yatay katmana böler. Sonra bu katmanları, erimiş plastik (**Filament**) veya UV ışığıyla sertleşen özel bir sıvı (**Reçine**) gibi malzemelerle bir tepsinin üzerinde üst üste sererek inşa eder. Sabırla, katman katman, o dijital hayal, elinizle tutabileceğiniz üç boyutlu bir nesneye dönüşür.
 
-![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim-yeni.png "3D Baskının Kalbi: Katmanlı Üretim")
+![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim.png "3D Baskının Kalbi: Katmanlı Üretim")
 *Görsel: 3D yazıcının katman katman üretim prensibi.*
 
 ### Geleneksel Üretimden Farkı Ne?
@@ -52,7 +52,7 @@ Artık ihtiyacınız olan tek şey bir bilgisayar ve bir 3D yazıcı. Kendi evin
 
 "Bir ürünü basıp satmak nasıl pasif olabilir ki?" diye sorduğunuzu duyar gibiyim. 3D baskının gücü, onu geleneksel bir "aktif gelir" modelinden ayıran **otomasyon** ve **ölçeklenebilirlik** potansiyelinde yatar. Buna "yarı pasif gelir" demek en doğrusu olur.
 
-![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme-yeni.png "Katma Değeri Yüksek Kişiye Özel Ürünler")
+![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme.png "Katma Değeri Yüksek Kişiye Özel Ürünler")
 *Görsel: Kişiselleştirilmiş 3D baskı ürünlerinin benzersizliği ve değeri.*
 
 ### "Kişiye Özel"in Büyüsü: Seri Üretimin Yapamadığını Yapın
@@ -62,22 +62,6 @@ Müşterilerinize, başka hiçbir yerde bulamayacakları, tamamen onlara özel, 
 ### Makineniz Sizin İçin Çalışır: Otomasyon ve Stoksuz Üretim
 
 Bir müşteri sipariş verdiğinde, siz "yazdır" tuşuna basarsınız. **İşte o andan itibaren iş "pasifleşir".** 4, 8, hatta 12 saat sürecek bir baskı boyunca siz başka bir işinizle ilgilenebilirsiniz. Yazıcınız, sizin için sessizce çalışır.
-
----
-
-## Sıkça Sorulan Sorular (SSS)
-
-### 3D baskı yapmak zor mu?
-Başlangıçta her yeni teknoloji gibi biraz öğrenme süreci gerektirir. Ancak günümüzdeki yazıcılar ve yazılımlar oldukça kullanıcı dostudur. Temel adımları öğrendikten sonra oldukça keyifli bir süreçtir. "Edu 3D Model Dünyası" olarak amacımız bu süreci sizin için mümkün olduğunca kolaylaştırmak.
-
-### Hangi 3D yazıcı ile başlamalıyım?
-Bu tamamen bütçenize, projenizin türüne ve detay beklentinize bağlıdır. FDM (Erimiş Filament Modelleme) yazıcılar genellikle daha uygun fiyatlı ve başlangıç için idealdir. SLA (Stereolitografi) yazıcılar ise daha yüksek detay sunar ama daha farklı bir çalışma ortamı gerektirir. Konuyla ilgili detaylı rehberimiz: **[FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?]({{< ref "posts/fdm-vs-sla-rehberi.md" >}})**
-
-### 3D baskı ile neler üretebilirim?
-Neredeyse hayal gücünüzle sınırlıdır! Kişiselleştirilmiş hediyeler, ev dekorasyonu ürünleri, oyuncaklar, yedek parçalar, prototipler, takılar ve çok daha fazlasını üretebilirsiniz. Yazılarımızda bu konuda size ilham verecek birçok fikir bulacaksınız.
-
-### 3D baskıdan para kazanmak gerçekten mümkün mü?
-Kesinlikle! Birçok insan 3D baskı yeteneklerini kullanarak Etsy gibi platformlarda, yerel siparişlerle veya kendi tasarımlarını satarak gelir elde ediyor. Bu serimizin ilerleyen yazılarında bu konuda adım adım rehberler bulacaksınız.
 
 ---
 

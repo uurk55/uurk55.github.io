@@ -108,7 +108,7 @@ Reçine tankı, baskı kalitesi ve yazıcının ömrü için çok önemlidir.
 * **FEP Film Kontrolü:** FEP (Fluorinated Ethylene Propylene) film, reçine tankının altındaki şeffaf katmandır. Zamanla bulanıklaşabilir veya çizilebilir. Baskı kalitesinde düşüş fark ederseniz veya filmde hasar varsa değiştirin.
 * **Reçine Değişimi:** Tanktaki reçineyi uzun süre bırakmayın. Kullanmadığınız zamanlarda reçineyi filtreleyerek orijinal şişesine geri boşaltın ve tankı temizleyin.
 
-![Bir kişinin SLA yazıcısının reçine tankındaki FEP filmi bir büyüteçle dikkatlice incelemesi](/posts/sla-resin-vat-fep-check.png "Reçine Tankı ve FEP Film Kontrolü")
+![Bir kişinin SLA yazıcısının reçine tankındaki FEP filmi bir büyüteçle dikkatlice incelemesi](/images/sla-resin-vat-fep-check.png "Reçine Tankı ve FEP Film Kontrolü")
 *Görsel: SLA yazıcının reçine tankı ve FEP filminin incelenmesi.*
 
 #### **2. LCD Ekran (Maskeleme Ekranı) Bakımı**
@@ -118,7 +118,7 @@ LCD ekran, UV ışığını maskeleyerek modelin katmanlarını oluşturan kriti
 * **Temizlik:** LCD ekranı sadece mikrofiber bir bez ve izopropil alkol (IPA) ile nazikçe temizleyin. Asla aşındırıcı kimyasallar veya keskin cisimler kullanmayın, ekrana kalıcı zarar verebilirsiniz.
 * **Koruyucu Film:** Bazı yazıcılar, LCD ekran üzerinde ek bir koruyucu filmle gelir. Bu filmin hasar görmediğinden emin olun.
 
-![Bir kişinin SLA yazıcının LCD ekranını mikrofiber bezle nazikçe sildiği yakın çekim](/posts/sla-lcd-cleaning.png "LCD Ekran Temizliği")
+![Bir kişinin SLA yazıcının LCD ekranını mikrofiber bezle nazikçe sildiği yakın çekim](/images/sla-lcd-cleaning.png "LCD Ekran Temizliği")
 *Görsel: SLA yazıcı LCD ekranının temizlenmesi.*
 
 #### **3. Reçine Platformu Bakımı**
@@ -145,7 +145,7 @@ UV ışık kaynağı ve optik yolun temizliği, düzgün kürlenme için önemli
 * **Yedek Parça Stoğu:** Özellikle nozüller, FEP filmler ve bazı yaygın yedek parçaları elinizin altında bulundurmak, acil durumlarda baskılarınızın aksamasını önler.
 * **Güvenlik Önlemleri (SLA için Ekstra Önemli):** Reçine ile çalışırken her zaman eldiven, koruyucu gözlük ve iyi havalandırılan bir ortamda çalışın. Reçine cilde ve gözlere zarar verebilir.
 
-![Bir masada, bakımı yapılmış ve temiz bir 3D yazıcı ile birlikte düzenli bir şekilde depolanmış filamentler ve bakım araçları.](/posts/general-maintenance-tips.png "Genel Bakım İpuçları")
+![Bir masada, bakımı yapılmış ve temiz bir 3D yazıcı ile birlikte düzenli bir şekilde depolanmış filamentler ve bakım araçları.](/images/general-maintenance-tips.png "Genel Bakım İpuçları")
 *Görsel: Düzenli bir çalışma alanı ve bakım araçları, tüm yazıcı türleri için genel bakımın önemini vurguluyor.*
 
 ---

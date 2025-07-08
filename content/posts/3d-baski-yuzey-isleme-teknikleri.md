@@ -1,6 +1,6 @@
 ---
 title: "3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik"
-date: 2025-05-31T11:00:00+03:00
+date: 2025-07-12T11:00:00+03:00
 draft: false
 cover:
     image: "/images/yuzey-isleme-cover.png"

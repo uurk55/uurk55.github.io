@@ -18,7 +18,7 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/posts/3d-printer-maintenance-cover.png" # Yazı kapak görseli
+    image: "/images/3d-printer-maintenance-cover.png" # Yazı kapak görseli
     alt: "3D Yazıcı Bakımı"
     caption: "3D Yazıcınızın Ömrünü Uzatın"
     relative: false
@@ -40,7 +40,7 @@ Peki, neden bakım bu kadar önemli? Basitçe söylemek gerekirse, düzenli bak�
 * **Daha Az Arıza Süresi:** Yazıcınızın sürekli çalışır durumda olması, projelerinizin aksamamasını sağlar.
 * **Daha İyi Yatırım Getirisi:** Yazıcınızın uzun süre sorunsuz çalışması, yaptığınız yatırımın karşılığını tam olarak almanızı sağlar.
 
-![Parlayan ve iyi bakılmış bir 3D yazıcı, arka planda sorunsuz çalışan mekanik parçalar](/posts/3d-printer-maintenance-why.png "Düzenli Bakımın Önemi")
+![Parlayan ve iyi bakılmış bir 3D yazıcı, arka planda sorunsuz çalışan mekanik parçalar](/images/3d-printer-maintenance-why.png "Düzenli Bakımın Önemi")
 *Görsel: İyi bakılmış bir 3D yazıcının sorunsuz çalışması, düzenli bakımın faydalarını simgeliyor.*
 
 ---
@@ -57,7 +57,7 @@ Nozül, filamentin eriyip dışarı çıktığı en kritik parçalardan biridir.
 * **Periyodik Derin Temizlik (Soğuk Çekme - Cold Pull):** Eğer tıkanma belirtileri (eksik dolgu, ince çizgiler) varsa, "soğuk çekme" yöntemini uygulayın. Bu, nozülün içindeki kalıntıları çıkarmak için filamentin kısmen eritilip aniden çekilmesidir.
 * **Nozül Değişimi:** Nozüller zamanla aşınır, özellikle aşındırıcı filamentler (karbon fiber, ahşap dolgulu) kullanıyorsanız. Baskı kalitesinde belirgin bir düşüş fark ederseniz nozülü değiştirmeyi düşünün.
 
-![Yakın çekim bir 3D yazıcı nozülü, ucunda hafif bir filament kalıntısı ile, bir kişinin küçük fırçayla onu temizlemesi](/posts/fdm-nozzle-cleaning.png "Nozül Temizliği")
+![Yakın çekim bir 3D yazıcı nozülü, ucunda hafif bir filament kalıntısı ile, bir kişinin küçük fırçayla onu temizlemesi](/images/fdm-nozzle-cleaning.png "Nozül Temizliği")
 *Görsel: FDM yazıcı nozülünün fırça ile temizlenmesi.*
 
 #### **2. Baskı Tablası Bakımı**
@@ -68,7 +68,7 @@ Baskı tablası, ilk katman yapışması için hayati öneme sahiptir.
 * **Yapışkan Kalıntıları Temizleme:** Eğer yapıştırıcı (tutkal çubuğu, saç spreyi) kullanıyorsanız, düzenli olarak birikintileri temizleyin. Cam tablaları sıcak su ve sabunla yıkayabilirsiniz.
 * **Hasar Kontrolü:** Tabla yüzeyinde çizik, çukur veya aşınma olup olmadığını kontrol edin. Hasarlı bir tabla, baskıların düzgün yapışmasını engelleyebilir. Gerekirse tabla yüzeyini değiştirin (PEI levha, cam vb.).
 
-![Bir kişinin 3D yazıcı tablasını izopropil alkol ve mikrofiber bezle sildiği yakın çekim](/posts/fdm-build-plate-cleaning.png "Baskı Tablası Bakımı")
+![Bir kişinin 3D yazıcı tablasını izopropil alkol ve mikrofiber bezle sildiği yakın çekim](/images/fdm-build-plate-cleaning.png "Baskı Tablası Bakımı")
 *Görsel: FDM yazıcı tablasının temizlenmesi.*
 
 #### **3. Hareketli Parçaların Yağlanması**
@@ -78,7 +78,7 @@ Yazıcınızın hareketli parçaları sorunsuz çalışmalıdır.
 * **Kılavuz Çubuklar/Raylar:** X, Y ve Z eksenlerindeki kılavuz çubukları veya lineer rayları temiz bir bezle silin. Ardından, yazıcınızın üreticisinin önerdiği uygun bir yağlayıcı (genellikle lityum gres veya silikon bazlı yağ) uygulayın. Her 1-3 ayda bir veya yazıcınızın kullanım yoğunluğuna göre yapın.
 * **Vidalı Miller (Z-Axis Lead Screws):** Z eksenindeki vidalı milleri temizleyin ve yağlayın. Bu, Z-wobble gibi sorunları önlemeye yardımcı olur.
 
-![Bir kişinin 3D yazıcının Z ekseni vidalı milini nazikçe yağladığı yakın çekim](/posts/fdm-lubrication.png "Hareketli Parçaların Yağlanması")
+![Bir kişinin 3D yazıcının Z ekseni vidalı milini nazikçe yağladığı yakın çekim](/images/fdm-lubrication.png "Hareketli Parçaların Yağlanması")
 *Görsel: 3D yazıcının hareketli parçalarına yağlayıcı uygulanması.*
 
 #### **4. Kayış Gerginliği Kontrolü**

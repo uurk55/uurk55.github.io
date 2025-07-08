@@ -3,14 +3,13 @@ title: "Hoş Geldiniz: 3D Baskı ile Pasif Gelire İlk Adım"
 date: 2025-03-01T09:00:00+03:00
 draft: false
 cover:
-    image: "/images/ilk-yazi-cover.jpg"
+    image: "/images/ilk-yazi-cover.png"
     alt: "Bir 3D yazıcıdan çıkan parlayan bir fikir"
     caption: "Fikirden ürüne, üründen gelire. Yolculuk başlıyor."
     relative: false
 categories: ["Başlangıç Rehberi"]
 tags: ["hoş geldiniz", "misyon", "pasif gelir"]
 comments: true
-weight: 1
 ---
 
 Evinizin bir köşesindeki o 3D yazıcı, sadece bir hobi aracı mı, yoksa bir fırsat kapısı mı?

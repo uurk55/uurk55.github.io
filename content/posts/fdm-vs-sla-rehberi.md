@@ -40,7 +40,7 @@ Eğer amacınız fonksiyonel prototipler oluşturmak, evdeki pratik sorunları �
 
 Şimdi FDM'nin pratik dünyasından ayrılıp, adeta bir simyacının laboratuvarına giriyoruz. Karşınızda SLA (Stereolithography) Teknolojisi! Eğer FDM robotik bir sıcak tutkal tabancasıysa, SLA da kontrollü bir şekilde ışıkla resim yapan bir **sihirbazdır.**
 
-![Bir SLA yazıcı reçine havuzundan detaylı bir figür çıkarıyor](/images/sla-printer-in-action.jpg "SLA: Detay ve Hassasiyetin Zirvesi")
+![Bir SLA yazıcı reçine havuzundan detaylı bir figür çıkarıyor](/images/sla-printer-in-action.jpg "SLA: Detay ve Hassasliğin Zirvesi")
 
 **Nasıl Çalışır?**
 Gözünüzde **sihirli bir sıvı** canlandırın. SLA yazıcı, içi ışığa duyarlı, akışkan bir polimer olan **reçine (resin)** ile dolu bir hazne kullanır. Bir lazer veya dijital bir ekran, bu sıvının en altından yukarıya doğru, katman katman UV ışığı yansıtır. Işığın değdiği her nokta anında katılaşır. Bu işlem, nesneniz reçine havuzundan yavaşça ve zarif bir şekilde yükselene kadar tekrarlanır.
@@ -96,13 +96,12 @@ Yukarıdaki sorulara verdiğiniz cevaplar, sizi yavaş yavaş bir yöne doğru i
 
 ---
 
-<div style="background-color: #2a2a2a; padding: 30px; border-radius: 8px; text-align: center; margin: 40px 0;">
+<div style="background-color: #2a2a2a; padding: 30px; border-radius: 8px; text-align: left; margin: 40px auto; max-width: 1500px; box-sizing: border-box;">
     <h3 style="color: #f0f0f0; margin-bottom: 15px;">Karar Vermekte Zorlanıyor musunuz?</h3>
-    <p style="color: #cccccc; margin-bottom: 25px;">Hangi 3D yazıcı teknolojisinin size daha uygun olduğunu adım adım belirlemenizi sağlayacak özel **"FDM vs SLA Karar Rehberi Kontrol Listesi"**ni indirmek için e-posta bültenimize kaydolun!</p>
+    <p style="color: #cccccc; margin-bottom: 25px;">Hangi 3D yazıcı teknolojisinin size daha uygun olduğunu adım adım belirlemenizi sağlayacak özel "FDM vs SLA Karar Rehberi Kontrol Listesi"ni indirmek için e-posta bültenimize kaydolun!</p>
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5rr3CmDEg3MYQShfD6yL3zDXk_g5IDOK9Jt-BxP6gABOSsw/viewform?embedded=true" width="640" height="461" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-  
-    <p style="color: #aaaaaa; font-size: 0.8em; margin-top: 15px;">E-posta adresiniz sadece bu kontrol listesini göndermek ve size gelecekteki faydalı içerikleri ulaştırmak için kullanılacaktır. Spam yapmayız!</p>
+    {{< iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5rr3CmDEg3MYQShfD6yL3zDXk_g5IDOK9Jt-BxP6gABOSsw/viewform?embedded=true" width="85%" height="700px" frameborder="0" marginheight="0" marginwidth="0" >}}
+    
 </div>
 
 ---

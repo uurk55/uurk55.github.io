@@ -1,7 +1,7 @@
 ---
 title: "Kullandığım Araçlar ve Tavsiyelerim"
 date: 2025-05-10T12:00:00+03:00
-draft: false
+draft: true
 hidemeta: true
 comments: false
 ---

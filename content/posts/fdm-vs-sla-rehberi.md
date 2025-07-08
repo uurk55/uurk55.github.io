@@ -101,7 +101,7 @@ Yukarıdaki sorulara verdiğiniz cevaplar, sizi yavaş yavaş bir yöne doğru i
     <p style="color: #cccccc; margin-bottom: 25px;">Hangi 3D yazıcı teknolojisinin size daha uygun olduğunu adım adım belirlemenizi sağlayacak özel **"FDM vs SLA Karar Rehberi Kontrol Listesi"**ni indirmek için e-posta bültenimize kaydolun!</p>
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5rr3CmDEg3MYQShfD6yL3zDXk_g5IDOK9Jt-BxP6gABOSsw/viewform?embedded=true" width="640" height="461" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-    
+  
     <p style="color: #aaaaaa; font-size: 0.8em; margin-top: 15px;">E-posta adresiniz sadece bu kontrol listesini göndermek ve size gelecekteki faydalı içerikleri ulaştırmak için kullanılacaktır. Spam yapmayız!</p>
 </div>
 

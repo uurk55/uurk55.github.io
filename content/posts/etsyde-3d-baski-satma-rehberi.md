@@ -1,6 +1,6 @@
 ---
 title: "Etsy'de 3D Baskı Satma Rehberi: Dükkan Açmaktan İlk Satışa (2025)"
-date: 2025-06-18T10:00:00+03:00
+date: 2025-06-14T10:00:00+03:00
 draft: false
 cover:
     image: "/images/etsy-rehberi-cover.png"

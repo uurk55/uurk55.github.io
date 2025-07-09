@@ -1,6 +1,6 @@
 ---
 title: "Pasif Gelir İçin Pazar Analizi: Hangi Nişlerde 3D Baskı Ürünleri Satılır?"
-date: 2025-06-14T17:30:00+03:00 # Tarihi güncelledim
+date: 2025-06-11T17:30:00+03:00 # Tarihi güncelledim
 draft: true
 cover:
   image: "/images/pazar-analizi-cover.png" # Buraya ana kapak görseli gelecek

@@ -6,8 +6,15 @@
     <description>Recent content in 3D Baskı Rehberleri on Edu 3D Model Dünyası</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>tr-tr</language>
-    <lastBuildDate>Sat, 10 May 2025 16:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 10:00:00 +0300</lastBuildDate>
     <atom:link href="https://edu3dmodel.com/series/3d-bask%C4%B1-rehberleri/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firmware Güncelleme Rehberi: Yazıcınızdan En İyi Performansı Alın ve Yeni Özellikleri Keşfedin</title>
+      <link>https://edu3dmodel.com/posts/firmware-guncelleme-rehberi/</link>
+      <pubDate>Wed, 14 May 2025 10:00:00 +0300</pubDate>
+      <guid>https://edu3dmodel.com/posts/firmware-guncelleme-rehberi/</guid>
+      <description>3D yazıcınızın firmware&amp;#39;ini güncellemek, performansını artırmak, yeni özellikler eklemek ve sorunları gidermek için adım adım kapsamlı rehber. Marlin, Klipper gibi popüler firmware&amp;#39;ler ve güncelleme ipuçları.</description>
+    </item>
     <item>
       <title>3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin</title>
       <link>https://edu3dmodel.com/posts/3d-yazici-bakim-rehberi/</link>

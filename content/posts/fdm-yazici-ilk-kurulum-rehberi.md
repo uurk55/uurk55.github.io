@@ -34,7 +34,7 @@ O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o
 Unutmayın: İlk kurulumda harcadığınız her ekstra dakika, gelecekteki saatlerinizi kurtarır. Acele etmeyin ve her adımı dikkatle kontrol edin!
 {{< /tip-box >}}
 
-*(Not: Eğer bir SLA (reçine) yazıcı aldıysanız, endişelenmeyin! Yakında yayınlayacağımız size özel, detaylı kurulum rehberini bekleyin!)*
+**Not:** Eğer bir SLA (reçine) yazıcı aldıysanız, size özel detaylı kurulum rehberimize göz atın: **[SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar]({{< ref "posts/sla-yazici-kurulum-guvenlik-rehberi.md" >}})**
 
 ### Adım 1: Kontrollü Kutu Açılımı ve Mekanik Montaj
 

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>SLA Yazıcı on Edu 3D Model Dünyası</title>
-    <link>https://edu3dmodel.com/tags/sla-yaz%C4%B1c%C4%B1/</link>
-    <description>Recent content in SLA Yazıcı on Edu 3D Model Dünyası</description>
+    <title>En İyi 3D Yazıcı on Edu 3D Model Dünyası</title>
+    <link>https://edu3dmodel.com/tags/en-iyi-3d-yaz%C4%B1c%C4%B1/</link>
+    <description>Recent content in En İyi 3D Yazıcı on Edu 3D Model Dünyası</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>tr-tr</language>
     <lastBuildDate>Sat, 12 Apr 2025 12:00:00 +0300</lastBuildDate>
-    <atom:link href="https://edu3dmodel.com/tags/sla-yaz%C4%B1c%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edu3dmodel.com/tags/en-iyi-3d-yaz%C4%B1c%C4%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Yazıcı Satın Alma Rehberi: Hangi 3D Yazıcıyı Almalısınız? (FDM &amp; SLA)</title>
       <link>https://edu3dmodel.com/posts/3d-yazici-satin-alma-rehberi/</link>
       <pubDate>Sat, 12 Apr 2025 12:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/posts/3d-yazici-satin-alma-rehberi/</guid>
       <description>Sizin için en iyi 3D yazıcıyı nasıl seçersiniz? FDM ve SLA teknolojileri için başlangıç seviyesi modelleri, kritik seçim faktörlerini (baskı hacmi, kalibrasyon, topluluk) ve farklı kullanıcı profillerine uygun önerileri bu kapsamlı rehberde keşfedin.</description>
-    </item>
-    <item>
-      <title>FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?</title>
-      <link>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</link>
-      <pubDate>Wed, 09 Apr 2025 11:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</guid>
-      <description>FDM mi, SLA mı? 3D yazıcı alırken hangi teknolojiyi seçmelisiniz? Bu rehberde, bütçenize, hedeflerinize ve baskı beklentilerinize göre doğru 3D yazıcı teknolojisini bulmanızı sağlayacak karşılaştırmalı analizi öğrenin.</description>
     </item>
   </channel>
 </rss>

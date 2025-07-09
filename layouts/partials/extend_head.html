@@ -53,5 +53,86 @@
         background-color: #E57345 !important;
     }
 
+/* --- Yeni Kutucuk Stilleri (Tip/Tavsiye Kutusu) --- */
+.tip-box {
+    background-color: var(--code-bg); /* Temaya uygun arka plan */
+    border-left: 5px solid #FF7F50; /* Turuncu bir çizgi */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.tip-box h4 {
+    color: var(--primary); /* Başlık rengi */
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.tip-box p {
+    color: var(--content); /* Metin rengi */
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* --- Başarı Hikayesi Kutucuk Stilleri --- */
+.success-story-box {
+    background-color: var(--code-bg); /* Temaya uygun arka plan */
+    border-left: 5px solid var(--secondary); /* İkincil renk */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.success-story-box h4 {
+    color: var(--primary);
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.success-story-box p {
+    color: var(--content);
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* --- Özel Alıntı Stilleri (Markdown'ın > kullanımı için) --- */
+blockquote {
+    background-color: var(--code-bg);
+    border-left: 4px solid var(--secondary); /* Temanın ikincil rengi */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-style: italic;
+    color: var(--secondary);
+}
+blockquote p {
+    margin-bottom: 5px;
+}
+blockquote cite { /* Alıntı yapanı belirtmek için */
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-top: 10px;
+}
+
+/* --- Okuyucu Etkileşim Butonu Stilleri --- */
+.custom-link-button {
+    display: inline-block;
+    background-color: #FF7F50; /* Marka renginiz */
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin: 10px auto; /* Ortalamak için */
+    text-align: center;
+    white-space: nowrap; /* Metni tek satırda tutar */
+}
+.custom-link-button:hover {
+    background-color: #E57345 !important;
+}
+
     
 </style>
+

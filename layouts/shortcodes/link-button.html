@@ -1,0 +1,3 @@
+<a href="{{ .Get "url" | relURL }}" class="custom-link-button" {{ if .Get "target" }}target="{{ .Get "target" }}"{{ end }}>
+    {{ .Inner }}
+</a>

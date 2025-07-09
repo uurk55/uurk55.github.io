@@ -1,0 +1,4 @@
+<div class="tip-box">
+    {{ if .Get "title" }}<h4>{{ .Get "title" }}</h4>{{ else }}<h4>💡 İpucu</h4>{{ end }}
+    {{ .Inner }}
+</div>

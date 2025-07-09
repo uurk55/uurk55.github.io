@@ -18,6 +18,10 @@ Evinizin bir köşesindeki o 3D yazıcı, sadece bir hobi aracı mı, yoksa bir 
 
 Bu platform, "Bu harika teknolojiyle nasıl para kazanırım?" sorusunun cevabını bulmak için kuruldu. Karmaşık terimleri ve kafa karışıklığını bir kenara bırakıp, sizi doğrudan sonuca götürecek pratik bir yol haritası sunmak için buradayım.
 
+{{< tip-box title="💡 Başlangıç İpucu" >}}
+Unutmayın: En büyük 3D baskı girişimleri bile tek bir küçük adımla başlar. Sabırlı olun ve ilk küçük projenize odaklanın!
+{{< /tip-box >}}
+
 **Birlikte Neler Yapacağız?**
 
 * **Öğreneceğiz:** Hangi yazıcı, hangi malzeme, hangi program? Tüm temel soruların net cevaplarını bulacağız.
@@ -29,5 +33,3 @@ Bu site, sizin "arıza tespit" kılavuzunuz, ilham kaynağınız ve en önemlisi
 Her büyük yolculuk, tek bir adımla başlar. O adımı bugün birlikte atıyoruz.
 
 **Hazır mısınız?** 3D baskı dünyasına ilk adımınızı atmak ve bu teknolojinin ne olduğunu keşfetmek için başlangıç noktamız: **[3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı]({{< ref "posts/3d-baski-nedir-ve-neden-bir-devrim.md" >}})** yazımıza göz atın!
-
-Tekrar hoş geldiniz!

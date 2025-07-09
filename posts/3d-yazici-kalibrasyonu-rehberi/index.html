@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>3D Yazıcı Kalibrasyonu A&#39;dan Z&#39;ye: Mükemmel Baskı İçin İnce Ayarlar | Edu 3D Model Dünyası</title>
+<meta name="keywords" content="3D Yazıcı Kalibrasyonu, Baskı Kalitesi, E-steps, PID Ayarı, Flow Kalibrasyonu, Z-Offset, 3D Yazıcı Ayarları, Baskı Hataları Çözümleri, Performans İyileştirme">
+<meta name="description" content="3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.">
+<meta name="author" content="uurk55">
+<link rel="canonical" href="https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://edu3dmodel.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://edu3dmodel.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://edu3dmodel.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+     
+    .post-meta .post-categories a, .post-tags li a {
+        display: inline-block;
+        background-color: #FF7F50;
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .post-meta .post-categories a:hover, .post-tags li a:hover {
+        background-color: #E57345;
+        color: white !important;
+    }
+    .post-tags {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .post-tags li {
+        display: inline-block;
+    }
+
+     
+    .cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 8px;
+        background-color: var(--code-bg);
+        border: 1px solid var(--card-border);
+    }
+    .cta-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF7F50 !important;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .cta-button:hover {
+        background-color: #E57345 !important;
+    }
+
+    
+</style><meta property="og:url" content="https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/">
+  <meta property="og:site_name" content="Edu 3D Model Dünyası">
+  <meta property="og:title" content="3D Yazıcı Kalibrasyonu A&#39;dan Z&#39;ye: Mükemmel Baskı İçin İnce Ayarlar">
+  <meta property="og:description" content="3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.">
+  <meta property="og:locale" content="tr-tr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-23T10:00:00+03:00">
+    <meta property="article:modified_time" content="2025-04-23T10:00:00+03:00">
+    <meta property="article:tag" content="3D Yazıcı Kalibrasyonu">
+    <meta property="article:tag" content="Baskı Kalitesi">
+    <meta property="article:tag" content="E-Steps">
+    <meta property="article:tag" content="PID Ayarı">
+    <meta property="article:tag" content="Flow Kalibrasyonu">
+    <meta property="article:tag" content="Z-Offset">
+    <meta property="og:image" content="https://edu3dmodel.com/images/calibration-cover.png">
+      <meta property="og:see_also" content="https://edu3dmodel.com/posts/3d-yazici-bakim-rehberi/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edu3dmodel.com/images/calibration-cover.png">
+<meta name="twitter:title" content="3D Yazıcı Kalibrasyonu A&#39;dan Z&#39;ye: Mükemmel Baskı İçin İnce Ayarlar">
+<meta name="twitter:description" content="3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://edu3dmodel.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "3D Yazıcı Kalibrasyonu A'dan Z'ye: Mükemmel Baskı İçin İnce Ayarlar",
+      "item": "https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "3D Yazıcı Kalibrasyonu A'dan Z'ye: Mükemmel Baskı İçin İnce Ayarlar",
+  "name": "3D Yazıcı Kalibrasyonu A\u0027dan Z\u0027ye: Mükemmel Baskı İçin İnce Ayarlar",
+  "description": "3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.",
+  "keywords": [
+    "3D Yazıcı Kalibrasyonu", "Baskı Kalitesi", "E-steps", "PID Ayarı", "Flow Kalibrasyonu", "Z-Offset", "3D Yazıcı Ayarları", "Baskı Hataları Çözümleri", "Performans İyileştirme"
+  ],
+  "articleBody": "3D baskı yolculuğunuzda, mükemmel baskı kalitesi ve boyutsal doğruluk elde etmek için kilit bir terimle karşılaşırsınız: 3D yazıcı kalibrasyonu. Peki, bu hassas ayar süreci neden bu kadar hayati? Basitçe ifade etmek gerekirse, 3D yazıcınızın tüm parçalarının bir orkestra gibi uyumlu çalışmasını sağlamak için yapılan titiz ince ayarlara kalibrasyon denir. Tıpkı bir müzik aletinin eşsiz bir melodi çalması için akort edilmesi gibi, 3D yazıcınızın da en iyi performansı sergilemesi ve hayal ettiğiniz sonucu vermesi için düzenli olarak kalibre edilmesi gerekir.\nBu kapsamlı 3D yazıcı kalibrasyon rehberi ile, yazıcınızdan tutarlı, yüksek kaliteli ve hatasız 3D baskılar almak için yapmanız gereken temel adımları A’dan Z’ye öğreneceksiniz. İster yeni başlayan bir 3D baskı meraklısı olun ister deneyimli bir kullanıcı, bu kalibrasyon adımları baskı kalitesinizi bir sonraki seviyeye taşıyacak ve yaygın baskı hatalarını önlemenize yardımcı olacaktır.\nNeden 3D Yazıcı Kalibrasyonu Bu Kadar Önemli? (Baskı Kalitesi İçin Kritik Rolü) Kalibrasyon, 3D baskıdaki birçok yaygın sorunun ve hayal kırıklığının temel çözümüdür. Doğru kalibre edilmiş bir 3D yazıcı ile elde edeceğiniz faydalar:\nÜstün Boyutsal Doğruluk: Tasarladığınız parçaların tam olarak beklediğiniz boyutlarda olmasını garanti eder. Özellikle birbirine geçmesi gereken fonksiyonel parçalar ve prototipler için bu doğruluk vazgeçilmezdir. Pürüzsüz Yüzey Kalitesi: Katman çizgilerinin daha az belirgin olmasını, “ghosting”, “ringing” veya “elephant’s foot” gibi yaygın 3D baskı hatalarının azalmasını sağlar. Bu, ürünlerinizin estetik değerini artırır. Minimum Filament İsrafı: Yanlış kalibrasyon ayarları, baskıların başarısız olmasına, filament israfına ve zaman kaybına yol açar. Doğru kalibrasyon, maliyetleri düşürür. Tutarlı ve Güvenilir Baskılar: Her baskının bir öncekinden daha iyi veya en azından aynı yüksek kalitede olmasını sağlar. Bu tutarlılık, ticari amaçlı üretim yapanlar için çok önemlidir. Yeni Filamentlere Kolay Uyum: Yeni bir filament türüne (PETG, ABS, TPU gibi) geçtiğinizde, doğru kalibrasyon ayarlarıyla her zaman en iyi sonuçları alırsınız. Görsel: Kalibrasyonun baskı kalitesi ve doğruluğu üzerindeki olumlu etkisini gösteren bir kompozisyon.\nKalibrasyon Sürecine Başlamadan Önce Temel Gereksinimler 3D yazıcı kalibrasyon sürecine başlamadan önce elinizde bulunması gereken bazı temel araçlar ve bilgiler vardır. Bu hazırlık, kalibrasyonunuzu daha verimli hale getirir:\nKumpas (Dijital veya Analog): Boyutsal doğruluğu ve filament çapını hassas bir şekilde ölçmek için vazgeçilmez bir araçtır. Çelik Cetvel veya Mezura: Daha büyük ölçümler için. Normal Bir A4 Kağıdı: Özellikle Z-offset kalibrasyonu için kullanılır. Bilgisayar ve Slicer Yazılımı: Cura, PrusaSlicer, Simplify3D gibi dilimleyici yazılımlar ve form ayarlarını değiştirmek için bilgisayar erişimi. Yazıcı Kontrol Programı: Yazıcınıza komutlar gönderebileceğiniz bir program (Pronterface, OctoPrint’in terminali veya slicer’ınızın içinde bulunan terminal). Sabır ve Dikkat: 3D yazıcı ayarları hassas bir süreçtir ve en iyi sonuçlar için dikkatli ve sabırlı olmak gerekir! Adım Adım Temel 3D Yazıcı Kalibrasyon Rehberi Bu adımları sırayla uygulamanız, FDM 3D yazıcınızın en iyi şekilde ayarlanmasını sağlayacaktır.\n1. Mekanik Kontroller ve Temizlik (Kalibrasyonun Temeli) Herhangi bir elektronik kalibrasyona başlamadan önce, yazıcınızın mekanik olarak sağlam olduğundan ve temiz olduğundan emin olun. Bu, doğru kalibrasyon için kritik bir temel oluşturur:\nTüm Vidaları Kontrol Edin: Yazıcınızdaki tüm yapısal ve hareketli parçaların vidalarının gevşek olmadığından emin olun. Gevşek vidalar titreşime ve baskı hatalarına yol açar. Kayış Gerginliği Kontrolü: X, Y ve Z eksenlerindeki kayışların doğru gerginlikte olduğundan emin olun (çok sıkı veya çok gevşek olmamalıdırlar). Hafifçe bastırdığınızda küçük bir esneme olmalı, ancak sarkmamalıdırlar. Gevşek kayışlar, katman kayması (layer shift) gibi hatalara neden olabilir. Tekerlekler/Raylar Temizliği ve Kontrolü: Hareketli parçaların üzerindeki tekerleklerin (V-slot) veya lineer rayların toz, kir veya filament kalıntısı olmadığından ve düzgün, takılmadan hareket ettiğinden emin olun. Nozül ve Tabla Temizliği: Daha önce bahsettiğimiz gibi, nozülün temiz ve baskı tablasının yeterince yapışkan ve temiz olduğundan emin olun. Tıkanmış bir nozül veya kirli bir tabla, kalibrasyonunuzu boşa çıkarır. Görsel: 3D yazıcının mekanik bileşenlerinin (kayışlar, vidalar, tekerlekler) kontrol edildiği ve ayarlandığı bir sahne, kalibrasyonun sağlam temelini vurguluyor.\n2. Z-Offset Kalibrasyonu (Mükemmel İlk Katman için Vazgeçilmez Ayar) Z-offset, nozülün baskı tablasına olan uzaklığını belirler ve ilk katman kalitesi için en kritik ve en sık yapılan ayardır. Doğru Z-offset, baskıların tablaya mükemmel yapışmasını sağlar ve “elephant’s foot” gibi sorunları engeller.\nYazıcıyı ve Tablayı Hazırlayın: Yazıcınızı açın ve kullandığınız filament için tabla sıcaklığını ısıtın (örn. PLA için 60°C). Yazıcının Sıfır Konumuna Gitmesini Sağlayın: Yazıcınızın menüsünden veya kontrol programından “Auto Home” (tüm eksenleri sıfır konumuna getirme) komutunu çalıştırın. Kağıt Testi (Boşluk Kontrolü): Nozülün altına normal bir A4 kağıdı yerleştirin. Z-Offset Ayarı (İnce Ayar): Yazıcınızın menüsünden “Tune”, “Control” veya “Z-Offset” gibi bir menüye gidin. Nozülü, kağıdı hafifçe sıkıştıracak şekilde (kağıdı çekip iterken hafif bir direnç hissedeceksiniz ama kağıt yırtılmamalı) yavaşça indirin. Kağıdın hafifçe sıkıştığı noktayı bulun. Ayarı Kaydedin: Bu yeni Z-offset değerini yazıcınıza kaydetmeyi unutmayın. Genellikle menüden “Store Settings” veya kontrol programında M500 gibi bir komutla kaydedilir. Görsel: Z-offset kalibrasyonu sırasında nozül ve baskı tablası arasındaki hassas boşluğu bir kağıt parçasıyla kontrol eden bir elin yakın çekimi, ilk katman mükemmelliği için kritik bir adım.\n3. E-steps Kalibrasyonu (Filament Miktarının Doğru Ayarlanması) E-steps (ekstrüder adımları), ekstrüder motorunuzun belirli bir mesafeyi (örneğin 100mm) ne kadar filament itmesi gerektiğini belirler. Doğru E-steps ayarı, baskılarınızda eksik dolgu (filamentin az gelmesi) veya aşırı dolgu (filamentin fazla gelmesi) sorunlarını engeller.\nYazıcıyı Isıtın ve Filamenti Yükleyin: Filamenti nozülünüz için uygun sıcaklığa ısıtın (örn. PLA için 200°C) ve filamenti ekstrüdere yükleyin. Filamenti İşaretleyin: Ekstrüderin filament girişinden yaklaşık 120mm uzakta, filamenti bir kalem veya marker ile dikkatlice işaretleyin. Filament İtme Komutu: Yazıcınızın kontrol programının terminalinden şu komutları gönderin: G92 E0 (Bu, ekstrüder sayacını sıfırlar.) G1 E100 F100 (Bu komut, yazıcıya 100mm filament itmesini söyler. F100 ise hızı dakikada 100mm olarak ayarlar.) Kalan Mesafeyi Ölçün: İşaretlediğiniz yerden ekstrüderin filament girişine kadar kalan mesafeyi bir kumpas veya cetvel ile ölçün. Eğer 20mm kaldıysa, yazıcınız tam olarak 100mm filament itmiş demektir (120mm - 20mm = 100mm). Eğer 25mm kaldıysa, 95mm itmiş demektir (120mm - 25mm = 95mm). Yeni E-steps Değerini Hesaplayın: Yazıcınızın mevcut E-steps değerini bulun (genellikle yazıcının menüsünde veya M503 komutuyla görebilirsiniz). Yeni değeri şu basit formülle hesaplayın: Yeni E-steps = (Mevcut E-steps değeri * İtilen İstenen Miktar (genelde 100mm)) / Gerçekte İtilen Miktar Örnek: Mevcut E-steps 93 ise ve yazıcı 95mm ittiyse: (93 * 100) / 95 = 97.89 Yeni Değeri Uygulayın ve Kaydedin: Hesapladığınız yeni E-steps değerini yazıcınıza bildirmek için M92 E[Yeni E-steps Değeri] (örn. M92 E97.89) komutunu gönderin. Ardından ayarı kalıcı olarak kaydetmek için M500 komutunu gönderin. Görsel: E-steps kalibrasyonu sırasında ekstrüderden çıkan filamentin hassas bir şekilde ölçülmesi, doğru filament akışını garanti eder.\n4. PID Ayarı (Nozül ve Tabla Sıcaklık Kararlılığı İçin İnce Ayar) PID (Oransal-İntegral-Türev) ayarı, yazıcınızın nozül ve baskı tablasının sıcaklığını baskı boyunca dalgalanma olmadan sabit tutmasını sağlar. Yanlış PID ayarları, sıcaklık değişikliklerine ve bunun sonucunda baskı hatalarına yol açabilir.\nNozül ve Tablayı Soğutun: Yazıcının tamamen soğuk olduğundan emin olun. PID Ayarı Otomatik Öğrenme Komutunu Gönderin: Yazıcınızın kontrol programının terminalinden aşağıdaki komutları gönderin. Bu komutlar, yazıcının hedef sıcaklıkta kendini en iyi nasıl tutacağını öğrenmesini sağlar. Nozül için (örnek 200°C için): M303 E0 S200 C5 (E0: ekstrüder, S200: hedef sıcaklık, C5: 5 tekrar) Tabla için (örnek 60°C için): M303 E-1 S60 C5 (E-1: ısıtılmış yatak, S60: hedef sıcaklık, C5: 5 tekrar) Yeni Değerleri Not Alın: Komutlar tamamlandığında, terminalde Kp, Ki, Kd gibi yeni değerler görüntülenecektir. Bu değerleri dikkatlice not alın. Yeni Değerleri Uygulayın ve Kalıcı Olarak Kaydedin: Nozül için: M301 P[Kp] I[Ki] D[Kd] (örnek not aldığınız değerlerle doldurun) Tabla için: M304 P[Kp] I[Ki] D[Kd] Ardından M500 komutunu göndererek bu ayarları yazıcınızın kalıcı hafızasına (EEPROM) kaydedin. 5. Akış (Flow) Kalibrasyonu (Baskının Doğru Filament Miktarı) Akış (Flow) ayarı, slicer’ınızın belirlediği filament miktarının yazıcı tarafından ne kadar doğru bir şekilde ekstrüde edildiğini kontrol eder. Bu ayar, baskının duvar kalınlığını ve genel doluluğunu doğrudan etkiler, böylece baskılarınızın hem güçlü hem de doğru boyutlarda olmasını sağlar.\nTek Duvar Küpü Baskısı Hazırlayın: Slicer’ınızda içi boş, tek duvarlı bir küp (örneğin 20x20x20mm boyutlarında, duvar kalınlığı nozül çapınız kadar, yani 0.4mm) tasarlayın veya indirin. Bu küpün içi dolgusuz (infill %0) ve üst/alt katmansız (top/bottom layers 0) olmalı. Baskı Alın: Bu özel küpü filamentinizle yazdırın. Duvar Kalınlığını Ölçün: Baskı bittikten ve tamamen soğuduktan sonra, bir kumpas kullanarak küpün tek duvarının kalınlığını birden fazla noktadan (örneğin 4 farklı köşesinden) ölçün ve bu ölçümlerin ortalamasını alın. Yeni Akış Değerini Hesaplayın: Slicer’ınızdaki mevcut Akış değerini (genellikle %100 olarak başlar) kullanarak yeni akış değerinizi şu basit formülle hesaplayın: Yeni Akış Yüzdesi = (Mevcut Akış Yüzdesi * İstenen Duvar Kalınlığı) / Ölçülen Gerçek Duvar Kalınlığı Örnek: Mevcut Akış %100 ise ve ölçülen duvar 0.42mm ise: (100 * 0.4) / 0.42 = 95.23% Yeni Değeri Slicer’a Girin: Hesapladığınız yeni akış değerini (örneğin 95.23%) slicer yazılımınızdaki “Flow” veya “Extrusion Multiplier” ayarına girin. Bu ayar, yazıcının kendisinde değil, her slicer profili için ayrı ayrı yapılır. Görsel: Akış kalibrasyonu için tek duvarlı bir küpün kumpas ile hassas ölçümü, doğru filament miktarını ayarlar.\nSonuç: Kalibrasyon, Mükemmel ve Tutarlı Baskıların Anahtarıdır 3D yazıcı kalibrasyonu, ilk bakışta biraz karmaşık veya teknik gelebilir. Ancak bu rehberdeki adım adım kalibrasyon yönergelerini düzenli olarak uyguladığınızda, baskı kalitenizde gözle görülür bir iyileşme fark edeceksiniz. Her yazıcı modeli ve her filament türü farklıdır, bu yüzden sabırlı olun ve küçük ince ayarlar yapmaktan çekinmeyin. Unutmayın, mükemmel 3D baskılar, detaylara gösterilen özen ve doğru yazıcı ayarları ile başlar! Kalibre edilmiş bir yazıcı, hem zamanınızı hem de filamentinizi korur.\nSiz de 3D yazıcınızın kalibrasyonuyla ilgili kendi ipuçlarınızı veya yaşadığınız deneyimleri yorumlarda paylaşın!\n",
+  "wordCount" : "1487",
+  "inLanguage": "en",
+  "image":"https://edu3dmodel.com/images/calibration-cover.png","datePublished": "2025-04-23T10:00:00+03:00",
+  "dateModified": "2025-04-23T10:00:00+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "uurk55"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edu 3D Model Dünyası",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edu3dmodel.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)">Edu 3D Model Dünyası</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://edu3dmodel.com/" title="Anasayfa">
+                    <span>Anasayfa</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/posts" title="Yazılarım">
+                    <span>Yazılarım</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tags" title="Etiketler">
+                    <span>Etiketler</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/iletisim" title="İletişim">
+                    <span>İletişim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/tavsiyelerim" title="Tavsiyelerim">
+                    <span>Tavsiyelerim</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://edu3dmodel.com/search" title="Arama">
+                    <span>Arama</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<article class="post-single">
+    <header class="post-header">
+        <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
+        <h1 class="post-title">
+            3D Yazıcı Kalibrasyonu A&#39;dan Z&#39;ye: Mükemmel Baskı İçin İnce Ayarlar
+        </h1>
+        <div class="post-description">
+            3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.
+        </div>
+        <div class="post-meta">
+            <span>April 23, 2025</span>
+             · 
+            <span>7 min read</span> · 
+            <span class="post-categories"><a href="https://edu3dmodel.com/categories/temel-bilgi-ve-kurulum/">Temel Bilgi ve Kurulum</a><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></span></div>
+    </header><div class="post-cover">
+        <img src="https://edu3dmodel.com/images/calibration-cover.png" alt="3D yazıcı kalibrasyonu ve hassas ölçüm aletleri"><p class="post-cover-caption">Mükemmel Baskılar İçin İnce Ayarlar: 3D Yazıcı Kalibrasyonu Rehberi</p></div><div class="post-content">
+        <p>3D baskı yolculuğunuzda, <strong>mükemmel baskı kalitesi</strong> ve boyutsal doğruluk elde etmek için kilit bir terimle karşılaşırsınız: <strong>3D yazıcı kalibrasyonu.</strong> Peki, bu hassas ayar süreci neden bu kadar hayati? Basitçe ifade etmek gerekirse, 3D yazıcınızın tüm parçalarının bir orkestra gibi uyumlu çalışmasını sağlamak için yapılan titiz <strong>ince ayarlara kalibrasyon</strong> denir. Tıpkı bir müzik aletinin eşsiz bir melodi çalması için akort edilmesi gibi, 3D yazıcınızın da en iyi performansı sergilemesi ve hayal ettiğiniz sonucu vermesi için düzenli olarak kalibre edilmesi gerekir.</p>
+<p>Bu kapsamlı <strong>3D yazıcı kalibrasyon rehberi</strong> ile, yazıcınızdan tutarlı, yüksek kaliteli ve <strong>hatasız 3D baskılar</strong> almak için yapmanız gereken temel adımları A&rsquo;dan Z&rsquo;ye öğreneceksiniz. İster yeni başlayan bir 3D baskı meraklısı olun ister deneyimli bir kullanıcı, bu <strong>kalibrasyon adımları</strong> baskı kalitesinizi bir sonraki seviyeye taşıyacak ve yaygın baskı hatalarını önlemenize yardımcı olacaktır.</p>
+<hr>
+<h3 id="neden-3d-yazıcı-kalibrasyonu-bu-kadar-önemli-baskı-kalitesi-için-kritik-rolü"><strong>Neden 3D Yazıcı Kalibrasyonu Bu Kadar Önemli? (Baskı Kalitesi İçin Kritik Rolü)</strong></h3>
+<p>Kalibrasyon, 3D baskıdaki birçok yaygın sorunun ve hayal kırıklığının temel çözümüdür. Doğru kalibre edilmiş bir 3D yazıcı ile elde edeceğiniz faydalar:</p>
+<ul>
+<li><strong>Üstün Boyutsal Doğruluk:</strong> Tasarladığınız parçaların tam olarak beklediğiniz boyutlarda olmasını garanti eder. Özellikle birbirine geçmesi gereken fonksiyonel parçalar ve prototipler için bu doğruluk vazgeçilmezdir.</li>
+<li><strong>Pürüzsüz Yüzey Kalitesi:</strong> Katman çizgilerinin daha az belirgin olmasını, &ldquo;ghosting&rdquo;, &ldquo;ringing&rdquo; veya &ldquo;elephant&rsquo;s foot&rdquo; gibi <strong>yaygın 3D baskı hatalarının</strong> azalmasını sağlar. Bu, ürünlerinizin estetik değerini artırır.</li>
+<li><strong>Minimum Filament İsrafı:</strong> Yanlış <strong>kalibrasyon ayarları</strong>, baskıların başarısız olmasına, filament israfına ve zaman kaybına yol açar. Doğru kalibrasyon, maliyetleri düşürür.</li>
+<li><strong>Tutarlı ve Güvenilir Baskılar:</strong> Her baskının bir öncekinden daha iyi veya en azından aynı yüksek kalitede olmasını sağlar. Bu tutarlılık, ticari amaçlı üretim yapanlar için çok önemlidir.</li>
+<li><strong>Yeni Filamentlere Kolay Uyum:</strong> Yeni bir filament türüne (PETG, ABS, TPU gibi) geçtiğinizde, doğru <strong>kalibrasyon ayarları</strong>yla her zaman en iyi sonuçları alırsınız.</li>
+</ul>
+<p><img alt="Bir 3D yazıcı, üzerinde farklı kalibrasyon test baskıları (küp, köprü, sıcaklık kulesi) ve bir kumpas ile ölçüm yapan bir el." loading="lazy" src="/images/calibration-why.png" title="3D Yazıcı Kalibrasyonunun Faydaları">
+<em>Görsel: Kalibrasyonun baskı kalitesi ve doğruluğu üzerindeki olumlu etkisini gösteren bir kompozisyon.</em></p>
+<hr>
+<h3 id="kalibrasyon-sürecine-başlamadan-önce-temel-gereksinimler"><strong>Kalibrasyon Sürecine Başlamadan Önce Temel Gereksinimler</strong></h3>
+<p><strong>3D yazıcı kalibrasyon</strong> sürecine başlamadan önce elinizde bulunması gereken bazı temel araçlar ve bilgiler vardır. Bu hazırlık, kalibrasyonunuzu daha verimli hale getirir:</p>
+<ul>
+<li><strong>Kumpas (Dijital veya Analog):</strong> Boyutsal doğruluğu ve filament çapını hassas bir şekilde ölçmek için vazgeçilmez bir araçtır.</li>
+<li><strong>Çelik Cetvel veya Mezura:</strong> Daha büyük ölçümler için.</li>
+<li><strong>Normal Bir A4 Kağıdı:</strong> Özellikle <strong>Z-offset kalibrasyonu</strong> için kullanılır.</li>
+<li><strong>Bilgisayar ve Slicer Yazılımı:</strong> Cura, PrusaSlicer, Simplify3D gibi dilimleyici yazılımlar ve form ayarlarını değiştirmek için bilgisayar erişimi.</li>
+<li><strong>Yazıcı Kontrol Programı:</strong> Yazıcınıza komutlar gönderebileceğiniz bir program (Pronterface, OctoPrint&rsquo;in terminali veya slicer&rsquo;ınızın içinde bulunan terminal).</li>
+<li><strong>Sabır ve Dikkat:</strong> <strong>3D yazıcı ayarları</strong> hassas bir süreçtir ve en iyi sonuçlar için dikkatli ve sabırlı olmak gerekir!</li>
+</ul>
+<hr>
+<h3 id="adım-adım-temel-3d-yazıcı-kalibrasyon-rehberi"><strong>Adım Adım Temel 3D Yazıcı Kalibrasyon Rehberi</strong></h3>
+<p>Bu adımları sırayla uygulamanız, <strong>FDM 3D yazıcınızın</strong> en iyi şekilde ayarlanmasını sağlayacaktır.</p>
+<h4 id="1-mekanik-kontroller-ve-temizlik-kalibrasyonun-temeli"><strong>1. Mekanik Kontroller ve Temizlik (Kalibrasyonun Temeli)</strong></h4>
+<p>Herhangi bir elektronik kalibrasyona başlamadan önce, yazıcınızın mekanik olarak sağlam olduğundan ve temiz olduğundan emin olun. Bu, doğru kalibrasyon için kritik bir temel oluşturur:</p>
+<ul>
+<li><strong>Tüm Vidaları Kontrol Edin:</strong> Yazıcınızdaki tüm yapısal ve hareketli parçaların vidalarının gevşek olmadığından emin olun. Gevşek vidalar titreşime ve baskı hatalarına yol açar.</li>
+<li><strong>Kayış Gerginliği Kontrolü:</strong> X, Y ve Z eksenlerindeki kayışların doğru gerginlikte olduğundan emin olun (çok sıkı veya çok gevşek olmamalıdırlar). Hafifçe bastırdığınızda küçük bir esneme olmalı, ancak sarkmamalıdırlar. Gevşek kayışlar, <strong>katman kayması</strong> (layer shift) gibi hatalara neden olabilir.</li>
+<li><strong>Tekerlekler/Raylar Temizliği ve Kontrolü:</strong> Hareketli parçaların üzerindeki tekerleklerin (V-slot) veya lineer rayların toz, kir veya filament kalıntısı olmadığından ve düzgün, takılmadan hareket ettiğinden emin olun.</li>
+<li><strong>Nozül ve Tabla Temizliği:</strong> Daha önce bahsettiğimiz gibi, nozülün temiz ve baskı tablasının yeterince yapışkan ve temiz olduğundan emin olun. Tıkanmış bir nozül veya kirli bir tabla, kalibrasyonunuzu boşa çıkarır.</li>
+</ul>
+<p><img alt="Bir kişinin elinde tornavida ile 3D yazıcının kayış gerginliğini veya vidalarını kontrol ettiği yakın çekim." loading="lazy" src="/images/mechanical-check.png" title="3D Yazıcı Mekanik Kontrolü">
+<em>Görsel: 3D yazıcının mekanik bileşenlerinin (kayışlar, vidalar, tekerlekler) kontrol edildiği ve ayarlandığı bir sahne, kalibrasyonun sağlam temelini vurguluyor.</em></p>
+<h4 id="2-z-offset-kalibrasyonu-mükemmel-ilk-katman-için-vazgeçilmez-ayar"><strong>2. Z-Offset Kalibrasyonu (Mükemmel İlk Katman için Vazgeçilmez Ayar)</strong></h4>
+<p><strong>Z-offset</strong>, nozülün baskı tablasına olan uzaklığını belirler ve <strong>ilk katman kalitesi</strong> için en kritik ve en sık yapılan ayardır. Doğru Z-offset, baskıların tablaya mükemmel yapışmasını sağlar ve &ldquo;elephant&rsquo;s foot&rdquo; gibi sorunları engeller.</p>
+<ol>
+<li><strong>Yazıcıyı ve Tablayı Hazırlayın:</strong> Yazıcınızı açın ve kullandığınız filament için tabla sıcaklığını ısıtın (örn. PLA için 60°C).</li>
+<li><strong>Yazıcının Sıfır Konumuna Gitmesini Sağlayın:</strong> Yazıcınızın menüsünden veya kontrol programından &ldquo;Auto Home&rdquo; (tüm eksenleri sıfır konumuna getirme) komutunu çalıştırın.</li>
+<li><strong>Kağıt Testi (Boşluk Kontrolü):</strong> Nozülün altına normal bir A4 kağıdı yerleştirin.</li>
+<li><strong>Z-Offset Ayarı (İnce Ayar):</strong> Yazıcınızın menüsünden &ldquo;Tune&rdquo;, &ldquo;Control&rdquo; veya &ldquo;Z-Offset&rdquo; gibi bir menüye gidin. Nozülü, kağıdı hafifçe sıkıştıracak şekilde (kağıdı çekip iterken hafif bir direnç hissedeceksiniz ama kağıt yırtılmamalı) yavaşça indirin. Kağıdın hafifçe sıkıştığı noktayı bulun.</li>
+<li><strong>Ayarı Kaydedin:</strong> Bu yeni Z-offset değerini yazıcınıza kaydetmeyi unutmayın. Genellikle menüden &ldquo;Store Settings&rdquo; veya kontrol programında <code>M500</code> gibi bir komutla kaydedilir.</li>
+</ol>
+<p><img alt="Bir kişinin elinde A4 kağıdını 3D yazıcının ısıtılmış tablası ile nozül arasına yerleştirip Z-offset ayarını kontrol ettiği yakın çekim." loading="lazy" src="/images/z-offset-calibration.png" title="Z-Offset Ayarı">
+<em>Görsel: Z-offset kalibrasyonu sırasında nozül ve baskı tablası arasındaki hassas boşluğu bir kağıt parçasıyla kontrol eden bir elin yakın çekimi, ilk katman mükemmelliği için kritik bir adım.</em></p>
+<h4 id="3-e-steps-kalibrasyonu-filament-miktarının-doğru-ayarlanması"><strong>3. E-steps Kalibrasyonu (Filament Miktarının Doğru Ayarlanması)</strong></h4>
+<p><strong>E-steps (ekstrüder adımları)</strong>, ekstrüder motorunuzun belirli bir mesafeyi (örneğin 100mm) ne kadar filament itmesi gerektiğini belirler. Doğru E-steps ayarı, baskılarınızda eksik dolgu (filamentin az gelmesi) veya aşırı dolgu (filamentin fazla gelmesi) sorunlarını engeller.</p>
+<ol>
+<li><strong>Yazıcıyı Isıtın ve Filamenti Yükleyin:</strong> Filamenti nozülünüz için uygun sıcaklığa ısıtın (örn. PLA için 200°C) ve filamenti ekstrüdere yükleyin.</li>
+<li><strong>Filamenti İşaretleyin:</strong> Ekstrüderin filament girişinden yaklaşık 120mm uzakta, filamenti bir kalem veya marker ile dikkatlice işaretleyin.</li>
+<li><strong>Filament İtme Komutu:</strong> Yazıcınızın kontrol programının terminalinden şu komutları gönderin:
+<ul>
+<li><code>G92 E0</code> (Bu, ekstrüder sayacını sıfırlar.)</li>
+<li><code>G1 E100 F100</code> (Bu komut, yazıcıya 100mm filament itmesini söyler. <code>F100</code> ise hızı dakikada 100mm olarak ayarlar.)</li>
+</ul>
+</li>
+<li><strong>Kalan Mesafeyi Ölçün:</strong> İşaretlediğiniz yerden ekstrüderin filament girişine kadar kalan mesafeyi bir kumpas veya cetvel ile ölçün.
+<ul>
+<li>Eğer 20mm kaldıysa, yazıcınız tam olarak 100mm filament itmiş demektir (120mm - 20mm = 100mm).</li>
+<li>Eğer 25mm kaldıysa, 95mm itmiş demektir (120mm - 25mm = 95mm).</li>
+</ul>
+</li>
+<li><strong>Yeni E-steps Değerini Hesaplayın:</strong> Yazıcınızın mevcut E-steps değerini bulun (genellikle yazıcının menüsünde veya <code>M503</code> komutuyla görebilirsiniz). Yeni değeri şu basit formülle hesaplayın:
+<ul>
+<li><code>Yeni E-steps = (Mevcut E-steps değeri * İtilen İstenen Miktar (genelde 100mm)) / Gerçekte İtilen Miktar</code></li>
+<li>Örnek: Mevcut E-steps 93 ise ve yazıcı 95mm ittiyse: <code>(93 * 100) / 95 = 97.89</code></li>
+</ul>
+</li>
+<li><strong>Yeni Değeri Uygulayın ve Kaydedin:</strong> Hesapladığınız yeni E-steps değerini yazıcınıza bildirmek için <code>M92 E[Yeni E-steps Değeri]</code> (örn. <code>M92 E97.89</code>) komutunu gönderin. Ardından ayarı kalıcı olarak kaydetmek için <code>M500</code> komutunu gönderin.</li>
+</ol>
+<p><img alt="Bir kişinin elinde mezura ile 3D yazıcının ekstrüderinden çıkan filamenti ölçtüğü yakın çekim." loading="lazy" src="/images/e-steps-calibration.png" title="E-steps Kalibrasyonu">
+<em>Görsel: E-steps kalibrasyonu sırasında ekstrüderden çıkan filamentin hassas bir şekilde ölçülmesi, doğru filament akışını garanti eder.</em></p>
+<h4 id="4-pid-ayarı-nozül-ve-tabla-sıcaklık-kararlılığı-için-ince-ayar"><strong>4. PID Ayarı (Nozül ve Tabla Sıcaklık Kararlılığı İçin İnce Ayar)</strong></h4>
+<p><strong>PID (Oransal-İntegral-Türev) ayarı</strong>, yazıcınızın nozül ve baskı tablasının sıcaklığını baskı boyunca dalgalanma olmadan sabit tutmasını sağlar. Yanlış PID ayarları, sıcaklık değişikliklerine ve bunun sonucunda baskı hatalarına yol açabilir.</p>
+<ol>
+<li><strong>Nozül ve Tablayı Soğutun:</strong> Yazıcının tamamen soğuk olduğundan emin olun.</li>
+<li><strong>PID Ayarı Otomatik Öğrenme Komutunu Gönderin:</strong> Yazıcınızın kontrol programının terminalinden aşağıdaki komutları gönderin. Bu komutlar, yazıcının hedef sıcaklıkta kendini en iyi nasıl tutacağını öğrenmesini sağlar.
+<ul>
+<li>Nozül için (örnek 200°C için): <code>M303 E0 S200 C5</code> (E0: ekstrüder, S200: hedef sıcaklık, C5: 5 tekrar)</li>
+<li>Tabla için (örnek 60°C için): <code>M303 E-1 S60 C5</code> (E-1: ısıtılmış yatak, S60: hedef sıcaklık, C5: 5 tekrar)</li>
+</ul>
+</li>
+<li><strong>Yeni Değerleri Not Alın:</strong> Komutlar tamamlandığında, terminalde <code>Kp</code>, <code>Ki</code>, <code>Kd</code> gibi yeni değerler görüntülenecektir. Bu değerleri dikkatlice not alın.</li>
+<li><strong>Yeni Değerleri Uygulayın ve Kalıcı Olarak Kaydedin:</strong>
+<ul>
+<li>Nozül için: <code>M301 P[Kp] I[Ki] D[Kd]</code> (örnek not aldığınız değerlerle doldurun)</li>
+<li>Tabla için: <code>M304 P[Kp] I[Ki] D[Kd]</code></li>
+<li>Ardından <code>M500</code> komutunu göndererek bu ayarları yazıcınızın kalıcı hafızasına (EEPROM) kaydedin.</li>
+</ul>
+</li>
+</ol>
+<h4 id="5-akış-flow-kalibrasyonu-baskının-doğru-filament-miktarı"><strong>5. Akış (Flow) Kalibrasyonu (Baskının Doğru Filament Miktarı)</strong></h4>
+<p><strong>Akış (Flow) ayarı</strong>, slicer&rsquo;ınızın belirlediği filament miktarının yazıcı tarafından ne kadar doğru bir şekilde ekstrüde edildiğini kontrol eder. Bu ayar, baskının duvar kalınlığını ve genel doluluğunu doğrudan etkiler, böylece baskılarınızın hem güçlü hem de doğru boyutlarda olmasını sağlar.</p>
+<ol>
+<li><strong>Tek Duvar Küpü Baskısı Hazırlayın:</strong> Slicer&rsquo;ınızda içi boş, tek duvarlı bir küp (örneğin 20x20x20mm boyutlarında, duvar kalınlığı nozül çapınız kadar, yani 0.4mm) tasarlayın veya indirin. Bu küpün içi dolgusuz (<code>infill</code> %0) ve üst/alt katmansız (<code>top/bottom layers</code> 0) olmalı.</li>
+<li><strong>Baskı Alın:</strong> Bu özel küpü filamentinizle yazdırın.</li>
+<li><strong>Duvar Kalınlığını Ölçün:</strong> Baskı bittikten ve tamamen soğuduktan sonra, bir kumpas kullanarak küpün tek duvarının kalınlığını birden fazla noktadan (örneğin 4 farklı köşesinden) ölçün ve bu ölçümlerin ortalamasını alın.</li>
+<li><strong>Yeni Akış Değerini Hesaplayın:</strong> Slicer&rsquo;ınızdaki mevcut Akış değerini (genellikle %100 olarak başlar) kullanarak yeni akış değerinizi şu basit formülle hesaplayın:
+<ul>
+<li><code>Yeni Akış Yüzdesi = (Mevcut Akış Yüzdesi * İstenen Duvar Kalınlığı) / Ölçülen Gerçek Duvar Kalınlığı</code></li>
+<li>Örnek: Mevcut Akış %100 ise ve ölçülen duvar 0.42mm ise: <code>(100 * 0.4) / 0.42 = 95.23%</code></li>
+</ul>
+</li>
+<li><strong>Yeni Değeri Slicer&rsquo;a Girin:</strong> Hesapladığınız yeni akış değerini (örneğin 95.23%) slicer yazılımınızdaki &ldquo;Flow&rdquo; veya &ldquo;Extrusion Multiplier&rdquo; ayarına girin. Bu ayar, yazıcının kendisinde değil, her slicer profili için ayrı ayrı yapılır.</li>
+</ol>
+<p><img alt="Bir kişinin elinde kumpas ile tek duvarlı bir 3D baskı küpünün duvar kalınlığını ölçtüğü yakın çekim." loading="lazy" src="/images/flow-calibration.png" title="Akış Kalibrasyonu">
+<em>Görsel: Akış kalibrasyonu için tek duvarlı bir küpün kumpas ile hassas ölçümü, doğru filament miktarını ayarlar.</em></p>
+<hr>
+<h3 id="sonuç-kalibrasyon-mükemmel-ve-tutarlı-baskıların-anahtarıdır"><strong>Sonuç: Kalibrasyon, Mükemmel ve Tutarlı Baskıların Anahtarıdır</strong></h3>
+<p><strong>3D yazıcı kalibrasyonu</strong>, ilk bakışta biraz karmaşık veya teknik gelebilir. Ancak bu rehberdeki <strong>adım adım kalibrasyon</strong> yönergelerini düzenli olarak uyguladığınızda, baskı kalitenizde gözle görülür bir iyileşme fark edeceksiniz. Her yazıcı modeli ve her filament türü farklıdır, bu yüzden sabırlı olun ve küçük ince ayarlar yapmaktan çekinmeyin. Unutmayın, <strong>mükemmel 3D baskılar</strong>, detaylara gösterilen özen ve doğru <strong>yazıcı ayarları</strong> ile başlar! Kalibre edilmiş bir yazıcı, hem zamanınızı hem de filamentinizi korur.</p>
+<hr>
+<p><strong>Siz de 3D yazıcınızın kalibrasyonuyla ilgili kendi ipuçlarınızı veya yaşadığınız deneyimleri yorumlarda paylaşın!</strong></p>
+
+    </div>
+
+    <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/3d-yaz%C4%B1c%C4%B1-kalibrasyonu/">3D Yazıcı Kalibrasyonu</a></li><li><a href="https://edu3dmodel.com/tags/bask%C4%B1-kalitesi/">Baskı Kalitesi</a></li><li><a href="https://edu3dmodel.com/tags/e-steps/">E-steps</a></li><li><a href="https://edu3dmodel.com/tags/pid-ayar%C4%B1/">PID Ayarı</a></li><li><a href="https://edu3dmodel.com/tags/flow-kalibrasyonu/">Flow Kalibrasyonu</a></li><li><a href="https://edu3dmodel.com/tags/z-offset/">Z-Offset</a></li><li><a href="https://edu3dmodel.com/tags/3d-yaz%C4%B1c%C4%B1-ayarlar%C4%B1/">3D Yazıcı Ayarları</a></li><li><a href="https://edu3dmodel.com/tags/bask%C4%B1-hatalar%C4%B1-%C3%A7%C3%B6z%C3%BCmleri/">Baskı Hataları Çözümleri</a></li><li><a href="https://edu3dmodel.com/tags/performans-iyile%C5%9Ftirme/">Performans İyileştirme</a></li></ul>
+        <div class="cta-box">
+            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+        </div>
+    </footer>
+
+    
+    <div id="comments" style="margin-top: 40px;">
+        <hr>
+        <h2>Yorumlar</h2>
+        <script src="https://giscus.app/client.js"
+            data-repo="uurk55/uurk55.github.io"
+            data-repo-id="R_kgDOMX0zYw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOMX0zY84CfIeL"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="tr"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    
+</article>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://edu3dmodel.com/">Edu 3D Model Dünyası</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

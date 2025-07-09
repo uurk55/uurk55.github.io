@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Duyarlı Baskı on Edu 3D Model Dünyası</title>
+    <link>https://edu3dmodel.com/tags/duyarl%C4%B1-bask%C4%B1/</link>
+    <description>Recent content in Duyarlı Baskı on Edu 3D Model Dünyası</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Wed, 09 Jul 2025 12:45:00 +0300</lastBuildDate>
+    <atom:link href="https://edu3dmodel.com/tags/duyarl%C4%B1-bask%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Esnek Filamentlerle Baskı Rehberi (TPU, TPE): Konfor ve Dayanıklılığı Birleştirin</title>
+      <link>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</link>
+      <pubDate>Wed, 09 Jul 2025 12:45:00 +0300</pubDate>
+      <guid>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</guid>
+      <description>TPU, TPE gibi esnek filamentlerle 3D baskı yapmanın inceliklerini öğrenin. Konforlu, dayanıklı ve esneyebilen parçalar basmak için en iyi slicer ayarları ve ipuçları bu rehberde.</description>
+    </item>
+  </channel>
+</rss>

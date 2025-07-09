@@ -6,8 +6,15 @@
     <description>Recent content in 3D Baskı Rehberleri on Edu 3D Model Dünyası</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>tr-tr</language>
-    <lastBuildDate>Sat, 31 May 2025 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 12:45:00 +0300</lastBuildDate>
     <atom:link href="https://edu3dmodel.com/series/3d-bask%C4%B1-rehberleri/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Esnek Filamentlerle Baskı Rehberi (TPU, TPE): Konfor ve Dayanıklılığı Birleştirin</title>
+      <link>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</link>
+      <pubDate>Wed, 09 Jul 2025 12:45:00 +0300</pubDate>
+      <guid>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</guid>
+      <description>TPU, TPE gibi esnek filamentlerle 3D baskı yapmanın inceliklerini öğrenin. Konforlu, dayanıklı ve esneyebilen parçalar basmak için en iyi slicer ayarları ve ipuçları bu rehberde.</description>
+    </item>
     <item>
       <title>Çok Renkli 3D Baskıya Giriş: Tek Yazıcıda Renk Cümbüşü Yaratın</title>
       <link>https://edu3dmodel.com/posts/cok-renkli-3d-baski-rehberi/</link>

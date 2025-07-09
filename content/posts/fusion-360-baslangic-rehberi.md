@@ -1,6 +1,6 @@
 ---
 title: "Fusion 360 Başlangıç Rehberi: Profesyonel 3D Parçalar Tasarlayın"
-date: 2025-06-07T11:00:00+03:00
+date: 2025-05-24T11:00:00+03:00
 draft: false
 cover:
     image: "/images/fusion360-cover.png"

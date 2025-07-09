@@ -1,6 +1,6 @@
 ---
 title: "PLA, PETG, ABS ve Reçine Farkları: Hangi 3D Baskı Malzemesini Seçmelisiniz?"
-date: 2025-03-29T11:00:00+03:00
+date: 2025-04-26T11:00:00+03:00
 draft: false
 cover:
     image: "/images/malzeme-rehberi-cover.jpg"

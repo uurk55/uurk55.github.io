@@ -1,6 +1,6 @@
 ---
 title: "En Yaygın 10 3D Baskı Hatası ve Pratik Çözümleri (2025)"
-date: 2025-05-03T10:00:00+03:00
+date: 2025-05-07T10:00:00+03:00
 draft: false
 cover:
     image: "/images/hata-rehberi-cover.jpg"

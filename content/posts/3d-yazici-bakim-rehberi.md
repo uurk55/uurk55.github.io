@@ -1,6 +1,6 @@
 ---
 title: "3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin"
-date: 2025-05-10T16:24:00+03:00 # Bu tarihi yayınladığınız güne göre güncelleyebilirsiniz
+date: 2025-05-10T16:00:00+03:00 # Bu tarihi yayınladığınız güne göre güncelleyebilirsiniz
 draft: false
 description: "3D yazıcınızdan en iyi performansı almak ve ömrünü uzatmak için düzenli bakım şarttır. Bu rehberle yazıcınızın temel bakımını nasıl yapacağınızı öğrenin."
 tags: ["3D Yazıcı Bakımı", "3D Baskı İpuçları", "Yazıcı Ömrü", "Sorun Giderme"]

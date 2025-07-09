@@ -1,6 +1,6 @@
 ---
 title: "Blender Başlangıç Rehberi: Heykeltıraş Gibi 3D Model Yapın"
-date: 2025-05-31T12:00:00+03:00
+date: 2025-05-21T12:00:00+03:00
 draft: false
 cover:
     image: "/images/blender-cover.jpg"

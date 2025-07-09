@@ -1,6 +1,6 @@
 ---
 title: "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar"
-date: 2025-04-26T11:00:00+03:00
+date: 2025-05-03T11:00:00+03:00
 draft: false
 cover:
     image: "/images/slicer-ayar-cover.jpg"

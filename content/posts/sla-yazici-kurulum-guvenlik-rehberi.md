@@ -1,6 +1,6 @@
 ---
 title: "SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar"
-date: 2025-04-12T11:00:00+03:00
+date: 2025-04-19T11:00:00+03:00
 draft: false
 cover:
     image: "/images/sla-kurulum-cover.jpg"

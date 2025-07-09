@@ -1,6 +1,6 @@
 ---
 title: "Tinkercad Rehberi: Sıfırdan Kendi 3D Modelinizi Yapın (En Kolay Yol)"
-date: 2025-05-10T11:00:00+03:00
+date: 2025-05-17T11:00:00+03:00
 draft: false
 cover:
     image: "/images/tinkercad-cover.jpg"

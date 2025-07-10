@@ -1,0 +1,215 @@
+/* --- Ana Sayfa Genel Başlık ve Ayırıcı Stilleri --- */
+.homepage-section-title {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.section-divider {
+    margin: 60px 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- BÖLÜM 1: "EN ÇOK OKUNANLAR" KARTLARI --- */
+.featured-posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Her zaman 2 eşit sütun oluştur */
+    gap: 30px;
+}
+
+/* Mobil cihazlar için tek sütuna düşürme */
+@media (max-width: 768px) {
+    .featured-posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-card {
+    position: relative;
+    height: 450px; /* Büyük ve etkileyici bir yükseklik */
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: flex-end; /* İçeriği aşağıya yasla */
+    transition: transform 0.2s ease-in-out;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-card::after { /* Okunabilirlik için gradyan efekti */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+a.card-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    text-decoration: none;
+    color: #fff;
+}
+
+.featured-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.featured-card-category {
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.featured-card-title {
+    font-size: 1.8em;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+}
+
+.featured-card-meta {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* --- BÖLÜM 2: "TÜM YAZILAR" KARTLARI --- */
+.all-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Daha küçük kartlar için ızgara */
+    gap: 25px;
+}
+
+.compact-card {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.compact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: var(--primary);
+}
+
+a.card-link {
+    text-decoration: none;
+    color: var(--content);
+}
+
+.compact-card-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.compact-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.compact-card:hover .compact-card-image {
+    transform: scale(1.05);
+}
+
+.compact-card-content {
+    padding: 15px 20px 20px 20px;
+}
+
+.compact-card-category {
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.compact-card-title {
+    font-size: 1.1em;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.compact-card-meta {
+    font-size: 0.8em;
+    color: var(--secondary);
+}
+/* --- SAYFALAMA (PAGINATION) STİLLERİ - GÜNCEL --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    list-style-type: none; /* Liste noktalarını kaldır */
+    padding: 0;
+}
+
+.pagination li { /* Hedefi li elementine çeviriyoruz */
+    margin: 0 4px; /* Butonlar arası boşluk */
+}
+
+.pagination li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius); /* Köşeleri yuvarlat */
+    text-decoration: none;
+    color: var(--content);
+    background-color: var(--background);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    font-size: 0.9em;
+}
+
+.pagination li a:hover {
+    background-color: var(--primary);
+    color: var(--primary-content);
+    border-color: var(--primary);
+}
+
+/* Aktif sayfa butonu */
+.pagination li.active a {
+    background-color: var(--primary);
+    color: var(--primary-content);
+    border-color: var(--primary);
+    font-weight: bold;
+}
+
+/* "..." olan pasif butonlar */
+.pagination li.disabled {
+    display: none; /* "..." olanları tamamen gizleyelim, daha temiz durur */
+}
+
+/* İleri/Geri okları */
+.pagination li.next a,
+.pagination li.previous a {
+    font-weight: bold;
+}

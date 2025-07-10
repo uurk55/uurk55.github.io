@@ -1,6 +1,7 @@
 ---
 title: "Hoş Geldiniz: 3D Baskı ile Pasif Gelire İlk Adım"
 date: 2025-04-02T09:00:00+03:00
+featured: true
 draft: false
 cover:
   image: "/images/ilk-yazi-cover.png"

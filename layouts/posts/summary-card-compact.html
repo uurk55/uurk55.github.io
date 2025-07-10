@@ -1,0 +1,16 @@
+<article class="compact-card">
+    <a href="{{ .Permalink }}" class="card-link">
+        <div class="compact-card-image-container">
+            {{- with .Params.cover.image -}}
+            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="compact-card-image">
+            {{- end -}}
+        </div>
+        <div class="compact-card-content">
+            <span class="compact-card-category">{{ index .Params.categories 0 }}</span>
+            <h4 class="compact-card-title">{{ .Title }}</h4>
+            <div class="compact-card-meta">
+                <span>{{ .Date.Format "2 Jan 2006" }}</span>
+            </div>
+        </div>
+    </a>
+</article>

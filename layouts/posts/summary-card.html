@@ -1,0 +1,16 @@
+<article class="summary-card">
+    <a href="{{ .Permalink }}" class="card-link">
+        <div class="card-image-container">
+            {{- with .Params.cover.image -}}
+            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="card-image">
+            {{- end -}}
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-summary">{{ .Summary }}</p>
+            <div class="card-meta">
+                <span class="meta-item">{{ .Date.Format "2 Jan 2006" }}</span>
+            </div>
+        </div>
+    </a>
+</article>

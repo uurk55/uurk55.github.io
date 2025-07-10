@@ -1,0 +1,13 @@
+<article class="featured-card" style="background-image: url('{{ .Params.cover.image | absURL }}');">
+    <a href="{{ .Permalink }}" class="card-link-overlay">
+        <div class="featured-card-content">
+            <span class="featured-card-category">{{ index .Params.categories 0 }}</span>
+            <h3 class="featured-card-title">{{ .Title }}</h3>
+            <div class="featured-card-meta">
+                <span>{{ .Date.Format "2 Jan 2006" }}</span>
+                <span>·</span>
+                <span>{{ .ReadingTime }} dk okuma</span>
+            </div>
+        </div>
+    </a>
+</article>

@@ -1,10 +1,10 @@
 ---
 title: "3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin"
-date: 2025-05-10T16:00:00+03:00 # Bu tarihi yayınladığınız güne göre güncelleyebilirsiniz
+date: 2025-05-10T16:00:00+03:00
 draft: false
-description: "3D yazıcınızdan en iyi performansı almak ve ömrünü uzatmak için düzenli bakım şarttır. Bu rehberle yazıcınızın temel bakımını nasıl yapacağınızı öğrenin."
-tags: ["3D Yazıcı Bakımı", "3D Baskı İpuçları", "Yazıcı Ömrü", "Sorun Giderme"]
-categories: ["Temel Bilgi ve Kurulum"]
+description: "3D yazıcınızdan en iyi performansı almak, baskı kalitesini korumak ve ömrünü uzatmak için FDM ve SLA yazıcıların temel bakım adımlarını (nozül, tabla, hareketli parçalar, reçine tankı temizliği) bu rehberle öğrenin."
+tags: ["3D Yazıcı Bakımı", "3D Baskı İpuçları", "Yazıcı Ömrü", "Sorun Giderme", "FDM Bakım", "SLA Bakım", "Nozül Temizliği", "Tabla Bakımı", "Reçine Tankı", "Periyodik Bakım"]
+categories: ["Temel Bilgi ve Kurulum", "Teknik İpuçları"]
 series: ["3D Baskı Rehberleri"]
 author: "uurk55"
 showToc: true
@@ -18,15 +18,21 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/3d-printer-maintenance-cover.png" # Yazı kapak görseli
+    image: "/images/3d-printer-maintenance-cover.png"
     alt: "3D Yazıcı Bakımı"
     caption: "3D Yazıcınızın Ömrünü Uzatın"
     relative: false
 ---
 
-3D baskı dünyasına adım attığınızda, heyecan verici tasarımlar yapma ve projelerinizi hayata geçirme hevesiyle dolarsınız. Ancak bu yolculukta sıklıkla göz ardı edilen kritik bir adım var: **3D yazıcınızın düzenli bakımı.** Tıpkı bir araba gibi, 3D yazıcınız da performansını korumak ve uzun ömürlü olmak için düzenli ilgiye ihtiyaç duyar.
+3D baskı dünyasına adım attığınızda, heyecan verici tasarımlar yapma ve projelerinizi hayata geçirme hevesiyle dolarsınız. Ancak bu yolculukta sıklıkla göz ardı edilen kritik bir adım var: **3D yazıcınızın düzenli bakımı.**
+
+> "Tıpkı bir araba gibi, 3D yazıcınız da performansını korumak ve uzun ömürlü olmak için düzenli ilgiye ihtiyaç duyar."
 
 Peki, neden bakım bu kadar önemli? Basitçe söylemek gerekirse, düzenli bakım, baskı kalitenizi artırır, yaygın hataları önler, yedek parça maliyetlerini düşürür ve en önemlisi, yazıcınızın ömrünü önemli ölçüde uzatır. Bu rehberde, 3D yazıcınızın temel bakımını nasıl yapacağınızı adım adım öğrenecek ve sık karşılaşılan sorunları nasıl önleyeceğinizi keşfedeceksiniz.
+
+{{< tip-box title="💡 Periyodik Bakım Önemlidir" >}}
+Yazıcınızın marka ve modeline göre değişmekle birlikte, genel bir kural olarak, her 200-300 saatlik baskı sonrası temel bir temizlik ve kontrol yapılması önerilir. Bu, küçük sorunların büyümesini engeller!
+{{< /tip-box >}}
 
 ---
 
@@ -76,7 +82,7 @@ Baskı tablası, ilk katman yapışması için hayati öneme sahiptir.
 Yazıcınızın hareketli parçaları sorunsuz çalışmalıdır.
 
 * **Kılavuz Çubuklar/Raylar:** X, Y ve Z eksenlerindeki kılavuz çubukları veya lineer rayları temiz bir bezle silin. Ardından, yazıcınızın üreticisinin önerdiği uygun bir yağlayıcı (genellikle lityum gres veya silikon bazlı yağ) uygulayın. Her 1-3 ayda bir veya yazıcınızın kullanım yoğunluğuna göre yapın.
-* **Vidalı Miller (Z-Axis Lead Screws):** Z eksenindeki vidalı milleri temizleyin ve yağlayın. Bu, Z-wobble gibi sorunları önlemeye yardımcı olur.
+* **Vidalı Miller (Z-Axis Lead Screws):** Z eksenindeki vidalı milleri temizleyin ve yağlayın. Bu, Z-wobble gibi sorunlara yardımcı olur.
 
 ![Bir kişinin 3D yazıcının Z ekseni vidalı milini nazikçe yağladığı yakın çekim](/images/fdm-lubrication.png "Hareketli Parçaların Yağlanması")
 *Görsel: 3D yazıcının hareketli parçalarına yağlayıcı uygulanması.*
@@ -113,7 +119,7 @@ Reçine tankı, baskı kalitesi ve yazıcının ömrü için çok önemlidir.
 
 #### **2. LCD Ekran (Maskeleme Ekranı) Bakımı**
 
-LCD ekran, UV ışığını maskeleyerek modelin katmanlarını oluşturan kritik bir bileşendir.
+LCD ekran, UV ışığını maskelemeleyerek modelin katmanlarını oluşturan kritik bir bileşendir.
 
 * **Temizlik:** LCD ekranı sadece mikrofiber bir bez ve izopropil alkol (IPA) ile nazikçe temizleyin. Asla aşındırıcı kimyasallar veya keskin cisimler kullanmayın, ekrana kalıcı zarar verebilirsiniz.
 * **Koruyucu Film:** Bazı yazıcılar, LCD ekran üzerinde ek bir koruyucu filmle gelir. Bu filmin hasar görmediğinden emin olun.
@@ -125,7 +131,7 @@ LCD ekran, UV ışığını maskeleyerek modelin katmanlarını oluşturan kriti
 
 Baskı platformu, baskıların yapıştığı yerdir.
 
-* **Her Baskıdan Sonra:** Platformu, kürlenmiş reçine kalıntılarından temizleyin. Genellikle IPA ile silmek yeterlidir.
+* **Her Baskıdan Sonra:** Platformu, kürlenmiş reçine kalıntılarınızdan temizleyin. Genellikle IPA ile silmek yeterlidir.
 * **Platform Kalibrasyonu:** Düzenli olarak platformun kalibrasyonunu kontrol edin ve gerekirse yeniden yapın.
 
 #### **4. UV Işık Kaynağı ve Optik Temizliği**
@@ -155,6 +161,10 @@ UV ışık kaynağı ve optik yolun temizliği, düzgün kürlenme için önemli
 3D yazıcınız, yaratıcılığınızı somutlaştıran güçlü bir araçtır. Ona göstereceğiniz düzenli bakım ve özen, bu aracın size uzun yıllar boyunca yüksek kalitede hizmet etmesini sağlayacaktır. Bu rehberdeki adımları uygulayarak, hem baskı kalitenizi artıracak hem de olası sorunların önüne geçerek 3D baskı deneyiminizi çok daha keyifli hale getireceksiniz.
 
 Unutmayın, küçük bir bakım, büyük sorunları önler!
+
+{{< success-story-box title="✨ Başarı Hikayesi: Bakım Sayesinde Kurtarılan Baskı Macerası" >}}
+Ebru, düzenli bakım rutinini aksatmadığı için, iki yıldır kullandığı FDM yazıcısından ilk günkü gibi pürüzsüz baskılar alıyor. Birçok arkadaşı parça değişimi veya yeni yazıcı düşünürken, Ebru sadece nozül temizliği ve yağlama yaparak yüzlerce dolarlık tamir masrafından kurtuldu. Bakım, gerçekten 'para kazandıran' bir alışkanlık!
+{{< /success-story-box >}}
 
 ---
 

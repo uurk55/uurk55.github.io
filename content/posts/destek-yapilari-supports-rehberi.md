@@ -2,21 +2,21 @@
 title: "Destek Yapıları (Supports): Ne Zaman, Neden ve Nasıl Kullanılır? (Baskı Başarısı İçin Kritik)"
 date: 2025-05-28T11:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
 draft: false
-description: "3D baskıda destek yapılarının (supports) ne zaman, neden gerekli olduğunu ve baskı kalitesini bozmadan nasıl kullanılacağını öğrenin. En iyi destek ayarları ve ipuçları."
-tags: ["3D Baskı Destekleri", "Supports", "Baskı Hataları Çözümleri", "Slicer Ayarları", "Baskı Kalitesi", "Aşırı Çıkıntılar"]
-categories: ["Beceri Geliştirme ve İleri Teknikler", "Teknik İpuçları"]
-series: ["3D Baskı Rehberleri"]
-author: "uurk55"
-showToc: true
-TocOpen: true
-hidemeta: false
-comments: true
-disableShare: false
-disableHLJS: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowPostNavLinks: true
+description: "3D baskıda destek yapılarının (supports) neden gerekli olduğunu, aşırı çıkıntıları ve köprüleri nasıl destekleyeceğinizi öğrenin. Ağaç ve doğrusal destek türleri, slicer ayarları ve destek temizleme ipuçları." # SEO odaklı ve açıklayıcı
+tags: ["3D Baskı Destekleri", "Supports", "Aşırı Çıkıntılar", "Overhangs", "Slicer Ayarları Destek", "Baskı Kalitesi", "Destek Çıkarma", "Tree Supports", "Normal Supports"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Beceri Geliştirme ve İleri Teknikler", "Teknik İpuçları"] # Kategoriler güncellendi
+series: ["3D Baskı Rehberleri"] # Seri eklendi
+author: "uurk55" # Yazar eklendi
+showToc: true # İçerik tablosu gösterilecek
+TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
+hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek
+comments: true # Yorumlar etkin olacak
+disableShare: false # Paylaşım butonları gösterilecek
+disableHLJS: true # Kod vurgulama etkin (eğer kod kullanıyorsanız)
+hideSummary: false # Liste sayfalarında özet gösterilecek
+searchHidden: false # Arama sonuçlarında görünecek
+ShowReadingTime: true # Okuma süresi gösterilecek
+ShowPostNavLinks: true # Önceki/Sonraki yazı linkleri gösterilecek
 cover:
     image: "/images/supports-cover.png" # Yazı kapak görseli
     alt: "3D baskıda destek yapıları"
@@ -25,6 +25,8 @@ cover:
 ---
 
 3D baskı dünyasında, kusursuz bir model elde etmenin önündeki en büyük engellerden biri, modelin geometrik yapısıdır. Yer çekimi, bazen hayallerinizdeki objenin belirli kısımlarının havada asılı kalmasına neden olur. İşte tam da bu noktada, sessiz kahramanlarımız devreye girer: **Destek Yapıları (Supports).**
+
+> "Destekler Düşman Değil, Dosttur!"
 
 Peki, destekler neden bu kadar önemli? Onları ne zaman kullanmalısınız ve baskı kalitenizi düşürmeden onları nasıl doğru bir şekilde ayarlayabilirsiniz? Bu kapsamlı rehberde, 3D baskıda destek yapılarının ne zaman vazgeçilmez olduğunu, farklı destek türlerini, slicer ayarlarını ve baskı bittikten sonra destekleri modelden nasıl kolayca ayıracağınızı adım adım öğreneceksiniz.
 
@@ -57,7 +59,7 @@ Bir 3D yazıcı, erimiş filamenti veya kürlenmiş reçineyi katman katman bir 
 * **Dezavantajları:**
     * Bazı durumlarda daha az stabil olabilirler.
     * Daha karmaşık hesaplamalar gerektirdiği için slicer'da baskı süresini biraz uzatabilir.
-* **Kimler İçin İdeal?** Organik ve heykelsi modeller, figürler, yüzey kalitesinin çok önemli olduğu estetik objeler.
+* **Kimler İçin İideal?** Organik ve heykelsi modeller, figürler, yüzey kalitesinin çok önemli olduğu estetik objeler.
 
 ![Slicer yazılımında veya gerçek baskıda, bir figürün veya organik şekilli bir objenin altında ağaç gibi dallanan destek yapıları.](/images/tree-supports.png "Ağaç Destekler")
 *Görsel: Bir slicer arayüzünde veya baskı tablasında, organik bir modelin altından yükselen ağaç destekler. Temas noktalarının azlığı vurgulanıyor.*
@@ -94,6 +96,10 @@ Doğru destek türünü seçmek kadar, slicer'da doğru ayarları yapmak da krit
 
 * **Ne Nedir?** Destek yapısı ile modelin baskı katmanı arasındaki dikey boşluktur. Bu boşluk, desteklerin modelden kolayca ayrılmasını sağlar.
 * **Öneri:** Bu ayar çok kritiktir. Genellikle **0.1 - 0.2 mm** arası bir değer kullanılır. Eğer çok küçükse destekler modelinize yapışır, çok büyükse modelin alt yüzeyi kötü görünür. Filamentinizin katman yüksekliğine (layer height) göre deneyerek en iyi değeri bulun.
+
+{{< tip-box title="💡 Destek Z Mesafesi Hayat Kurtarır" >}}
+Desteklerin modelden kolayca ayrılmasını ve temiz bir alt yüzey bırakmasını sağlayan en kritik ayar 'Destek Z Mesafesi'dir. Bu ayar, nozül çapınıza ve katman yüksekliğinize göre değişebilir, bu yüzden mutlaka test edin!
+{{< /tip-box >}}
 
 #### **4. Destek Temas Alanı (Support Interface / Top/Bottom Z Distance)**
 

@@ -2,31 +2,47 @@
 title: "Blender Başlangıç Rehberi: Heykeltıraş Gibi 3D Model Yapın"
 date: 2025-05-21T12:00:00+03:00
 draft: false
+description: "Blender'ın Sculpt Mode (Heykel Modu) ile organik ve sanatsal 3D modeller tasarlayın. Dijital kil topundan heykelsi objelere adım adım Blender başlangıç rehberi."
+tags: ["Blender", "3D Modelleme", "Sculpting", "Heykel Modu", "Ücretsiz 3D Programı", "Organik Modelleme", "Dijital Sanat", "Blender Rehberi"]
+categories: ["Tasarım", "Başlangıç Rehberi", "Beceri Geliştirme ve İleri Teknikler"]
+series: ["3D Baskı Rehberleri"]
+author: "uurk55"
+showToc: true
+TocOpen: true
+hidemeta: false
+comments: true
+disableShare: false
+disableHLJS: true
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowPostNavLinks: true
 cover:
     image: "/images/blender-cover.jpg"
     alt: "Bir el, dijital bir kil topunu Blender arayüzünde şekillendiriyor"
     caption: "Kalıpları kırın, yaratıcılığınızı bir heykeltıraş gibi serbest bırakın."
     relative: false
-categories: ["Tasarım", "Başlangıç Rehberi"]
-tags: ["blender", "3d modelleme", "sculpting", "ücretsiz 3d programı", "organik modelleme"]
-comments: true
 ---
 
 Tinkercad ile dijital LEGO oynamanın keyfini çıkardınız ve kendi tasarımlarınızı yarattınız. Harika! Ama bir süre sonra fark ettiniz ki, küpleri ve silindirleri birleştirmek, aklınızdaki o organik, kıvrımlı ve sanatsal şekilleri yaratmak için her zaman yeterli değil. Bir canavarın kafasını, pürüzsüz bir heykeli veya doğadan ilham alan bir vazoyu nasıl yaparsınız?
 
 İşte bu noktada, sizi bir 'inşaat mühendisinden' bir 'heykeltıraşa' dönüştürecek o güçlü ve tamamen ücretsiz araca merhaba deyin: **Blender**.
 
-Blender, Hollywood filmlerinden video oyunlarına kadar her alanda kullanılan devasa bir programdır ve ilk bakışta arayüzü sizi biraz korkutabilir. Ama endişelenmeyin! Biz bu okyanusa parmak ucundan gireceğiz ve sadece en eğlenceli ve en sezgisel özelliklerinden biri olan **Sculpt Mode (Heykel Modu)** üzerine odaklanacağız. Bu mod, önünüzde duran dijital bir kil topunu, farklı fırçalarla çekip, ittirip, düzleştirerek hayalinizdeki şekli vermenizi sağlar.
+> Blender, Hollywood filmlerinden video oyunlarına kadar her alanda kullanılan devasa bir programdır ve ilk bakışta arayüzü sizi biraz korkutabilir. Ama endişelenmeyin! Biz bu okyanusa parmak ucundan gireceğiz ve sadece en eğlenceli ve en sezgisel özelliklerinden biri olan **Sculpt Mode (Heykel Modu)** üzerine odaklanacağız. Bu mod, önünüzde duran dijital bir kil topunu, farklı fırçalarla çekip, ittirip, düzleştirerek hayalinizdeki şekli vermenizi sağlar.
 
 Bu **Blender başlangıç rehberi**, sizi programın tüm karmaşasından kurtarıp, doğrudan yaratıcılığın kalbine götürecek. Hadi, dijital çamurumuzu yoğurmaya başlayalım!
+
+{{< tip-box title="💡 Sürekli Kaydetme Alışkanlığı" >}}
+Blender gibi kapsamlı programlarda çalışırken düzenli olarak kaydetmek çok önemlidir (Ctrl+S). Özellikle Sculpt Mode'da, ani program kapanmaları veya hatalar karşısında ilerlemenizi kaybetmemek için bunu alışkanlık haline getirin!
+{{< /tip-box >}}
 
 ### Bölüm 1: Blender'a İlk Bakış - Sadece 3 Şeyi Bilin
 
 Maceraya başlamak için [blender.org](https://www.blender.org) adresine gidin ve programın en son sürümünü ücretsiz olarak indirin. Programı açtığınızda sizi bir hoş geldin ekranı ve ortasında meşhur bir küp karşılayacak. Şimdilik sadece üç temel navigasyon hareketini bilmeniz yeterli:
 
-*   **Farenin Orta Tekerleği (Basılı Tutarak):** Sahnenin etrafında 360 derece dönersiniz (orbit).
-*   **Shift + Farenin Orta Tekerleği (Basılı Tutarak):** Sahneyi kaydırırsınız (pan).
-*   **Farenin Orta Tekerleğini Kaydırmak:** Yakınlaşıp uzaklaşırsınız.
+* **Farenin Orta Tekerleği (Basılı Tutarak):** Sahnenin etrafında 360 derece dönersiniz (orbit).
+* **Shift + Farenin Orta Tekerleği (Basılı Tutarak):** Sahneyi kaydırırsınız (pan).
+* **Farenin Orta Tekerleğini Kaydırmak:** Yakınlaşıp uzaklaşırsınız.
 
 
 **Sculpt Mode'a Nasıl Geçilir?**
@@ -68,5 +84,9 @@ Tebrikler! Üst menüden `File > Export > Stl (.stl)` seçeneğini seçerek mode
 Az önce yaptığınız şey, sadece bir saksı tasarlamak değildi. Tinkercad'in geometrik dünyasından, Blender'ın organik ve sanatsal dünyasına başarılı bir geçiş yaptınız. Artık sadece küpleri birleştirmekle kalmıyor, dijital bir kile şekil verebiliyorsunuz.
 
 Bu, 3D modelleme yolculuğunuzda yepyeni bir kapı araladı. Unutmayın, Blender devasa bir program ve biz bugün sadece bir fırça darbesi attık. Gelecekteki rehberlerimizde, bu güçlü aracın diğer sırlarını da keşfetmeye devam edeceğiz. Artık dijital heykeltıraşlığa ilk adımı attığınıza göre, belki de bir mühendis gibi düşünmenin zamanı gelmiştir. Ölçüleri hassas, birbiriyle mükemmel uyumlu ve kolayca değiştirilebilen fonksiyonel parçalar tasarlamak isterseniz, bir sonraki durağınız **[Fusion 360 Başlangıç Rehberimizdir]({{< ref "posts/fusion-360-baslangic-rehberi.md" >}})**.
+
+{{< success-story-box title="✨ Başarı Hikayesi: Dijital Kilden Sanata" >}}
+Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkmuştu. Ama Sculpt Mode rehberimizdeki temel fırçaları kullanarak, sevdiği bir video oyunu karakterinin minyatür büstünü yonttu. İlk denemesi mükemmel olmasa da, çıkan sonucu görünce heveslendi ve şimdi kendi tasarladığı figürleri online platformlarda satıyor. Unutmayın, dijital heykeltıraşlık düşündüğünüzden daha kolay!
+{{< /success-story-box >}}
 
 Ama şimdilik, kendi ellerinizle 'yonttuğunuz' o ilk organik modelin baskısını almanın tadını çıkarın!

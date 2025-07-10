@@ -2,23 +2,39 @@
 title: "Fusion 360 Başlangıç Rehberi: Profesyonel 3D Parçalar Tasarlayın"
 date: 2025-05-24T11:00:00+03:00
 draft: false
+description: "Autodesk Fusion 360 ile parametrik modelleme öğrenin ve profesyonel, fonksiyonel 3D parçalar tasarlayın. Hassas ölçümlerle çalışan mühendislik parçaları oluşturma rehberi." # SEO odaklı ve açıklayıcı
+tags: ["Fusion 360", "Parametrik Modelleme", "3D Tasarım", "Fonksiyonel Parçalar", "CAD Yazılımı", "Mühendislik Tasarımı", "Autodesk Fusion 360"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Tasarım", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
+series: ["3D Baskı Rehberleri"] # Seri eklendi
+author: "uurk55" # Yazar eklendi
+showToc: true # İçerik tablosu gösterilecek
+TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
+hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek
+comments: true # Yorumlar etkin olacak
+disableShare: false # Paylaşım butonları gösterilecek
+disableHLJS: false # Kod vurgulama etkin (eğer kod kullanıyorsanız)
+hideSummary: false # Liste sayfalarında özet gösterilecek
+searchHidden: false # Arama sonuçlarında görünecek
+ShowReadingTime: true # Okuma süresi gösterilecek
+ShowPostNavLinks: true # Önceki/Sonraki yazı linkleri gösterilecek
 cover:
     image: "/images/fusion360-cover.png"
     alt: "Bir mühendisin masasında açık olan Fusion 360 yazılımı ve yanında tasarlanan hassas mekanik parça"
     caption: "Bir mühendis gibi düşünün, bir sanatçı gibi yaratın. Fusion 360'a hoş geldiniz."
     relative: false
-categories: ["Tasarım", "İleri Seviye"]
-tags: ["fusion 360", "parametrik modelleme", "3d tasarım", "fonksiyonel parçalar", "cad"]
-comments: true
 ---
 
 Tinkercad ile ilk anahtarlığınızı, Blender ile ilk organik saksınızı tasarladınız. Harika! Ama bir noktada şu sorunla karşılaştınız: Yaptığınız bir kutunun ölçüsünü sonradan 5mm değiştirmek istediğinizde, tüm tasarımı baştan yapmanız gerekti. İşte bu, 'doğrudan modelleme'nin sınırıdır.
 
 Profesyonel ve fonksiyonel parça tasarımının dünyasına hoş geldiniz: **Parametrik Modelleme** ve onun en erişilebilir kralı **Autodesk Fusion 360**.
 
-**Parametrik modelleme nedir?** En basit haliyle, 'kurallara dayalı' tasarımdır. Bir kutu çizerken ona "Genişliğin her zaman yüksekliğinin iki katı olsun" gibi bir kural koyarsınız. Yüksekliği değiştirdiğinizde, genişlik de otomatik olarak değişir. Bu, tasarımlarınızı inanılmaz esnek, hassas ve kolayca düzenlenebilir kılar.
+> **Parametrik modelleme nedir?** En basit haliyle, 'kurallara dayalı' tasarımdır. Bir kutu çizerken ona "Genişliğin her zaman yüksekliğinin iki katı olsun" gibi bir kural koyarsınız. Yüksekliği değiştirdiğinizde, genişlik de otomatik olarak değişir. Bu, tasarımlarınızı inanılmaz esnek, hassas ve kolayca düzenlenebilir kılar.
 
 Bu **Fusion 360 başlangıç rehberi**, sizi programın karmaşık arayüzünden korkutmadan, bu güçlü düşünce yapısına ilk adımı atmanızı sağlayacak. Bir mühendis gibi düşünmeye ve gerçekten 'çalışan' parçalar tasarlamaya hazır mısınız?
+
+{{< tip-box title="💡 Zaman Çizelgesi (Timeline) İpuçları" >}}
+Fusion 360'ın altındaki 'Zaman Çizelgesi' (Timeline), yaptığınız her işlemi kaydeder. Geri dönüp herhangi bir adımı (örneğin bir çizimin ölçüsünü) değiştirdiğinizde, tasarımınız otomatik olarak güncellenir. Bu sihirli özelliği aktif olarak kullanın!
+{{< /tip-box >}}
 
 ### Bölüm 1: Fusion 360'ın Temel Mantığı: Sketch'ten 3D'ye
 

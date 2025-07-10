@@ -2,9 +2,9 @@
 title: "Çok Renkli 3D Baskıya Giriş: Tek Yazıcıda Renk Cümbüşü Yaratın"
 date: 2025-05-31T12:00:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
 draft: false
-description: "Tek bir 3D yazıcı ile birden fazla renkte nasıl baskı alacağınızı öğrenin. Filament değişimi ve otomatik çoklu malzeme sistemleri (AMS) ile renkli 3D baskı dünyasına adım atın."
-tags: ["Çok Renkli 3D Baskı", "Renk Değişimi", "Otomatik Malzeme Sistemi", "AMS", "Baskı İpuçları", "3D Yazıcı Ayarları", "Renkli Baskı"]
-categories: ["Beceri Geliştirme ve İleri Teknikler"]
+description: "Tek bir 3D yazıcı ile birden fazla renkte nasıl baskı alacağınızı öğrenin. Manuel filament değişimi (Z-Pause) ve otomatik çoklu malzeme sistemleri (AMS) ile renkli 3D baskı teknikleri rehberi."
+tags: ["Çok Renkli 3D Baskı", "Renk Değişimi", "Otomatik Malzeme Sistemi", "AMS", "Bambu Lab AMS", "Prusa MMU", "Manuel Renk Değişimi", "Renkli Baskı İpuçları"]
+categories: ["Beceri Geliştirme ve İleri Teknikler", "Teknik İpuçları"]
 series: ["3D Baskı Rehberleri"]
 author: "uurk55"
 showToc: true
@@ -24,13 +24,19 @@ cover:
     relative: false
 ---
 
-Tek renkli 3D baskılar harikadır, ama bazen projeleriniz biraz daha fazla "canlılık" ister, değil mi? Aklınızdaki o figürün birden fazla renkte olmasını, logonuzun tüm renkleriyle basılmasını veya fonksiyonel parçalarınızın daha iyi ayırt edilmesini istersiniz. Peki, bunun için birden fazla yazıcıya mı ihtiyacınız var? Kesinlikle hayır! **Tek bir 3D yazıcı ile çok renkli baskılar almak** artık hayal değil, ulaşılabilir bir gerçeklik.
+Tek renkli 3D baskılar harikadır, ama bazen projeleriniz biraz daha fazla "canlılık" ister, değil mi? Aklınızdaki o figürün birden fazla renkte olmasını, logonuzun tüm renkleriyle basılmasını veya fonksiyonel parçalarınızın daha iyi ayırt edilmesini istersiniz. Peki, bunun için birden fazla yazıcıya mı ihtiyacınız var? Kesinlikle hayır!
+
+> **Tek bir 3D yazıcı ile çok renkli baskılar almak** artık hayal değil, ulaşılabilir bir gerçeklik.
 
 Bu rehberde, 3D baskı dünyasında renk cümbüşü yaratmanın sırlarını keşfedeceksiniz. Manuel filament değişiminden, otomatik çoklu malzeme sistemlerine (AMS) kadar farklı yöntemleri adım adım inceleyecek, renkli baskıların inceliklerini öğrenecek ve projelerinize nasıl yeni bir boyut katabileceğinizi göreceksiniz. Hazırsanız, 3D baskıda renk devrimine başlayalım!
 
+{{< tip-box title="💡 Renk Geçişlerinde Dikkat" >}}
+Manuel veya otomatik filament değişimlerinde, nozül içinde kalan eski rengin yeni renkle karışmaması için yeterli temizleme (purging) yapıldığından emin olun. Gerekirse atık kulesi (purge tower) kullanın!
+{{< /tip-box >}}
+
 ---
 
-### **Neden Çok Renkli 3D Baskıya İhtiyaç Duyarız?**
+### **Neden Çok Renkli 3D Baskıya İhtiyaç Duyarız? (Yaratıcılığınızı Renklendirin)**
 
 Çok renkli baskılar, sadece estetik bir güzellikten ibaret değildir; aynı zamanda fonksiyonel faydalar da sunar:
 

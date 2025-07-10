@@ -2,19 +2,31 @@
 title: "3D Baskı Yüzey İşleme: Baskılarınızı Profesyonelleştirecek 5 Teknik"
 date: 2025-06-07T11:00:00+03:00
 draft: false
+description: "3D baskılarınızdaki katman çizgilerini ve kusurları yok edin! Zımparalama, astarlama, boyama, aseton buharı ve SLA baskı sonrası teknikleriyle ürünlerinizi profesyonel ve satışa hazır hale getirin." # SEO odaklı ve açıklayıcı
+tags: ["Yüzey İşleme", "Post-Processing", "3D Baskı Boyama", "Zımparalama", "Aseton Buharı", "Katman Çizgileri", "Baskı Kusurları", "3D Baskı Teknikleri", "Profesyonel Baskı", "SLA Yüzey İşleme"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Teknik İpuçları", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
+series: ["3D Baskı Rehberleri"] # Seri eklendi
+author: "uurk55" # Yazar eklendi
+showToc: true # İçerik tablosu gösterilecek
+TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
+hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek
+comments: true # Yorumlar etkin olacak
+disableShare: false # Paylaşım butonları gösterilecek
+disableHLJS: false # Kod vurgulama etkin (eğer kod kullanıyorsanız)
+hideSummary: false # Liste sayfalarında özet gösterilecek
+searchHidden: false # Arama sonuçlarında görünecek
+ShowReadingTime: true # Okuma süresi gösterilecek
+ShowPostNavLinks: true # Önceki/Sonraki yazı linkleri gösterilecek
 cover:
     image: "/images/yuzey-isleme-cover.png"
     alt: "Bir kişinin elleri, pürüzlü bir 3D baskıyı zımparalayarak pürüzsüz hale getiriyor"
     caption: "Gerçek sihir, baskı bittikten sonra başlar. Ürünlerinize hak ettiği değeri verin."
     relative: false
-categories: ["Teknik İpuçları", "İleri Seviye"]
-tags: ["yüzey işleme", "zımparalama", "aseton", "3d baskı boyama", "post-processing"]
-comments: true
 ---
 
-Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgelüyor. İşte bu noktada, gerçek sihir başlar: **Yüzey İşleme (Post-Processing).**
+Harika bir model tasarladınız, yazıcınızda saatlerce bastınız ve elinize aldınız. Fikir gerçeğe dönüştü, ama bir sorun var: o rahatsız edici katman çizgileri ve küçük kusurlar, modelinizin tüm profesyonelliğini gölgeliyor. İşte bu noktada, gerçek sihir başlar: **Yüzey İşleme (Post-Processing).**
 
-Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve "satışa hazır" bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.
+> Yüzey işleme, 3D baskıdan çıkan ham bir objeyi alıp, onu pürüzsüz, parlak ve "satışa hazır" bir son ürüne dönüştürme sanatıdır. Bu, bir heykeltıraşın eserine son rötuşları yapması gibidir. Bu adımı atlamak, potansiyeli yüksek bir ürünü yarı yolda bırakmak demektir.
 
 Bu rehberde, herkesin evinde veya atölyesinde uygulayabileceği, **en etkili yüzey işleme tekniklerini** adım adım inceleyeceğiz. Bu tekniklerle, **katman çizgilerini nasıl yok edeceğinizi** öğrenecek ve hobici baskılarınızı, müşterilerinizin hayran kalacağı profesyonel eserlere dönüştüreceksiniz.
 
@@ -22,9 +34,9 @@ Bu rehberde, herkesin evinde veya atölyesinde uygulayabileceği, **en etkili y�
 
 Her şeyin başlangıcı ve en temel teknik budur. Başarının sırrı, **kademeli olarak** daha ince taneli zımparalara geçmektir.
 
-*   **Kaba Zımparalama (120-220 Grit):** İlk katman çizgilerini ve büyük kusurları gidermek için.
-*   **Orta Zımparalama (320-400 Grit):** Kaba zımparanın çiziklerini gidermek için.
-*   **İnce Zımparalama (600+ Grit):** Boyaya hazır, pürüzsüz bir yüzey için.
+* **Kaba Zımparalama (120-220 Grit):** İlk katman çizgilerini ve büyük kusurları gidermek için.
+* **Orta Zımparalama (320-400 Grit):** Kaba zımparanın çiziklerini gidermek için.
+* **İnce Zımparalama (600+ Grit):** Boyaya hazır, pürüzsüz bir yüzey için.
 
 **Profesyonel İpucu:** Özellikle 400 grit ve üzeri zımparalarda **ıslak zımparalama (wet sanding)** yapmak, çok daha pürüzsüz bir yüzey sağlar. Bazen zımparanın kapatamadığı boşlukları doldurmak için **hobi macunları (putty)** kullanabilir, kuruduktan sonra tekrar zımparalayabilirsiniz.
 
@@ -42,6 +54,10 @@ Profesyonel bir boya işinin sırrı, altında yatan temeldedir: **Astar (Primer
 
 Aseton buharları, ABS plastiğinin dış yüzeyini hafifçe eriterek katman çizgilerini tamamen yok eder ve parlak, enjeksiyon kalıplama ile üretilmiş gibi bir görünüm kazandırır. Cam bir kavanoz ve asetona batırılmış kağıt havlularla basit bir "buhar odası" oluşturarak uygulanabilir.
 
+{{< tip-box title="⚠️ Aseton Buharı Güvenliği!" >}}
+Aseton buharı son derece yanıcı ve solunduğunda zararlıdır. Bu tekniği uygularken daima dışarıda veya çok iyi havalandırılan bir odada, açık alevden ve kıvılcımlardan uzakta, nitril eldiven ve uygun bir solunum maskesi (solunum cihazı) kullanarak çalışın. Güvenlik ekipmanlarınızı ihmal etmeyin!
+{{< /tip-box >}}
+
 ![Aseton buharına maruz kalmadan önceki ve sonraki bir ABS baskısının karşılaştırması. Sonraki versiyon parlak ve pürüzsüz.](/images/yuzey-aseton.png)
 
 ### Teknik 4: Isı Tabancası Kullanımı (Hızlı Rötuşlar)
@@ -51,9 +67,9 @@ Baskınızın yüzeyindeki örümcek ağı gibi ince iplikçikleri (stringing) v
 ### Teknik 5: Boyama (Son Sanatsal Dokunuş)
 
 Artık elinizde pürüzsüz ve astarlanmış bir tuval var.
-*   **Akrilik Boyalar:** Yeni başlayanlar için en iyi seçenektir. Su bazlıdır ve kolay temizlenir.
-*   **Sprey Boyalar:** Geniş ve tek renkli yüzeyler için idealdir.
-*   **Vernik (Clear Coat):** Boyama işlemi bittikten sonra, modelinizin üzerine mat veya parlak bir sprey vernik atarak boyayı koruma altına alın.
+* **Akrilik Boyalar:** Yeni başlayanlar için en iyi seçenektir. Su bazlıdır ve kolay temizlenir.
+* **Sprey Boyalar:** Geniş ve tek renkli yüzeyler için idealdir.
+* **Vernik (Clear Coat):** Boyama işlemi bittikten sonra, modelinizin üzerine mat veya parlak bir sprey vernik atarak boyayı koruma altına alın.
 
 ![Farklı fırçalar ve akrilik boyalarla bir 3D baskı figürünün detaylarının boyandığı bir an](/images/yuzey-boyama.png)
 

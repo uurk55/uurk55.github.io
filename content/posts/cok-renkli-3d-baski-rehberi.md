@@ -1,6 +1,7 @@
 ---
 title: "Çok Renkli 3D Baskıya Giriş: Tek Yazıcıda Renk Cümbüşü Yaratın"
 date: 2025-05-31T12:00:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "Tek bir 3D yazıcı ile birden fazla renkte nasıl baskı alacağınızı öğrenin. Manuel filament değişimi (Z-Pause) ve otomatik çoklu malzeme sistemleri (AMS) ile renkli 3D baskı teknikleri rehberi."
 tags: ["Çok Renkli 3D Baskı", "Renk Değişimi", "Otomatik Malzeme Sistemi", "AMS", "Bambu Lab AMS", "Prusa MMU", "Manuel Renk Değişimi", "Renkli Baskı İpuçları"]

@@ -1,6 +1,7 @@
 ---
 title: "Masaüstü Oyun ve Hobi Figürleri Baskı Rehberi: Detay Sanatını Keşfedin ve Satın"
 date: 2025-06-28T14:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "Masaüstü rol yapma oyunları (D&D), wargame minyatürleri ve koleksiyonluk figürler için 3D baskının potansiyelini keşfedin. Detaylı figür baskı ipuçları, pazar potansiyeli ve kârlı ürün fikirleri bu rehberde."
 tags: ["3D Baskı Figür", "Minyatür Baskı", "D&D", "Masaüstü Oyun", "Hobi Baskı", "SLA Baskı", "Detaylı Baskı", "Niş Pazarlar", "Girişimcilik"]

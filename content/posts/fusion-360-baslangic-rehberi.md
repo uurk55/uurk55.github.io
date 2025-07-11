@@ -1,6 +1,7 @@
 ---
 title: "Fusion 360 Başlangıç Rehberi: Profesyonel 3D Parçalar Tasarlayın"
 date: 2025-05-24T11:00:00+03:00
+featured: false
 draft: false
 description: "Autodesk Fusion 360 ile parametrik modelleme öğrenin ve profesyonel, fonksiyonel 3D parçalar tasarlayın. Hassas ölçümlerle çalışan mühendislik parçaları oluşturma rehberi." # SEO odaklı ve açıklayıcı
 tags: ["Fusion 360", "Parametrik Modelleme", "3D Tasarım", "Fonksiyonel Parçalar", "CAD Yazılımı", "Mühendislik Tasarımı", "Autodesk Fusion 360"] # Genişletilmiş ve SEO odaklı etiketler

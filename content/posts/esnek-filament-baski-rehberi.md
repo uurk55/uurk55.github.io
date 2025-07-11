@@ -1,6 +1,7 @@
 ---
 title: "Esnek Filamentlerle Baskı Rehberi (TPU, TPE): Konfor ve Dayanıklılığı Birleştirin"
 date: 2025-06-04T12:45:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "TPU, TPE gibi esnek filamentlerle 3D baskı yapmanın inceliklerini öğrenin. Konforlu, dayanıklı ve esneyebilen parçalar basmak için en iyi slicer ayarları ve ipuçları bu rehberde."
 tags: ["Esnek Filament", "TPU", "TPE", "TPC", "3D Baskı Malzeme", "Duyarlı Baskı", "Slicer Ayarları", "Esnek Baskı İpuçları"]

@@ -1,6 +1,7 @@
 ---
 title: "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya"
 date: 2025-04-16T10:00:00+03:00
+featured: false
 draft: false
 description: "Yeni FDM 3D yazıcınızı kutudan çıkarıp ilk başarılı baskınızı almak için adım adım kurulum rehberi. Montajdan tabla kalibrasyonuna, filament yüklemeden ilk test baskısına kadar her şey."
 tags: ["FDM Kurulum", "3D Yazıcı Kurulumu", "İlk Baskı", "Tabla Kalibrasyonu", "Montaj Rehberi", "FDM Yazıcı", "Başlangıç Rehberi"]

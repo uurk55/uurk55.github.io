@@ -1,6 +1,7 @@
 ---
 title: "Etsy'de 3D Baskı Satma Rehberi: Dükkan Açmaktan İlk Satışa (2025)"
 date: 2025-06-14T10:00:00+03:00
+featured: false
 draft: false
 description: "3D baskı ürünlerinizi Etsy'de nasıl satacağınızı adım adım öğrenin. Dükkan açma, ürün listeleme, etkili fotoğrafçılık, Etsy SEO stratejileri ve ilk satışınızı yapma rehberi."
 tags: ["Etsy", "3D Baskı Satışı", "Etsy Dükkan Açma", "Ürün Pazarlama", "Etsy SEO", "Etsy Fiyatlandırma", "Girişimcilik", "Online Satış", "Mikro Fabrika"]

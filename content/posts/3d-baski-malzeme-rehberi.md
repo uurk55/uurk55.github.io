@@ -1,6 +1,7 @@
 ---
 title: "PLA, PETG, ABS ve Reçine Farkları: Hangi 3D Baskı Malzemesini Seçmelisiniz?"
 date: 2025-04-26T11:00:00+03:00
+featured: false
 draft: false
 description: "3D baskı için PLA, PETG, ABS ve reçine gibi popüler malzemelerin özelliklerini, avantajlarını, dezavantajlarını ve hangi projeler için ideal olduklarını keşfedin. Doğru malzeme seçimi rehberi."
 tags: ["PLA Filament", "PETG Filament", "ABS Filament", "3D Baskı Reçine", "Malzeme Seçimi", "Filament Rehberi", "3D Yazıcı Malzemesi", "Baskı İpuçları"]

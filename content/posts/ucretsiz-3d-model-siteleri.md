@@ -1,6 +1,7 @@
 ---
 title: "En İyi 5 Ücretsiz 3D Model Sitesi (STL İndir) - 2025"
 date: 2025-04-30T11:00:00+03:00
+featured: false
 draft: false
 description: "2025 yılı için en iyi 5 ücretsiz 3D model sitesini (Printables, Thingiverse, MakerWorld, MyMiniFactory, Cults3D) keşfedin. Milyonlarca ücretsiz STL dosyasını indirin ve projelerinize başlayın!"
 tags: ["Ücretsiz 3D Model", "STL İndir", "3D Baskı Modelleri", "Printables", "Thingiverse", "MakerWorld", "MyMiniFactory", "Cults3D", "Kaynaklar", "Başlangıç Rehberi"]

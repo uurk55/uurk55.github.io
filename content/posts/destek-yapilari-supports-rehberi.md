@@ -1,6 +1,7 @@
 ---
 title: "Destek Yapıları (Supports): Ne Zaman, Neden ve Nasıl Kullanılır? (Baskı Başarısı İçin Kritik)"
 date: 2025-05-28T11:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "3D baskıda destek yapılarının (supports) neden gerekli olduğunu, aşırı çıkıntıları ve köprüleri nasıl destekleyeceğinizi öğrenin. Ağaç ve doğrusal destek türleri, slicer ayarları ve destek temizleme ipuçları." # SEO odaklı ve açıklayıcı
 tags: ["3D Baskı Destekleri", "Supports", "Aşırı Çıkıntılar", "Overhangs", "Slicer Ayarları Destek", "Baskı Kalitesi", "Destek Çıkarma", "Tree Supports", "Normal Supports"] # Genişletilmiş ve SEO odaklı etiketler

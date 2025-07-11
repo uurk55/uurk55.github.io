@@ -1,6 +1,7 @@
 ---
 title: "Fiyatlandırma Stratejisi: Ürünlerinize Nasıl Fiyat Biçmelisiniz? (Maliyet, Kar, Rekabet)"
 date: 2025-06-18T13:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "3D baskı ürünlerinizi doğru fiyatlandırmak, kârlılığınız için hayati öneme sahiptir. Malzeme, elektrik, işçilik maliyetlerini hesaplamayı ve rekabetçi fiyatlandırma stratejilerini öğrenin."
 tags: ["3D Baskı Fiyatlandırma", "Maliyet Hesaplama", "Kâr Marjı", "Fiyatlandırma Stratejileri", "E-ticaret", "Pasif Gelir", "3D Baskı İşletme"]

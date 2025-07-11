@@ -1,6 +1,7 @@
 ---
 title: "Pasif Gelir İçin Pazar Analizi: Hangi Nişlerde 3D Baskı Ürünleri Satılır?"
 date: 2025-06-11T17:30:00+03:00 # Tarihi güncelledim
+featured: false
 draft: false
 description: "3D baskı ürünlerinizle pasif gelir elde etmek için doğru nişi nasıl bulursunuz? Pazar analizi yöntemleri, satış potansiyeli yüksek nişler ve kârlı ürün fikirleri rehberi." # SEO odaklı ve açıklayıcı
 tags: ["Pazar Analizi", "3D Baskı Niş Fikirleri", "Ürün Stratejisi", "E-ticaret", "Pasif Gelir", "Niş Pazarlar", "Ürün Fikirleri", "Rekabet Analizi"] # Genişletilmiş ve SEO odaklı etiketler

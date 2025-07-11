@@ -1,6 +1,7 @@
 ---
 title: "FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?"
 date: 2025-04-09T11:00:00+03:00
+featured: false
 draft: false
 description: "FDM mi, SLA mı? 3D yazıcı alırken hangi teknolojiyi seçmelisiniz? Bu rehberde, bütçenize, hedeflerinize ve baskı beklentilerinize göre doğru 3D yazıcı teknolojisini bulmanızı sağlayacak karşılaştırmalı analizi öğrenin." # Daha SEO odaklı ve açıklayıcı
 tags: ["FDM Yazıcı", "SLA Yazıcı", "3D Yazıcı Karşılaştırma", "Yazıcı Seçimi", "Başlangıç 3D Yazıcı", "Reçine Baskı", "Filament Baskı"] # Genişletilmiş ve SEO odaklı etiketler

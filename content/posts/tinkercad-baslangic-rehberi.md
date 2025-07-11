@@ -1,6 +1,7 @@
 ---
 title: "Tinkercad Rehberi: Sıfırdan Kendi 3D Modelinizi Yapın (En Kolay Yol)"
 date: 2025-05-17T11:00:00+03:00
+featured: false
 draft: false
 description: "Sıfırdan kendi 3D modelinizi tasarlayın! Autodesk Tinkercad ile dijital LEGO oynar gibi kolayca 3D modelleme öğrenin. En basit arayüz, adım adım anahtarlık yapımı ve ilk tasarım ipuçları bu rehberde." # SEO odaklı ve açıklayıcı
 tags: ["Tinkercad", "3D Modelleme", "Ücretsiz 3D Programı", "STL Yapma", "Başlangıç 3D Tasarım", "Online 3D Tasarım", "Kolay 3D Modelleme"] # Genişletilmiş ve SEO odaklı etiketler

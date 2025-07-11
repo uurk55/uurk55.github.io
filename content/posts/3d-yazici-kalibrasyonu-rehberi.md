@@ -1,6 +1,7 @@
 ---
 title: "3D Yazıcı Kalibrasyonu A'dan Z'ye: Mükemmel Baskı İçin İnce Ayarlar"
 date: 2025-04-23T10:00:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebilirsiniz
+featured: false
 draft: false
 description: "3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber."
 tags: ["3D Yazıcı Kalibrasyonu", "Baskı Kalitesi", "E-steps", "PID Ayarı", "Flow Kalibrasyonu", "Z-Offset", "3D Yazıcı Ayarları", "Baskı Hataları Çözümleri", "Performans İyileştirme"]

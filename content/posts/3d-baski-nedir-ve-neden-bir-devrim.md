@@ -1,6 +1,7 @@
 ---
 title: "3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı"
 date: 2025-04-05T14:00:00+03:00
+featured: false
 draft: false
 description: "3D baskı teknolojisinin ne olduğunu, nasıl çalıştığını ve fikirlerinizi fiziksel ürünlere dönüştürerek pasif gelir elde etme potansiyelini keşfedin. Adım adım Katmanlı Üretim rehberi."
 tags: ["3D Baskı Nedir", "Katmanlı Üretim", "Additive Manufacturing", "Temel Bilgiler", "3D Yazıcı Teknolojisi", "Pasif Gelir", "Üretim Devrimi"]

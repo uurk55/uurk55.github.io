@@ -3,7 +3,7 @@
 
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
     {{ $regular_pages := where .Site.RegularPages "Params.featured" "ne" true }}
-    {{ $paginator := .Paginate $regular_pages 10 }}
+    {{ $paginator := .Paginate $regular_pages 9 }}
 
     <!-- BÖLÜM 1: EN ÇOK OKUNANLAR (SADECE İLK SAYFADA) -->
     {{ if not .Paginator.HasPrev }}

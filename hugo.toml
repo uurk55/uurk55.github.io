@@ -19,7 +19,7 @@ theme = "PaperMod"
 [params]
   description = "3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası'nda A'dan Z'ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!"
   author = "uurk55"
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   ShowShareButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true

@@ -1,29 +1,37 @@
 {{ define "main" }}
 <div class="homepage-content">
 
-<!-- BÖLÜM 1: EN ÇOK OKUNANLAR (SADECE İLK SAYFADA) -->
-{{ if not .Paginator.HasPrev }}
-<h2 class="homepage-section-title">En Çok Okunanlar</h2>
-<div class="featured-posts-grid">
-    {{ $featured := where .Site.RegularPages "Params.featured" true }}
-    {{ range $featured }}
-        {{ .Render "summary-card-featured" }}
-    {{ end }}
-</div>
+    {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
+    {{ $regular_pages := where .Site.RegularPages "Params.featured" "ne" true }}
+    {{ $paginator := .Paginate $regular_pages 10 }}
 
-<hr class="section-divider">
-{{ end }}
-<!-- BÖLÜM 1 SONU -->
+    <!-- BÖLÜM 1: EN ÇOK OKUNANLAR (SADECE İLK SAYFADA) -->
+    {{ if not .Paginator.HasPrev }}
+        <h2 class="homepage-section-title">En Çok Okunanlar</h2>
+        <div class="featured-posts-grid">
+            {{ range $featured_pages }}
+                {{ .Render "summary-card-featured" }}
+            {{ end }}
+        </div>
+        <hr class="section-divider">
+    {{ end }}
+    <!-- BÖLÜM 1 SONU -->
 
     <!-- BÖLÜM 2: DİĞER YAZILAR -->
-    <h2 class="homepage-section-title">Tüm Yazılar</h2>
+    <h2 class="homepage-section-title">
+        {{ if .Paginator.HasPrev }}
+            Tüm Yazılar (Sayfa {{ .Paginator.PageNumber }})
+        {{ else }}
+            Diğer Yazılar
+        {{ end }}
+    </h2>
+
     <div class="all-posts-grid">
-        {{ $paginator := .Paginate (where .Site.RegularPages "Params.featured" "ne" true) 10 }}
         {{ range $paginator.Pages }}
             {{ .Render "summary-card-compact" }}
         {{ end }}
     </div>
-    <!-- SAYFALAMA LİNKLERİ -->
+    
     {{ partial "pagination.html" . }}
     <!-- BÖLÜM 2 SONU -->
 

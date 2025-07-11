@@ -1,0 +1,54 @@
+<header class="header-v2">
+    <!-- KATMAN 1: TOP BAR (Logo, Arama, Sosyal Medya) -->
+    <div class="header-top-bar">
+        <div class="header-container">
+            <!-- Logo -->
+<div class="logo-container">
+    <a href="{{ "" | absURL }}" accesskey="h" title="{{ .Site.Title }} (Alt + H)" class="logo-link">
+        <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="logo-image">
+        <div class="logo-text-wrapper">
+            <span class="logo-text">{{ .Site.Title }}</span>
+            <span class="logo-tagline">Fikirden Ürüne, Üründen Gelire...</span>
+        </div>
+    </a>
+</div>
+
+            <!-- Arama Çubuğu -->
+            <div class="search-container">
+                {{- if .Site.Params.search.hidden | not }}
+                <div class="search-widget">
+                    <form action="{{ "search" | absURL }}" method="get" autocomplete="off" class="search-form">
+                        <input type="text" id="search-query" name="q" placeholder="Blogda ara..." aria-label="Blogda ara...">
+                        <button type="submit" aria-label="Arama butonu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </button>
+                    </form>
+                </div>
+                {{- end }}
+            </div>
+
+            <!-- Sosyal Medya İkonları -->
+            <div class="header-right-icons">
+                <div class="social-icons">
+                    {{- partial "social_icons.html" (dict "page" .) -}}
+                </div>
+                <!-- Tema Değiştirici Butonu Buradan Kaldırıldı -->
+            </div>
+        </div>
+    </div>
+
+    <!-- KATMAN 2: MAIN NAVIGATION (Ana Menü Linkleri) -->
+    <nav class="header-main-nav">
+        <div class="header-container">
+            <ul>
+                {{- range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL | absURL }}" title="{{ .Title | default .Name }}">
+                        <span>{{ .Name }}</span>
+                    </a>
+                </li>
+                {{- end }}
+            </ul>
+        </div>
+    </nav>
+</header>

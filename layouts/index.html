@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="homepage-content">
 
+    {{/* --- DEĞİŞKENLERİ TANIMLAMA (STABİL VERSİYON) --- */}}
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
     {{ $regular_pages := where .Site.RegularPages "Params.featured" "ne" true }}
     {{ $paginator := .Paginate $regular_pages 9 }}
@@ -19,10 +20,9 @@
 
     <!-- BÖLÜM 2: DİĞER YAZILAR -->
     <h2 class="homepage-section-title">
-        {{ if .Paginator.HasPrev }}
-            Tüm Yazılar (Sayfa {{ .Paginator.PageNumber }})
-        {{ else }}
-            Diğer Yazılar
+        Tüm Yazılar
+        {{ if gt .Paginator.TotalPages 1 }}
+            <span class="page-number-indicator">- Sayfa {{ .Paginator.PageNumber }}</span>
         {{ end }}
     </h2>
 
@@ -32,6 +32,7 @@
         {{ end }}
     </div>
     
+    <!-- SAYFALAMA LİNKLERİ -->
     {{ partial "pagination.html" . }}
     <!-- BÖLÜM 2 SONU -->
 

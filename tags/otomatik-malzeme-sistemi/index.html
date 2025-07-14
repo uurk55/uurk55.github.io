@@ -10,7 +10,7 @@
 <meta name="description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
 <meta name="author" content="uurk55">
 <link rel="canonical" href="https://edu3dmodel.com/tags/otomatik-malzeme-sistemi/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9f7b337ed7f392df1db7ef6aeb3eb98d2eab7e04755e74f9e91e2d092223c213.css" integrity="sha256-n3szftfzkt8dt&#43;9q6z65jS6rfgR1XnT56R4tCSIjwhM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c427580cfaf3dec77ffdd93beea4e35417bbaa977ea7b48922a79be138e68b35.css" integrity="sha256-xCdYDPrz3sd//dk77qTjVBe7qpd&#43;p7SJIqeb4TjmizU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -28,7 +28,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.af6d2f45366c54a0ca2f620083e886960cd310afd6b205ab9d76aa13e8d366a0.css" integrity="sha256-r20vRTZsVKDKL2IAg&#43;iGlgzTEK/WsgWrnXaqE&#43;jTZqA="><meta property="og:url" content="https://edu3dmodel.com/tags/otomatik-malzeme-sistemi/">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.ee365ea147322aaa01fecb5baf0f532ae7c9ce9aba108a89fd038545897565ab.css" integrity="sha256-7jZeoUcyKqoB/stbrw9TKufJzpq6EIqJ/QOFRYl1Zas="><meta property="og:url" content="https://edu3dmodel.com/tags/otomatik-malzeme-sistemi/">
   <meta property="og:site_name" content="Edu 3D Model Dünyası">
   <meta property="og:title" content="Otomatik Malzeme Sistemi">
   <meta property="og:description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
@@ -45,25 +45,21 @@
     <div class="header-top-bar">
         <div class="header-container">
             
-<div class="logo-container">
-    <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)" class="logo-link">
-        <img src="https://edu3dmodel.com/logo.png" alt="Edu 3D Model Dünyası logo" class="logo-image">
-        <div class="logo-text-wrapper">
-            <span class="logo-text">Edu 3D Model Dünyası</span>
-            <span class="logo-tagline">Fikirden Ürüne, Üründen Gelire...</span>
-        </div>
-    </a>
-</div>
+            <div class="logo-container">
+                <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)" class="logo-link">
+                    <img src="https://edu3dmodel.com/logo.png" alt="Edu 3D Model Dünyası logo" class="logo-image">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">Edu 3D Model Dünyası</span>
+                        <span class="logo-tagline">Fikirden Ürüne, Üründen Gelire...</span>
+                    </div>
+                </a>
+            </div>
 
             
             <div class="search-container">
-                <div class="search-widget">
-                    <form action="https://edu3dmodel.com/search" method="get" autocomplete="off" class="search-form">
-                        <input type="text" id="search-query" name="q" placeholder="Blogda ara..." aria-label="Blogda ara...">
-                        <button type="submit" aria-label="Arama butonu">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </button>
-                    </form>
+                <div class="search-widget-final">
+                    <input type="search" id="search-input-final" placeholder="Blogda ara..." autocomplete="off">
+                    <ul id="search-results-final" class="search-results-list-final"></ul>
                 </div>
             </div>
 
@@ -89,7 +85,6 @@
     </a>
 </div>
 </div>
-                
             </div>
         </div>
     </div>
@@ -136,7 +131,8 @@
             </ul>
         </div>
     </nav>
-</header><main class="main">
+</header>
+<main class="main">
 
 
 <header class="page-header">
@@ -165,7 +161,7 @@
 
     </main>
     <footer class="footer-v2">
-    <div class="footer-main-area"> 
+    <div class="footer-main-area">
         <div class="footer-container">
             
             <div class="footer-column">
@@ -228,10 +224,63 @@
         </div>
     </div>
     <div class="footer-bottom-bar">
-        <div class="footer-container-bottom"> 
+        <div class="footer-container-bottom">
              <p>© 2025 Edu 3D Model Dünyası - Tüm Hakları Saklıdır.</p>
         </div>
     </div>
-</footer></body>
+</footer>
+
+
+<script>
+    
+    const searchInput = document.getElementById('search-input-final');
+    const searchResults = document.getElementById('search-results-final');
+    let allPages = [];
+
+    
+    if (searchInput && searchResults) {
+        fetch('https:\/\/edu3dmodel.com\/index.json')
+            .then(response => response.json())
+            .then(data => {
+                allPages = data;
+            });
+
+        searchInput.addEventListener('input', function (e) {
+            const query = e.target.value.toLowerCase().trim();
+            searchResults.innerHTML = '';
+
+            if (query.length < 2) {
+                searchResults.classList.remove('active');
+                return;
+            }
+
+            const results = allPages.filter(page => {
+                return page.title.toLowerCase().includes(query) || page.content.toLowerCase().includes(query);
+            }).slice(0, 7); 
+
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = result.permalink;
+                    a.textContent = result.title;
+                    li.appendChild(a);
+                    searchResults.appendChild(li);
+                });
+                searchResults.classList.add('active');
+            } else {
+                searchResults.classList.remove('active');
+            }
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            const searchWidget = document.querySelector('.search-widget-final');
+            if (searchWidget && !searchWidget.contains(event.target)) {
+                searchResults.classList.remove('active');
+            }
+        });
+    }
+</script></body>
 
 </html>

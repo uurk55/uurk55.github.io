@@ -650,3 +650,64 @@ body > footer.footer:not(.footer-v2) {
     border-radius: var(--radius);
     font-weight: bold;
 }
+/* --- ORTALANMIŞ SAYFA STİLLERİ (E-KİTAP) --- */
+.post-single-centered {
+    max-width: 800px; /* Sayfa genişliğini sınırla */
+    margin: 0 auto;   /* Ortala */
+    padding: 20px 0;
+    text-align: center; /* Tüm içeriği ortala */
+}
+.post-header-centered, .post-content-centered {
+    padding: 0 15px;
+}
+.post-content-centered h3 {
+    text-align: left; /* Madde başlığını sola daya */
+}
+.post-content-centered ul {
+    list-style-position: inside;
+    text-align: left; /* Madde imlerini ve metni sola daya */
+    display: inline-block; /* Listeyi kendi içeriği kadar genişlet */
+}
+/* --- ORTALANMIŞ SAYFA VE CONVERTKIT FORMU --- */
+.post-single-centered {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.post-content-centered h1, .post-content-centered h2, .post-content-centered h3 {
+    text-align: center;
+}
+.post-content-centered ul {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* ConvertKit Formunu Güzelleştirme */
+.convertkit-form-container .formkit-fields {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.convertkit-form-container .formkit-field {
+    flex-grow: 1;
+}
+.convertkit-form-container .formkit-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-size: 1em;
+}
+.convertkit-form-container .formkit-submit {
+    padding: 12px 25px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--primary-content);
+    font-weight: bold;
+    border-radius: var(--radius);
+    cursor: pointer;
+}

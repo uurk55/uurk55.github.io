@@ -104,7 +104,7 @@ theme = "PaperMod"
   [[menu.main]]
     identifier = "cta-button"
     name = "E-KİTAP HAZIRLANIYOR"
-    url = "/e-kitap-bekleme-listesi/"
+    url = "/ekitap"
     weight = 70
     [menu.main.params]
       is_button = true

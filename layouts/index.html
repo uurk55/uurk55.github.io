@@ -13,46 +13,36 @@
         <hr class="section-divider">
     {{ end }}
 
+    {{/* --- KATEGORİ BÖLÜMLERİ --- */}}
+    {{ $kategoriler := slice 
+        "Başlangıç Rehberi"
+        "Para Kazanma"
+        "Teknik İpuçları"
+        "Tasarım"
+        "Beceri Geliştirme ve İleri Teknikler"
+        "Yazıcı İncelemeleri"
+        "Teknoloji Karşılaştırma"
+        "Temel Bilgi ve Kurulum"
+        "Girişimcilik"
+        "İleri Seviye"
+        "Kaynaklar"
+    }}
 
-    {{/* --- BÖLÜM 2: PARA KAZANMA YAZILARI --- */}}
-    {{ $paraKazanma := where .Site.RegularPages "Params.categories" "intersect" (slice "Para Kazanma") }}
-    {{ if $paraKazanma }}
-        <h2 class="homepage-section-title">
-            <a href="/categories/para-kazanma/">Para Kazanma Stratejileri</a>
-        </h2>
-        <div class="all-posts-grid">
-            {{ range first 3 $paraKazanma }}
-                {{ .Render "summary-card-compact" }}
-            {{ end }}
-        </div>
-    {{ end }}
-
-
-    {{/* --- BÖLÜM 3: BAŞLANGIÇ REHBERİ YAZILARI --- */}}
-    {{ $baslangicRehberi := where .Site.RegularPages "Params.categories" "intersect" (slice "Başlangıç Rehberi") }}
-    {{ if $baslangicRehberi }}
-        <h2 class="homepage-section-title">
-            <a href="/categories/baslangic-rehberi/">Başlangıç Rehberleri</a>
-        </h2>
-        <div class="all-posts-grid">
-            {{ range first 3 $baslangicRehberi }}
-                {{ .Render "summary-card-compact" }}
-            {{ end }}
-        </div>
-    {{ end }}
-
-
-    {{/* --- BÖLÜM 4: TEKNİK İPUÇLARI YAZILARI --- */}}
-    {{ $teknikIpuclari := where .Site.RegularPages "Params.categories" "intersect" (slice "Teknik İpuçları") }}
-    {{ if $teknikIpuclari }}
-        <h2 class="homepage-section-title">
-            <a href="/categories/teknik-ipuclari/">Teknik İpuçları</a>
-        </h2>
-        <div class="all-posts-grid">
-            {{ range first 3 $teknikIpuclari }}
-                {{ .Render "summary-card-compact" }}
-            {{ end }}
-        </div>
+    {{ range $kategoriler }}
+        {{ $kategoriAdi := . }}
+        {{ $sayfaListesi := where $.Site.RegularPages "Params.categories" "intersect" (slice $kategoriAdi) }}
+        {{ if $sayfaListesi }}
+            <div class="category-section-wrapper">
+                <h2 class="homepage-section-title">
+                    <a href="{{ (printf "categories/%s" ($kategoriAdi | urlize)) | absURL }}">{{ $kategoriAdi }}</a>
+                </h2>
+                <div class="all-posts-grid">
+                    {{ range first 3 $sayfaListesi }}
+                        {{ .Render "summary-card-compact" }}
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
     {{ end }}
 
 </div>

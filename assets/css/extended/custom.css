@@ -458,3 +458,43 @@ a.card-link {
 .email-signup-box .formkit-submit:hover {
     filter: brightness(1.1);
 }
+/* ============================================= */
+/* --- İÇERİK STİLLERİNİ ZENGİNLEŞTİRME --- */
+/* ============================================= */
+
+/* Tekil yazı sayfası içeriği için genel ayarlar */
+.post-content {
+    font-size: 1.1rem; /* Yazı boyutunu biraz büyütelim */
+    line-height: 1.8;  /* Satır aralığını artıralım */
+}
+
+/* Alt Başlıklar (H2) için stil */
+.post-content h2 {
+    font-size: 1.8em;
+    margin-top: 2.5em; /* Üstteki içerikle arasını aç */
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--border-color); /* Altına ince bir çizgi */
+}
+
+/* Daha Küçük Alt Başlıklar (H3) için stil */
+.post-content h3 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Alıntı (Blockquote) Stili */
+.post-content blockquote {
+    border-left: 5px solid var(--primary); /* Soluna renkli bir şerit */
+    background-color: var(--code-bg); /* Temayla uyumlu arkaplan */
+    padding: 20px;
+    margin: 2em 0;
+    font-style: italic;
+    font-size: 1.1em;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.post-content blockquote p {
+    margin: 0;
+}

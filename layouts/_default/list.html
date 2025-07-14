@@ -1,16 +1,24 @@
 {{ define "main" }}
+
+{{/* Sayfa Başlığını Oluşturma */}}
 <header class="page-header">
-    <h1>{{ .Title }}</h1>
+    {{ .Scratch.Set "title" .Title }}
+    {{ if .IsHome }}{{ .Scratch.Set "title" "Tüm Yazılar" }}{{ end }}
+    <h1>{{ .Scratch.Get "title" }}</h1>
     {{- if .Description }}
     <div class="page-description">{{ .Description | markdownify }}</div>
     {{- end }}
 </header>
 
+{{/* Yazı Kartları Izgarasını Oluşturma */}}
 <div class="all-posts-grid">
     {{- range .Paginator.Pages }}
+        {{/* Ana sayfada kullandığımız kompakt kart şablonunu burada da çağırıyoruz */}}
         {{ .Render "summary-card-compact" }}
     {{- end }}
 </div>
 
+{{/* Sayfalama Linklerini Ekleme */}}
 {{- partial "pagination.html" . -}}
+
 {{ end }}

@@ -1,13 +1,9 @@
 {{ define "main" }}
 <div class="homepage-content">
 
-    {{/* --- DEĞİŞKENLERİ TANIMLAMA (STABİL VERSİYON) --- */}}
+    {{/* --- BÖLÜM 1: EN ÇOK OKUNANLAR --- */}}
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
-    {{ $regular_pages := where .Site.RegularPages "Params.featured" "ne" true }}
-    {{ $paginator := .Paginate $regular_pages 9 }}
-
-    <!-- BÖLÜM 1: EN ÇOK OKUNANLAR (SADECE İLK SAYFADA) -->
-    {{ if not .Paginator.HasPrev }}
+    {{ if $featured_pages }}
         <h2 class="homepage-section-title">En Çok Okunanlar</h2>
         <div class="featured-posts-grid">
             {{ range $featured_pages }}
@@ -16,25 +12,48 @@
         </div>
         <hr class="section-divider">
     {{ end }}
-    <!-- BÖLÜM 1 SONU -->
 
-    <!-- BÖLÜM 2: DİĞER YAZILAR -->
-    <h2 class="homepage-section-title">
-        Tüm Yazılar
-        {{ if gt .Paginator.TotalPages 1 }}
-            <span class="page-number-indicator">- Sayfa {{ .Paginator.PageNumber }}</span>
-        {{ end }}
-    </h2>
 
-    <div class="all-posts-grid">
-        {{ range $paginator.Pages }}
-            {{ .Render "summary-card-compact" }}
-        {{ end }}
-    </div>
-    
-    <!-- SAYFALAMA LİNKLERİ -->
-    {{ partial "pagination.html" . }}
-    <!-- BÖLÜM 2 SONU -->
+    {{/* --- BÖLÜM 2: PARA KAZANMA YAZILARI --- */}}
+    {{ $paraKazanma := where .Site.RegularPages "Params.categories" "intersect" (slice "Para Kazanma") }}
+    {{ if $paraKazanma }}
+        <h2 class="homepage-section-title">
+            <a href="/categories/para-kazanma/">Para Kazanma Stratejileri</a>
+        </h2>
+        <div class="all-posts-grid">
+            {{ range first 3 $paraKazanma }}
+                {{ .Render "summary-card-compact" }}
+            {{ end }}
+        </div>
+    {{ end }}
+
+
+    {{/* --- BÖLÜM 3: BAŞLANGIÇ REHBERİ YAZILARI --- */}}
+    {{ $baslangicRehberi := where .Site.RegularPages "Params.categories" "intersect" (slice "Başlangıç Rehberi") }}
+    {{ if $baslangicRehberi }}
+        <h2 class="homepage-section-title">
+            <a href="/categories/baslangic-rehberi/">Başlangıç Rehberleri</a>
+        </h2>
+        <div class="all-posts-grid">
+            {{ range first 3 $baslangicRehberi }}
+                {{ .Render "summary-card-compact" }}
+            {{ end }}
+        </div>
+    {{ end }}
+
+
+    {{/* --- BÖLÜM 4: TEKNİK İPUÇLARI YAZILARI --- */}}
+    {{ $teknikIpuclari := where .Site.RegularPages "Params.categories" "intersect" (slice "Teknik İpuçları") }}
+    {{ if $teknikIpuclari }}
+        <h2 class="homepage-section-title">
+            <a href="/categories/teknik-ipuclari/">Teknik İpuçları</a>
+        </h2>
+        <div class="all-posts-grid">
+            {{ range first 3 $teknikIpuclari }}
+                {{ .Render "summary-card-compact" }}
+            {{ end }}
+        </div>
+    {{ end }}
 
 </div>
 {{ end }}

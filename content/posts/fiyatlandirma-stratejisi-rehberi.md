@@ -4,10 +4,10 @@ date: 2025-06-18T13:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebil
 featured: false
 draft: false
 description: "3D baskı ürünlerinizi doğru fiyatlandırmak, kârlılığınız için hayati öneme sahiptir. Malzeme, elektrik, işçilik maliyetlerini hesaplamayı ve rekabetçi fiyatlandırma stratejilerini öğrenin."
-tags: ["3D Baskı Fiyatlandırma", "Maliyet Hesaplama", "Kâr Marjı", "Fiyatlandırma Stratejileri", "E-ticaret", "Pasif Gelir", "3D Baskı İşletme"]
-categories: ["Para Kazanma", "Girişimcilik"]
+tags: ["3D Baskı Fiyatlandırma", "Maliyet Hesaplama", "Kâr Marjı", "Fiyatlandırma Stratejileri", "E-ticaret", "Pasif Gelir", "3D Baskı İşletme", "Girişimcilik"]
+categories: ["Para Kazanma"]
 series: ["3D Baskı ile Para Kazanma"]
-author: "uurk55"
+author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
 hidemeta: false

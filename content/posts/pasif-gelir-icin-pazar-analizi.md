@@ -4,10 +4,10 @@ date: 2025-06-11T17:30:00+03:00 # Tarihi güncelledim
 featured: false
 draft: false
 description: "3D baskı ürünlerinizle pasif gelir elde etmek için doğru nişi nasıl bulursunuz? Pazar analizi yöntemleri, satış potansiyeli yüksek nişler ve kârlı ürün fikirleri rehberi." # SEO odaklı ve açıklayıcı
-tags: ["Pazar Analizi", "3D Baskı Niş Fikirleri", "Ürün Stratejisi", "E-ticaret", "Pasif Gelir", "Niş Pazarlar", "Ürün Fikirleri", "Rekabet Analizi"] # Genişletilmiş ve SEO odaklı etiketler
-categories: ["Para Kazanma", "Girişimcilik"] # Kategoriler güncellendi
+tags: ["Pazar Analizi", "3D Baskı Niş Fikirleri", "Ürün Stratejisi", "E-ticaret", "Pasif Gelir", "Niş Pazarlar", "Ürün Fikirleri", "Rekabet Analizi", "Girişimcilik"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Para Kazanma"] # Kategoriler güncellendi
 series: ["3D Baskı ile Para Kazanma"] # Seri eklendi
-author: "uurk55" # Yazar eklendi
+author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek
 TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
 hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek

@@ -4,10 +4,10 @@ date: 2025-05-28T11:30:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebil
 featured: false
 draft: false
 description: "3D baskıda destek yapılarının (supports) neden gerekli olduğunu, aşırı çıkıntıları ve köprüleri nasıl destekleyeceğinizi öğrenin. Ağaç ve doğrusal destek türleri, slicer ayarları ve destek temizleme ipuçları." # SEO odaklı ve açıklayıcı
-tags: ["3D Baskı Destekleri", "Supports", "Aşırı Çıkıntılar", "Overhangs", "Slicer Ayarları Destek", "Baskı Kalitesi", "Destek Çıkarma", "Tree Supports", "Normal Supports"] # Genişletilmiş ve SEO odaklı etiketler
-categories: ["Beceri Geliştirme ve İleri Teknikler", "Teknik İpuçları"] # Kategoriler güncellendi
+tags: ["3D Baskı Destekleri", "Supports", "Aşırı Çıkıntılar", "Overhangs", "Slicer Ayarları Destek", "Baskı Kalitesi", "Destek Çıkarma", "Tree Supports", "Normal Supports", "Teknik İpuçları"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
 series: ["3D Baskı Rehberleri"] # Seri eklendi
-author: "uurk55" # Yazar eklendi
+author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek
 TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
 hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek

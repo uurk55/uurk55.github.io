@@ -4,10 +4,10 @@ date: 2025-06-21T13:45:00+03:00 # Yayınlamak istediğiniz tarihi güncelleyebil
 featured: false
 draft: false
 description: "Evcil hayvan ürünleri pazarı, 3D baskı girişimcileri için devasa bir potansiyel sunuyor. Köpek, kedi, kuş ve sürüngenler için kişiye özel, benzersiz ve kârlı 3D baskı ürün fikirlerini keşfedin."
-tags: ["Evcil Hayvan Ürünleri", "3D Baskı Fikirleri", "Niş Pazarlar", "Girişimcilik", "Kişiye Özel Ürünler", "Evcil Hayvan Oyuncakları", "Hayvan Aksesuarları"]
-categories: ["Para Kazanma", "Girişimcilik"]
+tags: ["Evcil Hayvan Ürünleri", "3D Baskı Fikirleri", "Niş Pazarlar", "Girişimcilik", "Kişiye Özel Ürünler", "Evcil Hayvan Oyuncakları", "Hayvan Aksesuarları", "Girişimcilik"]
+categories: ["Para Kazanma"]
 series: ["3D Baskı ile Para Kazanma"]
-author: "uurk55"
+author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
 hidemeta: false

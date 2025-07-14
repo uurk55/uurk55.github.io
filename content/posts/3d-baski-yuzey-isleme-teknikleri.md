@@ -4,8 +4,8 @@ date: 2025-06-07T11:00:00+03:00
 featured: false
 draft: false
 description: "3D baskılarınızdaki katman çizgilerini ve kusurları yok edin! Zımparalama, astarlama, boyama, aseton buharı ve SLA baskı sonrası teknikleriyle ürünlerinizi profesyonel ve satışa hazır hale getirin." # SEO odaklı ve açıklayıcı
-tags: ["Yüzey İşleme", "Post-Processing", "3D Baskı Boyama", "Zımparalama", "Aseton Buharı", "Katman Çizgileri", "Baskı Kusurları", "3D Baskı Teknikleri", "Profesyonel Baskı", "SLA Yüzey İşleme"] # Genişletilmiş ve SEO odaklı etiketler
-categories: ["Teknik İpuçları", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
+tags: ["Yüzey İşleme", "Post-Processing", "3D Baskı Boyama", "Zımparalama", "Aseton Buharı", "Katman Çizgileri", "Baskı Kusurları", "3D Baskı Teknikleri", "Profesyonel Baskı", "SLA Yüzey İşleme", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Teknik İpuçları"] # Kategoriler güncellendi
 series: ["3D Baskı Rehberleri"] # Seri eklendi
 author: "uurk55" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek

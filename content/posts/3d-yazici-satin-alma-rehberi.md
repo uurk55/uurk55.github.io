@@ -4,10 +4,10 @@ date: 2025-04-12T12:00:00+03:00
 featured: true
 draft: false
 description: "Sizin için en iyi 3D yazıcıyı nasıl seçersiniz? FDM ve SLA teknolojileri için başlangıç seviyesi modelleri, kritik seçim faktörlerini (baskı hacmi, kalibrasyon, topluluk) ve farklı kullanıcı profillerine uygun önerileri bu kapsamlı rehberde keşfedin."
-tags: ["3D Yazıcı Satın Alma Rehberi", "Hangi 3D Yazıcı", "Başlangıç 3D Yazıcı", "FDM Yazıcı", "SLA Yazıcı", "Yazıcı Seçimi", "En İyi 3D Yazıcı"]
-categories: ["Başlangıç Rehberi", "Yazıcı İncelemeleri", "Teknoloji Karşılaştırma"]
+tags: ["3D Yazıcı Satın Alma Rehberi", "Hangi 3D Yazıcı", "Başlangıç 3D Yazıcı", "FDM Yazıcı", "SLA Yazıcı", "Yazıcı Seçimi", "En İyi 3D Yazıcı", "Başlangıç Rehberi", "Teknoloji Karşılaştırma"]
+categories: ["Yazıcı İncelemeleri"]
 series: ["3D Baskı Rehberleri"]
-author: "uurk55"
+author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
 hidemeta: false

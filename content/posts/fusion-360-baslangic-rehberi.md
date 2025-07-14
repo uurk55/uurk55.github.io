@@ -4,10 +4,10 @@ date: 2025-05-24T11:00:00+03:00
 featured: false
 draft: false
 description: "Autodesk Fusion 360 ile parametrik modelleme öğrenin ve profesyonel, fonksiyonel 3D parçalar tasarlayın. Hassas ölçümlerle çalışan mühendislik parçaları oluşturma rehberi." # SEO odaklı ve açıklayıcı
-tags: ["Fusion 360", "Parametrik Modelleme", "3D Tasarım", "Fonksiyonel Parçalar", "CAD Yazılımı", "Mühendislik Tasarımı", "Autodesk Fusion 360"] # Genişletilmiş ve SEO odaklı etiketler
-categories: ["Tasarım", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
+tags: ["Fusion 360", "Parametrik Modelleme", "3D Tasarım", "Fonksiyonel Parçalar", "CAD Yazılımı", "Mühendislik Tasarımı", "Autodesk Fusion 360", "İleri Seviye", "Beceri Geliştirme ve İleri Teknikler"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Tasarım"] # Kategoriler güncellendi
 series: ["3D Baskı Rehberleri"] # Seri eklendi
-author: "uurk55" # Yazar eklendi
+author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek
 TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
 hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek

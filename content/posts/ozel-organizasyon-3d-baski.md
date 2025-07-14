@@ -5,9 +5,9 @@ featured: false
 draft: false
 description: "Ev ve ofisinizdeki dağınıklığa son! 3D baskıyla kişiye özel, fonksiyonel ve kârlı organizasyon ve saklama çözümleri üretme fikirlerini keşfedin. Niş pazar potansiyeli."
 tags: ["3D Baskı Organizasyon", "Ev Ofis Düzenleme", "Kişiye Özel Saklama", "Fonksiyonel Baskılar", "Girişimcilik", "Niş Ürün Fikirleri", "Kablo Yönetimi", "Çekmece Düzenleyici"]
-categories: ["Para Kazanma", "Girişimcilik"]
+categories: ["Para Kazanma"]
 series: ["3D Baskı ile Para Kazanma"]
-author: "uurk55"
+author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
 hidemeta: false

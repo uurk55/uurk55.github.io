@@ -4,10 +4,10 @@ date: 2025-05-17T11:00:00+03:00
 featured: false
 draft: false
 description: "Sıfırdan kendi 3D modelinizi tasarlayın! Autodesk Tinkercad ile dijital LEGO oynar gibi kolayca 3D modelleme öğrenin. En basit arayüz, adım adım anahtarlık yapımı ve ilk tasarım ipuçları bu rehberde." # SEO odaklı ve açıklayıcı
-tags: ["Tinkercad", "3D Modelleme", "Ücretsiz 3D Programı", "STL Yapma", "Başlangıç 3D Tasarım", "Online 3D Tasarım", "Kolay 3D Modelleme"] # Genişletilmiş ve SEO odaklı etiketler
-categories: ["Tasarım", "Başlangıç Rehberi", "Beceri Geliştirme ve İleri Teknikler"] # Kategoriler güncellendi
+tags: ["Tinkercad", "3D Modelleme", "Ücretsiz 3D Programı", "STL Yapma", "Başlangıç 3D Tasarım", "Online 3D Tasarım", "Kolay 3D Modelleme", "Başlangıç Rehberi", "Beceri Geliştirme ve İleri Teknikler"] # Genişletilmiş ve SEO odaklı etiketler
+categories: ["Tasarım"] # Kategoriler güncellendi
 series: ["3D Baskı Rehberleri"] # Seri eklendi
-author: "uurk55" # Yazar eklendi
+author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek
 TocOpen: true # İçerik tablosu varsayılan olarak açık olacak
 hidemeta: false # Tarih, okuma süresi gibi meta bilgiler gösterilecek

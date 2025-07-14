@@ -1,3 +1,8 @@
+/* --- TEMEL SIFIRLAMA AYARLARI --- */
+body {
+    margin-top: 0 !important;
+}
+
 /* ============================================= */
 /* --- YENİ AYDINLIK & TEKNOLOJİK TEMA --- */
 /* ============================================= */
@@ -246,8 +251,6 @@ a.card-link {
 .header-v2 {
     background-color: var(--code-bg);
     color: var(--secondary);
-    padding-top: 50px;
-    margin-top: 60px;
     border-top: 1px solid var(--border-color);
     position: relative; /* <<< DEĞİŞİKLİK BURADA */
     top: 0;

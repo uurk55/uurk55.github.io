@@ -3,7 +3,8 @@ title: "Bir Fikrin Peşinde: Benim Hikayem"
 date: 2025-04-04T19:00:00+03:00
 draft: false
 hidemeta: true
-showtoc: false 
+showtoc: false
+comments: false
 ---
 
 Merhaba, ben Uğur. "Edu 3D Model Dünyası"nın kurucusu ve bu dijital atölyenin arkasındaki meraklı zihin.

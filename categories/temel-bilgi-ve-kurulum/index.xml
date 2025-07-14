@@ -16,27 +16,6 @@
       <description>3D yazıcınızın firmware&amp;#39;ini güncellemek, performansını artırmak, yeni özellikler eklemek ve sorunları gidermek için adım adım kapsamlı rehber. Marlin, Klipper gibi popüler firmware&amp;#39;ler ve güncelleme ipuçları.</description>
     </item>
     <item>
-      <title>3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin</title>
-      <link>https://edu3dmodel.com/posts/3d-yazici-bakim-rehberi/</link>
-      <pubDate>Sat, 10 May 2025 16:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/3d-yazici-bakim-rehberi/</guid>
-      <description>3D yazıcınızdan en iyi performansı almak, baskı kalitesini korumak ve ömrünü uzatmak için FDM ve SLA yazıcıların temel bakım adımlarını (nozül, tabla, hareketli parçalar, reçine tankı temizliği) bu rehberle öğrenin.</description>
-    </item>
-    <item>
-      <title>PLA, PETG, ABS ve Reçine Farkları: Hangi 3D Baskı Malzemesini Seçmelisiniz?</title>
-      <link>https://edu3dmodel.com/posts/3d-baski-malzeme-rehberi/</link>
-      <pubDate>Sat, 26 Apr 2025 11:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/3d-baski-malzeme-rehberi/</guid>
-      <description>3D baskı için PLA, PETG, ABS ve reçine gibi popüler malzemelerin özelliklerini, avantajlarını, dezavantajlarını ve hangi projeler için ideal olduklarını keşfedin. Doğru malzeme seçimi rehberi.</description>
-    </item>
-    <item>
-      <title>3D Yazıcı Kalibrasyonu A&#39;dan Z&#39;ye: Mükemmel Baskı İçin İnce Ayarlar</title>
-      <link>https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/</link>
-      <pubDate>Wed, 23 Apr 2025 10:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/</guid>
-      <description>3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.</description>
-    </item>
-    <item>
       <title>SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar</title>
       <link>https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/</link>
       <pubDate>Sat, 19 Apr 2025 11:00:00 +0300</pubDate>
@@ -49,20 +28,6 @@
       <pubDate>Wed, 16 Apr 2025 10:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/</guid>
       <description>Yeni FDM 3D yazıcınızı kutudan çıkarıp ilk başarılı baskınızı almak için adım adım kurulum rehberi. Montajdan tabla kalibrasyonuna, filament yüklemeden ilk test baskısına kadar her şey.</description>
-    </item>
-    <item>
-      <title>FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?</title>
-      <link>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</link>
-      <pubDate>Wed, 09 Apr 2025 11:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/fdm-vs-sla-rehberi/</guid>
-      <description>FDM mi, SLA mı? 3D yazıcı alırken hangi teknolojiyi seçmelisiniz? Bu rehberde, bütçenize, hedeflerinize ve baskı beklentilerinize göre doğru 3D yazıcı teknolojisini bulmanızı sağlayacak karşılaştırmalı analizi öğrenin.</description>
-    </item>
-    <item>
-      <title>3D Baskı Teknolojisi Nedir? Fikirlerinizi Fiziksel Gerçekliğe Dönüştürme Sanatı</title>
-      <link>https://edu3dmodel.com/posts/3d-baski-nedir-ve-neden-bir-devrim/</link>
-      <pubDate>Sat, 05 Apr 2025 14:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/3d-baski-nedir-ve-neden-bir-devrim/</guid>
-      <description>3D baskı teknolojisinin ne olduğunu, nasıl çalıştığını ve fikirlerinizi fiziksel ürünlere dönüştürerek pasif gelir elde etme potansiyelini keşfedin. Adım adım Katmanlı Üretim rehberi.</description>
     </item>
   </channel>
 </rss>

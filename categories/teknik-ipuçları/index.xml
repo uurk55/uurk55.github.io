@@ -16,34 +16,6 @@
       <description>3D baskılarınızdaki katman çizgilerini ve kusurları yok edin! Zımparalama, astarlama, boyama, aseton buharı ve SLA baskı sonrası teknikleriyle ürünlerinizi profesyonel ve satışa hazır hale getirin.</description>
     </item>
     <item>
-      <title>Esnek Filamentlerle Baskı Rehberi (TPU, TPE): Konfor ve Dayanıklılığı Birleştirin</title>
-      <link>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</link>
-      <pubDate>Wed, 04 Jun 2025 12:45:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/esnek-filament-baski-rehberi/</guid>
-      <description>TPU, TPE gibi esnek filamentlerle 3D baskı yapmanın inceliklerini öğrenin. Konforlu, dayanıklı ve esneyebilen parçalar basmak için en iyi slicer ayarları ve ipuçları bu rehberde.</description>
-    </item>
-    <item>
-      <title>Çok Renkli 3D Baskıya Giriş: Tek Yazıcıda Renk Cümbüşü Yaratın</title>
-      <link>https://edu3dmodel.com/posts/cok-renkli-3d-baski-rehberi/</link>
-      <pubDate>Sat, 31 May 2025 12:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/cok-renkli-3d-baski-rehberi/</guid>
-      <description>Tek bir 3D yazıcı ile birden fazla renkte nasıl baskı alacağınızı öğrenin. Manuel filament değişimi (Z-Pause) ve otomatik çoklu malzeme sistemleri (AMS) ile renkli 3D baskı teknikleri rehberi.</description>
-    </item>
-    <item>
-      <title>Destek Yapıları (Supports): Ne Zaman, Neden ve Nasıl Kullanılır? (Baskı Başarısı İçin Kritik)</title>
-      <link>https://edu3dmodel.com/posts/destek-yapilari-supports-rehberi/</link>
-      <pubDate>Wed, 28 May 2025 11:30:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/destek-yapilari-supports-rehberi/</guid>
-      <description>3D baskıda destek yapılarının (supports) neden gerekli olduğunu, aşırı çıkıntıları ve köprüleri nasıl destekleyeceğinizi öğrenin. Ağaç ve doğrusal destek türleri, slicer ayarları ve destek temizleme ipuçları.</description>
-    </item>
-    <item>
-      <title>Firmware Güncelleme Rehberi: Yazıcınızdan En İyi Performansı Alın ve Yeni Özellikleri Keşfedin</title>
-      <link>https://edu3dmodel.com/posts/firmware-guncelleme-rehberi/</link>
-      <pubDate>Wed, 14 May 2025 10:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/firmware-guncelleme-rehberi/</guid>
-      <description>3D yazıcınızın firmware&amp;#39;ini güncellemek, performansını artırmak, yeni özellikler eklemek ve sorunları gidermek için adım adım kapsamlı rehber. Marlin, Klipper gibi popüler firmware&amp;#39;ler ve güncelleme ipuçları.</description>
-    </item>
-    <item>
       <title>3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin</title>
       <link>https://edu3dmodel.com/posts/3d-yazici-bakim-rehberi/</link>
       <pubDate>Sat, 10 May 2025 16:00:00 +0300</pubDate>
@@ -77,20 +49,6 @@
       <pubDate>Wed, 23 Apr 2025 10:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/posts/3d-yazici-kalibrasyonu-rehberi/</guid>
       <description>3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber.</description>
-    </item>
-    <item>
-      <title>SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar</title>
-      <link>https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/</link>
-      <pubDate>Sat, 19 Apr 2025 11:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/sla-yazici-kurulum-guvenlik-rehberi/</guid>
-      <description>SLA (reçine) 3D yazıcınızı güvenli ve doğru bir şekilde kurun. Reçine hazırlığından tabla kalibrasyonuna, baskı sonrası yıkama ve kürleme adımlarına kadar her şeyi öğrenin. Güvenlik önceliklidir!</description>
-    </item>
-    <item>
-      <title>FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya</title>
-      <link>https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/</link>
-      <pubDate>Wed, 16 Apr 2025 10:00:00 +0300</pubDate>
-      <guid>https://edu3dmodel.com/posts/fdm-yazici-ilk-kurulum-rehberi/</guid>
-      <description>Yeni FDM 3D yazıcınızı kutudan çıkarıp ilk başarılı baskınızı almak için adım adım kurulum rehberi. Montajdan tabla kalibrasyonuna, filament yüklemeden ilk test baskısına kadar her şey.</description>
     </item>
   </channel>
 </rss>

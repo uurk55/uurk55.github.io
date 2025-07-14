@@ -1,3 +1,29 @@
+/* ============================================= */
+/* --- YENİ AYDINLIK & TEKNOLOJİK TEMA --- */
+/* ============================================= */
+
+:root {
+    /* --- Ana Renk Paleti --- */
+    --primary: #343A40; /* şık bir koyu gri */
+    --primary-content: #FFFFFF; /* Mavi butonların üzerindeki yazı rengi */
+    --background: #F8F9FA; /* Çok hafif kırık beyaz, göz yormayan arkaplan */
+    --content: #212529; /* Ana metin rengi (koyu gri) */
+    --secondary: #6C757D; /* İkincil metinler (tarih, slogan vb.) için gri */
+    --border-color: #DEE2E6; /* İnce çizgiler ve sınırlar için açık gri */
+    --card-background: #FFFFFF; /* Kartların arkaplanı (saf beyaz) */
+    --code-bg: #E9ECEF; /* Kod blokları ve diğer vurgulu alanlar için gri */
+}
+
+/* Temel Font ve Arkaplan Ayarları */
+body {
+    background-color: var(--background);
+    color: var(--content);
+}
+
+/* Linklerin genel rengini ana rengimiz yapalım */
+a {
+    color: var(--primary);
+}
 /* --- GENEL SİTE GENİŞLİĞİ AYARI --- */
 .main {
     max-width: 100% !important;
@@ -18,85 +44,69 @@
     border-top: 1px solid var(--border-color);
 }
 
-/* --- BÖLÜM 1: "EN ÇOK OKUNANLAR" KARTLARI --- */
+/* ============================================= */
+/* --- BÖLÜM 1: "EN ÇOK OKUNANLAR" KARTLARI (v2) --- */
+/* ============================================= */
+
 .featured-posts-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Her zaman 2 eşit sütun oluştur */
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-/* Mobil cihazlar için tek sütuna düşürme */
 @media (max-width: 768px) {
     .featured-posts-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.featured-card {
-    position: relative;
-    height: 450px; /* Büyük ve etkileyici bir yükseklik */
-    background-size: cover;
-    background-position: center;
+.featured-card-v2 {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius);
     overflow: hidden;
-    color: #fff;
-    display: flex;
-    align-items: flex-end; /* İçeriği aşağıya yasla */
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.featured-card:hover {
+.featured-card-v2:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: var(--primary);
 }
 
-.featured-card::after { /* Okunabilirlik için gradyan efekti */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
-    z-index: 1;
+.card-image-container-featured {
+    width: 100%;
+    height: 250px; /* Görsel alanını daha büyük yapalım */
+    overflow: hidden;
 }
 
-a.card-link-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    text-decoration: none;
-    color: #fff;
+.featured-card-v2:hover .card-image {
+    transform: scale(1.05);
 }
 
-.featured-card-content {
-    position: relative;
-    z-index: 2;
-    padding: 30px;
+.card-content-featured {
+    padding: 25px;
 }
 
-.featured-card-category {
-    background-color: var(--primary);
-    padding: 5px 10px;
-    border-radius: 4px;
+.card-category-featured {
     font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 15px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    display: block;
 }
 
-.featured-card-title {
-    font-size: 1.8em;
-    line-height: 1.2;
-    margin: 0 0 10px 0;
+.card-title-featured {
+    font-size: 1.5em; /* Başlığı büyük ve dikkat çekici tutalım */
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+    color: var(--content);
 }
 
-.featured-card-meta {
+.card-meta-featured {
     font-size: 0.9em;
-    opacity: 0.9;
+    color: var(--secondary);
 }
 
 /* --- BÖLÜM 2: "TÜM YAZILAR" KARTLARI --- */
@@ -599,4 +609,44 @@ body > footer.footer:not(.footer-v2) {
 
 .footer-container-bottom p {
     margin: 0;
+}
+/* --- KATEGORİ & ETİKET LİSTE SAYFASI IZGARA STİLİ --- */
+.terms-tags-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.terms-tags-grid li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--content);
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.terms-tags-grid li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.terms-tags-grid li a sup {
+    font-size: 0.8em;
+    background-color: var(--code-bg);
+    color: var(--secondary);
+    padding: 4px 8px;
+    border-radius: var(--radius);
+    font-weight: bold;
 }

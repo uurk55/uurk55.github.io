@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="page-description">{{ .Description | markdownify }}</div>
+    {{- end }}
+</header>
+
+<div class="all-posts-grid">
+    {{- range .Paginator.Pages }}
+        {{ .Render "summary-card-compact" }}
+    {{- end }}
+</div>
+
+{{- partial "pagination.html" . -}}
+{{ end }}

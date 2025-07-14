@@ -1,0 +1,52 @@
+<footer class="footer-v2">
+    <div class="footer-main-area"> <!-- <<< YENİ DIŞ KAPSAYICI -->
+        <div class="footer-container">
+            <!-- Sütun 1: Hakkımda ve Logo -->
+            <div class="footer-column">
+                <div class="footer-logo-area">
+                    <a href="{{ "" | absURL }}">
+                        <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="footer-logo">
+                    </a>
+                    <p class="footer-about">
+                        3D baskı teknolojisiyle hobinizi bir iş modeline dönüştürmenize yardımcı oluyorum. Fikirden ürüne, üründen gelire...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sütun 2: Popüler Kategoriler -->
+            <div class="footer-column">
+                <h4 class="footer-title">Popüler Kategoriler</h4>
+                <ul class="footer-links">
+                    <li><a href="/categories/para-kazanma/">Para Kazanma</a></li>
+                    <li><a href="/categories/başlangıç-rehberi/">Başlangıç Rehberi</a></li>
+                    <li><a href="/categories/teknik-ipuclari/">Teknik İpuçları</a></li>
+                    <li><a href="/categories/tasarim/">Tasarım</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 3: Hızlı Linkler -->
+            <div class="footer-column">
+                <h4 class="footer-title">Hızlı Linkler</h4>
+                <ul class="footer-links">
+                    <li><a href="/hakkimda/">Hakkımda</a></li>
+                    <li><a href="/iletisim/">İletişim</a></li>
+                    <li><a href="/tavsiyelerim/">Tavsiyelerim</a></li>
+                    <li><a href="/posts/">Tüm Yazılar</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 4: Takip Et -->
+            <div class="footer-column">
+                <h4 class="footer-title">Takip Edin</h4>
+                <div class="footer-social-icons">
+                    {{- partial "social_icons.html" (dict "page" .) -}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        <div class="footer-container-bottom"> <!-- <<< YENİ İÇ KAPSAYICI -->
+             <p>© {{ now.Format "2006" }} {{ .Site.Title }} - Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+</footer>

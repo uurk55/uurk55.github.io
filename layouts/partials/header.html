@@ -3,28 +3,22 @@
     <div class="header-top-bar">
         <div class="header-container">
             <!-- Logo -->
-<div class="logo-container">
-    <a href="{{ "" | absURL }}" accesskey="h" title="{{ .Site.Title }} (Alt + H)" class="logo-link">
-        <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="logo-image">
-        <div class="logo-text-wrapper">
-            <span class="logo-text">{{ .Site.Title }}</span>
-            <span class="logo-tagline">Fikirden Ürüne, Üründen Gelire...</span>
-        </div>
-    </a>
-</div>
+            <div class="logo-container">
+                <a href="{{ "" | absURL }}" accesskey="h" title="{{ .Site.Title }} (Alt + H)" class="logo-link">
+                    <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="logo-image">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">{{ .Site.Title }}</span>
+                        <span class="logo-tagline">Fikirden Ürüne, Üründen Gelire...</span>
+                    </div>
+                </a>
+            </div>
 
-            <!-- Arama Çubuğu -->
+            <!-- Arama Çubuğu (Sadece Canlı Arama İçin) -->
             <div class="search-container">
-                {{- if .Site.Params.search.hidden | not }}
-                <div class="search-widget">
-                    <form action="{{ "search" | absURL }}" method="get" autocomplete="off" class="search-form">
-                        <input type="text" id="search-query" name="q" placeholder="Blogda ara..." aria-label="Blogda ara...">
-                        <button type="submit" aria-label="Arama butonu">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </button>
-                    </form>
+                <div class="search-widget-final">
+                    <input type="search" id="search-input-final" placeholder="Blogda ara..." autocomplete="off">
+                    <ul id="search-results-final" class="search-results-list-final"></ul>
                 </div>
-                {{- end }}
             </div>
 
             <!-- Sosyal Medya İkonları -->
@@ -32,7 +26,6 @@
                 <div class="social-icons">
                     {{- partial "social_icons.html" (dict "page" .) -}}
                 </div>
-                <!-- Tema Değiştirici Butonu Buradan Kaldırıldı -->
             </div>
         </div>
     </div>
@@ -52,3 +45,4 @@
         </div>
     </nav>
 </header>
+<!-- İSTENMEYEN ARAMA ARAYÜZÜ KODU BURADAN TAMAMEN KALDIRILDI -->

@@ -1,5 +1,5 @@
 <footer class="footer-v2">
-    <div class="footer-main-area"> <!-- <<< YENİ DIŞ KAPSAYICI -->
+    <div class="footer-main-area">
         <div class="footer-container">
             <!-- Sütun 1: Hakkımda ve Logo -->
             <div class="footer-column">
@@ -45,8 +45,61 @@
         </div>
     </div>
     <div class="footer-bottom-bar">
-        <div class="footer-container-bottom"> <!-- <<< YENİ İÇ KAPSAYICI -->
+        <div class="footer-container-bottom">
              <p>© {{ now.Format "2006" }} {{ .Site.Title }} - Tüm Hakları Saklıdır.</p>
         </div>
     </div>
 </footer>
+
+<!-- SADECE CANLI ARAMA İÇİN GEREKLİ JAVASCRIPT -->
+<script>
+    // Bu script'in çalışması için, header'da id="search-input-final" ve id="search-results-final" olan elemanlar olmalıdır.
+    const searchInput = document.getElementById('search-input-final');
+    const searchResults = document.getElementById('search-results-final');
+    let allPages = [];
+
+    // Sadece bir kere JSON dosyasını yükle
+    if (searchInput && searchResults) {
+        fetch('{{ "index.json" | absURL }}')
+            .then(response => response.json())
+            .then(data => {
+                allPages = data;
+            });
+
+        searchInput.addEventListener('input', function (e) {
+            const query = e.target.value.toLowerCase().trim();
+            searchResults.innerHTML = '';
+
+            if (query.length < 2) {
+                searchResults.classList.remove('active');
+                return;
+            }
+
+            const results = allPages.filter(page => {
+                return page.title.toLowerCase().includes(query) || page.content.toLowerCase().includes(query);
+            }).slice(0, 7); // Sonuç sayısını 7 ile sınırlayalım
+
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = result.permalink;
+                    a.textContent = result.title;
+                    li.appendChild(a);
+                    searchResults.appendChild(li);
+                });
+                searchResults.classList.add('active');
+            } else {
+                searchResults.classList.remove('active');
+            }
+        });
+
+        // Dışarıya tıklayınca sonuçları gizle
+        document.addEventListener('click', function(event) {
+            const searchWidget = document.querySelector('.search-widget-final');
+            if (searchWidget && !searchWidget.contains(event.target)) {
+                searchResults.classList.remove('active');
+            }
+        });
+    }
+</script>

@@ -1,0 +1,13 @@
+name: Runner Test Workflow
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  test-runner-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a success message
+        run: echo "Test workflow ran successfully on an ubuntu-latest runner!"

@@ -96,10 +96,10 @@ theme = "PaperMod"
     url = "/iletisim/"
     weight = 50
 
-  # [[menu.main]]
-   # name = "Tavsiyelerim"
-   # url = "/tavsiyelerim/"
-   # weight = 60
+  [[menu.main]]
+   name = "Tavsiyelerim"
+   url = "/tavsiyelerim/"
+   weight = 60
 
   [[menu.main]]
     identifier = "cta-button"
@@ -108,4 +108,4 @@ theme = "PaperMod"
     weight = 70
     [menu.main.params]
       is_button = true
-      # GitHub Actions testi için deneme 4
+      

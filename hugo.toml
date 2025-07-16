@@ -96,10 +96,10 @@ theme = "PaperMod"
     url = "/iletisim/"
     weight = 50
 
-  [[menu.main]]
-    name = "Tavsiyelerim"
-    url = "/tavsiyelerim/"
-    weight = 60
+  # [[menu.main]]
+   # name = "Tavsiyelerim"
+   # url = "/tavsiyelerim/"
+   # weight = 60
 
   [[menu.main]]
     identifier = "cta-button"

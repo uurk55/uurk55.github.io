@@ -108,4 +108,4 @@ theme = "PaperMod"
     weight = 70
     [menu.main.params]
       is_button = true
-      # GitHub Actions testi için deneme 2
+      # GitHub Actions testi için deneme 3

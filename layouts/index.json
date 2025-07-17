@@ -1,6 +1,26 @@
 {{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-    {{- /* Arama motoru için her yazıdan sadece gerekli alanları alıyoruz */ -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "summary" .Summary "permalink" .Permalink) -}}
+{{- $.Scratch.Add "permalinks" slice -}}
+
+{{- $pages := where .Site.Pages "Section" "in" .Site.Params.mainSections -}}
+{{- range where $pages "Kind" "eq" "page" -}}
+
+    {{- /* Bu sayfanın daha önce eklenip eklenmediğini kontrol et */ -}}
+    {{- if not (in ($.Scratch.Get "permalinks") .Permalink) -}}
+
+        {{- /* Eğer eklenmemişse, hem veritabanına hem de kontrol listesine ekle */ -}}
+        {{- $.Scratch.Add "permalinks" .Permalink -}}
+        {{- $.Scratch.Add "index" (dict 
+            "title" .Title
+            "permalink" .Permalink
+            "summary" .Summary
+            "description" .Description
+            "tags" .Params.tags
+            "categories" .Params.categories
+            "date" (.Date.Format "2 January 2006")
+            "readingTime" .ReadingTime
+        ) -}}
+
+    {{- end -}}
 {{- end -}}
+
 {{- $.Scratch.Get "index" | jsonify -}}

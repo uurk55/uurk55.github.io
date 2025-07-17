@@ -103,3 +103,21 @@
         });
     }
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var header = document.getElementById('sticky-header');
+    if (header) {
+        var sticky = header.offsetTop;
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("is-sticky");
+            } else {
+                header.classList.remove("is-sticky");
+            }
+        }
+        window.onscroll = function() {
+            stickyHeader()
+        };
+    }
+});
+</script>

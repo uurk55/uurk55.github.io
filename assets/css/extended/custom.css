@@ -823,3 +823,145 @@ body > footer.footer:not(.footer-v2) {
         padding: 80px 0;
     }
 }
+/* ============================================= */
+/* --- CONVERTKIT FORM STİLLERİ --- */
+/* ============================================= */
+
+.formkit-form[data-uid="30430e4c7f"] * {
+    box-sizing: border-box;
+}
+.formkit-form[data-uid="30430e4c7f"] {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.formkit-form[data-uid="30430e4c7f"] [data-style="clean"] {
+    width: 100%;
+}
+.formkit-form[data-uid="30430e4c7f"][min-width~="700"] .formkit-fields[data-stacked="false"],
+.formkit-form[data-uid="30430e4c7f"][min-width~="800"] .formkit-fields[data-stacked="false"] {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.formkit-form[data-uid="30430e4c7f"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-field,
+.formkit-form[data-uid="30430e4c7f"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-field,
+.formkit-form[data-uid="30430e4c7f"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit,
+.formkit-form[data-uid="30430e4c7f"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-submit {
+    margin: 0 5px 15px 5px;
+}
+.formkit-form[data-uid="30430e4c7f"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-field,
+.formkit-form[data-uid="30430e4c7f"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-field {
+    flex: 100 1 auto;
+}
+.formkit-form[data-uid="30430e4c7f"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit,
+.formkit-form[data-uid="30430e4c7f"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-submit {
+    flex: 1 1 auto;
+}
+/* ============================================= */
+/* --- ANA SAYFA YENİ BÖLÜM STİLLERİ --- */
+/* ============================================= */
+
+/* Genel Buton Stili (Öne Çıkan Kategori için) */
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--primary-content);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: filter 0.2s ease-in-out;
+}
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/* 1. BÖLÜM: ÖNE ÇIKAN KATEGORİ */
+.featured-category-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--card-background);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+}
+
+.featured-category-image {
+    flex-basis: 40%; /* Görselin genişliği */
+    flex-shrink: 0;
+}
+
+.featured-category-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    display: block;
+}
+
+.featured-category-content {
+    flex-basis: 60%; /* Metin alanının genişliği */
+}
+
+/* Başlığın altındaki varsayılan çizgiyi kaldıralım */
+.featured-category-content .homepage-section-title {
+    margin-top: 0;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+/* 2. BÖLÜM: İKONLU KATEGORİ REHBERİ */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.icon-grid-item {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 30px 20px;
+    text-decoration: none;
+    color: var(--content);
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.icon-grid-item .icon {
+    font-size: 3rem; /* Emoji/ikon boyutu */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.icon-grid-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+/* Mobil Cihazlar için Ayarlama */
+@media (max-width: 768px) {
+    .featured-category-section {
+        flex-direction: column; /* Mobilde alt alta gelsin */
+        padding: 25px;
+        gap: 25px;
+    }
+}
+/* Öne çıkan kategori bölümü için ters layout */
+.featured-category-section.layout-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Mobil için ters layoutu sıfırla */
+@media (max-width: 768px) {
+    .featured-category-section.layout-reverse {
+        flex-direction: column; 
+    }
+}

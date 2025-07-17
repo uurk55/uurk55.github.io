@@ -1292,3 +1292,49 @@ body > footer.footer:not(.footer-v2) {
     left: 0;
     right: 0;
 }
+/* ============================================= */
+/* --- YUKARI ÇIK BUTONU STİLLERİ --- */
+/* ============================================= */
+
+#scrollTopBtn {
+    display: none; /* Başlangıçta gizli */
+    position: fixed; /* Sayfa kaysa bile yerinde kalır */
+    bottom: 30px;
+    right: 30px;
+    z-index: 100; /* Diğer elementlerin üzerinde kalır */
+    border: none;
+    outline: none;
+    background-color: var(--accent); /* Vurgu rengimizi kullanıyoruz */
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Yuvarlak yapar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: var(--primary); /* Üzerine gelince ana koyu renge dönsün */
+}
+
+/* Butonun görünür olduğunda uygulanacak stil ve animasyon */
+#scrollTopBtn.visible {
+    display: flex;
+    opacity: 1;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

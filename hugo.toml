@@ -77,7 +77,7 @@ theme = "PaperMod"
     weight = 10
 
   [[menu.main]]
-    name = "Tüm Yazılar"
+    name = "Blog"
     url = "/posts/"
     weight = 20
 

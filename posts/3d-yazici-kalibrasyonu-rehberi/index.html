@@ -473,8 +473,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         window.addEventListener('scroll', stickyHeader);
     }
-
-    
     var scrollTopBtn = document.getElementById('scrollTopBtn');
     if (scrollTopBtn) {
         var scrollThreshold = 300; 
@@ -499,36 +497,27 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             const options = {
                 keys: [
-                    { name: 'title', weight: 0.8 },        
-                    { name: 'description', weight: 0.5 }, 
-                    { name: 'tags', weight: 0.3 },         
-                    { name: 'categories', weight: 0.3 },   
-                    { name: 'summary', weight: 0.1 }       
+                    { name: 'title', weight: 0.8 }, { name: 'description', weight: 0.5 },
+                    { name: 'tags', weight: 0.3 }, { name: 'categories', weight: 0.3 }
                 ],
-                includeScore: true,
-                threshold: 0.3, 
-                minMatchCharLength: 2,
+                includeScore: true, threshold: 0.3, minMatchCharLength: 2,
             };
             fuse = new Fuse(data, options);
         });
 
-    function setupSearch(inputId, resultsId) {
-        const searchInput = document.getElementById(inputId);
-        const searchResults = document.getElementById(resultsId);
-
-        if (!searchInput || !searchResults) return;
-
-        searchInput.addEventListener('input', function(e) {
+    
+    const headerSearchInput = document.getElementById('search-input-final');
+    const headerSearchResults = document.getElementById('search-results-final');
+    function setupDropdownSearch(input, resultsList) {
+        if (!input || !resultsList) return;
+        input.addEventListener('input', function(e) {
             const query = e.target.value.trim();
-            searchResults.innerHTML = '';
-
+            resultsList.innerHTML = '';
             if (query.length < 2 || !fuse) {
-                searchResults.classList.remove('active');
+                resultsList.classList.remove('active');
                 return;
             }
-
             const results = fuse.search(query).slice(0, 7);
-
             if (results.length > 0) {
                 results.forEach(result => {
                     const li = document.createElement('li');
@@ -536,29 +525,70 @@ document.addEventListener('DOMContentLoaded', function() {
                     a.href = result.item.permalink;
                     a.textContent = result.item.title;
                     li.appendChild(a);
-                    searchResults.appendChild(li);
+                    resultsList.appendChild(li);
                 });
-                searchResults.classList.add('active');
+                resultsList.classList.add('active');
             } else {
-                searchResults.classList.remove('active');
+                resultsList.classList.remove('active');
             }
         });
     }
-
+    setupDropdownSearch(headerSearchInput, headerSearchResults);
     
-    setupSearch('search-input-final', 'search-results-final');
-    setupSearch('search-input-sidebar', 'search-results-sidebar');
-
+    
+    const sidebarSearchInput = document.getElementById('search-input-sidebar');
+    const postListContainer = document.querySelector('.post-list-container');
+    const pagination = document.querySelector('.pagination');
+    if (sidebarSearchInput && postListContainer) {
+        sidebarSearchInput.addEventListener('keyup', function() {
+            const query = this.value.toLowerCase().trim();
+            if (pagination) {
+                pagination.style.display = query.length > 0 ? 'none' : 'flex';
+            }
+            if (query.length === 0) {
+                
+                
+                window.location.href = 'https:\/\/edu3dmodel.com\/buradan-basla\/';
+                return;
+            }
+            if (query.length < 2 || !fuse) {
+                return;
+            }
+            
+            const results = fuse.search(query);
+            postListContainer.innerHTML = '';
+    
+            if (results.length > 0) {
+                results.forEach(result => {
+                    let categories = result.item.categories || [];
+                    let firstCategory = categories.length > 0 ? categories[0] : '';
+                    
+                    
+                    const cardHTML = `
+                    <article class="post-list-item">
+                        <a href="${result.item.permalink}" class="post-list-link">
+                            <div class="post-list-content" style="width:100%;">
+                                <div>
+                                    <span class="post-list-category">${firstCategory}</span>
+                                    <h3 class="post-list-title">${result.item.title}</h3>
+                                    <p class="post-list-summary">${result.item.summary.substring(0, 150)}...</p>
+                                </div>
+                                </div>
+                        </a>
+                    </article>
+                    `;
+                    postListContainer.innerHTML += cardHTML;
+                });
+            } else {
+                postListContainer.innerHTML = '<p style="text-align:center;">Aradığınız kriterlere uygun sonuç bulunamadı.</p>';
+            }
+        });
+    }
+    
     
     document.addEventListener('click', function(event) {
-        const headerSearchWidget = document.querySelector('.header-top-bar .search-widget-final-enhanced');
-        const sidebarSearchWidget = document.querySelector('.sidebar-left .search-widget-final-enhanced');
-
-        if (headerSearchWidget && !headerSearchWidget.contains(event.target)) {
-            document.getElementById('search-results-final').classList.remove('active');
-        }
-        if (sidebarSearchWidget && !sidebarSearchWidget.contains(event.target)) {
-            document.getElementById('search-results-sidebar').classList.remove('active');
+        if (headerSearchInput && !headerSearchInput.parentElement.contains(event.target)) {
+            headerSearchResults.classList.remove('active');
         }
     });
 });

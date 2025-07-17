@@ -10,7 +10,7 @@
 <meta name="description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
 <meta name="author" content="uurk55">
 <link rel="canonical" href="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2fdc3f33f263459d504d955bff19f3e29c445c9124fcb63c5ad4e5f116cf9498.css" integrity="sha256-L9w/M/JjRZ1QTZVb/xnz4pxEXJEk/LY8WtTl8RbPlJg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.44a58b31c3ac30a6cc3ca412de5fd388e4d5d4afca504247505ea6d0984cf478.css" integrity="sha256-RKWLMcOsMKbMPKQS3l/TiOTV1K/KUEJHUF6m0JhM9Hg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -28,7 +28,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.c335cd973ceda1d8bbfd704e877104aee855265d01ed6cf680d097150d7970b5.css" integrity="sha256-wzXNlzztodi7/XBOh3EEruhVJl0B7Wz2gNCXFQ15cLU="><meta property="og:url" content="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1/">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.864c76a79217bd71bba02e97a256c007fe666385853d64cd20971047da2bf8cd.css" integrity="sha256-hkx2p5IXvXG7oC6XolbAB/5mY4WFPWTNIJcQR9or&#43;M0="><meta property="og:url" content="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1/">
   <meta property="og:site_name" content="Edu 3D Model Dünyası">
   <meta property="og:title" content="Slicer Ayarları">
   <meta property="og:description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
@@ -293,6 +293,42 @@ document.addEventListener('DOMContentLoaded', function() {
         window.onscroll = function() {
             stickyHeader()
         };
+    }
+});
+</script>
+<a id="scrollTopBtn" href="#" role="button" aria-label="Yukarı Çık" title="Yukarı Çık">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+       <path d="M12 5l0 14"></path>
+       <path d="M18 11l-6 -6"></path>
+       <path d="M6 11l6 -6"></path>
+    </svg>
+</a>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    if (scrollTopBtn) {
+        
+        var scrollThreshold = 300; 
+
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        };
+
+        
+        scrollTopBtn.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
+        });
     }
 });
 </script></body>

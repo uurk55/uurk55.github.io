@@ -965,3 +965,58 @@ body > footer.footer:not(.footer-v2) {
         flex-direction: column; 
     }
 }
+/* ============================================= */
+/* --- VURGU RENGİ VE GELİŞMİŞ ANİMASYONLAR --- */
+/* ============================================= */
+
+/* 1. ADIM: Yeni Vurgu Rengini Tanımlama */
+:root {
+    --accent: #08aeea; /* Canlı ve teknolojik bir mavi tonu */
+}
+
+/* 2. ADIM: Yazı Kartlarına Gelişmiş Efekt */
+/* Tüm yazı kartlarının üzerine gelince kenarlıklarının vurgu rengine dönüşmesini sağlıyoruz. */
+.compact-card, .featured-card-v2 {
+    transition: all 0.3s ease-in-out; /* 'all' diyerek tüm geçişleri yumuşatıyoruz */
+}
+
+.compact-card:hover, .featured-card-v2:hover {
+    border-color: var(--accent); /* Kenarlık rengini vurgu rengi yap */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Gölgeyi biraz daha belirgin yap */
+}
+
+/* 3. ADIM: Butonlara Parlama Efekti */
+/* Ana butonların üzerine gelince vurgu renginde bir ışıma ekliyoruz. */
+.btn:hover, .hero-button:hover, .formkit-submit:hover {
+    filter: brightness(1.1); /* Mevcut parlaklık efektini koruyoruz */
+    box-shadow: 0 0 15px 0px var(--accent); /* Vurgu renginde ışıma efekti */
+}
+
+/* Geçişleri yumuşatmak için butonların temel haline transition ekliyoruz */
+.btn, .hero-button, .formkit-submit {
+    transition: all 0.3s ease;
+}
+
+/* 4. ADIM: Linklerin Üzerine Gelince Renklendirme */
+/* Ana menü ve diğer temel linklerin üzerine gelince vurgu rengini almasını sağlıyoruz. */
+.header-main-nav ul a:hover,
+.footer-links a:hover,
+.post-content a {
+    color: var(--accent); /* Link rengini vurgu rengi yap */
+}
+
+/* Ana menüdeki alt çizgi efektinin de vurgu renginde olmasını sağlayalım */
+.header-main-nav ul a::after {
+    background-color: var(--accent);
+}
+
+/* Post içeriğindeki linklerin altını çizelim ve geçiş ekleyelim */
+.post-content a {
+    text-decoration: underline;
+    text-decoration-color: var(--border-color);
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.post-content a:hover {
+    text-decoration-color: var(--accent);
+}

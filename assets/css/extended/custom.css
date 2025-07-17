@@ -1382,11 +1382,149 @@ body > footer.footer:not(.footer-v2) {
     box-shadow: 0 0 8px 0px var(--accent);
 }
 /* ============================================= */
-/* --- KOMPAKT YAZI KARTI YENİ TASARIMI --- */
+/* --- BLOG LİSTESİ SIDEBAR STİLLERİ --- */
 /* ============================================= */
 
-/* Kategori ismini şık bir etikete dönüştürüyoruz */
-.compact-card-category {
+/* Ana taşıyıcı için Grid yapısı */
+.page-with-sidebar {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
+    gap: 40px; /* Sütunlar arası boşluk */
+}
+
+/* Sidebar genel stilleri */
+.sidebar-left {
+    width: 100%;
+}
+
+.widget {
+    background-color: var(--card-background);
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list li {
+    margin-bottom: 10px;
+}
+
+.widget-list li:last-child {
+    margin-bottom: 0;
+}
+
+.widget-list li a {
+    text-decoration: none;
+    color: var(--content);
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.2s ease;
+}
+
+.widget-list li a:hover {
+    color: var(--accent);
+}
+
+.widget-list li a span {
+    color: var(--secondary);
+    font-size: 0.9em;
+}
+
+/* Sidebar'daki arama kutusunun ID'sini değiştirerek header'daki ile çakışmasını önledik,
+   bu yüzden stillerini de ayrı veriyoruz. */
+#search-input-sidebar {
+    width: 100%;
+    padding: 10px 15px !important; /* !important ile önceliği artırıyoruz */
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius) !important;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 992px) {
+    .page-with-sidebar {
+        grid-template-columns: 1fr; /* Tek sütuna düşür */
+        gap: 0; /* Boşluğu sıfırla */
+    }
+
+    .main-content-right {
+       margin-top: 40px; /* Mobilde sidebar ile içerik arasına boşluk koy */
+    }
+}
+/* Sidebar'daki aktif kategori linkini vurgular */
+.widget-list li.active-widget-link a {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.widget-list li.active-widget-link a span {
+    color: var(--accent);
+}
+/* ============================================= */
+/* --- YENİ BLOG LİSTE GÖRÜNÜMÜ VE DÜZELTMELER --- */
+/* ============================================= */
+
+/* 1. YENİ LİSTE YAPISI STİLLERİ */
+
+.post-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Her yazı arasına boşluk */
+}
+
+.post-list-item {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+.post-list-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.post-list-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    gap: 25px; /* Resim ve içerik arası boşluk */
+}
+
+.post-list-image-container {
+    flex-basis: 300px; /* Resim alanı genişliği */
+    flex-shrink: 0;
+}
+
+.post-list-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius) 0 0 var(--radius); /* Sadece sol köşeleri yuvarlat */
+}
+
+.post-list-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Başlık ve metayı iki uca yay */
+}
+
+.post-list-category {
     display: inline-block;
     background-color: var(--accent);
     color: #fff;
@@ -1395,49 +1533,242 @@ body > footer.footer:not(.footer-v2) {
     font-size: 0.75rem;
     font-weight: bold;
     margin-bottom: 12px;
-    text-transform: uppercase;
 }
 
-/* Kart başlığını biraz daha belirgin yapalım */
-.compact-card-title {
-    font-size: 1.25em; /* h3 için uygun boyut */
-    margin-bottom: 15px;
+.post-list-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
 }
 
-/* Kartın üzerine gelince resmin hafifçe büyümesini sağlıyoruz */
-.compact-card .compact-card-image {
-    transition: transform 0.4s ease;
-}
-.compact-card:hover .compact-card-image {
-    transform: scale(1.05);
+.post-list-summary {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    line-height: 1.6;
 }
 
-/* Yeni Meta Bölümü Stilleri */
-.compact-card-meta {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* İkonlu gruplar arasına boşluk */
+.post-list-meta {
     font-size: 0.85rem;
     color: var(--secondary);
-    margin-top: auto; /* İçeriğin en altına iter */
-    padding-top: 10px;
+    margin-top: 20px;
 }
 
-.compact-card-meta .meta-item {
+.post-list-meta .meta-separator {
+    margin: 0 5px;
+}
+
+/* Mobilde resmi üste al */
+@media (max-width: 768px) {
+    .post-list-link {
+        flex-direction: column;
+        gap: 0;
+    }
+    .post-list-image-container {
+       height: 200px;
+    }
+    .post-list-image-container img {
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+}
+
+
+/* 2. SIDEBAR ARAMA İKONU FİNAL ÇÖZÜMÜ */
+
+/* Sidebar'daki arama kutusuna odaklanıldığında ikonu gizle */
+.sidebar-left .search-widget-final-enhanced:focus-within svg {
+    display: none;
+}
+
+/* İkon gizlendiğinde, metnin sola yanaşması için boşluğu kaldır */
+.sidebar-left .search-widget-final-enhanced:focus-within #search-input-sidebar {
+    padding-left: 15px !important;
+}
+/* ============================================= */
+/* --- BLOG LİSTESİ SIDEBAR & LİSTE GÖRÜNÜMÜ --- */
+/* ============================================= */
+
+/* 1. SIDEBAR VE İKİ SÜTUNLU ANA YAPI */
+
+.page-with-sidebar {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
+    gap: 40px;
+}
+
+.sidebar-left {
+    width: 100%;
+}
+
+.widget {
+    background-color: var(--card-background);
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list li {
+    margin-bottom: 10px;
+}
+.widget-list li:last-child { margin-bottom: 0; }
+
+.widget-list li a {
+    text-decoration: none;
+    color: var(--content);
     display: flex;
-    align-items: center;
-    gap: 6px; /* İkon ve metin arasına boşluk */
+    justify-content: space-between;
+    transition: color 0.2s ease;
 }
 
-.compact-card-meta .meta-item svg {
-    width: 16px;
-    height: 16px;
-    stroke-width: 2;
+.widget-list li a:hover {
+    color: var(--accent);
 }
 
-/* Kart içeriğini dikeyde yaymak için */
-.compact-card-content {
+.widget-list li a span {
+    color: var(--secondary);
+    font-size: 0.9em;
+}
+
+.widget-list li.active-widget-link a,
+.widget-list li.active-widget-link a span {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* 2. SIDEBAR ARAMA İKONU DÜZELTMESİ */
+#search-input-sidebar {
+    padding-left: 15px !important;
+}
+
+.sidebar-left .search-widget-final-enhanced {
+    position: relative;
+}
+
+.sidebar-left .search-widget-final-enhanced svg {
+    display: none; /* Sidebar'da arama ikonunu tamamen gizliyoruz */
+}
+
+/* 3. YENİ LİSTE GÖRÜNÜMÜ (IZGARA YERİNE) */
+
+.post-list-container {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+
+.post-list-item {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.post-list-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.post-list-link {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-list-image-container {
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+.post-list-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.post-list-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-list-category {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+.post-list-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.post-list-summary {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    line-height: 1.6;
     flex-grow: 1;
+}
+
+.post-list-meta {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-top: 20px;
+}
+
+.post-list-meta .meta-separator {
+    margin: 0 5px;
+}
+
+/* 4. MOBİL UYUMLULUK */
+@media (max-width: 992px) {
+    .page-with-sidebar {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .main-content-right {
+       margin-top: 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .post-list-item {
+        flex-direction: column;
+    }
+    .post-list-image-container {
+       height: 200px;
+       flex-basis: auto;
+    }
+    .post-list-image-container img {
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+}
+/* ============================================= */
+/* --- BLOG LİSTESİ ÜST BOŞLUK AYARI --- */
+/* ============================================= */
+
+/* Blog listesi sayfasının üstüne boşluk ekler */
+.page-with-sidebar {
+    margin-top: 40px;
 }

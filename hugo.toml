@@ -2,11 +2,11 @@ baseURL = "https://edu3dmodel.com/"
 languageCode = "tr-tr"
 title = "Edu 3D Model Dünyası"
 theme = "PaperMod"
-
-# ... baseURL, languageCode gibi satırların altına ...
+[pagination]
+  pagerSize = 6
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] # Arama indeksi için JSON çıkışı eklendi
+  home = ["HTML", "RSS", "JSON"]
 
 [taxonomies]
   category = "categories"
@@ -97,9 +97,9 @@ theme = "PaperMod"
     weight = 50
 
   # [[menu.main]]
-   # name = "Tavsiyelerim"
-   # url = "/tavsiyelerim/"
-   # weight = 60
+  #   name = "Tavsiyelerim"
+  #   url = "/tavsiyelerim/"
+  #   weight = 60
 
   [[menu.main]]
     identifier = "cta-button"
@@ -108,4 +108,3 @@ theme = "PaperMod"
     weight = 70
     [menu.main.params]
       is_button = true
-      

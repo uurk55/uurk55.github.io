@@ -3,13 +3,26 @@ body {
     margin-top: 0 !important;
 }
 
+/* --- İÇERİK GENİŞLİĞİNİ SINIRLAMA (TÜM SAYFALAR) --- */
+/* >>> DEĞİŞİKLİK: :not(.home) kaldırıldı, artık ana sayfa da dahil! */
+main.main {
+    max-width: var(--main-width); /* Temanın standart genişliği */
+    margin: 0 auto; /* Ortala */
+    padding: 0 var(--gap) !important; /* Kenar boşluklarını ayarla */
+}
+
 /* ============================================= */
 /* --- YENİ AYDINLIK & TEKNOLOJİK TEMA --- */
 /* ============================================= */
 
 :root {
+    /* >>> DEĞİŞİKLİK: Site genişliği ve boşluklar güncellendi. */
+    --main-width: 1200px; /* Ne çok geniş ne çok dar, ideal masaüstü genişliği */
+    --gap: 30px; /* Kenar boşluklarını biraz artıralım, daha ferah dursun */
+    --radius: 8px; /* Köşeleri biraz daha modern yuvarlatalım */
+
     /* --- Ana Renk Paleti --- */
-    --primary: #343A40; /* şık bir koyu gri */
+    --primary: #343A40; /* Şık bir koyu gri */
     --primary-content: #FFFFFF; /* Mavi butonların üzerindeki yazı rengi */
     --background: #F8F9FA; /* Çok hafif kırık beyaz, göz yormayan arkaplan */
     --content: #212529; /* Ana metin rengi (koyu gri) */
@@ -29,11 +42,7 @@ body {
 a {
     color: var(--primary);
 }
-/* --- GENEL SİTE GENİŞLİĞİ AYARI --- */
-.main {
-    max-width: 100% !important;
-    padding: 0 40px !important; /* Kenar boşlukları header ile aynı olsun */
-}
+
 /* --- Ana Sayfa Genel Başlık ve Ayırıcı Stilleri --- */
 .homepage-section-title {
     font-size: 1.8em;
@@ -249,19 +258,19 @@ a.card-link {
 
 /* Ana Header Kapsayıcısı */
 .header-v2 {
-    background-color: var(--code-bg);
-    color: var(--secondary);
-    border-top: 1px solid var(--border-color);
-    position: relative; /* <<< DEĞİŞİKLİK BURADA */
+    /* >>> DEĞİŞİKLİK: Header arkaplanı daha temiz bir görünüm için beyaz yapıldı. */
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
     top: 0;
     z-index: 999;
 }
 
-/* Tüm katmanlarda kullanılacak genel container - GENİŞLETİLMİŞ */
+/* Tüm katmanlarda kullanılacak genel container */
 .header-container {
-    width: 100%; /* Genişliği %100 yap */
-    margin: 0;   /* Ortalamayı kaldır */
-    padding: 0 40px; /* Kenarlara boşluk ver (değeri istediğin gibi ayarla) */
+    max-width: var(--main-width); /* Temanın standart maksimum genişliğini kullan */
+    margin: 0 auto;               /* İçeriği yatayda ortala */
+    padding: 0 var(--gap);       /* Temanın standart kenar boşluklarını kullan */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -270,7 +279,6 @@ a.card-link {
 /* --- KATMAN 1: TOP BAR --- */
 .header-top-bar {
     padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 .header-top-bar .header-container {
     gap: 20px;
@@ -341,30 +349,12 @@ a.card-link {
 .search-results-list-final li:last-child a { border-bottom: none; }
 .search-results-list-final li a:hover { background-color: var(--code-bg); }
 
-.search-results-list.active {
-    display: block;
-}
-
-.search-results-list li a {
-    display: block;
-    padding: 12px 20px;
-    color: var(--content);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.search-results-list li:last-child a {
-    border-bottom: none;
-}
-
-.search-results-list li a:hover {
-    background-color: var(--code-bg);
-}
 
 /* --- KATMAN 2: ANA NAVİGASYON --- */
 .header-main-nav {
     padding: 5px 0;
-    background: var(--background);
+    background: var(--card-background); /* >>> DEĞİŞİKLİK: Üst bar ile aynı arkaplan */
+    border-top: 1px solid var(--border-color);
 }
 .header-main-nav .header-container {
     justify-content: center; /* Menüyü ortala */
@@ -374,16 +364,22 @@ a.card-link {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 25px;
+    gap: 30px; /* >>> DEĞİŞİKLİK: Menü arası boşluk artırıldı */
 }
 .header-main-nav ul a {
     padding: 10px 0;
     display: block;
     font-weight: 500;
-    color: var(--secondary-content);
+    /* >>> DEĞİŞİKLİK: Tanımlı olmayan renk değişkeni düzeltildi. */
+    color: var(--content); 
     text-decoration: none;
     position: relative;
+    transition: color 0.2s;
 }
+.header-main-nav ul a:hover {
+    color: var(--primary);
+}
+
 .header-main-nav ul a::after { /* Alt çizgi efekti için */
     content: '';
     position: absolute;
@@ -559,9 +555,9 @@ body > footer.footer:not(.footer-v2) {
     border-top: 1px solid var(--border-color);
 }
 
-/* İçerik Konteyneri (Sütunları ortalar) */
+/* Footer içeriğini ortalar */
 .footer-container {
-    max-width: 1400px;
+    max-width: var(--main-width);
     margin: 0 auto;
     padding: 0 var(--gap);
     display: grid;
@@ -627,8 +623,9 @@ body > footer.footer:not(.footer-v2) {
     border-top: 1px solid var(--border-color);
 }
 
+/* Footer'ın en alt şeridini ortalar */
 .footer-container-bottom {
-    max-width: 1400px;
+    max-width: var(--main-width);
     margin: 0 auto;
     padding: 0 var(--gap);
     text-align: center;
@@ -638,7 +635,7 @@ body > footer.footer:not(.footer-v2) {
 .footer-container-bottom p {
     margin: 0;
 }
-/* --- KATEGORİ & ETİKET LİSTE SAYFASI IZGARA STİLİ --- */
+/* --- KATEGORİ & ETİKET LİSTE SAYFASI ızgara STİLİ --- */
 .terms-tags-grid {
     list-style: none;
     padding: 0;

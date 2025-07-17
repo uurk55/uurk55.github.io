@@ -10,7 +10,7 @@
 <meta name="description" content="Blender&#39;ın Sculpt Mode (Heykel Modu) ile organik ve sanatsal 3D modeller tasarlayın. Dijital kil topundan heykelsi objelere adım adım Blender başlangıç rehberi.">
 <meta name="author" content="Uğur Kapancı">
 <link rel="canonical" href="https://edu3dmodel.com/posts/blender-baslangic-rehberi-sculpting/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.906c7777b7be2f5e63dbb9db08da561ba9269fa872dd2b31d58e6789ae460592.css" integrity="sha256-kGx3d7e&#43;L15j27nbCNpWG6kmn6hy3Ssx1Y5nia5GBZI=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ab86fb44bb461d8422e9d3bb953eab380ce81b4b286ba167d6886f0a27c6e570.css" integrity="sha256-q4b7RLtGHYQi6dO7lT6rOAzoG0soa6Fn1ohvCifG5XA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -27,7 +27,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.a909119f0d48eb4c543baab6a81a2cf01f44c3d15c406565f16a3b4b6a2cb1b0.css" integrity="sha256-qQkRnw1I60xUO6q2qBos8B9Ew9FcQGVl8Wo7S2ossbA="><meta property="og:url" content="https://edu3dmodel.com/posts/blender-baslangic-rehberi-sculpting/">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.8a0c08e959289537608654f14b76647e1abb3e35beb73e8982877ba3967d1702.css" integrity="sha256-igwI6VkolTdghlTxS3Zkfhq7PjW&#43;tz6Jgod7o5Z9FwI="><meta property="og:url" content="https://edu3dmodel.com/posts/blender-baslangic-rehberi-sculpting/">
   <meta property="og:site_name" content="Edu 3D Model Dünyası">
   <meta property="og:title" content="Blender Başlangıç Rehberi: Heykeltıraş Gibi 3D Model Yapın">
   <meta property="og:description" content="Blender&#39;ın Sculpt Mode (Heykel Modu) ile organik ve sanatsal 3D modeller tasarlayın. Dijital kil topundan heykelsi objelere adım adım Blender başlangıç rehberi.">
@@ -322,7 +322,6 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
     <footer class="footer-v2">
     <div class="footer-main-area">
         <div class="footer-container">
-            
             <div class="footer-column">
                 <div class="footer-logo-area">
                     <a href="https://edu3dmodel.com/">
@@ -334,7 +333,6 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
                 </div>
             </div>
 
-            
             <div class="footer-column">
                 <h4 class="footer-title">Popüler Kategoriler</h4>
                 <ul class="footer-links">
@@ -345,7 +343,6 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
                 </ul>
             </div>
 
-            
             <div class="footer-column">
                 <h4 class="footer-title">Hızlı Linkler</h4>
                 <ul class="footer-links">
@@ -356,7 +353,6 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
                 </ul>
             </div>
 
-            
             <div class="footer-column">
                 <h4 class="footer-title">Takip Edin</h4>
                 <div class="footer-social-icons"><div class="social-icons" >
@@ -390,21 +386,70 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
 </footer>
 
 
+<a id="scrollTopBtn" href="#" role="button" aria-label="Yukarı Çık" title="Yukarı Çık">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+       <path d="M12 5l0 14"></path>
+       <path d="M18 11l-6 -6"></path>
+       <path d="M6 11l6 -6"></path>
+    </svg>
+</a>
+
+
+
+
+
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+
     
-    const searchInput = document.getElementById('search-input-final');
-    const searchResults = document.getElementById('search-results-final');
+    var header = document.getElementById('sticky-header');
+    if (header) {
+        var sticky = header.offsetTop;
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("is-sticky");
+            } else {
+                header.classList.remove("is-sticky");
+            }
+        }
+        window.addEventListener('scroll', stickyHeader);
+    }
+
+    
+    var scrollTopBtn = document.getElementById('scrollTopBtn');
+    if (scrollTopBtn) {
+        var scrollThreshold = 300; 
+        function toggleScrollTopBtn() {
+            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        }
+        window.addEventListener('scroll', toggleScrollTopBtn);
+
+        scrollTopBtn.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    
     let allPages = [];
+    fetch('https:\/\/edu3dmodel.com\/index.json')
+        .then(response => response.json())
+        .then(data => {
+            allPages = data;
+        });
 
-    
-    if (searchInput && searchResults) {
-        fetch('https:\/\/edu3dmodel.com\/index.json')
-            .then(response => response.json())
-            .then(data => {
-                allPages = data;
-            });
+    function initializeSearch(inputId, resultsId) {
+        const searchInput = document.getElementById(inputId);
+        const searchResults = document.getElementById(resultsId);
 
-        searchInput.addEventListener('input', function (e) {
+        if (!searchInput || !searchResults) return;
+
+        searchInput.addEventListener('input', function(e) {
             const query = e.target.value.toLowerCase().trim();
             searchResults.innerHTML = '';
 
@@ -415,7 +460,7 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
 
             const results = allPages.filter(page => {
                 return page.title.toLowerCase().includes(query) || page.content.toLowerCase().includes(query);
-            }).slice(0, 7); 
+            }).slice(0, 7);
 
             if (results.length > 0) {
                 results.forEach(result => {
@@ -431,70 +476,49 @@ Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkm
                 searchResults.classList.remove('active');
             }
         });
+    }
+
+    initializeSearch('search-input-final', 'search-results-final'); 
+    
+const sidebarSearchInput = document.getElementById('search-input-sidebar');
+const postListContainer = document.querySelector('.post-list-container');
+
+if (sidebarSearchInput && postListContainer) {
+    const allPosts = postListContainer.querySelectorAll('.post-list-item');
+    const pagination = document.querySelector('.pagination');
+
+    sidebarSearchInput.addEventListener('keyup', function(e) {
+        const query = e.target.value.toLowerCase().trim();
 
         
-        document.addEventListener('click', function(event) {
-            const searchWidget = document.querySelector('.search-widget-final');
-            if (searchWidget && !searchWidget.contains(event.target)) {
-                searchResults.classList.remove('active');
-            }
-        });
-    }
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var header = document.getElementById('sticky-header');
-    if (header) {
-        var sticky = header.offsetTop;
-        function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("is-sticky");
-            } else {
-                header.classList.remove("is-sticky");
-            }
+        if (pagination) {
+            pagination.style.display = query ? 'none' : 'flex';
         }
-        window.onscroll = function() {
-            stickyHeader()
-        };
-    }
-});
-</script>
-<a id="scrollTopBtn" href="#" role="button" aria-label="Yukarı Çık" title="Yukarı Çık">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-       <path d="M12 5l0 14"></path>
-       <path d="M18 11l-6 -6"></path>
-       <path d="M6 11l6 -6"></path>
-    </svg>
-</a>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var scrollTopBtn = document.getElementById('scrollTopBtn');
 
-    if (scrollTopBtn) {
-        
-        var scrollThreshold = 300; 
+        allPosts.forEach(post => {
+            
+            const title = post.querySelector('.post-list-title')?.textContent.toLowerCase() || '';
+            const summary = post.querySelector('.post-list-summary')?.textContent.toLowerCase() || '';
+            const isVisible = title.includes(query) || summary.includes(query);
 
-        
-        window.onscroll = function() {
-            if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        };
-
-        
-        scrollTopBtn.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' 
-            });
+            
+            post.style.display = isVisible ? 'flex' : 'none';
         });
-    }
+    });
+}
+
+    document.addEventListener('click', function(event) {
+        const headerResults = document.getElementById('search-results-final');
+        const sidebarResults = document.getElementById('search-results-sidebar');
+        if (headerResults && !headerResults.parentElement.contains(event.target)) {
+            headerResults.classList.remove('active');
+        }
+        if (sidebarResults && !sidebarResults.parentElement.contains(event.target)) {
+            sidebarResults.classList.remove('active');
+        }
+    });
+
 });
-</script>
-</body>
+</script></body>
 
 </html>

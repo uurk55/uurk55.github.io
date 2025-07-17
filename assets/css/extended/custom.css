@@ -1176,3 +1176,27 @@ body > footer.footer:not(.footer-v2) {
 .card-posts-on-hover h3 {
     color: #fff;
 }
+/* ============================================= */
+/* --- BÖLÜMLER ARASI BOŞLUK AYARI --- */
+/* ============================================= */
+
+/* Ayırıcı çizgiler yerine bölümler arasına dikey boşluk ekler */
+.homepage-content .featured-category-section,
+.homepage-content .icon-category-section,
+.homepage-content .latest-posts-section,
+.homepage-content .email-signup-box {
+    margin-top: 80px; /* Her ana bölümün üstüne 80px boşluk ekliyoruz */
+}
+
+/* En Çok Okunanlar bölümünün altındaki boşluğu da ayarlayalım */
+.homepage-content > .homepage-section-title {
+    margin-bottom: 40px;
+}
+/* ============================================= */
+/* --- TÜM YAZILARI GÖR BUTONU STİLİ --- */
+/* ============================================= */
+
+.view-all-posts-container {
+    text-align: center; /* Butonu yatayda ortalar */
+    margin-top: 50px; /* Üstündeki yazı kartlarıyla arasına boşluk koyar */
+}

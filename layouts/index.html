@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{/* HERO BÖLÜMÜ */}}
+{{/* --- BÖLÜM 1: HERO BÖLÜMÜ --- */}}
 <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-container">
@@ -12,47 +12,9 @@
 
 <div class="homepage-content">
 
-    {{/* BÖLÜM 1: EN ÇOK OKUNANLAR */}}
-    {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
-    {{ if $featured_pages }}
-        <h2 class="homepage-section-title">En Çok Okunanlar</h2>
-        <div class="featured-posts-grid">
-            {{ range $featured_pages }}
-                {{ .Render "summary-card-featured" }}
-            {{ end }}
-        </div>
-        <hr class="section-divider">
-    {{ end }}
-
-    {{/* BÖLÜM 2: ÖNE ÇIKAN KATEGORİ (BAŞLANGIÇ REHBERİ) */}}
-    <section class="featured-category-section">
-        <div class="featured-category-image">
-            <img src="/images/baslangic-rehberi-kategori.png" alt="3D baskı dünyasına ilk adımı atan bir kişi">
-        </div>
-        <div class="featured-category-content">
-            <h2 class="homepage-section-title no-border">Başlangıç Rehberi</h2>
-            <p>3D baskı dünyasına ilk adımınızı mı atıyorsunuz? Bu bölümde, doğru yazıcıyı seçmekten ilk başarılı baskınızı almaya kadar bilmeniz gereken her şeyi adım adım anlatan rehberler bulacaksınız.</p>
-            <a href="{{ "categories/baslangic-rehberi" | absURL }}" class="btn">Rehberlere Göz At →</a>
-        </div>
-    </section>
-    <hr class="section-divider">
-
-    {{/* BÖLÜM 3: ÖNE ÇIKAN KATEGORİ (PARA KAZANMA) */}}
-    <section class="featured-category-section layout-reverse">
-        <div class="featured-category-image">
-            <img src="/images/para-kazanma-kategori.png" alt="3D baskı ile para kazanma konsepti">
-        </div>
-        <div class="featured-category-content">
-            <h2 class="homepage-section-title no-border">3D Baskı ile Para Kazanma</h2>
-            <p>Hobinizi bir gelir kapısına dönüştürmek mi istiyorsunuz? Bu bölümde, 3D baskı ile nasıl pasif gelir elde edeceğinizi, hangi ürünlerin satıldığını ve kendi işinizi nasıl kurabileceğinizi anlatan rehberler bulacaksınız.</p>
-            <a href="{{ "categories/para-kazanma" | absURL }}" class="btn">Tümünü Keşfet →</a>
-        </div>
-    </section>
-    <hr class="section-divider">
-
-    {{/* BÖLÜM 4: DİĞER KONULARI KEŞFET (Farklı İkonlarla) */}}
+    {{/* --- BÖLÜM 2: İKONLU KATEGORİ REHBERİ ("KONULARI KEŞFET") --- */}}
     <section class="icon-category-section">
-        <h2 class="homepage-section-title">Diğer Konuları Keşfet</h2>
+        <h2 class="homepage-section-title">Konuları Keşfet</h2>
         <div class="icon-grid">
             {{ range .Site.Taxonomies.categories.ByCount }}
             <a href="{{ .Page.Permalink }}" class="icon-grid-item">
@@ -81,9 +43,45 @@
             </a>
         </div>
     </section>
-    <hr class="section-divider">
 
-    {{/* BÖLÜM 5: EN SON YAZILAR */}}
+    {{/* --- BÖLÜM 3: ÖNE ÇIKAN KATEGORİ (BAŞLANGIÇ REHBERİ) --- */}}
+    <section class="featured-category-section">
+        <div class="featured-category-image">
+            <img src="/images/baslangic-rehberi-kategori.png" alt="3D baskı dünyasına ilk adımı atan bir kişi">
+        </div>
+        <div class="featured-category-content">
+            <h2 class="homepage-section-title no-border">Başlangıç Rehberi</h2>
+            <p>3D baskı dünyasına ilk adımınızı mı atıyorsunuz? Bu bölümde, doğru yazıcıyı seçmekten ilk başarılı baskınızı almaya kadar bilmeniz gereken her şeyi adım adım anlatan rehberler bulacaksınız.</p>
+            <a href="{{ "categories/baslangic-rehberi" | absURL }}" class="btn">Rehberlere Göz At →</a>
+        </div>
+    </section>
+
+    {{/* --- BÖLÜM 4: ÖNE ÇIKAN KATEGORİ (PARA KAZANMA) --- */}}
+    <section class="featured-category-section layout-reverse">
+        <div class="featured-category-image">
+            <img src="/images/para-kazanma-kategori.png" alt="3D baskı ile para kazanma konsepti">
+        </div>
+        <div class="featured-category-content">
+            <h2 class="homepage-section-title no-border">3D Baskı ile Para Kazanma</h2>
+            <p>Hobinizi bir gelir kapısına dönüştürmek mi istiyorsunuz? Bu bölümde, 3D baskı ile nasıl pasif gelir elde edeceğinizi, hangi ürünlerin satıldığını ve kendi işinizi nasıl kurabileceğinizi anlatan rehberler bulacaksınız.</p>
+            <a href="{{ "categories/para-kazanma" | absURL }}" class="btn">Tümünü Keşfet →</a>
+        </div>
+    </section>
+    
+    {{/* --- BÖLÜM 5: EN ÇOK OKUNANLAR --- */}}
+    {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
+    {{ if $featured_pages }}
+        <section class="most-read-section">
+            <h2 class="homepage-section-title">En Çok Okunanlar</h2>
+            <div class="featured-posts-grid">
+                {{ range $featured_pages }}
+                    {{ .Render "summary-card-featured" }}
+                {{ end }}
+            </div>
+        </section>
+    {{ end }}
+
+    {{/* --- BÖLÜM 6: EN SON YAZILAR --- */}}
     <section class="latest-posts-section">
         <h2 class="homepage-section-title">En Son Yazılar</h2>
         <div class="all-posts-grid">
@@ -92,9 +90,12 @@
                 {{ .Render "summary-card-compact" }}
             {{ end }}
         </div>
+        <div class="view-all-posts-container">
+            <a href="{{ "/posts/" | relLangURL }}" class="btn">Tüm Yazıları Gör →</a>
+        </div>
     </section>
 
-    {{/* BÖLÜM 6: E-POSTA ABONELİK KUTUSU (GERİ EKLENDİ) */}}
+    {{/* --- BÖLÜM 7: E-POSTA ABONELİK KUTUSU --- */}}
     <section class="email-signup-box">
         <div class="email-signup-content">
             <h3>3D Baskı İpuçlarını ve Fırsatları Kaçırma!</h3>

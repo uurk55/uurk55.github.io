@@ -7,9 +7,37 @@
         </div>
         <div class="compact-card-content">
             <span class="compact-card-category">{{ index .Params.categories 0 }}</span>
-            <h4 class="compact-card-title">{{ .Title }}</h4>
+            <h3 class="compact-card-title">{{ .Title }}</h3>
             <div class="compact-card-meta">
-                <span>{{ .Date.Format "2 Jan 2006" }}</span>
+                {{- if .Date -}}
+                <span class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-event"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M16 3l0 4" /><path d="M8 3l0 4" /><path d="M4 11l16 0" /><path d="M8 15h2v2h-2z" /></svg>
+                    
+                    {{/* --- GARANTİLİ TÜRKÇE TARİH KODU --- */}}
+                    {{ $date_english := .Date.Format "2 January 2006" }}
+                    {{ $date_turkish := $date_english }}
+                    {{ $date_turkish = replace $date_turkish "January" "Ocak" }}
+                    {{ $date_turkish = replace $date_turkish "February" "Şubat" }}
+                    {{ $date_turkish = replace $date_turkish "March" "Mart" }}
+                    {{ $date_turkish = replace $date_turkish "April" "Nisan" }}
+                    {{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
+                    {{ $date_turkish = replace $date_turkish "June" "Haziran" }}
+                    {{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
+                    {{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
+                    {{ $date_turkish = replace $date_turkish "September" "Eylül" }}
+                    {{ $date_turkish = replace $date_turkish "October" "Ekim" }}
+                    {{ $date_turkish = replace $date_turkish "November" "Kasım" }}
+                    {{ $date_turkish = replace $date_turkish "December" "Aralık" }}
+                    {{ $date_turkish }}
+                </span>
+                {{- end -}}
+
+                {{- if .ReadingTime -}}
+                <span class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7l0 5l5 0" /></svg>
+                    {{ .ReadingTime }} dk okuma
+                </span>
+                {{- end -}}
             </div>
         </div>
     </a>

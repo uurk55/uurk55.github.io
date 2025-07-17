@@ -980,10 +980,12 @@ body > footer.footer:not(.footer-v2) {
     transition: all 0.3s ease-in-out; /* 'all' diyerek tüm geçişleri yumuşatıyoruz */
 }
 
-.compact-card:hover, .featured-card-v2:hover {
-    border-color: var(--accent); /* Kenarlık rengini vurgu rengi yap */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Gölgeyi biraz daha belirgin yap */
-}
+/* Kartların üzerine gelinceki efekti güçlendiriyoruz */
+.compact-card:hover, .featured-card-v2:hover, .icon-grid-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1), inset 0 0 0 1px var(--accent); /* DEĞİŞİKLİK BURADA */
+    transform: translateY(-5px);
+}}
 
 /* 3. ADIM: Butonlara Parlama Efekti */
 /* Ana butonların üzerine gelince vurgu renginde bir ışıma ekliyoruz. */
@@ -1378,4 +1380,64 @@ body > footer.footer:not(.footer-v2) {
 .search-widget-final-enhanced #search-input-final:focus {
     border-color: var(--accent) !important;
     box-shadow: 0 0 8px 0px var(--accent);
+}
+/* ============================================= */
+/* --- KOMPAKT YAZI KARTI YENİ TASARIMI --- */
+/* ============================================= */
+
+/* Kategori ismini şık bir etikete dönüştürüyoruz */
+.compact-card-category {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* Kart başlığını biraz daha belirgin yapalım */
+.compact-card-title {
+    font-size: 1.25em; /* h3 için uygun boyut */
+    margin-bottom: 15px;
+}
+
+/* Kartın üzerine gelince resmin hafifçe büyümesini sağlıyoruz */
+.compact-card .compact-card-image {
+    transition: transform 0.4s ease;
+}
+.compact-card:hover .compact-card-image {
+    transform: scale(1.05);
+}
+
+/* Yeni Meta Bölümü Stilleri */
+.compact-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* İkonlu gruplar arasına boşluk */
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-top: auto; /* İçeriğin en altına iter */
+    padding-top: 10px;
+}
+
+.compact-card-meta .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* İkon ve metin arasına boşluk */
+}
+
+.compact-card-meta .meta-item svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2;
+}
+
+/* Kart içeriğini dikeyde yaymak için */
+.compact-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }

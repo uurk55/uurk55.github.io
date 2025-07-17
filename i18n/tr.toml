@@ -1,2 +1,26 @@
 [categories]
 other = "Kategoriler"
+[month_jan_full]
+other = "Ocak"
+[month_feb_full]
+other = "Şubat"
+[month_mar_full]
+other = "Mart"
+[month_apr_full]
+other = "Nisan"
+[month_may_full]
+other = "Mayıs"
+[month_jun_full]
+other = "Haziran"
+[month_jul_full]
+other = "Temmuz"
+[month_aug_full]
+other = "Ağustos"
+[month_sep_full]
+other = "Eylül"
+[month_oct_full]
+other = "Ekim"
+[month_nov_full]
+other = "Kasım"
+[month_dec_full]
+other = "Aralık"

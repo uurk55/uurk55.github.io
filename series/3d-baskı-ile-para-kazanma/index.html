@@ -10,7 +10,7 @@
 <meta name="description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
 <meta name="author" content="uurk55">
 <link rel="canonical" href="https://edu3dmodel.com/series/3d-bask%C4%B1-ile-para-kazanma/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.507de6c9130b7080fd951534767bd74c2b9a90f1b9687a4b3637469f95fe6d16.css" integrity="sha256-UH3myRMLcID9lRU0dnvXTCuakPG5aHpLNjdGn5X&#43;bRY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2fdc3f33f263459d504d955bff19f3e29c445c9124fcb63c5ad4e5f116cf9498.css" integrity="sha256-L9w/M/JjRZ1QTZVb/xnz4pxEXJEk/LY8WtTl8RbPlJg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -28,7 +28,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.f0dc71e3433e29151fc3cd887c196c64bddea99ec9f70691ba963c2c3a732958.css" integrity="sha256-8Nxx40M&#43;KRUfw82IfBlsZL3eqZ7J9waRupY8LDpzKVg="><meta property="og:url" content="https://edu3dmodel.com/series/3d-bask%C4%B1-ile-para-kazanma/">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.c335cd973ceda1d8bbfd704e877104aee855265d01ed6cf680d097150d7970b5.css" integrity="sha256-wzXNlzztodi7/XBOh3EEruhVJl0B7Wz2gNCXFQ15cLU="><meta property="og:url" content="https://edu3dmodel.com/series/3d-bask%C4%B1-ile-para-kazanma/">
   <meta property="og:site_name" content="Edu 3D Model Dünyası">
   <meta property="og:title" content="3D Baskı Ile Para Kazanma">
   <meta property="og:description" content="3D yazıcılar gözünü korkutmasın! Edu 3D Model Dünyası&#39;nda A&#39;dan Z&#39;ye her şeyi keyifle öğren. Sorularını sor, projelerini paylaş, ailemize katıl!">
@@ -40,11 +40,9 @@
 
 </head>
 
-<body class="list" id="top"><header class="header-v2">
-    
+<body class="list" id="top"><header class="header-v2" id="sticky-header">
     <div class="header-top-bar">
         <div class="header-container">
-            
             <div class="logo-container">
                 <a href="https://edu3dmodel.com/" accesskey="h" title="Edu 3D Model Dünyası (Alt + H)" class="logo-link">
                     <img src="https://edu3dmodel.com/logo.png" alt="Edu 3D Model Dünyası logo" class="logo-image">
@@ -55,7 +53,6 @@
                 </a>
             </div>
 
-            
             <div class="search-container">
                 <div class="search-widget-final">
                     <input type="search" id="search-input-final" placeholder="Blogda ara..." autocomplete="off">
@@ -63,7 +60,6 @@
                 </div>
             </div>
 
-            
             <div class="header-right-icons">
                 <div class="social-icons"><div class="social-icons" >
     <a href="https://www.instagram.com/edu3dmodel/" target="_blank" rel="noopener noreferrer me"
@@ -89,36 +85,29 @@
         </div>
     </div>
 
-    
     <nav class="header-main-nav">
         <div class="header-container">
-            <ul>
-                <li>
+            <ul><li class=" ">
                     <a href="https://edu3dmodel.com/" title="Anasayfa">
                         <span>Anasayfa</span>
                     </a>
-                </li>
-                <li>
+                </li><li class=" ">
                     <a href="https://edu3dmodel.com/posts/" title="Tüm Yazılar">
                         <span>Tüm Yazılar</span>
                     </a>
-                </li>
-                <li>
+                </li><li class=" ">
                     <a href="https://edu3dmodel.com/categories/" title="Kategoriler">
                         <span>Kategoriler</span>
                     </a>
-                </li>
-                <li>
+                </li><li class=" ">
                     <a href="https://edu3dmodel.com/hakkimda/" title="Hakkımda">
                         <span>Hakkımda</span>
                     </a>
-                </li>
-                <li>
+                </li><li class=" ">
                     <a href="https://edu3dmodel.com/iletisim/" title="İletişim">
                         <span>İletişim</span>
                     </a>
-                </li>
-                <li>
+                </li><li class=" cta-button">
                     <a href="https://edu3dmodel.com/ekitap" title="E-KİTAP HAZIRLANIYOR">
                         <span>E-KİTAP HAZIRLANIYOR</span>
                     </a>
@@ -126,8 +115,7 @@
             </ul>
         </div>
     </nav>
-</header>
-<main class="main">
+</header><main class="main">
 
 
 <header class="page-header">
@@ -341,6 +329,24 @@
             }
         });
     }
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var header = document.getElementById('sticky-header');
+    if (header) {
+        var sticky = header.offsetTop;
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("is-sticky");
+            } else {
+                header.classList.remove("is-sticky");
+            }
+        }
+        window.onscroll = function() {
+            stickyHeader()
+        };
+    }
+});
 </script></body>
 
 </html>

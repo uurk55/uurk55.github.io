@@ -1338,3 +1338,44 @@ body > footer.footer:not(.footer-v2) {
         transform: translateY(0);
     }
 }
+/* ============================================= */
+/* --- YENİ GÖRSEL ARAMA ÇUBUĞU STİLLERİ (FİNAL) --- */
+/* ============================================= */
+
+/* Kayma sorununu çözmek için bu kural eklendi */
+.search-container {
+    flex-grow: 0; /* Konteynerin gereksiz yere büyümesini engeller */
+    flex-basis: 450px; /* Sabit bir genişlik tanımlar */
+    display: flex;
+    justify-content: center;
+}
+
+.search-widget-final-enhanced {
+    position: relative;
+    width: 100%; /* Kendi konteyneri içinde %100 genişlik */
+}
+
+.search-widget-final-enhanced svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--accent);
+    pointer-events: none;
+}
+
+.search-widget-final-enhanced #search-input-final {
+    padding-left: 50px !important;
+    height: 48px;
+    border-radius: var(--radius) !important;
+    border: 1px solid var(--border-color) !important;
+    background-color: var(--card-background) !important;
+    width: 100%;
+}
+
+.search-widget-final-enhanced #search-input-final:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 8px 0px var(--accent);
+}

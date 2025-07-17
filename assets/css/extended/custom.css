@@ -1020,3 +1020,159 @@ body > footer.footer:not(.footer-v2) {
 .post-content a:hover {
     text-decoration-color: var(--accent);
 }
+/* ============================================= */
+/* --- YENİ KATEGORİLER SAYFASI STİLLERİ --- */
+/* ============================================= */
+
+/* Font Awesome ikonlarını kullanabilmek için (isteğe bağlı) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.category-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: var(--radius);
+    overflow: hidden; /* Dışarı taşanları gizle */
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.03); /* Üzerine gelince hafifçe büyüsün */
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Okunurluk için karanlık katman */
+    transition: background-color 0.3s ease;
+}
+
+.category-card:hover .card-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Üzerine gelince daha da kararsın */
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-count {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-posts-on-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 3;
+    opacity: 0; /* Başlangıçta gizli */
+    transform: translateY(20px); /* Aşağıda başlasın */
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.category-card:hover .card-posts-on-hover {
+    opacity: 1; /* Üzerine gelince görünür yap */
+    transform: translateY(0); /* Yerine otursun */
+}
+
+.card-posts-on-hover h3 {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.card-posts-on-hover ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-posts-on-hover li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-posts-on-hover li .fas {
+    margin-right: 8px;
+    color: var(--accent);
+}
+/* ============================================= */
+/* --- KATEGORİ KARTI OKUNURLUK İYİLEŞTİRMESİ --- */
+/* ============================================= */
+
+/* Karartma katmanını biraz daha belirgin hale getiriyoruz */
+.card-overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.category-card:hover .card-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Kart başlığına daha net bir gölge veriyoruz */
+.card-title {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Yazı adedi etiketini daha okunaklı yapıyoruz */
+.card-count {
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    color: #fff; /* Beyaz yazı */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* İnce beyaz çerçeve */
+}
+/* ============================================= */
+/* --- KATEGORİ KARTI BAŞLIK RENGİ DÜZELTMESİ --- */
+/* ============================================= */
+
+/* Kategori kartlarındaki ana başlıkların rengini beyaz yapar ve okunurluğu artırır */
+.category-card .card-title {
+    color: #fff; /* Rengi net olarak beyaza ayarlar */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* Arka plandan ayırmak için gölgeyi daha da keskinleştirir */
+}
+/* ============================================= */
+/* --- KATEGORİ KARTI HOVER BAŞLIK RENGİ DÜZELTMESİ --- */
+/* ============================================= */
+
+/* Kategori kartı üzerine gelince çıkan 'Öne Çıkanlar' başlığını beyaz yapar */
+.card-posts-on-hover h3 {
+    color: #fff;
+}

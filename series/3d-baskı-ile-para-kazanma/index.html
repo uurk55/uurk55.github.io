@@ -135,6 +135,8 @@
             <div class="search-widget-final-enhanced">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path></svg>
                 <input type="search" id="search-input-sidebar" placeholder="Yazılarda ara..." autocomplete="off">
+                
+                <ul id="search-results-sidebar" class="search-results-list-final"></ul>
             </div>
         </div>
         
@@ -482,6 +484,7 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -490,11 +493,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (header) {
         var sticky = header.offsetTop;
         function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("is-sticky");
-            } else {
-                header.classList.remove("is-sticky");
-            }
+            if (window.pageYOffset > sticky) { header.classList.add("is-sticky"); } 
+            else { header.classList.remove("is-sticky"); }
         }
         window.addEventListener('scroll', stickyHeader);
     }
@@ -511,7 +511,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         window.addEventListener('scroll', toggleScrollTopBtn);
-
         scrollTopBtn.addEventListener('click', function(e) {
             e.preventDefault(); 
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -519,38 +518,48 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     
-    let allPages = [];
+    let fuse;
     fetch('https:\/\/edu3dmodel.com\/index.json')
         .then(response => response.json())
         .then(data => {
-            allPages = data;
+            const options = {
+                keys: [
+                    { name: 'title', weight: 0.8 },        
+                    { name: 'description', weight: 0.5 }, 
+                    { name: 'tags', weight: 0.3 },         
+                    { name: 'categories', weight: 0.3 },   
+                    { name: 'summary', weight: 0.1 }       
+                ],
+                includeScore: true,
+                threshold: 0.3, 
+                minMatchCharLength: 2,
+            };
+            fuse = new Fuse(data, options);
         });
 
-    function initializeSearch(inputId, resultsId) {
+    function setupSearch(inputId, resultsId) {
         const searchInput = document.getElementById(inputId);
         const searchResults = document.getElementById(resultsId);
 
         if (!searchInput || !searchResults) return;
 
         searchInput.addEventListener('input', function(e) {
-            const query = e.target.value.toLowerCase().trim();
+            const query = e.target.value.trim();
             searchResults.innerHTML = '';
 
-            if (query.length < 2) {
+            if (query.length < 2 || !fuse) {
                 searchResults.classList.remove('active');
                 return;
             }
 
-            const results = allPages.filter(page => {
-                return page.title.toLowerCase().includes(query) || page.content.toLowerCase().includes(query);
-            }).slice(0, 7);
+            const results = fuse.search(query).slice(0, 7);
 
             if (results.length > 0) {
                 results.forEach(result => {
                     const li = document.createElement('li');
                     const a = document.createElement('a');
-                    a.href = result.permalink;
-                    a.textContent = result.title;
+                    a.href = result.item.permalink;
+                    a.textContent = result.item.title;
                     li.appendChild(a);
                     searchResults.appendChild(li);
                 });
@@ -561,46 +570,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    initializeSearch('search-input-final', 'search-results-final'); 
     
-const sidebarSearchInput = document.getElementById('search-input-sidebar');
-const postListContainer = document.querySelector('.post-list-container');
+    setupSearch('search-input-final', 'search-results-final');
+    setupSearch('search-input-sidebar', 'search-results-sidebar');
 
-if (sidebarSearchInput && postListContainer) {
-    const allPosts = postListContainer.querySelectorAll('.post-list-item');
-    const pagination = document.querySelector('.pagination');
-
-    sidebarSearchInput.addEventListener('keyup', function(e) {
-        const query = e.target.value.toLowerCase().trim();
-
-        
-        if (pagination) {
-            pagination.style.display = query ? 'none' : 'flex';
-        }
-
-        allPosts.forEach(post => {
-            
-            const title = post.querySelector('.post-list-title')?.textContent.toLowerCase() || '';
-            const summary = post.querySelector('.post-list-summary')?.textContent.toLowerCase() || '';
-            const isVisible = title.includes(query) || summary.includes(query);
-
-            
-            post.style.display = isVisible ? 'flex' : 'none';
-        });
-    });
-}
-
+    
     document.addEventListener('click', function(event) {
-        const headerResults = document.getElementById('search-results-final');
-        const sidebarResults = document.getElementById('search-results-sidebar');
-        if (headerResults && !headerResults.parentElement.contains(event.target)) {
-            headerResults.classList.remove('active');
+        const headerSearchWidget = document.querySelector('.header-top-bar .search-widget-final-enhanced');
+        const sidebarSearchWidget = document.querySelector('.sidebar-left .search-widget-final-enhanced');
+
+        if (headerSearchWidget && !headerSearchWidget.contains(event.target)) {
+            document.getElementById('search-results-final').classList.remove('active');
         }
-        if (sidebarResults && !sidebarResults.parentElement.contains(event.target)) {
-            sidebarResults.classList.remove('active');
+        if (sidebarSearchWidget && !sidebarSearchWidget.contains(event.target)) {
+            document.getElementById('search-results-sidebar').classList.remove('active');
         }
     });
-
 });
 </script></body>
 

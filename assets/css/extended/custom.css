@@ -124,7 +124,7 @@ a {
 }
 
 /* --- BÖLÜM 2: "TÜM YAZILAR" KARTLARI --- */
-.all-posts-grid {
+.homepage-content .all-posts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Her zaman 3 eşit sütun */
     gap: 25px;
@@ -148,6 +148,7 @@ a {
     border-radius: var(--radius);
     overflow: hidden;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
 }
 
 .compact-card:hover {

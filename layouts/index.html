@@ -15,6 +15,7 @@
     {{/* --- BÖLÜM 2: İKONLU KATEGORİ REHBERİ ("KONULARI KEŞFET") --- */}}
     <section class="icon-category-section">
         <h2 class="homepage-section-title">Konuları Keşfet</h2>
+        <p class="section-subtitle">Nereden başlayacağınızı bilmiyor musunuz? İşte size bir rehber.</p>
         <div class="icon-grid">
             {{ range .Site.Taxonomies.categories.ByCount }}
             <a href="{{ .Page.Permalink }}" class="icon-grid-item">

@@ -2012,3 +2012,203 @@ body > footer.footer:not(.footer-v2) {
         grid-template-columns: 1fr;
     }
 }
+/* ============================================= */
+/* --- BLOG LİSTESİ VE SIDEBAR FİNAL STİLLERİ --- */
+/* ============================================= */
+
+/* 1. SIDEBAR VE İKİ SÜTUNLU ANA YAPI */
+
+.page-with-sidebar {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
+    gap: 40px;
+    margin-top: 40px; /* Üst menüyle arasına boşluk koyar */
+}
+
+.sidebar-left {
+    width: 100%;
+}
+
+.widget {
+    background-color: var(--card-background);
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list li {
+    margin-bottom: 10px;
+}
+.widget-list li:last-child { margin-bottom: 0; }
+
+.widget-list li a {
+    text-decoration: none;
+    color: var(--content);
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.2s ease;
+}
+
+.widget-list li a:hover {
+    color: var(--accent);
+}
+
+.widget-list li a span {
+    color: var(--secondary);
+    font-size: 0.9em;
+}
+
+.widget-list li.active-widget-link a,
+.widget-list li.active-widget-link a span {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* 2. YENİ LİSTE GÖRÜNÜMÜ (IZGARA YERİNE) */
+
+.post-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-list-item {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.post-list-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.post-list-link {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-list-image-container {
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+.post-list-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.post-list-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-list-category {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+.post-list-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.post-list-summary {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.post-list-meta {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-top: 20px;
+}
+
+.post-list-meta .meta-separator {
+    margin: 0 5px;
+}
+
+
+/* 3. SIDEBAR ARAMA İKONU DÜZELTMESİ */
+
+#search-input-sidebar {
+    padding-left: 15px !important;
+}
+
+.sidebar-left .search-widget-final-enhanced {
+    position: relative;
+}
+
+.sidebar-left .search-widget-final-enhanced svg {
+    display: none; /* Sidebar'da ikonu tamamen gizliyoruz */
+}
+
+
+/* 4. MOBİL UYUMLULUK */
+
+@media (max-width: 992px) {
+    .page-with-sidebar {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .main-content-right {
+       margin-top: 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .post-list-item {
+        flex-direction: column;
+    }
+    .post-list-image-container {
+       height: 200px;
+       flex-basis: auto;
+    }
+    .post-list-image-container img {
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+}
+/* ============================================= */
+/* --- ANA SAYFA ALT BAŞLIK BOŞLUK AYARI (DÜZELTİLMİŞ) --- */
+/* ============================================= */
+
+.section-subtitle {
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    /* Ana başlığın altındaki çizgiye yakın durması için bu eksi değeri koruyoruz */
+    margin-top: -10px; 
+    /* ASIL DEĞİŞİKLİK BURADA: Altına 40px'lik bir boşluk ekliyoruz */
+    margin-bottom: 40px; 
+}

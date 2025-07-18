@@ -1789,13 +1789,13 @@ body > footer.footer:not(.footer-v2) {
 
 .about-page-container {
     display: grid;
-    grid-template-columns: 280px 1fr; /* 280px sidebar, kalan alan içerik */
-    gap: 50px;
+    grid-template-columns: 240px 1fr; /* <<< DEĞİŞİKLİK: 280px'den 240px'e düşürdük */
+    gap: 60px; /* <<< DEĞİŞİKLİK: Aradaki boşluğu biraz artırdık */
 }
 
 .about-sidebar .sticky-sidebar {
     position: sticky;
-    top: 100px; /* Yapışkan menünün ne kadar aşağıda duracağı */
+    top: 100px;
 }
 
 .about-profile {
@@ -1803,6 +1803,10 @@ body > footer.footer:not(.footer-v2) {
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-bottom: 1px solid var(--border-color);
+    /* <<< YENİ: Tam ortalamak için flexbox ekliyoruz */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-logo {
@@ -1826,22 +1830,28 @@ body > footer.footer:not(.footer-v2) {
     margin: 0;
 }
 
-/* Sidebar'daki widget'ı yeniden kullanalım */
 .about-sidebar .widget {
-    text-align: center;
+    text-align: left; /* <<< DEĞİŞİKLİK: Metni sola dayalı yap */
 }
-.about-sidebar .widget-list li a {
-    justify-content: center; /* Linkleri ortala */
-    padding: 8px;
-    border-radius: var(--radius);
+
+/* <<< YENİ: İkonlu linkler için stiller */
+.widget-list.icon-links li a {
+    justify-content: flex-start; /* İkon ve metni sola daya */
+    align-items: center;
+    gap: 12px; /* İkon ve metin arası boşluk */
 }
+.widget-list.icon-links li a i {
+    font-size: 1.2em;
+    color: var(--accent);
+}
+
 .about-sidebar .widget-list li a:hover {
     background-color: var(--code-bg);
     color: var(--accent);
 }
 
 .about-main-content {
-    min-width: 0; /* Grid yapısının düzgün çalışması için */
+    min-width: 0;
 }
 
 /* Mobil için tek sütuna dönüştür */
@@ -1853,6 +1863,6 @@ body > footer.footer:not(.footer-v2) {
         margin-bottom: 40px;
     }
     .about-sidebar .sticky-sidebar {
-        position: static; /* Mobilde yapışkanlığı kaldır */
+        position: static;
     }
 }

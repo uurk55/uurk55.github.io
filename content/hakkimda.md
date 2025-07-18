@@ -9,11 +9,17 @@ comments: false
 
 Merhaba, ben Uğur. "Edu 3D Model Dünyası"nın kurucusu ve bu dijital atölyenin arkasındaki meraklı zihin.
 
-Benim için her şey, tek bir soruyla başladı: **"Elimdeki bu teknoloji, bir hobiden daha fazlası olabilir mi?"**
+Benim için her şey, tek bir soruyla başladı: 
+
+> **"Elimdeki bu teknoloji, bir hobiden daha fazlası olabilir mi?"**
 
 Odamın bir köşesinde duran ve erimiş plastiğe adeta hayat veren o 3D yazıcının vızıltısı, benim için sadece bir makine gürültüsü değildi. O vızıltı, bir potansiyelin, bir devrimin ve sonsuz olasılıkların sesiydi. Önce kırılan bir kulaklık askısını tamir etmenin getirdiği o tatmin duygusu, sonra hayatımı kolaylaştıran küçük, dahiyane icatlara dönüştü... Her başarılı baskı, bu teknolojinin gücünü daha derinden hissetmemi sağladı.
 
-Ama bir şeyler eksikti. İnternet, "ne basılacağı" ile ilgili binlerce modelle doluydu ama "nasıl bir değer yaratılacağı" konusunda derin bir sessizlik vardı. Dağınık bilgiler, teknik jargonlar ve çoğu zaman cevapsız kalan o en önemli soru: **"Peki, bundan nasıl para kazanırım?"**
+Ama bir şeyler eksikti. İnternet, "ne basılacağı" ile ilgili binlerce modelle doluydu ama "nasıl bir değer yaratılacağı" konusunda derin bir sessizlik vardı. Dağınık bilgiler, teknik jargonlar ve çoğu zaman cevapsız kalan o en önemli soru: 
+
+> **"Peki, bundan nasıl para kazanırım?"**
+
+İşte bu soru, benim için bir dönüm noktası oldu. Saatlerce süren araştırmalar, başarısız denemeler ve sonunda elde edilen küçük zaferler... Tüm bu birikim, bir başkasına yol gösterme arzusuna dönüştü.
 
 ## "Edu 3D Model Dünyası" Neden Var?
 

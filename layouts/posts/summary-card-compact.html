@@ -6,11 +6,14 @@
             {{- end -}}
         </div>
         <div class="compact-card-content">
-            <!-- KATEGORİ ETİKETİ İÇİN ÇALIŞAN YAPIYI KULLANALIM -->
-            <span class="post-list-category">{{ index .Params.categories 0 }}</span>
-            
-            <h3 class="compact-card-title">{{ .Title }}</h3>
-            
+            <div>
+                <span class="post-list-category">{{ index .Params.categories 0 }}</span>
+                <h3 class="compact-card-title">{{ .Title }}</h3>
+                
+                <!-- YENİ EKLENEN ÖZET PARAGRAFI -->
+                <p class="compact-card-summary">{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
+
+            </div>
             <div class="compact-card-meta">
                 {{ $date_english := .Date.Format "2 January 2006" }}
                 {{ $date_turkish := $date_english }}

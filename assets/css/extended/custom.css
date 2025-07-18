@@ -179,7 +179,11 @@ a.card-link {
 }
 
 .compact-card-content {
-    padding: 15px 20px 20px 20px;
+    padding: 25px; /* Boşlukları featured kartlarla aynı yapalım */
+    display: flex; /* Dikey hizalama için flexbox'ı aktif et */
+    flex-direction: column; /* Elemanları alt alta diz */
+    justify-content: space-between; /* Üst ve alt içeriği iki uca yay */
+    flex-grow: 1; /* Kartın tüm dikey boşluğunu doldurmasını sağla */
 }
 
 .compact-card-category {
@@ -196,9 +200,15 @@ a.card-link {
     margin: 0 0 10px 0;
     line-height: 1.4;
 }
-
+.compact-card-summary {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 15px 0; /* Başlık ve meta ile arasına boşluk koy */
+    flex-grow: 1;
+}
 .compact-card-meta {
-    font-size: 0.8em;
+    font-size: 0.85rem;
     color: var(--secondary);
 }
 /* --- SAYFALAMA (PAGINATION) STİLLERİ - GÜNCEL --- */

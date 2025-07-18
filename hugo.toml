@@ -86,6 +86,11 @@ theme = "PaperMod"
     url = "/categories/"
     weight = 30
 
+   [[menu.main]]
+    name = "SSS"
+    url = "/sss/"
+    weight = 35
+
   [[menu.main]]
     name = "Hakkımda"
     url = "/hakkimda/" 

@@ -2409,3 +2409,56 @@ body > footer.footer:not(.footer-v2) {
     flex-direction: column;
     height: 100%; /* Kartın tüm yüksekliğini kapla */
 }
+/* ============================================= */
+/* --- İLETİŞİM SAYFASI SSS HATIRLATMA KUTUSU --- */
+/* ============================================= */
+
+.sss-reminder-box {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.sss-reminder-box h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sss-reminder-box p {
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 25px;
+}
+
+.sss-reminder-box ul {
+    list-style: none;
+    padding: 0;
+    columns: 2; /* Soruları iki sütuna böl (geniş ekranlar için) */
+    gap: 20px;
+}
+
+.sss-reminder-box ul li a {
+    display: block;
+    padding: 12px 15px;
+    background-color: var(--card-background);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.sss-reminder-box ul li a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* Mobilde tek sütuna düşür */
+@media (max-width: 768px) {
+    .sss-reminder-box ul {
+        columns: 1;
+    }
+}

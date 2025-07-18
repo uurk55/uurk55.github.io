@@ -2382,3 +2382,30 @@ body > footer.footer:not(.footer-v2) {
 .footer-bottom-bar {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* ============================================= */
+/* --- "YAPIŞKAN" SIDEBAR (STICKY SIDEBAR) --- */
+/* ============================================= */
+
+.sticky-sidebar-wrapper {
+    position: -webkit-sticky; /* Safari uyumluluğu için */
+    position: sticky;
+    top: 100px; /* Kenar çubuğunun üste yapışacağı mesafe */
+}
+/* ============================================= */
+/* --- KATEGORİ KARTI AÇIKLAMA STİLİ --- */
+/* ============================================= */
+
+.card-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 15px 0;
+    flex-grow: 1; /* Başlık ve yazı sayısı arasında esnek boşluk oluşturur */
+}
+
+/* Kart içeriğini dikeyde yaymak için flexbox ayarı */
+.category-card .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Kartın tüm yüksekliğini kapla */
+}

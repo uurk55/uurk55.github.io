@@ -10,43 +10,43 @@
         {{ $title = "Yazı Dizileri" }}
     {{ end }}
     <h1>{{ $title }}</h1>
-
-    {{- if .Description }}
-    <div class="page-description">{{ .Description | markdownify }}</div>
-    {{- end }}
 </header>
 
 <div class="category-card-grid">
     {{- range .Data.Terms.ByCount -}}
     
-    {{/* --- YENİ EKLENEN KISIM BAŞLANGICI --- */}}
-    {{/* Hugo'nun otomatik büyüttüğü ' Ve ' kelimesini, senin standardın olan ' ve ' haline getiriyoruz. */}}
-    {{ $correctedTitle := replace .Page.Title " Ve " " ve " }}
-    {{/* --- YENİ EKLENEN KISIM SONU --- */}}
-
+    {{ $currentCategoryTitle := .Page.Title }}
     {{ $bgImage := "/images/cat-bg-default.png" }}
-    {{ if eq (.Page.Title | lower) "para kazanma" }}{{ $bgImage = "/images/cat-bg-para-kazanma.png" }}{{ end }}
-    {{ if eq (.Page.Title | lower) "başlangıç rehberi" }}{{ $bgImage = "/images/cat-bg-baslangic.png" }}{{ end }}
-    {{ if eq (.Page.Title | lower) "teknik i̇puçları" }}{{ $bgImage = "/images/cat-bg-teknik.png" }}{{ end }}
-    {{ if eq (.Page.Title | lower) "yazıcı i̇ncelemeleri" }}{{ $bgImage = "/images/cat-bg-inceleme.png" }}{{ end }}
-    {{ if eq (.Page.Title | lower) "tasarım" }}{{ $bgImage = "/images/cat-bg-tasarim.png" }}{{ end }}
+    {{ $description := "" }}
+
+    {{/* Veri dosyasından resmi bul */}}
+    {{- range site.Data.categories -}}
+        {{- if eq .category $currentCategoryTitle -}}
+            {{- $bgImage = printf "/images/%s" .image -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{/* --- KESİN ÇÖZÜM BURADA --- */}}
+    {{/* Açıklamayı bulmak için TÜM content/categories dosyalarını tara */}}
+    {{ $categoryContentPages := where site.Pages "Section" "categories" }}
+    {{- range $categoryContentPages -}}
+        {{/* İsimleri küçük harfe çevirerek karşılaştır (en garantili yöntem) */}}
+        {{- if eq (.Title | lower) ($currentCategoryTitle | lower) -}}
+            {{- $description = .Description -}}
+        {{- end -}}
+    {{- end -}}
+
 
     <a href="{{ .Page.Permalink }}" class="category-card" style="background-image: url('{{ $bgImage | safeURL }}');">
         <div class="card-overlay"></div>
         <div class="card-content">
             <h2 class="card-title">{{ .Page.Title }}</h2>
+            
+            {{ if $description }}
+            <p class="card-description">{{ $description }}</p>
+            {{ end }}
+
             <span class="card-count">{{ .Count }} YAZI</span>
-        </div>
-        <div class="card-posts-on-hover">
-            <h3>Öne Çıkanlar</h3>
-            <ul>
-                {{/* --- DEĞİŞİKLİK BURADA --- */}}
-                {{/* Yazıları ararken, orijinal .Page.Title yerine düzeltilmiş başlığı ($correctedTitle) kullanıyoruz. */}}
-                {{ $pagesInCat := where site.RegularPages "Params.categories" "intersect" (slice $correctedTitle) }}
-                {{ range first 3 $pagesInCat }}
-                    <li><i class="fas fa-file-alt"></i> {{ .Title }}</li>
-                {{ end }}
-            </ul>
         </div>
     </a>
     {{- end -}}

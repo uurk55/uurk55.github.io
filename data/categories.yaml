@@ -1,0 +1,28 @@
+- category: "Para Kazanma"
+  image: "cat-bg-para-kazanma.png"
+
+- category: "Teknik İpuçları"
+  image: "cat-bg-teknik.png"
+
+- category: "Beceri Geliştirme ve İleri Teknikler"
+  image: "BURAYA-İLGİLİ-RESMİN-DOSYA-ADINI-YAZ.png"
+
+- category: "Tasarım"
+  image: "cat-bg-default.png"
+
+- category: "Temel Bilgi ve Kurulum"
+  image: "cat-bg-default.png"
+
+- category: "Başlangıç Rehberi"
+  image: "cat-bg-baslangic.png"
+
+- category: "Kaynaklar"
+  image: "cat-bg-default.png"
+
+- category: "Teknoloji Karşılaştırma"
+  image: "cat-bg-inceleme.png"
+
+- category: "Yazıcı İncelemeleri"
+  image: "cat-bg-inceleme.png"
+
+# Yeni kategori eklersen, bu listeye aynı formatta ekleyebilirsin.

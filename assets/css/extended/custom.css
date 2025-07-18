@@ -985,7 +985,7 @@ body > footer.footer:not(.footer-v2) {
     border-color: var(--accent);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1), inset 0 0 0 1px var(--accent); /* DEĞİŞİKLİK BURADA */
     transform: translateY(-5px);
-}}
+}
 
 /* 3. ADIM: Butonlara Parlama Efekti */
 /* Ana butonların üzerine gelince vurgu renginde bir ışıma ekliyoruz. */
@@ -1771,4 +1771,77 @@ body > footer.footer:not(.footer-v2) {
 /* Blog listesi sayfasının üstüne boşluk ekler */
 .page-with-sidebar {
     margin-top: 40px;
+}
+/* ============================================= */
+/* --- HAKKIMDA SAYFASI YENİ TASARIMI --- */
+/* ============================================= */
+
+.about-page-container {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* 280px sidebar, kalan alan içerik */
+    gap: 50px;
+}
+
+.about-sidebar .sticky-sidebar {
+    position: sticky;
+    top: 100px; /* Yapışkan menünün ne kadar aşağıda duracağı */
+}
+
+.about-profile {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+}
+
+.profile-tagline {
+    font-size: 1rem;
+    color: var(--secondary);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Sidebar'daki widget'ı yeniden kullanalım */
+.about-sidebar .widget {
+    text-align: center;
+}
+.about-sidebar .widget-list li a {
+    justify-content: center; /* Linkleri ortala */
+    padding: 8px;
+    border-radius: var(--radius);
+}
+.about-sidebar .widget-list li a:hover {
+    background-color: var(--code-bg);
+    color: var(--accent);
+}
+
+.about-main-content {
+    min-width: 0; /* Grid yapısının düzgün çalışması için */
+}
+
+/* Mobil için tek sütuna dönüştür */
+@media (max-width: 992px) {
+    .about-page-container {
+        grid-template-columns: 1fr;
+    }
+    .about-sidebar {
+        margin-bottom: 40px;
+    }
+    .about-sidebar .sticky-sidebar {
+        position: static; /* Mobilde yapışkanlığı kaldır */
+    }
 }

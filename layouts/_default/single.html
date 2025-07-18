@@ -1,107 +1,143 @@
 {{ define "main" }}
-<article class="post-single">
-    <header class="post-header">
-        {{ partial "breadcrumbs.html" . }}
-        <h1 class="post-title">
-            {{ .Title }}
-        </h1>
-        {{- if .Description }}
-        <div class="post-description">
-            {{ .Description }}
-        </div>
-        {{- end }}
-        
-        {{- if not .Params.hidemeta }}
-        <div class="post-meta">
-            {{/* --- YENİ GARANTİLİ TÜRKÇE TARİH KODU --- */}}
-            <span>
-                {{ $date_english := .Date.Format "2 January 2006" }}
-                {{ $date_turkish := $date_english }}
-                {{ $date_turkish = replace $date_turkish "January" "Ocak" }}
-                {{ $date_turkish = replace $date_turkish "February" "Şubat" }}
-                {{ $date_turkish = replace $date_turkish "March" "Mart" }}
-                {{ $date_turkish = replace $date_turkish "April" "Nisan" }}
-                {{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
-                {{ $date_turkish = replace $date_turkish "June" "Haziran" }}
-                {{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
-                {{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
-                {{ $date_turkish = replace $date_turkish "September" "Eylül" }}
-                {{ $date_turkish = replace $date_turkish "October" "Ekim" }}
-                {{ $date_turkish = replace $date_turkish "November" "Kasım" }}
-                {{ $date_turkish = replace $date_turkish "December" "Aralık" }}
-                {{ $date_turkish }}
-            </span>
+
+{{/* Bu sayfanın "Hakkımda" sayfası olup olmadığını kontrol ediyoruz (.RelPermalink ile) */}}
+{{ if eq .RelPermalink "/hakkimda/" }}
+
+    {{/* --- EVET, "HAKKIMDA" SAYFASIYSA BU YENİ TASARIMI KULLAN --- */}}
+    <div class="about-page-container">
+    
+        <aside class="about-sidebar">
+            <div class="sticky-sidebar">
+                <div class="about-profile">
+                    <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="profile-logo">
+                    <h2 class="profile-name">{{ .Site.Title }}</h2>
+                    <p class="profile-tagline">Fikirden Ürüne, Üründen Gelire...</p>
+                </div>
+                <div class="widget">
+                    <h4 class="widget-title">Bana Ulaşın</h4>
+                    <ul class="widget-list">
+                        <li><a href="mailto:edu3dmodel@gmail.com">E-posta</a></li>
+                        <li><a href="https://www.instagram.com/edu3dmodel/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    
+        <article class="about-main-content">
+            <header class="post-header">
+                <h1 class="post-title">{{ .Title }}</h1>
+            </header>
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+        </article>
+    
+    </div>
+
+{{ else }}
+
+    {{/* --- HAYIR, NORMAL BİR YAZIYSA BU MEVCUT TASARIMI KULLAN --- */}}
+    <article class="post-single">
+        <header class="post-header">
+            {{ partial "breadcrumbs.html" . }}
+            <h1 class="post-title">
+                {{ .Title }}
+            </h1>
+            {{- if .Description }}
+            <div class="post-description">
+                {{ .Description }}
+            </div>
+            {{- end }}
             
-            · 
-            
-            <span>{{ .ReadingTime }} dk okuma</span>
-            
-            {{- with .Params.categories -}}
-            · 
-            <span class="post-categories">
-                {{- range . -}}
-                <a href="{{ "categories/" | absURL }}{{ . | urlize }}/">
-                    {{- . -}}
-                </a>
+            {{- if not .Params.hidemeta }}
+            <div class="post-meta">
+                <span>
+                    {{ $date_english := .Date.Format "2 January 2006" }}
+                    {{ $date_turkish := $date_english }}
+                    {{ $date_turkish = replace $date_turkish "January" "Ocak" }}
+                    {{ $date_turkish = replace $date_turkish "February" "Şubat" }}
+                    {{ $date_turkish = replace $date_turkish "March" "Mart" }}
+                    {{ $date_turkish = replace $date_turkish "April" "Nisan" }}
+                    {{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
+                    {{ $date_turkish = replace $date_turkish "June" "Haziran" }}
+                    {{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
+                    {{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
+                    {{ $date_turkish = replace $date_turkish "September" "Eylül" }}
+                    {{ $date_turkish = replace $date_turkish "October" "Ekim" }}
+                    {{ $date_turkish = replace $date_turkish "November" "Kasım" }}
+                    {{ $date_turkish = replace $date_turkish "December" "Aralık" }}
+                    {{ $date_turkish }}
+                </span>
+                
+                · 
+                
+                <span>{{ .ReadingTime }} dk okuma</span>
+                
+                {{- with .Params.categories -}}
+                · 
+                <span class="post-categories">
+                    {{- range . -}}
+                    <a href="{{ "categories/" | absURL }}{{ . | urlize }}/">
+                        {{- . -}}
+                    </a>
+                    {{- end -}}
+                </span>
                 {{- end -}}
-            </span>
+            </div>
+            {{- end }}
+        </header>
+        
+        {{- if .Params.cover.image -}}
+        <div class="post-cover">
+            <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+            {{- if .Params.cover.caption -}}
+            <p class="post-cover-caption">{{ .Params.cover.caption }}</p>
             {{- end -}}
+        </div>
+        {{- end -}}
+    
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    
+        <footer class="post-footer">
+            {{- with .Params.tags -}}
+            <ul class="post-tags">
+                {{- range . -}}
+                <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>
+                {{- end -}}
+            </ul>
+            {{- end -}}
+            
+            <div class="cta-box">
+                <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
+                <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
+                <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
+            </div>
+        </footer>
+    
+        {{- if .Params.comments }}
+        <div id="comments" style="margin-top: 40px;">
+            <hr>
+            <h2>Yorumlar</h2>
+            <script src="https://giscus.app/client.js"
+                    data-repo="uurk55/uurk55.github.io"
+                    data-repo-id="R_kgDOMX0zYw"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOMX0zY84CfIeL"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="light"
+                    data-lang="tr"
+                    crossorigin="anonymous"
+                    async>
+            </script>
         </div>
         {{- end }}
-    </header>
-    
-    {{- if .Params.cover.image -}}
-    <div class="post-cover">
-        <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
-        {{- if .Params.cover.caption -}}
-        <p class="post-cover-caption">{{ .Params.cover.caption }}</p>
-        {{- end -}}
-    </div>
-    {{- end -}}
-
-    <div class="post-content">
-        {{ .Content }}
-    </div>
-
-    <footer class="post-footer">
-        {{- with .Params.tags -}}
-        <ul class="post-tags">
-            {{- range . -}}
-            <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>
-            {{- end -}}
-        </ul>
-        {{- end -}}
         
-        {{/* --- İLETİŞİM KUTUSU BURADA --- */}}
-        <div class="cta-box">
-            <h3>Bir Sorunuz mu Var veya Bir Proje Hakkında Konuşmak mı İstiyorsunuz?</h3>
-            <p>Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!</p>
-            <a href="/iletisim" class="cta-button">Benimle İletişime Geçin</a>
-        </div>
-    </footer>
-
-    {{/* --- YORUM BÖLÜMÜ BURADA --- */}}
-    {{- if .Params.comments }}
-    <div id="comments" style="margin-top: 40px;">
-        <hr>
-        <h2>Yorumlar</h2>
-        <script src="https://giscus.app/client.js"
-                data-repo="uurk55/uurk55.github.io"
-                data-repo-id="R_kgDOMX0zYw"
-                data-category="Announcements"
-                data-category-id="DIC_kwDOMX0zY84CfIeL"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="top"
-                data-theme="light"
-                data-lang="tr"
-                crossorigin="anonymous"
-                async>
-        </script>
-    </div>
-    {{- end }}
-    
-</article>
+    </article>
+{{ end }}
 {{ end }}

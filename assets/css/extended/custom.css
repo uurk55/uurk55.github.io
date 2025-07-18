@@ -1036,7 +1036,7 @@ body > footer.footer:not(.footer-v2) {
 
 /* 1. ADIM: Yeni Vurgu Rengini Tanımlama */
 :root {
-    --accent: #20c997; /* Canlı ve teknolojik bir mavi tonu */
+    --accent: #5DADE2; /* Canlı ve teknolojik bir mavi tonu */
 }
 
 /* 2. ADIM: Yazı Kartlarına Gelişmiş Efekt */
@@ -2305,7 +2305,7 @@ body > footer.footer:not(.footer-v2) {
 
 /* --- 1. YENİ RENK DEĞİŞKENİ VE TEMEL AYARLAR --- */
 :root {
-    --header-footer-bg: #495057; /* Kömür grisi / Antrasit */
+    --header-footer-bg: #5f676f; /* Kömür grisi / Antrasit */
 }
 
 .header-v2, .header-main-nav, 

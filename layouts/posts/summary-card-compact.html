@@ -1,16 +1,16 @@
-<article class="compact-card"> <!-- <<< DEĞİŞİKLİK BURADA -->
+<article class="compact-card">
     <a href="{{ .Permalink }}" class="card-link">
-        {{- with .Params.cover.image -}}
-        <div class="compact-card-image-container"> <!-- <<< BU CLASS'I DA GÜNCELLEDİM -->
-            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="compact-card-image"> <!-- <<< BU CLASS'I DA GÜNCELLEDİM -->
+        <div class="compact-card-image-container">
+            {{- with .Params.cover.image -}}
+            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="compact-card-image">
+            {{- end -}}
         </div>
-        {{- end -}}
-        <div class="compact-card-content"> <!-- <<< BU CLASS'I DA GÜNCELLEDİM -->
-            <div>
-                <span class="compact-card-category">{{ index .Params.categories 0 }}</span>
-                <h3 class="compact-card-title">{{ .Title }}</h3>
-                <p class="post-list-summary">{{ .Summary | plainify | safeHTML | truncate 150 }}</p>
-            </div>
+        <div class="compact-card-content">
+            <!-- KATEGORİ ETİKETİ İÇİN ÇALIŞAN YAPIYI KULLANALIM -->
+            <span class="post-list-category">{{ index .Params.categories 0 }}</span>
+            
+            <h3 class="compact-card-title">{{ .Title }}</h3>
+            
             <div class="compact-card-meta">
                 {{ $date_english := .Date.Format "2 January 2006" }}
                 {{ $date_turkish := $date_english }}

@@ -1708,10 +1708,10 @@ body > footer.footer:not(.footer-v2) {
     flex-direction: column;
 }
 
-.post-list-category {
+.compact-card .post-list-category {
     display: inline-block;
     background-color: var(--accent);
-    color: #fff;
+    color: #fff !important;
     padding: 3px 12px;
     border-radius: 20px;
     font-size: 0.75rem;

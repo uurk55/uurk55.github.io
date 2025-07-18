@@ -147,40 +147,52 @@
       <description>3D baskıda en sık karşılaşılan 10 hatayı (spagetti, warping, katman kayması, stringing, nozzle tıkanması vb.) nedenleri ve adım adım pratik çözümleriyle öğrenin. Hata tespit kılavuzunuz.</description>
     </item>
     <item>
-      <title>İletişim</title>
+      <title>İletişime Geçin</title>
       <link>https://edu3dmodel.com/iletisim/</link>
       <pubDate>Mon, 05 May 2025 10:00:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/iletisim/</guid>
-      <description>&lt;p&gt;Benimle iletişime geçmek, bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki yöntemlerden size en uygun olanını kullanabilirsiniz. Her mesaja en kısa sürede geri dönmeye çalışıyorum.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;iletişim-formu&#34;&gt;İletişim Formu&lt;/h3&gt;
-&lt;p&gt;Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.&lt;/p&gt;
+      <description>&lt;p&gt;Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki yöntemlerden size en uygun olanını kullanabilirsiniz. Her mesaja en kısa sürede geri dönmeye çalışıyorum.&lt;/p&gt;
+&lt;div class=&#34;contact-container&#34;&gt;
+    &lt;div class=&#34;contact-form-column&#34;&gt;
+        &lt;h3&gt;İletişim Formu&lt;/h3&gt;
+        &lt;p&gt;Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.&lt;/p&gt;
+        &lt;form action=&#34;https://formspree.io/f/xnnvoyvj&#34; method=&#34;POST&#34;&gt;
+            &lt;label for=&#34;name&#34;&gt;Adınız Soyadınız:&lt;/label&gt;
+            &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required&gt;
+            
+            &lt;label for=&#34;email&#34;&gt;E-posta Adresiniz:&lt;/label&gt;
+            &lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; required&gt;
+            
+            &lt;label for=&#34;message&#34;&gt;Mesajınız:&lt;/label&gt;
+            &lt;textarea id=&#34;message&#34; name=&#34;message&#34; required&gt;&lt;/textarea&gt;
+            
+            &lt;button type=&#34;submit&#34; class=&#34;btn&#34;&gt;Mesajı Gönder&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;contact-info-column&#34;&gt;
+        &lt;h3&gt;Diğer Kanallar&lt;/h3&gt;
+        &lt;p&gt;Doğrudan ulaşmayı tercih ederseniz:&lt;/p&gt;
+        
+        &lt;a href=&#34;mailto:edu3dmodel@gmail.com&#34; class=&#34;contact-card&#34;&gt;
+            &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt;
+            &lt;div&gt;
+                &lt;strong&gt;E-posta&lt;/strong&gt;
+                &lt;span&gt;edu3dmodel@gmail.com&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+        
+        &lt;a href=&#34;https://www.instagram.com/edu3dmodel/&#34; class=&#34;contact-card&#34; target=&#34;_blank&#34;&gt;
+            &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt;
+            &lt;div&gt;
+                &lt;strong&gt;Instagram&lt;/strong&gt;
+                &lt;span&gt;@edu3dmodel&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+        
+        &lt;hr&gt;
 
-&lt;form
-  action=&#34;https://formspree.io/f/xnnvoyvj&#34;  &lt;-- BURAYI KENDİ URL&#39;N İLE DEĞİŞTİR
-  method=&#34;POST&#34;
-&gt;
-  &lt;label&gt;
-    Adınız Soyadınız:
-    &lt;input type=&#34;text&#34; name=&#34;name&#34; required&gt;
-  &lt;/label&gt;
-  &lt;label&gt;
-    E-posta Adresiniz:
-    &lt;input type=&#34;email&#34; name=&#34;email&#34; required&gt;
-  &lt;/label&gt;
-  &lt;label&gt;
-    Mesajınız:
-    &lt;textarea name=&#34;message&#34; required&gt;&lt;/textarea&gt;
-  &lt;/label&gt;
-  &lt;button type=&#34;submit&#34;&gt;Mesajı Gönder&lt;/button&gt;
-&lt;/form&gt;
-
-&lt;hr&gt;
-&lt;h3 id=&#34;diğer-iletişim-kanalları&#34;&gt;Diğer İletişim Kanalları&lt;/h3&gt;
-&lt;p&gt;Doğrudan e-posta göndermeyi veya sosyal medya üzerinden ulaşmayı tercih ederseniz:&lt;/p&gt;
-&lt;h4 id=&#34;-e-posta&#34;&gt;📧 E-posta&lt;/h4&gt;
-&lt;p&gt;En doğrudan iletişim yöntemi için:
-&lt;strong&gt;&lt;a href=&#34;mailto:edu3dmodel@gmail.com&#34;&gt;edu3dmodel@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+        &lt;h3&gt;Bir Sorunuz mu Var?&lt;/h3&gt;
+        &lt;p&gt;Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar</title>

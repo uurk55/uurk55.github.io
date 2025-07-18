@@ -1036,7 +1036,7 @@ body > footer.footer:not(.footer-v2) {
 
 /* 1. ADIM: Yeni Vurgu Rengini Tanımlama */
 :root {
-    --accent: #08aeea; /* Canlı ve teknolojik bir mavi tonu */
+    --accent: #20c997; /* Canlı ve teknolojik bir mavi tonu */
 }
 
 /* 2. ADIM: Yazı Kartlarına Gelişmiş Efekt */
@@ -2211,4 +2211,174 @@ body > footer.footer:not(.footer-v2) {
     margin-top: -10px; 
     /* ASIL DEĞİŞİKLİK BURADA: Altına 40px'lik bir boşluk ekliyoruz */
     margin-bottom: 40px; 
+}
+/* ============================================= */
+/* --- ANA SAYFA "BENİM HİKAYEM" BÖLÜMÜ --- */
+/* ============================================= */
+
+.about-me-section {
+    margin-top: 80px;
+    background-color: var(--card-background);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 60px 0;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px; /* Bu bölüm biraz daha dar ve odaklı olsun */
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+.about-me-logo {
+    flex-shrink: 0;
+}
+
+.about-me-logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+}
+
+.about-me-content .homepage-section-title {
+    margin-top: 0;
+}
+
+/* Mobilde alt alta gelsin */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-me-content .btn {
+        margin: 0 auto;
+    }
+}
+/* ============================================= */
+/* --- RENKLENDİRME VE BÖLÜM AYRIMI GELİŞTİRMELERİ --- */
+/* ============================================= */
+
+/* 1. HEADER'A GÖLGE EFEKTİ */
+.header-v2 {
+    border-bottom: none; /* Mevcut çizgiyi kaldır */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Yumuşak bir gölge ekle */
+}
+
+/* 2. BÖLÜM BAŞLIKLARINI RENKLENDİRME */
+.homepage-section-title {
+    border-bottom-color: var(--accent); /* Alt çizgiyi vurgu rengi yap */
+}
+
+/* 3. FOOTER'I KOYU TEMA YAPMA */
+.footer-main-area {
+    background-color: var(--primary); /* Arka planı koyu gri yap */
+    color: rgba(255, 255, 255, 0.7); /* Metin rengini hafif şeffaf beyaz yap */
+    border-top: none; /* Üst çizgiyi kaldır */
+}
+
+.footer-title {
+    color: #fff; /* Footer başlıklarını tam beyaz yap */
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7); /* Linkleri de aynı şeffaf beyaz yap */
+}
+
+.footer-links a:hover,
+.footer-social-icons a:hover {
+    color: var(--accent); /* Üzerine gelince vurgu rengi olsun */
+}
+
+/* Footer'ın en alt barını da ana koyu renge uyumlu hale getirelim */
+.footer-bottom-bar {
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* ============================================= */
+/* --- YENİ "KÖMÜR GRİSİ" HEADER & FOOTER TASARIMI --- */
+/* ============================================= */
+
+/* --- 1. YENİ RENK DEĞİŞKENİ VE TEMEL AYARLAR --- */
+:root {
+    --header-footer-bg: #495057; /* Kömür grisi / Antrasit */
+}
+
+.header-v2, .header-main-nav, 
+.footer-main-area, .footer-bottom-bar {
+    background-color: var(--header-footer-bg);
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- 2. HEADER İÇERİĞİNİ AÇIK RENGE ÇEVİRME --- */
+
+/* Header içindeki tüm yazıları, linkleri ve ikonları beyaz yap */
+.header-v2 .logo-text,
+.header-v2 .header-right-icons .social-icons a,
+.header-main-nav ul a {
+    color: rgba(255, 255, 255, 0.9);
+}
+.header-v2 .logo-tagline {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Aktif/Hover linklerini vurgu rengi yap (bu harika duracak) */
+.header-main-nav li.active > a,
+.header-main-nav ul a:hover {
+    color: var(--accent);
+}
+.header-main-nav ul a::after {
+    background-color: var(--accent); /* Animasyon çizgisi de vurgu rengi */
+}
+
+/* E-Kitap butonunu bu temaya uyarla */
+.header-main-nav .cta-button a {
+    background-color: var(--accent);
+    color: #fff !important;
+}
+.header-main-nav .cta-button a:hover {
+    background-color: #fff;
+    color: var(--accent) !important;
+}
+
+/* Arama çubuğunu bu temaya uyarla */
+.search-widget-final-enhanced #search-input-final {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+.search-widget-final-enhanced #search-input-final::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.search-widget-final-enhanced svg {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sticky (yapışkan) header'ı bu temaya uyarla */
+.header-v2.is-sticky {
+    background-color: rgba(73, 80, 87, 0.9); /* Kömür grisi şeffaf */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+
+/* --- 3. FOOTER İÇERİĞİNİ AÇIK RENGE ÇEVİRME --- */
+
+.footer-main-area, .footer-bottom-bar {
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-title {
+    color: #fff;
+}
+.footer-links a, .footer-social-icons a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-links a:hover, .footer-social-icons a:hover {
+    color: #fff;
+}
+.footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

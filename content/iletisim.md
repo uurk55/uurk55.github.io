@@ -7,7 +7,7 @@ comments: false
 showBreadCrumbs: false # <<< YENİ EKLENEN SATIR BU!
 ---
 
-Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Her mesaja en fazla 24 saat içinde geri döneceğim.
+Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Mesajlara genellikle 24 saat içinde yanıt veriyorum.
 
 <div class="sss-reminder-box">
     <h3>Sorularınız mı var?</h3>

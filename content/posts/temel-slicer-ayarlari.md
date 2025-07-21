@@ -6,6 +6,7 @@ draft: false
 description: "3D baskı kalitenizi dramatik şekilde artıracak en kritik 5 temel dilimleyici (slicer) ayarını öğrenin. Katman yüksekliği, dolgu, hız, destekler ve tabla yapışması için uzman ipuçları."
 tags: ["Slicer Ayarları", "Cura Ayarları", "PrusaSlicer", "3D Baskı Kalitesi", "Katman Yüksekliği", "Dolgu Ayarları", "Baskı Hızı", "Destek Yapıları", "Tabla Yapışması", "Başlangıç Rehberi"]
 categories: ["Teknik İpuçları"]
+faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"
 showToc: true

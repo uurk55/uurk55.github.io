@@ -6,6 +6,7 @@ draft: false
 description: "3D baskıda en sık karşılaşılan 10 hatayı (spagetti, warping, katman kayması, stringing, nozzle tıkanması vb.) nedenleri ve adım adım pratik çözümleriyle öğrenin. Hata tespit kılavuzunuz."
 tags: ["3D Baskı Hataları", "Sorun Giderme", "Troubleshooting", "Spagetti Hatası", "Warping Çözümü", "Katman Kayması", "Nozzle Tıkanması", "Stringing Çözümleri", "Baskı Kalitesi", "Başlangıç Rehberi"]
 categories: ["Teknik İpuçları"]
+faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "uurk55"
 showToc: true

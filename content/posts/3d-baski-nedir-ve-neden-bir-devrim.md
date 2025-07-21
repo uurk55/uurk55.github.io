@@ -6,6 +6,7 @@ draft: false
 description: "3D baskı teknolojisinin ne olduğunu, nasıl çalıştığını ve fikirlerinizi fiziksel ürünlere dönüştürerek pasif gelir elde etme potansiyelini keşfedin. Adım adım Katmanlı Üretim rehberi."
 tags: ["3D Baskı Nedir", "Katmanlı Üretim", "Additive Manufacturing", "Temel Bilgiler", "3D Yazıcı Teknolojisi", "Pasif Gelir", "Üretim Devrimi", "Temel Bilgi ve Kurulum"]
 categories: ["Başlangıç Rehberi"]
+faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "uurk55"
 showToc: true

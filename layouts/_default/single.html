@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-{{/* Bu sayfanın "Hakkımda" sayfası olup olmadığını kontrol ediyoruz (.RelPermalink ile) */}}
+{{/* =================================================================== */}}
+{{/* --- 1. KONTROL: "HAKKIMDA" SAYFASI MI? --- */}}
+{{/* =================================================================== */}}
 {{ if eq .RelPermalink "/hakkimda/" }}
 
-    {{/* --- EVET, "HAKKIMDA" SAYFASIYSA BU YENİ TASARIMI KULLAN --- */}}
     <div class="about-page-container">
-    
         <aside class="about-sidebar">
             <div class="sticky-sidebar">
                 <div class="about-profile">
@@ -32,7 +32,6 @@
                 </div>
             </div>
         </aside>
-    
         <article class="about-main-content">
             <header class="post-header">
                 <h1 class="post-title">{{ .Title }}</h1>
@@ -41,12 +40,116 @@
                 {{ .Content }}
             </div>
         </article>
-    
     </div>
 
+{{/* =================================================================== */}}
+{{/* --- 2. KONTROL: "BURADAN BAŞLA" SAYFASI MI? --- */}}
+{{/* =================================================================== */}}
+{{ else if eq .RelPermalink "/buradan-basla/" }}
+
+    <div class="start-here-page">
+        <header class="post-header" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h1 class="post-title">{{ .Title }}</h1>
+            {{- if .Description }}
+            <div class="post-description">
+                {{ .Description }}
+            </div>
+            {{- end }}
+        </header>
+
+        <div class="post-content" style="max-width: 800px; margin: 20px auto 0 auto; text-align: center;">
+            {{/* Bu alana sadece Buradan Başla sayfasının kendi Markdown içeriği gelir. */}}
+            {{ .Content }}
+        </div>
+
+        <hr style="margin: 40px auto; max-width: 200px;">
+
+        {{/* --- DİNAMİK FAZ BÖLÜMLERİ BAŞLANGIÇ --- */}}
+        
+        {{/* Fazları ve açıklamalarını burada merkezi olarak tanımlıyoruz. */}}
+        {{ $fazlar_sirali := slice "Faz 1" "Faz 2" "Faz 3" }}
+        {{ $faz_basliklari := dict 
+            "Faz 1" "Temeller, Kurulum ve İlk Baskı"
+            "Faz 2" "Tasarım, Modelleme ve İleri Teknikler"
+            "Faz 3" "Girişimcilik, Pazarlama ve Para Kazanma"
+        }}
+        {{ $faz_aciklamalari := dict 
+            "Faz 1" "Bu ilk fazda, 3D baskının ne olduğunu öğrenecek, doğru ekipmanı seçecek ve ilk başarılı baskınızı alarak sağlam bir temel atacaksınız."
+            "Faz 2" "Artık baskı almanın ötesine geçerek Tinkercad ve Blender gibi araçlarla sıfırdan kendi modellerinizi yapmayı öğreneceksiniz."
+            "Faz 3" "Hobinizi gelire dönüştürme zamanı! Etsy'de dükkan açmaktan ürün fiyatlandırmaya, pazarlamadan müşteri yönetimine kadar her şeyi bu fazda bulacaksınız."
+        }}
+        
+        {{/* Sıraladığımız her faz için bir döngü başlatıyoruz */}}
+        {{ range $fazlar_sirali }}
+            {{ $mevcut_faz := . }}
+            <div class="phase-section-v3">
+                <div class="phase-header">
+                    <div class="phase-icon">
+                        <i class="fas fa-layer-group"></i> {{/* Bu ikon CSS ile değiştirilebilir veya FontAwesome gerektirir */}}
+                    </div>
+                    <div class="phase-header-text">
+                        <h2 class="phase-main-title">{{ $mevcut_faz }}</h2>
+                        <h3 class="phase-subtitle">{{ index $faz_basliklari $mevcut_faz }}</h3>
+                    </div>
+                </div>
+                <p class="phase-description">{{ index $faz_aciklamalari $mevcut_faz }}</p>
+
+                <div class="post-card-grid-v2">
+                    {{/* --- Geliştirilmiş Filtreleme Mantığı --- */}}
+                    {{/* Önce TÜRÜ "posts" OLAN TÜM SAYFALARI (DRAFT DAHİL) alıyoruz */}}
+                    {{ $TümYazılar := where site.Pages "Type" "posts" }}
+                    {{/* Sonra bu sayfaları mevcut FAZ'a göre filtreliyoruz */}}
+                    {{ $FazınYazıları := where $TümYazılar "Params.faz" "intersect" (slice $mevcut_faz) }}
+
+                    {{/* 1. YAYINLANMIŞ YAZILAR (draft olmayanlar) */}}
+                    {{ $yayinlanmis_yazilar := where $FazınYazıları ".Params.draft" "!=" true }}
+                    {{ range $yayinlanmis_yazilar }}
+                        <a href="{{ .RelPermalink }}" class="post-card-v2 published">
+                            <div class="post-card-image-v2">
+                                {{ with .Params.cover.image }}
+                                    <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                                {{ else }}
+                                    <div class="image-placeholder-v2"></div>
+                                {{ end }}
+                            </div>
+                            <div class="post-card-content-v2">
+                                <span class="post-title">{{ .Title }}</span>
+                                <div class="post-meta-v2">
+                                    <span><i class="far fa-calendar-alt"></i> {{ .PublishDate.Format "2 Ocak 2006" }}</span>
+                                    <span><i class="far fa-clock"></i> {{ .ReadingTime }} dk okuma</span>
+                                </div>
+                                <div class="post-status-v2">YAYINLANDI</div>
+                            </div>
+                        </a>
+                    {{ end }}
+
+                    {{/* 2. PLANLANMIŞ YAZILAR (draft olanlar) */}}
+                    {{ $planlanmis_yazilar := where $FazınYazıları ".Params.draft" "==" true }}
+                    {{ range $planlanmis_yazilar }}
+                        <div class="post-card-v2 planned">
+                            <div class="post-card-image-v2">
+                                <div class="image-placeholder-v2">?</div>
+                            </div>
+                            <div class="post-card-content-v2">
+                                <span class="post-title">{{ .Title }}</span>
+                                <div class="post-meta-v2">
+                                    <span><i class="far fa-calendar-alt"></i> Yakında...</span>
+                                </div>
+                                <div class="post-status-v2">PLANLANDI</div>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+        {{/* --- DİNAMİK FAZ BÖLÜMLERİ BİTİŞ --- */}}
+    </div>
+
+{{/* =================================================================== */}}
+{{/* --- 3. KONTROL: HİÇBİRİ DEĞİLSE, NORMAL YAZI SAYFASINI GÖSTER --- */}}
+{{/* =================================================================== */}}
 {{ else }}
 
-    {{/* --- HAYIR, NORMAL BİR YAZIYSA BU MEVCUT TASARIMI KULLAN --- */}}
     <article class="post-single">
         <header class="post-header">
             {{ partial "breadcrumbs.html" . }}
@@ -118,8 +221,6 @@
                 {{- end -}}
             </ul>
             {{- end -}}
-            
-            {{/* --- İLETİŞİM KUTUSU BURADAN KALDIRILDI --- */}}
             
         </footer>
     

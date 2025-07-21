@@ -12,6 +12,7 @@ theme = "PaperMod"
   category = "categories"
   tag = "tags"
   series = "series"
+  faz = "fazlar"
 
 [markup.goldmark.renderer]
   unsafe = true

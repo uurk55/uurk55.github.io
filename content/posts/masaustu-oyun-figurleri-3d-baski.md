@@ -6,6 +6,7 @@ draft: false
 description: "Masaüstü rol yapma oyunları (D&D), wargame minyatürleri ve koleksiyonluk figürler için 3D baskının potansiyelini keşfedin. Detaylı figür baskı ipuçları, pazar potansiyeli ve kârlı ürün fikirleri bu rehberde."
 tags: ["3D Baskı Figür", "Minyatür Baskı", "D&D", "Masaüstü Oyun", "Hobi Baskı", "SLA Baskı", "Detaylı Baskı", "Niş Pazarlar", "Girişimcilik"]
 categories: ["Para Kazanma"]
+faz: ["Faz 3"]
 series: ["3D Baskı ile Para Kazanma"]
 author: "Uğur Kapancı"
 showToc: true

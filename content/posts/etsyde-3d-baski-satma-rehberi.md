@@ -6,6 +6,7 @@ draft: false
 description: "3D baskı ürünlerinizi Etsy'de nasıl satacağınızı adım adım öğrenin. Dükkan açma, ürün listeleme, etkili fotoğrafçılık, Etsy SEO stratejileri ve ilk satışınızı yapma rehberi."
 tags: ["Etsy", "3D Baskı Satışı", "Etsy Dükkan Açma", "Ürün Pazarlama", "Etsy SEO", "Etsy Fiyatlandırma", "Girişimcilik", "Online Satış", "Mikro Fabrika", "Girişimcilik"]
 categories: ["Para Kazanma"]
+faz: ["Faz 3"]
 series: ["3D Baskı ile Para Kazanma"]
 author: "Uğur Kapancı"
 showToc: true

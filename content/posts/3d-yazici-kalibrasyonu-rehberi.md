@@ -6,6 +6,7 @@ draft: false
 description: "3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber."
 tags: ["3D Yazıcı Kalibrasyonu", "Baskı Kalitesi", "E-steps", "PID Ayarı", "Flow Kalibrasyonu", "Z-Offset", "3D Yazıcı Ayarları", "Baskı Hataları Çözümleri", "Performans İyileştirme", "Temel Bilgi ve Kurulum"]
 categories: ["Teknik İpuçları"]
+faz: ["Faz 1"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"
 showToc: true

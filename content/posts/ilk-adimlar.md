@@ -10,6 +10,7 @@ cover:
   relative: false
 categories: ["Başlangıç Rehberi"]
 tags: ["hoş geldiniz", "misyon", "pasif gelir"]
+faz: ["Faz 1"]
 comments: true
 ---
 

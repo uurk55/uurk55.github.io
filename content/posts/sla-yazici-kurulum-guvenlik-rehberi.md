@@ -6,6 +6,7 @@ draft: false
 description: "SLA (reçine) 3D yazıcınızı güvenli ve doğru bir şekilde kurun. Reçine hazırlığından tabla kalibrasyonuna, baskı sonrası yıkama ve kürleme adımlarına kadar her şeyi öğrenin. Güvenlik önceliklidir!"
 tags: ["SLA Kurulum", "Reçine Yazıcı", "3D Baskı Güvenliği", "Yıkama ve Kürleme", "İlk Baskı SLA", "Reçine Bakımı", "UV Reçine", "Başlangıç Rehberi", "Teknik İpuçları"]
 categories: ["Temel Bilgi ve Kurulum"]
+faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"
 showToc: true

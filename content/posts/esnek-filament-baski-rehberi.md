@@ -6,6 +6,7 @@ draft: false
 description: "TPU, TPE gibi esnek filamentlerle 3D baskı yapmanın inceliklerini öğrenin. Konforlu, dayanıklı ve esneyebilen parçalar basmak için en iyi slicer ayarları ve ipuçları bu rehberde."
 tags: ["Esnek Filament", "TPU", "TPE", "TPC", "3D Baskı Malzeme", "Duyarlı Baskı", "Slicer Ayarları", "Esnek Baskı İpuçları", "Teknik İpuçları"]
 categories: ["Beceri Geliştirme ve İleri Teknikler"]
+faz: ["Faz 2"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"
 showToc: true

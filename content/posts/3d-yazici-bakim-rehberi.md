@@ -6,6 +6,7 @@ draft: false
 description: "3D yazıcınızdan en iyi performansı almak, baskı kalitesini korumak ve ömrünü uzatmak için FDM ve SLA yazıcıların temel bakım adımlarını (nozül, tabla, hareketli parçalar, reçine tankı temizliği) bu rehberle öğrenin."
 tags: ["3D Yazıcı Bakımı", "3D Baskı İpuçları", "Yazıcı Ömrü", "Sorun Giderme", "FDM Bakım", "SLA Bakım", "Nozül Temizliği", "Tabla Bakımı", "Reçine Tankı", "Periyodik Bakım", "Temel Bilgi ve Kurulum"]
 categories: ["Teknik İpuçları"]
+faz: ["Faz 1"]
 series: ["3D Baskı Rehberleri"]
 author: "uurk55"
 showToc: true

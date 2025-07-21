@@ -6,6 +6,7 @@ draft: false
 description: "3D baskı ürünlerinizle pasif gelir elde etmek için doğru nişi nasıl bulursunuz? Pazar analizi yöntemleri, satış potansiyeli yüksek nişler ve kârlı ürün fikirleri rehberi." # SEO odaklı ve açıklayıcı
 tags: ["Pazar Analizi", "3D Baskı Niş Fikirleri", "Ürün Stratejisi", "E-ticaret", "Pasif Gelir", "Niş Pazarlar", "Ürün Fikirleri", "Rekabet Analizi", "Girişimcilik"] # Genişletilmiş ve SEO odaklı etiketler
 categories: ["Para Kazanma"] # Kategoriler güncellendi
+faz: ["Faz 3"]
 series: ["3D Baskı ile Para Kazanma"] # Seri eklendi
 author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek

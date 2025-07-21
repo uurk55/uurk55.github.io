@@ -6,6 +6,7 @@ draft: false
 description: "Blender'ın Sculpt Mode (Heykel Modu) ile organik ve sanatsal 3D modeller tasarlayın. Dijital kil topundan heykelsi objelere adım adım Blender başlangıç rehberi."
 tags: ["Blender", "3D Modelleme", "Sculpting", "Heykel Modu", "Ücretsiz 3D Programı", "Organik Modelleme", "Dijital Sanat", "Blender Rehberi", "Başlangıç Rehberi", "Beceri Geliştirme ve İleri Teknikler"]
 categories: ["Tasarım"]
+faz: ["Faz 2"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"
 showToc: true

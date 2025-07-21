@@ -6,6 +6,7 @@ draft: false
 description: "3D yazıcınızın firmware'ini güncellemek, performansını artırmak, yeni özellikler eklemek ve sorunları gidermek için adım adım kapsamlı rehber. Marlin, Klipper gibi popüler firmware'ler ve güncelleme ipuçları."
 tags: ["3D Yazıcı Firmware", "Firmware Güncelleme", "Marlin Firmware", "Klipper Firmware", "3D Yazıcı Performansı", "Yeni Özellikler", "Sorun Giderme", "3D Yazıcı Yazılımı", "Teknik İpuçları"]
 categories: ["Temel Bilgi ve Kurulum"]
+faz: ["Faz 1"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"
 showToc: true

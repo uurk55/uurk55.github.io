@@ -6,6 +6,7 @@ draft: false
 description: "FDM mi, SLA mı? 3D yazıcı alırken hangi teknolojiyi seçmelisiniz? Bu rehberde, bütçenize, hedeflerinize ve baskı beklentilerinize göre doğru 3D yazıcı teknolojisini bulmanızı sağlayacak karşılaştırmalı analizi öğrenin." # Daha SEO odaklı ve açıklayıcı
 tags: ["FDM Yazıcı", "SLA Yazıcı", "3D Yazıcı Karşılaştırma", "Yazıcı Seçimi", "Başlangıç 3D Yazıcı", "Reçine Baskı", "Filament Baskı", "Temel Bilgi ve Kurulum", "Başlangıç Rehberi"] # Genişletilmiş ve SEO odaklı etiketler
 categories: ["Teknoloji Karşılaştırma"] # Kategoriler güncellendi
+faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"] # Yeni bir seri eklendi
 author: "Uğur Kapancı" # Yazar eklendi
 showToc: true # İçerik tablosu gösterilecek

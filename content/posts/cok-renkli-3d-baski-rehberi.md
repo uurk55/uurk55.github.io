@@ -6,6 +6,7 @@ draft: false
 description: "Tek bir 3D yazıcı ile birden fazla renkte nasıl baskı alacağınızı öğrenin. Manuel filament değişimi (Z-Pause) ve otomatik çoklu malzeme sistemleri (AMS) ile renkli 3D baskı teknikleri rehberi."
 tags: ["Çok Renkli 3D Baskı", "Renk Değişimi", "Otomatik Malzeme Sistemi", "AMS", "Bambu Lab AMS", "Prusa MMU", "Manuel Renk Değişimi", "Renkli Baskı İpuçları", "Teknik İpuçları"]
 categories: ["Beceri Geliştirme ve İleri Teknikler"]
+faz: ["Faz 2"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"
 showToc: true

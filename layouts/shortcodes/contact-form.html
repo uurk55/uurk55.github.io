@@ -3,11 +3,23 @@
         <h3>İletişim Formu</h3>
         <p>Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.</p>
         <form action="https://formspree.io/f/xnnvoyvj" method="POST">
+            
             <label for="name">Adınız Soyadınız:</label>
             <input type="text" id="name" name="name" required>
             
             <label for="email">E-posta Adresiniz:</label>
             <input type="email" id="email" name="email" required>
+            
+            {{/* --- YENİ EKLENEN "KONU" ALANI --- */}}
+            <label for="konu">Konu:</label>
+            <select name="konu" id="konu" required>
+                <option value="" disabled selected>Lütfen bir konu seçin...</option>
+                <option value="İşbirliği Teklifi">İşbirliği Teklifi</option>
+                <option value="Proje Fikri">Proje Fikri</option>
+                <option value="Soru ve Öneri">Soru ve Öneri</option>
+                <option value="Genel">Genel</option>
+            </select>
+            {{/* --- YENİ EKLEME SONU --- */}}
             
             <label for="message">Mesajınız:</label>
             <textarea id="message" name="message" required></textarea>

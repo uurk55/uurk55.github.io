@@ -1,6 +1,5 @@
 {{ define "main" }}
 <div class="landing-page-wrapper">
-    <!-- HERO BÖLÜMÜ -->
     <div class="landing-hero">
         <div class="landing-container">
             <h1>3D Yazıcınızı Bir Gelir Makinesine Dönüştürmeye Hazır Mısınız?</h1>
@@ -8,7 +7,6 @@
         </div>
     </div>
 
-    <!-- İÇERİK BÖLÜMÜ -->
     <div class="landing-content">
         <div class="landing-container">
             <h2>Bu Kitapta Neler Bulacaksınız?</h2>
@@ -21,6 +19,17 @@
             </ul>
 
             <hr>
+
+            {{/* --- YENİ BÖLÜM: YAZAR GÜVENİLİRLİK KUTUSU --- */}}
+            <div class="author-box-ekitap">
+                <div class="author-box-logo">
+                    <img src="{{ "logo.png" | absURL }}" alt="Edu 3D Model Dünyası Logo">
+                </div>
+                <div class="author-box-content">
+                    <h4>Bu Rehberi Neden Ben Hazırladım?</h4>
+                    <p>"Bu yolculuktan geçen biri olarak, tüm deneme-yanılmalarımı, başarılarımı ve başarısızlıklarımı tek bir kaynakta topladım. Amacım, sizin aylar sürebilecek hatalar yapmanızı engelleyerek, en kısa yoldan kâr etmeye başlamanızı sağlamak." - Uğur K.</p>
+                </div>
+            </div>
 
             <h2>İlk Haberdar Olan Siz Olun ve Lansman İndirimini Kaçırmayın!</h2>
             <p>Aşağıdaki forma e-posta adresinizi bırakın. E-kitap yayınlandığı an size <strong>özel bir indirim koduyla</strong> birlikte haber vereceğim.</p>
@@ -37,6 +46,12 @@
                         </button>
                     </div>
                 </form>
+
+                {{/* --- YENİ BÖLÜM: GİZLİLİK GÜVENCESİ --- */}}
+                <div class="privacy-assurance">
+                    <span>🔒</span>
+                    <p>Gizliliğinize saygı duyuyoruz. E-postanız güvende.</p>
+                </div>
             </div>
         </div>
     </div>

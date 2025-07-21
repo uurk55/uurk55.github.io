@@ -2488,3 +2488,84 @@ body > footer.footer:not(.footer-v2) {
     box-shadow: 0 0 5px 0px var(--accent);
     outline: none;
 }
+/* ============================================= */
+/* --- E-KİTAP SAYFASI FİNAL STİLLERİ --- */
+/* ============================================= */
+
+/* 1. Yazar Güvenilirlik Kutusu */
+.author-box-ekitap {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Logo ve metin arasını açtık */
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 30px; /* İç boşlukları artırdık */
+    margin: 50px auto; /* Üst ve alt boşluğu artırdık */
+    max-width: 1100px; /* Kutuyu biraz daha genişlettik */
+}
+.author-box-logo img {
+    width: 320px; /* Logoyu biraz büyüttük */
+    height: 120px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.author-box-content h4 {
+    margin-top: 0;
+    font-size: 1.4rem; /* Başlığı biraz büyüttük */
+}
+.author-box-content p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--secondary);
+    text-align: left;
+    line-height: 1.7; /* Satır aralığını artırdık */
+}
+
+/* 2. E-posta Formu */
+.convertkit-form-container {
+    max-width: 550px;
+    margin: 30px auto 0 auto;
+}
+.convertkit-form-container .formkit-fields {
+    display: flex;
+    gap: 10px;
+}
+.convertkit-form-container .formkit-field {
+    flex-grow: 1;
+}
+.convertkit-form-container .formkit-submit {
+    background-color: var(--primary) !important;
+    transition: all 0.3s ease;
+}
+.convertkit-form-container .formkit-submit:hover {
+    background-color: var(--accent) !important;
+    box-shadow: 0 0 10px 0 var(--accent);
+}
+
+/* 3. Gizlilik Güvencesi Metni */
+.privacy-assurance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+.privacy-assurance span {
+    font-size: 1rem;
+}
+.privacy-assurance p {
+    margin: 0;
+}
+
+/* 4. Mobil Uyumlu Hale Getirme */
+@media (max-width: 768px) {
+    .author-box-ekitap {
+        flex-direction: column;
+        text-align: center;
+    }
+     .author-box-content p {
+        text-align: center;
+    }
+}

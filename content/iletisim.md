@@ -4,15 +4,10 @@ date: 2025-07-18T18:35:00+03:00
 draft: false
 hidemeta: true
 comments: false
+showBreadCrumbs: false # <<< YENİ EKLENEN SATIR BU!
 ---
 
-Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Her mesaja en kısa sürede geri dönmeye çalışıyorum.
-
---- 
-
-{{< contact-form >}}
-
----
+Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Her mesaja en fazla 24 saat içinde geri döneceğim.
 
 <div class="sss-reminder-box">
     <h3>Sorularınız mı var?</h3>
@@ -30,3 +25,4 @@ Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir 
 
 --- 
 
+{{< contact-form >}}

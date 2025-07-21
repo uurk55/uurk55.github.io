@@ -13,55 +13,25 @@
       <link>https://edu3dmodel.com/iletisim/</link>
       <pubDate>Fri, 18 Jul 2025 18:35:00 +0300</pubDate>
       <guid>https://edu3dmodel.com/iletisim/</guid>
-      <description>&lt;p&gt;Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Her mesaja en kısa sürede geri dönmeye çalışıyorum.&lt;/p&gt;
+      <description>&lt;p&gt;Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Her mesaja en fazla 24 saat içinde geri döneceğim.&lt;/p&gt;
+&lt;div class=&#34;sss-reminder-box&#34;&gt;
+    &lt;h3&gt;Sorularınız mı var?&lt;/h3&gt;
+    &lt;p&gt;Mesaj atmadan önce, aklınızdaki sorunun cevabını belki de sizin için hazırladığım bu bölümde bulabilirsiniz!&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;https://edu3dmodel.com/sss/#hangi-yazici&#34;&gt;Hangi 3D yazıcıyı tavsiye edersin?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://edu3dmodel.com/sss/#e-kitap&#34;&gt;E-kitap ne zaman çıkacak?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://edu3dmodel.com/sss/#isbirligi&#34;&gt;İşbirliği ve reklam şartların nelerdir?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://edu3dmodel.com/sss/#stl-satis&#34;&gt;STL dosyalarımı nerede satabilirim?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&#34;text-align: center; margin-top: 20px;&#34;&gt;
+        &lt;a href=&#34;https://edu3dmodel.com/sss/&#34; class=&#34;btn&#34;&gt;Tüm Cevaplara Göz At →&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&#34;contact-container&#34;&gt;
     &lt;div class=&#34;contact-form-column&#34;&gt;
         &lt;h3&gt;İletişim Formu&lt;/h3&gt;
-        &lt;p&gt;Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.&lt;/p&gt;
-        &lt;form action=&#34;https://formspree.io/f/xnnvoyvj&#34; method=&#34;POST&#34;&gt;
-            &lt;label for=&#34;name&#34;&gt;Adınız Soyadınız:&lt;/label&gt;
-            &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required&gt;
-            
-            &lt;label for=&#34;email&#34;&gt;E-posta Adresiniz:&lt;/label&gt;
-            &lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; required&gt;
-            
-            &lt;label for=&#34;message&#34;&gt;Mesajınız:&lt;/label&gt;
-            &lt;textarea id=&#34;message&#34; name=&#34;message&#34; required&gt;&lt;/textarea&gt;
-            
-            &lt;button type=&#34;submit&#34; class=&#34;btn&#34;&gt;Mesajı Gönder&lt;/button&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;contact-info-column&#34;&gt;
-        &lt;h3&gt;Diğer Kanallar&lt;/h3&gt;
-        &lt;p&gt;Doğrudan ulaşmayı tercih ederseniz:&lt;/p&gt;
-        
-        &lt;a href=&#34;mailto:edu3dmodel@gmail.com&#34; class=&#34;contact-card&#34;&gt;
-            &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt;
-            &lt;div&gt;
-                &lt;strong&gt;E-posta&lt;/strong&gt;
-                &lt;span&gt;edu3dmodel@gmail.com&lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-        
-        &lt;a href=&#34;https://www.instagram.com/edu3dmodel/&#34; class=&#34;contact-card&#34; target=&#34;_blank&#34;&gt;
-            &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt;
-            &lt;div&gt;
-                &lt;strong&gt;Instagram&lt;/strong&gt;
-                &lt;span&gt;@edu3dmodel&lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-        
-        &lt;hr&gt;
-
-        &lt;h3&gt;Bir Sorunuz mu Var?&lt;/h3&gt;
-        &lt;p&gt;Fikirlerinizi ve sorularınızı duymaktan mutluluk duyarım. Hadi birlikte harika işler yapalım!&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&#34;sss-reminder-box&#34;&gt;
-    &lt;h3&gt;Sorularınız mı var?&lt;/h3&gt;
-    &lt;p&gt;Mesaj atmadan önce, aklınızdaki sorunun cevabını belki de sizin için hazırladığım bu bölümde bulabilirsiniz!&lt;/p&gt;</description>
+        &lt;p&gt;Aşağıdaki formu doldurarak bana doğrudan bir mesaj gönderebilirsiniz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sıkça Sorulan Sorular (SSS)</title>

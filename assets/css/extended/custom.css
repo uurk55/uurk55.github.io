@@ -2732,3 +2732,205 @@ html {
 .phase-section-v3 {
     scroll-margin-top: 100px; /* Sabit menünün yüksekliğine göre ayarlanabilir */
 }
+/* ============================================= */
+/* --- ANA SAYFA CTA BÖLÜMÜ İYİLEŞTİRMELERİ --- */
+/* ============================================= */
+
+/* Öne çıkan kategori bölümlerindeki açıklama metni ile buton arasına boşluk ekler. */
+.featured-category-description {
+    margin-bottom: 25px;
+}
+/* ============================================= */
+/* --- MOBİL TASARIM İYİLEŞTİRMELERİ (NİHAİ) --- */
+/* ============================================= */
+
+/* --- 1. MOBİL MENÜ (HAMBURGER) --- */
+
+.mobile-menu-toggle {
+    display: none; /* Masaüstünde gizli */
+    background: none; border: none; cursor: pointer; padding: 5px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 992px) {
+    .header-main-nav {
+        display: none; /* Menüyü varsayılan olarak gizle */
+        width: 100%; position: absolute; top: 100%; left: 0;
+        background-color: var(--header-footer-bg);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    .header-main-nav.is-open {
+        display: block; /* Tıklandığında göster */
+    }
+    .header-main-nav ul {
+        flex-direction: column; /* Linkleri alt alta diz */
+        align-items: center;
+        padding: 15px 0;
+    }
+    .mobile-menu-toggle {
+        display: block; /* Hamburger ikonunu göster */
+    }
+    .header-top-bar .search-container,
+    .header-top-bar .header-right-icons {
+        display: none; /* Arama ve sosyal ikonları gizle */
+    }
+    .header-top-bar .header-container {
+        justify-content: space-between; /* Logo ve hamburgeri iki uca yasla */
+    }
+}
+
+/* ============================================= */
+/* --- MOBİL IZGARA DÜZELTMESİ (GÜÇLENDİRİLMİŞ) --- */
+/* ============================================= */
+
+/* 992px'den küçük tüm ekranlar için */
+@media (max-width: 992px) {
+    /* Ana sayfadaki "En Son Yazılar" ve "En Çok Okunanlar" bölümlerini hedef alıyoruz.
+       !important etiketi, bu kuralın diğer tüm kuralları ezmesini sağlar. */
+    .homepage-content .all-posts-grid,
+    .homepage-content .featured-posts-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* --- 3. DİĞER MOBİL İYİLEŞTİRMELER --- */
+
+@media (max-width: 650px) {
+    .author-box-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ============================================= */
+/* --- MOBİLDE SADECE 3 YAZI GÖSTERME (DOĞRU HEDEF) --- */
+/* ============================================= */
+
+@media (max-width: 992px) {
+    /* .all-posts-grid içindeki article elementlerinden 3.'den sonrakileri hedefliyoruz.
+       Bu, summary-card-compact.html'in en dış elementi olan article'ı hedefler. */
+    .latest-posts-section .all-posts-grid > article:nth-child(n+4) {
+        display: none !important;
+    }
+}
+/* ============================================= */
+/* --- GELİŞMİŞ KART HOVER EFEKTLERİ --- */
+/* ============================================= */
+
+/* 1. Efektlerin yumuşak olması için temel geçişleri tanımlıyoruz */
+
+/* Kapak fotoğrafının yavaşça büyümesi için */
+.post-card-image-v2 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Durum etiketinin yavaşça parlaması için */
+.post-status-v2 {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* 2. Fare üzerine gelince uygulanacak efektleri tanımlıyoruz */
+
+.post-card-v2.published:hover {
+    /* Mevcut hover efektlerini koruyoruz */
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Fare üzerine gelince kapak fotoğrafını %5 büyüt */
+.post-card-v2.published:hover .post-card-image-v2 img {
+    transform: scale(1.05);
+}
+
+/* Fare üzerine gelince "YAYINLANDI" etiketine bir parlama ekle */
+.post-card-v2.published:hover .post-status-v2 {
+    box-shadow: 0 0 12px 2px #28a745;
+    filter: brightness(1.1);
+}
+/* ============================================= */
+/* --- ANA SAYFA "BENİM HİKAYEM" BÖLÜMÜ (v2) --- */
+/* ============================================= */
+
+.author-box-section {
+    background-color: var(--code-bg); /* Hafif gri bir arka plan */
+    padding: 60px var(--gap);
+    margin-top: 80px;
+}
+
+.author-box-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px; /* Kutunun genişliğini sınırlar */
+    margin: 0 auto; /* Yatayda ortalar */
+}
+
+.author-box-avatar {
+    flex-shrink: 0; /* Ekran küçülse bile logonun küçülmesini engeller */
+}
+
+.author-box-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Logoyu yuvarlak yapar */
+    border: 3px solid var(--border-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.author-box-content .homepage-section-title {
+    margin-top: 0;
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 650px) {
+    .author-box-container {
+        flex-direction: column; /* Logo ve metni alt alta getir */
+        text-align: center;
+    }
+}
+/* ============================================= */
+/* --- ANA SAYFA "BENİM HİKAYEM" BÖLÜMÜ (v3) --- */
+/* ============================================= */
+
+.author-box-section {
+    margin-top: 80px;
+    background-color: var(--card-background); /* Beyaz arka plan */
+    border: 1px solid var(--border-color); /* İnce çerçeve */
+    border-radius: var(--radius);
+    padding: 40px;
+}
+
+.author-box-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.author-box-avatar {
+    flex-shrink: 0;
+}
+
+.author-box-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.author-box-content .homepage-section-title {
+    margin-top: 0;
+}
+
+/* <<< YENİ: Metin ve buton arasına boşluk ekler */
+.author-box-content .author-box-description {
+    margin-bottom: 25px !important;
+    }
+
+/* Mobil cihazlar için */
+@media (max-width: 650px) {
+    .author-box-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

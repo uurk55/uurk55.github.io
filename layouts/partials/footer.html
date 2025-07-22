@@ -3,15 +3,10 @@
         <div class="footer-container">
             <div class="footer-column">
                 <div class="footer-logo-area">
-                    <a href="{{ "" | absURL }}">
-                        <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="footer-logo">
-                    </a>
-                    <p class="footer-about">
-                        3D baskı teknolojisiyle hobinizi bir iş modeline dönüştürmenize yardımcı oluyorum. Fikirden ürüne, üründen gelire...
-                    </p>
+                    <a href="{{ "" | absURL }}"><img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="footer-logo"></a>
+                    <p class="footer-about">3D baskı teknolojisiyle hobinizi bir iş modeline dönüştürmenize yardımcı oluyorum. Fikirden ürüne, üründen gelire...</p>
                 </div>
             </div>
-
             <div class="footer-column">
                 <h4 class="footer-title">Popüler Kategoriler</h4>
                 <ul class="footer-links">
@@ -21,7 +16,6 @@
                     <li><a href="/categories/tasarim/">Tasarım</a></li>
                 </ul>
             </div>
-
             <div class="footer-column">
                 <h4 class="footer-title">Hızlı Linkler</h4>
                 <ul class="footer-links">
@@ -31,41 +25,24 @@
                     <li><a href="/posts/">Tüm Yazılar</a></li>
                 </ul>
             </div>
-
             <div class="footer-column">
                 <h4 class="footer-title">Takip Edin</h4>
-                <div class="footer-social-icons">
-                    {{- partial "social_icons.html" (dict "page" .) -}}
-                </div>
+                <div class="footer-social-icons">{{- partial "social_icons.html" (dict "page" .) -}}</div>
             </div>
         </div>
     </div>
     <div class="footer-bottom-bar">
-        <div class="footer-container-bottom">
-             <p>© {{ now.Format "2006" }} {{ .Site.Title }} - Tüm Hakları Saklıdır.</p>
-        </div>
+        <div class="footer-container-bottom"><p>© {{ now.Format "2006" }} {{ .Site.Title }} - Tüm Hakları Saklıdır.</p></div>
     </div>
 </footer>
 
-{{/* YUKARI ÇIK BUTONU HTML KODU */}}
 <a id="scrollTopBtn" href="#" role="button" aria-label="Yukarı Çık" title="Yukarı Çık">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-       <path d="M12 5l0 14"></path>
-       <path d="M18 11l-6 -6"></path>
-       <path d="M6 11l6 -6"></path>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M18 11l-6 -6"></path><path d="M6 11l6 -6"></path></svg>
 </a>
 
-
-{{/* ============================================= */}}
-{{/* --- SİTE GENELİ JAVASCRIPT KODLARI --- */}}
-{{/* ============================================= */}}
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-
-    // --- MEVCUT ÖZELLİKLER (DEĞİŞMEDİ) ---
     var header = document.getElementById('sticky-header');
     if (header) {
         var sticky = header.offsetTop;
@@ -86,39 +63,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         window.addEventListener('scroll', toggleScrollTopBtn);
-        scrollTopBtn.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        scrollTopBtn.addEventListener('click', function(e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
     }
-
-    // --- AKILLI ARAMA MOTORU KURULUMU (DEĞİŞMEDİ) ---
     let fuse;
-    fetch('{{ "index.json" | absURL }}')
-        .then(response => response.json())
-        .then(data => {
-            const options = {
-                keys: [
-                    { name: 'title', weight: 0.8 }, { name: 'description', weight: 0.5 },
-                    { name: 'tags', weight: 0.3 }, { name: 'categories', weight: 0.3 }
-                ],
-                includeScore: true, threshold: 0.3, minMatchCharLength: 2,
-            };
-            fuse = new Fuse(data, options);
-        });
-
-    // --- HEADER ARAMASI (DEĞİŞMEDİ) ---
+    fetch('{{ "index.json" | absURL }}').then(response => response.json()).then(data => {
+        const options = { keys: [{ name: 'title', weight: 0.8 }, { name: 'description', weight: 0.5 }, { name: 'tags', weight: 0.3 }, { name: 'categories', weight: 0.3 }], includeScore: true, threshold: 0.3, minMatchCharLength: 2 };
+        fuse = new Fuse(data, options);
+    });
     const headerSearchInput = document.getElementById('search-input-final');
     const headerSearchResults = document.getElementById('search-results-final');
-    function setupDropdownSearch(input, resultsList) {
-        if (!input || !resultsList) return;
-        input.addEventListener('input', function(e) {
+    if (headerSearchInput && headerSearchResults) {
+        headerSearchInput.addEventListener('input', function(e) {
             const query = e.target.value.trim();
-            resultsList.innerHTML = '';
-            if (query.length < 2 || !fuse) {
-                resultsList.classList.remove('active');
-                return;
-            }
+            headerSearchResults.innerHTML = '';
+            if (query.length < 2 || !fuse) { headerSearchResults.classList.remove('active'); return; }
             const results = fuse.search(query).slice(0, 7);
             if (results.length > 0) {
                 results.forEach(result => {
@@ -127,71 +85,28 @@ document.addEventListener('DOMContentLoaded', function() {
                     a.href = result.item.permalink;
                     a.textContent = result.item.title;
                     li.appendChild(a);
-                    resultsList.appendChild(li);
+                    headerSearchResults.appendChild(li);
                 });
-                resultsList.classList.add('active');
+                headerSearchResults.classList.add('active');
             } else {
-                resultsList.classList.remove('active');
+                headerSearchResults.classList.remove('active');
             }
         });
-    }
-    setupDropdownSearch(headerSearchInput, headerSearchResults);
-    
-    // --- SIDEBAR ARAMASI (CANLI FİLTRELEME - GÜNCELLENDİ) ---
-    const sidebarSearchInput = document.getElementById('search-input-sidebar');
-    const postListContainer = document.querySelector('.post-list-container');
-    const pagination = document.querySelector('.pagination');
-    if (sidebarSearchInput && postListContainer) {
-        sidebarSearchInput.addEventListener('keyup', function() {
-            const query = this.value.toLowerCase().trim();
-            if (pagination) {
-                pagination.style.display = query.length > 0 ? 'none' : 'flex';
-            }
-            if (query.length === 0) {
-                // Arama kutusu boşsa, sayfayı yenileyerek orijinal listeye dönüyoruz.
-                // Not: Bu en basit yöntemdir. Alternatif olarak orijinal listeyi saklayıp geri yükleyebiliriz.
-                window.location.href = '{{ .Page.Permalink }}';
-                return;
-            }
-            if (query.length < 2 || !fuse) {
-                return;
-            }
-            
-            const results = fuse.search(query);
-            postListContainer.innerHTML = '';
-    
-            if (results.length > 0) {
-                results.forEach(result => {
-                    let categories = result.item.categories || [];
-                    let firstCategory = categories.length > 0 ? categories[0] : '';
-                    
-                    // DEĞİŞİKLİK BURADA: Sadece kategori, başlık ve özet içeren sade kart yapısı
-                    const cardHTML = `
-                    <article class="post-list-item">
-                        <a href="${result.item.permalink}" class="post-list-link">
-                            <div class="post-list-content" style="width:100%;">
-                                <div>
-                                    <span class="post-list-category">${firstCategory}</span>
-                                    <h3 class="post-list-title">${result.item.title}</h3>
-                                    <p class="post-list-summary">${result.item.summary.substring(0, 150)}...</p>
-                                </div>
-                                </div>
-                        </a>
-                    </article>
-                    `;
-                    postListContainer.innerHTML += cardHTML;
-                });
-            } else {
-                postListContainer.innerHTML = '<p style="text-align:center;">Aradığınız kriterlere uygun sonuç bulunamadı.</p>';
+        document.addEventListener('click', function(event) {
+            if (!headerSearchInput.parentElement.contains(event.target)) {
+                headerSearchResults.classList.remove('active');
             }
         });
     }
     
-    // Dışarıya tıklayınca header arama sonuçlarını gizle
-    document.addEventListener('click', function(event) {
-        if (headerSearchInput && !headerSearchInput.parentElement.contains(event.target)) {
-            headerSearchResults.classList.remove('active');
-        }
-    });
+    {{/* --- YENİ: MOBİL MENÜ FONKSİYONU --- */}}
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    if (mobileMenuToggle && mainNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', mainNav.classList.contains('is-open'));
+        });
+    }
 });
 </script>

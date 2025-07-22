@@ -1,37 +1,39 @@
-<article class="compact-card">
-    <a href="{{ .Permalink }}" class="card-link">
-        <div class="compact-card-image-container">
-            {{- with .Params.cover.image -}}
-            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="compact-card-image">
-            {{- end -}}
+<article class="post-card-v2 published">
+    <a href="{{ .RelPermalink }}" class="post-card-link">
+        <div class="post-card-image-v2">
+            {{ with .Params.cover.image }}
+                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+            {{ else }}
+                <div class="image-placeholder-v2"></div>
+            {{ end }}
         </div>
-        <div class="compact-card-content">
-            <div>
-                <span class="post-list-category">{{ index .Params.categories 0 }}</span>
-                <h3 class="compact-card-title">{{ .Title }}</h3>
-                
-                <!-- YENİ EKLENEN ÖZET PARAGRAFI -->
-                <p class="compact-card-summary">{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
+        <div class="post-card-content-v2">
+            <span class="post-title">{{ .Title }}</span>
+            
+            {{/* Açıklama alanını kullanıyoruz, eğer yoksa özeti kısaltarak kullanıyoruz */}}
+            <p class="post-card-summary">
+                {{ if .Description }}
+                    {{ .Description }}
+                {{ else }}
+                    {{ .Summary | plainify | htmlUnescape | truncate 150 }}
+                {{ end }}
+            </p>
 
-            </div>
-            <div class="compact-card-meta">
-                {{ $date_english := .Date.Format "2 January 2006" }}
-                {{ $date_turkish := $date_english }}
-                {{ $date_turkish = replace $date_turkish "January" "Ocak" }}
-                {{ $date_turkish = replace $date_turkish "February" "Şubat" }}
-                {{ $date_turkish = replace $date_turkish "March" "Mart" }}
-                {{ $date_turkish = replace $date_turkish "April" "Nisan" }}
-                {{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
-                {{ $date_turkish = replace $date_turkish "June" "Haziran" }}
-                {{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
-                {{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
-                {{ $date_turkish = replace $date_turkish "September" "Eylül" }}
-                {{ $date_turkish = replace $date_turkish "October" "Ekim" }}
-                {{ $date_turkish = replace $date_turkish "November" "Kasım" }}
-                {{ $date_turkish = replace $date_turkish "December" "Aralık" }}
-                <span>{{ $date_turkish }}</span>
-                <span class="meta-separator">·</span>
-                <span>{{ .ReadingTime }} dk okuma</span>
+            <div class="post-card-footer">
+                <div class="post-meta-v2">
+                    {{ with .Params.categories }}
+                        <span class="meta-category">
+                            <i class="fas fa-folder-open"></i> {{ index . 0 }}
+                        </span>
+                    {{ end }}
+                    <span>
+                        <i class="far fa-calendar-alt"></i> {{ partial "format-turkish-date.html" .PublishDate }}
+                    </span>
+                    <span>
+                        <i class="far fa-clock"></i> {{ .ReadingTime }} dk
+                    </span>
+                </div>
+                <div class="post-status-v2" style="display: none;"></div> {{/* Bu etiket burada görünmesin diye gizliyoruz */}}
             </div>
         </div>
     </a>

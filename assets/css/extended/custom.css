@@ -2934,3 +2934,51 @@ html {
         text-align: center;
     }
 }
+/* ============================================= */
+/* --- CONVERTKIT FORM STİLİ UYARLAMASI --- */
+/* ============================================= */
+
+/* Formun genel arkaplanını ve çerçevesini ana sayfa bölümleriyle uyumlu hale getiriyoruz */
+.email-signup-box {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 50px;
+}
+
+/* E-posta giriş alanını (input) stilize ediyoruz */
+.email-signup-box .formkit-input {
+    font-family: inherit; /* Sitenin genel fontunu kullan */
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius) !important;
+    background-color: var(--background) !important; /* Sitenin hafif gri arkaplanı */
+    padding: 15px !important; /* İç boşluğu artır */
+    transition: all 0.2s ease-in-out;
+}
+
+/* E-posta giriş alanına tıklandığında (focus) */
+.email-signup-box .formkit-input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 8px 0px var(--accent) !important;
+}
+
+/* "Abone Ol" butonunu stilize ediyoruz */
+.email-signup-box .formkit-submit {
+    font-family: inherit; /* Sitenin genel fontunu kullan */
+    background-color: var(--primary) !important; /* Sitenin ana koyu rengi */
+    border-radius: var(--radius) !important;
+    font-weight: bold !important;
+    padding: 15px 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Butonun üzerine gelince (hover) */
+.email-signup-box .formkit-submit:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px 0px var(--primary);
+}
+
+/* "Built with ConvertKit" yazısını gizliyoruz (isteğe bağlı ama daha profesyonel durur) */
+.formkit-powered-by-convertkit-container {
+    display: none !important;
+}

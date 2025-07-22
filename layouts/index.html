@@ -77,7 +77,7 @@
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
     {{ if $featured_pages }}
         <section class="most-read-section">
-            <h2 class="homepage-section-title">En Çok Okunanlar</h2>
+            <h2 class="homepage-section-title">Öne Çıkanlar</h2>
             <div class="featured-posts-grid">
                 {{ range $featured_pages }}
                     {{ .Render "summary-card-featured" }}

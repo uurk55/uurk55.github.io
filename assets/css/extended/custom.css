@@ -2605,170 +2605,130 @@ body > footer.footer:not(.footer-v2) {
   }
 }
 /* ============================================= */
-/* --- "BURADAN BAŞLA" VİTRİN STİLLERİ (FİNAL v3) --- */
+/* --- "BURADAN BAŞLA" VİTRİN STİLLERİ (GERÇEK FİNAL) --- */
 /* ============================================= */
 
-/* Her bir Faz bölümünü saran ana yapı */
 .phase-section-v3 {
     max-width: var(--main-width);
     margin: 80px auto 0 auto;
+    position: relative;
+    padding-left: 50px;
+    border-left: 3px solid var(--border-color);
 }
-
-/* Faz Başlığı ve Açıklaması Bölümü */
 .phase-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
     margin-bottom: 20px;
 }
 .phase-icon {
-    font-size: 2rem;
-    color: var(--accent);
-}
-.phase-header-text {
-    flex-grow: 1;
+    position: absolute; left: -24px; top: 5px; background-color: var(--background);
+    padding: 10px; border-radius: 50%; font-size: 1.5rem; color: var(--accent);
 }
 .phase-main-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1rem; font-weight: 700; color: var(--accent);
+    margin: 0; text-transform: uppercase; letter-spacing: 1.5px;
 }
 .phase-subtitle {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--content);
-    margin: 0;
-    line-height: 1.2;
+    font-size: 2.5rem; font-weight: 700; color: var(--content);
+    margin: 0; line-height: 1.2;
 }
 .phase-description {
-    font-size: 1.1rem;
-    color: var(--secondary);
-    max-width: 900px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    font-size: 1.1rem; color: var(--secondary); max-width: 900px; margin-top: 15px; margin-bottom: 40px;
 }
 
-/* Yazı Kartları Izgarası */
-.post-card-grid-v2 {
-    display: grid;
-    grid-template-columns: 1fr; /* Tek sütunlu, net liste görünümü */
-    gap: 15px;
+.post-card-grid-final {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;
 }
-
-/* Yazı Kartı Genel Stili */
 .post-card-v2 {
-    display: flex;
-    align-items: center;
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: var(--content);
-    transition: all 0.2s ease-in-out;
-    position: relative; /* Durum etiketi için referans noktası */
-}
-
-/* Kapak Fotoğrafı Alanı */
-.post-card-image-v2 {
-    width: 120px;
-    height: 90px;
-    flex-shrink: 0;
+    display: flex; flex-direction: column; background-color: var(--card-background);
+    border: 1px solid var(--border-color); border-radius: var(--radius);
+    text-decoration: none; color: var(--content); transition: all 0.2s ease-in-out;
     overflow: hidden;
-    border-right: 1px solid var(--border-color); /* Resim ve metin arasına ince bir çizgi */
+}
+.post-card-image-v2 {
+    height: 180px; width: 100%; overflow: hidden;
 }
 .post-card-image-v2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;
 }
 .image-placeholder-v2 {
     width: 100%; height: 100%; background-color: var(--code-bg);
     display: flex; align-items: center; justify-content: center;
-    font-size: 2rem; color: var(--secondary); font-weight: bold;
+    font-size: 2.5rem; color: var(--secondary); font-weight: bold;
 }
-
-/* Kart İçeriği Alanı */
 .post-card-content-v2 {
-    padding: 15px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    padding: 20px; display: flex; flex-direction: column; flex-grow: 1;
 }
 .post-card-v2 .post-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 8px;
+    font-size: 1.2rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px;
 }
-
-/* Kart Meta Verileri (Tarih, Okuma Süresi) */
+.post-card-summary {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.post-card-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid var(--border-color); padding-top: 15px;
+}
 .post-meta-v2 {
-    font-size: 0.85rem;
-    color: var(--secondary);
-    display: flex;
-    flex-wrap: wrap; /* Mobilde alt satıra geçebilsin */
-    gap: 15px;
+    font-size: 0.8rem; color: var(--secondary); display: flex; flex-wrap: wrap; gap: 10px 15px;
 }
-.post-meta-v2 i {
-    margin-right: 5px;
-}
-
-/* Durum Etiketi (Sağ üst köşe) */
+.post-meta-v2 i { margin-right: 4px; color: var(--accent); }
+.meta-category { font-weight: 500; }
 .post-status-v2 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 20px;
-    line-height: 1;
+    font-size: 0.7rem; font-weight: bold; padding: 3px 8px; border-radius: 20px; line-height: 1;
 }
-
-/* --- YAYINLANMIŞ KART --- */
 .post-card-v2.published:hover {
-    border-color: var(--accent);
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-.post-card-v2.published:hover .post-card-image-v2 img {
-    transform: scale(1.1); /* Resme hafif zoom efekti */
-}
-.post-card-v2.published .post-status-v2 {
-    background-color: #28a745;
-    color: #fff;
-}
+.post-card-v2.published:hover .post-card-image-v2 img { transform: scale(1.05); }
+.post-card-v2.published .post-status-v2 { background-color: #28a745; color: #fff; }
+.post-card-v2.planned { cursor: not-allowed; }
+.post-card-v2.planned .post-title,
+.post-card-v2.planned .post-meta-v2,
+.post-card-v2.planned .post-card-summary { color: var(--secondary); }
+.post-card-v2.planned .post-status-v2 { background-color: #dc3545; color: #fff; }
 
-/* --- PLANLANMIŞ KART --- */
-.post-card-v2.planned {
-    cursor: not-allowed;
+@media (max-width: 992px) {
+    .post-card-grid-final { grid-template-columns: 1fr; }
 }
-.post-card-v2.planned .post-title {
-    color: var(--secondary);
-}
-.post-card-v2.planned .post-status-v2 {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-/* --- MOBİL UYUMLULUK --- */
 @media (max-width: 600px) {
-    .post-card-image-v2 {
-        width: 90px; /* Mobilde resmi biraz küçültelim */
-        height: 100%;
-        min-height: 90px;
-        align-self: stretch;
-    }
-    .post-card-content-v2 {
-        padding: 15px;
-    }
-    .phase-subtitle {
-        font-size: 1.8rem;
-    }
+    .phase-section-v3 { padding-left: 20px; border-left: none; }
+    .phase-icon { display: none; }
+}
+/* ============================================= */
+/* --- YOL HARİTASI GELİŞTİRMELERİ (v5) --- */
+/* ============================================= */
+
+/* Sayfa içi kaydırmayı yumuşatır */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Faz başlığının yanındaki yazı sayısı rozeti */
+.phase-post-count {
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--code-bg);
+    color: var(--secondary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
+/* Giriş metnindeki linklerin altını çizelim */
+.start-here-page .post-content a {
+    text-decoration: underline;
+}
+/* ============================================= */
+/* --- SABİT MENÜ KAYDIRMA DÜZELTMESİ (v6) --- */
+/* ============================================= */
+
+/* ID'si olan faz bölümlerine, yukarıdan kaydırma payı ekler.
+   Bu, sabit menünün başlığın üzerine gelmesini engeller. */
+.phase-section-v3 {
+    scroll-margin-top: 100px; /* Sabit menünün yüksekliğine göre ayarlanabilir */
 }

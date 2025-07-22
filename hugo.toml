@@ -5,6 +5,8 @@ theme = "PaperMod"
 [pagination]
   pagerSize = 6
 
+buildFuture = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

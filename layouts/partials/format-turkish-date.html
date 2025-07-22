@@ -1,0 +1,15 @@
+{{ $date_english := .Format "2 January 2006" }}
+{{ $date_turkish := $date_english }}
+{{ $date_turkish = replace $date_turkish "January" "Ocak" }}
+{{ $date_turkish = replace $date_turkish "February" "Şubat" }}
+{{ $date_turkish = replace $date_turkish "March" "Mart" }}
+{{ $date_turkish = replace $date_turkish "April" "Nisan" }}
+{{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
+{{ $date_turkish = replace $date_turkish "June" "Haziran" }}
+{{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
+{{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
+{{ $date_turkish = replace $date_turkish "September" "Eylül" }}
+{{ $date_turkish = replace $date_turkish "October" "Ekim" }}
+{{ $date_turkish = replace $date_turkish "November" "Kasım" }}
+{{ $date_turkish = replace $date_turkish "December" "Aralık" }}
+{{ $date_turkish }}

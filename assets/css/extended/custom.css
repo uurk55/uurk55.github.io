@@ -2982,3 +2982,26 @@ html {
 .formkit-powered-by-convertkit-container {
     display: none !important;
 }
+/* ============================================= */
+/* --- KATEGORİ SAYFASI BAŞLIK KUTUSU --- */
+/* ============================================= */
+
+.category-header-box {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 30px;
+    margin-bottom: 40px; /* Altındaki yazı listesiyle arasını açar */
+}
+
+.category-header-box h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.category-header-box p {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 0;
+}

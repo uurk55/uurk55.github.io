@@ -51,6 +51,15 @@
 
     {{/* --- SAĞ SÜTUN: ANA İÇERİK (YAZI KARTLARI) --- */}}
     <main class="main-content-right">
+        {{/* --- KATEGORİ/TERİM BAŞLIK KUTUSU KONTROLÜ (Düzeltilmiş) --- */}}
+{{ if eq .Kind "term" }}
+    <div class="category-header-box">
+        <h1>{{ .Title }}</h1>
+        {{ with .Page.Params.description }}
+            <p>{{ . }}</p>
+        {{ end }}
+    </div>
+{{ end }}
         
         {{/* <<< DEĞİŞİKLİK BURADA: Yeni, iki sütunlu ızgara yapısını kullanıyoruz */}}
         <div class="post-card-grid-final">

@@ -353,7 +353,7 @@ Deniz, FDM'den SLA'ya geçerken kimyasal reçine ve karmaşık temizlik süreçl
 </footer>
 
 <a id="scrollTopBtn" href="#" role="button" aria-label="Yukarı Çık" title="Yukarı Çık">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M18 11l-6 -6"></path><path d="M6 11l6 -6"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 5l0 14"></path><path d="M18 11l-6 -6"></path><path d="M6 11l6 -6"></path></svg>
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -415,7 +415,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
     if (mobileMenuToggle && mainNav) {
@@ -423,6 +422,69 @@ document.addEventListener('DOMContentLoaded', function() {
             mainNav.classList.toggle('is-open');
             this.setAttribute('aria-expanded', mainNav.classList.contains('is-open'));
         });
+    }
+
+    
+    const sidebarSearchInput = document.getElementById('sidebar-search-input');
+    if (sidebarSearchInput) {
+        const mainContent = document.querySelector('.main-content-right');
+        const originalContentHTML = mainContent.innerHTML;
+
+        
+        const handleSearch = function(e) {
+            const query = e.target.value.trim().toLowerCase();
+
+            if (query.length === 0) {
+                mainContent.innerHTML = originalContentHTML;
+                return;
+            }
+
+            if (query.length < 2 || !fuse) {
+                return;
+            }
+            
+            const results = fuse.search(query);
+            mainContent.innerHTML = '';
+
+            if (results.length > 0) {
+                const resultsGrid = document.createElement('div');
+                resultsGrid.className = 'post-card-grid-final';
+
+                results.forEach(result => {
+                    const post = result.item;
+                    const firstCategory = post.categories && post.categories.length > 0 ? post.categories[0] : '';
+                    
+                    
+                    const coverHTML = post.cover ? `<img src="${post.cover}" alt="${post.title}">` : '<div class="image-placeholder-v2"></div>';
+
+                    const cardHTML = `
+                    <article class="post-card-v2 published">
+                        <a href="${post.permalink}" class="post-card-link">
+                            <div class="post-card-image-v2">${coverHTML}</div>
+                            <div class="post-card-content-v2">
+                                <span class="post-title">${post.title}</span>
+                                <p class="post-card-summary">${post.description || (post.summary ? post.summary.substring(0, 150) : '')}</p>
+                                <div class="post-card-footer">
+                                    <div class="post-meta-v2">
+                                        <span class="meta-category"><i class="fas fa-folder-open"></i> ${firstCategory}</span>
+                                        <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
+                                        <span><i class="far fa-clock"></i> ${post.readingTime} dk</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>`;
+                    resultsGrid.innerHTML += cardHTML;
+                });
+                mainContent.appendChild(resultsGrid);
+            } else {
+                mainContent.innerHTML = '<p style="text-align:center;">Aradığınız kriterlere uygun sonuç bulunamadı.</p>';
+            }
+        };
+
+        
+        sidebarSearchInput.addEventListener('keyup', handleSearch);
+        sidebarSearchInput.addEventListener('search', handleSearch); 
     }
 });
 </script></body>

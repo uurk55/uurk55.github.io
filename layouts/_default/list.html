@@ -41,38 +41,35 @@
     <main class="main-content-right">
         
         {{ if eq .Kind "term" }}
+            {{/* --- URLIZE MANTIĞI BURADA --- */}}
             {{ $description := "" }}
-            {{ $coverImageName := "" }}
             {{ $categoryContentPages := where site.Pages "Section" "categories" }}
             {{- range $categoryContentPages -}}
                 {{- if eq (.Title | urlize) ($.Title | urlize) -}}
                     {{- $description = .Description -}}
-                    {{/* --- ANA DÜZELTME BURADA --- */}}
-                    {{/* Önce cover'ın bir "map" (nesne) olup olmadığını kontrol et */}}
-                    {{ if reflect.IsMap .Params.cover }}
-                        {{ $coverImageName = .Params.cover.image }}
-                    {{ else }}
-                        {{/* Eğer değilse (yani eski formattaysa), doğrudan kendisini al */}}
-                        {{ $coverImageName = .Params.cover }}
-                    {{ end }}
                 {{- end -}}
             {{- end -}}
 
-            {{ $bgImage := "" }}
-            {{ if $coverImageName }}
-                {{ $bgImage = printf "/images/%s" $coverImageName | relURL }}
-            {{ else }}
-                {{ $bgImage = "/images/cat-bg-default.png" | relURL }}
-            {{ end }}
-
-            <div class="category-hero-section-v3" style="background-image: url('{{ $bgImage }}');">
-                <div class="category-hero-overlay"></div>
-                <div class="category-hero-content">
-                    <h1 class="category-hero-title">{{ .Title }}</h1>
-                    {{ with $description }}
-                        <p class="category-hero-description">{{ . }}</p>
-                    {{ end }}
-                </div>
+            <div class="category-hero-final">
+                <h1 class="category-hero-title-final">
+    <span class="category-hero-icon">
+        {{ if eq .Title "Para Kazanma" }}💰
+        {{ else if eq .Title "Teknik İpuçları" }}💡
+        {{ else if eq .Title "Yazıcı İncelemeleri" }}🔧
+        {{ else if eq .Title "Tasarım" }}🎨
+        {{ else if eq .Title "Başlangıç Rehberi" }}🚀
+        {{ else if eq .Title "Kaynaklar" }}📚
+        {{ else if eq .Title "Teknoloji Karşılaştırma" }}⚖️
+        {{ else if eq .Title "Temel Bilgi ve Kurulum" }}🔌
+        {{ else if eq .Title "Beceri Geliştirme ve İleri Teknikler" }}🧠
+        {{ else }}🗂️
+        {{ end }}
+    </span>
+    {{ .Title }}
+</h1>
+                {{ with $description }}
+                    <p class="category-hero-description-final">{{ . }}</p>
+                {{ end }}
             </div>
         {{ end }}
         

@@ -2984,71 +2984,41 @@ html {
 }
 
 /* ============================================= */
-/* --- BLOG/KATEGORİ SAYFASI BAŞLIK TASARIMI --- */
+/* --- KATEGORİ SAYFASI BAŞLIĞI (GÜÇLENDİRİLMİŞ) --- */
 /* ============================================= */
 
-.category-hero-section-v3 {
-    position: relative;
-    padding: 60px 40px;
-    margin-bottom: 40px;
+.category-hero-final {
+    background-color: var(--primary); /* <<< DEĞİŞİKLİK: Koyu ana renk */
     border-radius: var(--radius);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    color: #fff;
-    background-color: var(--primary); /* Resim yoksa koyu gri arka plan */
-}
-
-.category-hero-overlay {
-    position: absolute;
-    top: -20px; right: -20px; bottom: -20px; left: -20px;
-    background: inherit;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px) brightness(0.6);
-    z-index: 1;
-}
-
-.category-hero-content {
-    position: relative;
-    z-index: 2;
+    padding: 50px 40px;
+    margin-bottom: 40px;
     text-align: center;
+    border: 1px solid rgba(255,255,255,0.1); /* Hafif bir çerçeve */
 }
 
-.category-hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+.category-hero-title-final {
+    font-size: 2.8rem;
+    color: #fff; /* <<< DEĞİŞİKLİK: Beyaz metin */
     margin-top: 0;
     margin-bottom: 15px;
 }
 
-.category-hero-description {
+.category-hero-description-final {
     font-size: 1.2rem;
+    color: rgba(255,255,255,0.8); /* <<< DEĞİŞİKLİK: Hafif şeffaf beyaz metin */
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.7;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-    .category-hero-title { font-size: 2.2rem; }
-    .category-hero-description { font-size: 1rem; }
-}
 /* ============================================= */
-/* --- KATEGORİ HERO BAŞLIK RENGİ DÜZELTMESİ --- */
+/* --- FİLTREYİ TEMİZLE LİNKİ (GERİ GETİRİLDİ) --- */
 /* ============================================= */
 
-/* Sadece Kategori Hero Bölümü içindeki başlığın rengini hedefler */
-.category-hero-section-v3 .category-hero-title {
-    color: #fff;
-}
-/* Filtreyi Temizle Linki Stili (Yeni Konum) */
 .clear-filter-link {
     display: block;
-    margin-bottom: 15px; /* Altındaki liste ile arasını açar */
-    padding-bottom: 15px; /* Altına ince bir boşluk ve çizgi ekler */
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
     font-weight: bold;
     text-decoration: none;
@@ -3056,4 +3026,22 @@ html {
 }
 .clear-filter-link:hover {
     text-decoration: underline;
+}
+/* ============================================= */
+/* --- KATEGORİ HERO İKON STİLİ --- */
+/* ============================================= */
+
+.category-hero-icon {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    font-size: 2.8rem; /* Başlık fontuyla uyumlu boyut */
+}
+
+/* Mobilde ikonu biraz küçültelim */
+@media (max-width: 768px) {
+    .category-hero-icon {
+        font-size: 2.2rem;
+        margin-right: 10px;
+    }
 }

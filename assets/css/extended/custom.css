@@ -2982,26 +2982,65 @@ html {
 .formkit-powered-by-convertkit-container {
     display: none !important;
 }
+
 /* ============================================= */
-/* --- KATEGORİ SAYFASI BAŞLIK KUTUSU --- */
+/* --- BLOG/KATEGORİ SAYFASI BAŞLIK TASARIMI --- */
 /* ============================================= */
 
-.category-header-box {
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
+.category-hero-section-v3 {
+    position: relative;
+    padding: 60px 40px;
+    margin-bottom: 40px;
     border-radius: var(--radius);
-    padding: 30px;
-    margin-bottom: 40px; /* Altındaki yazı listesiyle arasını açar */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #fff;
+    background-color: var(--primary); /* Resim yoksa koyu gri arka plan */
 }
 
-.category-header-box h1 {
-    font-size: 2.5rem;
+.category-hero-overlay {
+    position: absolute;
+    top: -20px; right: -20px; bottom: -20px; left: -20px;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px) brightness(0.6);
+    z-index: 1;
+}
+
+.category-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.category-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.category-header-box p {
-    font-size: 1.1rem;
-    color: var(--secondary);
-    margin-bottom: 0;
+.category-hero-description {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .category-hero-title { font-size: 2.2rem; }
+    .category-hero-description { font-size: 1rem; }
+}
+/* ============================================= */
+/* --- KATEGORİ HERO BAŞLIK RENGİ DÜZELTMESİ --- */
+/* ============================================= */
+
+/* Sadece Kategori Hero Bölümü içindeki başlığın rengini hedefler */
+.category-hero-section-v3 .category-hero-title {
+    color: #fff;
 }

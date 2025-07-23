@@ -3044,3 +3044,16 @@ html {
 .category-hero-section-v3 .category-hero-title {
     color: #fff;
 }
+/* Filtreyi Temizle Linki Stili (Yeni Konum) */
+.clear-filter-link {
+    display: block;
+    margin-bottom: 15px; /* Altındaki liste ile arasını açar */
+    padding-bottom: 15px; /* Altına ince bir boşluk ve çizgi ekler */
+    border-bottom: 1px solid var(--border-color);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--accent);
+}
+.clear-filter-link:hover {
+    text-decoration: underline;
+}

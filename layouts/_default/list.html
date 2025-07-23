@@ -13,6 +13,9 @@
             </div>
             <div class="widget">
                 <h4 class="widget-title">Kategoriler</h4>
+                {{ if eq .Kind "term" }}
+                    <a href="{{ "/posts" | relLangURL }}" class="clear-filter-link">← Tüm Yazıları Gör</a>
+                {{ end }}
                 <ul class="widget-list">
                     {{- range .Site.Taxonomies.categories.ByCount -}}
                     <li class="{{ if eq .Page.Title $.Title }}active-widget-link{{ end }}">
@@ -38,20 +41,26 @@
     <main class="main-content-right">
         
         {{ if eq .Kind "term" }}
-            {{/* --- AÇIKLAMA VE KAPAK FOTOĞRAFINI BULMAK İÇİN URLIZE MANTIĞI --- */}}
             {{ $description := "" }}
-            {{ $coverImage := "" }}
+            {{ $coverImageName := "" }}
             {{ $categoryContentPages := where site.Pages "Section" "categories" }}
             {{- range $categoryContentPages -}}
                 {{- if eq (.Title | urlize) ($.Title | urlize) -}}
                     {{- $description = .Description -}}
-                    {{- $coverImage = .Params.cover -}}
+                    {{/* --- ANA DÜZELTME BURADA --- */}}
+                    {{/* Önce cover'ın bir "map" (nesne) olup olmadığını kontrol et */}}
+                    {{ if reflect.IsMap .Params.cover }}
+                        {{ $coverImageName = .Params.cover.image }}
+                    {{ else }}
+                        {{/* Eğer değilse (yani eski formattaysa), doğrudan kendisini al */}}
+                        {{ $coverImageName = .Params.cover }}
+                    {{ end }}
                 {{- end -}}
             {{- end -}}
 
             {{ $bgImage := "" }}
-            {{ if $coverImage }}
-                {{ $bgImage = printf "/images/%s" $coverImage | relURL }}
+            {{ if $coverImageName }}
+                {{ $bgImage = printf "/images/%s" $coverImageName | relURL }}
             {{ else }}
                 {{ $bgImage = "/images/cat-bg-default.png" | relURL }}
             {{ end }}

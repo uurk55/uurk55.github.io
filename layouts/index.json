@@ -4,11 +4,18 @@
 {{- $pages := where .Site.Pages "Section" "in" .Site.Params.mainSections -}}
 {{- range where $pages "Kind" "eq" "page" -}}
 
-    {{- /* Bu sayfanın daha önce eklenip eklenmediğini kontrol et */ -}}
     {{- if not (in ($.Scratch.Get "permalinks") .Permalink) -}}
-
-        {{- /* Eğer eklenmemişse, hem veritabanına hem de kontrol listesine ekle */ -}}
         {{- $.Scratch.Add "permalinks" .Permalink -}}
+        
+        {{- $cover_image := "" -}}
+        {{- with .Params.cover -}}
+            {{- if reflect.IsMap . -}}
+                {{- $cover_image = .image -}}
+            {{- else -}}
+                {{- $cover_image = . -}}
+            {{- end -}}
+        {{- end -}}
+
         {{- $.Scratch.Add "index" (dict 
             "title" .Title
             "permalink" .Permalink
@@ -18,6 +25,7 @@
             "categories" .Params.categories
             "date" (.Date.Format "2 January 2006")
             "readingTime" .ReadingTime
+            "cover" ($cover_image | relURL)
         ) -}}
 
     {{- end -}}

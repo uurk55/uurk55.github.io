@@ -1,15 +1,7 @@
 {{ define "main" }}
 
 <header class="page-header">
-    {{ $title := .Title }}
-    {{ if eq .Data.Singular "category" }}
-        {{ $title = "Kategoriler" }}
-    {{ else if eq .Data.Singular "tag" }}
-        {{ $title = "Etiketler" }}
-    {{ else if eq .Data.Singular "series" }}
-        {{ $title = "Yazı Dizileri" }}
-    {{ end }}
-    <h1>{{ $title }}</h1>
+    <h1>Kategoriler</h1>
 </header>
 
 <div class="category-card-grid">
@@ -19,31 +11,32 @@
     {{ $bgImage := "/images/cat-bg-default.png" }}
     {{ $description := "" }}
 
-    {{/* Veri dosyasından resmi bul */}}
+    {{/* Adım 1: Arka plan resmini site.Data dosyasından al */}}
     {{- range site.Data.categories -}}
         {{- if eq .category $currentCategoryTitle -}}
             {{- $bgImage = printf "/images/%s" .image -}}
         {{- end -}}
     {{- end -}}
 
-    {{/* --- KESİN ÇÖZÜM BURADA --- */}}
+    {{/* --- ÇÖZÜMÜN OLDUĞU YER BURASI --- */}}
     {{/* Açıklamayı bulmak için TÜM content/categories dosyalarını tara */}}
     {{ $categoryContentPages := where site.Pages "Section" "categories" }}
     {{- range $categoryContentPages -}}
-        {{/* İsimleri küçük harfe çevirerek karşılaştır (en garantili yöntem) */}}
-        {{- if eq (.Title | lower) ($currentCategoryTitle | lower) -}}
+        {{/* İsimleri küçük harfe çevirerek ve Türkçe karakterleri düzelterek karşılaştır */}}
+        {{- if eq (.Title | urlize) ($currentCategoryTitle | urlize) -}}
             {{- $description = .Description -}}
         {{- end -}}
     {{- end -}}
+    {{/* --- ÇÖZÜMÜN BİTTİĞİ YER --- */}}
 
 
-    <a href="{{ .Page.Permalink }}" class="category-card" style="background-image: url('{{ $bgImage | safeURL }}');">
+    <a href="{{ .Page.Permalink }}" class="category-card" style="background-image: url('{{ $bgImage | relURL }}');">
         <div class="card-overlay"></div>
         <div class="card-content">
             <h2 class="card-title">{{ .Page.Title }}</h2>
             
             {{ if $description }}
-            <p class="card-description">{{ $description }}</p>
+                <p class="card-description">{{ $description }}</p>
             {{ end }}
 
             <span class="card-count">{{ .Count }} YAZI</span>

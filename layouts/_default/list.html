@@ -2,16 +2,14 @@
 
 <div class="page-with-sidebar">
     
-    {{/* --- SOL SÜTUN: SIDEBAR --- */}}
     <aside class="sidebar-left">
         <div class="sticky-sidebar-wrapper">
-
             <div class="widget">
                 <h4 class="widget-title">Arama</h4>
                 <form class="sidebar-search-form" id="sidebar-search-form" action="/search/" method="get" role="search">
                     <input type="search" id="sidebar-search-input" name="q" placeholder="Yazılarda ara..." autocomplete="off" required>
                     <button type="submit" aria-label="Ara">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path></svg>
                     </button>
                 </form>
             </div>
@@ -37,31 +35,35 @@
                 <ul class="widget-list widget-popular-posts">
                     {{- range first 5 $featured_pages -}}
                     <li>
-                        <a href="{{ .Permalink }}">
-                            {{ .Title }}
-                        </a>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </li>
                     {{- end -}}
                 </ul>
             </div>
             {{ end }}
-
         </div> 
     </aside>
 
-    {{/* --- SAĞ SÜTUN: ANA İÇERİK (YAZI KARTLARI) --- */}}
     <main class="main-content-right">
-        {{/* --- KATEGORİ/TERİM BAŞLIK KUTUSU KONTROLÜ (Düzeltilmiş) --- */}}
-{{ if eq .Kind "term" }}
-    <div class="category-header-box">
-        <h1>{{ .Title }}</h1>
-        {{ with .Page.Params.description }}
-            <p>{{ . }}</p>
+        {{/* --- AÇIKLAMA GÖSTERME BÖLÜMÜ (URLIZE İLE) --- */}}
+        {{ if eq .Kind "term" }}
+            
+            {{ $description := "" }}
+            {{ $categoryContentPages := where site.Pages "Section" "categories" }}
+            {{- range $categoryContentPages -}}
+                {{- if eq (.Title | urlize) ($.Title | urlize) -}}
+                    {{- $description = .Description -}}
+                {{- end -}}
+            {{- end -}}
+
+            <div class="category-header-box">
+                <h1>{{ .Title }}</h1>
+                {{ with $description }}
+                    <p>{{ . }}</p>
+                {{ end }}
+            </div>
         {{ end }}
-    </div>
-{{ end }}
         
-        {{/* <<< DEĞİŞİKLİK BURADA: Yeni, iki sütunlu ızgara yapısını kullanıyoruz */}}
         <div class="post-card-grid-final">
             {{- range .Paginator.Pages }}
                 {{ .Render "summary-card-compact" }}
@@ -70,7 +72,6 @@
 
         {{- partial "pagination.html" . -}}
     </main>
-
 </div>
 
 {{ end }}

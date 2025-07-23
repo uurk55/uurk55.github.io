@@ -11,20 +11,24 @@
     {{ $bgImage := "/images/cat-bg-default.png" }}
     {{ $description := "" }}
 
-    {{/* Arka plan resmini site.Data dosyasından al */}}
+    {{/* Adım 1: Arka plan resmini site.Data dosyasından al */}}
     {{- range site.Data.categories -}}
         {{- if eq .category $currentCategoryTitle -}}
             {{- $bgImage = printf "/images/%s" .image -}}
         {{- end -}}
     {{- end -}}
 
-    {{/* AÇIKLAMAYI BULMAK İÇİN DOĞRU YÖNTEM */}}
+    {{/* --- ÇÖZÜMÜN OLDUĞU YER BURASI --- */}}
+    {{/* Açıklamayı bulmak için TÜM content/categories dosyalarını tara */}}
     {{ $categoryContentPages := where site.Pages "Section" "categories" }}
     {{- range $categoryContentPages -}}
+        {{/* İsimleri küçük harfe çevirerek ve Türkçe karakterleri düzelterek karşılaştır */}}
         {{- if eq (.Title | urlize) ($currentCategoryTitle | urlize) -}}
             {{- $description = .Description -}}
         {{- end -}}
     {{- end -}}
+    {{/* --- ÇÖZÜMÜN BİTTİĞİ YER --- */}}
+
 
     <a href="{{ .Page.Permalink }}" class="category-card" style="background-image: url('{{ $bgImage | relURL }}');">
         <div class="card-overlay"></div>

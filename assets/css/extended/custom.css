@@ -2982,66 +2982,26 @@ html {
 .formkit-powered-by-convertkit-container {
     display: none !important;
 }
-
 /* ============================================= */
-/* --- KATEGORİ SAYFASI BAŞLIĞI (GÜÇLENDİRİLMİŞ) --- */
+/* --- KATEGORİ SAYFASI BAŞLIK KUTUSU --- */
 /* ============================================= */
 
-.category-hero-final {
-    background-color: var(--primary); /* <<< DEĞİŞİKLİK: Koyu ana renk */
+.category-header-box {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    padding: 50px 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.1); /* Hafif bir çerçeve */
+    padding: 30px;
+    margin-bottom: 40px; /* Altındaki yazı listesiyle arasını açar */
 }
 
-.category-hero-title-final {
-    font-size: 2.8rem;
-    color: #fff; /* <<< DEĞİŞİKLİK: Beyaz metin */
+.category-header-box h1 {
+    font-size: 2.5rem;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.category-hero-description-final {
-    font-size: 1.2rem;
-    color: rgba(255,255,255,0.8); /* <<< DEĞİŞİKLİK: Hafif şeffaf beyaz metin */
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
-
-/* ============================================= */
-/* --- FİLTREYİ TEMİZLE LİNKİ (GERİ GETİRİLDİ) --- */
-/* ============================================= */
-
-.clear-filter-link {
-    display: block;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--border-color);
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--accent);
-}
-.clear-filter-link:hover {
-    text-decoration: underline;
-}
-/* ============================================= */
-/* --- KATEGORİ HERO İKON STİLİ --- */
-/* ============================================= */
-
-.category-hero-icon {
-    display: inline-block;
-    margin-right: 15px;
-    vertical-align: middle;
-    font-size: 2.8rem; /* Başlık fontuyla uyumlu boyut */
-}
-
-/* Mobilde ikonu biraz küçültelim */
-@media (max-width: 768px) {
-    .category-hero-icon {
-        font-size: 2.2rem;
-        margin-right: 10px;
-    }
+.category-header-box p {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 0;
 }

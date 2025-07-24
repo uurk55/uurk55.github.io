@@ -212,18 +212,18 @@ a.card-link {
     font-size: 0.85rem;
     color: var(--secondary);
 }
-/* --- SAYFALAMA (PAGINATION) STİLLERİ - GÜNCEL --- */
+/* --- SAYFALAMA (PAGINATION) STİLLERİ - ORİJİNAL --- */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    list-style-type: none; /* Liste noktalarını kaldır */
+    list-style-type: none;
     padding: 0;
 }
 
-.pagination li { /* Hedefi li elementine çeviriyoruz */
-    margin: 0 4px; /* Butonlar arası boşluk */
+.pagination li {
+    margin: 0 4px;
 }
 
 .pagination li a {
@@ -234,7 +234,7 @@ a.card-link {
     height: 40px;
     padding: 0 10px;
     border: 1px solid var(--border-color);
-    border-radius: var(--radius); /* Köşeleri yuvarlat */
+    border-radius: var(--radius);
     text-decoration: none;
     color: var(--content);
     background-color: var(--background);
@@ -248,7 +248,6 @@ a.card-link {
     border-color: var(--primary);
 }
 
-/* Aktif sayfa butonu */
 .pagination li.active a {
     background-color: var(--primary);
     color: var(--primary-content);
@@ -256,12 +255,10 @@ a.card-link {
     font-weight: bold;
 }
 
-/* "..." olan pasif butonlar */
 .pagination li.disabled {
-    display: none; /* "..." olanları tamamen gizleyelim, daha temiz durur */
+    display: none;
 }
 
-/* İleri/Geri okları */
 .pagination li.next a,
 .pagination li.previous a {
     font-weight: bold;
@@ -3074,4 +3071,98 @@ html {
 }
 .clear-filter-link:hover {
     text-decoration: underline;
+}
+/* ============================================= */
+/* --- LİSTE SAYFASI BAŞLIK TASARIMI (FİNAL) --- */
+/* ============================================= */
+
+.category-hero-final {
+    background-color: var(--primary);
+    border-radius: var(--radius);
+    padding: 50px 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.category-hero-title-final {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.category-hero-description-final {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+/* ============================================= */
+/* --- BLOG/KATEGORİ VARSAYILAN ARKA PLAN --- */
+/* ============================================= */
+
+/* Kategori hero bölümüne, eğer HTML içinde bir 'style' ile resim atanmamışsa,
+   bu varsayılan arka plan resmini ve rengini uygula. */
+.category-hero-section-v3 {
+    background-color: var(--primary);
+    background-image: url('/images/cat-bg-default.png');
+    background-size: cover;
+    background-position: center;
+}
+/* ============================================= */
+/* --- POPÜLER YAZILAR WIDGET TASARIMI --- */
+/* ============================================= */
+
+.widget-popular-posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Kartlar arası dikey boşluk */
+}
+
+.popular-post-card {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Resim ve metin arası boşluk */
+    text-decoration: none;
+    border-radius: var(--radius);
+    padding: 5px; /* Hover efekti için küçük bir iç boşluk */
+    margin: -5px; /* Boşluğu dengelemek için */
+    transition: background-color 0.2s ease;
+}
+
+.popular-post-card:hover {
+    background-color: var(--code-bg); /* Hafif hover efekti */
+}
+
+.popular-post-image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.popular-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder-sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--border-color);
+}
+
+.popular-post-content {
+    flex-grow: 1;
+}
+
+.popular-post-title {
+    font-weight: 500;
+    color: var(--content);
+    line-height: 1.4;
 }

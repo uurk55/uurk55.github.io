@@ -3166,3 +3166,63 @@ html {
     color: var(--content);
     line-height: 1.4;
 }
+/* ============================================= */
+/* --- SSS SAYFASI TASARIMI (GELİŞTİRİLMİŞ v2) --- */
+/* ============================================= */
+
+/* Her bir soru-cevap bloğu */
+.post-content details {
+    background-color: transparent; /* Arka planı kaldırıyoruz */
+    border: none;
+    border-bottom: 1px solid var(--border-color); /* Sadece alt çizgi */
+    border-radius: 0;
+    margin-bottom: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Soru başlığı */
+.post-content details summary {
+    font-size: 1.3rem; /* Fontu biraz büyütelim */
+    font-weight: 600;
+    padding: 1.5rem 0; /* Sadece dikey boşluk */
+    cursor: pointer;
+    outline: none;
+    list-style: none; /* Varsayılan ikonu tamamen kaldır */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* İkon ve metin arası boşluk */
+    transition: color 0.2s ease;
+}
+
+.post-content details summary:hover {
+    color: var(--accent); /* Üzerine gelince mavi olsun */
+}
+
+/* Cevap bölümü */
+.post-content details .faq-content {
+    padding: 0 0 1.5rem 40px; /* Soldan ikon kadar boşluk bırak */
+    line-height: 1.8;
+    color: var(--secondary); /* Cevap metnini daha yumuşak bir renkte göster */
+}
+
+/* Açık durumdaki blok */
+.post-content details[open] summary {
+    color: var(--accent);
+}
+
+/* Kendi özel açma/kapama ikonumuzu ekleyelim (Soru işareti ve tik) */
+.post-content summary::before {
+    font-family: "Font Awesome 5 Free"; /* Font Awesome kullanıyoruz */
+    font-weight: 900;
+    content: "\3f"; /* Soru işareti ikonu */
+    font-size: 1.5rem;
+    color: var(--accent);
+    width: 25px; /* Sabit genişlik */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.post-content details[open] summary::before {
+    content: "\f00c"; /* Tik işareti ikonu */
+    transform: rotate(360deg);
+}

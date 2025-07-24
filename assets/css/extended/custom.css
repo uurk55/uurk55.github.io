@@ -1844,10 +1844,12 @@ body > footer.footer:not(.footer-v2) {
     gap: 60px; /* <<< DEĞİŞİKLİK: Aradaki boşluğu biraz artırdık */
 }
 
+/*
 .about-sidebar .sticky-sidebar {
     position: sticky;
     top: 100px;
 }
+    */
 
 .about-profile {
     text-align: center;
@@ -3225,4 +3227,24 @@ html {
 .post-content details[open] summary::before {
     content: "\f00c"; /* Tik işareti ikonu */
     transform: rotate(360deg);
+}
+/* ============================================= */
+/* --- HAKKIMDA SAYFASI - ALINTI KUTUSU STİLİ --- */
+/* ============================================= */
+
+/* Sadece 'Hakkımda' sayfası içindeki alıntı kutularını hedefler */
+.about-main-content .post-content blockquote {
+    background-color: var(--card-background); /* Arka planı beyaz yap */
+    border-left: 4px solid var(--accent); /* Soluna mavi şerit ekle */
+    padding: 25px 30px;
+    margin: 2.5em 0;
+    font-size: 1.2em; /* Fontu biraz büyütelim */
+    font-weight: 500;
+    color: var(--primary); /* Metin rengini ana koyu renk yap */
+    border-radius: 0 var(--radius) var(--radius) 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Hafif bir gölge */
+}
+
+.about-main-content .post-content blockquote p {
+    margin: 0;
 }

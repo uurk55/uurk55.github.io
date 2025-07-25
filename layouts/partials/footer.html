@@ -171,4 +171,35 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebarSearchInput.addEventListener('search', handleSearch); // Bu, çarpı butonunu yakalar
     }
 });
+    // --- YENİ: "BURADAN BAŞLA" SAYFASI LİNK DÜZELTMESİ ---
+    // Sadece "Buradan Başla" sayfasındaysak bu kodu çalıştır
+    if (document.body.classList.contains('page-buradan-basla')) {
+        // Sayfa içindeki tüm # ile başlayan linkleri bul
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Eğer sayfa en tepedeyse
+                if (window.pageYOffset === 0) {
+                    // Tarayıcının normal davranışını bir anlığına engelle
+                    e.preventDefault();
+                    // Linkin hedef ID'sini al (örn: #faz-1)
+                    const targetId = this.getAttribute('href');
+                    // Hedef elementi bul
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Hedefin normal konumunu hesapla
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        // Sabit menünün yüksekliği kadar olan boşluğu çıkar
+                        const offsetPosition = targetPosition - 100; // 100px, scroll-margin-top ile aynı olmalı
+
+                        // Sayfayı hesaplanan yeni konuma yumuşakça kaydır
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                }
+                // Eğer sayfa en tepede değilse, hiçbir şey yapma, bırak normal çalışsın.
+            });
+        });
+    }
 </script>

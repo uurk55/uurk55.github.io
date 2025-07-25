@@ -691,10 +691,15 @@ body > footer.footer:not(.footer-v2) {
 
 /* Hero Bölümü (Üstteki karşılama alanı) */
 .landing-hero {
-    background-color: var(--code-bg); /* Hafif gri arkaplan */
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 50px 30px;
+    border: 1px solid rgba(184, 167, 167, 0.712);
+    
+    /* --- YENİ EKLENEN SATIRLAR --- */
+    max-width: 900px; /* Kutunun maksimum genişliğini 900px ile sınırla */
+    margin: 0 auto 40px auto; /* Üst:0, Sağ/Sol:auto (ortala), Alt:40px */
+    text-align: center; /* AÇIKLAMA: İçindeki tüm metinleri ortalar. */
 }
 
 .landing-container {
@@ -706,6 +711,8 @@ body > footer.footer:not(.footer-v2) {
 .landing-hero h1 {
     font-size: 2.8rem;
     margin-top: 0;
+    margin-bottom: 25px; /* AÇIKLAMA: Başlık ile altındaki açıklama arasına boşluk koyar. */
+
 }
 
 .landing-hero .subtitle {
@@ -2495,29 +2502,35 @@ body > footer.footer:not(.footer-v2) {
 .author-box-ekitap {
     display: flex;
     align-items: center;
-    gap: 30px; /* Logo ve metin arasını açtık */
+    gap: 40px; /* Logo ve metin arasını açtık */
+    padding: 40px; /* İç boşlukları artırdık */
+    margin: 60px auto; /* Üst ve alt boşluğu artırdık */
+    max-width: 1200px; /* Kutuyu biraz daha genişlettik */
     background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    padding: 30px; /* İç boşlukları artırdık */
-    margin: 50px auto; /* Üst ve alt boşluğu artırdık */
-    max-width: 1100px; /* Kutuyu biraz daha genişlettik */
 }
 .author-box-logo img {
-    width: 320px; /* Logoyu biraz büyüttük */
+    width: 400px; /* Logoyu biraz büyüttük */
     height: 120px;
     border-radius: 50%;
     flex-shrink: 0;
+    border: 3px solid var(--border-color); /* AÇIKLAMA: Etrafına sitenin genel çerçeve renginde bir kenarlık ekler. */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* AÇIKLAMA: Hafif bir gölge ile logoya derinlik hissi verir. */
+    
 }
 .author-box-content h4 {
     margin-top: 0;
-    font-size: 1.4rem; /* Başlığı biraz büyüttük */
+    font-size: 1.8rem; /* Başlığı biraz büyüttük */
+    margin-bottom: 15px; /* <<< YENİ: Başlık ile paragraf arasına boşluk ekler */
 }
 .author-box-content p {
     margin-bottom: 0;
-    font-style: italic;
+    font-style: normal;
     color: var(--secondary);
-    text-align: left;
+    text-align: center;
     line-height: 1.7; /* Satır aralığını artırdık */
+    font-size: 1.1rem; /* AÇIKLAMA: Metnin punto boyutunu belirler. */
 }
 
 /* 2. E-posta Formu */
@@ -2723,13 +2736,14 @@ html {
     text-decoration: underline;
 }
 /* ============================================= */
-/* --- SABİT MENÜ KAYDIRMA DÜZELTMESİ (v6) --- */
+/* --- SABİT MENÜ KAYDIRMA DÜZELTMESİ (FİNAL) --- */
 /* ============================================= */
 
-/* ID'si olan faz bölümlerine, yukarıdan kaydırma payı ekler.
-   Bu, sabit menünün başlığın üzerine gelmesini engeller. */
-.phase-section-v3 {
-    scroll-margin-top: 100px; /* Sabit menünün yüksekliğine göre ayarlanabilir */
+/* Sayfanın kendisine, kaydırma yaparken her zaman üstten
+   boşluk bırakmasını söylüyoruz. Bu, menü yüksekliği değişse bile çalışır. */
+html {
+    scroll-padding-top: 100px; /* Sabit menünün yüksekliğine göre ayarlanabilir */
+    scroll-behavior: smooth;
 }
 /* ============================================= */
 /* --- ANA SAYFA CTA BÖLÜMÜ İYİLEŞTİRMELERİ --- */
@@ -3247,4 +3261,19 @@ html {
 
 .about-main-content .post-content blockquote p {
     margin: 0;
+}
+/* ============================================= */
+/* --- E-KİTAP E-POSTA FORMU BÖLÜMÜ --- */
+/* ============================================= */
+
+.email-signup-section-ekitap {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 50px 40px; /* İç boşluk */
+    margin-top: 80px; /* Üstündeki yazar bölümüyle arasını açar */
+    text-align: center;
+}
+
+.email-signup-section-ekitap h2 {
+    margin-top: 0;
 }

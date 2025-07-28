@@ -3431,3 +3431,55 @@ html {
         grid-template-columns: 1fr;
     }
 }
+/* ============================================= */
+/* --- YENİ EKLENEN SHORTCODE STİLLERİ --- */
+/* ============================================= */
+
+/* Genel Kutucuk Yapısı (Her ikisi için de ortak) */
+.tip-box, .success-story-box {
+    padding: 20px 25px;
+    margin: 2em 0;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    border-left-width: 5px; /* Sol kenarı daha kalın yaparak vurgu katıyoruz */
+}
+
+.tip-box h4, .success-story-box h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* İPUCU KUTUSU (tip-box) */
+.tip-box {
+    background-color: var(--code-bg); /* Arka plan rengini, temanızdaki kod blokları için kullandığınız renkten alıyoruz */
+    border-left-color: var(--accent); /* Sol kenar rengini, temanızın ana vurgu rengi olan MAVİ yapar */
+}
+
+.tip-box h4 {
+    color: var(--accent); /* Başlık rengini de vurgu rengi MAVİ yapıyoruz */
+}
+
+/* BAŞARI HİKAYESİ KUTUSU (success-story-box) */
+/* Başarıyı ve pozitifliği yansıtması için Yeşil bir renk kullanacağız */
+.success-story-box {
+    background-color: #f0fff4; /* Çok açık bir yeşil tonu */
+    border-left-color: #28a745; /* Canlı bir yeşil */
+}
+
+.success-story-box h4 {
+    color: #28a745; /* Başlık rengini de aynı canlı yeşil yapıyoruz */
+}
+
+/* ============================================= */
+/* --- GÖRSEL ALTI YAZISI (CAPTION) STİLİ --- */
+/* ============================================= */
+
+.post-cover-caption {
+    display: block;
+    text-align: center; /* Yazıyı ortalar */
+    font-style: italic;  /* Yazıyı italik yapar */
+    font-size: 0.9rem;    /* Yazı boyutunu biraz küçültür */
+    color: var(--secondary); /* Temanızdaki ikincil metin rengini kullanır */
+    margin-top: 15px;     /* Görsel ile arasına boşluk koyar */
+}

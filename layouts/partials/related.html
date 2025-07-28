@@ -1,0 +1,40 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+<div class="related-posts">
+    <h3 class="related-posts-title">İlgili Yazılar</h3>
+    <div class="post-card-grid-final">
+        {{ range . }}
+            {{/* --- ANA DÜZELTME BURADA BAŞLIYOR --- */}}
+            {{ $page := . }}
+            <article class="post-card-v2 published">
+                <a href="{{ $page.RelPermalink }}" class="post-card-link">
+                    <div class="post-card-image-v2">
+                        {{ with $page.Params.cover.image }}
+                            <img src="{{ . | relURL }}" alt="{{ $page.Title }}">
+                        {{ else }}
+                            <div class="image-placeholder-v2"></div>
+                        {{ end }}
+                    </div>
+                    <div class="post-card-content-v2">
+                        <span class="post-title">{{ $page.Title }}</span>
+                        <p class="post-card-summary">{{ $page.Description | default ($page.Summary | plainify | htmlUnescape | truncate 120) }}</p>
+                        <div class="post-card-footer">
+                            <div class="post-meta-v2">
+                                {{ with $page.Params.categories }}
+                                    <span class="meta-category">
+                                        <i class="fas fa-folder-open"></i> {{ index . 0 }}
+                                    </span>
+                                {{ end }}
+                                <span>
+                                    <i class="far fa-clock"></i> {{ $page.ReadingTime }} dk
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            {{/* --- ANA DÜZELTME BURADA BİTİYOR --- */}}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

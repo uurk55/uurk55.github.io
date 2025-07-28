@@ -120,3 +120,17 @@ buildFuture = true
     weight = 70
     [menu.main.params]
       is_button = true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "series"
+    weight = 100      

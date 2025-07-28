@@ -1,0 +1,68 @@
+{{ define "main" }}
+<div class="start-here-page" data-page-id="buradan-basla">
+    <header class="post-header" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{- if .Description }}<div class="post-description">{{ .Description }}</div>{{- end }}
+    </header>
+    <div class="post-content" style="max-width: 800px; margin: 0 auto; text-align: left;">
+        {{ .Content }}
+    </div>
+    {{ $fazlar_sirali := slice "Faz 1" "Faz 2" "Faz 3" }}
+    {{ $faz_basliklari := dict "Faz 1" "Temeller, Kurulum ve İlk Baskı" "Faz 2" "Tasarım, Modelleme ve İleri Teknikler" "Faz 3" "Girişimcilik, Pazarlama ve Para Kazanma" }}
+    {{ $faz_aciklamalari := dict "Faz 1" "Bu ilk fazda, 3D baskının ne olduğunu öğrenecek, doğru ekipmanı seçecek ve ilk başarılı baskınızı alarak sağlam bir temel atacaksınız." "Faz 2" "Artık baskı almanın ötesine geçerek Tinkercad ve Blender gibi araçlarla sıfırdan kendi modellerinizi yapmayı öğreneceksiniz." "Faz 3" "Hobinizi gelire dönüştürme zamanı! Etsy'de dükkan açmaktan ürün fiyatlandırmaya, pazarlamadan müşteri yönetimine kadar her şeyi bu fazda bulacaksınız." }}
+    {{ range $fazlar_sirali }}
+        {{ $mevcut_faz := . }}
+        <div class="phase-section-v3" id="{{ $mevcut_faz | urlize }}">
+            <div class="phase-header">
+                <div class="phase-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="phase-header-text">
+                    <h2 class="phase-main-title">{{ $mevcut_faz }}</h2>
+                    <h3 class="phase-subtitle">
+                        {{ index $faz_basliklari $mevcut_faz }}
+                        <span class="phase-post-count">{{ len (where (where site.Pages "Type" "posts") "Params.faz" "intersect" (slice $mevcut_faz)) }} Yazı</span>
+                    </h3>
+                </div>
+            </div>
+            <p class="phase-description">{{ index $faz_aciklamalari $mevcut_faz }}</p>
+            <div class="post-card-grid-final">
+                {{ $TümYazılar := where site.Pages "Type" "posts" }}
+                {{ $FazınYazıları := where $TümYazılar "Params.faz" "intersect" (slice $mevcut_faz) }}
+                {{ $yayinlanmis_yazilar := where $FazınYazıları "Draft" false }}
+                {{ range $yayinlanmis_yazilar.ByDate.Reverse }}
+                    <a href="{{ .RelPermalink }}" class="post-card-v2 published">
+                        <div class="post-card-image-v2">{{ with .Params.cover.image }}<img src="{{ . | relURL }}" alt="{{ $.Title }}">{{ else }}<div class="image-placeholder-v2"></div>{{ end }}</div>
+                        <div class="post-card-content-v2">
+                            <span class="post-title">{{ .Title }}</span>
+                            <p class="post-card-summary">{{ .Description }}</p>
+                            <div class="post-card-footer">
+                                <div class="post-meta-v2">
+                                    {{ with .Params.categories }}<span class="meta-category"><i class="fas fa-folder-open"></i> {{ index . 0 }}</span>{{ end }}
+                                    <span><i class="far fa-calendar-alt"></i> {{ partial "format-turkish-date.html" .PublishDate }}</span>
+                                    <span><i class="far fa-clock"></i> {{ .ReadingTime }} dk</span>
+                                </div>
+                                <div class="post-status-v2">YAYINLANDI</div>
+                            </div>
+                        </div>
+                    </a>
+                {{ end }}
+                {{ $planlanmis_yazilar := where $FazınYazıları "Draft" true }}
+                {{ range $planlanmis_yazilar.ByDate }}
+                    <div class="post-card-v2 planned">
+                        <div class="post-card-image-v2"><div class="image-placeholder-v2">?</div></div>
+                        <div class="post-card-content-v2">
+                            <span class="post-title">{{ .Title }}</span>
+                            <p class="post-card-summary">{{ .Description }}</p>
+                            <div class="post-card-footer">
+                                <div class="post-meta-v2">
+                                    <span><i class="far fa-calendar-alt"></i> Yakında...</span>
+                                </div>
+                                <div class="post-status-v2">PLANLANDI</div>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+</div>
+{{ end }}

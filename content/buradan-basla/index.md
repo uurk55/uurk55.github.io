@@ -4,6 +4,7 @@ date: 2025-07-17T10:03:00+03:00
 draft: false
 description: "3D baskı serüveninizde size adım adım rehberlik edecek kapsamlı yol haritamız. Temellerden başlayın, ileri teknikleri öğrenin ve hobinizi bir işe dönüştürün."
 hideMeta: true
+layout: "buradan-basla"
 ---
 
 **Edu 3D Model Dünyası'na hoş geldiniz!**

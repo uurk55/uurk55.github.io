@@ -1,114 +1,20 @@
 {{ define "main" }}
 
-{{/* --- 1. KONTROL: "HAKKIMDA" SAYFASI MI? --- */}}
-{{ if eq .RelPermalink "/hakkimda/" }}
+{{/* Bu, sadece normal yazı sayfaları için çalışacak olan nihai şablondur */}}
 
-    <div class="about-page-container">
-        <aside class="about-sidebar">
-            <div class="sticky-sidebar">
-                <div class="about-profile">
-                    <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" class="profile-logo">
-                    <h2 class="profile-name">{{ .Site.Title }}</h2>
-                    <p class="profile-tagline">Fikirden Ürüne, Üründen Gelire...</p>
-                </div>
-                <div class="widget">
-                    <h4 class="widget-title">Bana Ulaşın</h4>
-                    <ul class="widget-list icon-links">
-                        <li><a href="mailto:edu3dmodel@gmail.com"><i class="fas fa-envelope"></i><span>E-posta</span></a></li>
-                        <li><a href="https://www.instagram.com/edu3dmodel/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-                    </ul>
-                </div>
-                <div class="widget">
-                    <h4 class="widget-title">Yolculuğa Başla</h4>
-                    <ul class="widget-list icon-links">
-                        <li><a href="/buradan-basla/"><i class="fas fa-map-signs"></i><span>Yol Haritasını Gör</span></a></li>
-                    </ul>
-                </div>
+<div class="post-layout-wrapper">
+    
+    {{/* --- SOL SÜTUN: İÇİNDEKİLER (TOC) --- */}}
+    {{ if and .TableOfContents (ne .Params.showToc false) }}
+        <aside class="post-toc-sidebar">
+            <div class="sticky-toc">
+                <strong>İçindekiler</strong>
+                {{ .TableOfContents }}
             </div>
         </aside>
-        <article class="about-main-content">
-            <header class="post-header"><h1 class="post-title">{{ .Title }}</h1></header>
-            <div class="post-content">{{ .Content }}</div>
-        </article>
-    </div>
+    {{ end }}
 
-{{/* --- 2. KONTROL: "BURADAN BAŞLA" SAYFASI MI? --- */}}
-{{ else if eq .RelPermalink "/buradan-basla/" }}
-
-    <div class="start-here-page" data-page-id="buradan-basla">
-        <header class="post-header" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
-            <h1 class="post-title">{{ .Title }}</h1>
-            {{- if .Description }}<div class="post-description">{{ .Description }}</div>{{- end }}
-        </header>
-
-        <div class="post-content" style="max-width: 800px; margin: 0 auto; text-align: left;">
-            {{ .Content }}
-        </div>
-        
-        {{ $fazlar_sirali := slice "Faz 1" "Faz 2" "Faz 3" }}
-        {{ $faz_basliklari := dict "Faz 1" "Temeller, Kurulum ve İlk Baskı" "Faz 2" "Tasarım, Modelleme ve İleri Teknikler" "Faz 3" "Girişimcilik, Pazarlama ve Para Kazanma" }}
-        {{ $faz_aciklamalari := dict "Faz 1" "Bu ilk fazda, 3D baskının ne olduğunu öğrenecek, doğru ekipmanı seçecek ve ilk başarılı baskınızı alarak sağlam bir temel atacaksınız." "Faz 2" "Artık baskı almanın ötesine geçerek Tinkercad ve Blender gibi araçlarla sıfırdan kendi modellerinizi yapmayı öğreneceksiniz." "Faz 3" "Hobinizi gelire dönüştürme zamanı! Etsy'de dükkan açmaktan ürün fiyatlandırmaya, pazarlamadan müşteri yönetimine kadar her şeyi bu fazda bulacaksınız." }}
-        
-        {{/* --- ANA DÜZELTME BURADA --- */}}
-        {{ range $fazlar_sirali }}
-    {{ $mevcut_faz := . }}
-    <div class="phase-section-v3" id="{{ $mevcut_faz | urlize }}">
-                <div class="phase-header">
-                    <div class="phase-icon"><i class="fas fa-layer-group"></i></div>
-                    <div class="phase-header-text">
-                        <h2 class="phase-main-title">{{ $mevcut_faz }}</h2>
-                        <h3 class="phase-subtitle">
-                            {{ index $faz_basliklari $mevcut_faz }}
-                            <span class="phase-post-count">{{ len (where (where site.Pages "Type" "posts") "Params.faz" "intersect" (slice $mevcut_faz)) }} Yazı</span>
-                        </h3>
-                    </div>
-                </div>
-                <p class="phase-description">{{ index $faz_aciklamalari $mevcut_faz }}</p>
-                <div class="post-card-grid-final">
-                    {{ $TümYazılar := where site.Pages "Type" "posts" }}
-                    {{ $FazınYazıları := where $TümYazılar "Params.faz" "intersect" (slice $mevcut_faz) }}
-                    {{ $yayinlanmis_yazilar := where $FazınYazıları "Draft" false }}
-                    {{ range $yayinlanmis_yazilar.ByDate.Reverse }}
-                        <a href="{{ .RelPermalink }}" class="post-card-v2 published">
-                            <div class="post-card-image-v2">{{ with .Params.cover.image }}<img src="{{ . | relURL }}" alt="{{ $.Title }}">{{ else }}<div class="image-placeholder-v2"></div>{{ end }}</div>
-                            <div class="post-card-content-v2">
-                                <span class="post-title">{{ .Title }}</span>
-                                <p class="post-card-summary">{{ .Description }}</p>
-                                <div class="post-card-footer">
-                                    <div class="post-meta-v2">
-                                        {{ with .Params.categories }}<span class="meta-category"><i class="fas fa-folder-open"></i> {{ index . 0 }}</span>{{ end }}
-                                        <span><i class="far fa-calendar-alt"></i> {{ partial "format-turkish-date.html" .PublishDate }}</span>
-                                        <span><i class="far fa-clock"></i> {{ .ReadingTime }} dk</span>
-                                    </div>
-                                    <div class="post-status-v2">YAYINLANDI</div>
-                                </div>
-                            </div>
-                        </a>
-                    {{ end }}
-                    {{ $planlanmis_yazilar := where $FazınYazıları "Draft" true }}
-                    {{ range $planlanmis_yazilar.ByDate }}
-                        <div class="post-card-v2 planned">
-                            <div class="post-card-image-v2"><div class="image-placeholder-v2">?</div></div>
-                            <div class="post-card-content-v2">
-                                <span class="post-title">{{ .Title }}</span>
-                                <p class="post-card-summary">{{ .Description }}</p>
-                                <div class="post-card-footer">
-                                    <div class="post-meta-v2">
-                                        <span><i class="far fa-calendar-alt"></i> Yakında...</span>
-                                    </div>
-                                    <div class="post-status-v2">PLANLANDI</div>
-                                </div>
-                            </div>
-                        </div>
-                    {{ end }}
-                </div>
-            </div>
-        {{ end }}
-    </div>
-
-{{/* --- 3. KONTROL: HİÇBİRİ DEĞİLSE, NORMAL YAZI SAYFASINI GÖSTER --- */}}
-{{ else }}
-
+    {{/* --- SAĞ SÜTUN: ANA YAZI İÇERİĞİ --- */}}
     <article class="post-single">
         <header class="post-header">
             {{ partial "breadcrumbs.html" . }}
@@ -122,22 +28,41 @@
             </div>
             {{- end }}
         </header>
+        
         {{- if .Params.cover.image -}}
         <div class="post-cover">
             <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
             {{- if .Params.cover.caption }}<p class="post-cover-caption">{{ .Params.cover.caption }}</p>{{- end -}}
         </div>
         {{- end -}}
-        <div class="post-content">{{ .Content }}</div>
+    
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    
         <footer class="post-footer">
-            {{- with .Params.tags -}}<ul class="post-tags">{{- range . -}}<li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>{{- end -}}</ul>{{- end -}}
-        </footer>
+    {{- with .Params.tags -}}
+        <ul class="post-tags">
+            {{- range . -}}
+            <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a></li>
+            {{- end -}}
+        </ul>
+    {{- end -}}
+
+    {{/* --- YENİ EKLENEN BÖLÜM BURASI --- */}}
+    {{- if .Site.Params.ShowShareButtons -}}
+        {{- partial "share_icons.html" . -}}
+    {{- end -}}
+</footer>
+    
         {{- if .Params.comments }}
         <div id="comments" style="margin-top: 40px;">
             <hr><h2>Yorumlar</h2>
             <script src="https://giscus.app/client.js" data-repo="uurk55/uurk55.github.io" data-repo-id="R_kgDOMX0zYw" data-category="Announcements" data-category-id="DIC_kwDOMX0zY84CfIeL" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="tr" crossorigin="anonymous" async></script>
         </div>
         {{- end }}
+        
     </article>
-{{ end }}
+</div>
+
 {{ end }}

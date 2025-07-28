@@ -108,56 +108,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- SIDEBAR CANLI ARAMA FONKSİYONU (FİNAL v3) ---
     const sidebarSearchInput = document.getElementById('sidebar-search-input');
     if (sidebarSearchInput) {
         const mainContent = document.querySelector('.main-content-right');
         const originalContentHTML = mainContent.innerHTML;
-
-        // Hem yazı yazıldığında hem de çarpıya basıldığında çalışacak fonksiyon
         const handleSearch = function(e) {
             const query = e.target.value.trim().toLowerCase();
-
-            if (query.length === 0) {
-                mainContent.innerHTML = originalContentHTML;
-                return;
-            }
-
-            if (query.length < 2 || !fuse) {
-                return;
-            }
-            
+            if (query.length === 0) { mainContent.innerHTML = originalContentHTML; return; }
+            if (query.length < 2 || !fuse) { return; }
             const results = fuse.search(query);
             mainContent.innerHTML = '';
-
             if (results.length > 0) {
                 const resultsGrid = document.createElement('div');
                 resultsGrid.className = 'post-card-grid-final';
-
                 results.forEach(result => {
                     const post = result.item;
                     const firstCategory = post.categories && post.categories.length > 0 ? post.categories[0] : '';
-                    
-                    // <<< DÜZELTME: Görsel yolu artık doğrudan JSON'dan geliyor
                     const coverHTML = post.cover ? `<img src="${post.cover}" alt="${post.title}">` : '<div class="image-placeholder-v2"></div>';
-
-                    const cardHTML = `
-                    <article class="post-card-v2 published">
-                        <a href="${post.permalink}" class="post-card-link">
-                            <div class="post-card-image-v2">${coverHTML}</div>
-                            <div class="post-card-content-v2">
-                                <span class="post-title">${post.title}</span>
-                                <p class="post-card-summary">${post.description || (post.summary ? post.summary.substring(0, 150) : '')}</p>
-                                <div class="post-card-footer">
-                                    <div class="post-meta-v2">
-                                        <span class="meta-category"><i class="fas fa-folder-open"></i> ${firstCategory}</span>
-                                        <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
-                                        <span><i class="far fa-clock"></i> ${post.readingTime} dk</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>`;
+                    const cardHTML = `<article class="post-card-v2 published"><a href="${post.permalink}" class="post-card-link"><div class="post-card-image-v2">${coverHTML}</div><div class="post-card-content-v2"><span class="post-title">${post.title}</span><p class="post-card-summary">${post.description || (post.summary ? post.summary.substring(0, 150) : '')}</p><div class="post-card-footer"><div class="post-meta-v2"><span class="meta-category"><i class="fas fa-folder-open"></i> ${firstCategory}</span><span><i class="far fa-calendar-alt"></i> ${post.date}</span><span><i class="far fa-clock"></i> ${post.readingTime} dk</span></div></div></div></a></article>`;
                     resultsGrid.innerHTML += cardHTML;
                 });
                 mainContent.appendChild(resultsGrid);
@@ -165,41 +133,39 @@ document.addEventListener('DOMContentLoaded', function() {
                 mainContent.innerHTML = '<p style="text-align:center;">Aradığınız kriterlere uygun sonuç bulunamadı.</p>';
             }
         };
-
-        // Arama fonksiyonunu hem 'keyup' hem de 'search' event'lerine bağlıyoruz
         sidebarSearchInput.addEventListener('keyup', handleSearch);
-        sidebarSearchInput.addEventListener('search', handleSearch); // Bu, çarpı butonunu yakalar
+        sidebarSearchInput.addEventListener('search', handleSearch);
     }
-});
-    // --- YENİ: "BURADAN BAŞLA" SAYFASI LİNK DÜZELTMESİ ---
-    // Sadece "Buradan Başla" sayfasındaysak bu kodu çalıştır
-    if (document.body.classList.contains('page-buradan-basla')) {
-        // Sayfa içindeki tüm # ile başlayan linkleri bul
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // Eğer sayfa en tepedeyse
-                if (window.pageYOffset === 0) {
-                    // Tarayıcının normal davranışını bir anlığına engelle
-                    e.preventDefault();
-                    // Linkin hedef ID'sini al (örn: #faz-1)
-                    const targetId = this.getAttribute('href');
-                    // Hedef elementi bul
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Hedefin normal konumunu hesapla
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                        // Sabit menünün yüksekliği kadar olan boşluğu çıkar
-                        const offsetPosition = targetPosition - 100; // 100px, scroll-margin-top ile aynı olmalı
 
-                        // Sayfayı hesaplanan yeni konuma yumuşakça kaydır
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
+    // --- YENİ EKLENEN KOD BURADA BAŞLIYOR ---
+    const toc = document.querySelector('.post-toc-sidebar');
+    if (toc) {
+        const tocLinks = toc.querySelectorAll('a');
+        const headers = Array.from(tocLinks).map(link => {
+            const id = link.getAttribute('href').substring(1);
+            return document.getElementById(id);
+        }).filter(Boolean);
+
+        const onScroll = () => {
+            const scrollPosition = window.scrollY;
+            let activeHeader = null;
+
+            headers.forEach(header => {
+                if (header.offsetTop <= scrollPosition + 110) {
+                    activeHeader = header;
                 }
-                // Eğer sayfa en tepede değilse, hiçbir şey yapma, bırak normal çalışsın.
             });
-        });
+
+            tocLinks.forEach(link => {
+                link.parentElement.classList.remove('active');
+                if (activeHeader && link.getAttribute('href').substring(1) === activeHeader.id) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
     }
+    // --- YENİ EKLENEN KOD BURADA BİTİYOR ---
+});
 </script>

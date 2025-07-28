@@ -5,6 +5,7 @@ draft: false
 hidemeta: true
 showtoc: false
 comments: false
+layout: "hakkimda"
 ---
 
 Merhaba, ben Uğur. "Edu 3D Model Dünyası"nın kurucusu ve bu dijital atölyenin arkasındaki meraklı zihin.

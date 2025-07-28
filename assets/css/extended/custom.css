@@ -3277,3 +3277,129 @@ html {
 .email-signup-section-ekitap h2 {
     margin-top: 0;
 }
+/* ============================================= */
+/* --- TEKİL YAZI SAYFASI (İÇİNDEKİLER MENÜLÜ v3) --- */
+/* ============================================= */
+
+.post-layout-wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+}
+.post-toc-sidebar {}
+
+.sticky-toc {
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+.sticky-toc strong {
+    font-size: 1.1rem; font-weight: 600; display: block;
+    margin-bottom: 15px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* İçindekiler listesi genel */
+.sticky-toc nav#TableOfContents ul {
+    list-style: none;
+    padding-left: 0;
+}
+.sticky-toc nav#TableOfContents li {
+    margin-bottom: 8px;
+}
+.sticky-toc nav#TableOfContents a {
+    text-decoration: none; color: var(--secondary); font-size: 0.9rem;
+    transition: all 0.2s ease; display: block;
+    padding: 4px 10px;
+    border-left: 2px solid var(--border-color);
+}
+.sticky-toc nav#TableOfContents a:hover {
+    color: var(--accent);
+    background-color: var(--code-bg);
+}
+
+/* --- YENİ HİYERARŞİK GİRİNTİLER --- */
+/* H3 başlıkları (ul ul) */
+.sticky-toc nav#TableOfContents ul ul {
+    padding-left: 15px;
+    margin-top: 8px;
+}
+/* H4 başlıkları (ul ul ul) */
+.sticky-toc nav#TableOfContents ul ul ul {
+    padding-left: 15px;
+    margin-top: 8px;
+}
+.sticky-toc nav#TableOfContents ul ul ul a {
+    font-size: 0.85rem; /* H4'leri biraz daha küçük yapalım */
+}
+/* --- HİYERARŞİ BİTİŞ --- */
+
+/* Aktif (o an ekranda görünen) başlık linki */
+.sticky-toc nav#TableOfContents li.active > a {
+    color: var(--accent);
+    font-weight: 600;
+    border-left-color: var(--accent);
+    background-color: var(--code-bg);
+}
+
+@media (max-width: 1024px) {
+    .post-toc-sidebar { display: none; }
+    .post-layout-wrapper { grid-template-columns: 1fr; }
+}
+/* ============================================= */
+/* --- SOSYAL PAYLAŞIM BUTONLARI STİLİ --- */
+/* ============================================= */
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* İkonlar arası boşluk */
+    margin-top: 30px; /* Etiketlerle arasına boşluk koy */
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.share-buttons_title {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.share-buttons_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Yuvarlak ikonlar */
+    background-color: var(--code-bg);
+    color: var(--secondary);
+    transition: all 0.2s ease-in-out;
+}
+
+.share-buttons_button:hover {
+    background-color: var(--accent);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.share-buttons_button svg {
+    width: 20px;
+    height: 20px;
+}
+/* ============================================= */
+/* --- SOSYAL PAYLAŞIM İKON RENKLERİ --- */
+/* ============================================= */
+
+.share-buttons_button.social-twitter:hover { background-color: #1DA1F2; color: #fff; }
+.share-buttons_button.social-linkedin:hover { background-color: #0077B5; color: #fff; }
+.share-buttons_button.social-reddit:hover { background-color: #FF4500; color: #fff; }
+.share-buttons_button.social-facebook:hover { background-color: #1877F2; color: #fff; }
+.share-buttons_button.social-whatsapp:hover { background-color: #25D366; color: #fff; }
+.share-buttons_button.social-mail:hover { background-color: #7f8c8d; color: #fff; }
+.share-buttons_button.social-instagram:hover { background-color: #E1306C; color: #fff; }
+
+/* İkonların içini doldurmak için */
+.share-buttons_button svg path {
+    fill: currentColor;
+}

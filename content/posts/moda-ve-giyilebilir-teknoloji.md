@@ -79,7 +79,7 @@ Giyilebilir ürünler satarken dikkat etmeniz gereken birkaç ekstra nokta var:
 
 3D baskı, modayı ve teknolojiyi kişiselleştirmenin en heyecan verici yollarından birini sunuyor. Bu rehberdeki fikirler, sadece bir başlangıç. Unutmayın, bu alanda sınırları belirleyen tek şey sizin hayal gücünüzdür. 3D yazıcınızla, sadece küçük objeler değil, insanların üzerinde taşıyacağı, kullanacağı ve bağ kuracağı ürünler yaratabilirsiniz.
 
-<!-- Bir sonraki adımda, bu yaratıcılığı bir gelir modeline dönüştürmenin bir başka yolunu, **[Sadece Ürün Değil, Model de Satmak: Tasarımlarınızı Pazarlama Rehberi]** yazımızda inceleyeceğiz. -->
+Bir sonraki adımda, bu yaratıcılığı bir gelir modeline dönüştürmenin bir başka yolunu, **[Sadece Ürün Değil, Model de Satmak: Tasarımlarınızı Pazarlama Rehberi]({{< ref "posts/model-satmak-pazarlama-rehberi.md" >}})** yazımızda inceleyeceğiz.
 
 ---
 

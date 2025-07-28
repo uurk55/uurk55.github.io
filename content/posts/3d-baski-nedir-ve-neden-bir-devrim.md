@@ -20,7 +20,7 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/kapak-gorseli.png" # Öne Çıkan Görsel
+    image: "/images/kapak-gorseli.png"
     alt: "3D yazıcı parlayan bir ampul basıyor"
     caption: "Fikirleriniz artık sadece bir 'yazdır' komutu kadar uzağınızda."
     relative: false
@@ -42,8 +42,7 @@ Karmaşık mühendislik jargonunu bir kenara bırakalım. 3D baskının temel ma
 
 Bir doğum günü pastası yaparken ne yaparsınız? Önce ilk kat keki koyar, üzerine krema sürer, sonra ikinci katı... İşte 3D yazıcı da, dijital bir tasarım dosyasını – ki biz buna genellikle **STL dosyası** diyoruz – alıp, onu yüzlerce, hatta binlerce mikroskobik incelikte yatay katmana böler. Sonra bu katmanları, erimiş plastik (**Filament**) veya UV ışığıyla sertleşen özel bir sıvı (**Reçine**) gibi malzemelerle bir tepsinin üzerinde üst üste sererek inşa eder. Sabırla, katman katman, o dijital hayal, elinizle tutabileceğiniz üç boyutlu bir nesneye dönüşür.
 
-![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim.png "3D Baskının Kalbi: Katmanlı Üretim")
-*Görsel: 3D yazıcının katman katman üretim prensibi.*
+![3D yazıcı nozulu katmanları seriyor](/images/katmanli-uretim.png "Görsel: 3D yazıcının katman katman üretim prensibi.")
 
 ### Geleneksel Üretimden Farkı Ne?
 
@@ -71,8 +70,7 @@ Artık ihtiyacınız olan tek şey bir bilgisayar ve bir 3D yazıcı. Kendi evin
 
 "Bir ürünü basıp satmak nasıl pasif olabilir ki?" diye sorduğunuzu duyar gibiyim. 3D baskının gücü, onu geleneksel bir "aktif gelir" modelinden ayıran **otomasyon** ve **ölçeklenebilirlik** potansiyelinde yatar. Buna "yarı pasif gelir" demek en doğrusu olur.
 
-![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme.png "Katma Değeri Yüksek Kişiye Özel Ürünler")
-*Görsel: Kişiselleştirilmiş 3D baskı ürünlerinin benzersizliği ve değeri.*
+![Kişiselleştirilmiş 3D Baskı ürünleri](/images/kisisellestirme.png "Görsel: Kişiselleştirilmiş 3D baskı ürünlerinin benzersizliği ve değeri.")
 
 {{< success-story-box title="✨ Ali'nin Küçük Başarısı: Mutfak Organizerinden Ek Gelire" >}}
 Ali, başlangıçta sadece kendi evindeki kırılan parçaları basıyordu. Bir gün, mutfak çekmecesindeki bozuk bir organizeri 3D baskıyla yeniledi. Bu fikri Etsy'ye taşıdığında, ilk ayda 20'den fazla sipariş alarak 3D yazıcısının kendisi için nasıl bir gelir kapısı olduğunu gördü!
@@ -86,14 +84,11 @@ Müşterilerinize, başka hiçbir yerde bulamayacakları, tamamen onlara özel, 
 
 Bir müşteri sipariş verdiğinde, siz "yazdır" tuşuna basarsınız. **İşte o andan itibaren iş "pasifleşir".** 4, 8, hatta 12 saat sürecek bir baskı boyunca siz başka bir işinizle ilgilenebilirsiniz. Yazıcınız, sizin için sessizce çalışır.
 
----
+<div class="post-cta-box">
+<h3>İlk Adımı Atmaya Hazır Mısınız?</h3>
+<p>Bu yolculuğun sadece ilk adımıydı. Şimdi aklınızdaki bir sonraki sorunun cevabına geçme zamanı: "Peki, hangi teknolojiyle başlamalıyım?"</p>
+<a href="{{< ref "posts/fdm-vs-sla-rehberi.md" >}}" class="cta-button">FDM ve SLA Farklarını Öğren →</a>
+</div>
 
-## İlk Adımı Atmaya Hazır Mısınız?
-
-Bu, yolculuğumuzun sadece ilk adımıydı. Aklınızdaki bir sonraki soruyu tahmin edebiliyoruz: **"Peki, hangi teknolojiyle başlamalıyım? FDM mi, SLA mi?"**
-
-İşte tam da bu sorunun cevabını, [FDM mi, SLA mi? Pasif Gelir İçin Hangi 3D Yazıcı Teknolojisi Sizin İçin Doğru?]({{< ref "posts/fdm-vs-sla-rehberi.md" >}}) yazısında masaya yatıracağız. Blogumuzu takipte kalın, çünkü daha yeni başlıyoruz!
-
----
-
-**Siz bu teknoloji hakkında ne düşünüyorsunuz? 3D baskıyla ilgili en çok ne ilginizi çekiyor veya aklınızdaki en büyük soru ne? Yorumlarda bizimle paylaşın! Tartışmaya katılmaktan çekinmeyin.**
+### Fikirlerinizi Paylaşın!
+Siz bu teknoloji hakkında ne düşünüyorsunuz? 3D baskıyla ilgili en çok ne ilginizi çekiyor veya aklınızdaki en büyük soru ne? Düşüncelerinizi ve sorularınızı aşağıdaki yorum bölümünde paylaşmaktan çekinmeyin!

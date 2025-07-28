@@ -3420,16 +3420,18 @@ html {
     margin-bottom: 30px;
 }
 
-/* İlgili yazılar bölümündeki ızgaranın 3 sütunlu olmasını sağlıyoruz */
+/* İlgili yazılar kartlarını esnek kutu modeline geçiriyoruz */
 .related-posts .post-card-grid-final {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex; /* grid yerine flex kullan */
+    flex-wrap: wrap; /* Kartların satır bitince alta geçmesini sağla */
+    gap: 25px; /* Aradaki boşluk kalsın */
 }
 
-/* Tablet ve altında ızgarayı tek sütuna düşürüyoruz */
-@media (max-width: 992px) {
-    .related-posts .post-card-grid-final {
-        grid-template-columns: 1fr;
-    }
+/* İlgili yazı kartlarının esneyip aynı yüksekliği almasını sağlıyoruz */
+.related-posts .post-card-grid-final > .post-card-v2 {
+    flex: 1 1 30%; /* Esne, küçül ama temel genişliği %30 civarı olsun */
+    display: flex; /* Kartın kendi içini de flex yap */
+    flex-direction: column; /* İçeriği dikey sırala */
 }
 /* ============================================= */
 /* --- YENİ EKLENEN SHORTCODE STİLLERİ --- */
@@ -3482,4 +3484,103 @@ html {
     font-size: 0.9rem;    /* Yazı boyutunu biraz küçültür */
     color: var(--secondary); /* Temanızdaki ikincil metin rengini kullanır */
     margin-top: 15px;     /* Görsel ile arasına boşluk koyar */
+}
+/* Yazı içi listeleri daha markalı hale getiriyoruz */
+.post-content ul {
+    list-style: none; /* Varsayılan noktaları kaldır */
+    padding-left: 0;
+}
+
+.post-content ul li {
+    padding-left: 1.5em; /* Metnin sola yaslanması için boşluk */
+    position: relative;
+    margin-bottom: 0.8em; /* Maddeler arası boşluk */
+}
+
+.post-content ul li::before {
+    content: '›'; /* veya '\2713' ✓ ikonu için */
+    position: absolute;
+    left: 0;
+    color: var(--accent); /* Vurgu rengini kullan */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* ============================================= */
+/* --- YAZI İÇİ GÖRSEL VE AÇIKLAMA STİLLERİ --- */
+/* ============================================= */
+
+/* Görseli ve açıklamasını saran ana taşıyıcı */
+.post-figure {
+    margin-top: 2.5em; /* Üstündeki paragrafla arasını açar */
+    margin-bottom: 0.8em; /* Altındaki açıklamayla arasını kapatır */
+}
+
+.post-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Görseli ortalar */
+    border-radius: var(--radius);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+}
+
+/* Yazı içi tüm görsel açıklamaları (figcaption) */
+.post-figure figcaption {
+    display: block;
+    text-align: center; /* Yazıyı ortalar */
+    font-style: italic;  /* Yazıyı italik yapar */
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: 15px; /* Resimle arasına boşluk koyar */
+    /* --- YENİ İSTEĞİNİZ İÇİN EKLENDİ --- */
+    margin-bottom: 2.5em; /* Açıklama ile bir sonraki paragraf arasına boşluk koyar */
+}
+/* ============================================= */
+/* --- YAZI SONU YÖNLENDİRME KUTUSU (POST CTA) --- */
+/* ============================================= */
+
+/* Yönlendirme kutusunun ana taşıyıcısı */
+.post-cta-box {
+    background-color: var(--code-bg); /* Sitenizin hafif gri arkaplanı */
+    border: 1px solid var(--border-color); /* Sitenizin standart çerçeve rengi */
+    border-left: 5px solid var(--accent); /* Sol kenarda markanızın MAVİ vurgu rengi */
+    border-radius: var(--radius); /* Sitenizin genel köşe yuvarlaklığı */
+    padding: 35px 40px; /* İç boşluklar */
+    margin: 4em 0; /* Üst ve alt içerikle arasına belirgin bir boşluk koyar */
+    text-align: center; /* İçindeki her şeyi ortalar */
+}
+
+/* Kutu içindeki ana başlık */
+.post-cta-box h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: var(--primary); /* Sitenizin ana koyu metin rengi */
+    margin-bottom: 15px;
+}
+
+/* Kutu içindeki açıklama metni */
+.post-cta-box p {
+    font-size: 1.1rem;
+    color: var(--secondary); /* Sitenizin ikincil metin rengi */
+    max-width: 600px;
+    margin: 0 auto 25px auto; /* Metnin çok genişlemesini engeller */
+}
+
+/* Kutu içindeki buton */
+.post-cta-box a.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.post-cta-box a.cta-button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px 0px var(--accent);
+    transform: translateY(-2px);
 }

@@ -10,7 +10,7 @@
 <meta name="description" content="3D baskıda en sık karşılaşılan 10 hatayı (spagetti, warping, katman kayması, stringing, nozzle tıkanması vb.) nedenleri ve adım adım pratik çözümleriyle öğrenin. Hata tespit kılavuzunuz.">
 <meta name="author" content="uurk55">
 <link rel="canonical" href="https://edu3dmodel.com/posts/3d-baski-hatalari-cozumleri/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.d00b13303fee67abea791228c50edaade256e191f03f01c4490bca44f7c8d91e.css" integrity="sha256-0AsTMD/uZ6vqeRIoxQ7areJW4ZHwPwHESQvKRPfI2R4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1835fa647f2bc0d295fc7e5a279bea354ee5f0358007a772d9b0f5d47c15c296.css" integrity="sha256-GDX6ZH8rwNKV/H5aJ5vqNU7l8DWAB6dy2bD11HwVwpY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -27,7 +27,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.5df9866501f5240f3f10ba6dd319ecd7d0517246f194faaee5477090cb5ae02b.css" integrity="sha256-XfmGZQH1JA8/ELpt0xns19BRckbxlPqu5UdwkMta4Cs=">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.f5ccbcf40b4414ed1bb22c4553fac43f9087cd1196853dbf571c42f83eacabc2.css" integrity="sha256-9cy89AtEFO0bsixFU/rEP5CHzRGWhT2/VxxC&#43;D6sq8I=">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /><meta property="og:url" content="https://edu3dmodel.com/posts/3d-baski-hatalari-cozumleri/">
@@ -277,7 +277,11 @@ Sorun giderirken sadece tek bir ayarı değiştirin ve tekrar deneyin. Birden fa
 <hr>
 <h3 id="1-spagetti-canavarı">1. Spagetti Canavarı</h3>
 <p><strong>Belirtiler:</strong> Baskı yatağında model yerine, birbirine dolanmış, anlamsız bir plastik yığını bulursunuz.</p>
-<p><img alt="Baskı tablasının üzerinde bir 3D model yerine karışık bir filament yığını olan Spagetti Canavarı hatası" loading="lazy" src="/images/hata-spagetti.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-spagetti.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-spagetti.jpg" alt="Baskı tablasının üzerinde bir 3D model yerine karışık bir filament yığını olan Spagetti Canavarı hatası">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Baskı, bir noktada <strong>baskı tablasından tamamen ayrılmıştır</strong> ve nozzle boşluğa plastik basmaya devam etmiştir.
 <strong>Tedavi:</strong> İlk katman yapışmasını mükemmelleştirin. <strong>Brim</strong> kullanın, tabla kalibrasyonunuzu kontrol edin ve tablanızı izopropil alkol (IPA) ile temizleyin.</p>
 <h3 id="2-ilk-katmanın-yapışmaması">2. İlk Katmanın Yapışmaması</h3>
@@ -286,12 +290,20 @@ Sorun giderirken sadece tek bir ayarı değiştirin ve tekrar deneyin. Birden fa
 <strong>Tedavi:</strong> <strong>Z-Offset</strong> ayarınızı düşürerek nozzle&rsquo;ı tablaya yaklaştırın. Tablayı temizleyin ve Slicer&rsquo;da <strong>İlk Katman Hızını</strong> <code>20mm/s</code> gibi bir değere indirin.</p>
 <h3 id="3-warping-köşelerin-kalkması">3. Warping (Köşelerin Kalkması)</h3>
 <p><strong>Belirtiler:</strong> Baskının, özellikle de keskin köşeleri, baskı devam ederken tabladan yukarı doğru kıvrılır.</p>
-<p><img alt="Büyük, dikdörtgen bir baskının köşelerinin tabladan yukarı doğru kalktığı warping hatası" loading="lazy" src="/images/hata-warping.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-warping.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-warping.jpg" alt="Büyük, dikdörtgen bir baskının köşelerinin tabladan yukarı doğru kalktığı warping hatası">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Plastik soğurken büzülür ve yarattığı gerilimle köşeleri yukarı çeker.
 <strong>Tedavi:</strong> Yazıcının etrafındaki hava akımını kesin. ABS gibi malzemeler için <strong>kapalı bir kasa (enclosure)</strong> kullanın. Slicer&rsquo;dan <strong>Brim</strong> eklemek, köşeleri aşağıda tutmak için en etkili yöntemdir.</p>
 <h3 id="4-katman-kayması-layer-shifting">4. Katman Kayması (Layer Shifting)</h3>
 <p><strong>Belirtiler:</strong> Baskı, bir noktadan sonra yana doğru kayar ve merdiven basamağı gibi görünür.</p>
-<p><img alt="Yüksek bir kulenin, yarısından sonra yana doğru kaydığı katman kayması hatası" loading="lazy" src="/images/hata-katman-kaymasi.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-katman-kaymasi.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-katman-kaymasi.jpg" alt="Yüksek bir kulenin, yarısından sonra yana doğru kaydığı katman kayması hatası">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Tamamen mekanik bir sorundur. Genellikle <strong>gevşek kayışlar (belts)</strong> veya mekanik bir takılma nedeniyle motorun adım atlamasından kaynaklanır.
 <strong>Tedavi:</strong> Yazıcınızın X ve Y eksenlerindeki kayışları gerin. Tekerleklerin rahatça hareket ettiğinden emin olun. Slicer&rsquo;da <strong>Z-Hop</strong> ayarını aktif ederek nozzle&rsquo;ın modele çarpma riskini azaltın.</p>
 <h3 id="5-katman-ayrılması-layer-separation">5. Katman Ayrılması (Layer Separation)</h3>
@@ -304,7 +316,11 @@ Sorun giderirken sadece tek bir ayarı değiştirin ve tekrar deneyin. Birden fa
 <strong>Tedavi:</strong> Yazıcıyla gelen iğneyi kullanarak nozzle&rsquo;ı temizleyin veya &ldquo;Cold Pull&rdquo; yöntemini uygulayın. Baskı kafasını soğutan fanın çalıştığından emin olun.</p>
 <h3 id="7-stringing-iplenme--saçaklanma">7. Stringing (İplenme / Saçaklanma)</h3>
 <p><strong>Belirtiler:</strong> Baskı kafası boşluklarda hareket ederken arkasında örümcek ağı gibi ince plastik iplikçikler bırakır.</p>
-<p><img alt="İki kule arasında örümcek ağı gibi ince plastik ipliklerin uzandığı stringing hatası" loading="lazy" src="/images/hata-stringing.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-stringing.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-stringing.jpg" alt="İki kule arasında örümcek ağı gibi ince plastik ipliklerin uzandığı stringing hatası">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Yetersiz <strong>geri çekme (retraction)</strong> ayarları veya çok yüksek baskı sıcaklığı nedeniyle nozzle&rsquo;dan plastik sızar.
 <strong>Tedavi:</strong> Slicer&rsquo;da &ldquo;Retraction Distance&rdquo; ve &ldquo;Retraction Speed&rdquo; ayarlarını optimize edin (&ldquo;retraction tower&rdquo; testi yaparak). Baskı sıcaklığını düşürmeyi ve filamentinizi kuru tutmayı deneyin.</p>
 <h3 id="8-filamentin-yenmesi-strippedground-filament">8. Filamentin &ldquo;Yenmesi&rdquo; (Stripped/Ground Filament)</h3>
@@ -313,12 +329,20 @@ Sorun giderirken sadece tek bir ayarı değiştirin ve tekrar deneyin. Birden fa
 <strong>Tedavi:</strong> Önce altta yatan nedeni (tıkanıklık vb.) çözün. Ardından extruder dişlisinin temiz ve gerginlik ayarının doğru olduğundan emin olun.</p>
 <h3 id="9-z-axis-binding-z-ekseni-takılması">9. Z-Axis Binding (Z Ekseni Takılması)</h3>
 <p><strong>Belirtiler:</strong> Baskınızda belirli yüksekliklerde sürekli tekrarlanan, ezilmiş ve düzensiz katmanlar görürsünüz.</p>
-<p><img alt="Bir 3D baskının yan duvarında, belirli aralıklarla tekrarlanan yatay ve ezilmiş katman çizgileri" loading="lazy" src="/images/hata-z-binding.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-z-binding.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-z-binding.jpg" alt="Bir 3D baskının yan duvarında, belirli aralıklarla tekrarlanan yatay ve ezilmiş katman çizgileri">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Baskı kafası, Z ekseninde (yukarı) hareket ederken bir noktada takılıyor veya zorlanıyordur. Bunun nedeni genellikle hizası bozuk veya kirli vidalı mil (lead screw) veya fazla sıkılmış tekerleklerdir.
 <strong>Tedavi:</strong> Yazıcı kapalıyken Z eksenini elinizle yavaşça hareket ettirerek takılma olup olmadığını kontrol edin. Vidalı mili temizleyip ince bir katman lityum gresi ile yağlayın.</p>
 <h3 id="10-ghosting--ringing-hayaletleme--çınlama">10. Ghosting / Ringing (Hayaletleme / Çınlama)</h3>
 <p><strong>Belirtiler:</strong> Baskınızın yüzeyinde, özellikle keskin köşelerden sonra, yankı veya dalgalanma gibi görünen desenler oluşur.</p>
-<p><img alt="Bir baskının keskin köşelerinin yanında, yüzeyde dalgalanma veya yankı şeklinde görünen ghosting hatası" loading="lazy" src="/images/hata-ghosting.jpg"></p>
+<p>
+<figure class="post-figure">
+    <a href="/images/hata-ghosting.jpg" target="_blank" rel="noopener">
+        <img src="/images/hata-ghosting.jpg" alt="Bir baskının keskin köşelerinin yanında, yüzeyde dalgalanma veya yankı şeklinde görünen ghosting hatası">
+    </a></figure></p>
 <p><strong>Teşhis:</strong> Tamamen <strong>titreşimle</strong> ilgilidir. Baskı kafasının ani yön değiştirmesi, yazıcı iskeletinde titreşim yaratır.
 <strong>Tedavi:</strong> En basit çözüm, hızı ve özellikle de <strong>ivmelenme (acceleration)</strong> ayarlarını Slicer&rsquo;dan düşürmektir. Yazıcınızın sallanmayan, sağlam bir yüzeyde durduğundan emin olun.</p>
 <h3 id="sonuç-hatalar-birer-öğretmendir">Sonuç: Hatalar, Birer Öğretmendir</h3>

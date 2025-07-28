@@ -98,7 +98,7 @@ Harika ürünler tasarladınız, peki bunları nasıl satacaksınız?
 
 3D baskı ile takı ve aksesuar üretmek, yaratıcılığınızı somut bir gelire dönüştürmek için en keyifli ve potansiyeli yüksek yollardan biridir. Bu rehberdeki fikirlerden ilham alarak ilk basit tasarımınızı yapın ve bu heyecan verici yolculuğa ilk adımınızı atın.
 
-Bu kişiye özel dokunuşlar, sadece bir aksesuar değil, aynı zamanda bir sanat eseri yaratmanızı sağlar. Bir sonraki adımda, **[Moda ve Giyilebilir Teknolojide 3D Baskı]({{< ref "posts/moda-ve-giyilebilir-teknoloji.md" >}})** konusuna dalarak bu alandaki potansiyeli daha da derinlemesine inceleyeceğiz.
+Bu kişiye özel dokunuşlar, sadece bir aksesuar değil, aynı zamanda bir sanat eseri yaratmanızı sağlar. Bir sonraki adımda, **[Moda ve Giyilebilir Teknolojide 3D Baskı]({{< ref "/posts/moda-ve-giyilebilir-teknoloji.md" >}})** konusuna dalarak bu alandaki potansiyeli daha da derinlemesine inceleyeceğiz.
 
 ---
 

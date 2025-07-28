@@ -3584,3 +3584,46 @@ html {
     box-shadow: 0 0 10px 0px var(--accent);
     transform: translateY(-2px);
 }
+/* ============================================= */
+/* --- HEDİYE REHBER (LEAD MAGNET) KUTUSU --- */
+/* ============================================= */
+
+.lead-magnet-box {
+    background-color: #e7f5fe; /* Vurgu renginiz olan mavinin çok açık bir tonu */
+    border: 1px solid var(--accent); /* Kenarlık vurgu renginizle uyumlu */
+    border-radius: var(--radius);
+    padding: 35px 40px;
+    margin: 4em 0;
+    text-align: center;
+}
+
+.lead-magnet-box h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.lead-magnet-box p {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.lead-magnet-box a.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lead-magnet-box a.cta-button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px 0px var(--accent);
+    transform: translateY(-2px);
+}

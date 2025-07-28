@@ -10,7 +10,7 @@
 <meta name="description" content="3D baskıda destek yapılarının (supports) neden gerekli olduğunu, aşırı çıkıntıları ve köprüleri nasıl destekleyeceğinizi öğrenin. Ağaç ve doğrusal destek türleri, slicer ayarları ve destek temizleme ipuçları.">
 <meta name="author" content="Uğur Kapancı">
 <link rel="canonical" href="https://edu3dmodel.com/posts/destek-yapilari-supports-rehberi/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6ece388c148cf5fb70d9c4894bc76913ed58aa5e90d47d0964098bb6f2c6c671.css" integrity="sha256-bs44jBSM9ftw2cSJS8dpE&#43;1Yql6Q1H0JZAmLtvLGxnE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.72ac053a967c25f4dcc9bca267f373194ad25d8a08b6666f780e1f8b63f7c3aa.css" integrity="sha256-cqwFOpZ8JfTcybyiZ/NzGUrSXYoItmZveA4fi2P3w6o=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -27,7 +27,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.49ddcdcb96fba1fc10657747dfc127509027bb18e5aad936916eaf46475bde44.css" integrity="sha256-Sd3Ny5b7ofwQZXdH38EnUJAnuxjlqtk2kW6vRkdb3kQ=">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.1806728890156707db65ea8cf779c78539bbe62ba8ae8c34a51f08403b2c3dcf.css" integrity="sha256-GAZyiJAVZwfbZeqM93nHhTm75iuorow0pR8IQDssPc8=">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /><meta property="og:url" content="https://edu3dmodel.com/posts/destek-yapilari-supports-rehberi/">
@@ -210,7 +210,44 @@
 
 
 
+<div class="post-layout-wrapper">
+    
+    
+    
+        <aside class="post-toc-sidebar">
+            <div class="sticky-toc">
+                <strong>İçindekiler</strong>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#destek-yapıları-neden-gereklidir-yer-çekimine-karşı-savaş"><strong>Destek Yapıları Neden Gereklidir? (Yer Çekimine Karşı Savaş)</strong></a></li>
+        <li><a href="#başlıca-destek-türleri-ve-sizin-için-hangisi-uygun"><strong>Başlıca Destek Türleri ve Sizin İçin Hangisi Uygun?</strong></a>
+          <ul>
+            <li><a href="#1-ağaç-destekler-tree-supports"><strong>1. Ağaç Destekler (Tree Supports)</strong></a></li>
+            <li><a href="#2-doğrusal-normal-destekler"><strong>2. Doğrusal (Normal) Destekler</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#destek-ayarları-slicer"><strong>Destek Ayarları: Slicer&rsquo;da Mükemmel Dengeyi Bulmak</strong></a>
+          <ul>
+            <li><a href="#1-destek-açıları-overhang-angle--support-threshold"><strong>1. Destek Açıları (Overhang Angle / Support Threshold)</strong></a></li>
+            <li><a href="#2-destek-yoğunluğu-support-density--fill-density"><strong>2. Destek Yoğunluğu (Support Density / Fill Density)</strong></a></li>
+            <li><a href="#3-destek-z-mesafesi-support-z-distance--z-gap"><strong>3. Destek Z Mesafesi (Support Z Distance / Z Gap)</strong></a></li>
+            <li><a href="#4-destek-temas-alanı-support-interface--topbottom-z-distance"><strong>4. Destek Temas Alanı (Support Interface / Top/Bottom Z Distance)</strong></a></li>
+            <li><a href="#5-sadece-yatağa-değen-destekler-supports-from-build-plate-only"><strong>5. Sadece Yatağa Değen Destekler (Supports from Build Plate Only)</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#destek-yapılarını-temizleme-kusursuz-son-dokunuşlar"><strong>Destek Yapılarını Temizleme: Kusursuz Son Dokunuşlar</strong></a></li>
+        <li><a href="#sonuç-destekler-düşman-değil-dosttur"><strong>Sonuç: Destekler Düşman Değil, Dosttur!</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+        </aside>
+    
 
+    
     <article class="post-single">
         <header class="post-header">
             <div class="breadcrumbs"><a href="https://edu3dmodel.com/">Home</a>&nbsp;»&nbsp;<a href="https://edu3dmodel.com/posts/">Posts</a></div>
@@ -233,7 +270,8 @@
 28 Mayıs 2025</span>· 
                 <span>5 dk okuma</span>· <span class="post-categories"><a href="https://edu3dmodel.com/categories/beceri-geli%C5%9Ftirme-ve-ileri-teknikler/">Beceri Geliştirme ve İleri Teknikler</a></span></div>
         </header><div class="post-cover">
-            <img src="https://edu3dmodel.com/images/supports-cover.png" alt="3D baskıda destek yapıları"><p class="post-cover-caption">Baskı Başarısı İçin Kritik: 3D Baskı Destek Yapıları Rehberi</p></div><div class="post-content"><p>3D baskı dünyasında, kusursuz bir model elde etmenin önündeki en büyük engellerden biri, modelin geometrik yapısıdır. Yer çekimi, bazen hayallerinizdeki objenin belirli kısımlarının havada asılı kalmasına neden olur. İşte tam da bu noktada, sessiz kahramanlarımız devreye girer: <strong>Destek Yapıları (Supports).</strong></p>
+            <img src="https://edu3dmodel.com/images/supports-cover.png" alt="3D baskıda destek yapıları"><p class="post-cover-caption">Baskı Başarısı İçin Kritik: 3D Baskı Destek Yapıları Rehberi</p></div><div class="post-content">
+            <p>3D baskı dünyasında, kusursuz bir model elde etmenin önündeki en büyük engellerden biri, modelin geometrik yapısıdır. Yer çekimi, bazen hayallerinizdeki objenin belirli kısımlarının havada asılı kalmasına neden olur. İşte tam da bu noktada, sessiz kahramanlarımız devreye girer: <strong>Destek Yapıları (Supports).</strong></p>
 <blockquote>
 <p>&ldquo;Destekler Düşman Değil, Dosttur!&rdquo;</p></blockquote>
 <p>Peki, destekler neden bu kadar önemli? Onları ne zaman kullanmalısınız ve baskı kalitenizi düşürmeden onları nasıl doğru bir şekilde ayarlayabilirsiniz? Bu kapsamlı rehberde, 3D baskıda destek yapılarının ne zaman vazgeçilmez olduğunu, farklı destek türlerini, slicer ayarlarını ve baskı bittikten sonra destekleri modelden nasıl kolayca ayıracağınızı adım adım öğreneceksiniz.</p>
@@ -339,13 +377,57 @@ Desteklerin modelden kolayca ayrılmasını ve temiz bir alt yüzey bırakmasın
 <p>Destek yapıları, 3D baskıdaki kötü şöhretlerine rağmen, karmaşık ve zorlu geometrileri başarıyla basmak için vazgeçilmez dostlarımızdır. Doğru destek türünü seçerek, slicer&rsquo;da uygun ayarları yaparak ve destekleri dikkatlice temizleyerek, baskılarınızın kalitesini önemli ölçüde artırabilir ve hayallerinizdeki modelleri kusursuz bir şekilde hayata geçirebilirsiniz. Unutmayın, yer çekimini yenen her başarılı baskının arkasında, doğru ayarlanmış destekler vardır!</p>
 <hr>
 <p><strong>Siz de destek yapılarıyla ilgili kendi ipuçlarınızı veya zorlu deneyimlerinizi yorumlarda paylaşın!</strong></p>
-</div>
-        <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/3d-bask%C4%B1-destekleri/">3D Baskı Destekleri</a></li><li><a href="https://edu3dmodel.com/tags/supports/">Supports</a></li><li><a href="https://edu3dmodel.com/tags/a%C5%9F%C4%B1r%C4%B1-%C3%A7%C4%B1k%C4%B1nt%C4%B1lar/">Aşırı Çıkıntılar</a></li><li><a href="https://edu3dmodel.com/tags/overhangs/">Overhangs</a></li><li><a href="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1-destek/">Slicer Ayarları Destek</a></li><li><a href="https://edu3dmodel.com/tags/bask%C4%B1-kalitesi/">Baskı Kalitesi</a></li><li><a href="https://edu3dmodel.com/tags/destek-%C3%A7%C4%B1karma/">Destek Çıkarma</a></li><li><a href="https://edu3dmodel.com/tags/tree-supports/">Tree Supports</a></li><li><a href="https://edu3dmodel.com/tags/normal-supports/">Normal Supports</a></li><li><a href="https://edu3dmodel.com/tags/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></li></ul></footer>
+
+        </div>
+    
+        <footer class="post-footer"><ul class="post-tags"><li><a href="https://edu3dmodel.com/tags/3d-bask%C4%B1-destekleri/">3D Baskı Destekleri</a></li><li><a href="https://edu3dmodel.com/tags/supports/">Supports</a></li><li><a href="https://edu3dmodel.com/tags/a%C5%9F%C4%B1r%C4%B1-%C3%A7%C4%B1k%C4%B1nt%C4%B1lar/">Aşırı Çıkıntılar</a></li><li><a href="https://edu3dmodel.com/tags/overhangs/">Overhangs</a></li><li><a href="https://edu3dmodel.com/tags/slicer-ayarlar%C4%B1-destek/">Slicer Ayarları Destek</a></li><li><a href="https://edu3dmodel.com/tags/bask%C4%B1-kalitesi/">Baskı Kalitesi</a></li><li><a href="https://edu3dmodel.com/tags/destek-%C3%A7%C4%B1karma/">Destek Çıkarma</a></li><li><a href="https://edu3dmodel.com/tags/tree-supports/">Tree Supports</a></li><li><a href="https://edu3dmodel.com/tags/normal-supports/">Normal Supports</a></li><li><a href="https://edu3dmodel.com/tags/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></li></ul><div class="share-buttons">
+    <span class="share-buttons_title">Paylaş:</span>
+    <div class="share-buttons_list">
+        
+        <a href="https://twitter.com/intent/tweet/?text=Destek%20Yap%c4%b1lar%c4%b1%20%28Supports%29%3a%20Ne%20Zaman%2c%20Neden%20ve%20Nas%c4%b1l%20Kullan%c4%b1l%c4%b1r%3f%20%28Bask%c4%b1%20Ba%c5%9far%c4%b1s%c4%b1%20%c4%b0%c3%a7in%20Kritik%29&url=https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f" 
+            target="_blank" rel="noopener" aria-label="Twitter'da paylaş" class="share-buttons_button social-twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f&title=Destek%20Yap%c4%b1lar%c4%b1%20%28Supports%29%3a%20Ne%20Zaman%2c%20Neden%20ve%20Nas%c4%b1l%20Kullan%c4%b1l%c4%b1r%3f%20%28Bask%c4%b1%20Ba%c5%9far%c4%b1s%c4%b1%20%c4%b0%c3%a7in%20Kritik%29&summary=3D%20bask%c4%b1da%20destek%20yap%c4%b1lar%c4%b1n%c4%b1n%20%28supports%29%20neden%20gerekli%20oldu%c4%9funu%2c%20a%c5%9f%c4%b1r%c4%b1%20%c3%a7%c4%b1k%c4%b1nt%c4%b1lar%c4%b1%20ve%20k%c3%b6pr%c3%bcleri%20nas%c4%b1l%20destekleyece%c4%9finizi%20%c3%b6%c4%9frenin.%20A%c4%9fa%c3%a7%20ve%20do%c4%9frusal%20destek%20t%c3%bcrleri%2c%20slicer%20ayarlar%c4%b1%20ve%20destek%20temizleme%20ipu%c3%a7lar%c4%b1."
+            target="_blank" rel="noopener" aria-label="LinkedIn'de paylaş" class="share-buttons_button social-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://reddit.com/submit/?url=https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f&title=Destek%20Yap%c4%b1lar%c4%b1%20%28Supports%29%3a%20Ne%20Zaman%2c%20Neden%20ve%20Nas%c4%b1l%20Kullan%c4%b1l%c4%b1r%3f%20%28Bask%c4%b1%20Ba%c5%9far%c4%b1s%c4%b1%20%c4%b0%c3%a7in%20Kritik%29" 
+            target="_blank" rel="noopener" aria-label="Reddit'te paylaş" class="share-buttons_button social-reddit">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+
+        <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f" 
+            target="_blank" rel="noopener" aria-label="Facebook'ta paylaş" class="share-buttons_button social-facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?text=Destek%20Yap%c4%b1lar%c4%b1%20%28Supports%29%3a%20Ne%20Zaman%2c%20Neden%20ve%20Nas%c4%b1l%20Kullan%c4%b1l%c4%b1r%3f%20%28Bask%c4%b1%20Ba%c5%9far%c4%b1s%c4%b1%20%c4%b0%c3%a7in%20Kritik%29&url=https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f" 
+            target="_blank" rel="noopener" aria-label="WhatsApp'ta paylaş" class="share-buttons_button social-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.instagram.com" 
+            target="_blank" rel="noopener" aria-label="Instagram'da paylaş" class="share-buttons_button social-instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:?subject=Destek%20Yap%c4%b1lar%c4%b1%20%28Supports%29%3a%20Ne%20Zaman%2c%20Neden%20ve%20Nas%c4%b1l%20Kullan%c4%b1l%c4%b1r%3f%20%28Bask%c4%b1%20Ba%c5%9far%c4%b1s%c4%b1%20%c4%b0%c3%a7in%20Kritik%29&body=Bu yazıyı faydalı bulabilirsin:%20https%3a%2f%2fedu3dmodel.com%2fposts%2fdestek-yapilari-supports-rehberi%2f" 
+            target="_blank" rel="noopener" aria-label="E-posta ile gönder" class="share-buttons_button social-mail">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+</div></footer>
         <div id="comments" style="margin-top: 40px;">
             <hr><h2>Yorumlar</h2>
             <script src="https://giscus.app/client.js" data-repo="uurk55/uurk55.github.io" data-repo-id="R_kgDOMX0zYw" data-category="Announcements" data-category-id="DIC_kwDOMX0zY84CfIeL" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="tr" crossorigin="anonymous" async></script>
         </div>
+        
     </article>
+</div>
 
 
     </main>
@@ -478,56 +560,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    
     const sidebarSearchInput = document.getElementById('sidebar-search-input');
     if (sidebarSearchInput) {
         const mainContent = document.querySelector('.main-content-right');
         const originalContentHTML = mainContent.innerHTML;
-
-        
         const handleSearch = function(e) {
             const query = e.target.value.trim().toLowerCase();
-
-            if (query.length === 0) {
-                mainContent.innerHTML = originalContentHTML;
-                return;
-            }
-
-            if (query.length < 2 || !fuse) {
-                return;
-            }
-            
+            if (query.length === 0) { mainContent.innerHTML = originalContentHTML; return; }
+            if (query.length < 2 || !fuse) { return; }
             const results = fuse.search(query);
             mainContent.innerHTML = '';
-
             if (results.length > 0) {
                 const resultsGrid = document.createElement('div');
                 resultsGrid.className = 'post-card-grid-final';
-
                 results.forEach(result => {
                     const post = result.item;
                     const firstCategory = post.categories && post.categories.length > 0 ? post.categories[0] : '';
-                    
-                    
                     const coverHTML = post.cover ? `<img src="${post.cover}" alt="${post.title}">` : '<div class="image-placeholder-v2"></div>';
-
-                    const cardHTML = `
-                    <article class="post-card-v2 published">
-                        <a href="${post.permalink}" class="post-card-link">
-                            <div class="post-card-image-v2">${coverHTML}</div>
-                            <div class="post-card-content-v2">
-                                <span class="post-title">${post.title}</span>
-                                <p class="post-card-summary">${post.description || (post.summary ? post.summary.substring(0, 150) : '')}</p>
-                                <div class="post-card-footer">
-                                    <div class="post-meta-v2">
-                                        <span class="meta-category"><i class="fas fa-folder-open"></i> ${firstCategory}</span>
-                                        <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
-                                        <span><i class="far fa-clock"></i> ${post.readingTime} dk</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>`;
+                    const cardHTML = `<article class="post-card-v2 published"><a href="${post.permalink}" class="post-card-link"><div class="post-card-image-v2">${coverHTML}</div><div class="post-card-content-v2"><span class="post-title">${post.title}</span><p class="post-card-summary">${post.description || (post.summary ? post.summary.substring(0, 150) : '')}</p><div class="post-card-footer"><div class="post-meta-v2"><span class="meta-category"><i class="fas fa-folder-open"></i> ${firstCategory}</span><span><i class="far fa-calendar-alt"></i> ${post.date}</span><span><i class="far fa-clock"></i> ${post.readingTime} dk</span></div></div></div></a></article>`;
                     resultsGrid.innerHTML += cardHTML;
                 });
                 mainContent.appendChild(resultsGrid);
@@ -535,43 +585,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 mainContent.innerHTML = '<p style="text-align:center;">Aradığınız kriterlere uygun sonuç bulunamadı.</p>';
             }
         };
-
-        
         sidebarSearchInput.addEventListener('keyup', handleSearch);
-        sidebarSearchInput.addEventListener('search', handleSearch); 
+        sidebarSearchInput.addEventListener('search', handleSearch);
     }
-});
-    
-    
-    if (document.body.classList.contains('page-buradan-basla')) {
-        
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                
-                if (window.pageYOffset === 0) {
-                    
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                        
-                        const offsetPosition = targetPosition - 100; 
 
-                        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
+    
+    const toc = document.querySelector('.post-toc-sidebar');
+    if (toc) {
+        const tocLinks = toc.querySelectorAll('a');
+        const headers = Array.from(tocLinks).map(link => {
+            const id = link.getAttribute('href').substring(1);
+            return document.getElementById(id);
+        }).filter(Boolean);
+
+        const onScroll = () => {
+            const scrollPosition = window.scrollY;
+            let activeHeader = null;
+
+            headers.forEach(header => {
+                if (header.offsetTop <= scrollPosition + 110) {
+                    activeHeader = header;
                 }
-                
             });
-        });
+
+            tocLinks.forEach(link => {
+                link.parentElement.classList.remove('active');
+                if (activeHeader && link.getAttribute('href').substring(1) === activeHeader.id) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
     }
+    
+});
 </script></body>
 
 </html>

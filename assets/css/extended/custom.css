@@ -3649,3 +3649,91 @@ html {
     width: 15%;
     text-align: center; /* Sayıları ortalamak daha şık durur */
 }
+/* ============================================= */
+/* --- YAZI İÇİ TABLOLAR (NİHAİ, GARANTİLİ ÇÖZÜM v2) --- */
+/* ============================================= */
+
+.diagnostic-table,
+.summary-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 2.5em 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: var(--radius);
+    /* --- DEĞİŞİKLİK: Dış çerçeve kaldırıldı. Sorunun ana kaynağı bu olmalı. --- */
+    /* border: 1px solid var(--border-color); */
+    table-layout: fixed;
+}
+
+.diagnostic-table th,
+.summary-table th {
+    background-color: var(--primary);
+    color: var(--primary-content);
+    font-weight: 600;
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.diagnostic-table td,
+.summary-table td {
+    padding: 15px 20px;
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.diagnostic-table tbody tr:hover td,
+.summary-table tbody tr:hover td {
+    background-color: var(--code-bg);
+}
+
+.diagnostic-table tr:last-child td,
+.summary-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- KÖŞELERİ YUVARLATMA --- */
+.diagnostic-table th:first-child,
+.summary-table th:first-child {
+    border-top-left-radius: var(--radius);
+}
+.diagnostic-table th:last-child,
+.summary-table th:last-child {
+    border-top-right-radius: var(--radius);
+}
+.diagnostic-table tr:last-child td:first-child,
+.summary-table tr:last-child td:first-child {
+    border-bottom-left-radius: var(--radius);
+}
+.diagnostic-table tr:last-child td:last-child,
+.summary-table tr:last-child td:last-child {
+    border-bottom-right-radius: var(--radius);
+}
+
+
+/* --- SÜTUN GENİŞLİKLERİ VE HİZALAMALAR --- */
+.diagnostic-table td:first-child { width: 55%; }
+.diagnostic-table td:nth-child(2) { width: 30%; }
+.diagnostic-table td:last-child { width: 15%; text-align: center; }
+
+.summary-table td { text-align: center; }
+.summary-table td:first-child { width: 50%; text-align: left; font-weight: 500; }
+.summary-table td:nth-child(2),
+.summary-table td:nth-child(3) { width: 15%; }
+.summary-table td:last-child { width: 60%; text-align: left; }
+
+
+/* Teşhis tablosundaki renkli etiketler */
+.category-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+}
+.badge-adhesion { background-color: #dc3545; }
+.badge-mechanical { background-color: #ffc107; color: #333; }
+.badge-extrusion { background-color: var(--accent); }

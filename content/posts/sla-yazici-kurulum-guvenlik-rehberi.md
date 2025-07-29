@@ -26,68 +26,78 @@ cover:
     relative: false
 ---
 
-3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! Ancak, FDM yazıcıların mekanik dünyasından, SLA'nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, **güvenlik** olacak.
+3D baskı dünyasında detayların ve pürüzsüz yüzeylerin peşine düşerek bir SLA (reçine) yazıcı tercih ettiniz. Sanatçı ruhunuzu ve kaliteye verdiğiniz önemi tebrik ederim! FDM yazıcıların mekanik ve gürültülü dünyasından, SLA'nın sessiz, hassas ve adeta bir kimya laboratuvarını andıran atmosferine geçiş yapıyoruz. Bu yeni dünyada en büyük önceliğimiz montajdan çok, **güvenlik** ve **özen** olacak.
 
 > "SLA'nın adeta bir kimya laboratuvarını andıran dünyasına geçiş yaparken, yaklaşımımızı da tamamen değiştirmemiz gerekiyor. Burada en büyük önceliğimiz montajdan çok, güvenlik olacak."
 
-Bu **SLA yazıcı kurulum rehberi**, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru ve en güvenli şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur **yıkama ve kürleme** (wash and cure) işlemlerine kadar tüm adımları birlikte, sakin ve kontrollü bir şekilde atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!
+Bu rehber, sizi sadece ilk başarılı baskınıza ulaştırmakla kalmayacak, aynı zamanda bunu kendinize ve çevrenize zarar vermeden, en doğru şekilde yapmanızı sağlayacak. Reçine hazırlığından, o meşhur **yıkama ve kürleme** işlemlerine kadar tüm adımları birlikte, bir sanatçının titizliğiyle atacağız. Unutmayın, reçine baskı bir sanattır ve her sanatçı gibi, bizim de önce atölyemizi doğru kurmamız gerekir. Hazırsanız, eldivenlerimizi takıp başlayalım!
 
-{{< tip-box title="⚠️ Güvenlik Her Şeyden Önce Gelir" >}}
-Sıvı reçine bir kimyasaldır. Reçineyle her temasınızda mutlaka nitril eldiven, koruyucu gözlük ve maske kullanın. İyi havalandırılmış bir alanda çalıştığınızdan emin olun.
+### SLA Zihniyeti: Sabır, Temizlik ve Hassasiyet
+
+Teknik adımlara dalmadan önce, bir an duralım. SLA baskı, FDM'in "bas ve unut" rahatlığından farklı bir zihniyet gerektirir. Burada bir teknisyenden çok, bir **simyacı** veya **heykeltıraş** gibi düşünmelisiniz. Sürecin her adımı – hazırlık, baskı ve son işlemler – birbiriyle bağlantılıdır ve aynı özeni ister. Acele etmeyin, temiz çalışın ve her adımın tadını çıkarın.
+
+{{< tip-box title="⚠️ Güvenlik Kontrol Listesi" >}}
+**Atölyenizde Olmazsa Olmazlar:**
+* **🏞️ Havalandırma:** Sürekli açık bir pencere veya havalandırma sistemi. **Bu ilk adımdır.**
+* **🧤 Nitril Eldivenler:** Reçineyle her temasınızda mutlaka kullanın.
+* **👓 Koruyucu Gözlük:** Sıçramalara karşı tam koruma sağlayan bir model seçin.
+* **😷 Maske:** Reçine buharları için (tercihen aktif karbon filtreli) bir maske.
+* **💧 İzopropil Alkol (IPA):** Temizlik için bol miktarda (%99 saflıkta ideal).
+* **🧻 Kağıt Havlu & Silikon Mat:** Dökülmelere karşı çalışma alanınızı koruyun.
 {{< /tip-box >}}
 
-### Bölüm 1: Atölyenizi Hazırlayın - Önce Güvenlik!
+## Atölye Kurulumu: Sanatçının Kutsal Alanı
 
-Baskı kalitesinden önce, en önemli kuralı masaya yatıralım: **Sıvı reçine bir kimyasaldır ve ciddiye alınmalıdır.** Doğrudan cilde temas etmemeli ve buharları solunmamalıdır.
+Güvenli çalışma alanınız hazır olduğuna göre, şimdi makinenin kendisini hazırlayalım. SLA yazıcıların mekanik kurulumu genellikle basittir, ancak tabla kalibrasyonu **başarı ile başarızlık arasındaki ince çizgidir.**
 
-![Kişisel koruyucu ekipmanlar: Nitril eldiven, gözlük ve maske bir masada duruyor](/images/sla-guvenlik-ekipman.jpg)
+![Bir kişinin SLA yazıcının baskı tablası ile LCD ekranı arasına bir kalibrasyon kartı koyması](/images/sla-kurulum-kalibrasyon.jpg "Bu basit kart, mikron düzeyinde bir hassasiyet ayarı yapmanızı sağlar.")
 
-**Başlamadan Önce Hazırlamanız Gerekenler:**
-1.  **İyi Havalandırılan Bir Alan:** Yazıcınızı yaşadığınız odadan uzakta, penceresi sürekli açık kalabilen bir alana kurun.
-2.  **Kişisel Koruyucu Ekipman (PPE):** Reçineyle her temasınızda mutlaka **nitril eldiven, koruyucu gözlük ve maske** kullanın.
-3.  **Yüzey Koruması:** Masanızın üzerini, dökülmelere karşı büyük bir **silikon mat** veya karton ile kaplayın. Yanınızda bolca kağıt havlu bulundurun.
-
-### Bölüm 2: Mekanik Kurulum ve Tabla Kalibrasyonu
-
-Güvenli çalışma alanınız hazır olduğuna göre, şimdi makinenin kendisini hazırlayalım. SLA yazıcıların mekanik kurulumu genellikle basittir, ancak tabla kalibrasyonu **hayati öneme sahiptir.**
-
-![Bir kişinin SLA yazıcının baskı tablası ile LCD ekranı arasına bir kalibrasyon kartı koyması](/images/sla-kurulum-kalibrasyon.jpg)
-
-**Kalibrasyon Adımları:**
-1.  **Reçine Haznesini Çıkarın:** Bu adımda sadece çıplak LCD ekran üzerinde çalışacağız.
+**Kalibrasyon Ritüeli (Sırasıyla):**
+1.  **Reçine Haznesini Çıkarın:** Sadece çıplak LCD ekran üzerinde çalışacağız.
 2.  **Baskı Tablasını Gevşetin:** Üzerindeki vidaları, tabla serbestçe hareket edebilecek kadar gevşetin.
 3.  **Kalibrasyon Kağıdını Yerleştirin:** Üreticinin verdiği kalibrasyon kartını (veya bir A4 kağıdını) LCD ekranın üzerine koyun.
-4.  **"Home" Konumuna Gönderin:** Menüden, tablayı en alt pozisyona indiren komutu çalıştırın.
-5.  **Sabitleyin ve Sıkın:** Tabla kağıdın üzerine oturduğunda, bir elinizle hafifçe bastırırken diğer elinizle vidaları dengeli bir şekilde sıkın.
-6.  **"Set Z=0" Ayarını Yapın:** Menüden bu komutu bularak yazıcıya sıfır noktasını öğretin.
+4.  **"Home" Komutunu Verin:** Menüden, tablayı en alt pozisyona indiren komutu çalıştırın.
+5.  **Tablayı Sabitleyin:** Tabla kağıdın üzerine oturduğunda, bir elinizle hafifçe bastırırken diğer elinizle vidaları dengeli bir şekilde sıkın.
+6.  **"Set Z=0" ile Mühürleyin:** Menüden bu komutu bularak yazıcıya "Burası başlangıç noktamızdır" deyin.
 
-### Bölüm 3: Reçineyi Hazırlama ve İlk Baskıyı Başlatma
+## O Sihirli An: Işıkla Yaratmaya Başlamak
 
 Bu adımlarda yavaş ve dikkatli olmak, başarılı bir baskının anahtarıdır.
 
-**Reçineyi Hazırlama:** Yeni bir reçine şişesini, içinde hava kabarcıkları oluşturmadan, **en az 30 saniye boyunca yavaşça alt üst ederek çalkalayın.**
+**Reçineyi Hazırlama:** Yeni bir reçine şişesini, içinde hava kabarcıkları oluşturmadan, **en az 30 saniye boyunca yavaşça alt üst ederek çalkalayın.** Bu, reçinenin içindeki pigmentlerin homojen bir şekilde dağılmasını sağlar.
 Reçine türleri ve özellikleri hakkında daha fazla bilgi için, **[PLA, PETG, ABS ve Reçine Farkları: Hangi 3D Baskı Malzemesini Seçmelisiniz?]({{< ref "posts/3d-baski-malzeme-rehberi.md" >}})** rehberimize göz atabilirsiniz.
 
 **Baskıyı Başlatma:** Eldivenleriniz takılıyken, reçineyi haznenin "MAX" çizgisini geçmeyecek kadar dökün. Yazıcıyla gelen USB bellekten bir test modeli seçin ve "Print" tuşuna basın. İlk 10-15 dakika boyunca, baskının tablaya yapışıp yapışmadığını gözlemleyin.
 
-### Bölüm 4: Yıkama ve Kürleme - Eserinizi Ortaya Çıkarma Sanatı
+## Son Dokunuşlar: Eserinizi Gün Yüzüne Çıkarma Sanatı
 
-Baskınız bitti ama işiniz bitmedi! O yapışkan nesneyi şimdi son haline getireceğiz.
+Baskınız bitti ama işiniz bitmedi! O yapışkan nesneyi şimdi son haline getireceğiz. Bu, bir heykeltıraşın eserindeki fazla kili temizlemesine benzer.
 
-**1. Baskıyı Sökme:** Eldivenlerinizle, baskı tablasını yazıcıdan çıkarın. Bir spatula yardımıyla modeli dikkatlice tabladan ayırın.
-**2. Yıkama (Wash):** Amacımız, modelin üzerindeki kürlenmemiş sıvı reçineyi temizlemek. Bunun için, bir **yıkama istasyonu** veya iki ayrı kapta **izopropil alkol (IPA)** kullanabilirsiniz.
-**3. Kürleme (Cure):** Yıkanmış ve tamamen kurutulmuş model, nihai gücüne ulaşmak için UV ışığıyla sertleştirilmelidir. Bu işlemi bir **kürleme istasyonu** ile veya modeli birkaç saatliğine **doğrudan güneş ışığına** bırakarak yapabilirsiniz.
+![Bir yıkama ve kürleme istasyonunun içinde dönen ve UV ışığı alan bir 3D model](/images/sla-wash-cure.jpg "Yıkama ve kürleme, baskınızın gerçek potansiyelini ortaya çıkarır.")
 
-![Bir yıkama ve kürleme istasyonunun içinde dönen ve UV ışığı alan bir 3D model](/images/sla-wash-cure.jpg)
+**Baskı Sonrası İşlemler (Sırasıyla):**
+1.  **Sökme:** Eldivenlerinizle, baskı tablasını yazıcıdan çıkarın. Bir spatula yardımıyla modeli dikkatlice tabladan ayırın.
+2.  **Yıkama (Wash):** Modelin üzerindeki kürlenmemiş sıvı reçineyi temizleyin. Bunun için, bir **yıkama istasyonu** veya iki ayrı kapta **izopropil alkol (IPA)** kullanabilirsiniz. İlk kap kaba temizlik, ikinci kap ise ince temizlik içindir.
+3.  **Kürleme (Cure):** Yıkanmış ve tamamen kurutulmuş model, nihai gücüne ulaşmak için UV ışığıyla sertleştirilmelidir. Bu işlemi bir **kürleme istasyonu** ile veya modeli birkaç saatliğine **doğrudan güneş ışığına** bırakarak yapabilirsiniz.
 
-{{< success-story-box title="✨ Başarı Hikayesi: Detayların Peşindeki Girişimci" >}}
-Deniz, FDM'den SLA'ya geçerken kimyasal reçine ve karmaşık temizlik süreçlerinden çekinmişti. Ama bu rehberdeki adımları titizlikle uyguladı. İlk detaylı minyatür baskısını eline aldığında, bu kalitenin ona yeni niş pazarlar açacağını fark etti ve şimdi online mağazasında kişiye özel figürler satarak harika kazançlar elde ediyor! SLA, doğru yaklaşımla inanılmaz sonuçlar verir.
+{{< success-story-box title="✨ Detayların Peşindeki Girişimci" >}}
+Deniz, FDM'den SLA'ya geçerken kimyasal reçine ve karmaşık temizlik süreçlerinden çekinmişti. Ama bu rehberdeki adımları titizlikle uyguladı. İlk detaylı minyatür baskısını eline aldığında, bu kalitenin ona yeni niş pazarlar açacağını fark etti.
+**Pro-İpucu:** Deniz şimdi online mağazasında kişiye özel figürler satarak harika kazançlar elde ediyor! SLA, doğru yaklaşımla inanılmaz sonuçlar verir.
 {{< /success-story-box >}}
 
-### SONUÇ
+## Sanat Eseriniz Hazır!
 
-İşte bu kadar! Güvenli bir çalışma alanı kurmaktan, o yapışkan ilk baskıyı pırıl pırıl bir sanat eserine dönüştürmeye kadar, bir SLA yazıcıyla ilk başarılı üretiminizi yapmanın tüm adımlarını tamamladınız. Gördüğünüz gibi, reçine baskı FDM'den farklı bir disiplin ve dikkat gerektiriyor, ancak sunduğu inanılmaz detay ve yüzey kalitesi, harcanan bu emeğe kesinlikle değiyor.
+Tebrikler! Artık bir SLA yazıcının kurulumunun ardındaki simyayı çözdünüz. Güvenli bir çalışma alanı kurmaktan, o yapışkan ilk baskıyı pırıl pırıl bir sanat eserine dönüştürmeye kadar, reçine dünyasındaki ilk maceranızı başarıyla tamamladınız. Elinizde tuttuğunuz o pürüzsüz nesne, sizin sabrınızın ve sanatçı ruhunuzun ilk ürünü.
 
----
+### Yolculuğun Bir Sonraki Durağı
 
-**SLA baskı deneyimleriniz, güvenlik ipuçlarınız veya en detaylı baskı başarılarınız nelerdi? Yorumlarda bizimle paylaşın!**
+Makineniz artık baskıya hazır. Peki, bu güçlü alete ne basacağını ve nasıl basacağını söyleyen o sihirli "dilimleyici" (slicer) yazılımlar nasıl kullanılır? Baskı kalitenizi en üst düzeye çıkaracak ve hayalinizdeki modelleri gerçeğe dönüştürecek temel ayarları öğrenme zamanı!
+
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Kendi modellerinizi baskıya hazırlamanın sırlarını keşfetmek için bir sonraki temel rehberimize geçin.</p>
+<a href="{{< ref "posts/temel-slicer-ayarlari.md" >}}" class="cta-button">Temel Slicer Ayarları Rehberine Git →</a>
+</div>
+
+### Deneyimlerinizi Paylaşın!
+SLA baskı deneyimleriniz, güvenlik ipuçlarınız veya en detaylı baskı başarılarınız nelerdi? Yorumlarda bizimle paylaşarak diğer sanatçılara ilham verin!

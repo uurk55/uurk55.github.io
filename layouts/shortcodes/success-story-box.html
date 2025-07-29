@@ -1,4 +1,4 @@
 <div class="success-story-box">
     {{ if .Get "title" }}<h4>✨ {{ .Get "title" }}</h4>{{ else }}<h4>✨ Başarı Hikayesi</h4>{{ end }}
-    {{ .Inner }}
+    {{ .Inner | .Page.RenderString }}
 </div>

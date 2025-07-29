@@ -1,5 +1,5 @@
 ---
-title: "PLA, PETG, ABS ve Reçine Farkları: Hangi 3D Baskı Malzemesini Seçmelisiniz?"
+title: "PLA, PETG, ABS ve Reçine: Projeniz İçin Doğru 3D Baskı Malzemesi Hangisi?"
 date: 2025-04-26T11:00:00+03:00
 featured: false
 draft: false
@@ -8,7 +8,7 @@ tags: ["PLA Filament", "PETG Filament", "ABS Filament", "3D Baskı Reçine", "Ma
 categories: ["Teknik İpuçları"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
-author: "uurk55"
+author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
 hidemeta: false
@@ -26,90 +26,109 @@ cover:
     relative: false
 ---
 
-Tebrikler! Zorlu bir araştırmanın sonunda sizin için en doğru 3D yazıcıyı seçtiniz. O büyük kutu evinize geldi, kurulumu yaptınız ve ilk deneme baskınızı aldınız. Peki şimdi ne olacak? İşte bu noktada, birçok yeni başlayanın gözden kaçırdığı ama projenizin başarısını doğrudan etkileyen en kritik soru ortaya çıkıyor: **Hangi malzemeyi kullanmalıyım?**
+Tebrikler! Zorlu bir araştırmanın sonunda sizin için en doğru 3D yazıcıyı seçtiniz. Kurulumu yaptınız, ilk deneme baskınızı aldınız ve o büyülü anı yaşadınız. Şimdi ise yaratıcılığınızı konuşturma zamanı. Peki, o muhteşem fikrinizi hayata geçirmek için hangi "yapı taşını" kullanacaksınız?
 
-Doğru malzemeyi seçmek, yemeğiniz için doğru baharatı seçmek gibidir; sonuç, ya unutulmaz bir lezzet ya da bir hayal kırıklığı olabilir. Piyasada **PLA, PETG, ABS** gibi onlarca filament çeşidi ve farklı özelliklerde reçineler varken, doğru seçimi yapmak kafa karıştırıcı olabilir.
+Doğru malzemeyi seçmek, bir şefin yemeği için doğru baharatı seçmesi gibidir; sonuç ya unutulmaz bir lezzet ya da bir hayal kırıklığı olabilir. Piyasada **PLA, PETG, ABS** gibi onlarca filament çeşidi ve farklı özelliklerde reçineler varken, doğru seçimi yapmak ilk başta göz korkutucu gelebilir.
 
-Bu rehberde, en popüler **3D yazıcı filament çeşitlerini** ve temel reçine türlerini masaya yatıracağız. Her birinin güçlü ve zayıf yönlerini, hangi projeler için ideal olduklarını ve bilmeniz gereken pratik ipuçlarını öğreneceksiniz. Amacımız, bu yazının sonunda **hangi filamenti kullanmalıyım** sorusunu sizin için tamamen ortadan kaldırmak.
+Ama endişelenmeyin! Bu rehberde, en popüler 3D yazıcı malzemelerini masaya yatıracağız. Her birinin güçlü ve zayıf yönlerini, hangi projeler için ideal olduklarını ve bilmeniz gereken pratik ipuçlarını öğreneceksiniz. Amacımız, bu yazının sonunda **"Hangi malzemeyi kullanmalıyım?"** sorusunu sizin için tamamen ortadan kaldırmak.
 
-{{< tip-box title="💡 Profesyonel İpucu" >}}
-Filamentler neme karşı çok hassastır! Baskı kalitenizi korumak için filamentlerinizi her zaman nemsiz bir ortamda, kapalı bir kutuda veya özel bir filament kurutucuda saklayın.
+{{< tip-box title="💡 Nem, Filamentlerin Düşmanıdır!" >}}
+Filamentler neme karşı çok hassastır ve nemli filament, baskı kalitesini mahveder. Baskı kalitenizi korumak için filamentlerinizi her zaman nemsiz bir ortamda, kapalı bir kutuda veya özel bir filament kurutucuda saklayın.
 {{< /tip-box >}}
 
-### Bölüm 1: PLA Filament - En İyi Arkadaşınız
+## PLA Filament: Herkesin Güvenilir Dostu
 
-Eğer 3D baskı dünyasına ilk adımınızı atıyorsanız, tanışacağınız ilk ve muhtemelen en çok seveceğiniz malzeme PLA olacaktır. **PLA (Polilaktik Asit)**, mısır nişastası gibi yenilenebilir kaynaklardan üretilen, biyolojik olarak parçalanabilen bir termoplastiktir. Baskı sırasında o kötü plastik kokusunu yaymaz; aksine, bazen tatlı bir koku bile alabilirsiniz!
+Eğer 3D baskı dünyasına ilk adımınızı atıyorsanız, tanışacağınız ilk ve muhtemelen en çok seveceğiniz malzeme PLA olacaktır. **PLA (Polilaktik Asit)**, mısır nişastası gibi yenilenebilir kaynaklardan üretilen, biyolojik olarak parçalanabilen bir termoplastiktir. Baskı sırasında o kötü plastik kokusunu yaymaz; aksine, bazen tatlı, mısır gevreği gibi bir koku bile alabilirsiniz!
 
-![Parlak turuncu renkte bir PLA filament makarası ve ondan basılmış geometrik bir vazo](/images/malzeme-pla.jpg)
+![Parlak turuncu renkte bir PLA filament makarası ve ondan basılmış geometrik bir vazo](/images/malzeme-pla.jpg "PLA: Kolaylık, detay ve renk çeşitliliği.")
 
-**Avantajları:**
-* **Kolay Baskı:** Düşük erime sıcaklığı sayesinde "bas ve unut" kolaylığı sunar.
+**Neden PLA'yı Seveceksiniz?**
+* **Kolay Baskı:** Düşük erime sıcaklığı sayesinde "bas ve unut" kolaylığı sunar. Neredeyse her yazıcıda sorunsuzca çalışır.
 * **Kokusuz ve Güvenli:** Bitkisel bazlı olduğu için kapalı ortamlarda kullanımı daha rahattır.
 * **Keskin Detaylar:** Sert yapısı sayesinde, köşeleri ve kenarları net olan modeller için mükemmeldir.
 * **Geniş Renk Yelpazesi:** Piyasada hayal edebileceğiniz her renkte ve dokuda PLA bulabilirsiniz.
 
-**Zayıf Yönleri:**
+**Nelere Dikkat Etmelisiniz?**
 * **Düşük Isı Direnci:** 60°C'de yumuşamaya başlar. Güneşte veya sıcak arabada bırakılan ürünler deforme olabilir.
 * **Kırılganlık:** Esnemek yerine çatlayarak kırılma eğilimindedir.
 
-**PLA Hangi Projeler İçin Mükemmeldir?**
-Dekoratif objeler, figürler, hızlı prototipler ve doğrudan ısıya maruz kalmayacak pratik ev eşyaları.
+**PLA ile Neler Yapılır?**
+Dekoratif objeler, figürler, hızlı prototipler ve doğrudan ısıya veya darbeye maruz kalmayacak pratik ev eşyaları.
 
-### Bölüm 2: PETG Filament - PLA'dan Güçlü, ABS'den Kolay
+## PETG Filament: PLA'dan Güçlü, ABS'den Kolay
 
-Şimdi biraz daha fazlasını istiyorsunuz: dayanıklılık! İşte bu noktada sahneye **PETG (Polietilen Tereftalat Glikol)** çıkıyor. Onu, PLA'nın kullanım kolaylığı ile ABS'nin dayanıklılığını birleştiren bir hibrit olarak düşünebilirsiniz.
+Biraz daha fazlasını istiyorsunuz: **dayanıklılık!** İşte bu noktada sahneye **PETG (Polietilen Tereftalat Glikol)** çıkıyor. Onu, PLA'nın kullanım kolaylığı ile ABS'nin dayanıklılığını birleştiren bir hibrit olarak düşünebilirsiniz.
 
-![Yarı şeffaf (transparan) bir PETG filament makarası ve ondan basılmış sağlam bir mekanik parça](/images/malzeme-petg.jpg)
+![Yarı şeffaf (transparan) bir PETG filament makarası ve ondan basılmış sağlam bir mekanik parça](/images/malzeme-petg.jpg "PETG: Fonksiyonellik ve dayanıklılığın mükemmel dengesi.")
 
-**Avantajları:**
+**Neden PETG'yi Tercih Etmelisiniz?**
 * **Yüksek Darbe Direnci:** PLA gibi anında kırılmaz, darbe aldığında esner.
-* **Daha İyi Isı ve UV Direnci:** Dış mekan uygulamaları veya araba içi aksesuarlar için uygundur.
+* **Daha İyi Isı ve UV Direnci:** Dış mekan uygulamaları veya araba içi aksesuarlar için PLA'dan çok daha uygundur.
 * **Şeffaflık:** Gerçekten şeffaf baskılar alabileceğiniz nadir filamentlerdendir.
 
-**Zorlukları:**
-* **"Stringing" (İplenme):** Baskı kafası hareket ederken arkasında ince iplikçikler bırakabilir.
-* **Hassas Ayar Gerektirir:** PLA kadar "affedici" değildir, doğru ayarları bulmak biraz deneme gerektirir.
+**Nelere Hazırlıklı Olmalısınız?**
+* **"Stringing" (İplenme):** Baskı kafası hareket ederken arkasında ince iplikçikler bırakabilir. Slicer ayarlarınızda "retraction" (geri çekme) ayarını doğru yapmanız gerekir.
+* **Hassas Ayar Gerektirir:** PLA kadar "affedici" değildir, doğru ayarları bulmak biraz deneme gerektirebilir.
 
-**PETG Hangi Projeler İçin Mükemmeldir?**
-Fonksiyonel ve mekanik parçalar (dişliler, braketler), dış mekan uygulamaları (saksılar) ve suya dayanıklılık gerektiren ürünler.
+**PETG ile Neler Yapılır?**
+Fonksiyonel ve mekanik parçalar (dişliler, braketler), dış mekan uygulamaları (saksılar), su şişesi tutucuları gibi suya dayanıklılık gerektiren ürünler.
 
-{{< success-story-box title="✨ Başarı Hikayesi: Yanlış Malzeme ile Başlayan Sorun, PETG ile Gelen Çözüm" >}}
-Can, ilk dış mekan saksı baskısını PLA ile yapmıştı. Güneşte kısa sürede deforme olduğunu görünce büyük hayal kırıklığı yaşadı. Daha sonra Edu 3D Model Dünyası'nın rehberlerini okuyarak PETG filamente geçti. Hem UV hem de ısıya dayanıklı PETG sayesinde saksıları artık yıllardır dışarıda sorunsuzca duruyor ve satışları arttı! Doğru malzeme seçimi, projenin kaderini değiştirir.
+{{< success-story-box title="✨ Doğru Malzeme, Başarılı Proje" >}}
+Can, ilk dış mekan saksı baskısını PLA ile yapmıştı. Güneşte kısa sürede deforme olduğunu görünce büyük hayal kırıklığı yaşadı. Daha sonra bu rehberi okuyarak PETG filamente geçti. Hem UV hem de ısıya dayanıklı PETG sayesinde saksıları artık yıllardır dışarıda sorunsuzca duruyor ve satışları arttı! **Doğru malzeme seçimi, projenin kaderini değiştirir.**
 {{< /success-story-box >}}
 
-### Bölüm 3: ABS Filament - Endüstriyel Güç, Profesyonel Zorluk
+## ABS Filament: Endüstriyel Güç, Profesyonel Zorluk
 
-Elinize bir LEGO parçası aldığınızda hissettiğiniz o sağlam doku var ya? İşte o, **ABS (Akrilonitril Bütadien Stiren)**. Endüstride yıllardır kullanılan, kendini kanıtlamış bir malzemedir.
+Elinize bir LEGO parçası aldığınızda hissettiğiniz o sağlam, mat ve tok doku var ya? İşte o, **ABS (Akrilonitril Bütadien Stiren)**. Endüstride yıllardır kullanılan, kendini kanıtlamış bir mühendislik plastiğidir.
 
-![Mat siyah bir ABS filament makarası ve ondan basılmış, yüzeyi asetonla pürüzsüzleştirilmiş bir araba parçası](/images/malzeme-abs.jpg)
+![Mat siyah bir ABS filament makarası ve ondan basılmış, yüzeyi asetonla pürüzsüzleştirilmiş bir araba parçası](/images/malzeme-abs.jpg "ABS: Maksimum dayanıklılık ve profesyonel sonuçlar.")
 
-**Avantajları:**
-* **Yüksek Isı Direnci:** Yaklaşık 100°C'ye kadar dayanır, sıcak ortamlar için idealdir.
+**ABS'nin Süper Güçleri:**
+* **Yüksek Isı Direnci:** Yaklaşık 100°C'ye kadar dayanır, sıcak motor parçaları veya bulaşık makinesinde yıkanacak ürünler için idealdir.
 * **Mükemmel Dayanıklılık ve İşlenebilirlik:** Çok sağlamdır ve baskı sonrası zımparalanması, delinmesi, hatta aseton buharı ile pürüzsüzleştirilmesi çok kolaydır.
 
-**Zorlukları:**
+**Neden Usta İşi Gerektirir?**
 * **Çekme (Warping) ve Çatlama:** Soğurken büzülme eğilimi vardır. Bu yüzden **kapalı bir baskı kasası (enclosure)** kullanmak neredeyse zorunludur.
 * **Zararlı Buharlar ve Koku:** Baskı sırasında yoğun koku ve zararlı buharlar yayar. **Çok iyi havalandırma** şarttır.
 
-**ABS Hangi Projeler İçin Mükemmeldir?**
+**ABS ile Neler Yapılır?**
 Otomotiv parçaları, yoğun kullanılacak aletler, LEGO uyumlu parçalar ve yüzeyi işlenecek profesyonel prototipler.
 
-### Bölüm 4: Kısa Bir Bakış: Reçine Çeşitleri
+### Filamentler Karşı Karşıya: Hızlı Karar Rehberi
+
+| Özellik | PLA | PETG | ABS |
+| :--- | :--- | :--- | :--- |
+| **Baskı Kolaylığı** | ⭐⭐⭐⭐⭐ (En Kolay) | ⭐⭐⭐ (Orta) | ⭐⭐ (Zor) |
+| **Sağlamlık** | 💪 Orta | 💪💪💪 (Sağlam) | 💪💪💪💪 (Çok Sağlam) |
+| **Isı Direnci** | 🔥 Düşük | 🔥🔥 Orta | 🔥🔥🔥🔥 (Yüksek) |
+| **Detay Kalitesi** | ✨ Çok İyi | ✨ İyi | ✨ Orta |
+| **Güvenlik** | ✅ Güvenli | ✅ Güvenli | ⚠️ Havalandırma Gerekli |
+
+## Kısa Bir Bakış: Reçine Çeşitleri
 
 Eğer bir SLA yazıcınız varsa, sizin mühimmatınız reçinelerdir. İşte en yaygın 3 tür:
 
-![Farklı renklerde üç adet reçine şişesi ve her birinden basılmış detaylı birer obje yan yana duruyor](/images/malzeme-recine.jpg)
+![Farklı renklerde üç adet reçine şişesi ve her birinden basılmış detaylı birer obje yan yana duruyor](/images/malzeme-recine.jpg "Reçine: Detayların sıvı hali.")
 
 1.  **Standart Reçine:** SLA dünyasının PLA'sıdır. Baskısı en kolay, en uygun fiyatlı olanıdır. Çok detaylı ama kırılgandır. Görsel amaçlı figürler ve modeller için idealdir.
 2.  **"ABS-Like" veya "Sert" Reçine:** Standart reçineye göre darbelere karşı çok daha dayanıklıdır ve bir miktar esneklik sunar. Fonksiyonel prototipler ve daha sağlam minyatürler için harikadır.
 3.  **Suda Yıkanabilir Reçine:** Temizlemek için pahalı ve tehlikeli alkoller yerine sadece musluk suyu kullanmanızı sağlar. Kolaylık ve güvenlik arayanlar için mükemmel bir alternatiftir, ancak genellikle mekanik olarak en az dayanıklı olanıdır.
 
-### SONUÇ
+## Sonuç: Projenizin Ruhunu Seçin
 
 Artık temel malzemeleri tanıyorsunuz. Unutmayın, "en iyi" malzeme diye bir şey yok; sadece **sizin projenize en uygun malzeme** var. Bir sonraki projenize başlamadan önce kendinize sorun: "Bu ürünün ne kadar sağlam olması gerekiyor? Isıya maruz kalacak mı? En önemli şey görünüşü mü, yoksa işlevi mi?"
 
-Bu soruların cevabı, sizi doğru filament veya reçineye yönlendirecektir. Artık doğru malzemeyle ne basacağınızı bilmiyorsanız, **[ücretsiz 3D model siteleri rehberimize]({{< ref "posts/ucretsiz-3d-model-siteleri.md" >}})** göz atabilir veya baskı sırasında bir sorunla karşılaşırsanız **[en yaygın 3D baskı hataları ve çözümleri kılavuzumuzu]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** kullanabilirsiniz. Mutlu baskılar!
+Bu soruların cevabı, sizi doğru filament veya reçineye yönlendirecektir.
 
----
+### Yolculuğun Bir Sonraki Durağı
 
-**Siz en çok hangi filament veya reçineyi kullanmayı seviyorsunuz? Malzeme seçimiyle ilgili kendi ipuçlarınız veya yaşadığınız deneyimleriniz var mı? Yorumlarda bizimle paylaşın!**
+Doğru malzemeyi seçtiniz, peki hayalinizdeki o modeli nerede bulacaksınız? Veya bulduğunuz bir modeli baskıya nasıl hazırlayacaksınız?
+
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Baskıya hazır binlerce ücretsiz model bulabileceğiniz en iyi siteleri keşfedin veya baskılarınızı bir üst seviyeye taşıyacak Slicer ayarlarını öğrenin!</p>
+<a href="{{< ref "posts/ucretsiz-3d-model-siteleri.md" >}}" class="cta-button">Ücretsiz Model Siteleri Rehberi →</a>
+</div>
+
+### Deneyimlerinizi Paylaşın!
+Siz en çok hangi filament veya reçineyi kullanmayı seviyorsunuz? Malzeme seçimiyle ilgili kendi ipuçlarınız veya yaşadığınız deneyimleriniz var mı? Yorumlarda bizimle paylaşın!

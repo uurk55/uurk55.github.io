@@ -65,7 +65,7 @@ Yazıcınızın iskeleti sağlam, tablası ise ayarlı. Artık ona, eserlerini y
 ![Bir kişinin filamentin ucunu 3D yazıcının extruder mekanizmasına takması](/images/kurulum-filament-yukleme.jpg "Doğru filament yüklemesi, baskının kesintisiz sürmesini sağlar.")
 
 {{< tip-box title="🔑 Altın Kural: Filament Düğümü" >}}
-Filamentin ucunu **ASLA** serbest bırakmayın! Eğer ucu serbest bırakırsanız, makara kendi kendine gevşeyebilir ve baskının ortasında takılıp her şeyi mahvedecek bir düğüm oluşturabilir. Her zaman makara üzerindeki deliklere sabitleyin.
+Filamentin ucunu ASLA serbest bırakmayın! Eğer ucu serbest bırakırsanız, makara kendi kendine gevşeyebilir ve baskının ortasında takılıp her şeyi mahvedecek bir düğüm oluşturabilir. Her zaman makara üzerindeki deliklere sabitleyin.
 {{< /tip-box >}}
 
 Yazıcınızın menüsünden "Preheat PLA" (PLA için Ön Isıtma) seçeneğiyle nozzle'ı ısıtın. Isındıktan sonra, filamenti extruder mekanizmasından yavaşça itin. Ucundan erimiş plastiğin düzgün bir şekilde aktığını gördüğünüzde ve rengi tamamen oturduğunda, yazıcınız baskıya hazırdır.

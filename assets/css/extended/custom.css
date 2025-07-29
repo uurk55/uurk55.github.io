@@ -3627,3 +3627,25 @@ html {
     box-shadow: 0 0 10px 0px var(--accent);
     transform: translateY(-2px);
 }
+/* ============================================= */
+/* --- HIZLI TEŞHİS TABLOSU GENİŞLİK AYARI --- */
+/* ============================================= */
+
+/* Tablonun ilk sütununun (Gördüğünüz Sorun) daha fazla alan kaplamasını sağlıyoruz. */
+.diagnostic-table th:first-child,
+.diagnostic-table td:first-child {
+    width: 55%; /* Bu sütun en genişi olacak */
+}
+
+/* İkinci sütun (Olası Hata Kategorisi) için bir genişlik belirliyoruz. */
+.diagnostic-table th:nth-child(2),
+.diagnostic-table td:nth-child(2) {
+    width: 30%;
+}
+
+/* Üçüncü sütun (İlgili Bölümler) en dar olanı olacak. */
+.diagnostic-table th:last-child,
+.diagnostic-table td:last-child {
+    width: 15%;
+    text-align: center; /* Sayıları ortalamak daha şık durur */
+}

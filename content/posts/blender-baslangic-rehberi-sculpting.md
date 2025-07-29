@@ -26,69 +26,71 @@ cover:
     relative: false
 ---
 
-Tinkercad ile dijital LEGO oynamanın keyfini çıkardınız ve kendi tasarımlarınızı yarattınız. Harika! Ama bir süre sonra fark ettiniz ki, küpleri ve silindirleri birleştirmek, aklınızdaki o organik, kıvrımlı ve sanatsal şekilleri yaratmak için her zaman yeterli değil. Bir canavarın kafasını, pürüzsüz bir heykeli veya doğadan ilham alan bir vazoyu nasıl yaparsınız?
+**[Tinkercad Rehberimizle]({{< ref "posts/tinkercad-baslangic-rehberi.md" >}})** geometrik şekillerle harika tasarımlar yaptınız. Ama bir süre sonra fark ettiniz ki, küpleri ve silindirleri birleştirmek, aklınızdaki o organik, kıvrımlı ve sanatsal şekilleri yaratmak için her zaman yeterli değil. Bir canavarın kafasını, pürüzsüz bir heykeli veya doğadan ilham alan bir vazoyu nasıl yaparsınız?
 
 İşte bu noktada, sizi bir 'inşaat mühendisinden' bir 'heykeltıraşa' dönüştürecek o güçlü ve tamamen ücretsiz araca merhaba deyin: **Blender**.
 
-> Blender, Hollywood filmlerinden video oyunlarına kadar her alanda kullanılan devasa bir programdır ve ilk bakışta arayüzü sizi biraz korkutabilir. Ama endişelenmeyin! Biz bu okyanusa parmak ucundan gireceğiz ve sadece en eğlenceli ve en sezgisel özelliklerinden biri olan **Sculpt Mode (Heykel Modu)** üzerine odaklanacağız. Bu mod, önünüzde duran dijital bir kil topunu, farklı fırçalarla çekip, ittirip, düzleştirerek hayalinizdeki şekli vermenizi sağlar.
+> Blender, Hollywood filmlerinden video oyunlarına kadar her alanda kullanılan devasa bir programdır ve ilk bakışta arayüzü sizi biraz korkutabilir. Ama endişelenmeyin! Biz bu okyanusa parmak ucundan gireceğiz ve sadece en eğlenceli ve en sezgisel özelliklerinden biri olan **Sculpt Mode (Heykel Modu)** üzerine odaklanacağız. Bu mod, önünüzde duran dijital bir kil topunu, farklı fırçalarla şekillendirerek hayalinizdeki objeyi yaratmanızı sağlar.
 
-Bu **Blender başlangıç rehberi**, sizi programın tüm karmaşasından kurtarıp, doğrudan yaratıcılığın kalbine götürecek. Hadi, dijital çamurumuzu yoğurmaya başlayalım!
+Bu **Blender başlangıç rehberi**, sizi programın tüm karmaşasından kurtarıp, doğrudan yaratıcılığın kalbine götürecek.
 
-{{< tip-box title="💡 Sürekli Kaydetme Alışkanlığı" >}}
-Blender gibi kapsamlı programlarda çalışırken düzenli olarak kaydetmek çok önemlidir (Ctrl+S). Özellikle Sculpt Mode'da, ani program kapanmaları veya hatalar karşısında ilerlemenizi kaybetmemek için bunu alışkanlık haline getirin!
+{{< tip-box title="💡 Sürekli Kaydetme Alışkanlığı (Ctrl+S)" >}}
+Blender gibi kapsamlı programlarda çalışırken düzenli olarak kaydetmek çok önemlidir. Özellikle Sculpt Mode'da, ani program kapanmaları veya hatalar karşısında ilerlemenizi kaybetmemek için bunu bir refleks haline getirin!
 {{< /tip-box >}}
 
-### Bölüm 1: Blender'a İlk Bakış - Sadece 3 Şeyi Bilin
+### Atölyenizi Hazırlayın: Blender Arayüzü ve Simetri
 
-Maceraya başlamak için [blender.org](https://www.blender.org) adresine gidin ve programın en son sürümünü ücretsiz olarak indirin. Programı açtığınızda sizi bir hoş geldin ekranı ve ortasında meşhur bir küp karşılayacak. Şimdilik sadece üç temel navigasyon hareketini bilmeniz yeterli:
+Maceraya başlamak için [blender.org](https://www.blender.org) adresine gidin ve programın en son sürümünü ücretsiz olarak indirin. Programı açtığınızda ortadaki küp seçiliyken `X` tuşuna basıp silin ve üst menüden `Add > Mesh > UV Sphere` seçerek sahneye pürüzsüz bir küre ekleyin. Bu bizim dijital kilimiz olacak.
 
-* **Farenin Orta Tekerleği (Basılı Tutarak):** Sahnenin etrafında 360 derece dönersiniz (orbit).
-* **Shift + Farenin Orta Tekerleği (Basılı Tutarak):** Sahneyi kaydırırsınız (pan).
-* **Farenin Orta Tekerleğini Kaydırmak:** Yakınlaşıp uzaklaşırsınız.
+Küre seçiliyken, sol üstteki `Object Mode` yazan menüye tıklayın ve **`Sculpt Mode`** seçeneğini seçin. Arayüz değişecek ve sol tarafta bir sürü fırça belirecek.
 
+Heykeltıraşlığın en büyük sırlarından biri **simetridir**. Sağ tarafta yaptığınız bir hareketin, sol tarafta da ayna gibi yansımasını sağlamak için, sağ üstteki `Symmetry` menüsünden **`X`** harfinin seçili olduğundan emin olun. Artık modelinizin üzerinde iki tane imleç göreceksiniz.
 
-**Sculpt Mode'a Nasıl Geçilir?**
-1.  Üst menüden `Add > Mesh > UV Sphere` seçerek sahneye bir küre ekleyin. Bu bizim dijital kilimiz olacak.
-2.  Küre seçiliyken, sol üstteki `Object Mode` yazan menüye tıklayın ve **`Sculpt Mode`** seçeneğini seçin. Arayüz değişecek ve sol tarafta bir sürü fırça belirecek.
+### Sanatçının Alet Çantası: Başlangıç İçin 5 Temel Fırça
 
-### Bölüm 2: En Temel 3 Heykel Fırçası
+O uzun fırça listesinden korkmayın. Başlangıçta sadece bu beş tanesiyle harikalar yaratabilirsiniz. Unutmayın: Fırça boyutunu **'F'** ile, gücünü ise **'Shift + F'** ile ayarlayabilirsiniz.
 
-O uzun fırça listesinden korkmayın. Başlangıçta sadece üç tanesiyle harikalar yaratabilirsiniz. Fırça boyutunu klavyeden **'F' tuşuna basıp fareyi hareket ettirerek**, fırçanın gücünü ise **'Shift + F'** ile ayarlayabilirsiniz.
+1.  **Grab (Tut) Fırçası:** Modelinizin ana silüetini oluşturmak için kullanılır. Kilin büyük bir parçasını tutup çekiştirmenizi sağlar.
+2.  **Draw Sharp Fırçası (Keski):** Keskin hatlar ve oyuklar oluşturur. **Ctrl** tuşuna basılı tutarsanız tam tersini yapar ve sivri çıkıntılar yaratır.
+3.  **Inflate (Şişir) Fırçası:** Dokunduğu yeri bir balon gibi şişirir. Bir alana genel bir hacim eklemek için kullanılır.
+4.  **Crease (Kırışıklık) Fırçası:** `Draw Sharp` fırçasının daha ince ve zarif versiyonudur. İnce çizgiler ve keskin kenarlar oluşturmak için idealdir.
+5.  **Smooth (Düzleştir) Fırçası:** En iyi dostunuz. Yüzeydeki istenmeyen pürüzleri ve topaklanmaları sihirli bir şekilde zımparalar ve pürüzsüzleştirir.
 
-1.  **Draw / Draw Sharp Fırçası (Kil Ekle/Çıkar):** Ana fırçanız. Yüzeye kil ekleyerek **yükseltiler** oluşturur. **Ctrl** tuşuna basılı tutarsanız tam tersini yapar ve **oyuklar** açar.
-2.  **Smooth (Düzleştir) Fırçası (Zımpara Kağıdınız):** Yüzeydeki istenmeyen pürüzleri ve topaklanmaları sihirli bir şekilde zımparalar ve pürüzsüzleştirir. En çok kullanacağınız yardımcınızdır.
-3.  **Inflate/Blob (Şişir/Damla) Fırçası (Hacim Kazandırma):** Dokunduğu yeri bir balon gibi şişirir. Bir alana genel bir hacim eklemek için kullanılır.
+### İlk Eseriniz: Adım Adım Sevimli Bir Mantar Yontmak
 
-### Bölüm 3: İlk Organik Proje - Basit Bir Heykelsi Saksı Yapımı
+Şimdi bu fırçalarla sevimli ve stilize bir mantar heykeli yapalım.
 
-Şimdi bu fırçalarla gerçek bir şey üretelim: Modern ve heykelsi görünümlü bir sukulent saksısı.
+**Adım 1: Ana Formu Oluşturma**
+* Sahneye bir küre ekleyip `Sculpt Mode`'a geçin ve `X` simetrisini açın.
+* **`Grab`** fırçasını seçin ve `F` ile oldukça büyütün. Kürenin alt kısmını tutup yavaşça aşağı çekerek mantarın gövdesini (sapını) oluşturun. Üst kısım şapka olarak kalacak.
 
-**Adım 1: Temel Formu Oluşturma**
-Sahneye bir küre ekleyip Sculpt Mode'a geçin. Fırçanızı `F` ile büyütün ve `Grab` (Tut) fırçasını seçin. Kürenin üst kısmını tutup yavaşça yukarı çekerek bir vazo şekli verin. Altını da tutup hafifçe düzleştirerek bir taban oluşturun.
+**Adım 2: Şapkayı ve Gövdeyi Şekillendirme**
+* **`Inflate`** fırçasını seçin. Mantarın şapkasının alt kısımlarına ve ortasına dokunarak daha hacimli ve yuvarlak bir görünüm verin.
+* Tekrar **`Grab`** fırçasına geçin. Bu sefer daha küçük bir fırça boyutuyla, şapkanın kenarlarını hafifçe aşağı doğru çekiştirerek o klasik mantar şapkası eğimini verin.
 
-**Adım 2: Yüzeye Doku Kazandırma**
-`Draw Sharp` fırçasını seçin. Gücünü biraz azaltın. Saksının yan yüzeylerinde, `Ctrl` tuşuna basılı tutarak rastgele, dikey oluklar ve girintiler oluşturun. Ardından, bazı yerlere de `Inflate` fırçasıyla hafifçe dokunarak küçük şişkinlikler yaratın.
+**Adım 3: Detay Ekleme (İşin Zevkli Kısmı!)**
+* **`Crease`** fırçasını seçin. `Shift+F` ile gücünü biraz azaltın. Mantarın şapkasının altına gelin ve `Ctrl` tuşuna basılı tutarak, merkezden dışarıya doğru çizgiler çekerek mantarın lamellerini (altındaki çizgileri) oluşturun.
+* **`Draw Sharp`** fırçasıyla, mantarın gövdesine birkaç ince oyuk ekleyerek doku kazandırın.
 
-**Adım 3: Yüzeyi Pürüzsüzleştirme**
-`Smooth` (Düzleştir) fırçasını seçin, gücünü çok düşürün ve fırçayı yüzeyde nazikçe gezdirerek keskin kenarları yumuşatın ve daha doğal bir görünüm kazandırın.
+**Adım 4: Son Dokunuşlar ve Baskıya Hazırlık**
+* **`Smooth`** fırçasını seçin, gücünü çok düşürün ve fırçayı modelin yüzeyinde nazikçe gezdirerek çok keskin olan yerleri yumuşatın ve daha doğal bir görünüm kazandırın.
+* `Object Mode`'a geri dönün. Sağdaki ingiliz anahtarı menüsünden **`Solidify`** modifier'ını ekleyin ve `Thickness` (Kalınlık) değerini en az `2mm` yapıp `Apply` deyin.
+* Üst menüden `File > Export > Stl (.stl)` ile modelinizi kaydedin!
 
-**Adım 4: İçini Boşaltma ve Baskıya Hazırlama**
-1.  Sol üst menüden tekrar `Object Mode`'a geri dönün.
-2.  Sağdaki özellikler panelinden ingiliz anahtarı ikonuna (Modifier Properties) tıklayın.
-3.  `Add Modifier`'a tıklayın ve listeden `Solidify` (Katılaştır) seçeneğini seçin.
-4.  Açılan menüde `Thickness` (Kalınlık) değerini `3mm` veya `4mm` gibi bir değere getirin.
-5.  Modifier'ın yanındaki küçük ok işaretine tıklayıp **`Apply`** (Uygula) deyin.
-
-Tebrikler! Üst menüden `File > Export > Stl (.stl)` seçeneğini seçerek modelinizi kaydedebilir ve dilimleyici programınıza atabilirsiniz.
-
-### Sonuç: Yaratıcılığınızın Kilidi Açıldı
-
-Az önce yaptığınız şey, sadece bir saksı tasarlamak değildi. Tinkercad'in geometrik dünyasından, Blender'ın organik ve sanatsal dünyasına başarılı bir geçiş yaptınız. Artık sadece küpleri birleştirmekle kalmıyor, dijital bir kile şekil verebiliyorsunuz.
-
-Bu, 3D modelleme yolculuğunuzda yepyeni bir kapı araladı. Unutmayın, Blender devasa bir program ve biz bugün sadece bir fırça darbesi attık. Gelecekteki rehberlerimizde, bu güçlü aracın diğer sırlarını da keşfetmeye devam edeceğiz. Artık dijital heykeltıraşlığa ilk adımı attığınıza göre, belki de bir mühendis gibi düşünmenin zamanı gelmiştir. Ölçüleri hassas, birbiriyle mükemmel uyumlu ve kolayca değiştirilebilen fonksiyonel parçalar tasarlamak isterseniz, bir sonraki durağınız **[Fusion 360 Başlangıç Rehberimizdir]({{< ref "posts/fusion-360-baslangic-rehberi.md" >}})**.
-
-{{< success-story-box title="✨ Başarı Hikayesi: Dijital Kilden Sanata" >}}
+{{< success-story-box title="✨ Dijital Kilden Sanata" >}}
 Deniz, Tinkercad'den sonra Blender'ın arayüzünü görünce biraz gözü korkmuştu. Ama Sculpt Mode rehberimizdeki temel fırçaları kullanarak, sevdiği bir video oyunu karakterinin minyatür büstünü yonttu. İlk denemesi mükemmel olmasa da, çıkan sonucu görünce heveslendi ve şimdi kendi tasarladığı figürleri online platformlarda satıyor. Unutmayın, dijital heykeltıraşlık düşündüğünüzden daha kolay!
 {{< /success-story-box >}}
 
-Ama şimdilik, kendi ellerinizle 'yonttuğunuz' o ilk organik modelin baskısını almanın tadını çıkarın!
+## Sonuç: Yaratıcılığınızda Sınırları Kaldırın
+
+Az önce yaptığınız şey, sadece sevimli bir mantar tasarlamak değildi. Tinkercad'in geometrik dünyasından, Blender'ın organik ve sanatsal dünyasına başarılı bir geçiş yaptınız. Artık sadece küpleri birleştirmekle kalmıyor, dijital bir kile şekil verebiliyorsunuz.
+
+### Yolculuğun Bir Sonraki Durağı
+
+Artık hem geometrik (Tinkercad) hem de sanatsal (Blender) modelleme hakkında temel bir bilgiye sahipsiniz. Peki ya bir mühendis gibi düşünmenin zamanı geldiyse?
+
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Sanatsal özgürlükten, milimetrik hassasiyete geçiş yapın. Bir sonraki adımınız, profesyoneller gibi fonksiyonel parçalar tasarlamak!</p>
+<a href="{{< ref "posts/fusion-360-baslangic-rehberi.md" >}}" class="cta-button">Fusion 360 ile Tasarıma Başla →</a>
+</div>

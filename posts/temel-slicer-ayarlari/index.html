@@ -10,7 +10,7 @@
 <meta name="description" content="3D baskı kalitenizi dramatik şekilde artıracak en kritik 5 temel dilimleyici (slicer) ayarını öğrenin. Katman yüksekliği, dolgu, hız, destekler ve tabla yapışması için uzman ipuçları.">
 <meta name="author" content="Uğur Kapancı">
 <link rel="canonical" href="https://edu3dmodel.com/posts/temel-slicer-ayarlari/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.76f2f1b517749391dbcdf5052e3a696f450cf26297a34e23bd587fcd23c325fc.css" integrity="sha256-dvLxtRd0k5HbzfUFLjppb0UM8mKXo04jvVh/zSPDJfw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4c91527feca6fb1085baba7bcd1b3458265ac765f9ddeca78e751f8cd4b1641e.css" integrity="sha256-TJFSf&#43;ym&#43;xCFurp7zRs0WCZax2X53eynjnUfjNSxZB4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://edu3dmodel.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://edu3dmodel.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://edu3dmodel.com/favicon-32x32.png">
@@ -27,7 +27,7 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.f73717bdc52652fd88b2f4671ac427d8862957d9b98d3357ce4ad9c93d00dc31.css" integrity="sha256-9zcXvcUmUv2IsvRnGsQn2IYpV9m5jTNXzkrZyT0A3DE=">
+</noscript><link rel="stylesheet" href="https://edu3dmodel.com/css/extended/custom.min.15490bd50f577aa953b68f205a51c163f1f144943bdda95f839dc087605ca0e2.css" integrity="sha256-FUkL1Q9XeqlTto8gWlHBY/HxRJQ73alfg53Ah2BcoOI=">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /><meta property="og:url" content="https://edu3dmodel.com/posts/temel-slicer-ayarlari/">
@@ -88,8 +88,8 @@
   "keywords": [
     "Slicer Ayarları", "Cura Ayarları", "PrusaSlicer", "3D Baskı Kalitesi", "Katman Yüksekliği", "Dolgu Ayarları", "Baskı Hızı", "Destek Yapıları", "Tabla Yapışması", "Başlangıç Rehberi"
   ],
-  "articleBody": "Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. “Yazdır” tuşuna basıyorsunuz ve sonuç… bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani Dilimleyici (Slicer) yazılımında.\n“Slicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir ‘yemek tarifine’ dönüştüren şefinizdir. Modele, ‘Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?’ gibi tüm talimatları veren program budur.”\nNeyse ki, bu mutfağın kontrolü tamamen sizde! Bu rehberde, indirdiğiniz bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek en kritik 5 temel slicer ayarını öğreneceksiniz.\nİlk Adım: Modeli Dilimleyiciye Yükleme Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi Ultimaker Cura ve PrusaSlicer‘dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine sürükleyip bırakın.\nModeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.\n1. Katman Yüksekliği (Layer Height): Kalite vs. Hız Bu ayarı, bir resmi çizerken kullandığınız kalemin ucu gibi düşünebilirsiniz.\nKalın Uçlu Kalem (Yüksek Değer, örn: 0.28mm): Baskı çok hızlı biter ama katman çizgileri belirgin olur. İnce Uçlu Kalem (Düşük Değer, örn: 0.12mm): Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır. Pratik Kural: Çoğu günlük baskı için 0.20mm harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!\n2. Dolgu (Infill): Sağlamlık vs. Malzeme Tüketimi Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır. Slicer’da bu ayarı genellikle yüzde olarak görürsünüz.\n%10-20 (Standart Dolgu): Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir. %25-50 (Fonksiyonel Dolgu): Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir. Ayrıca Dolgu Deseni (Infill Pattern) de önemlidir. Hız için Grid, çok yönlü sağlamlık için Cubic, esneklik ve havalı bir görünüm için ise Gyroid en popüler seçeneklerdir. Pratik Kural: 15% dolgu yoğunluğu ve Cubic deseni, çoğu proje için en iyi dengedir.\n3. Hız (Print Speed): Acele İşe Şeytan Karışır mı? Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, “ringing” (yüzeyde dalgalanma) gibi hatalara, zayıf katman yapışmasına ve detay kaybına yol açabilir.\nModern dilimleyiciler, baskının farklı bölümleri için farklı hızlar ayarlamanıza olanak tanır. Altın Kural: Baskının görünen yüzü olan Dış Duvar Hızını (Outer Wall Speed) her zaman genel hızınızdan daha yavaş tutun. Pratik Kural: Yeni bir filamenti veya karmaşık bir modeli denerken, 50-60mm/s gibi mütevazı bir genel hızla başlayın.\n4. Destekler (Supports): Yer Çekimine Meydan Okuma Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin “havada kalacak” kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren 45-50 dereceyi aştığında destek gerekir.\nDestek Tipi: Karmaşık ve organik şekilli modeller (figürler gibi) için Tree (Ağaç) destekler harikadır. Daha az malzeme harcar ve sökmesi daha kolaydır. Yerleşim: Mümkün olduğunca Touching Buildplate (Sadece Tablaya Değen) seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir. 5. Tabla Yapışması (Bed Adhesion): İlk Katman Garantisi Baskınızın tabladan ayrılıp bir “spagetti yığınına” dönüşmesini engellemek için bu ayarlara hakim olmalısınız.\nSkirt (Etek): Modele değmeyen, baskı başlamadan önce nozzle’ı temizleyen dış hatlardır. Neredeyse her zaman kullanın. Brim (Kenarlık): Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır. Raft (Sal): Modelin altına basılan kalın bir plastik “sal\"dır. Sadece son çare olarak kullanılır, çünkü çok fazla malzeme ve zaman harcar. Sonuç: Artık Kontrol Sizde! Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, En Yaygın 3D Baskı Hataları ve Çözümleri kılavuzumuza mutlaka göz atın. Artık başkalarının modellerini dilimlemekte ustalaştığınıza göre, belki de Tinkercad ile kendi modelinizi tasarlamanın zamanı gelmiştir. Mutfağın kontrolü artık sizde!\n✨ ✨ Başarı Hikayesi: İpliklenme Sorununa Slicer Çözümü Can, aylarca ‘stringing’ (ipliklenme) sorunuyla boğuşuyordu. Her baskısı filament telleriyle doluydu. Bu rehberdeki ‘Retraksiyon’ ve ‘Baskı Hızı’ ayarlarını inceleyerek kendi slicer ayarlarında küçük değişiklikler yaptı. Sonuç: Kusursuz, tertemiz baskılar! Bu sayede figür satışları da ikiye katlandı. Siz en çok hangi slicer ayarıyla oynuyorsunuz? Baskı kalitenizi artıran en büyük sırrınız neydi? Yorumlarda bizimle paylaşın!\n",
-  "wordCount" : "730",
+  "articleBody": "Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. “Yazdır” tuşuna basıyorsunuz ve sonuç… bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle dijital model ile fiziksel yazıcı arasındaki en önemli köprüde, yani Dilimleyici (Slicer) yazılımında.\nSlicer, 3D modelinizi alan ve onu katman katman nasıl basılacağını anlatan talimatlar bütününe, yani G-Code’a dönüştüren programdır. Yazıcınıza, “Hangi sıcaklığı kullan? İçini ne kadar doldur? Ne kadar hızlı hareket et?” gibi tüm komutları veren odur. Bu komutlar yanlışsa, sonuç kaçınılmaz olarak kötü bir baskı olur.\nNeyse ki, bu sürecin kontrolü tamamen sizde! Bu rehberde, bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek en kritik 5 temel slicer ayarını öğreneceksiniz.\nİlk Adım: Modeli Dilimleyiciye Yükleme Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi Ultimaker Cura ve PrusaSlicer‘dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine sürükleyip bırakın.\nModeliniz artık sanal baskı tablasının üzerinde, talimatlarınızı bekliyor.\nModeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.\n1. Katman Yüksekliği (Layer Height): Kalite ve Hızın Dengesi Bu ayar, baskınızın dikey çözünürlüğünü belirler.\nDüşük Değer (örn: 0.12mm): Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır. Katman çizgileri neredeyse görünmez olur. Yüksek Değer (örn: 0.28mm): Baskı çok hızlı biter ama katman çizgileri daha belirgin olur. Solda düşük katman yüksekliği (kaliteli), sağda yüksek katman yüksekliği (hızlı).\n💡 Pratik Kural Çoğu günlük baskı için 0.20mm harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır! 2. Dolgu (Infill): Sağlamlık ve Malzeme Tasarrufu Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır ve yüzde olarak ayarlanır.\n%10-20 (Standart Dolgu): Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir. %25-50 (Fonksiyonel Dolgu): Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir. Ayrıca Dolgu Deseni (Infill Pattern) de önemlidir. Hız için Grid, çok yönlü sağlamlık için Cubic en popüler seçeneklerdir.\n3. Baskı Hızı (Print Speed): Kaliteden Ödün Vermeden Zaman Kazanmak Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, yüzeyde dalgalanmalara (“ringing”), zayıf katman yapışmasına ve detay kaybına yol açabilir.\n🔑 Altın Kural Baskının görünen yüzü olan Dış Duvar Hızını (Outer Wall Speed) her zaman genel hızınızdan daha yavaş tutun (genellikle %50’si kadar). Bu, pürüzsüz ve temiz bir dış yüzey elde etmenin en büyük sırrıdır. 4. Destek Yapıları (Supports): Yer Çekimine Meydan Okumak Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin “havada kalacak” kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren 45-50 dereceyi aştığında destek gerekir.\nAğaç destekler, karmaşık modeller için hem verimli hem de sökmesi kolay bir çözümdür.\nDestek Tipi: Karmaşık ve organik şekilli modeller (figürler gibi) için Tree (Ağaç) destekler harikadır. Yerleşim: Mümkün olduğunca Touching Buildplate (Sadece Tablaya Değen) seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir. 5. Tabla Yapışması (Adhesion): Başarılı Bir Başlangıcın Garantisi Baskınızın tabladan ayrılıp bir “spagetti yığınına” dönüşmesini engellemek için bu ayarlara hakim olmalısınız.\nSkirt (Etek): Modele değmeyen, baskı başlamadan önce nozzle’ı temizleyen dış hatlardır. Neredeyse her zaman kullanın. Brim (Kenarlık): Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır. Raft (Sal): Modelin altına basılan kalın bir plastik “sal\"dır. Sadece son çare olarak kullanılır. Soldan sağa: Skirt, Brim ve Raft.\nHızlı Ayar Tablosu: Yeni Başlayanlar İçin Öneriler Ayar Ne İşe Yarar? Başlangıç Tavsiyesi Katman Yüksekliği Detay seviyesini belirler. ⚙️ 0.20mm (Standart Kalite) Dolgu (Infill) İç sağlamlığı oluşturur. 🧱 15% (Cubic Desen) Baskı Hızı Baskı süresini etkiler. 🚀 50 mm/s (Genel Hız) Destekler Boşluktaki kısımları tutar. 🌳 Ağaç (Tree) (Organik modellerde) Tabla Yapışması Baskının tutunmasını sağlar. ✅ Etek (Skirt) (Her Zaman) Sonuç: Artık Kontrol Sizde! Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Her model, farklı ayarlar gerektirebilir ve en iyi sonuçları deneyerek bulacaksınız.\nYolculuğun Bir Sonraki Durağı Ayarlarınızı yaptınız ama baskı sırasında beklenmedik bir sorun mu çıktı? Endişelenmeyin, en iyi kullanıcıların bile başına gelir.\nŞimdi Sırada Ne Var? Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, en sık karşılaşılan problemlerin çözümlerini öğrenme zamanı!\n3D Baskı Hataları ve Çözümleri Rehberine Git → ✨ ✨ Başarı Hikayesi: İpliklenme Sorununa Slicer Çözümü Can, aylarca ‘stringing’ (ipliklenme) sorunuyla boğuşuyordu. Her baskısı filament telleriyle doluydu. Bu rehberdeki Geri Çekme (Retraction) ve Baskı Hızı ayarlarını inceleyerek kendi slicer ayarlarında küçük değişiklikler yaptı. Sonuç: Kusursuz, tertemiz baskılar! Bu sayede figür satışları da ikiye katlandı. Deneyimlerinizi Paylaşın! Siz en çok hangi slicer ayarıyla oynuyorsunuz? Baskı kalitenizi artıran en büyük sırrınız neydi? Yorumlarda bizimle paylaşın!\n",
+  "wordCount" : "811",
   "inLanguage": "en",
   "image":"https://edu3dmodel.com/images/slicer-ayar-cover.jpg","datePublished": "2025-05-03T11:00:00+03:00",
   "dateModified": "2025-05-03T11:00:00+03:00",
@@ -222,12 +222,21 @@
     <li>
       <ul>
         <li><a href="#ilk-adım-modeli-dilimleyiciye-yükleme">İlk Adım: Modeli Dilimleyiciye Yükleme</a></li>
-        <li><a href="#1-katman-yüksekliği-layer-height-kalite-vs-hız">1. Katman Yüksekliği (Layer Height): Kalite vs. Hız</a></li>
-        <li><a href="#2-dolgu-infill-sağlamlık-vs-malzeme-tüketimi">2. Dolgu (Infill): Sağlamlık vs. Malzeme Tüketimi</a></li>
-        <li><a href="#3-hız-print-speed-acele-işe-şeytan-karışır-mı">3. Hız (Print Speed): Acele İşe Şeytan Karışır mı?</a></li>
-        <li><a href="#4-destekler-supports-yer-çekimine-meydan-okuma">4. Destekler (Supports): Yer Çekimine Meydan Okuma</a></li>
-        <li><a href="#5-tabla-yapışması-bed-adhesion-ilk-katman-garantisi">5. Tabla Yapışması (Bed Adhesion): İlk Katman Garantisi</a></li>
-        <li><a href="#sonuç-artık-kontrol-sizde">Sonuç: Artık Kontrol Sizde!</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-katman-yüksekliği-layer-height-kalite-ve-hızın-dengesi">1. Katman Yüksekliği (Layer Height): Kalite ve Hızın Dengesi</a></li>
+    <li><a href="#2-dolgu-infill-sağlamlık-ve-malzeme-tasarrufu">2. Dolgu (Infill): Sağlamlık ve Malzeme Tasarrufu</a></li>
+    <li><a href="#3-baskı-hızı-print-speed-kaliteden-ödün-vermeden-zaman-kazanmak">3. Baskı Hızı (Print Speed): Kaliteden Ödün Vermeden Zaman Kazanmak</a></li>
+    <li><a href="#4-destek-yapıları-supports-yer-çekimine-meydan-okumak">4. Destek Yapıları (Supports): Yer Çekimine Meydan Okumak</a></li>
+    <li><a href="#5-tabla-yapışması-adhesion-başarılı-bir-başlangıcın-garantisi">5. Tabla Yapışması (Adhesion): Başarılı Bir Başlangıcın Garantisi</a>
+      <ul>
+        <li><a href="#hızlı-ayar-tablosu-yeni-başlayanlar-için-öneriler">Hızlı Ayar Tablosu: Yeni Başlayanlar İçin Öneriler</a></li>
+      </ul>
+    </li>
+    <li><a href="#sonuç-artık-kontrol-sizde">Sonuç: Artık Kontrol Sizde!</a>
+      <ul>
+        <li><a href="#yolculuğun-bir-sonraki-durağı">Yolculuğun Bir Sonraki Durağı</a></li>
+        <li><a href="#deneyimlerinizi-paylaşın">Deneyimlerinizi Paylaşın!</a></li>
       </ul>
     </li>
   </ul>
@@ -259,73 +268,121 @@
 3 Mayıs 2025</span>· 
                 <span>4 dk okuma</span>· <span class="post-categories"><a href="https://edu3dmodel.com/categories/teknik-ipu%C3%A7lar%C4%B1/">Teknik İpuçları</a></span></div>
         </header><div class="post-cover">
-            <img src="https://edu3dmodel.com/images/slicer-ayar-cover.jpg" alt="Bir bilgisayar ekranında 3D slicer yazılımı ve yanında mükemmel basılmış bir 3D obje"><p class="post-cover-caption">Mükemmel baskının sırrı, doğru tarifte gizlidir. Mutfağın kontrolünü elinize alın!</p></div><div class="post-content">
-            <p>Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &ldquo;Yazdır&rdquo; tuşuna basıyorsunuz ve sonuç&hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle tarifte, yani <strong>Dilimleyici (Slicer)</strong> yazılımında.</p>
-<blockquote>
-<p>&ldquo;Slicer nedir? En basit haliyle, o sizin 3D modelinizi alan ve onu 3D yazıcınız için bir &lsquo;yemek tarifine&rsquo; dönüştüren şefinizdir. Modele, &lsquo;Hangi sıcaklıkta pişecek? İçini ne kadar doldurayım? Ne kadar hızlı hareket edeyim?&rsquo; gibi tüm talimatları veren program budur.&rdquo;</p></blockquote>
-<p>Neyse ki, bu mutfağın kontrolü tamamen sizde! Bu rehberde, indirdiğiniz bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek <strong>en kritik 5 temel slicer ayarını</strong> öğreneceksiniz.</p>
+            <img src="https://edu3dmodel.com/images/slicer-ayar-cover.jpg" alt="Bir bilgisayar ekranında 3D slicer yazılımı ve yanında mükemmel basılmış bir 3D obje"><p class="post-cover-caption">Mükemmel baskının sırrı, doğru ayarlarda gizlidir. Kontrolü elinize alın!</p></div><div class="post-content">
+            <p>Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. &ldquo;Yazdır&rdquo; tuşuna basıyorsunuz ve sonuç&hellip; bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle dijital model ile fiziksel yazıcı arasındaki en önemli köprüde, yani <strong>Dilimleyici (Slicer)</strong> yazılımında.</p>
+<p>Slicer, 3D modelinizi alan ve onu katman katman nasıl basılacağını anlatan talimatlar bütününe, yani G-Code&rsquo;a dönüştüren programdır. Yazıcınıza, &ldquo;Hangi sıcaklığı kullan? İçini ne kadar doldur? Ne kadar hızlı hareket et?&rdquo; gibi tüm komutları veren odur. Bu komutlar yanlışsa, sonuç kaçınılmaz olarak <strong><a href="https://edu3dmodel.com/posts/3d-baski-hatalari-cozumleri/">kötü bir baskı</a></strong> olur.</p>
+<p>Neyse ki, bu sürecin kontrolü tamamen sizde! Bu rehberde, bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek <strong>en kritik 5 temel slicer ayarını</strong> öğreneceksiniz.</p>
 <h3 id="ilk-adım-modeli-dilimleyiciye-yükleme">İlk Adım: Modeli Dilimleyiciye Yükleme</h3>
 <p>Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi <strong>Ultimaker Cura</strong> ve <strong>PrusaSlicer</strong>&lsquo;dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine <strong>sürükleyip bırakın.</strong></p>
 <p>
 <figure class="post-figure">
     <a href="/images/slicer-import.jpg" target="_blank" rel="noopener">
         <img src="/images/slicer-import.jpg" alt="Bir STL dosyasının Cura veya PrusaSlicer arayüzüne sürüklenip bırakıldığı anı gösteren ekran görüntüsü">
-    </a></figure></p>
+    </a><figcaption>Modeliniz artık sanal baskı tablasının üzerinde, talimatlarınızı bekliyor.</figcaption></figure></p>
 <p>Modeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.</p>
-<hr>
-<h3 id="1-katman-yüksekliği-layer-height-kalite-vs-hız">1. Katman Yüksekliği (Layer Height): Kalite vs. Hız</h3>
-<p>Bu ayarı, bir resmi çizerken kullandığınız kalemin ucu gibi düşünebilirsiniz.</p>
+<h2 id="1-katman-yüksekliği-layer-height-kalite-ve-hızın-dengesi">1. Katman Yüksekliği (Layer Height): Kalite ve Hızın Dengesi</h2>
+<p>Bu ayar, baskınızın dikey çözünürlüğünü belirler.</p>
 <ul>
-<li><strong>Kalın Uçlu Kalem (Yüksek Değer, örn: 0.28mm):</strong> Baskı çok hızlı biter ama katman çizgileri belirgin olur.</li>
-<li><strong>İnce Uçlu Kalem (Düşük Değer, örn: 0.12mm):</strong> Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır.</li>
+<li><strong>Düşük Değer (örn: 0.12mm):</strong> Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır. Katman çizgileri neredeyse görünmez olur.</li>
+<li><strong>Yüksek Değer (örn: 0.28mm):</strong> Baskı çok hızlı biter ama katman çizgileri daha belirgin olur.</li>
 </ul>
 <p>
 <figure class="post-figure">
     <a href="/images/slicer-layer-height.jpg" target="_blank" rel="noopener">
         <img src="/images/slicer-layer-height.jpg" alt="Aynı 3D modelin farklı katman yükseklikleriyle basılmış iki versiyonu yan yana: Biri pürüzsüz, diğeri belirgin katman çizgili">
-    </a></figure></p>
-<p><strong>Pratik Kural:</strong> Çoğu günlük baskı için <code>0.20mm</code> harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!</p>
-<h3 id="2-dolgu-infill-sağlamlık-vs-malzeme-tüketimi">2. Dolgu (Infill): Sağlamlık vs. Malzeme Tüketimi</h3>
-<p>Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır. Slicer&rsquo;da bu ayarı genellikle yüzde olarak görürsünüz.</p>
+    </a><figcaption>Solda düşük katman yüksekliği (kaliteli), sağda yüksek katman yüksekliği (hızlı).</figcaption></figure></p>
+<div class="tip-box">
+    <h4>💡 Pratik Kural</h4>
+    Çoğu günlük baskı için <code>0.20mm</code> harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!
+</div>
+<h2 id="2-dolgu-infill-sağlamlık-ve-malzeme-tasarrufu">2. Dolgu (Infill): Sağlamlık ve Malzeme Tasarrufu</h2>
+<p>Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır ve yüzde olarak ayarlanır.</p>
 <ul>
 <li><strong>%10-20 (Standart Dolgu):</strong> Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir.</li>
 <li><strong>%25-50 (Fonksiyonel Dolgu):</strong> Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir.</li>
 </ul>
-<p>Ayrıca <strong>Dolgu Deseni (Infill Pattern)</strong> de önemlidir. Hız için <code>Grid</code>, çok yönlü sağlamlık için <code>Cubic</code>, esneklik ve havalı bir görünüm için ise <code>Gyroid</code> en popüler seçeneklerdir. <strong>Pratik Kural:</strong> <code>15%</code> dolgu yoğunluğu ve <code>Cubic</code> deseni, çoğu proje için en iyi dengedir.</p>
-<h3 id="3-hız-print-speed-acele-işe-şeytan-karışır-mı">3. Hız (Print Speed): Acele İşe Şeytan Karışır mı?</h3>
-<p>Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, &ldquo;ringing&rdquo; (yüzeyde dalgalanma) gibi hatalara, zayıf katman yapışmasına ve detay kaybına yol açabilir.</p>
-<p>Modern dilimleyiciler, baskının farklı bölümleri için farklı hızlar ayarlamanıza olanak tanır. <strong>Altın Kural:</strong> Baskının görünen yüzü olan <strong>Dış Duvar Hızını (Outer Wall Speed)</strong> her zaman genel hızınızdan daha yavaş tutun. <strong>Pratik Kural:</strong> Yeni bir filamenti veya karmaşık bir modeli denerken, <strong>50-60mm/s</strong> gibi mütevazı bir genel hızla başlayın.</p>
-<h3 id="4-destekler-supports-yer-çekimine-meydan-okuma">4. Destekler (Supports): Yer Çekimine Meydan Okuma</h3>
+<p>Ayrıca <strong>Dolgu Deseni (Infill Pattern)</strong> de önemlidir. Hız için <code>Grid</code>, çok yönlü sağlamlık için <code>Cubic</code> en popüler seçeneklerdir.</p>
+<h2 id="3-baskı-hızı-print-speed-kaliteden-ödün-vermeden-zaman-kazanmak">3. Baskı Hızı (Print Speed): Kaliteden Ödün Vermeden Zaman Kazanmak</h2>
+<p>Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, yüzeyde dalgalanmalara (&ldquo;ringing&rdquo;), zayıf katman yapışmasına ve detay kaybına yol açabilir.</p>
+<div class="tip-box">
+    <h4>🔑 Altın Kural</h4>
+    Baskının görünen yüzü olan <strong>Dış Duvar Hızını (Outer Wall Speed)</strong> her zaman genel hızınızdan daha yavaş tutun (genellikle %50&rsquo;si kadar). Bu, pürüzsüz ve temiz bir dış yüzey elde etmenin en büyük sırrıdır.
+</div>
+<h2 id="4-destek-yapıları-supports-yer-çekimine-meydan-okumak">4. Destek Yapıları (Supports): Yer Çekimine Meydan Okumak</h2>
 <p>Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin &ldquo;havada kalacak&rdquo; kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren <strong>45-50 dereceyi</strong> aştığında destek gerekir.</p>
 <p>
 <figure class="post-figure">
     <a href="/images/slicer-supports.jpg" target="_blank" rel="noopener">
-        <img src="/images/slicer-supports.jpg" alt="Örnek görüntüsü">
-    </a></figure></p>
+        <img src="/images/slicer-supports.jpg" alt="Bir ejderha modelinin altında ağaç (tree) tipi destek yapıları gösteriliyor">
+    </a><figcaption>Ağaç destekler, karmaşık modeller için hem verimli hem de sökmesi kolay bir çözümdür.</figcaption></figure></p>
 <ul>
-<li><strong>Destek Tipi:</strong> Karmaşık ve organik şekilli modeller (figürler gibi) için <strong>Tree (Ağaç)</strong> destekler harikadır. Daha az malzeme harcar ve sökmesi daha kolaydır.</li>
+<li><strong>Destek Tipi:</strong> Karmaşık ve organik şekilli modeller (figürler gibi) için <strong>Tree (Ağaç)</strong> destekler harikadır.</li>
 <li><strong>Yerleşim:</strong> Mümkün olduğunca <strong>Touching Buildplate (Sadece Tablaya Değen)</strong> seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir.</li>
 </ul>
-<h3 id="5-tabla-yapışması-bed-adhesion-ilk-katman-garantisi">5. Tabla Yapışması (Bed Adhesion): İlk Katman Garantisi</h3>
+<h2 id="5-tabla-yapışması-adhesion-başarılı-bir-başlangıcın-garantisi">5. Tabla Yapışması (Adhesion): Başarılı Bir Başlangıcın Garantisi</h2>
 <p>Baskınızın tabladan ayrılıp bir &ldquo;spagetti yığınına&rdquo; dönüşmesini engellemek için bu ayarlara hakim olmalısınız.</p>
 <ol>
 <li><strong>Skirt (Etek):</strong> Modele değmeyen, baskı başlamadan önce nozzle&rsquo;ı temizleyen dış hatlardır. <strong>Neredeyse her zaman kullanın.</strong></li>
 <li><strong>Brim (Kenarlık):</strong> Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır.</li>
-<li><strong>Raft (Sal):</strong> Modelin altına basılan kalın bir plastik &ldquo;sal&quot;dır. <strong>Sadece son çare olarak kullanılır,</strong> çünkü çok fazla malzeme ve zaman harcar.</li>
+<li><strong>Raft (Sal):</strong> Modelin altına basılan kalın bir plastik &ldquo;sal&quot;dır. <strong>Sadece son çare olarak kullanılır.</strong></li>
 </ol>
 <p>
 <figure class="post-figure">
     <a href="/images/tabla-yapisma.jpg" target="_blank" rel="noopener">
-        <img src="/images/tabla-yapisma.jpg" alt="Örnek görüntüsü">
-    </a></figure></p>
-<h3 id="sonuç-artık-kontrol-sizde">Sonuç: Artık Kontrol Sizde!</h3>
-<p>Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, <strong><a href="https://edu3dmodel.com/posts/3d-baski-hatalari-cozumleri/">En Yaygın 3D Baskı Hataları ve Çözümleri kılavuzumuza</a></strong> mutlaka göz atın. Artık başkalarının modellerini dilimlemekte ustalaştığınıza göre, belki de <strong><a href="https://edu3dmodel.com/posts/tinkercad-baslangic-rehberi/">Tinkercad ile kendi modelinizi tasarlamanın</a></strong> zamanı gelmiştir. Mutfağın kontrolü artık sizde!</p>
+        <img src="/images/tabla-yapisma.jpg" alt="Skirt, Brim ve Raft seçeneklerinin 3D model etrafındaki görsel karşılaştırması">
+    </a><figcaption>Soldan sağa: Skirt, Brim ve Raft.</figcaption></figure></p>
+<h3 id="hızlı-ayar-tablosu-yeni-başlayanlar-için-öneriler">Hızlı Ayar Tablosu: Yeni Başlayanlar İçin Öneriler</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Ayar</th>
+          <th style="text-align: left">Ne İşe Yarar?</th>
+          <th style="text-align: left">Başlangıç Tavsiyesi</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Katman Yüksekliği</strong></td>
+          <td style="text-align: left">Detay seviyesini belirler.</td>
+          <td style="text-align: left">⚙️ <code>0.20mm</code> (Standart Kalite)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Dolgu (Infill)</strong></td>
+          <td style="text-align: left">İç sağlamlığı oluşturur.</td>
+          <td style="text-align: left">🧱 <code>15%</code> (Cubic Desen)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Baskı Hızı</strong></td>
+          <td style="text-align: left">Baskı süresini etkiler.</td>
+          <td style="text-align: left">🚀 <code>50 mm/s</code> (Genel Hız)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Destekler</strong></td>
+          <td style="text-align: left">Boşluktaki kısımları tutar.</td>
+          <td style="text-align: left">🌳 <code>Ağaç (Tree)</code> (Organik modellerde)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Tabla Yapışması</strong></td>
+          <td style="text-align: left">Baskının tutunmasını sağlar.</td>
+          <td style="text-align: left">✅ <code>Etek (Skirt)</code> (Her Zaman)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="sonuç-artık-kontrol-sizde">Sonuç: Artık Kontrol Sizde!</h2>
+<p>Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Her model, farklı ayarlar gerektirebilir ve en iyi sonuçları deneyerek bulacaksınız.</p>
+<h3 id="yolculuğun-bir-sonraki-durağı">Yolculuğun Bir Sonraki Durağı</h3>
+<p>Ayarlarınızı yaptınız ama baskı sırasında beklenmedik bir sorun mu çıktı? Endişelenmeyin, en iyi kullanıcıların bile başına gelir.</p>
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, en sık karşılaşılan problemlerin çözümlerini öğrenme zamanı!</p>
+<a href="https://edu3dmodel.com/posts/3d-baski-hatalari-cozumleri/" class="cta-button">3D Baskı Hataları ve Çözümleri Rehberine Git →</a>
+</div>
 <div class="success-story-box">
     <h4>✨ ✨ Başarı Hikayesi: İpliklenme Sorununa Slicer Çözümü</h4>
-    Can, aylarca &lsquo;stringing&rsquo; (ipliklenme) sorunuyla boğuşuyordu. Her baskısı filament telleriyle doluydu. Bu rehberdeki &lsquo;Retraksiyon&rsquo; ve &lsquo;Baskı Hızı&rsquo; ayarlarını inceleyerek kendi slicer ayarlarında küçük değişiklikler yaptı. Sonuç: Kusursuz, tertemiz baskılar! Bu sayede figür satışları da ikiye katlandı.
+    Can, aylarca &lsquo;stringing&rsquo; (ipliklenme) sorunuyla boğuşuyordu. Her baskısı filament telleriyle doluydu. Bu rehberdeki <strong>Geri Çekme (Retraction)</strong> ve <strong>Baskı Hızı</strong> ayarlarını inceleyerek kendi slicer ayarlarında küçük değişiklikler yaptı. Sonuç: Kusursuz, tertemiz baskılar! Bu sayede figür satışları da ikiye katlandı.
 </div>
-<hr>
-<p><strong>Siz en çok hangi slicer ayarıyla oynuyorsunuz? Baskı kalitenizi artıran en büyük sırrınız neydi? Yorumlarda bizimle paylaşın!</strong></p>
+<h3 id="deneyimlerinizi-paylaşın">Deneyimlerinizi Paylaşın!</h3>
+<p>Siz en çok hangi slicer ayarıyla oynuyorsunuz? Baskı kalitenizi artıran en büyük sırrınız neydi? Yorumlarda bizimle paylaşın!</p>
 
         </div>
     
@@ -397,7 +454,7 @@
                                     </span>
                                 
                                 <span>
-                                    <i class="far fa-clock"></i> 4 dk
+                                    <i class="far fa-clock"></i> 5 dk
                                 </span>
                             </div>
                         </div>

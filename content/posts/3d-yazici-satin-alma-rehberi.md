@@ -1,7 +1,7 @@
 ---
 title: "3D Yazıcı Satın Alma Rehberi: İhtiyaçlarınıza Göre Doğru Makineyi Nasıl Seçersiniz?"
 date: 2025-04-12T10:00:00+03:00
-featured: false
+featured: true
 draft: false
 description: "Hangi 3D yazıcıyı almalısınız? Marka veya fiyat listesi değil, ihtiyaçlarınıza göre doğru yazıcı tipini seçmenizi sağlayacak, zamanla eskimeyecek bir karar verme rehberi."
 tags: ["3D Yazıcı Satın Alma", "Yazıcı Seçimi", "Başlangıç 3D Yazıcı", "FDM Seçimi", "SLA Seçimi", "3D Yazıcı Özellikleri", "Teknik İpuçları"]

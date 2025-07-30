@@ -85,9 +85,19 @@ Baskıyı başlattıktan sonra gözünüzü ilk katmandan ayırmayın. Plastik t
 Elif, ilk FDM yazıcısını kurarken vidalar, kayışlar, kablolar derken çok çekinmişti. Ama bu rehberdeki adımları tek tek sabırla takip etti. Sonunda ilk kalibrasyon küpünü sorunsuz bastığında hissettiği o başarma hissi, onu daha büyük projelere cesaretlendirdi ve şimdi kendi küçük saksı koleksiyonunu online satıyor! Siz de o ilk adımı attınız!
 {{< /success-story-box >}}
 
-Bu küçük nesne, sadece bir plastik parçası değil; o, sizin sabrınızın, dikkatinizin ve başarınızın ilk somut kanıtıdır. Bu sağlam temel üzerine artık çok daha büyük ve karmaşık yapılar inşa edebilirsiniz.
+## Sonuç: İlk Adımı Başarıyla Attınız
 
-Yolculuğun bir sonraki durağı, kendi modellerinizi baskıya hazırlamak. Bunun için, **[Temel Slicer Ayarları Rehberimizi]({{< ref "posts/temel-slicer-ayarlari.md" >}})** okuyarak baskı kalitenizi nasıl artıracağınızı öğrenebilirsiniz. Eğer baskı sırasında bir sorun yaşarsanız, **[3D Baskı Hataları Kılavuzumuz]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** her zaman yanınızda!
+Tebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, sizin sabrınızın, dikkatinizin ve başarınızın ilk somut kanıtıdır. Bu sağlam temel üzerine artık çok daha büyük ve karmaşık yapılar inşa edebilirsiniz.
+
+### Yolculuğun Bir Sonraki Durağı
+
+Yazıcınız artık baskıya hazır. Peki bu güçlü alete neyi, nasıl basacağını söyleyen o sihirli "dilimleyici" (slicer) yazılımların sırlarını keşfetme zamanı!
+
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Kendi modellerinizi baskıya hazırlamanın ve baskı kalitenizi en üst düzeye çıkarmanın sırlarını keşfetmek için bir sonraki temel rehberimize geçin.</p>
+<a href="{{< ref "posts/temel-slicer-ayarlari.md" >}}" class="cta-button">Temel Slicer Ayarları Rehberine Git →</a>
+</div>
 
 ### Deneyimlerinizi Paylaşın!
 Sizin ilk 3D yazıcı kurulum deneyiminiz nasıldı? En çok hangi adımda zorlandınız veya hangi ipucu size çok yardımcı oldu? Yorumlarda bizimle paylaşarak topluluğumuza katkıda bulunun!

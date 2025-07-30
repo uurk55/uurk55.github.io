@@ -3800,3 +3800,65 @@ html {
 .pet-ideas-table th:nth-child(3) {
     width: 20%; /* İsteğe göre ayarlayın */
 }
+/* ============================================= */
+/* --- TAKI FİKİRLERİ TABLOSU SÜTUN AYARI --- */
+/* ============================================= */
+.jewelry-ideas-table td:nth-child(1),
+.jewelry-ideas-table th:nth-child(1) {
+    width: 35%;
+}
+.jewelry-ideas-table td:nth-child(2),
+.jewelry-ideas-table th:nth-child(2) {
+    width: 25%;
+}
+.jewelry-ideas-table td:nth-child(3),
+.jewelry-ideas-table th:nth-child(3) {
+    width: 40%;
+}
+/* ============================================= */
+/* --- GİYİLEBİLİR TEKNOLOJİ TABLOSU SÜTUN AYARI --- */
+/* ============================================= */
+
+/* 1. Sütun: "Ürün Kategorisi" */
+.wearable-ideas-table td:nth-child(1),
+.wearable-ideas-table th:nth-child(1) {
+    width: 25%;
+}
+
+/* 2. Sütun: "Önerilen Malzeme" */
+.wearable-ideas-table td:nth-child(2),
+.wearable-ideas-table th:nth-child(2) {
+    width: 30%;
+}
+
+/* 3. Sütun: "Öne Çıkan Değer" (En Geniş) */
+.wearable-ideas-table td:nth-child(3),
+.wearable-ideas-table th:nth-child(3) {
+    width: 50%;
+}
+/* ============================================= */
+/* --- YAKINDA GELECEK YAZI BİLDİRİMİ STİLİ --- */
+/* ============================================= */
+.coming-soon-notice {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+.coming-soon-notice strong {
+    color: var(--primary);
+}
+
+.coming-soon-notice span {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: var(--accent);
+    color: #fff;
+    border-radius: 20px;
+    vertical-align: middle;
+}

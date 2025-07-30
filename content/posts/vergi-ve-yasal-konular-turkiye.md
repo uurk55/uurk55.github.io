@@ -40,53 +40,83 @@ Bu rehber, Türkiye'deki genel yasal ve vergisel süreçler hakkında temel bir 
 
 Vergiden kaçınmak yerine, resmi bir işletme olmanın size sağlayacağı uzun vadeli avantajlara odaklanmalısınız:
 
-*   **Yasal Koruma ve Güvenilirlik:** Fatura kesebilmek, hem bireysel hem de kurumsal müşterilerin gözünde sizi anında daha güvenilir ve profesyonel bir satıcı yapar.
-*   **Büyüme Potansiyeli:** Resmi bir işletme olarak, banka kredilerine başvurabilir, KOSGEB gibi devlet teşviklerinden yararlanabilir ve Trendyol, Hepsiburada gibi büyük pazar yerlerinde satış yapma kapısını aralayabilirsiniz.
-*   **Giderleri Vergiden Düşme:** İşletmeniz için yaptığınız harcamaları (yeni bir 3D yazıcı, filament, bilgisayar, atölye kirası, elektrik faturası vb.) resmi olarak gider gösterebilir ve ödeyeceğiniz vergiden düşebilirsiniz.
-*   **Marka Tescili:** Markanızı ve logonuzu resmi olarak tescil ettirerek yasal koruma altına alabilirsiniz.
+* **Yasal Koruma ve Güvenilirlik:** Fatura kesebilmek, hem bireysel hem de kurumsal müşterilerin gözünde sizi anında daha güvenilir ve profesyonel bir satıcı yapar.
+* **Büyüme Potansiyeli:** Resmi bir işletme olarak, banka kredilerine başvurabilir, KOSGEB gibi devlet teşviklerinden yararlanabilir ve büyük pazar yerlerinde satış yapma kapısını aralayabilirsiniz.
+* **Giderleri Vergiden Düşme:** İşletmeniz için yaptığınız harcamaları (yeni bir 3D yazıcı, filament, bilgisayar vb.) resmi olarak gider gösterebilir ve ödeyeceğiniz vergiden düşebilirsiniz.
+* **Marka Tescili:** **[Markanızı]({{< ref "posts/markalasma-ve-hikaye-anlatimi.md" >}})** ve logonuzu resmi olarak tescil ettirerek yasal koruma altına alabilirsiniz.
 
 ![Düzenli bir masada, bir hesap makinesi, resmi belgeler ve yanında şık bir 3D baskı ürünün olduğu profesyonel bir fotoğraf.](/images/official-business-setup.png)
 
----
-
 ### Türkiye'de 3D Baskı Girişimcisi İçin Temel Adımlar
 
-#### 1. Adım: İşletme Türünü Seçmek (Şahıs Şirketi En Popüler Seçenek)
+#### 🏢 Adım 1: İşletme Türünü Seçmek (Şahıs Şirketi En Popüler Seçenek)
 Yeni başlayanlar için Türkiye'de en yaygın, en hızlı ve en düşük maliyetli seçenek **Şahıs Şirketi** kurmaktır.
-*   **Avantajları:** Kurulumu 1-2 gün sürer, açılış ve kapanış işlemleri kolaydır, muhasebe ücretleri daha düşüktür. Düşük ve orta ölçekli gelirler için vergi oranları daha avantajlıdır.
-*   **Limited Şirket (Ltd. Şti.):** Daha çok birden fazla ortak olduğunda veya gelecekte yatırım almayı düşünen büyük ölçekli işler için tercih edilir. Kurulumu daha karmaşık ve maliyetlidir.
+* **Avantajları:** Kurulumu 1-2 gün sürer, açılış ve kapanış işlemleri kolaydır, muhasebe ücretleri daha düşüktür. Düşük ve orta ölçekli gelirler için vergi oranları daha avantajlıdır.
+* **Limited Şirket (Ltd. Şti.):** Daha çok birden fazla ortak olduğunda veya gelecekte yatırım almayı düşünen büyük ölçekli işler için tercih edilir.
 
-#### 2. Adım: Bir Mali Müşavir (Muhasebeci) Bulmak
+#### 🤝 Adım 2: Bir Mali Müşavir (Muhasebeci) Bulmak
 Bu, atacağınız **en önemli** adımdır. Bir mali müşavir, sadece sizin adınıza vergi beyannamelerini vermekle kalmaz, aynı zamanda:
-*   Şirket kuruluş sürecinizi sizin adınıza yürütür.
-*   Sizin için en avantajlı vergi yapısını belirler (aşağıdaki Esnaf Muaflığı gibi).
-*   Hangi harcamaları gider olarak gösterebileceğiniz konusunda size danışmanlık yapar.
-*   Devletle aranızdaki tüm resmi süreçleri yönetir.
+* Şirket kuruluş sürecinizi sizin adınıza yürütür.
+* Sizin için en avantajlı vergi yapısını belirler.
+* Hangi harcamaları gider olarak gösterebileceğiniz konusunda size danışmanlık yapar.
+* Devletle aranızdaki tüm resmi süreçleri yönetir.
 
-#### 3. Adım: Temel Vergi Kavramlarını Anlamak
+#### 💰 Adım 3: Temel Vergi Kavramlarını Anlamak
 Mali müşaviriniz detayları yönetecek olsa da, bir işletme sahibi olarak temel kavramları bilmeniz önemlidir:
-*   **KDV (Katma Değer Vergisi):** Sattığınız her ürün veya hizmet için müşteriden tahsil edip devlete ödediğiniz vergidir. Oranı genellikle %20'dir.
-*   **Gelir Vergisi:** Şahıs şirketlerinin, yıl sonunda elde ettikleri kâr üzerinden devlete ödedikleri vergidir. Oranı, kârınızın miktarına göre %15'ten başlayarak artan oranlı bir tarifeye tabidir.
-*   **Geçici Vergi:** Gelir vergisini yıl sonuna bırakmamak için, her üç ayda bir, o dönemin kârı üzerinden peşin olarak ödenen vergidir.
+* **KDV (Katma Değer Vergisi):** Sattığınız her ürün veya hizmet için müşteriden tahsil edip devlete ödediğiniz vergidir. Oranı genellikle %20'dir.
+* **Gelir Vergisi:** Şahıs şirketlerinin, yıl sonunda elde ettikleri kâr üzerinden devlete ödedikleri vergidir. Oranı, kârınızın miktarına göre artan bir tarifeye tabidir.
+* **Geçici Vergi:** Gelir vergisini yıl sonuna bırakmamak için, her üç ayda bir, o dönemin kârı üzerinden peşin olarak ödenen vergidir.
 
 {{< tip-box title="💡 Hayat Kurtaran Bilgi: Esnaf Muafiyeti Belgesi" >}}
-Eğer üretiminizi evinizde, sanayi tipi olmayan (yani hobi tipi) makinelerle yapıyor ve satışlarınızı sadece internet ve benzeri elektronik ortamlar üzerinden gerçekleştiriyorsanız, **"Esnaf Vergi Muafiyeti Belgesi"** için başvurabilirsiniz. Bu belge sayesinde, belirli bir yıllık hasılat sınırını (her yıl güncellenir) aşmadığınız sürece **gelir vergisinden muaf olursunuz** ve şirket kurmanıza gerek kalmaz! Bu konuyu **mutlaka** mali müşavirinize danışın.
+Eğer üretiminizi evinizde, sanayi tipi olmayan makinelerle yapıyor ve satışlarınızı sadece internet üzerinden gerçekleştiriyorsanız, **"Esnaf Vergi Muafiyeti Belgesi"** için başvurabilirsiniz. Bu belge sayesinde, belirli bir yıllık hasılat sınırını (her yıl güncellenir) aşmadığınız sürece **gelir vergisinden muaf olursunuz** ve şirket kurmanıza gerek kalmaz! Bu konuyu **mutlaka** mali müşavirinize danışın.
 {{< /tip-box >}}
 
-#### 4. Adım: Fatura ve E-Belge Süreçleri
-Artık yaptığınız her satış için müşterinize bir fatura düzenlemeniz yasal bir zorunluluktur. Neyse ki, bu süreç artık tamamen dijital.
-*   **E-Arşiv Fatura:** Şahıs şirketi kurduğunuzda, Gelir İdaresi Başkanlığı'nın (GİB) ücretsiz e-Arşiv portalı üzerinden veya özel entegratör firmaların yazılımları aracılığıyla müşterilerinize kolayca dijital fatura kesebilirsiniz. Kağıt fatura devri artık bitti!
+### Hızlı Başlangıç Tablosu: Ne Yapmalıyım?
+<table class="summary-table">
+    <thead>
+        <tr>
+            <th>Adım</th>
+            <th>Eylem</th>
+            <th>Neden Önemli?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>1. Mali Müşavir Bul</strong></td>
+            <td>🤝 Güvendiğiniz bir profesyonelle anlaşın.</td>
+            <td>Tüm yasal ve finansal süreçlerdeki en büyük yardımcınız olacak.</td>
+        </tr>
+        <tr>
+            <td><strong>2. Esnaf Muafiyetini Sor</strong></td>
+            <td>💡 Müşavirinize bu seçeneğe uygun olup olmadığınızı danışın.</td>
+            <td>Uygun iseniz, sizi büyük bir vergi yükünden ve bürokrasiden kurtarır.</td>
+        </tr>
+        <tr>
+            <td><strong>3. Şirket Türünü Seç</strong></td>
+            <td>🏢 Tek başınaysanız ve yeni başlıyorsanız, Şahıs Şirketi en mantıklısıdır.</td>
+            <td>Hızlı, kolay ve düşük maliyetli bir başlangıç yapmanızı sağlar.</td>
+        </tr>
+        <tr>
+            <td><strong>4. Fatura Kesmeyi Öğren</strong></td>
+            <td>🧾 GİB'in ücretsiz e-Arşiv portalını nasıl kullanacağınızı öğrenin.</td>
+            <td>Yaptığınız her satışı resmileştirmeniz ve yasalara uymanız gerekir.</td>
+        </tr>
+    </tbody>
+</table>
 
-![Bir dizüstü bilgisayar ekranında, GİB'in (Gelir İdaresi Başkanlığı) e-arşiv portalının veya benzeri bir fatura programının arayüzü.](/images/e-archive-invoice.png)
-
-### Sonuç: Hobiden Profesyonel İşletmeye
+## Sonuç: Hobiden Profesyonel İşletmeye
 
 Yasal ve vergisel süreçler, girişimcilik yolculuğunun en az heyecan verici ama en gerekli parçasıdır. Bu adımları atmak, sizi sadece yasal olarak güvence altına almakla kalmaz, aynı zamanda zihinsel olarak da bir "hobici" olmaktan çıkarıp, işini ciddiye alan bir "işletme sahibi" yapar. İyi bir mali müşavirle, bu süreç korkutucu bir engel değil, işinizi büyütmenin sağlam bir temeli olacaktır.
 
-<!--
-İşimizi resmiyete döktüğümüze göre, artık farklı ve daha büyük ölçekli iş modellerini de düşünebiliriz. Bir sonraki adımda, **[Dropshipping ve 3D Baskı: Stok Tutmadan Nasıl Satış Yapılır?]** konusunu ele alacağız.
--->
+### Yolculuğun Bir Sonraki Durağı
 
----
+İşinizi resmiyete döktüğünüze göre, artık farklı ve daha büyük ölçekli iş modellerini de düşünebiliriz.
 
-**İşinizi resmiyete dökme süreciyle ilgili sorularınız veya deneyimleriniz var mı? Yorumlarda paylaşarak birbirimize yardımcı olalım!**
+<div class="post-cta-box">
+<h3>Şimdi Sırada Ne Var?</h3>
+<p>Stok tutmadan, sadece başkalarının tasarımlarını kullanarak veya kendi tasarımlarınızı başkalarına bastırarak nasıl satış yapabileceğinizi öğrenin.</p>
+<p class="coming-soon-notice"><strong>Sıradaki Rehber:</strong> Dropshipping ve 3D Baskı <span>(Yakında!)</span></p>
+</div>
+
+### Deneyimlerinizi Paylaşın!
+İşinizi resmiyete dökme süreciyle ilgili sorularınız veya deneyimleriniz var mı? Yorumlarda paylaşarak birbirimize yardımcı olalım!

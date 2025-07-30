@@ -3862,3 +3862,18 @@ html {
     border-radius: 20px;
     vertical-align: middle;
 }
+/* ============================================= */
+/* --- YAZICI SEÇİM MATRİSİ TABLOSU STİL AYARI --- */
+/* ============================================= */
+
+/* Tablonun genel stilini koruyoruz ama sütun genişliklerini bu tabloya özel ayarlıyoruz */
+.printer-matrix th:first-child,
+.printer-matrix td:first-child {
+    width: 20%;
+    font-weight: bold;
+}
+
+.printer-matrix th:not(:first-child),
+.printer-matrix td:not(:first-child) {
+    width: 20%;
+}

@@ -3737,3 +3737,66 @@ html {
 .badge-adhesion { background-color: #dc3545; }
 .badge-mechanical { background-color: #ffc107; color: #333; }
 .badge-extrusion { background-color: var(--accent); }
+/* ============================================= */
+/* --- ETSY KONTROL LİSTESİ TABLOSU SÜTUN AYARI --- */
+/* ============================================= */
+
+/* 1. Sütun: "Adım" (Daha Dar) */
+.etsy-checklist td:nth-child(1),
+.etsy-checklist th:nth-child(1) {
+    width: 25%;
+}
+
+/* 2. Sütun: "Eylem" (En Geniş) */
+.etsy-checklist td:nth-child(2),
+.etsy-checklist th:nth-child(2) {
+    width: 45%;
+}
+
+/* 3. Sütun: "Neden Önemli?" */
+.etsy-checklist td:nth-child(3),
+.etsy-checklist th:nth-child(3) {
+    width: 30%;
+}
+/* ============================================= */
+/* --- FİYATLANDIRMA KONTROL LİSTESİ SÜTUN AYARI --- */
+/* ============================================= */
+
+/* 1. Sütun: "Adım" */
+.pricing-checklist td:nth-child(1),
+.pricing-checklist th:nth-child(1) {
+    width: 30%;
+}
+
+/* 2. Sütun: "Eylem" */
+.pricing-checklist td:nth-child(2),
+.pricing-checklist th:nth-child(2) {
+    width: 40%;
+}
+
+/* 3. Sütun: "Neden Önemli?" */
+.pricing-checklist td:nth-child(3),
+.pricing-checklist th:nth-child(3) {
+    width: 30%;
+}
+/* ============================================= */
+/* --- EVCİL HAYVAN FİKİRLERİ TABLOSU SÜTUN AYARI --- */
+/* ============================================= */
+
+/* 1. Sütun: "Evcil Hayvan" */
+.pet-ideas-table td:nth-child(1),
+.pet-ideas-table th:nth-child(1) {
+    width: 20%; /* İsteğe göre ayarlayın */
+}
+
+/* 2. Sütun: "Popüler Ürün Fikirleri" */
+.pet-ideas-table td:nth-child(2),
+.pet-ideas-table th:nth-child(2) {
+    width: 60%; /* İsteğe göre ayarlayın */
+}
+
+/* 3. Sütun: "Öne Çıkan Özellik" */
+.pet-ideas-table td:nth-child(3),
+.pet-ideas-table th:nth-child(3) {
+    width: 20%; /* İsteğe göre ayarlayın */
+}

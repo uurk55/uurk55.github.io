@@ -32,11 +32,7 @@ Kafanızda binbir türlü fikir uçuşuyor ama o kritik sorunun cevabını arıy
 
 > Boş bir okyanusta rastgele olta atmak yerine, balıkların nerede olduğunu bilerek yola çıkmak... İşte pazar analizi tam olarak budur. Sizi boşa kürek çekmekten kurtarır ve doğrudan hazineye yönlendirir.
 
-Bu rehberde, 3D baskı yeteneklerinizle kârlı bir niş pazarı nasıl bulacağınızı ve satış potansiyeli yüksek ürün fikirlerini nasıl keşfedeceğinizi adım adım inceleyeceğiz.
-
-{{< tip-box title="💡 Sürekli Gözlem Yapın" >}}
-Pazar dinamiktir! Bir nişi belirledikten sonra bile, trendleri, müşteri geri bildirimlerini ve rakip hareketlerini sürekli olarak izlemeye devam edin. Bu, sizi her zaman bir adım önde tutar.
-{{< /tip-box >}}
+Bu rehber, sizin kişisel pazar analizi atölyeniz olacak. Adımları takip edin ve yazının sonunda, elinizde veriye dayalı, potansiyeli yüksek ve en önemlisi size heyecan veren niş fikirleri olacak.
 
 ### İlk Adım: Pusulanızı Kendinize Çevirin (İlgi Alanları ve Tutkular)
 
@@ -55,7 +51,7 @@ Her şey sizde başlar. Sizi aylarca motive edecek, zorluklar karşısında pes 
 * **Teknoloji Aksesuarları -> Niş:** Özel tasarım telefon standları, kablo düzenleyiciler, akıllı ev cihazları için duvar montaj aparatları.
 * **Evcil Hayvan Ürünleri -> Niş:** Papağanlar için tırmanma oyuncakları, küçük köpekler için kişiselleştirilmiş mama kaseleri.
 
-Bu niş fikirler hakkında daha fazla detay için, özel rehberlerimize göz atın: **[Evcil Hayvan Ürünleri]({{< ref "posts/evcil-hayvan-urunleri-3d-baski.md" >}})**, **[Masaüstü Oyun Figürleri]({{< ref "posts/masaustu-oyun-figurleri-3d-baski.md" >}})** ve **[Özel Organizasyon Çözümleri]({{< ref "posts/ozel-organizasyon-3d-baski.md" >}})**.
+Bu niş fikirler hakkında daha fazla detay için, özel rehberlerimize göz atın: **[Evcil Hayvan Ürünleri]({{< ref "posts/evcil-hayvan-urunleri-3d-baski.md" >}})**, **[Masaüstü Oyun Figürleri]({{< ref "posts/masaustu-oyun-figurleri-3d-baski.md" >}})** ve **[Özel Organizasyon Çözümlemi]({{< ref "posts/ozel-organizasyon-3d-baski.md" >}})**.
 
 ![Farklı 3D baskı ürün örnekleri ile dolu bir çalışma masası, beyin fırtınası notları ve eskizlerle çevrili.](/images/pazar-analizi-brainstorming.png "Yeni ürün fikirleri için beyin fırtınası yaparken.")
 
@@ -64,8 +60,7 @@ Bu niş fikirler hakkında daha fazla detay için, özel rehberlerimize göz at�
 Artık potansiyel nişleriniz var. Şimdi bunları piyasada test etme zamanı.
 
 #### Etsy Dedektifliği
-
-**[Etsy]({{< ref "posts/etsyde-3d-baski-satma-rehberi.md" >}})**, 3D baskı ürünleri için en büyük pazar yeridir. Arama çubuğuna nişinizle ilgili anahtar kelimeleri yazın ("3D printed vase", "dnd terrain" vb.).
+Arama çubuğuna nişinizle ilgili anahtar kelimeleri yazın ("3D printed vase", "dnd terrain" vb.).
 * **En Çok Satanları İnceleyin:** Hangi ürünler popüler? Yorumları nasıl? Fiyat aralıkları ne?
 * **Boşlukları Arayın:** Rakiplerin sunmadığı bir kişiselleştirme veya tasarım detayı var mı?
 
@@ -129,12 +124,12 @@ Tebrikler! Artık körü körüne üretim yapmak yerine, elinizde potansiyel, k�
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Harika bir niş ve ürün fikri buldunuz. Peki bu ürünlere **nasıl fiyat biçeceksiniz?**
+Harika bir niş ve ürün fikri buldunuz. Artık bu fikirleri satacağınız dükkanın kapılarını açma zamanı!
 
 <div class="post-cta-box">
 <h3>Şimdi Sırada Ne Var?</h3>
-<p>3D baskı ürünleriniz için maliyetleri doğru hesaplama, kâr marjı belirleme ve rekabetçi fiyatlandırma stratejileri konularını öğrenin.</p>
-<a href="{{< ref "posts/fiyatlandirma-stratejisi-rehberi.md" >}}" class="cta-button">Fiyatlandırma Stratejisi Rehberine Git →</a>
+<p>Hobinizi bir iş modeline dönüştürmenin en popüler yolu olan Etsy'de kendi 3D baskı dükkanınızı nasıl açacağınızı adım adım öğrenin.</p>
+<a href="{{< ref "posts/etsyde-3d-baski-satma-rehberi.md" >}}" class="cta-button">Etsy'de Satış Yapma Rehberine Git →</a>
 </div>
 
 ### Deneyimlerinizi Paylaşın!

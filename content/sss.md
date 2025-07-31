@@ -6,6 +6,7 @@ hidemeta: true
 comments: false
 description: "3D baskı ve Edu 3D Model Dünyası hakkında en çok merak edilen soruların cevaplarını burada bulabilirsiniz."
 showBreadCrumbs: false
+disableShare: true
 ---
 
 Bu sayfada, aklınıza takılabilecek yaygın sorulara hızlıca cevap bulabilirsiniz. Aradığınız cevabı burada bulamazsanız, <a href="/iletisim/">iletişim sayfasından</a> bana her zaman ulaşabilirsiniz.

@@ -5,6 +5,8 @@ draft: false
 hidemeta: true
 comments: false
 showBreadCrumbs: false # <<< YENİ EKLENEN SATIR BU!
+disableShare: true
+showToc: false
 ---
 
 Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir merhaba demek için aşağıdaki formu kullanabilirsiniz. Mesajlara genellikle 24 saat içinde yanıt veriyorum.

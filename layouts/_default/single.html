@@ -1,11 +1,13 @@
 {{ define "main" }}
 
-{{/* Bu, sadece normal yazı sayfaları için çalışacak olan nihai şablondur */}}
+{{/* Değişken Tanımlama: Bu sayfada İçindekiler menüsü gösterilecek mi? */}}
+{{ $showToc := and .TableOfContents (ne .Params.showToc false) }}
 
-<div class="post-layout-wrapper">
+{{/* Ana Yapı: İçindekiler menüsü varsa iki sütunlu, yoksa tek sütunlu sınıfı ata */}}
+<div class="{{ if $showToc }}post-layout-wrapper{{ else }}post-layout-wrapper-full{{ end }}">
     
     {{/* --- SOL SÜTUN: İÇİNDEKİLER (TOC) --- */}}
-    {{ if and .TableOfContents (ne .Params.showToc false) }}
+    {{ if $showToc }}
         <aside class="post-toc-sidebar">
             <div class="sticky-toc">
                 <strong>İçindekiler</strong>
@@ -14,7 +16,7 @@
         </aside>
     {{ end }}
 
-    {{/* --- SAĞ SÜTUN: ANA YAZI İÇERİĞİ --- */}}
+    {{/* --- ANA İÇERİK ALANI --- */}}
     <article class="post-single">
         <header class="post-header">
             {{ partial "breadcrumbs.html" . }}
@@ -49,14 +51,12 @@
                 </ul>
             {{- end -}}
 
-            {{- if .Site.Params.ShowShareButtons -}}
+            {{- if and .Site.Params.ShowShareButtons (ne .Params.disableShare true) -}}
                 {{- partial "share_icons.html" . -}}
             {{- end -}}
         </footer>
     
-        {{/* <<< DEĞİŞİKLİK BURADA BAŞLIYOR */}}
         {{- partial "related.html" . -}}
-        {{/* <<< DEĞİŞİKLİK BURADA BİTİYOR */}}
 
         {{- if .Params.comments }}
         <div id="comments" style="margin-top: 40px;">

@@ -6,6 +6,7 @@ hidemeta: true
 comments: false
 showBreadCrumbs: false
 showToc: false
+disableShare: true
 ---
 
 **Son Güncelleme:** 28 Temmuz 2025

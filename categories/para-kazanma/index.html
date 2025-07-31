@@ -550,57 +550,53 @@
     <footer class="footer-v2">
     <div class="footer-main-area">
         <div class="footer-container">
+
+            
             <div class="footer-column">
                 <div class="footer-logo-area">
                     <a href="https://edu3dmodel.com/"><img src="https://edu3dmodel.com/logo.png" alt="Edu 3D Model Dünyası logo" class="footer-logo"></a>
                     <p class="footer-about">3D baskı teknolojisiyle hobinizi bir iş modeline dönüştürmenize yardımcı oluyorum. Fikirden ürüne, üründen gelire...</p>
                 </div>
             </div>
+
+            
             <div class="footer-column">
-                <h4 class="footer-title">Popüler Kategoriler</h4>
+                <h4 class="footer-title">Site Haritası</h4>
                 <ul class="footer-links">
-                    <li><a href="/categories/para-kazanma/">Para Kazanma</a></li>
-                    <li><a href="/categories/başlangıç-rehberi/">Başlangıç Rehberi</a></li>
-                    <li><a href="/categories/teknik-ipuclari/">Teknik İpuçları</a></li>
-                    <li><a href="/categories/tasarim/">Tasarım</a></li>
+                    <li><a href="/posts/">Blog</a></li>
+                    <li><a href="/categories/">Kategoriler</a></li>
+                    <li><a href="/buradan-basla/">Buradan Başla</a></li>
+                    <li><a href="/sss/">SSS</a></li>
                 </ul>
             </div>
+
+            
             <div class="footer-column">
-                <h4 class="footer-title">Hızlı Linkler</h4>
+                <h4 class="footer-title">Daha Fazlası</h4>
                 <ul class="footer-links">
                     <li><a href="/hakkimda/">Hakkımda</a></li>
                     <li><a href="/iletisim/">İletişim</a></li>
-                    <li><a href="/tavsiyelerim/">Tavsiyelerim</a></li>
-                    <li><a href="/posts/">Tüm Yazılar</a></li>
+                    <li><a href="/ekitap/">E-Kitap</a></li>
                 </ul>
             </div>
+
+            
             <div class="footer-column">
-                <h4 class="footer-title">Takip Edin</h4>
-                <div class="footer-social-icons"><div class="social-icons" >
-    <a href="https://www.instagram.com/edu3dmodel/" target="_blank" rel="noopener noreferrer me"
-        title="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-</svg>
-    </a>
-    <a href="mailto:edu3dmodel@gmail.com" target="_blank" rel="noopener noreferrer me"
-        title="Mail">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-</svg>
-    </a>
-</div>
-</div>
+                <h4 class="footer-title">Yasal</h4>
+                <ul class="footer-links">
+                    <li><a href="/gizlilik-politikasi/">Gizlilik Politikası</a></li>
+                    <li><a href="/cerez-politikasi/">Çerez Politikası</a></li>
+                    <li><a href="/kullanim-sartlari/">Kullanım Şartları</a></li>
+                </ul>
             </div>
+
         </div>
     </div>
     <div class="footer-bottom-bar">
-        <div class="footer-container-bottom"><p>© 2025 Edu 3D Model Dünyası - Tüm Hakları Saklıdır.</p></div>
+        <div class="footer-container-bottom">
+             <p class="copyright-text">© 2025 Edu 3D Model Dünyası - Tüm Hakları Saklıdır.</p>
+             
+        </div>
     </div>
 </footer>
 
@@ -610,6 +606,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <script>
+
 document.addEventListener('DOMContentLoaded', function() {
     var header = document.getElementById('sticky-header');
     if (header) {
@@ -666,7 +663,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
     if (mobileMenuToggle && mainNav) {
@@ -675,7 +671,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.setAttribute('aria-expanded', mainNav.classList.contains('is-open'));
         });
     }
-
     const sidebarSearchInput = document.getElementById('sidebar-search-input');
     if (sidebarSearchInput) {
         const mainContent = document.querySelector('.main-content-right');
@@ -704,8 +699,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebarSearchInput.addEventListener('keyup', handleSearch);
         sidebarSearchInput.addEventListener('search', handleSearch);
     }
-
-    
     const toc = document.querySelector('.post-toc-sidebar');
     if (toc) {
         const tocLinks = toc.querySelectorAll('a');
@@ -713,17 +706,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const id = link.getAttribute('href').substring(1);
             return document.getElementById(id);
         }).filter(Boolean);
-
         const onScroll = () => {
             const scrollPosition = window.scrollY;
             let activeHeader = null;
-
             headers.forEach(header => {
                 if (header.offsetTop <= scrollPosition + 110) {
                     activeHeader = header;
                 }
             });
-
             tocLinks.forEach(link => {
                 link.parentElement.classList.remove('active');
                 if (activeHeader && link.getAttribute('href').substring(1) === activeHeader.id) {
@@ -734,7 +724,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', onScroll);
         onScroll();
     }
-    
 });
 </script></body>
 

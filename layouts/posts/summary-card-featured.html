@@ -1,32 +1,45 @@
-<article class="featured-card-v2">
-    <a href="{{ .Permalink }}" class="card-link">
-        <div class="card-image-container-featured">
-            {{- with .Params.cover.image -}}
-            <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt | default $.Title }}" loading="lazy" class="card-image">
-            {{- end -}}
+{{ $page := . }}
+<article class="post-card-v2 featured-card">
+    <a href="{{ $page.RelPermalink }}" class="post-card-link">
+        
+        <div class="post-card-image-v2">
+            {{ with $page.Params.cover.image }}
+                <img src="{{ . | relURL }}" alt="{{ $page.Title }}">
+            {{ else }}
+                <div class="image-placeholder-v2"></div>
+            {{ end }}
+            <div class="featured-tag">
+                <i class="fas fa-star"></i> Öne Çıkan
+            </div>
         </div>
-        <div class="card-content-featured">
-            <span class="post-list-category">{{ index .Params.categories 0 }}</span>
-            <h3 class="card-title-featured">{{ .Title }}</h3>
-            <div class="card-meta-featured">
-    {{ $date_english := .Date.Format "2 January 2006" }}
-    {{ $date_turkish := $date_english }}
-    {{ $date_turkish = replace $date_turkish "January" "Ocak" }}
-    {{ $date_turkish = replace $date_turkish "February" "Şubat" }}
-    {{ $date_turkish = replace $date_turkish "March" "Mart" }}
-    {{ $date_turkish = replace $date_turkish "April" "Nisan" }}
-    {{ $date_turkish = replace $date_turkish "May" "Mayıs" }}
-    {{ $date_turkish = replace $date_turkish "June" "Haziran" }}
-    {{ $date_turkish = replace $date_turkish "July" "Temmuz" }}
-    {{ $date_turkish = replace $date_turkish "August" "Ağustos" }}
-    {{ $date_turkish = replace $date_turkish "September" "Eylül" }}
-    {{ $date_turkish = replace $date_turkish "October" "Ekim" }}
-    {{ $date_turkish = replace $date_turkish "November" "Kasım" }}
-    {{ $date_turkish = replace $date_turkish "December" "Aralık" }}
-    <span>{{ $date_turkish }}</span>
-    <span class="meta-separator">·</span>
-    <span>{{ .ReadingTime }} dk okuma</span>
+
+        <div class="post-card-content-v2">
+            <span class="post-title">{{ $page.Title }}</span>
+            
+            <p class="post-card-summary">
+                {{ if $page.Description }}
+                    {{ $page.Description }}
+                {{ else }}
+                    {{ $page.Summary | plainify | htmlUnescape | truncate 150 }}
+                {{ end }}
+            </p>
+
+            <div class="post-card-footer">
+                <div class="post-meta-v2">
+    {{ with $page.Params.categories }}
+        <span class="meta-category">
+            <i class="fas fa-folder-open"></i> {{ index . 0 }}
+        </span>
+    {{ end }}
+    {{/* --- YENİ EKLENEN BÖLÜM BURASI --- */}}
+    <span>
+        <i class="far fa-calendar-alt"></i> {{ partial "format-turkish-date.html" $page.PublishDate }}
+    </span>
+    <span>
+        <i class="far fa-clock"></i> {{ $page.ReadingTime }} dk
+    </span>
 </div>
+            </div>
         </div>
     </a>
 </article>

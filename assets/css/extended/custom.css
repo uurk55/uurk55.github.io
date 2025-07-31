@@ -3877,3 +3877,97 @@ html {
 .printer-matrix td:not(:first-child) {
     width: 20%;
 }
+/* ============================================= */
+/* --- ANA SAYFA - ÖNE ÇIKAN YAZILAR KARTI --- */
+/* ============================================= */
+
+/* Ana sayfadaki "Öne Çıkanlar" bölümündeki kartların resim alanını hedefler */
+.featured-posts-grid .post-card-image-v2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* "Öne Çıkan" etiketi */
+.featured-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent); /* Sitenin vurgu rengi */
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0.9;
+    z-index: 2; /* Diğer elementlerin üzerinde kalmasını sağlar */
+}
+
+/* Etiketin içindeki yıldız ikonu */
+.featured-tag .fa-star {
+    font-size: 0.7rem;
+}
+
+/* "Öne Çıkanlar" bölümünün ızgara yapısı */
+.featured-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Mobilde ızgarayı tek sütuna düşür */
+@media (max-width: 768px) {
+    .featured-posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============================================= */
+/* --- ANA SAYFA - ÖNE ÇIKAN YAZILAR KARTI --- */
+/* ============================================= */
+
+/* Ana sayfadaki "Öne Çıkanlar" bölümündeki kartların resim alanını hedefler */
+.featured-posts-grid .post-card-image-v2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* "Öne Çıkan" etiketi */
+.featured-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent); /* Sitenin vurgu rengi */
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0.9;
+    z-index: 2; /* Diğer elementlerin üzerinde kalmasını sağlar */
+}
+
+/* Etiketin içindeki yıldız ikonu */
+.featured-tag .fa-star {
+    font-size: 0.7rem;
+}
+
+/* "Öne Çıkanlar" bölümünün ızgara yapısı */
+.featured-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Mobilde ızgarayı tek sütuna düşür */
+@media (max-width: 768px) {
+    .featured-posts-grid {
+        grid-template-columns: 1fr;
+    }
+}

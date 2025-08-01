@@ -15,4 +15,7 @@ Bu sayfa, 3D baskı dünyasında sıfırdan başlayıp kendi ürünlerini satara
 *   **[Faz 2](#faz-2)**'de, yeteneklerinizi bir üst seviyeye taşıyarak kendi 3D modellerinizi tasarlamayı, ileri baskı tekniklerini ve malzeme bilgisini öğreneceksiniz.
 *   **[Faz 3](#faz-3)**'te ise hobinizi bir iş modeline dönüştürecek; Etsy'de dükkan açmaktan pazarlamaya, müşteri yönetiminden yasal süreçlere kadar her detaya hakim olacaksınız.
 
+
 Aşağıdaki yol haritasını takip ederek, bu heyecan verici yolculuğa şimdi başlayın!
+
+{{< faz-progressbar >}}

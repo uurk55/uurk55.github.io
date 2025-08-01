@@ -175,5 +175,31 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', onScroll);
         onScroll();
     }
+        // --- YENİ: E-KİTAP GERİ SAYIM SAYACI ---
+    const countdownTimer = document.getElementById('countdown-timer');
+    if (countdownTimer) {
+        // <<< --- BURAYI DEĞİŞTİR: Kendi lansman tarihini gir (YIL, AY-1, GÜN) --- >>>
+        const launchDate = new Date("Sep 30, 2025 12:00:00").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days < 10 ? '0' + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? '0' + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                countdownTimer.innerHTML = "<div class='countdown-ended'>E-Kitap Şimdi Yayında!</div>";
+            }
+        }, 1000);
+    }
 });
 </script>

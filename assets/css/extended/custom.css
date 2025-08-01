@@ -4071,3 +4071,66 @@ html {
     display: block;
     margin-bottom: 5px;
 }
+/* ============================================= */
+/* --- E-KİTAP GERİ SAYIM (ÇİZGİLİ TASARIM) --- */
+/* ============================================= */
+
+/* "Kalan Süre" başlığı ve çizgileri */
+.countdown-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 5px 0 25px 0; /* Üst ve alt boşlukları ayarlar */
+}
+
+/* Başlığın solundaki ve sağındaki çizgiler */
+.countdown-heading::before,
+.countdown-heading::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+/* Saat, dakika kutularını içeren ana taşıyıcı */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px; /* Altındaki bölümle arasını açar */
+}
+
+/* Her bir saat, dakika kutusu */
+.countdown-item {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 15px 25px;
+    text-align: center;
+    min-width: 90px;
+}
+
+.countdown-item span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: block;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .countdown-container { gap: 10px; }
+    .countdown-item { padding: 10px; min-width: auto; flex-grow: 1; }
+    .countdown-item span { font-size: 1.8rem; }
+}

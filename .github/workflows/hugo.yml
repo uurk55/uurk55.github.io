@@ -1,35 +1,33 @@
-name: Build and Deploy
+name: Deploy Hugo Site
 
 on:
   push:
     branches:
-      - source # Sadece source dalını dinle
+      - source  # Sadece 'source' dalındaki değişiklikleri dinle
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout source branch
         uses: actions/checkout@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: true  # Temayı (submodule) da indir
+          fetch-depth: 0    # Tüm geçmişi al (son yazı tarihleri için önemli)
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: 'latest' # Her zaman en güncel Hugo'yu kullan
           extended: true
 
-      - name: Build
-        run: hugo
+      - name: Build Site
+        run: hugo --minify # Siteyi oluştur ve dosyaları küçült
 
-      - name: Deploy
+      - name: Deploy to main branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          publish_branch: main # Hedef dal main
-          cname: uurk55.github.io # Alan adını belirt
+          publish_branch: main  # Derlenmiş siteyi 'main' dalına gönder
+          cname: edu3dmodel.com # Özel alan adını belirt

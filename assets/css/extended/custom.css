@@ -3932,6 +3932,7 @@ html {
 .featured-posts-grid .post-card-image-v2 {
     position: relative;
     overflow: hidden;
+    height: 350px;
 }
 
 /* "Öne Çıkan" etiketi */

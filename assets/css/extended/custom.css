@@ -3980,3 +3980,62 @@ html {
         grid-template-columns: 1fr;
     }
 }
+/* ============================================= */
+/* --- İLETİŞİM SAYFASI - İŞBİRLİĞİ KUTUSU (v2) --- */
+/* ============================================= */
+
+.collaboration-box {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.collaboration-box h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.8rem; /* Başlığı biraz büyütelim */
+}
+
+.collaboration-box p {
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 30px; /* Liste ile arasını açalım */
+}
+
+.collaboration-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Listenin maksimum genişliğini belirleyelim */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Esnek ızgara yapısı */
+    gap: 20px;
+}
+
+.collaboration-list li {
+    font-size: 1.1rem; /* Metni biraz büyütelim */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* İkon ve metin arası boşluk */
+    background-color: var(--card-background); /* Her maddeye beyaz arka plan */
+    padding: 20px; /* İç boşluk */
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.collaboration-list li:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.collaboration-list li i {
+    color: var(--accent);
+    font-size: 1.5rem; /* İkonları büyütelim */
+    width: 30px; /* İkonların hizalı durması için sabit genişlik */
+    text-align: center;
+}

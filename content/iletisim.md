@@ -4,7 +4,7 @@ date: 2025-07-18T18:35:00+03:00
 draft: false
 hidemeta: true
 comments: false
-showBreadCrumbs: false # <<< YENİ EKLENEN SATIR BU!
+showBreadCrumbs: false
 disableShare: true
 showToc: false
 ---
@@ -23,6 +23,17 @@ Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir 
     <p style="text-align: center; margin-top: 20px;">
         <a href="/sss/" class="btn">Tüm Cevaplara Göz At →</a>
     </p>
+</div>
+
+<div class="collaboration-box">
+    <h3>İşbirliği ve Fırsatlar</h3>
+    <p>Aşağıdaki konularda bir işbirliği düşünüyorsanız, lütfen aşağıdaki iletişim formunu kullanarak bana ulaşın:</p>
+    <ul class="collaboration-list">
+        <li><i class="fas fa-bullhorn"></i> Sponsorlu İçerik ve Ürün İncelemeleri</li>
+        <li><i class="fas fa-users"></i> Ortak Projeler ve Eğitimler</li>
+        <li><i class="fas fa-microphone"></i> Konuşmacı Davetleri</li>
+        <li><i class="fas fa-coffee"></i> Ve sadece bir kahve içip 3D baskı sohbeti etmek!</li>
+    </ul>
 </div>
 
 --- 

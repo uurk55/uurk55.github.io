@@ -3024,14 +3024,14 @@ html {
 
 .category-hero-section-v3 {
     position: relative;
-    padding: 60px 40px;
+    padding: 40px; /* <<< DEĞİŞİKLİK: Dikey boşluğu 60px'ten 40px'e düşürdük */
     margin-bottom: 40px;
     border-radius: var(--radius);
     background-size: cover;
     background-position: center;
     overflow: hidden;
     color: #fff;
-    background-color: var(--primary); /* Resim yoksa koyu gri arka plan */
+    background-color: var(--primary);
 }
 
 .category-hero-overlay {
@@ -3051,12 +3051,12 @@ html {
 }
 
 .category-hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem; /* <<< DEĞİŞİKLİK: Başlık fontunu kutuyla orantılı olarak küçülttük */
     font-weight: 700;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     margin-top: 0;
     margin-bottom: 15px;
-    color: #fff; /* Başlık rengini beyaz yap */
+    color: #fff;
 }
 
 .category-hero-description {
@@ -3095,14 +3095,14 @@ html {
 .category-hero-final {
     background-color: var(--primary);
     border-radius: var(--radius);
-    padding: 50px 40px;
+    padding: 40px; /* <<< DEĞİŞİKLİK: Dikey boşluğu 50px'ten 40px'e düşürdük */
     margin-bottom: 40px;
     text-align: center;
     border: 1px solid rgba(255,255,255,0.1);
 }
 
 .category-hero-title-final {
-    font-size: 2.8rem;
+    font-size: 2.5rem; /* <<< DEĞİŞİKLİK: Başlık fontunu kutuyla orantılı olarak küçülttük */
     color: #fff;
     margin-top: 0;
     margin-bottom: 15px;

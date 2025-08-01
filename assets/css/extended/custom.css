@@ -3128,33 +3128,37 @@ html {
     background-position: center;
 }
 /* ============================================= */
-/* --- POPÜLER YAZILAR WIDGET TASARIMI --- */
+/* --- POPÜLER YAZILAR WIDGET TASARIMI (FİNAL) --- */
 /* ============================================= */
 
 .widget-popular-posts-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Kartlar arası dikey boşluk */
+    gap: 12px;
 }
-
+.popular-post-card:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
 .popular-post-card {
     display: flex;
-    align-items: center;
-    gap: 15px; /* Resim ve metin arası boşluk */
+    align-items: center; /* <<< DEĞİŞİKLİK: Dikey hizalamayı garantiler */
+    gap: 12px;
     text-decoration: none;
     border-radius: var(--radius);
-    padding: 5px; /* Hover efekti için küçük bir iç boşluk */
-    margin: -5px; /* Boşluğu dengelemek için */
+    padding: 5px;
+    margin: -5px;
     transition: background-color 0.2s ease;
 }
 
 .popular-post-card:hover {
-    background-color: var(--code-bg); /* Hafif hover efekti */
+    background-color: var(--code-bg);
 }
 
 .popular-post-image {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: var(--radius);
     overflow: hidden;
@@ -3180,7 +3184,11 @@ html {
 .popular-post-title {
     font-weight: 500;
     color: var(--content);
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1.3; /* <<< DEĞİŞİKLİK: Satır aralığını minimuma indirir */
+    margin: 0;          /* <<< DEĞİŞİKLİK: Tüm dış boşlukları sıfırlar */
+    padding: 0;         /* <<< DEĞİŞİKLİK: Tüm iç boşlukları sıfırlar */
+    display: block;     /* <<< DEĞİŞİKLİK: Elementin tam genişliği kullanmasını sağlar */
 }
 /* ============================================= */
 /* --- SSS SAYFASI TASARIMI (GELİŞTİRİLMİŞ v2) --- */

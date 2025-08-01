@@ -29,9 +29,20 @@ Bu platformu, işte bu sessizliği bozmak için kurdum. Kendi deneme-yanılma yo
 Amacım, 3D baskıyı sadece bir "üretim" aracı olarak değil, aynı zamanda bir **"finansal özgürlük"** aracına dönüştürme potansiyelini ortaya koyan bir yol haritası sunmak.
 
 **Burada, birlikte:**
--   Karmaşık görünen teknolojiyi en basit, en anlaşılır haline indireceğiz.
--   Sadece "ne" basacağımızı değil, "neden" ve "kime" satacağımızı keşfedeceğiz.
--   3D yazıcımızı, biz başka işlerle uğraşırken bizim için çalışan akıllı bir varlığa dönüştürmenin yollarını arayacağız.
+<ul class="icon-list-about">
+    <li>
+        <span class="icon">💡</span>
+        <span>Karmaşık görünen teknolojiyi en basit, en anlaşılır haline indireceğiz.</span>
+    </li>
+    <li>
+        <span class="icon">🎯</span>
+        <span>Sadece "ne" basacağımızı değil, "neden" ve "kime" satacağımızı keşfedeceğiz.</span>
+    </li>
+    <li>
+        <span class="icon">⚙️</span>
+        <span>3D yazıcımızı, biz başka işlerle uğraşırken bizim için çalışan akıllı bir varlığa dönüştürmenin yollarını arayacağız.</span>
+    </li>
+</ul>
 
 ## Bu, Sadece Başlangıç
 

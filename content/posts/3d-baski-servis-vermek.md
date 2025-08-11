@@ -53,8 +53,6 @@ Potansiyel müşterileriniz her yerde! İşte odaklanabileceğiniz dört ana gru
 * **İhtiyaçları:** Projelerinin fiziksel maketleri, konsept modelleri, ürün prototipleri. Genellikle hızlı ve hassas baskılara ihtiyaç duyarlar.
 * **Nasıl Ulaşılır?:** Yerel mimarlık ve mühendislik ofislerine profesyonel bir e-posta göndererek hizmetlerinizi tanıtın. LinkedIn üzerinden bu sektördeki profesyonellerle bağlantı kurun.
 
-![Detaylı bir mimari maketin 3D baskı hali.](/images/architectural-model-print.png)
-
 #### 💡 Ürün Geliştiriciler ve Mucitler
 * **İhtiyaçları:** Yeni ürün fikirlerinin ilk fiziksel prototipleri. Bir fikrin kağıt üzerinde nasıl durduğu ile elde nasıl hissettirdiği çok farklıdır.
 * **Nasıl Ulaşılır?:** Üniversitelerin tasarım ve mühendislik bölümleri, teknoparklar ve yerel "maker" toplulukları potansiyel müşterilerle doludur.
@@ -122,7 +120,7 @@ Başlangıçta korkmayın! Çevrenizdeki bir mobilyacının kırık bir plastik 
 <div class="post-cta-box">
 <h3>Şimdi Sırada Ne Var?</h3>
 <p>3D baskı işiniz için sosyal medyayı nasıl etkili bir şekilde kullanacağınızı, marka kimliği oluşturmayı ve müşteri kitlenizi büyütmeyi öğrenin.</p>
-<p class="coming-soon-notice"><strong>Sıradaki Rehber:</strong> Sosyal Medya Pazarlama <span>(Yakında!)</span></p>
+<a href="{{< ref "posts/sosyal-medya-pazarlama-3d.md" >}}" class="cta-button">Sosyal Medya Pazarlama Rehberine Git →</a>
 </div>
 
 ### Deneyimlerinizi Paylaşın!

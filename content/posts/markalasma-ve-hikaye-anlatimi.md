@@ -26,7 +26,7 @@ cover:
     relative: false
 ---
 
-Şimdiye kadar harika ürünler tasarlamayı, üretmeyi ve onları **[sosyal medyada pazarlamayı]({{< ref "posts/sosyal-medya-pazarlama-rehberi.md" >}})** öğrendik. Ama kendinize şu soruyu sorun: Neden bazı markalara diğerlerinden daha fazla para öderiz? Neden bir logoyu gördüğümüzde güvende hisseder, o markanın ürününü tereddüt etmeden satın alırız?
+Şimdiye kadar harika ürünler tasarlamayı, üretmeyi ve onları **[sosyal medyada pazarlamayı]({{< ref "posts/sosyal-medya-pazarlama-3d.md" >}})** öğrendik. Ama kendinize şu soruyu sorun: Neden bazı markalara diğerlerinden daha fazla para öderiz? Neden bir logoyu gördüğümüzde güvende hisseder, o markanın ürününü tereddüt etmeden satın alırız?
 
 Cevap basit: **Markalaşma ve hikaye anlatımı.**
 

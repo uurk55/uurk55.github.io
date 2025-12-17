@@ -73,7 +73,7 @@ Müşteri sadakati, beklentileri aştığınız anlarda inşa edilir.
 * **Kişisel Not:** El yazısıyla yazılmış, müşteriye adıyla hitap eden kısa bir teşekkür notu, inanılmaz derecede güçlü bir etki yaratır.
 
 {{< tip-box title="💡 Kullanıcı Tarafından Oluşturulan İçerik (UGC) Gücü" >}}
-Müşterilerinizden, ürünlerinizle çektikleri fotoğrafları sosyal medyada sizi etiketleyerek (`@seninmarkan`) paylaşmalarını isteyin. Bu, hem en gerçekçi ve güvenilir reklam olan "sosyal kanıtı" yaratır hem de size **[pazarlama]({{< ref "posts/sosyal-medya-pazarlama-rehberi.md" >}})** için kullanabileceğiniz harika, ücretsiz içerikler sağlar!
+Müşterilerinizden, ürünlerinizle çektikleri fotoğrafları sosyal medyada sizi etiketleyerek (`@seninmarkan`) paylaşmalarını isteyin. Bu, hem en gerçekçi ve güvenilir reklam olan "sosyal kanıtı" yaratır hem de size **[pazarlama]({{< ref "posts/sosyal-medya-pazarlama-3d.md" >}})** için kullanabileceğiniz harika, ücretsiz içerikler sağlar!
 {{< /tip-box >}}
 
 ### Hızlı Strateji Tablosu

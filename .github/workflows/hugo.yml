@@ -12,7 +12,7 @@ jobs:
       - name: Checkout source branch
         uses: actions/checkout@v4
         with:
-          submodules: true  # Temayı (submodule) da indir
+          submodules: recursive
           fetch-depth: 0    # Tüm geçmişi al (son yazı tarihleri için önemli)
 
       - name: Setup Hugo
@@ -29,5 +29,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main  # Derlenmiş siteyi 'main' dalına gönder
-          cname: edu3dmodel.com # Özel alan adını belirt
+          publish_branch: main
+          cname: edu3dmodel.com
+          enable_jekyll: false
+          force_orphan: true
+       

@@ -1,103 +1,114 @@
 ---
 title: "FDM 3D Yazıcı İlk Kurulum Rehberi: Kutudan İlk Başarılı Baskıya"
-date: 2025-04-16T10:00:00+03:00
+date: 2025-07-18T10:00:00+03:00
 featured: false
 draft: false
-description: "Yeni FDM 3D yazıcınızı kutudan çıkarıp ilk başarılı baskınızı almak için adım adım kurulum rehberi. Montajdan tabla kalibrasyonuna, filament yüklemeden ilk test baskısına kadar her şey."
-tags: ["FDM Kurulum", "3D Yazıcı Kurulumu", "İlk Baskı", "Tabla Kalibrasyonu", "Montaj Rehberi", "FDM Yazıcı", "Başlangıç Rehberi", "Teknik İpuçları"]
-categories: ["Temel Bilgi ve Kurulum"]
+description: "Yeni FDM 3D yazıcınızı kutudan çıkarıp ilk başarılı baskınızı almak için adım adım kurulum rehberi. Montaj, eksantrik somun ayarı, otomatik kalibrasyon (Z-Offset) ve ilk katman testi."
+tags: ["FDM Kurulum", "3D Yazıcı Montaj", "Z-Offset Ayarı", "Auto Leveling", "İlk Baskı", "Eksantrik Somun", "Benchy", "Kurulum Hataları"]
+categories: ["Başlangıç Rehberi"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
-hidemeta: false
 comments: true
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
     image: "/images/kurulum-rehberi-cover.jpg"
-    alt: "Bir masanın üzerinde yeni kurulmuş bir FDM 3D yazıcı ve yanında başarılı bir test baskısı duruyor"
-    caption: "Bu yolculuktaki en heyecanlı an: Fikirden gerçeğe ilk adım."
+    alt: "Kutudan yeni çıkmış ve montajı yapılan bir FDM 3D yazıcı"
+    caption: "İyi bir baskı, doğru sıkılmış bir vidayla başlar."
     relative: false
 ---
 
-O an geldi çattı! Haftalarca araştırdınız, rehberler okudunuz ve sonunda o büyük, heyecan verici kutu kapınıza dayandı. Yeni FDM 3D yazıcınız karşınızda duruyor. Bu heyecanı ve bir an önce harika baskılar alma isteğinizi çok iyi anlıyorum. Ancak, bu ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır. Aceleci davranmak, ileride saatlerce sürecek baş ağrılarına ve başarısız baskılara neden olabilir.
+Kapı çaldı, kurye o beklenen kutuyu bıraktı. Heyecan dorukta, biliyorum. Hemen bıçağı alıp kutuyu parçalamak, fişi takıp o meşhur gemiyi (Benchy) basmak istiyorsunuz.
 
-> "3D yazıcı kurulumunuzdaki ilk birkaç saat, tüm 3D baskı serüveninizin kalitesini belirleyecek olan en kritik anlardır."
+**YAPMAYIN.**
 
-İşte bu yüzden, size adım adım eşlik edecek bu rehberi hazırladım. Amacım, kutu açılımından o tatmin edici ilk başarılı baskıyı alana kadar olan tüm adımları, en basit ve en anlaşılır şekilde size sunmak. Bu rehberi bir kontrol listesi gibi kullanarak, yeni FDM yazıcınızla sorunsuz ve keyifli bir başlangıç yapmanızı sağlayacağız. Hazırsanız, o kutuyu birlikte açalım!
+Lütfen o bıçağı yavaşça yere bırakın.
 
-{{< tip-box title="💡 Sabrın Önemi" >}}
-Unutmayın: İlk kurulumda harcadığınız her ekstra dakika, gelecekteki başarısız baskılardan kurtaracağınız saatler demektir. Acele etmeyin ve her adımı dikkatle kontrol edin!
+3D yazıcılar, bir mikrodalga fırın gibi "fişi tak çalıştır" cihazlar değildir (Bambu Lab gibi yeni nesiller işi çok kolaylaştırsa da, temel mekanik kurallar değişmez). Yazıcının montajında yapacağınız 1 milimetrelik bir yamukluk veya gevşek bir vida, ileride "Neden bu baskı yamuk?", "Neden çizgiler var?" diye saçınızı başınızı yolmanıza sebep olur.
+
+Ben ilk yazıcımı kurarken o kadar acele ettim ki, dikey profilleri tam gönyesinde (dik) sıkmadım. Sonuç? İlk 2 ay boyunca bastığım her kare prizma aslında hafif bir paralelkenardı. Bunu fark etmem aylarımı aldı.
+
+Bu rehberde, kullanım kılavuzlarında detaylı anlatılmayan ama **hayati** olan montaj sırlarını vereceğim. Tornavidalar hazırsa başlıyoruz.
+
+## Adım 1: Kutu Açılışı ve "Sakin" Kontrol
+
+Kutuyu "kibarca" açın. İçinden çıkan köpükleri atmayın (ileride taşınırken veya servise gönderirken hayat kurtarır). Parçaları geniş bir masaya yayın. Vidaları boylarına göre ayırın.
+
+*   **İlk Bakış:** Kayışlarda kopukluk var mı? Kablolarda ezilme var mı? Profiller düzgün mü?
+
+## Adım 2: İskelet Montajı (Gönyesinde Kurmak)
+
+Yazıcının dikey profillerini (Z ekseni) tabana monte ederken en kritik kural şudur: **Diklik.**
+Vidaları hemen sonuna kadar sıkmayın. Önce hafifçe tutturun. Profillerin tam oturduğuna emin olduktan sonra çapraz sırayla sıkın.
+
+{{< tip-box title="💡 Usta İpucu: Sallantı Testi" >}}
+Yazıcıyı masaya koyduğunuzda, elinizle üstten hafifçe sallayın. Ayaklardan biri havada kalıyor mu? Yazıcı dans ediyor mu? Eğer ediyorsa, baskı sırasında oluşan titreşim (rezonans) tüm modellerinizi bozacaktır. Ayak vidalarını gevşetip, yazıcıyı düz zemine bastırıp tekrar sıkın.
 {{< /tip-box >}}
 
-**Not:** Eğer bir SLA (reçine) yazıcı aldıysanız, size özel detaylı kurulum rehberimize göz atın: **[SLA Yazıcı İlk Kurulum Rehberi: Reçine Dünyasına Güvenli Adımlar]({{< ref "posts/sla-yazici-kurulum-guvenlik-rehberi.md" >}})**
+## Adım 3: Eksantrik Somun Ayarı (Bunu Kimse Söylemez!)
 
-## Sağlam Bir Temel Atmak: Kutu Açılışı ve Montaj
+Kullanım kılavuzlarında genelde minik bir not olarak geçer ama **en çok yapılan hata** buradadır.
+Yazıcının hareket eden tekerleklerinin arkasında, diğerlerinden farklı görünen altıgen bir somun vardır. Buna **Eksantrik Somun** denir.
 
-Kutuyu bir an önce yırtıp açma isteğinizi bastırın ve derin bir nefes alın. Başarılı bir montaj, kontrollü bir başlangıçla olur. İlk olarak, kutu içinden çıkan kullanım kılavuzundaki parça listesiyle kutu içeriğini karşılaştırarak envanter kontrolü yapın. Eksik bir parça varsa, ilerlemeden satıcıyla iletişime geçin.
+*   **Sorun:** Kafa (extruder) veya tabla elinizle dokunduğunuzda lakır lukur sallanıyorsa, baskınız kötü olur. Çok sıkıysa tekerlekler aşınır.
+*   **Çözüm:** Kutudan çıkan anahtarla bu somunu yavaşça çevirin. Tekerlek profile tam öpüşmeli. **Testi şudur:** Tekerleği parmağınızla zorlayarak döndürebilmelisiniz ama tekerlek kendiliğinden boşa dönmemeli.
 
-![Bir kişinin 3D yazıcı montaj kılavuzuna bakarak parçaları birleştirmesi](/images/kurulum-montaj.jpg "Kontrollü bir başlangıç, başarılı sonuçlar getirir.")
+![Eksantrik somun ayarının yapılışını gösteren bir görsel](/images/kurulum-montaj.jpg "Sallanan bir kafa, dalgalı duvarlar demektir.")
 
-Montaj sırasında hem basılı kılavuzu hem de üreticinin YouTube'daki montaj videosunu aynı anda takip etmek en iyi yöntemdir. Taşıma sırasında gevşeyebilecek vidaları, özellikle de ana iskeleti oluşturanları kontrol edin ve sıkın. Sağlam ve oynamayan bir iskelet, "katman kayması" gibi sorunları önlemenin ilk adımıdır.
+## Adım 4: Otomatik Kalibrasyon ve Z-Offset Ayarı
 
-{{< tip-box title="🔑 Altın Kural: Tekerlek Ayarı" >}}
-Eksen tekerlekleri ne çok sıkı ne de çok gevşek olmalı; hafif bir dirençle, takılmadan akıcı bir şekilde dönmelidir. Bu ayar, baskı kalitesini doğrudan etkiler.
-{{< /tip-box >}}
+Satın alma rehberimizde "Otomatik Seviyeleme (Auto-Leveling) olmayan cihaz almayın" demiştik. Sözümüzü tuttuk, şimdi işin kolay kısmındayız. Artık kağıtla, tekerlekle uğraşmak yok.
 
-## O Kutsal Ayar: Mükemmel İlk Katmanın Sırrı (Tabla Kalibrasyonu)
+1.  Filamenti takmadan önce menüden **"Leveling"** veya **"Auto-Calibration"** seçeneğini başlatın.
+2.  Yazıcı tablanın çeşitli noktalarına dokunarak kendi haritasını çıkaracak. Bırakın yapsın.
+3.  **Kritik Nokta (Z-Offset):** Makine düzlüğü anlar ama "nozzle'ın tablaya ne kadar yakın olması gerektiğini" tam bilemeyebilir. Buna **Z-Offset** denir.
+    *   İlk baskıyı başlatırken menüde "Z-Offset" ayarını göreceksiniz.
+    *   Nozzle tablaya çok uzaksa (plastik havada kalıyorsa) değeri eksiye (-) indirin.
+    *   Çok yakınsa (plastik çıkamıyor, kazıyorsa) artıya (+) çıkarın.
 
-Şimdi, tüm baskılarınızın kalitesini belirleyecek olan en önemli ayara geldik. Amaç, baskı ucunun (nozzle) baskı tablasının her noktasına eşit ve doğru mesafede olmasını sağlamaktır. Bu mesafe yanlışsa, baskınız ya tablaya yapışmaz ya da nozzle tıkanır.
+![Bir kişinin tabla kalibrasyonu yaparken ekran görüntüsü](/images/kurulum-kalibrasyon.jpg "Z-Offset ayarı, ilk katmanın kaderini belirler.")
 
-![Bir kişinin tabla kalibrasyonu yaparken nozul ile tabla arasına bir A4 kağıt koyması](/images/kurulum-kalibrasyon.jpg "Başarının sırrı, bu kağıt parçasının hissettirdiği dirençte gizli.")
+## Adım 5: Filament Yükleme ve O Kritik Düğüm
 
-Eğer yazıcınızda **Otomatik Tabla Kalibrasyonu (ABL)** varsa, bu işlemi başlatın ve ardından menüden "Z-Offset" ayarını yapın. Bir A4 kağıdını nozzle ile tabla arasına koyarak, kağıdın hafifçe sürtünerek hareket ettiği noktayı bulana kadar Z-Offset değerini ayarlayın. Eğer manuel kalibrasyon yapıyorsanız, bu kağıt testini tablanın dört köşesi ve ortası için, tekerlekleri çevirerek en az iki tur boyunca tekrarlayın.
+Filamenti (PLA) paketten çıkarın.
+*   **Kural 1:** Ucunu yan keskiyle **45 derece açıyla sivri** kesin.
+*   **Kural 2:** Filamanın ucunu makaradan kaçırmayın! Eğer ucu bir kez elinizden kaçırıp makaraya dolanmasına izin verirseniz, o filament 5 saat sonraki baskının tam ortasında düğümlenir ve baskınız çöp olur.
 
-## Yazıcınıza "Mürekkebini" Vermek: Filament Yükleme
-
-Yazıcınızın iskeleti sağlam, tablası ise ayarlı. Artık ona, eserlerini yaratacağı "mürekkebi", yani filamenti verme zamanı.
+Extruder mandalına basıp filamenti ittirin (veya menüden "Load Filament" deyin). Nozzle sıcaklığının 200°C olduğundan emin olun. Ucundan plastik akana kadar bekleyin.
 
 ![Bir kişinin filamentin ucunu 3D yazıcının extruder mekanizmasına takması](/images/kurulum-filament-yukleme.jpg "Doğru filament yüklemesi, baskının kesintisiz sürmesini sağlar.")
 
-{{< tip-box title="🔑 Altın Kural: Filament Düğümü" >}}
-Filamentin ucunu ASLA serbest bırakmayın! Eğer ucu serbest bırakırsanız, makara kendi kendine gevşeyebilir ve baskının ortasında takılıp her şeyi mahvedecek bir düğüm oluşturabilir. Her zaman makara üzerindeki deliklere sabitleyin.
-{{< /tip-box >}}
+## Adım 6: İlk Baskı (Kutsal Benchy)
 
-Yazıcınızın menüsünden "Preheat PLA" (PLA için Ön Isıtma) seçeneğiyle nozzle'ı ısıtın. Isındıktan sonra, filamenti extruder mekanizmasından yavaşça itin. Ucundan erimiş plastiğin düzgün bir şekilde aktığını gördüğünüzde ve rengi tamamen oturduğunda, yazıcınız baskıya hazırdır.
+Genelde SD kartın içinde "Test Dog" veya "Owl" gibi modeller gelir. Siz gerçek bir test istiyorsanız, internetten meşhur **3DBenchy** gemisini indirin ve slicer'da standart ayarlarla dilimleyip basın.
 
-## "Yazdır" Tuşuna Basmak: O Büyülü An
+### Gözünüzü İlk Katmandan Ayırmayın
+Baskı başladığında eğilin ve nozzle'ın ucuna bakın.
+*   Plastik havada mı kalıyor? -> **Z-Offset'i biraz daha düşürün.**
+*   Plastik cama çok mu eziliyor, şeffaflaşıyor mu? -> **Z-Offset'i biraz artırın.**
+*   Mükemmel ilk katman, hafifçe ezilmiş yassı bir çizgi gibi görünmelidir.
 
-Artık o büyülü "yazdır" tuşuna basma zamanı. Kendi modelinizi dilimlemeden önce, genellikle yazıcının SD kartında gelen `calibration_cube.gcode` gibi hazır bir test dosyasını basarak makinenin doğruluğunu test etmek en iyi yoldur.
+![İlk katmanı atılan bir baskı](/images/kurulum-ilk-katman.jpg "O ilk katmanın yapıştığını görmek, dünyanın en güzel hissidir.")
 
-**EN KRİTİK AN: İLK KATMAN**
-Baskıyı başlattıktan sonra gözünüzü ilk katmandan ayırmayın. Plastik tablaya güzelce yapışıyor mu? Çizgiler ne çok ezilmiş ne de çok yuvarlak mı? Eğer ilk katmanda bir sorun görürseniz, baskıyı durdurun ve Z-offset ayarınızı çok küçük bir miktar değiştirip tekrar deneyin.
-
-![Bir 3D yazıcının ilk katmanı mükemmel bir şekilde çizmesi - yakın çekim makro fotoğraf](/images/kurulum-ilk-katman.jpg "Mükemmel bir ilk katman, başarılı bir baskının müjdecisidir.")
-
-İlk 2-3 katman sorunsuz atıldıysa, artık arkanıza yaslanıp makinenizin sihrini izleyebilirsiniz. Baskı bittiğinde tablanın soğumasını bekleyin ve parçanızı alın.
-
-{{< success-story-box title="✨ Tebrikler, Başardınız!" >}}
-Elif, ilk FDM yazıcısını kurarken vidalar, kayışlar, kablolar derken çok çekinmişti. Ama bu rehberdeki adımları tek tek sabırla takip etti. Sonunda ilk kalibrasyon küpünü sorunsuz bastığında hissettiği o başarma hissi, onu daha büyük projelere cesaretlendirdi ve şimdi kendi küçük saksı koleksiyonunu online satıyor! Siz de o ilk adımı attınız!
+{{< success-story-box title="✨ Benim İlk 'Spagetti' Deneyimim" >}}
+İlk yazıcımı kurduğumda, Z-Offset ayarını yapmadan baskıyı başlatıp odadan çıkmıştım. 1 saat sonra döndüğümde masanın üzerinde bir gemi değil, kocaman bir plastik yumağı (spagetti) vardı. O gün öğrendim ki: Otomatik seviyeleme olsa bile, **ilk katmanı gözünle görmeden odadan çıkma.**
 {{< /success-story-box >}}
 
-## Sonuç: İlk Adımı Başarıyla Attınız
+## Sonuç: Artık Bir "Maker"sınız
 
-Tebrikler! Elinizde tuttuğunuz o küçük nesne, sadece bir plastik parçası değil; o, sizin sabrınızın, dikkatinizin ve başarınızın ilk somut kanıtıdır. Bu sağlam temel üzerine artık çok daha büyük ve karmaşık yapılar inşa edebilirsiniz.
+Eğer o ilk baskı tabladan, spagettiye dönüşmeden çıktıysa, derin bir nefes alabilirsiniz. En zor kısmı atlattınız. Artık o makine sizin hayal gücünüzün emrinde.
+
+Ancak makineyi kurmak yetmez. Bu cihazlar yüksek sıcaklıklara çıkar ve hareketli parçalara sahiptir. Evinizde küçük bir fabrika kurdunuz, peki bu fabrikanın iş güvenliği ne durumda?
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Yazıcınız artık baskıya hazır. Peki bu güçlü alete neyi, nasıl basacağını söyleyen o sihirli "dilimleyici" (slicer) yazılımların sırlarını keşfetme zamanı!
+Yazıcı çalışıyor ama onu gece çalıştırıp uyumak güvenli mi? Yangın riski var mı? Çocuklardan nasıl koruruz? Gel, güvenliği şansa bırakmayalım.
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>Kendi modellerinizi baskıya hazırlamanın ve baskı kalitenizi en üst düzeye çıkarmanın sırlarını keşfetmek için bir sonraki temel rehberimize geçin.</p>
-<a href="{{< ref "posts/temel-slicer-ayarlari.md" >}}" class="cta-button">Temel Slicer Ayarları Rehberine Git →</a>
+<h3>Sırada: 3D Yazıcı Güvenliği</h3>
+<p>Termal kaçak nedir? Yazıcıyı evde nereye koymalı? Yangın ve sağlık risklerine karşı almanız gereken 5 hayati önlem.</p>
+<a href="{{< ref "posts/3d-yazici-guvenligi-rehberi.md" >}}" class="cta-button">Güvenlik Rehberine Git →</a>
 </div>
-
-### Deneyimlerinizi Paylaşın!
-Sizin ilk 3D yazıcı kurulum deneyiminiz nasıldı? En çok hangi adımda zorlandınız veya hangi ipucu size çok yardımcı oldu? Yorumlarda bizimle paylaşarak topluluğumuza katkıda bulunun!

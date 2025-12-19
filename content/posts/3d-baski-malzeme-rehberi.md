@@ -1,10 +1,10 @@
 ---
-title: "PLA, PETG, ABS ve Reçine: Projeniz İçin Doğru 3D Baskı Malzemesi Hangisi?"
-date: 2025-04-26T11:00:00+03:00
+title: "PLA, PETG, ABS, TPU ve Reçine: Hangisini Seçmeli? (Marka Tavsiyeli)"
+date: 2025-08-01T11:00:00+03:00
 featured: false
 draft: false
-description: "3D baskı için PLA, PETG, ABS ve reçine gibi popüler malzemelerin özelliklerini, avantajlarını, dezavantajlarını ve hangi projeler için ideal olduklarını keşfedin. Doğru malzeme seçimi rehberi."
-tags: ["PLA Filament", "PETG Filament", "ABS Filament", "3D Baskı Reçine", "Malzeme Seçimi", "Filament Rehberi", "3D Yazıcı Malzemesi", "Baskı İpuçları", "Başlangıç Rehberi", "Temel Bilgi ve Kurulum"]
+description: "Hangi plastiği nerede kullanmalısınız? TPU ile esnek parça nasıl basılır? PLA neden güneşte erir? eSun, Porima, Bambu Lab... Hangi marka filament alınır? Uğur Kapancı'nın malzeme ve marka rehberi."
+tags: ["PLA Filament", "PETG Filament", "ABS Filament", "TPU Filament", "Esnek Baskı", "3D Baskı Reçine", "Malzeme Seçimi", "Filament Marka Tavsiyesi", "eSun", "Porima", "Bambu Lab"]
 categories: ["Teknik İpuçları"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
@@ -21,114 +21,133 @@ ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
     image: "/images/malzeme-rehberi-cover.jpg"
-    alt: "Farklı renklerde filament makaraları ve reçine şişeleri yan yana duruyor"
-    caption: "Doğru malzeme, projenizin ruhudur. Hadi doğru ruhu bulalım."
+    alt: "Farklı renklerde filament makaraları ve esnek TPU parçalar"
+    caption: "Malzeme, projenin ruhudur. Yanlış ruh, bedeni çürütür."
     relative: false
 ---
 
-Tebrikler! Zorlu bir araştırmanın sonunda sizin için en doğru 3D yazıcıyı seçtiniz. Kurulumu yaptınız, ilk deneme baskınızı aldınız ve o büyülü anı yaşadınız. Şimdi ise yaratıcılığınızı konuşturma zamanı. Peki, o muhteşem fikrinizi hayata geçirmek için hangi "yapı taşını" kullanacaksınız?
+Tebrikler! Yazıcıyı kurduk, kalibre ettik. Şimdi en keyifli ama cüzdanı en çok ilgilendiren kısma geldik: **Filament Seçimi.**
 
-Doğru malzemeyi seçmek, bir şefin yemeği için doğru baharatı seçmesi gibidir; sonuç ya unutulmaz bir lezzet ya da bir hayal kırıklığı olabilir. Piyasada **PLA, PETG, ABS** gibi onlarca filament çeşidi ve farklı özelliklerde reçineler varken, doğru seçimi yapmak ilk başta göz korkutucu gelebilir.
+Bir şef için baharat neyse, bizim için de malzeme odur. Yanlış malzeme, mükemmel bir tasarımı çöpe dönüştürebilir.
 
-Ama endişelenmeyin! Bu rehberde, en popüler 3D yazıcı malzemelerini masaya yatıracağız. Her birinin güçlü ve zayıf yönlerini, hangi projeler için ideal olduklarını ve bilmeniz gereken pratik ipuçlarını öğreneceksiniz. Amacımız, bu yazının sonunda **"Hangi malzemeyi kullanmalıyım?"** sorusunu sizin için tamamen ortadan kaldırmak.
+Ben ilk zamanlarımda arabamın içine koymak için harika bir telefon tutacağı basmıştım. Malzeme olarak en ucuz bulduğum, markasız bir PLA kullandım. Yazın ilk sıcak gününde arabaya bindiğimde, telefon tutacağımın eriyip bir Salvador Dali tablosuna dönüştüğünü gördüm. O gün öğrendim ki: **Her plastik, her yere uymaz.**
 
-{{< tip-box title="💡 Nem, Filamentlerin Düşmanıdır!" >}}
-Filamentler neme karşı çok hassastır ve nemli filament, baskı kalitesini mahveder. Baskı kalitenizi korumak için filamentlerinizi her zaman nemsiz bir ortamda, kapalı bir kutuda veya özel bir filament kurutucuda saklayın.
-{{< /tip-box >}}
+Bu rehberde, sadece malzeme türlerini değil, **hangi markaların** parasına değdiğini de açık açık yazacağım.
 
-## PLA Filament: Herkesin Güvenilir Dostu
+---
 
-Eğer 3D baskı dünyasına ilk adımınızı atıyorsanız, tanışacağınız ilk ve muhtemelen en çok seveceğiniz malzeme PLA olacaktır. **PLA (Polilaktik Asit)**, mısır nişastası gibi yenilenebilir kaynaklardan üretilen, biyolojik olarak parçalanabilen bir termoplastiktir. Baskı sırasında o kötü plastik kokusunu yaymaz; aksine, bazen tatlı, mısır gevreği gibi bir koku bile alabilirsiniz!
+## 1. PLA: Başlangıç İçin En İyisi (Ama Sınırları Var)
 
-![Parlak turuncu renkte bir PLA filament makarası ve ondan basılmış geometrik bir vazo](/images/malzeme-pla.jpg "PLA: Kolaylık, detay ve renk çeşitliliği.")
+**PLA (Polilaktik Asit)**, mısır nişastası bazlıdır. Yani petrolden değil, bitkiden üretilir.
 
-**Neden PLA'yı Seveceksiniz?**
-* **Kolay Baskı:** Düşük erime sıcaklığı sayesinde "bas ve unut" kolaylığı sunar. Neredeyse her yazıcıda sorunsuzca çalışır.
-* **Kokusuz ve Güvenli:** Bitkisel bazlı olduğu için kapalı ortamlarda kullanımı daha rahattır.
-* **Keskin Detaylar:** Sert yapısı sayesinde, köşeleri ve kenarları net olan modeller için mükemmeldir.
-* **Geniş Renk Yelpazesi:** Piyasada hayal edebileceğiniz her renkte ve dokuda PLA bulabilirsiniz.
+**Neden PLA?**
+*   **Basması Çok Kolay:** Isıtılmış tablaya bile bazen ihtiyaç duymaz. Yamulmaz (Warping yapmaz).
+*   **Detay:** Köşeleri keskindir. Görsel modeller, figürler için harikadır.
 
-**Nelere Dikkat Etmelisiniz?**
-* **Düşük Isı Direnci:** 60°C'de yumuşamaya başlar. Güneşte veya sıcak arabada bırakılan ürünler deforme olabilir.
-* **Kırılganlık:** Esnemek yerine çatlayarak kırılma eğilimindedir.
+**Dezavantajı:**
+*   **Sıcağa Gelemez:** 50-60°C'de yumuşar. Arabada, bulaşık makinesinde, sıcak su borusunda kullanamazsınız.
+*   **Kırılgandır:** Esnemez, "çat" diye kırılır.
 
-**PLA ile Neler Yapılır?**
-Dekoratif objeler, figürler, hızlı prototipler ve doğrudan ısıya veya darbeye maruz kalmayacak pratik ev eşyaları.
+### ⭐ Uğur'un Marka Tavsiyeleri (PLA)
+*   **Fiyat/Performans (Yerli):** **Porima** veya **Microzey**. Türk malıdır, tazedir, gayet iyi iş görür.
+*   **Dünya Standardı:** **eSun PLA+**. Normal PLA'dan çok daha sağlamdır. Benim favorimdir.
+*   **Hız Canavarı:** **Bambu Lab PLA Basic**. Hızlı yazıcınız varsa (Bambu/Creality K1), bu filament yüksek hızlara yetişebilir.
 
-## PETG Filament: PLA'dan Güçlü, ABS'den Kolay
+---
 
-Biraz daha fazlasını istiyorsunuz: **dayanıklılık!** İşte bu noktada sahneye **PETG (Polietilen Tereftalat Glikol)** çıkıyor. Onu, PLA'nın kullanım kolaylığı ile ABS'nin dayanıklılığını birleştiren bir hibrit olarak düşünebilirsiniz.
+## 2. PETG: İş Yapanın Dostu (PLA ve ABS'nin Çocuğu)
 
-![Yarı şeffaf (transparan) bir PETG filament makarası ve ondan basılmış sağlam bir mekanik parça](/images/malzeme-petg.jpg "PETG: Fonksiyonellik ve dayanıklılığın mükemmel dengesi.")
+**PETG**, su şişelerinin yapıldığı malzemenin modifiye edilmiş halidir. PLA kadar kolay basılır ama ABS kadar dayanıklıdır.
 
-**Neden PETG'yi Tercih Etmelisiniz?**
-* **Yüksek Darbe Direnci:** PLA gibi anında kırılmaz, darbe aldığında esner.
-* **Daha İyi Isı ve UV Direnci:** Dış mekan uygulamaları veya araba içi aksesuarlar için PLA'dan çok daha uygundur.
-* **Şeffaflık:** Gerçekten şeffaf baskılar alabileceğiniz nadir filamentlerdendir.
+**Neden PETG?**
+*   **Esner ama Kırılmaz:** Darbeye dayanıklıdır.
+*   **Dış Mekan Kralı:** Güneşe (UV), yağmura dayanır. Araba içi aksesuarlar ve saksılar için birebirdir.
 
-**Nelere Hazırlıklı Olmalısınız?**
-* **"Stringing" (İplenme):** Baskı kafası hareket ederken arkasında ince iplikçikler bırakabilir. Slicer ayarlarınızda "retraction" (geri çekme) ayarını doğru yapmanız gerekir.
-* **Hassas Ayar Gerektirir:** PLA kadar "affedici" değildir, doğru ayarları bulmak biraz deneme gerektirebilir.
+**Dezavantajı:**
+*   **İpliklenme (Stringing):** Biraz "sümükleşen" bir yapısı vardır. Ayarları iyi yapmazsanız örümcek ağı gibi iplikler bırakır.
 
-**PETG ile Neler Yapılır?**
-Fonksiyonel ve mekanik parçalar (dişliler, braketler), dış mekan uygulamaları (saksılar), su şişesi tutucuları gibi suya dayanıklılık gerektiren ürünler.
+### ⭐ Uğur'un Marka Tavsiyeleri (PETG)
+*   **Overture PETG:** Dünya çapında çok tutulur, kutudan çıktığı gibi basılır.
+*   **eSun PETG:** Renk skalası geniştir, güvenilirdir.
+*   **Porima PETG:** Yerli üretimde PETG konusunda gayet başarılılar.
 
-{{< success-story-box title="✨ Doğru Malzeme, Başarılı Proje" >}}
-Can, ilk dış mekan saksı baskısını PLA ile yapmıştı. Güneşte kısa sürede deforme olduğunu görünce büyük hayal kırıklığı yaşadı. Daha sonra bu rehberi okuyarak PETG filamente geçti. Hem UV hem de ısıya dayanıklı PETG sayesinde saksıları artık yıllardır dışarıda sorunsuzca duruyor ve satışları arttı! **Doğru malzeme seçimi, projenin kaderini değiştirir.**
+{{< success-story-box title="✨ Benim Dersim: Eriyen Saksı" >}}
+Yukarıda bahsettiğim eriyen telefon tutacağından sonra, bir de PLA ile saksı basıp balkona koymuştum. İki ay sonra saksı yamuldu. Hemen PETG'ye geçtim. Aynı saksıyı **Porima PETG** ile bastım, 2 yıldır yağmurda çamurda, güneşte bana mısın demedi. **Dış mekan = PETG.**
 {{< /success-story-box >}}
 
-## ABS Filament: Endüstriyel Güç, Profesyonel Zorluk
+---
 
-Elinize bir LEGO parçası aldığınızda hissettiğiniz o sağlam, mat ve tok doku var ya? İşte o, **ABS (Akrilonitril Bütadien Stiren)**. Endüstride yıllardır kullanılan, kendini kanıtlamış bir mühendislik plastiğidir.
+## 3. TPU: Esnek ve Lastik Gibi (Zor Ama Eğlenceli)
 
-![Mat siyah bir ABS filament makarası ve ondan basılmış, yüzeyi asetonla pürüzsüzleştirilmiş bir araba parçası](/images/malzeme-abs.jpg "ABS: Maksimum dayanıklılık ve profesyonel sonuçlar.")
+İşte geldik listenin yaramaz çocuğuna. **TPU (Termoplastik Poliüretan)**, sert plastik değildir. Lastik gibidir, bükülür, sıkışır, geri eski haline döner.
 
-**ABS'nin Süper Güçleri:**
-* **Yüksek Isı Direnci:** Yaklaşık 100°C'ye kadar dayanır, sıcak motor parçaları veya bulaşık makinesinde yıkanacak ürünler için idealdir.
-* **Mükemmel Dayanıklılık ve İşlenebilirlik:** Çok sağlamdır ve baskı sonrası zımparalanması, delinmesi, hatta aseton buharı ile pürüzsüzleştirilmesi çok kolaydır.
+![Esnek bir TPU baskının elle büküldüğü an](/images/malzeme-tpu.jpg "TPU ile telefon kılıfı, conta, tekerlek basabilirsiniz.")
 
-**Neden Usta İşi Gerektirir?**
-* **Çekme (Warping) ve Çatlama:** Soğurken büzülme eğilimi vardır. Bu yüzden **kapalı bir baskı kasası (enclosure)** kullanmak neredeyse zorunludur.
-* **Zararlı Buharlar ve Koku:** Baskı sırasında yoğun koku ve zararlı buharlar yayar. **Çok iyi havalandırma** şarttır.
+**Neden TPU?**
+*   **Esneklik:** Telefon kılıfı, drone koruması, RC araba tekerleği, kapı stoperi...
+*   **Kırılmaz:** Yere atın, zıplar.
 
-**ABS ile Neler Yapılır?**
-Otomotiv parçaları, yoğun kullanılacak aletler, LEGO uyumlu parçalar ve yüzeyi işlenecek profesyonel prototipler.
+**Dezavantajı (Dikkat!):**
+*   **Basması Zordur:** Özellikle "Bowden" tipi (motoru uzakta olan) eski yazıcılarda basmak işkencedir. TPU, pişmiş spagetti gibidir; itmeye çalışırsanız borunun içinde bükülür. **Direct Drive** (motoru kafada olan) yazıcılar için uygundur.
+*   **Yavaştır:** Çok yavaş basmanız gerekir (20-30 mm/s).
 
-### Filamentler Karşı Karşıya: Hızlı Karar Rehberi
+### ⭐ Uğur'un Marka Tavsiyeleri (TPU)
+*   **SainSmart TPU:** TPU denince akla gelen ilk markadır. Pahalıdır ama basması nispeten kolaydır.
+*   **Overture High Speed TPU:** Biraz daha hızlı basılabilir.
+*   **Filamentum Flexfill:** Çok kaliteli ama pahalıdır.
 
-| Özellik | PLA | PETG | ABS |
-| :--- | :--- | :--- | :--- |
-| **Baskı Kolaylığı** | ⭐⭐⭐⭐⭐ (En Kolay) | ⭐⭐⭐ (Orta) | ⭐⭐ (Zor) |
-| **Sağlamlık** | 💪 Orta | 💪💪💪 (Sağlam) | 💪💪💪💪 (Çok Sağlam) |
-| **Isı Direnci** | 🔥 Düşük | 🔥🔥 Orta | 🔥🔥🔥🔥 (Yüksek) |
-| **Detay Kalitesi** | ✨ Çok İyi | ✨ İyi | ✨ Orta |
-| **Güvenlik** | ✅ Güvenli | ✅ Güvenli | ⚠️ Havalandırma Gerekli |
+---
 
-## Kısa Bir Bakış: Reçine Çeşitleri
+## 4. ABS / ASA: Mühendislik ve Zehir (Profesyoneller İçin)
 
-Eğer bir SLA yazıcınız varsa, sizin mühimmatınız reçinelerdir. İşte en yaygın 3 tür:
+LEGO parçalarının malzemesi **ABS**'dir. **ASA** ise onun güneşe dayanıklı, modern halidir.
 
-![Farklı renklerde üç adet reçine şişesi ve her birinden basılmış detaylı birer obje yan yana duruyor](/images/malzeme-recine.jpg "Reçine: Detayların sıvı hali.")
+**Neden ABS/ASA?**
+*   **Sıcaklık Canavarı:** 100°C'ye kadar dayanır. Motor parçası bile basabilirsiniz.
+*   **İşlenebilirlik:** Zımparası çok kolaydır. Aseton buharı ile cam gibi pürüzsüz yapılır.
 
-1.  **Standart Reçine:** SLA dünyasının PLA'sıdır. Baskısı en kolay, en uygun fiyatlı olanıdır. Çok detaylı ama kırılgandır. Görsel amaçlı figürler ve modeller için idealdir.
-2.  **"ABS-Like" veya "Sert" Reçine:** Standart reçineye göre darbelere karşı çok daha dayanıklıdır ve bir miktar esneklik sunar. Fonksiyonel prototipler ve daha sağlam minyatürler için harikadır.
-3.  **Suda Yıkanabilir Reçine:** Temizlemek için pahalı ve tehlikeli alkoller yerine sadece musluk suyu kullanmanızı sağlar. Kolaylık ve güvenlik arayanlar için mükemmel bir alternatiftir, ancak genellikle mekanik olarak en az dayanıklı olanıdır.
+**Dezavantajı:**
+*   **Zehirli Gaz:** Basarken Stiren gazı yayar. Havalandırma ŞARTTIR.
+*   **Yamulma (Warping):** Kapalı kasası olmayan bir yazıcıda (Ender 3 gibi) basamazsınız. Köşelerden kalkar.
 
-## Sonuç: Projenizin Ruhunu Seçin
+### ⭐ Uğur'un Marka Tavsiyeleri (ABS/ASA)
+*   **Polymaker PolyLite ASA:** ABS yerine mutlaka ASA kullanın. Daha az kokar, güneşe daha dayanıklıdır. Polymaker bu işin zirvesidir.
+*   **eSun ABS+:** Standart ABS'ye göre daha az yamulur, basması daha kolaydır.
 
-Artık temel malzemeleri tanıyorsunuz. Unutmayın, "en iyi" malzeme diye bir şey yok; sadece **sizin projenize en uygun malzeme** var. Bir sonraki projenize başlamadan önce kendinize sorun: "Bu ürünün ne kadar sağlam olması gerekiyor? Isıya maruz kalacak mı? En önemli şey görünüşü mü, yoksa işlevi mi?"
+---
 
-Bu soruların cevabı, sizi doğru filament veya reçineye yönlendirecektir.
+## 5. Reçine (SLA): Detaycılar İçin
+
+Reçine kullanıyorsanız markalar değişir.
+
+*   **Standart Reçine:** **Elegoo Standard** veya **Anycubic Standard**. Ucuzdur, detaylıdır ama kırılgandır.
+*   **Sağlam (ABS-Like) Reçine:** **Siraya Tech Fast** veya **Elegoo ABS-Like**. Eğer figürünüz düşünce kırılmasın istiyorsanız, paraya kıyıp **Siraya Tech** alın. Reçine dünyasının en sağlamıdır.
+
+---
+
+### Özet Karar Tablosu
+
+| Özellik | PLA | PETG | TPU (Esnek) | ABS/ASA |
+| :--- | :--- | :--- | :--- | :--- |
+| **Kolaylık** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐ |
+| **Sıcaklık** | 🔥 Düşük | 🔥🔥 Orta | 🔥🔥 Orta | 🔥🔥🔥🔥 Yüksek |
+| **Esneklik** | Yok | Az | ✅ Çok Yüksek | Yok |
+| **Marka Önerim** | eSun PLA+ | Porima / Overture | SainSmart | Polymaker ASA |
+
+## Sonuç: Ne Alalım?
+
+*   Yeni başladın, süs basacaksın: **eSun PLA+** al geç.
+*   Saksı, araba parçası basacaksın: **Porima PETG** al.
+*   Telefon kılıfı basacaksın: **SainSmart TPU** al (ama yazıcın Direct Drive ise).
+
+Malzemeyi seçtik, markayı belirledik. Şimdi bu malzemeyi makineye nasıl anlatacağız? "Sıcaklık 200 derece olsun, hızı 50 olsun, TPU basarken yavaşla" diyeceğimiz yer neresi?
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Doğru malzemeyi seçtiniz, peki hayalinizdeki o modeli nerede bulacaksınız? Veya bulduğunuz bir modeli baskıya nasıl hazırlayacaksınız?
+Yazıcı hazır, malzeme hazır. Şimdi bilgisayar başına geçip modeli "dilimleme" (Slicing) zamanı. OrcaSlicer, Cura veya Bambu Studio... Hangi ayar ne işe yarar?
 
 <div class="post-cta-box">
 <h3>Şimdi Sırada Ne Var?</h3>
-<p>Baskıya hazır binlerce ücretsiz model bulabileceğiniz en iyi siteleri keşfedin veya baskılarınızı bir üst seviyeye taşıyacak Slicer ayarlarını öğrenin!</p>
-<a href="{{< ref "posts/ucretsiz-3d-model-siteleri.md" >}}" class="cta-button">Ücretsiz Model Siteleri Rehberi →</a>
+<p>Baskı kalitenizi değiştirecek 5 kritik Slicer ayarını öğrenmeye hazır mısınız? Katman yüksekliği, doluluk oranı ve daha fazlası.</p>
+<a href="{{< ref "posts/temel-slicer-ayarlari.md" >}}" class="cta-button">Temel Slicer Ayarlarına Git →</a>
 </div>
-
-### Deneyimlerinizi Paylaşın!
-Siz en çok hangi filament veya reçineyi kullanmayı seviyorsunuz? Malzeme seçimiyle ilgili kendi ipuçlarınız veya yaşadığınız deneyimleriniz var mı? Yorumlarda bizimle paylaşın!

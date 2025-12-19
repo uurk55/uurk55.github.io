@@ -1,139 +1,103 @@
 ---
 title: "3D Yazıcı Satın Alma Rehberi: İhtiyaçlarınıza Göre Doğru Makineyi Nasıl Seçersiniz?"
-date: 2025-04-12T10:00:00+03:00
+date: 2025-07-11T10:00:00+03:00
 featured: true
 draft: false
-description: "Hangi 3D yazıcıyı almalısınız? Marka veya fiyat listesi değil, ihtiyaçlarınıza göre doğru yazıcı tipini seçmenizi sağlayacak, zamanla eskimeyecek bir karar verme rehberi."
-tags: ["3D Yazıcı Satın Alma", "Yazıcı Seçimi", "Başlangıç 3D Yazıcı", "FDM Seçimi", "SLA Seçimi", "3D Yazıcı Özellikleri", "Teknik İpuçları"]
-categories: ["Başlangıç Rehberi"]
+description: "Hangi 3D yazıcıyı almalısınız? Genel tavsiyeleri bırakın, 2025 piyasasının gerçek kazananlarını konuşalım. Bambu Lab A1'den Ender 3 V3'e, Elegoo Mars'tan Anycubic'e bütçenize göre net öneriler."
+tags: ["3D Yazıcı Tavsiyesi", "Bambu Lab A1", "Creality Ender 3 V3", "Elegoo Mars 5", "Anycubic Photon", "Fiyat Performans Yazıcı", "Başlangıç Yazıcısı"]
+categories: ["Donanım ve Ekipman"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
-hidemeta: false
 comments: true
-disableShare: false
-disableHLJS: true
-hideSummary: false
-searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
     image: "/images/yazici-rehberi-cover.jpg"
-    alt: "Farklı tiplerde 3D yazıcıların olduğu bir atölye ortamı"
-    caption: "Mükemmel yazıcı yoktur, sizin için mükemmel olan yazıcı vardır."
+    alt: "Bambu Lab ve Creality yazıcıların yan yana durduğu bir tezgah"
+    caption: "Marka fanatikliği yapmıyoruz, işini yapan makineyi seçiyoruz."
     relative: false
 ---
 
-3D baskı dünyasına ilk adımı atmaya karar verdiniz. Harika! Ama şimdi önünüzde devasa bir soru var: Yüzlerce farklı model arasından **hangi 3D yazıcıyı almalısınız?** İnternet, "2025'in en iyi 10 yazıcısı" gibi listelerle dolu, ancak bu listeler bir sonraki ay eskiyebiliyor ve sizin özel ihtiyaçlarınızı tam olarak karşılamayabiliyor.
+Bir önceki yazımızda teknolojiyi (FDM mi, SLA mi?) seçtik. Şimdi en zor kısma geldik: **Hangi marka, hangi model?**
 
-Bu rehber, size bir "balık" vermeyecek. Bunun yerine, size **balık tutmayı öğretecek.**
+İnternetteki "En İyi 10 Yazıcı" listelerinden sıkıldığınızı biliyorum. O listeler genellikle kim daha çok komisyon veriyorsa onu över. Ben size burada "sponsorlu" değil, "atölye tecrübeli" net öneriler vereceğim. Marka vermekten, model önermekten çekinmeyeceğim.
 
-Amacımız, size kendi ihtiyaçlarınız için en doğru yazıcı tipini seçmenizi sağlayacak bir **"karar verme çerçevesi"** sunmaktır. Bu rehberi bitirdiğinizde, karşınıza çıkan herhangi bir yazıcı modelinin teknik özelliklerine bakıp, "Evet, bu benim aradığım makine" veya "Hayır, bu benim hedeflerime uygun değil" diyebilecek bilgiye sahip olacaksınız.
+Çünkü 2025 yılındayız ve artık paranızı, ayar tutmayan eski nesil hurdalara harcamanızı istemiyorum.
 
-**Önemli Not:** Bu rehberde, teknolojiye zaten karar verdiğinizi varsayıyoruz. Eğer hala kararsızsanız, öncelikle **[FDM mi, SLA mi?]({{< ref "posts/fdm-vs-sla-rehberi.md" >}})** yazımızı okumanızı şiddetle tavsiye ederiz.
+### Kategori 1: FDM (Filament) Dünyasının Yıldızları
 
-### Yol Haritanızı Çizin: Siz Hangi Tip Üreticisiniz?
+Eğer tercihiniz FDM ise, şu an piyasada iki ana akım var: "Ben uğraşmak istemiyorum, basıp geçeyim" diyenler ve "Bütçem kısıtlı ama iyi makine istiyorum" diyenler.
 
-Doğru yazıcıyı seçmek, önce kendinizi tanımakla başlar. Aşağıdaki profillerden hangisi size en çok uyuyor?
+#### 1. "Kafam Rahat Olsun" Diyenlere: Bambu Lab A1 Mini (veya A1)
+Şu an (2025 itibarıyla) giriş seviyesinin tartışmasız kralı **Bambu Lab**'dir. Nokta.
+*   **Neden Almalısın:** Kutudan çıkarıp baskı almanız 15 dakika sürer. Kalibrasyonu, titreşim testini, akış ayarını kendi yapar.
+*   **Model Önerisi:** Eğer 18x18 cm baskı alanı yetiyorsa **A1 Mini**. Yetmiyorsa ve bütçe varsa **A1**.
+*   **Uğur'un Notu:** Bu makine, yazıcı tamircisi değil, ürün üreticisi olmanızı sağlar.
 
-#### 🎨 Detay Sanatçısı (Figürler, Takılar, Heykeller)
-Eğer amacınız göz alıcı minyatürler, pürüzsüz heykeller veya detaylı takılar üretmekse, sizin için en önemli şey **çözünürlüktür**.
-* **Aranacak Özellikler (SLA):** Yüksek çözünürlüklü (8K+) ve monokrom LCD ekranlar.
-* **Aranacak Özellikler (FDM):** Hassas hareket edebilen, iyi parça soğutmasına sahip ve daha küçük nozül (0.25mm gibi) takılabilen modeller.
+#### 2. "Bütçem Kısıtlı Ama Çöp Almak İstemiyorum" Diyenlere: Creality Ender 3 V3 SE / KE
+Eski efsane Ender 3 V2'yi unutun. O artık tarih oldu. **Creality**, V3 serisiyle oyuna geri döndü.
+*   **Neden Almalısın:** Fiyatı çok uygundur. Eskisi gibi kağıtla tabla ayarı yapmazsınız, "Auto-Leveling" (Otomatik Seviyeleme) standart gelir.
+*   **Model Önerisi:** En ucuzu olsun derseniz **V3 SE**. Biraz daha hızlı olsun, internete bağlansın (Klipper) derseniz **V3 KE**.
+*   **Dikkat:** Bu makine Bambu Lab kadar "tak-unut" değildir. Arada bir vida sıkmanız, kayış germeniz gerekebilir. Ama iş öğretir.
 
-![Uygun fiyatlı bir SLA yazıcıda basılan detaylı bir figür](/images/profil-sla-butce.jpg "Detay sanatçıları için uygun fiyatlı SLA yazıcılar harika bir başlangıçtır.")
+#### 3. "Hız ve Kapalı Kasa İstiyorum" Diyenlere: Creality K1C veya Bambu P1S
+Eğer ABS, ASA gibi zorlu malzemeler basacaksanız açık kasalı yazıcılar (yukarıdakiler) işinizi görmez.
+*   **Model Önerisi:** **Creality K1C**, fiyat/performans olarak çok güçlüdür. **Bambu Lab P1S** ise ekosistem ve kolaylık olarak öndedir.
 
-#### 🔧 Fonksiyonel Mühendis (Mekanik Parçalar, Prototipler)
-Eğer amacınız, çalışan, birbiriyle uyumlu ve günlük hayattaki bir sorunu çözen dayanıklı parçalar üretmekse, anahtar kelimeleriniz **sağlamlık ve hassasiyettir**.
-* **Aranacak Özellikler:** Tamamı metal sağlam bir şasi (frame), filamenti daha iyi kontrol eden **Direct Drive** ekstrüder ve PETG/ABS gibi yüksek sıcaklık isteyen **[malzemelerle]({{< ref "posts/3d-baski-malzeme-rehberi.md" >}})** uyumluluk.
+![Bambu Lab A1 Mini ve Creality Ender 3 V3 yan yana](/images/fdm-recommendations.jpg "Solda konfor (Bambu), sağda fiyat/performans (Creality).")
 
-![Sağlam parçalar basan bir FDM yazıcı](/images/profil-fdm-saglam.jpg "Fonksiyonel mühendisler için dayanıklılık ve malzeme uyumluluğu önceliklidir.")
+---
 
-#### 🚀 Hız Tutkunu (Hızlı Prototipleme, Seri Üretim)
-Eğer zaman sizin için kritikse ve bir fikri en hızlı şekilde fiziksel bir modele dönüştürmek istiyorsanız, **hız ve ivmelenme** en önemli metriklerdir.
-* **Aranacak Özellikler:** Fabrika çıkışlı **Klipper firmware**, titreşimi azaltan **CoreXY** hareket sistemi ve yüksek ivmelenme (acceleration) değerleri.
+### Kategori 2: SLA (Reçine) Dünyasının Detaycıları
 
-![Yüksek hızda baskı yapan modern bir FDM yazıcı](/images/profil-fdm-hizli.jpg "Hız tutkunları için Klipper ve CoreXY gibi teknolojiler fark yaratır.")
+Reçine tarafında işler biraz daha standarttır. Burada kilit oyuncular **Elegoo** ve **Anycubic**'tir.
 
-#### 🎓 Yeni Başlayan Kaşif (Öğrenme ve Keşfetme)
-Eğer bu dünyaya yeni adım atıyorsanız ve amacınız öncelikle öğrenmekse, sizi yolda bırakmayacak, kullanıcı dostu bir makineye ihtiyacınız var.
-* **Aranacak Özellikler:** Kolay kurulum, **Otomatik Tabla Kalibrasyonu (ABL)**, filament bitme sensörü ve en önemlisi, geniş ve aktif bir kullanıcı topluluğu.
+#### 1. Fiyat/Performans Kralı: Elegoo Mars 4 (veya 5) Serisi
+SLA dünyasının "Volkswagen"i **Elegoo**'dur. Parçası boldur, kullanımı basittir.
+*   **Neden Almalısın:** 9K veya 12K ekran çözünürlüğü ile saç telini bile basarsınız.
+*   **Model Önerisi:** **Elegoo Mars 4 Ultra**. Wi-Fi özelliği ve hızlı baskı yeteneği ile rakiplerinin önünde.
 
-![Bütçe dostu, başlangıç seviyesi bir FDM yazıcı](/images/profil-fdm-butce.jpg "Yeni başlayanlar için bütçe dostu ve topluluğu geniş FDM yazıcılar idealdir.")
+#### 2. "Tabla Ayarıyla Uğraşamam" Diyenlere: Anycubic Photon Mono M5s
+Reçine yazıcılarda tabla ayarı kaçarsa baskı yapışmaz. **Anycubic**, M5s serisi ile "Leveling-Free" (Ayarsız) sistemi getirdi.
+*   **Neden Almalısın:** Sensörleri sayesinde tablanın düz olup olmadığını kendi anlar. Başlangıç için büyük kolaylıktır.
 
-### Makinenin Dilini Öğrenin: Hangi Teknik Özellikler Gerçekten Önemli?
+---
 
-* **Baskı Hacmi (Build Volume):** Yazıcının basabileceği maksimum obje boyutunu (X, Y, Z eksenlerinde) belirtir.
-* **Ekstrüder Tipi (FDM Özelinde):** **Direct Drive** sistemler, özellikle **[esnek filamentlerle]({{< ref "posts/esnek-filament-baski-rehberi.md" >}})** çalışmak için çok daha iyidir.
-* **Tabla Kalibrasyonu:** **Otomatik Tabla Kalibrasyonu (ABL)**, baskı başarısını garanti altına alan ve sizi en büyük zahmetlerden birinden kurtaran en önemli konfor özelliğidir. Bu konunun tüm detayları için **[Kalibrasyon Rehberimize]({{< ref "posts/3d-yazici-kalibrasyonu-rehberi.md" >}})** göz atabilirsiniz.
-* **Ekran Teknolojisi (SLA Özelinde):** Reçine baskılarda detayı belirleyen şey ekran çözünürlüğüdür. **Monokrom (Mono) LCD** ekranlar artık standarttır ve daha hızlıdır.
+### Özet Karar Tablosu: Parayı Nereye Yatırıyoruz?
 
-{{< tip-box title="💡 Topluluk Desteğinin Gücü" >}}
-Bir yazıcı modeli seçerken, o model etrafında ne kadar büyük bir topluluk (Facebook grupları, Reddit, YouTube kanalları) olduğuna bakın. Geniş bir topluluk, bir sorunla karşılaştığınızda binlerce kişinin size yardım etmeye hazır olduğu anlamına gelir. Bu, en pahalı teknik destekten bile daha değerlidir.
+Karar vermeyi basitleştirelim. İşte Uğur Kapancı'nın "Alınır" listesi:
+
+| Kullanıcı Tipi | Önerilen Marka/Model | Neden? |
+| :--- | :--- | :--- |
+| **"İlk yazıcım, sorun istemiyorum."** | **Bambu Lab A1 Mini** | Tak-Çalıştır deneyimi rakipsiz. |
+| **"Öğrenciyim / Bütçem kısıtlı."** | **Creality Ender 3 V3 SE** | Parasına göre en iyi teknoloji. |
+| **"Minyatür boyayacağım."** | **Elegoo Mars 4 / 5** | Detay kalitesi ve stabilite. |
+| **"Mühendislik malzemesi basacağım."** | **Creality K1C** | Kapalı kasa ve karbon fiber uyumu. |
+
+{{< tip-box title="💡 Uzak Durmanız Gerekenler" >}}
+İnternette adı sanı duyulmamış, sadece "ucuz" diye satılan klon markalardan uzak durun. İlk yazıcınızda **topluluk desteği** (community) paradan daha değerlidir. Creality veya Bambu Lab aldığınızda, bir sorun yaşarsanız YouTube'da 10.000 tane çözüm videosu bulursunuz. İsimsiz markada yalnız kalırsınız.
 {{< /tip-box >}}
 
-### Karar Anı: Sizin İçin Doğru Yazıcı Kategorisi Hangisi?
+## Sonuç: En İyi Yazıcı Hangisi?
 
-Şimdi, yatırım seviyenizi ve üretici tipinizi birleştirerek hangi kategoride bir yazıcı aramanız gerektiğini bulalım.
+En iyi yazıcı, sizin bütçenizi yormayan ve "Lanet olsun" dedirtip hobiden soğutmayan yazıcıdır.
+*   Benim şahsi favorim, yeni başlayanlar için **Bambu Lab A1** serisidir.
+*   Ama cebinizi düşünüyorsanız **Ender 3 V3 SE** sizi asla üzmez.
 
-<table class="summary-table printer-matrix">
-    <thead>
-        <tr>
-            <th>Yatırım Seviyesi</th>
-            <th>Detay Sanatçısı</th>
-            <th>Fonksiyonel Mühendis</th>
-            <th>Hız Tutkunu</th>
-            <th>Yeni Başlayan Kaşif</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Giriş Seviyesi</strong><br>(Öğrenme odaklı)</td>
-            <td>Uygun fiyatlı, 2K/4K mono-ekranlı SLA</td>
-            <td>Basit, modifikasyona açık Cartesian FDM</td>
-            <td>Standart hızlarda, temel FDM</td>
-            <td>Otomatik kalibrasyonlu, popüler FDM</td>
-        </tr>
-        <tr>
-            <td><strong>Orta Seviye</strong><br>(Hobi/Küçük İşletme)</td>
-            <td>Yüksek çözünürlüklü (8K+) orta hacimli SLA</td>
-            <td>Direct Drive ekstrüderli, sağlam şasili FDM</td>
-            <td>Klipper tabanlı, CoreXY FDM</td>
-            <td>Güvenilirliği kanıtlanmış, özellikleri zengin FDM</td>
-        </tr>
-        <tr>
-            <td><strong>Yüksek Seviye</strong><br>(Profesyonel Üretim)</td>
-            <td>Geniş hacimli, yüksek çözünürlüklü SLA</td>
-            <td>Kapalı kasa, yüksek sıcaklık uyumlu FDM</td>
-            <td>Yüksek hızlı, tam otomatik kalibrasyonlu CoreXY</td>
-            <td>"Tak-çalıştır" kapalı ekosistemler</td>
-        </tr>
-    </tbody>
-</table>
-
-### Değerlendirin: Son Kararı Vermeden Önce
-
-Artık elinizde güçlü bir bilgi seti var. Son kararı vermeden önce kendinize son kez sorun:
-1.  Yukarıdaki üretici tiplerinden hangisi beni en iyi tanımlıyor?
-2.  Bu profile göre benim için "olmazsa olmaz" teknik özellikler neler?
-3.  Karar matrisinde, bu profil ve yatırım seviyemin kesiştiği noktadaki yazıcı tipi, aklımdaki projelerle örtüşüyor mu?
-
-## Sonuç: Bilinçli Bir Karar Vermek
-
-Tebrikler! Artık sadece bir marka veya model listesine değil, kendi ihtiyaçlarınıza göre bir yazıcıyı nasıl değerlendireceğinizi gösteren bir düşünce sistemine sahipsiniz. Bu çerçeveyi kullanarak, YouTube'daki incelemeleri izleyebilir, forumları okuyabilir ve karşınıza çıkan herhangi bir makinenin sizin için doğru olup olmadığına kendiniz karar verebilirsiniz.
+Seçiminizi yapın, siparişi verin. Ama acele etmeyin!
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Hayalinizdeki yazıcı tipine karar verdiniz ve o büyük kutu sonunda evinize geldi. Peki şimdi ne olacak?
+Siparişi verdiniz, kargo yolda. Peki o kargo gelmeden önce neleri bilmeniz gerekirdi? Yazıcıyı aldım bitti sanıyorsanız yanılıyorsunuz. Gürültüden kokuya, gizli masraflardan yerleşim hatasına kadar "Keşke almadan önce bilseydim" diyeceğiniz 10 kritik hatayı konuşacağız.
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>Yeni 3D yazıcınızı kutusundan çıkarıp ilk başarılı baskınızı almak için ihtiyacınız olan adım adım kurulum rehberlerine geçme zamanı!</p>
-<a href="{{< ref "posts/fdm-yazici-ilk-kurulum-rehberi.md" >}}" class="cta-button">FDM Kurulum Rehberine Git →</a>
-<a href="{{< ref "posts/sla-yazici-kurulum-guvenlik-rehberi.md" >}}" class="cta-button">SLA Kurulum Rehberine Git →</a>
+<h3>Sipariş Yolda Ama... Hazır Mısınız?</h3>
+<p>Yazıcıyı aldıktan sonra pişman olmamak için, sipariş vermeden veya kargoyu açmadan önce mutlaka okumanız gereken 10 acı tecrübe.</p>
+<a href="{{< ref "posts/3d-yazici-almadan-once-yapilan-hatalar.md" >}}" class="cta-button">Almadan Önce Yapılan 10 Hata →</a>
 </div>
 
-### Deneyimlerinizi Paylaşın!
-Siz 3D yazıcı seçerken en çok hangi özelliğe dikkat ettiniz? Veya bu süreçte aklınıza takılan başka bir soru var mı? Yorumlarda buluşalım!
+### Senin Tercihin Ne Oldu?
+Kararını hangi modelden yana kullandın? Bambu takımına mı katıldın yoksa Creality ile "kendim pişirir kendim yerim" mi dedin? Yorumlarda modelini yaz, tartışalım!

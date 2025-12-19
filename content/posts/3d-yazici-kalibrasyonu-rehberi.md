@@ -1,118 +1,102 @@
 ---
 title: "3D Yazıcı Kalibrasyonu: Mükemmel Baskılar İçin A'dan Z'ye Rehber"
-date: 2025-04-23T10:00:00+03:00
+date: 2025-07-29T10:00:00+03:00
 featured: false
 draft: false
-description: "3D yazıcınızdan mükemmel baskılar almak ve baskı kalitesini en üst düzeye çıkarmak için kalibrasyonun önemini ve adım adım nasıl yapılacağını öğrenin. E-steps, PID, akış (flow) kalibrasyonu, Z-Offset ayarı ve daha fazlası için kapsamlı rehber."
-tags: ["3D Yazıcı Kalibrasyonu", "Baskı Kalitesi", "E-steps", "PID Ayarı", "Flow Kalibrasyonu", "Z-Offset", "3D Yazıcı Ayarları", "Baskı Hataları Çözümleri", "Performans İyileştirme", "Temel Bilgi ve Kurulum"]
+description: "Baskılarınız ölçü tutmuyor mu? Yüzeyler pürüzlü mü? O meşhur 'E-Steps' nedir? Uğur Kapancı'nın atölye tecrübeleriyle adım adım kalibrasyon rehberi."
+tags: ["3D Yazıcı Kalibrasyonu", "Baskı Kalitesi", "E-steps", "PID Ayarı", "Flow Kalibrasyonu", "Z-Offset", "3D Yazıcı Ayarları", "Baskı Hataları", "Input Shaping", "Basınç İlerlemesi"]
 categories: ["Teknik İpuçları"]
 faz: ["Faz 1"]
-series: ["3D Baskı Rehberleri"]
+series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"
 showToc: true
 TocOpen: true
-hidemeta: false
 comments: true
-disableShare: false
-disableHLJS: true
-hideSummary: false
-searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
     image: "/images/calibration-cover.png"
-    alt: "3D yazıcı kalibrasyonu ve hassas ölçüm aletleri"
-    caption: "Mükemmel Baskılar İçin İnce Ayarlar: 3D Yazıcı Kalibrasyonu Rehberi"
+    alt: "Kumpas, G-code terminali ve kalibrasyon küpü ile bir çalışma masası"
+    caption: "Kalibrasyon, yazıcının sizinle aynı dili konuşmasını sağlama sanatıdır."
     relative: false
 ---
 
-3D baskı yolculuğunuzda, **mükemmel baskı kalitesi** ile "neredeyse iyi" bir sonuç arasındaki farkı yaratan kritik bir süreç vardır: **Kalibrasyon**. Basitçe ifade etmek gerekirse kalibrasyon, 3D yazıcınızın tüm mekanik ve elektronik parçalarının birbiriyle tam bir uyum içinde çalışmasını sağlamak için yapılan titiz **ince ayarlar** bütünüdür. Bu sürece hakim olmak, yazıcınızın kontrolünü tamamen elinize almanız ve potansiyelini en üst düzeye çıkarmanız anlamına gelir.
+İlk yazıcımı aldığımda bastığım o 20mm'lik kalibrasyon küpü 19.2mm çıkmıştı. "Ne olacak canım, 1mm'den bir şey olmaz" demiştim.
 
-Bu kapsamlı rehber, yazıcınızdan tutarlı, yüksek kaliteli ve hatasız 3D baskılar almak için yapmanız gereken temel adımları A'dan Z'ye öğretecek.
+Sonra bir gün, tasarladığım bir kutu kapağını basıp yerine oturtmaya çalıştığımda acı gerçekle yüzleştim: Kapak girmiyordu. Zımparaladım, yine girmedi. Isıttım, yamuldu. Sonunda o baskıyı çöpe atıp, yazıcının başına "kalibrasyon" yapmak için oturdum.
 
-{{< tip-box title="💡 Kalibrasyon Neden Hayatidir?" >}}
-Doğru kalibre edilmiş bir 3D yazıcı, size sadece güzel baskılar vermez. Aynı zamanda şunları da sağlar:
-* **Hassas Boyutlar:** Birbiriyle uyumlu parçalar basmanızı sağlar.
-* **Daha Az Hata:** Sinir bozucu baskı hatalarını en aza indirir.
-* **Tasarruf:** Başarısız baskıları önleyerek filament ve zaman israfını engeller.
-* **Tutarlılık:** Her baskınızın aynı yüksek kalitede olmasını garanti eder.
-{{< /tip-box >}}
+Kalibrasyon, yazıcınızın "Ben 10cm gittim" dediğinde gerçekten 10cm gidip gitmediğini kontrol etmektir. Eğer bu ayarı yapmazsanız, vida delikleri oturmaz, dişliler dönmez ve parçalar birbirine geçmez.
 
-![Bir 3D yazıcı, üzerinde farklı kalibrasyon test baskıları ve bir kumpas ile ölçüm yapan bir el.](/images/calibration-why.png "Kalibrasyonun baskı kalitesi ve doğruluğu üzerindeki olumlu etkisini gösteren bir kompozisyon.")
+Bu rehberde, internette kaybolmadan, en hayati 5 kalibrasyonu sırasıyla yapacağız.
 
-### Kalibrasyona Başlarken: Gerekli Araçlar
+### Başlamadan Önce: Çantanızda Neler Var?
+Bu savaşa silahsız girmeyin. Şunlar elinizin altında olsun:
+*   **📏 Dijital Kumpas:** Cetvelle olmaz. Kumpas şart.
+*   **📄 A4 Kağıdı:** Z-Offset için.
+*   **💻 Bir Terminal Programı:** Eğer yazıcınızda Klipper yoksa, "Pronterface" gibi bir programla USB'den bağlanmanız gerekebilir. (Bambu Lab veya Klipper'lı cihazlarda web arayüzü yeterli).
 
-Kalibrasyon sürecine başlamadan önce, işinizi çok daha kolaylaştıracak birkaç temel aracın elinizin altında olması önemlidir:
+---
 
-* **📏 Dijital Kumpas:** Hassas ölçümler için vazgeçilmez.
-* **📄 A4 Kağıdı:** Z-Offset ayarı için en pratik araç.
-* **💻 Bilgisayar & Kontrol Programı:** Yazıcınıza G-Code komutları göndermek için (Pronterface veya OctoPrint Terminali).
-* **🧘‍♂️ Sabır ve Dikkat:** En önemli aracınız! Bu bir yarış değil, bir hassasiyet ayarı süreci.
+### Adım 1: Mekanik Kontrol (Vida Sıkma Sanatı)
 
-### Sağlam Bir Zemin: Mekanik Kontroller
+Yazılım ayarına girmeden önce, makinenin fiziksel sağlığına bakalım. Gevşek bir vida, en iyi yazılım ayarını bile bozar.
+*   **Eksantrik Somunlar:** Kurulum rehberinde bahsetmiştik. Tekerlekler ne çok sıkı ne çok gevşek olacak.
+*   **Kayışlar:** Gitar teli gibi olmalı. Parmağınızla dokunduğunuzda tok bir ses gelmeli ama kopacak kadar da gergin olmamalı.
 
-Herhangi bir yazılım ayarından önce, makinenin fiziksel olarak kusursuz olduğundan emin olmalıyız.
+---
 
-* **Vidaları Sıkın:** Özellikle ana iskelet vidalarının sıkı olduğundan emin olun. Gevşek bir vida, baskı sırasında istenmeyen titreşimlere neden olur.
-* **Kayışları Gelin:** X ve Y eksenindeki kayışlar ne çok sıkı ne de çok gevşek olmalı. Hafif bir direnç göstermeli ama kesinlikle sarkmamalı.
-* **Rayları Temizleyin:** Eksenlerin hareket ettiği tekerlekleri ve rayları toz ve filament kalıntılarından arındırın.
+### Adım 2: E-Steps Kalibrasyonu (Motorun Adım Sayısı)
 
-![Bir kişinin elinde tornavida ile 3D yazıcının kayış gerginliğini veya vidalarını kontrol ettiği yakın çekim.](/images/mechanical-check.png "3D yazıcının mekanik bileşenlerinin kontrol edildiği ve ayarlandığı bir sahne, kalibrasyonun sağlam temelini vurguluyor.")
+Bu, kalibrasyonun babasıdır. Siz makineye "10cm filament it" dediğinizde, o gerçekten 10cm itiyor mu? Yoksa 9cm itip "ittim abi" mi diyor?
 
-### Mükemmel İlk Katmanın Sırrı: Z-Offset Ayarı
+1.  **İşaretle:** Extruder'ın (filamenti iten motorun) girişinden itibaren 120mm'yi cetvelle ölçüp filamentin üzerine kalemle çizik atın.
+2.  **Komut Ver:** Menüden veya bilgisayardan `G1 E100 F100` komutuyla (veya menüden "Extrude 100mm" diyerek) 100mm itmesini söyleyin.
+3.  **Ölç:** İşaretlediğiniz çizgi ile extruder girişi arasındaki mesafeyi ölçün.
+    *   İdealde **20mm** kalmalı (120 - 100 = 20).
+    *   Eğer 25mm kaldıysa, makine 5mm eksik itmiş demektir (Under-extrusion).
+    *   Eğer 15mm kaldıysa, makine 5mm fazla itmiş demektir (Over-extrusion).
+4.  **Hesapla:** `Yeni E-Step = (Eski E-Step * 100) / (120 - Kalan Mesafe)` formülüyle yeni değeri bulup makineye kaydedin.
 
-**Z-offset**, nozülün baskı tablasına olan mesafesidir ve **ilk katman yapışması** için en kritik ayardır. Bu ayar yanlışsa, hiçbir baskınız başarılı olamaz.
+![Bir kişinin elinde mezura ile 3D yazıcının ekstrüderinden çıkan filamenti ölçtüğü yakın çekim.](/images/e-steps-calibration.png "E-Steps: Makinenin ne kadar yediğini kontrol etmektir.")
 
-1.  **Ön Isıtma:** Yazıcınızı ve tablayı, kullanacağınız filamentin çalışma sıcaklığına getirin.
-2.  **Sıfır Noktası:** Yazıcınıza "Auto Home" komutu vererek tüm eksenleri başlangıç pozisyonuna gönderin.
-3.  **Kağıt Testi:** Nozülün altına bir A4 kağıdı yerleştirin. Menüden "Z-Offset" ayarına gidin ve kağıdı çekerken hafif bir sürtünme hissedene kadar nozülü yavaşça aşağı indirin.
-4.  **Ayarı Kaydedin:** Bu hassas ayarı "Store Settings" ile yazıcınızın hafızasına kaydedin.
+---
 
-![Bir kişinin elinde A4 kağıdını 3D yazıcının ısıtılmış tablası ile nozül arasına yerleştirip Z-offset ayarını kontrol ettiği yakın çekim.](/images/z-offset-calibration.png "Z-offset kalibrasyonu sırasında nozül ve baskı tablası arasındaki hassas boşluğu bir kağıt parçasıyla kontrol eden bir elin yakın çekimi.")
+### Adım 3: Flow (Akış) Kalibrasyonu
 
-### Doğru Malzeme Akışı: E-Steps Kalibrasyonu
+E-Steps motorun ne kadar döndüğünü ayarlar. Flow ise o plastiğin nozzle'dan ne kadar şişerek çıktığını ayarlar.
+1.  **Küp Bas:** İçi boş, tek duvarlı (vase mode değil, 0% infill, 0 top layer) bir küp basın.
+2.  **Ölç:** Kumpasla duvar kalınlığını ölçün. Slicer'da "0.4mm" ayarladıysanız ve kumpasta "0.45mm" görüyorsanız, makine fazla malzeme basıyor demektir.
+3.  **Ayarla:** Slicer'daki "Flow Ratio" (Akış Oranı) ayarını düşürün. Genelde **0.95 ile 0.98** arası idealdir.
 
-**E-steps**, ekstrüder motorunuzun "100mm filament it" komutunu ne kadar doğru yerine getirdiğini ölçer. Bu ayar, baskılarınızda katmanların eksik veya aşırı dolmasını engeller.
+![Bir kişinin elinde kumpas ile tek duvarlı bir 3D baskı küpünün duvar kalınlığını ölçtüğü yakın çekim.](/images/flow-calibration.png "Flow ayarı, parçaların birbirine geçmesini sağlar.")
 
-1.  **Filamenti İşaretleyin:** Ekstrüder girişinden 120mm uzakta filamenti işaretleyin.
-2.  **100mm İtme Komutu Verin:** Kontrol programından yazıcınıza tam olarak 100mm filament itmesini söyleyin (`G1 E100 F100`).
-3.  **Sonucu Ölçün:** İşaretlediğiniz yerden ekstrüder girişine kalan mesafeyi ölçün. Eğer 20mm kalmışsa, ayarınız mükemmeldir. Değilse, basit bir formülle yeni E-steps değerini hesaplayın: `Yeni Değer = (Mevcut Değer * 100) / Gerçekte İtilen Miktar`.
-4.  **Yeni Değeri Girin ve Kaydedin:** Yeni değeri `M92 E[Yeni Değer]` komutuyla girip `M500` ile kaydedin.
+---
 
-![Bir kişinin elinde mezura ile 3D yazıcının ekstrüderinden çıkan filamenti ölçtüğü yakın çekim.](/images/e-steps-calibration.png "E-steps kalibrasyonu sırasında ekstrüderden çıkan filamentin hassas bir şekilde ölçülmesi.")
+### Adım 4: PID Tuning (Sıcaklık Dansı)
 
-### Isı Stabilitesi: PID Ayarı
+Nozzle sıcaklığınız baskı sırasında 200°C -> 195°C -> 205°C diye dalgalanıyorsa, katmanlarınızda çizgiler oluşur. PID ayarı, bu dalgalanmayı önler.
+*   **Nasıl Yapılır:** Terminalden `M303 E0 S200 C5` komutunu gönderin. Makine 5 kere ısınıp soğuyarak kendini test edecek ve size `Kp, Ki, Kd` değerleri verecek. Bu değerleri `M301` komutuyla kaydedin. (Çoğu modern yazıcıda menüden "PID Autotune" seçeneği vardır).
 
-**PID ayarı**, yazıcınızın nozül ve tabla sıcaklığını baskı boyunca dalgalanma olmadan sabit tutmasını sağlar. Bu stabilite, katmanların birbirine güçlü bir şekilde yapışması için kritiktir.
+---
 
-{{< tip-box title="🔥 Otomatik Ayar Kolaylığı" >}}
-Bu ayar en kolayı! Yazıcınıza `M303 E0 S200 C5` (nozül için) ve `M303 E-1 S60 C5` (tabla için) komutlarını gönderin. Yazıcınız, en stabil sıcaklığı nasıl tutacağını **kendi kendine öğrenecek** ve size yeni `Kp, Ki, Kd` değerlerini verecektir. Bu değerleri `M301/M304` ve `M500` komutlarıyla kaydedin.
-{{< /tip-box >}}
+### Adım 5: Z-Offset (Yine ve Yeniden)
 
-### Son Rötuşlar: Akış (Flow) Kalibrasyonu
+Her kalibrasyondan sonra Z-Offset (ilk katman yüksekliği) değişebilir. En son mutlaka bir "First Layer Test" basarak, ilk katmanın o pürüzsüz, tek parça halini görün. Tırnağınızla kazıdığınızda gelmemeli.
 
-Bu, en son yapılacak ince ayardır. **Akış (Flow)**, slicer'daki %100'lük filament akışının gerçek hayatta neye denk geldiğini ayarlar ve parçanızın dış duvarlarının mükemmelliğini belirler.
+---
 
-1.  **Test Küpü Basın:** İçi boş, tek duvarlı ve üstü açık bir küp basın.
-2.  **Duvarı Ölçün:** Kumpasınızla bastığınız küpün duvar kalınlığını ölçün.
-3.  **Oranı Hesaplayın:** `Yeni Akış % = (100 * Olması Gereken Kalınlık) / Ölçtüğünüz Kalınlık`.
-4.  **Slicer'da Güncelleyin:** Bu yeni yüzde değerini, slicer yazılımınızdaki "Flow" veya "Extrusion Multiplier" ayarına girin.
+## Sonuç: Artık Makineye Hükmediyorsunuz
 
-![Bir kişinin elinde kumpas ile tek duvarlı bir 3D baskı küpünün duvar kalınlığını ölçtüğü yakın çekim.](/images/flow-calibration.png "Akış kalibrasyonu için tek duvarlı bir küpün kumpas ile hassas ölçümü.")
+Tebrikler! Artık "Umarım düzgün çıkar" diye dua eden bir kullanıcı değil, "Düzgün çıkacak çünkü ben ayarladım" diyen bir operatörsünüz. Bu ayarları bir kere yaptığınızda, o ucuz Çin malı yazıcınızın bile nasıl binlerce dolarlık makineler gibi bastığına şaşıracaksınız.
 
-## Sonuç: Artık Kontrol Sizde
-
-Tebrikler! Artık sadece bir 3D yazıcı kullanıcısı değilsiniz; makinesinin her bir ayarını bilinçli bir şekilde kontrol eden, onun dilinden anlayan ve performansını en üst düzeye çıkaran bir üreticisiniz. Bu kalibrasyon adımları, baskılarınızı bir şans eseri olmaktan çıkarıp, sizin hassas ayarlarınızın bir sonucuna dönüştürecektir.
+Peki makineyi ayarladık, şimdi içine ne koyacağız? PLA mı, PETG mi yoksa o kokulu ABS mi? Hangi malzeme ne işe yarar?
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Yazıcınız mükemmel bir şekilde ayarlandı. Peki onu hangi "yakıtla" besleyeceksiniz?
+Yazıcınız hazır, peki ya malzemeniz? Her flament her işe yaramaz. Telefon kılıfı için TPU, araba parçası için ASA... Gel, doğru malzemeyi seçelim.
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>Projeniz için en doğru malzemeyi nasıl seçeceğinizi öğrenin. PLA, PETG, ABS ve Reçine arasındaki farkları ve kullanım alanlarını keşfedin.</p>
-<a href="{{< ref "posts/3d-baski-malzeme-rehberi.md" >}}" class="cta-button">3D Baskı Malzeme Rehberine Git →</a>
+<h3>Sırada: 3D Baskı Malzeme Rehberi</h3>
+<p>Hangi plastik nerede kullanılır? PLA neden güneşte erir? PETG neden en iyi dostunuz olacak? Malzeme dünyasının sırları.</p>
+<a href="{{< ref "posts/3d-baski-malzeme-rehberi.md" >}}" class="cta-button">Malzeme Rehberine Git →</a>
 </div>
-
-### Deneyimlerinizi Paylaşın!
-Sizin kalibrasyon sürecindeki "altın" ipucunuz nedir? En çok hangi ayar baskı kalitenizi değiştirdi? Yorumlarda bizimle paylaşarak topluluğumuza ilham verin!

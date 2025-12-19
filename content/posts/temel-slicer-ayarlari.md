@@ -1,10 +1,10 @@
 ---
-title: "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5 Kritik Ayar"
-date: 2025-05-03T11:00:00+03:00
-featured: false
+title: "Temel Slicer Ayarları: Baskı Kalitenizi Değiştirecek 5+1 Kritik Ayar"
+date: 2025-08-05T11:00:00+03:00
+featured: true
 draft: false
-description: "3D baskı kalitenizi dramatik şekilde artıracak en kritik 5 temel dilimleyici (slicer) ayarını öğrenin. Katman yüksekliği, dolgu, hız, destekler ve tabla yapışması için uzman ipuçları."
-tags: ["Slicer Ayarları", "Cura Ayarları", "PrusaSlicer", "3D Baskı Kalitesi", "Katman Yüksekliği", "Dolgu Ayarları", "Baskı Hızı", "Destek Yapıları", "Tabla Yapışması", "Başlangıç Rehberi"]
+description: "Slicer sadece 'Dilimle' butonuna basmak değildir. Gyroid dolgu, Arachne duvarlar, Z-Seam gizleme ve Ironing... Baskılarınızı amatörlükten profesyonelliğe taşıyacak ileri seviye ayarlar."
+tags: ["Slicer Ayarları", "OrcaSlicer", "Bambu Studio", "Cura", "Arachne", "Gyroid Dolgu", "Z Seam", "Ironing", "Baskı Kalitesi", "Destek Ayarları"]
 categories: ["Teknik İpuçları"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
@@ -21,100 +21,97 @@ ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
     image: "/images/slicer-ayar-cover.jpg"
-    alt: "Bir bilgisayar ekranında 3D slicer yazılımı ve yanında mükemmel basılmış bir 3D obje"
-    caption: "Mükemmel baskının sırrı, doğru ayarlarda gizlidir. Kontrolü elinize alın!"
+    alt: "OrcaSlicer arayüzünde detaylı ayar menüleri ve yanında pürüzsüz bir baskı"
+    caption: "Amatörler 'Yazdır'a basar, profesyoneller ayarları yönetir."
     relative: false
 ---
 
-Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız ve yazıcınız baskıya hazır. "Yazdır" tuşuna basıyorsunuz ve sonuç... bir hayal kırıklığı. Eğri büğrü duvarlar, zayıf bir yapı, dağınık yüzeyler. Peki sorun ne? Sorun, büyük ihtimalle dijital model ile fiziksel yazıcı arasındaki en önemli köprüde, yani **Dilimleyici (Slicer)** yazılımında.
+Harika bir 3D model indirdiniz, en kaliteli filamenti aldınız. Ama baskı bittiğinde sonuç hüsran: Duvarlar zayıf, üst yüzey pürüzlü, destekleri sökerken model kırıldı...
 
-Slicer, 3D modelinizi alan ve onu katman katman nasıl basılacağını anlatan talimatlar bütününe, yani G-Code'a dönüştüren programdır. Yazıcınıza, "Hangi sıcaklığı kullan? İçini ne kadar doldur? Ne kadar hızlı hareket et?" gibi tüm komutları veren odur. Bu komutlar yanlışsa, sonuç kaçınılmaz olarak **[kötü bir baskı]({{< ref "posts/3d-baski-hatalari-cozumleri.md" >}})** olur.
+Suçu yazıcıya atmadan önce durun. Sorun %90 ihtimalle, dijital model ile fiziksel makine arasındaki tercümanda, yani **Dilimleyici (Slicer)** ayarlarındadır.
 
-Neyse ki, bu sürecin kontrolü tamamen sizde! Bu rehberde, bir modeli baskıya nasıl hazırlayacağınızı ve sonuçlarınızı dramatik bir şekilde iyileştirecek **en kritik 5 temel slicer ayarını** öğreneceksiniz.
+Slicer, sadece "Dilimle" butonuna basıp G-Code aldığınız bir araç değildir. O, yazıcının beynidir. Ben atölyemde aynı yazıcıyı kullanan iki kişinin baskılarına baktığımda kimin Slicer'a hakim olduğunu, kimin "varsayılan ayarlarda" gezindiğini hemen anlarım.
 
-### İlk Adım: Modeli Dilimleyiciye Yükleme
+Bu rehberde, basit ayarları geçiyoruz. Sizi 2025 standartlarında profesyonel sonuçlara götürecek, **OrcaSlicer**, **Bambu Studio** ve **Cura**'nın derinliklerindeki o "sihirli" ayarları konuşacağız.
 
-Her şeyden önce, bir dilimleyici yazılımına ihtiyacımız var. Piyasada en popüler ve ücretsiz olan iki tanesi **Ultimaker Cura** ve **PrusaSlicer**'dır. İkisinden birini bilgisayarınıza kurup, kendi 3D yazıcı modelinizi seçerek bir profil oluşturun. Modeli yüklemek ise çok kolay: İndirdiğiniz STL dosyasını, farenizle tutup doğrudan açık olan dilimleyici programının penceresine **sürükleyip bırakın.**
+---
 
-![Bir STL dosyasının Cura veya PrusaSlicer arayüzüne sürüklenip bırakıldığı anı gösteren ekran görüntüsü](/images/slicer-import.jpg "Modeliniz artık sanal baskı tablasının üzerinde, talimatlarınızı bekliyor.")
+## 1. Katman Yüksekliği: "Adaptive" (Değişken) Katmanlar
 
-Modeliniz artık sanal baskı tablasının üzerinde duruyor. Şimdi, o karmaşık görünen ayarları anlamlandırma zamanı.
+Herkes `0.20mm` standart katman yüksekliğini bilir. Ama profesyonel bir sır vereyim: **Adaptive Layer Height (Değişken Katman Yüksekliği).**
 
-## 1. Katman Yüksekliği (Layer Height): Kalite ve Hızın Dengesi
+Bir figür bastığınızı düşünün. Gövdesi düz bir silindir, kafası ise detaylı kıvrımlar içeriyor.
+*   **Standart:** Her yeri 0.12mm basarsanız, baskı 20 saat sürer.
+*   **Adaptive:** Slicer, düz duvarları 0.28mm (hızlı) basarken, kafadaki kıvrımlara geldiğinde otomatik olarak 0.08mm'ye (detaylı) düşer.
 
-Bu ayar, baskınızın dikey çözünürlüğünü belirler.
-* **Düşük Değer (örn: 0.12mm):** Baskı çok daha uzun sürer ama sonuç pürüzsüz ve detaylıdır. Katman çizgileri neredeyse görünmez olur.
-* **Yüksek Değer (örn: 0.28mm):** Baskı çok hızlı biter ama katman çizgileri daha belirgin olur.
+**Nasıl Yapılır?**
+OrcaSlicer veya Bambu Studio'da sağ üstteki araç çubuğunda "Adaptive" ikonuna tıklayın. Yazılım, modelin eğimine göre katmanları otomatik ayarlar. Hem zamandan kazanırsınız hem kaliteden ödün vermezsiniz.
 
-![Aynı 3D modelin farklı katman yükseklikleriyle basılmış iki versiyonu yan yana: Biri pürüzsüz, diğeri belirgin katman çizgili](/images/slicer-layer-height.jpg "Solda düşük katman yüksekliği (kaliteli), sağda yüksek katman yüksekliği (hızlı).")
+## 2. Duvarlar (Walls): "Arachne" Motoru ve Sağlamlık
 
-{{< tip-box title="💡 Pratik Kural" >}}
-Çoğu günlük baskı için `0.20mm` harika bir başlangıç noktasıdır. Hızlı bir prototip için değeri yükseltin, sergileyeceğiniz sanatsal bir obje için ise düşürün. Unutmayın: Katman yüksekliğini yarıya düşürmek, baskı süresini yaklaşık iki katına çıkarır!
+Eskiden "Classic" duvar örücüler vardı. Şimdi **Arachne** var.
+Arachne motoru, duvar kalınlığını dinamik olarak değiştirir. İnce bir boşluk varsa orayı doldurmak için nozzle akışını kısar veya artırır.
+*   **Duvar Sayısı:** Sağlamlık istiyorsanız dolguyu (infill) artırmayın. **Duvar sayısını (Wall Loops) 3 veya 4 yapın.** Bir parçayı sağlam yapan şey kabuğudur, içi değil.
+
+{{< tip-box title="💡 Usta İpucu: Dış Duvar Hızı" >}}
+Baskı süresini kısaltmak için iç duvarları (Inner Wall) 150-200 mm/s basabilirsiniz. Ama **Dış Duvar (Outer Wall)** hızını her zaman **50-60 mm/s** seviyesinde tutun. Vitrine koyduğunuzda gördüğünüz tek yer orasıdır.
 {{< /tip-box >}}
 
-## 2. Dolgu (Infill): Sağlamlık ve Malzeme Tasarrufu
+## 3. Dolgu (Infill): Grid Öldü, Yaşasın Gyroid ve Lightning!
 
-Dolgu, baskınızın iç yapısını, yani iskeletini oluşturan destek ağıdır ve yüzde olarak ayarlanır.
+Eğer hala "Grid" (Izgara) veya "Triangles" kullanıyorsanız, yazıcınıza eziyet ediyorsunuz.
+*   **Neden Grid Kullanmam?** Çizgiler her katmanda birbiriyle kesişir. Nozzle bu kesişimlere çarparak "tık tık" ses yapar ve modeli tabladan koparabilir.
+*   **Kral: Gyroid:** Dalgalı bir yapıdır. Nozzle asla kendi yoluyla kesişmez. Her yöne eşit sağlamlık verir.
+*   **Tasarrufçu: Lightning:** Eğer sadece görsel bir büst basıyorsanız ve sağlamlık önemsizse "Lightning" seçin. Sadece tavanı tutacak kadar, ağaç dalı gibi dolgu atar. %50 malzeme tasarrufu sağlar.
 
-* **%10-20 (Standart Dolgu):** Üzerine yük binmeyecek çoğu dekoratif obje için fazlasıyla yeterlidir.
-* **%25-50 (Fonksiyonel Dolgu):** Duvara asılacak bir braket veya sık kullanılacak bir alet gibi sağlamlık gerektiren parçalar için idealdir.
+## 4. Destekler (Supports): Z-Distance Sırrı
 
-Ayrıca **Dolgu Deseni (Infill Pattern)** de önemlidir. Hız için `Grid`, çok yönlü sağlamlık için `Cubic` en popüler seçeneklerdir.
+Destekleri sökerken modelde iz kalıyor veya model kırılıyor mu? Sorun "Top Z Distance" ayarında.
+*   **Ağaç (Tree) Destek:** Karakter ve organik modeller için standarttır.
+*   **Kritik Ayar (Top Z Distance):** Destek ile model arasındaki boşluktur.
+    *   Kolay sökülsün diyorsanız: **0.20mm** (veya katman yüksekliğiniz kadar).
+    *   Yüzey çok temiz olsun (ama zor sökülür) diyorsanız: **0.12mm**.
+*   **Support Interface:** Bunu açarsanız, desteğin tepesine yoğun bir çatı örer. Destek kalıp gibi çıkar, iz bırakmaz.
 
-## 3. Baskı Hızı (Print Speed): Kaliteden Ödün Vermeden Zaman Kazanmak
+## 5. Dikiş İzi (Seam): O Çirkin Çizgiyi Gizlemek
 
-Baskı hızını artırmak süreyi düşürür, ancak kaliteden ödün vermenize neden olabilir. Yüksek hız, yüzeyde dalgalanmalara ("ringing"), zayıf katman yapışmasına ve detay kaybına yol açabilir.
+Baskınızın bir yerinde, aşağıdan yukarıya doğru giden bir "fermuar izi" mi var? Buna **Z-Seam** denir. Nozzle'ın katmana başladığı ve bitirdiği yerdir.
+*   **Random (Rastgele):** Yapmayın. Modelin her yerinde sivilce gibi noktalar olur.
+*   **Aligned (Hizalı):** Tek bir çizgi halinde yapar.
+*   **Pro Tercih (Scarf Joint):** OrcaSlicer'ın yeni özelliği. Dikiş izini yok etmek için başlangıç ve bitiş noktalarını birbirine kaynaştırır. Mutlaka deneyin.
+*   **Manuel Boyama (Seam Painting):** Dikiş izini modelin arkasına, görünmeyen bir köşesine elle çizin.
 
-{{< tip-box title="🔑 Altın Kural" >}}
-Baskının görünen yüzü olan **Dış Duvar Hızını (Outer Wall Speed)** her zaman genel hızınızdan daha yavaş tutun (genellikle %50'si kadar). Bu, pürüzsüz ve temiz bir dış yüzey elde etmenin en büyük sırrıdır.
-{{< /tip-box >}}
+## +1 Bonus: Ütüleme (Ironing)
 
-## 4. Destek Yapıları (Supports): Yer Çekimine Meydan Okumak
+Baskının en üst yüzeyi pürüzlü mü duruyor?
+**Ironing (Ütüleme)** özelliğini açın.
+Yazıcı en üst katmanı bitirdikten sonra, nozzle'ı çok az plastik akıtarak (veya hiç akıtmayarak) yüzeyin üzerinden tekrar geçirir. Tıpkı gömlek ütüler gibi, plastik pürüzsüzleşir. Düz, yassı modellerde (anahtarlık, kutu kapağı vb.) enjeksiyon kalıp kalitesi alırsınız.
 
-Bir katmanı, altında onu tutacak başka bir katman olmadan boşluğa basamazsınız. Slicer, modelinizin "havada kalacak" kısımlarını otomatik olarak tespit eder ve bu kısımların çökmemesi için altlarına geçici destek yapıları inşa eder. Genel kural olarak, bir çıkıntının açısı dikeyden itibaren **45-50 dereceyi** aştığında destek gerekir.
+![Ironing açık ve kapalı arasındaki farkı gösteren bir karşılaştırma](/images/ironing-comparison.jpg "Solda pürüzlü standart yüzey, sağda 'ütülenmiş' pürüzsüz yüzey.")
 
-![Bir ejderha modelinin altında ağaç (tree) tipi destek yapıları gösteriliyor](/images/slicer-supports.jpg "Ağaç destekler, karmaşık modeller için hem verimli hem de sökmesi kolay bir çözümdür.")
+---
 
-* **Destek Tipi:** Karmaşık ve organik şekilli modeller (figürler gibi) için **Tree (Ağaç)** destekler harikadır.
-* **Yerleşim:** Mümkün olduğunca **Touching Buildplate (Sadece Tablaya Değen)** seçeneğini kullanın. Bu, modelinizin yüzeyine en az zararı verir.
+{{< success-story-box title="✨ Kendi Tecrübem: Kırılan Drone Parçası" >}}
+Bir drone için kol parçası basıyordum. %100 dolgu yapmama rağmen ilk düşüşte kırıldı. Sonra Slicer ayarlarını değiştirdim: Dolguyu %40'a düşürdüm ama **Duvar Sayısını 6'ya çıkardım**. Ayrıca **Gyroid** dolgu kullandım. Sonuç? O drone 5 kere daha düştü, parça hala sağlam. Slicer, malzemeden daha önemlidir.
+{{< /success-story-box >}}
 
-## 5. Tabla Yapışması (Adhesion): Başarılı Bir Başlangıcın Garantisi
+## Sonuç: Denemekten Korkmayın
 
-Baskınızın tabladan ayrılıp bir "spagetti yığınına" dönüşmesini engellemek için bu ayarlara hakim olmalısınız.
+Bu ayarlar başta karmaşık gelebilir. Tavsiyem; küçük bir test küpü alın ve her seferinde sadece **TEK BİR** ayarı değiştirerek basın.
+*   Önce Gyroid'i deneyin.
+*   Sonra Ironing'i açın.
+*   Sonra Seam yerini değiştirin.
 
-1.  **Skirt (Etek):** Modele değmeyen, baskı başlamadan önce nozzle'ı temizleyen dış hatlardır. **Neredeyse her zaman kullanın.**
-2.  **Brim (Kenarlık):** Modelin tabanına yapışık, yüzey alanını artırarak yapışmayı güçlendiren tek katmanlı bir kenarlıktır. Köşeleri kalkan veya devrilmeye müsait baskılarda hayat kurtarır.
-3.  **Raft (Sal):** Modelin altına basılan kalın bir plastik "sal"dır. **Sadece son çare olarak kullanılır.**
+Farkı gözünüzle gördüğünüzde, "Ben daha önce baskı almıyormuşum" diyeceksiniz.
 
-![Skirt, Brim ve Raft seçeneklerinin 3D model etrafındaki görsel karşılaştırması](/images/tabla-yapisma.jpg "Soldan sağa: Skirt, Brim ve Raft.")
-
-### Hızlı Ayar Tablosu: Yeni Başlayanlar İçin Öneriler
-
-| Ayar | Ne İşe Yarar? | Başlangıç Tavsiyesi |
-| :--- | :--- | :--- |
-| **Katman Yüksekliği** | Detay seviyesini belirler. | ⚙️ `0.20mm` (Standart Kalite) |
-| **Dolgu (Infill)** | İç sağlamlığı oluşturur. | 🧱 `15%` (Cubic Desen) |
-| **Baskı Hızı** | Baskı süresini etkiler. | 🚀 `50 mm/s` (Genel Hız) |
-| **Destekler** | Boşluktaki kısımları tutar. | 🌳 `Ağaç (Tree)` (Organik modellerde) |
-| **Tabla Yapışması** | Baskının tutunmasını sağlar. | ✅ `Etek (Skirt)` (Her Zaman) |
-
-## Sonuç: Artık Kontrol Sizde!
-
-Artık bir dilimleyici yazılımının en kritik 5 temel ayarını öğrendiniz. En iyi öğrenme yolu, bu temel ayarlarla korkmadan oynamak ve sonuçlarını gözlemlemektir. Her model, farklı ayarlar gerektirebilir ve en iyi sonuçları deneyerek bulacaksınız.
+Peki, ayarları yaptık ama baskıda hala ipliklenme (stringing) var veya taban köşelerden kalkıyor (warping). Ayar mı yanlış, makine mi bozuk?
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Ayarlarınızı yaptınız ama baskı sırasında beklenmedik bir sorun mu çıktı? Endişelenmeyin, en iyi kullanıcıların bile başına gelir.
+Hastalığı teşhis etmeden ilacı veremeyiz. 3D baskıların en belalı 10 hastalığını, belirtilerini ve reçetelerini hazırladık.
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>Eğer bu ayarlara rağmen baskılarınızda sorun yaşıyorsanız, en sık karşılaşılan problemlerin çözümlerini öğrenme zamanı!</p>
-<a href="{{< ref "posts/3d-baski-hatalari-cozumleri.md" >}}" class="cta-button">3D Baskı Hataları ve Çözümleri Rehberine Git →</a>
+<h3>Sırada: En Yaygın 10 Baskı Hatası ve Çözümleri</h3>
+<p>Stringing, Warping, Layer Shift... Baskılarınızdaki sorunları bir doktor gibi teşhis edip çözme rehberi.</p>
+<a href="{{< ref "posts/3d-baski-hatalari-cozumleri.md" >}}" class="cta-button">Hata Çözüm Rehberine Git →</a>
 </div>
-
-{{< success-story-box title="✨ Başarı Hikayesi: İpliklenme Sorununa Slicer Çözümü" >}}
-Can, aylarca 'stringing' (ipliklenme) sorunuyla boğuşuyordu. Her baskısı filament telleriyle doluydu. Bu rehberdeki **Geri Çekme (Retraction)** ve **Baskı Hızı** ayarlarını inceleyerek kendi slicer ayarlarında küçük değişiklikler yaptı. Sonuç: Kusursuz, tertemiz baskılar! Bu sayede figür satışları da ikiye katlandı.
-{{< /success-story-box >}}
-
-### Deneyimlerinizi Paylaşın!
-Siz en çok hangi slicer ayarıyla oynuyorsunuz? Baskı kalitenizi artıran en büyük sırrınız neydi? Yorumlarda bizimle paylaşın!

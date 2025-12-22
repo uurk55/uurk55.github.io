@@ -133,9 +133,6 @@ Artık ne satacağınızı ve nasıl fiyatlandıracağınızı biliyorsunuz. Şi
 
 <div class="post-cta-box">
 <h3>Şimdi Sırada Ne Var?</h3>
-<p>Kârlı bir niş pazar belirlediniz, fiyatlandırmanızı yaptınız. Şimdi bu ürünleri sergileyebileceğiniz ve satabileceğiniz somut ürün fikirlerine odaklanalım. Evcil hayvan sahipleri için neler yapabilirsiniz?</p>
-<a href="{{< ref "posts/evcil-hayvan-urunleri-3d-baski.md" >}}" class="cta-button">Evcil Hayvan Ürünleri Fikirlerine Git →</a>
-</div>
-
+<p>
 ### Deneyimlerinizi Paylaşın!
 Siz de 3D baskı ürünlerinizi fiyatlandırırken kullandığınız ipuçlarını veya yaşadığınız zorlukları yorumlarda paylaşın!

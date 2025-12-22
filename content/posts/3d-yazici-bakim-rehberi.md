@@ -1,6 +1,6 @@
 ---
 title: "3D Yazıcı Bakım Rehberi: Makinenizin Ömrünü Uzatın ve Sorunları Önleyin"
-date: 2025-05-10T16:00:00+03:00
+date: 2025-08-12T10:00:00+03:00
 featured: false
 draft: false
 description: "3D yazıcınızdan en iyi performansı almak, baskı kalitesini korumak ve ömrünü uzatmak için FDM ve SLA yazıcıların temel bakım adımlarını (nozül, tabla, hareketli parçalar, reçine tankı temizliği) bu rehberle öğrenin."
@@ -78,8 +78,8 @@ SLA yazıcıların bakımı, daha çok kimyasal temizlik ve hassas bileşenlerin
 
 ![Bir kişinin SLA yazıcının LCD ekranını mikrofiber bezle nazikçe sildiği yakın çekim](/images/sla-lcd-cleaning.png "LCD Ekran Temizliği")
 
-{{< success-story-box title="✨ Bakım Sayesinde Kurtarılan Baskı Macerası" >}}
-Ebru, düzenli bakım rutinini aksatmadığı için, iki yıldır kullandığı FDM yazıcısından ilk günkü gibi pürüzsüz baskılar alıyor. Birçok arkadaşı parça değişimi veya yeni yazıcı düşünürken, Ebru sadece nozül temizliği ve yağlama yaparak yüzlerce dolarlık tamir masrafından kurtuldu. **Bakım, gerçekten 'para kazandıran' bir alışkanlıktır!**
+{{< success-story-box title="✨ Kendi Tecrübem: 5 Dakikanın Değeri" >}}
+İlk yazıcımı aldığımda "Çalışıyorsa dokunma" mantığındaydım. 6 ay sonra, 20 saatlik kritik bir baskının tam ortasında nozzle tıkandı ve baskı çöp oldu. Sebebi? Hotend fanında biriken basit tozlardı; soğutmayı engellemiş ve tıkanıklık yapmıştı. O gün çöpe giden yarım kilo filament ve harcadığım zaman bana ders oldu. Artık her Cuma sadece 5 dakikamı ayırıp fanları üflüyor, milleri siliyorum. Sonuç: 3 yıldır o yazıcıda tek bir teknik arıza yaşamadım. Bakım, en ucuz sigortadır.
 {{< /success-story-box >}}
 
 ### Hızlı Bakım Kontrol Listesi
@@ -138,13 +138,10 @@ Ebru, düzenli bakım rutinini aksatmadığı için, iki yıldır kullandığı 
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Makinenizin bakımı tamam ve ilk günkü gibi performanslı çalışıyor. Peki, ya baskı sırasında beklenmedik bir hata ile karşılaşırsanız?
+Makinenizin bakımı tamam ve ilk günkü gibi performanslı çalışıyor. Peki, atölyenizde işinizi kolaylaştıracak, baskılarınızı mükemmelleştirecek "olmazsa olmaz" yardımcı aletler neler?
 
 <div class="post-cta-box">
 <h3>Şimdi Sırada Ne Var?</h3>
-<p>Yazıcınızın bakımı tamam. Artık makinenizin beynini güncelleyerek yeni özellikler kazanmasını ve daha stabil çalışmasını sağlayacak ileri seviye adımları öğrenme zamanı!</p>
-<a href="{{< ref "posts/firmware-guncelleme-rehberi.md" >}}" class="cta-button">Firmware Güncelleme Rehberine Git →</a>
+<p>Kumpastan spatulaya, deburrer'dan saklama kutularına kadar; bir 3D baskı atölyesinde mutlaka bulunması gereken ek ekipmanları listeledik.</p>
+<a href="{{< ref "posts/3d-yazici-ek-ekipmanlar.md" >}}" class="cta-button">Gerekli Ek Ekipmanlar Rehberine Git →</a>
 </div>
-
-### Deneyimlerinizi Paylaşın!
-Sizin vazgeçilmez bakım ipucunuz nedir? Hangi küçük bakım adımı baskı kalitenizde en büyük farkı yarattı? Yorumlarda bizimle paylaşın!

@@ -1,6 +1,6 @@
 ---
 title: "Parça Birleştirme Teknikleri: Büyük Modelleri ve Mekanik Parçaları Birleştirme Sanatı"
-date: 2025-09-09T10:00:00+03:00
+date: 2025-09-02T10:00:00+03:00
 featured: true
 draft: false
 description: "Yazıcınızın hacmine sığmayan dev projeler mi yapıyorsunuz? Siyanoakrilat, epoksi, sürtünme kaynağı ve sıcak gömme somun (heat-set insert) teknikleriyle profesyonel montaj rehberi."

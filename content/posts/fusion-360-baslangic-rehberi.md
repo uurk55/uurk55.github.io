@@ -1,6 +1,6 @@
 ---
 title: "Fusion 360 Başlangıç Rehberi: Profesyonel 3D Parçalar Tasarlayın"
-date: 2025-08-26T11:00:00+03:00
+date: 2025-08-21T11:00:00+03:00
 featured: false
 draft: false
 description: "Tinkercad yetmediğinde ne yapacaksınız? Vida delikleri, hassas kapaklar ve parametrik tasarım. Uğur Kapancı'nın Fusion 360'a 'korkmadan' başlama rehberi."

@@ -1,6 +1,6 @@
 ---
 title: "Esnek Filament Rehberi: TPU, TPE ve Soft PLA Arasındaki Farklar"
-date: 2025-09-12T12:45:00+03:00
+date: 2025-09-05T12:45:00+03:00
 featured: true
 draft: false
 description: "Sadece TPU yok! TPE, Soft PLA ve TPC nedir? Shore sertlik skalası (95A vs 85A) baskıyı nasıl etkiler? Esnek malzemelerin kimyası ve basım teknikleri."

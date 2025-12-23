@@ -1,6 +1,6 @@
 ---
 title: "Satılabilir Bir 3D Model Nasıl Tasarlanır? (Estetik + Fonksiyon)"
-date: 2025-08-29T10:00:00+03:00
+date: 2025-08-22T10:00:00+03:00
 featured: true
 draft: false
 description: "3D modellerinizi hobi arşivinden çıkarıp ticari bir ürüne dönüştürmenin yolları. Pazarın talep ettiği 'Satılabilir Model' kriterleri, niş belirleme ve sunum teknikleri."

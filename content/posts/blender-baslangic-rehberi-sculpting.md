@@ -1,6 +1,6 @@
 ---
 title: "Blender Başlangıç Rehberi: Heykeltıraş Gibi 3D Model Yapın"
-date: 2025-08-22T10:00:00+03:00
+date: 2025-08-20T10:00:00+03:00
 featured: false
 draft: false
 description: "Tinkercad yetmiyor mu? Blender'ın 'Sculpt Mode'u ile dijital kili yoğurarak organik ve sanatsal modeller yapmayı öğrenin. Uğur Kapancı'nın 10 dakikada mantar yapım rehberi."

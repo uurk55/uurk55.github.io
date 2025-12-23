@@ -1,6 +1,6 @@
 ---
 title: "Çok Renkli 3D Baskıya Giriş: Tek Yazıcıda Renk Cümbüşü Yaratın"
-date: 2025-09-16T12:00:00+03:00
+date: 2025-09-09T12:00:00+03:00
 featured: true
 draft: false
 description: "Tek bir nozzle ile renkli baskı nasıl yapılır? M600 kodu, 'Z-Hop' ile kakma tekniği ve AMS sistemlerinin teknik karşılaştırması. Hangi yöntem sizin için uygun?"

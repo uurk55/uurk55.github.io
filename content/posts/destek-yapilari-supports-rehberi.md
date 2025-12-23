@@ -1,6 +1,6 @@
 ---
 title: "Destek Yapıları (Supports): A'dan Z'ye Ustalık Rehberi"
-date: 2025-09-05T11:30:00+03:00
+date: 2025-08-29T11:30:00+03:00
 featured: true
 draft: false
 description: "Destekleri sökerken modeli kırmaktan bıktınız mı? Yer çekimiyle savaşmanın matematiği, Z-Distance ve Interface ayarlarının derinlemesine analizi ve iz bırakmadan sökme teknikleri."

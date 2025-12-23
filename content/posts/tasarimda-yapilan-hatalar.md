@@ -1,6 +1,6 @@
 ---
 title: "Tasarımda Yapılan Hatalar ve Öğrenilen Dersler"
-date: 2025-09-02T10:00:00+03:00
+date: 2025-08-26T10:00:00+03:00
 featured: false
 draft: false
 description: "Duvarlar neden kağıt gibi çıktı? Kapak neden kapanmıyor? 3D tasarımda en sık yapılan 5 teknik hata (Non-manifold, Tolerans, Oryantasyon) ve bunları önlemenin mühendislik kuralları."

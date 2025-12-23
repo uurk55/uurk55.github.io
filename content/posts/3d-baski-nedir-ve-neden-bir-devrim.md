@@ -1,6 +1,6 @@
 ---
 title: "3D Baskı Nedir? 'Sihirli Kutu' Beklentisi ve Gerçekleri"
-date: 2025-04-05T14:00:00+03:00
+date: 2025-07-04T14:00:00+03:00
 featured: false
 draft: false
 description: "3D baskı bir sihirbazlık gösterisi mi, yoksa kontrollü bir üretim süreci mi? İlk yazıcımı aldığımda ne beklediğimi, gerçekte neyle karşılaştığımı ve bu katmanlı üretim mantığını kendi deneyimlerimle anlatıyorum."

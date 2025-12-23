@@ -1,6 +1,6 @@
 ---
 title: "Sadece Ürün Değil, Model de Satmak: Tasarımlarınızı Pazarlama Rehberi (Cults3D, MyMiniFactory)"
-date: 2025-07-26T10:00:00+03:00
+date: 2025-11-21T10:00:00+03:00
 featured: false
 draft: false
 description: "Tasarım becerilerinizi pasif gelire dönüştürün. 3D modellerinizi (STL dosyaları) Cults3D, MyMiniFactory gibi platformlarda nasıl satacağınızı ve bir dijital ürün işi kuracağınızı öğrenin."
@@ -53,7 +53,7 @@ Herkes model yükleyebilir, ancak çok azı gerçekten para kazanır. Başarın�
 #### 1. Nişinizi Bulun ve Bir Sorun Çözün
 "Herkes için her şeyi" tasarlamak, hiç kimse için hiçbir şey tasarlamamaktır. Belirli bir alana odaklanın.
 * **Örnek Nişler:** Masaüstü rol yapma oyunu aksesuarları, pratik ev düzenleyicileri, belirli bir hobiye yönelik araçlar (fotoğrafçılık, drone parçaları).
-* **Strateji:** İnsanların "keşke şunun şöyle bir parçası olsa" dediği sorunları dinleyin ve o sorunu çözen modeller tasarlayın. Detaylar için **[Pazar Analizi Rehberimize]({{< ref "posts/pasif-gelir-icin-pazar-analizi.md" >}})** göz atın.
+* **Strateji:** İnsanların "keşke şunun şöyle bir parçası olsa" dediği sorunları dinleyin ve o sorunu çözen modeller tasarlayın. Detaylar için **[Pazar Analizi Rehberimize]({{< ref "posts/3d-baski-pazar-analizi.md" >}})** göz atın.
 
 ![Belirli bir nişe (örneğin, masaüstü oyunları) odaklanmış, birbiriyle uyumlu bir 3D model koleksiyonu.](/images/niche-3d-models.png)
 
@@ -82,31 +82,52 @@ Modelinizi farklı parçalara ayırarak veya farklı boyuttaki baskı tablaları
 {{< /tip-box >}}
 
 #### 5. Doğru Platformu Seçmek
-Her platformun kendi kitlesi ve kuralları vardır.
+Her platformun kendi kitlesi ve kuralları vardır. Hangi platform sizin için uygun?
 
-| Platform | Kitle ve Odak Noktası | Gelir Modeli |
-| :--- | :--- | :--- |
-| **Cults3D** | 🎨 Estetik ve tasarım odaklı, geniş kitle. | Satış başına komisyon. |
-| **MyMiniFactory** | ⚔️ Figür, oyun ve koleksiyon odaklı, kürate edilmiş içerik. | Satış başına komisyon, kabile (Tribe) abonelikleri. |
-| **Printables** | ⚙️ Fonksiyonel ve pratik parçalar, mühendislik topluluğu. | Ödül sistemi, satış özelliği yeni gelişiyor. |
-| **Thingiverse** | 📚 Devasa arşiv, genellikle ücretsiz paylaşım odaklı. | Genellikle bahşiş (tip) sistemi. |
-
+<table class="summary-table">
+    <thead>
+        <tr>
+            <th>Platform</th>
+            <th>🎯 Kitle ve Odak Noktası</th>
+            <th>💰 Gelir Modeli</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Cults3D</strong></td>
+            <td>Sanatsal, Dekoratif, Geniş Kitle</td>
+            <td>Satış başına komisyon (%80'i size kalır).</td>
+        </tr>
+        <tr>
+            <td><strong>MyMiniFactory</strong></td>
+            <td>Figür, Oyun (D&D), Koleksiyon</td>
+            <td>Satış + "Tribe" (Aylık Abonelik) sistemi.</td>
+        </tr>
+        <tr>
+            <td><strong>Printables</strong></td>
+            <td>Fonksiyonel, Prusa Kullanıcıları</td>
+            <td>Ödül puanı (Filament) + Yeni başlayan satış sistemi.</td>
+        </tr>
+        <tr>
+            <td><strong>Thingiverse</strong></td>
+            <td>Devasa Arşiv, Ücretsiz Odaklı</td>
+            <td>Gelir yok (Sadece Bahşiş/Tip).</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Sonuç: Tasarımcılıktan Dijital Girişimciliğe
 
 Tasarım becerileriniz, sizin dijital altın madeninizdir. Fiziksel ürün satmanın getirdiği zorluklar olmadan, yaratıcılığınızı doğrudan bir pasif gelir modeline dönüştürebilirsiniz. Bu rehberdeki kuralları uygulayarak, sadece bir "model paylaşan" olmaktan çıkıp, tasarımları aranan ve para kazanan bir "dijital girişimci" olabilirsiniz.
 
+Hem fiziksel hem de dijital ürünler sattınız, işler büyüdü. Artık evinizdeki o küçük oda size yetmiyor. Yazıcı sesleri, kargo kutuları, filament makaraları... Ev artık bir fabrika gibi.
+
 ### Yolculuğun Bir Sonraki Durağı
 
-Dijital ürünlerinizi pazarlamak için en güçlü araçlardan biri nedir? Markanızı oluşturmak ve sadık bir takipçi kitlesi edinmek!
+İşler büyüdüğünde karşınıza çıkan o büyük soru: "Eve sığmıyorum, atölyeye mi geçmeliyim?" Evden çalışmanın konforu mu, yoksa profesyonel bir atölyenin getireceği büyüme mi?
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>3D baskı işiniz için sosyal medyayı nasıl etkili bir şekilde kullanacağınızı, marka kimliği oluşturmayı ve müşteri kitlenizi büyütmeyi öğrenin.</p>
-<p class="coming-soon-notice"><strong>Sıradaki Rehber:</strong> Sosyal Medya Pazarlama <span>(Yakında!)</span></p>
+<h3>Sırada: Evden 3D Baskı Üretimi: Ne Zaman Atölyeye Geçilmeli?</h3>
+<p>Büyüme sancıları, evden çalışmanın sınırları ve bir atölye kiralamanın maliyet-fayda analizi.</p>
+<a href="{{< ref "posts/evden-atolyeye-gecis.md" >}}" class="cta-button">Atölye Geçiş Rehberine Git →</a>
 </div>
-<!--<a href="{{< ref "" >}}" class="cta-button">Sosyal Medya Pazarlama Rehberine Git →</a>-->
-
-
-### Deneyimlerinizi Paylaşın!
-Siz hangi dijital 3D modelleri tasarlayıp satmak isterdiniz? Bu iş modeli hakkındaki düşüncelerinizi yorumlarda paylaşın!

@@ -79,8 +79,8 @@ Bu fazda:
 ### 🔹 FAZ 3 – Dükkanı Açmak (Ustalık)
 En sevdiğim ama en çok tokat yediğim kısım. Ürününüz harika olabilir, baskı kaliteniz kusursuz olabilir. Ama **pazarlamayı** ve **fiyatlandırmayı** bilmiyorsanız, o ürün rafınızda tozlanır.
 Burada size teorik bilgi değil, bizzat yaşadıklarımı anlatacağım:
-*   **[Pazar Analizi Nasıl Yapılır?]({{< ref "posts/pasif-gelir-icin-pazar-analizi.md" >}})** (Benim "tutan" ve "tutmayan" ürünlerim üzerinden)
-*   **[Etsy ve E-Ticaret Gerçekleri]({{< ref "posts/etsyde-3d-baski-satma-rehberi.md" >}})**
+*   **[Pazar Analizi Nasıl Yapılır?]({{< ref "posts/3d-baski-pazar-analizi.md" >}})** (Benim "tutan" ve "tutmayan" ürünlerim üzerinden)
+*   **[Pazaryerleri ve E-Ticaret Gerçekleri]({{< ref "posts/3d-baski-pazaryerleri-rehberi.md" >}})**
 *   Kargolama, müşteri ilişkileri ve marka olma.
 
 ---

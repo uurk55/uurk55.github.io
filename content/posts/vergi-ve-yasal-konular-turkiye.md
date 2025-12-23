@@ -1,6 +1,6 @@
 ---
 title: "Vergi ve Yasal Konular (Türkiye Özelinde): 3D Baskı İşinizi Yasal Çerçeveye Oturtun"
-date: 2025-08-30T10:00:00+03:00
+date: 2025-12-19T10:00:00+03:00
 featured: false
 draft: false
 description: "3D baskı hobinizi resmi bir işletmeye dönüştürürken Türkiye'deki yasal ve vergisel sorumluluklarınız nelerdir? Şahıs şirketi kurma, temel vergi kavramları ve esnaf muaflığı hakkında başlangıç rehberi."

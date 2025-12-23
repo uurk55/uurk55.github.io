@@ -1,10 +1,10 @@
 ---
 title: "Fiyatlandırma Stratejisi: Ürünlerinize Nasıl Değer Biçmelisiniz?"
-date: 2025-06-18T13:30:00+03:00
+date: 2025-09-30T13:30:00+03:00
 featured: false
 draft: false
 description: "3D baskı ürünlerinizi doğru fiyatlandırmak, kârlılığınız için hayati öneme sahiptir. Malzeme, elektrik, işçilik maliyetlerini hesaplamayı ve rekabetçi fiyatlandırma stratejilerini öğrenin."
-tags: ["3D Baskı Fiyatlandırma", "Maliyet Hesaplama", "Kâr Marjı", "Fiyatlandırma Stratejileri", "E-ticaret", "Pasif Gelir", "3D Baskı İşletme", "Girişimcilik"]
+tags: ["3D Baskı Fiyatlandırma", "Maliyet Hesaplama", "Kâr Marjı", "Fiyatlandırma Stratejileri", "E-ticaret", "Amortisman", "3D Baskı İşletme", "Girişimcilik"]
 categories: ["Para Kazanma"]
 faz: ["Faz 3"]
 series: ["3D Baskı ile Para Kazanma"]
@@ -26,66 +26,85 @@ cover:
     relative: false
 ---
 
-3D yazıcınızda harika bir ürün tasarladınız ve bastınız. Belki de şimdiye kadarki en iyi baskınız oldu! Peki, bu eşsiz parçaya **nasıl fiyat biçmelisiniz?** Bu, birçok 3D baskı girişimcisinin en çok zorlandığı sorulardan biridir. Çok ucuz fiyat verirseniz emeğinizin karşılığını alamaz, çok pahalı fiyat verirseniz müşterilerinizi kaybedersiniz. Doğru dengeyi bulmak, kârlılığınız ve işinizin sürdürülebilirliği için hayati öneme sahiptir.
+3D yazıcınızda harika bir ürün tasarladınız ve bastınız. Belki de şimdiye kadarki en iyi baskınız oldu! Slicer programına baktınız, "Maliyet: 20 TL" yazıyor. "Harika, 50 TL'ye satarsam %150 kâr ederim" dediniz.
 
-Bu **fiyatlandırma stratejisi rehberi** ile, 3D baskı ürünlerinizi kârlı bir şekilde satmak için gerekli tüm maliyet kalemlerini adım adım hesaplamayı, piyasayı analiz etmeyi ve rekabetçi fiyatlar belirlemeyi öğreneceksiniz. Ürünlerinize sadece bir fiyat etiketi değil, bir **değer** biçmeye hazır olun!
+**Durun.** Eğer böyle düşünüyorsanız, aslında **zarar ediyorsunuz** ve bunun farkında bile değilsiniz.
+
+Birçok 3D baskı girişimcisi, sadece filament parasını maliyet sanarak işe başlar ve ay sonunda "Neden param yok?" diye sorar. Çok ucuz fiyat verirseniz emeğinizin karşılığını alamaz, çok pahalı fiyat verirseniz müşterilerinizi kaybedersiniz. Doğru dengeyi bulmak, kârlılığınız ve işinizin sürdürülebilirliği için hayati öneme sahiptir.
+
+Bu **fiyatlandırma stratejisi rehberi** ile, "bakkal hesabı" yapmayı bırakıp, bir mühendis gibi maliyet hesaplamayı öğreneceğiz.
+
+---
 
 ### Fiyatlandırmanın Temeli: Tüm Maliyetlerinizi Bilin
 
-Bir ürünün fiyatı, maliyetinin altında olamaz. Sadece filament maliyetini düşünmek en büyük hatadır. Gerçek maliyeti belirleyen birçok gizli kalem vardır:
+Bir ürünün fiyatı, maliyetinin altında olamaz. Gerçek maliyeti belirleyen ve genelde gözden kaçan 5 temel kalemi detaylandıralım:
 
 #### 1. Malzeme Maliyeti (Filament / Reçine)
-Bu, genellikle en bariz maliyettir. Slicer yazılımınız, modelinizin basılması için ne kadar filament veya reçine gerektiğini size söyler (gram veya ml cinsinden). Malzemenizin kilogram/litre fiyatını, bu miktarla oranlayarak maliyeti bulabilirsiniz.
-* **Örnek:** 1 kg (1000g) filament 300 TL ise, 50g'lık bir baskı **15 TL** malzeme maliyetine sahiptir.
+Bu en bariz olanıdır ama Slicer'ın verdiği "tahmini" gramaj bazen yanıltıcı olabilir.
+*   **Hesaplama:** `(Filament KG Fiyatı / 1000) * Harcanan Gram`.
+*   **Fire Payı:** Her baskı başarılı olmaz. Başarısız baskıları ve destek (support) atıklarını karşılamak için bu maliyete mutlaka **%10-15 Fire Payı** ekleyin.
+*   **Örnek:** 1000 TL'lik bir filamentten 50g kullandıysanız, maliyet 50 TL'dir. %10 fire ile **55 TL** olarak hesaplayın.
 
 ![Farklı filament makaraları veya reçine şişeleri, yanında bir dijital terazi ve bir not defteri.](/images/material-cost.png "Malzeme Maliyetinin Hesaplanması")
 
 #### 2. Elektrik Tüketimi
-3D yazıcınızın çalışması elektrik tüketir. Bu genellikle küçük bir maliyet olsa da, özellikle büyük baskılarda veya çok sayıda yazıcıyla çalışırken hesaba katılmalıdır.
-* **Örnek:** Ortalama 100W güç tüketen bir yazıcı, 10 saatte 1 kWh elektrik harcar. Ülkenizdeki 1 kWh elektrik fiyatı ile bu değeri çarparak maliyeti bulabilirsiniz.
+"Yazıcı ne yakacak ki?" demeyin. Isıtmalı tabla (Bed) ve Nozzle saatlerce çalışıyor.
+*   **Teknik Veri:** Ortalama bir Ender 3 veya Bambu Lab, saatte yaklaşık **0.15 - 0.3 kWh** elektrik tüketir.
+*   **Formül:** `Baskı Saati * 0.2 kWh * Elektrik Birim Fiyatı`.
+*   10 saatlik bir baskı, faturanıza sandığınızdan fazla yansıyabilir. Bunu kuruşu kuruşuna ekleyin.
 
 #### 3. Yazıcı Amortismanı ve Bakım Maliyeti
-Yazıcınız zamanla yıpranır ve **[bakıma]({{< ref "posts/3d-yazici-bakim-rehberi.md" >}})** ihtiyaç duyar. Bu maliyeti her ürüne paylaştırmak, gelecekteki bir tamir veya yeni yazıcı alımı için fon oluşturmanızı sağlar.
-* **Örnek:** 10.000 TL'lik bir yazıcının tahmini 5000 saat çalışma ömrü varsa, saat başına yıpranma maliyeti 2 TL'dir. 10 saatlik bir baskı, amortisman maliyetinize 20 TL ekler.
+Yazıcınız sonsuza kadar çalışmayacak. Nozzle aşınacak, kayış kopacak, fan bozulacak.
+*   **Amortisman:** Bir yazıcının verimli ömrünü ortalama **3000 saat** (baskı saati) olarak kabul edin.
+*   **Formül:** `Yazıcı Fiyatı / 3000 = Saatlik Yıpranma Bedeli`.
+*   **Örnek:** 30.000 TL'lik bir makineniz varsa, saatte **10 TL** kenara koymalısınız ki makine öldüğünde yenisini alabilesiniz.
 
 #### 4. İşçilik ve Zaman Maliyeti
-**Sizin zamanınız en değerli varlığınızdır!** Bir hobi olarak başladığınız bu işte, artık bir girişimci gibi düşünmeli ve harcadığınız her dakikaya bir değer biçmelisiniz.
-* **Hesaplanacak Süreler:** Tasarım, dilimleme, baskı başlatma, baskıyı izleme, baskı sonrası temizlik, **[yüzey işleme]({{< ref "posts/3d-baski-yuzey-isleme-teknikleri.md" >}})**, paketleme gibi harcadığınız tüm süreyi hesaplayın.
-* **Saatlik Ücret Belirleyin:** Kendi saatlik emeğiniz için adil bir ücret belirleyin (örn. 50 TL/saat). Bu sizin maaşınızdır!
+**Sizin zamanınız en değerli varlığınızdır!** Hobiciyken zaman bedavadır ama ticarette değildir.
+*   **Hesaplanacak Süreler:** Tasarım, dilimleme (slicing), baskı başlatma, tabladan sökme, destek temizleme, zımparalama ve paketleme.
+*   **Öneri:** Kendinize bir "Saatlik Ücret" belirleyin (Örn: Asgari ücretin 2 katı). Ürünle *aktif* olarak ilgilendiğiniz süreyi (makinenin çalıştığı süreyi değil, sizin çalıştığınız süreyi) bu ücretle çarpın.
 
 ![Bir kişinin 3D baskı ürününü zımparaladığı veya boyadığı, yanında paketleme malzemeleri.](/images/labor-post-processing.png "İşçilik ve Baskı Sonrası İşlemler")
 
 #### 5. İşletme Giderleri (Gizli Giderler)
-Bunlar genellikle başlangıçta unutulan ama kârlılığı doğrudan etkileyen giderlerdir.
-* **Pazar Yeri Komisyonları:** **[Etsy]({{< ref "posts/etsyde-3d-baski-satma-rehberi.md" >}})** gibi platformlar her satıştan belirli bir yüzde komisyon alır.
-* **Paketleme ve Kargo:** Kutular, baloncuklu naylon, bant, etiketler ve kargo ücreti.
-* **Pazarlama ve Reklam:** Sosyal medya reklamları veya ürün fotoğrafçılığı için yapılan harcamalar.
-* **Ar-Ge (Başarısız Baskılar):** Her başarılı baskının arkasında birkaç başarısız deneme olabilir. Bu denemelerde harcanan malzeme ve zaman da bir maliyettir.
+Bunlar genellikle başlangıçta unutulan ama kârlılığı kemiren giderlerdir.
+*   **Pazar Yeri Komisyonları:** Etsy (~%15), Shopier veya Amazon komisyonlarını fiyata dahil etmezseniz, kârınızdan yersiniz.
+*   **Paketleme:** Kutu, patpat naylon, bant, etiket. Her kargo ortalama 10-20 TL paketleme masrafı demektir.
+*   **Vergi:** Şirketiniz varsa KDV ve Gelir Vergisi'ni fiyata eklemelisiniz.
+
+---
 
 ### Fiyat Belirleme Sanatı: Stratejinizi Geliştirin
 
-Tüm maliyetlerinizi hesapladınız. Bu, sizin taban fiyatınız. Şimdi bu rakamın üzerine kârınızı ekleyip nihai satış fiyatını belirleme zamanı.
+Tüm maliyetleri (Malzeme + Elektrik + Amortisman + İşçilik + Giderler) topladık. Bu sizin **Taban Fiyatınız**. Bunun altına satarsanız batarsınız. Şimdi kâr ekleme zamanı.
 
 #### 1. Maliyet Artı Kâr (Cost-Plus Pricing)
-En basit ve güvenli yöntemdir. Toplam maliyetinize istediğiniz bir kâr marjını (yüzdesini) eklersiniz.
-* **Formül:** `Satış Fiyatı = Toplam Maliyet * (1 + Kar Marjı Yüzdesi)`
-* **Kimler İçin İdeal?** Yeni başlayanlar ve tüm maliyetlerini karşıladığından emin olmak isteyenler için mükemmel bir başlangıç noktasıdır.
+En basit ve güvenli yöntemdir.
+*   **Formül:** `Satış Fiyatı = Toplam Maliyet * (1 + Kar Marjı Yüzdesi)`
+*   **Örnek:** Maliyetiniz 100 TL ise ve %50 kâr istiyorsanız, 150 TL'ye satarsınız.
+*   **Kimler İçin İdeal?** Yeni başlayanlar ve "garantici" olanlar için. Batma riskini sıfırlar.
 
 #### 2. Rekabetçi Fiyatlandırma (Piyasayı Okuma)
-**[Pazar analizi]({{< ref "posts/pasif-gelir-icin-pazar-analizi.md" >}})** yaparken belirlediğiniz rakiplerinizin fiyatlarını analiz edersiniz ve kendi fiyatınızı onların seviyesine veya biraz altına/üstüne konumlandırırsınız.
-* **Kimler İçin İdeal?** Rekabetin yoğun olduğu ve benzer ürünlerin çok olduğu niş pazarlarda ayakta kalmak için gereklidir.
+Rakipleriniz ne yapıyor? Benzer bir ürün Etsy'de 200 TL ise, siz maliyetinize göre 150 TL bulsanız bile 190 TL'ye satabilirsiniz.
+*   **Risk:** Eğer rakipler "fiyat kırma" savaşına girerse, siz de düşmek zorunda kalırsınız ve kârınız erir.
+*   **Kimler İçin İdeal?** Çok satıcılı, rekabetin bol olduğu (telefon standı, saksı vb.) pazarlarda gereklidir.
 
 ![Bir bilgisayar ekranında Etsy gibi bir e-ticaret sitesinde benzer 3D baskı ürünlerinin fiyatlarının karşılaştırılması.](/images/competitive-pricing.png "Rekabetçi Fiyatlandırma Analizi")
 
 #### 3. Değer Bazlı Fiyatlandırma (Ustalığınızı Fiyata Yansıtmak)
-Bu strateji, "Bu ürünün maliyeti ne?" diye sormak yerine, **"Bu ürün müşterim için ne kadar değerli?"** diye sorar. Ürününüzün çözdüğü benzersiz bir sorun, sanatsal değeri veya kişiselleştirme seviyesi, maliyetinin çok üzerinde bir fiyatı haklı çıkarabilir.
-* **Kimler İçin İdeal?** Eşsiz ve özgün tasarımlar sunan, belirli bir nişte uzmanlaşmış ve marka değeri oluşturmak isteyenler için en kârlı stratejidir.
+Bu strateji, "Maliyeti ne?" diye sormaz, **"Müşteri buna ne kadar öder?"** diye sorar.
+*   Örneğin; kişiye özel, ismi yazılı, el boyaması bir figürün maliyeti 50 TL olabilir. Ama müşteri için manevi değeri yüksektir ve 500 TL ödeyebilir.
+*   **Kimler İçin İdeal?** Tasarım yeteneği olan, niş ve özgün ürünler satanlar için en kârlı yöntemdir.
 
 {{< tip-box title="💡 En İyi Strateji: Hibrit Yaklaşım" >}}
-Genellikle en iyi yaklaşım, bu üç stratejinin bir kombinasyonudur. Önce **Maliyet Artı Kâr** ile batmayacağınız taban fiyatınızı belirleyin. Sonra **Rekabetçi Fiyatlandırma** ile pazarın nerede olduğunu anlayın. Son olarak, ürününüzün eşsiz özelliklerine göre **Değer Bazlı Fiyatlandırma** ile son dokunuşu yapın ve kârınızı maksimize edin.
+Genellikle en iyi yaklaşım, bu üç stratejinin bir kombinasyonudur. Önce **Maliyet Artı Kâr** ile "ölüm çizginizi" (asla altına düşmeyeceğiniz fiyatı) belirleyin. Sonra **Rekabetçi Fiyatlandırma** ile pazarın tavanını görün. Son olarak, ürününüzün kalitesine göre **Değer Bazlı** bir dokunuşla son fiyatı belirleyin.
 {{< /tip-box >}}
 
 ### Fiyatlandırma Kontrol Listesi
+
+Fiyatınızı belirlemeden önce bu tabloyu doldurun:
+
 <table class="summary-table pricing-checklist">
     <thead>
         <tr>
@@ -96,43 +115,47 @@ Genellikle en iyi yaklaşım, bu üç stratejinin bir kombinasyonudur. Önce **M
     </thead>
     <tbody>
         <tr>
-            <td><strong>1. Tüm Maliyetleri Hesapla</strong></td>
-            <td>✍️ Malzeme, elektrik, amortisman, işçilik ve diğer tüm giderleri listeleyin.</td>
-            <td>Kâr edebilmek için taban çizginizi bilmeniz gerekir.</td>
+            <td><strong>1. Maliyetleri Çıkar</strong></td>
+            <td>✍️ Malzeme + Elektrik + Amortisman + İşçilik.</td>
+            <td>Taban fiyatı bilmezseniz zarar edersiniz.</td>
         </tr>
         <tr>
-            <td><strong>2. Kâr Marjını Belirle</strong></td>
-            <td>📈 İşletmenizin büyümesi ve kendi emeğiniz için bir kâr yüzdesi ekleyin.</td>
-            <td>Sürdürülebilirlik için hayati.</td>
+            <td><strong>2. Gizli Giderleri Ekle</strong></td>
+            <td>📦 Kargo kutusu, bant, platform komisyonu (%15-20).</td>
+            <td>Cebinize giren net parayı görmek için.</td>
         </tr>
         <tr>
             <td><strong>3. Piyasayı Araştır</strong></td>
-            <td>🔍 Rakiplerinizin benzer ürünler için ne fiyat verdiğini analiz edin.</td>
-            <td>Rekabetçi kalmak ve pazarın dışında kalmamak için.</td>
+            <td>🔍 Rakipler kaça satıyor?</td>
+            <td>Pazarın dışında kalmamak için.</td>
         </tr>
         <tr>
-            <td><strong>4. Değeri Fiyata Yansıt</strong></td>
-            <td>✨ Ürününüzün benzersiz özelliklerini (tasarım, kalite) fiyata dahil edin.</td>
-            <td>Emeğinizin ve yaratıcılığınızın karşılığını almak için.</td>
+            <td><strong>4. Değer Ekle</strong></td>
+            <td>✨ "Kişiye Özel", "El Boyaması" gibi değerler ekleyin.</td>
+            <td>Kâr marjını artırmanın tek yolu budur.</td>
         </tr>
         <tr>
             <td><strong>5. Test Et ve Ayarla</strong></td>
-            <td>🚀 Fiyatınızı belirleyin, satışları izleyin ve gerekirse ayarlamalar yapmaktan çekinmeyin.</td>
-            <td>Piyasa ve müşteri talepleri zamanla değişir.</td>
+            <td>🚀 Fiyatı belirleyin, satışı izleyin. Satmıyorsa indirin, çok satıyorsa artırın.</td>
+            <td>Fiyat, yaşayan bir mekanizmadır.</td>
         </tr>
     </tbody>
 </table>
 
+---
+
 ## Sonuç: Değer Biçme Sanatında Ustalaşmak
 
-3D baskı ürünlerinizi fiyatlandırmak, hem bir bilim hem de bir sanattır. Tüm maliyetlerinizi doğru bir şekilde hesaplamak işin bilimsel, piyasayı ve müşteri algısını anlamak ise sanatsal yönüdür. Sabırlı olun, piyasayı gözlemleyin, test edin ve gerektiğinde fiyatlarınızı ayarlamaktan çekinmeyin. Doğru fiyatlandırma stratejisiyle, 3D baskı hobinizi kârlı ve sürdürülebilir bir iş modeline dönüştürebilirsiniz.
+3D baskı ürünlerinizi fiyatlandırmak, sadece bir hesap makinesi işi değildir; psikolojik bir süreçtir. Emeğinizi ucuza satmayın. Unutmayın, ucuza satılan malın "değersiz" algılanma riski vardır.
+
+Maliyetlerimizi hesapladık, kârımızı koyduk ve satış fiyatımızı belirledik. Artık dükkanı açma vakti! Peki, bu ürünleri nerede satacağız? Sadece Etsy mi, yoksa sosyal medya veya yerel pazaryerleri mi?
 
 ### Yolculuğun Bir Sonraki Durağı
 
-Artık ne satacağınızı ve nasıl fiyatlandıracağınızı biliyorsunuz. Şimdi, **[Pazar Analizi]({{< ref "posts/pasif-gelir-icin-pazar-analizi.md" >}})** yaparken bulduğunuz o harika niş fikirlerinden birine odaklanalım ve somut ürün örneklerini inceleyelim.
+Dükkan açmak kolay, doğru platformu seçmek zordur. Etsy'de döviz kazanmak, Shopier ile yerel satış yapmak veya Amazon'a girmek... Hangi platformun komisyonu ne kadar? Hangi kitleye hitap ediyor?
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>
-### Deneyimlerinizi Paylaşın!
-Siz de 3D baskı ürünlerinizi fiyatlandırırken kullandığınız ipuçlarını veya yaşadığınız zorlukları yorumlarda paylaşın!
+<h3>Sırada: 3D Baskı Satışı İçin En İyi Pazaryerleri</h3>
+<p>Etsy, Shopier, Amazon ve Dolap... Komisyon oranları, trafik kaynakları ve başlangıç için en doğru platformu seçme rehberi.</p>
+<a href="{{< ref "posts/3d-baski-pazaryerleri-rehberi.md" >}}" class="cta-button">Pazaryeri Rehberine Git →</a>
+</div>

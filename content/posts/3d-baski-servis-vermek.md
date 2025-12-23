@@ -1,6 +1,6 @@
 ---
 title: "3D Baskı Servisi Vermek: Yerel İşletmeler İçin Nasıl Hizmet Sunulur?"
-date: 2025-08-02T10:00:00+03:00
+date: 2025-12-12T10:00:00+03:00
 featured: false
 draft: false
 description: "Kendi ürünlerinizi tasarlamadan da 3D baskıdan para kazanın. 3D yazıcınızı bir hizmet aracına dönüştürerek yerel işletmelere, mimarlara ve hobicilere nasıl baskı hizmeti sunacağınızı öğrenin."
@@ -26,7 +26,7 @@ cover:
     relative: false
 ---
 
-Bir önceki rehberlerimizde kendi tasarımlarımızı nasıl satabileceğimizi, hatta dijital dosyalarla nasıl pasif gelir elde edebileceğimizi konuştuk. Peki ya size, hiç ürün tasarlamadan, stok tutmadan veya **[pazar analiziyle]({{< ref "posts/pasif-gelir-icin-pazar-analizi.md" >}})** uğraşmadan, sadece 3D yazıcınızın boş duran zamanını kullanarak para kazanabileceğiniz bir model olduğunu söylesem?
+Bir önceki rehberlerimizde kendi tasarımlarımızı nasıl satabileceğimizi, hatta dijital dosyalarla nasıl pasif gelir elde edebileceğimizi konuştuk. Peki ya size, hiç ürün tasarlamadan, stok tutmadan veya **[pazar analiziyle]({{< ref "posts/3d-baski-pazar-analizi.md" >}})** uğraşmadan, sadece 3D yazıcınızın boş duran zamanını kullanarak para kazanabileceğiniz bir model olduğunu söylesem?
 
 **3D Baskı Servisi Vermeye** hoş geldiniz. Bu, 3D yazıcınızı kişisel bir üretim aracından, başkalarının fikirlerini hayata geçiren bir **hizmet makinesine** dönüştürme sanatıdır.
 
@@ -60,7 +60,7 @@ Potansiyel müşterileriniz her yerde! İşte odaklanabileceğiniz dört ana gru
 ![Yeni bir ürünün (örneğin ergonomik bir mouse) 3D baskı prototipi.](/images/product-prototype-print.png)
 
 #### 🎲 Hobiciler, Sanatçılar ve Oyuncular
-* **İhtiyaçları:** **[Masaüstü rol yapma oyunu]({{< ref "posts/masaustu-oyun-figurleri-3d-baski.md" >}})** figürleri, heykellerinin küçük ölçekli kopyaları, özel "cosplay" kostüm parçaları.
+* **İhtiyaçları:** ** Masaüstü rol yapma oyunu figürleri, heykellerinin küçük ölçekli kopyaları, özel "cosplay" kostüm parçaları.
 * **Nasıl Ulaşılır?:** Facebook ve Reddit'teki ilgili hobi gruplarında aktif olun. Instagram'da bastığınız figürlerin yüksek kaliteli fotoğraflarını paylaşın.
 
 ![Bir hobici tarafından boyanmış, detaylı bir 3D baskı minyatür figür.](/images/hobbyist-miniature-print.png)

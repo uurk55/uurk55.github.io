@@ -87,8 +87,6 @@ Baskının en üst yüzeyi pürüzlü mü duruyor?
 **Ironing (Ütüleme)** özelliğini açın.
 Yazıcı en üst katmanı bitirdikten sonra, nozzle'ı çok az plastik akıtarak (veya hiç akıtmayarak) yüzeyin üzerinden tekrar geçirir. Tıpkı gömlek ütüler gibi, plastik pürüzsüzleşir. Düz, yassı modellerde (anahtarlık, kutu kapağı vb.) enjeksiyon kalıp kalitesi alırsınız.
 
-![Ironing açık ve kapalı arasındaki farkı gösteren bir karşılaştırma](/images/ironing-comparison.jpg "Solda pürüzlü standart yüzey, sağda 'ütülenmiş' pürüzsüz yüzey.")
-
 ---
 
 {{< success-story-box title="✨ Kendi Tecrübem: Kırılan Drone Parçası" >}}

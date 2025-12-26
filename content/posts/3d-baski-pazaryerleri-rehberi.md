@@ -15,10 +15,11 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/pazaryeri-rehberi-cover.jpg"
-    alt: "Farklı e-ticaret logoları (Shopier, Trendyol, Etsy) ve vergi evrakları"
-    caption: "Dükkanı nereye açarsanız açın, ortağınız her zaman devlettir."
-    relative: false
+  image: "/images/pazaryeri-rehberi-cover.png"
+  alt: "3D baskı ürünleri, kargo kolisi, laptop ve vergi evrakları"
+  caption: "Satış kanalı seçimi, kâr kadar yasal zemini de belirler."
+  relative: false
+
 ---
 
 Ürün hazır, fiyat belli. Şimdi en kritik soru: **"Tezgahı nereye açacağız?"**
@@ -48,6 +49,8 @@ Bir pazaryeri değil, ödeme alma aracıdır.
 *   **Maliyet:** Aylık ücret yok. Satış başına ~%2.99 + 0.49 TL kesinti yapar.
 *   **Kargo:** Anlaşmalı kargo fiyatları çok uygundur.
 
+![Sosyal medya üzerinden link ile satış modeli](/images/sosyal-ticaret-satis-modeli.png)
+
 ---
 
 ### 2. İkinci El ve Hobi Uygulamaları (Dolap, Gardrops) ♻️
@@ -59,6 +62,8 @@ Bir pazaryeri değil, ödeme alma aracıdır.
 *   **Maliyet:** Dolap (%10 + Hizmet Bedeli), Gardrops (Düşük/Yok).
 *   **Avantaj:** Kargo çok ucuzdur ve trafik hazır gelir.
 *   **Dezavantaj:** Müşteri kitlesi "pazarlıkçı"dır. Emeğinizin karşılığını almak zordur.
+
+![Hobi ve ikinci el uygulamalarında satış ortamı](/images/hobi-pazaryeri-satis.png)
 
 ---
 

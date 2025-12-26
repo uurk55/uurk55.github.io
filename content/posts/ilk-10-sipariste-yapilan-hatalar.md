@@ -15,10 +15,10 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/siparis-hatalari-cover.jpg"
-    alt: "Kırık bir 3D baskı parçası ve üzgün suratlı bir müşteri geri bildirimi"
-    caption: "İlk siparişler para kazanmak için değil, sistemdeki açıkları görmek içindir."
-    relative: false
+  image: "/images/siparis-hatalari-cover.png"
+  alt: "Kırık bir 3D baskı parçası, hatalı paketleme ve müşteri memnuniyetsizliği hissi"
+  caption: "İlk siparişler para kazanmak için değil, sistemdeki açıkları görmek içindir."
+  relative: false
 ---
 
 Telefonunuzdan o büyülü **"Ka-ching!"** 💰 sesi geldi. İlk siparişinizi aldınız! Kalbiniz hızla çarpıyor, büyük bir başarı hissi...

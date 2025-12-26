@@ -14,10 +14,10 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/3d-model-copyright-cover.jpg"
-    alt: "Fikri mülkiyet haklarını ve telif uyarılarını temsil eden görsel"
-    caption: "Tasarım çalmak sadece etik dışı değil, aynı zamanda ciddi bir yasal risk kapısıdır."
-    relative: false
+  image: "/images/3d-model-copyright-cover.png"
+  alt: "3D model telif, lisans ve etik sınırlarını temsil eden; kilit, telif simgesi ve 3D model dosyası"
+  caption: "Tasarım çalmak sadece etik dışı değil; işinizi tek hamlede bitirecek bir yasal risktir."
+  relative: false
 ---
 
 **Edu 3D Model Dünyası'nın Değerli Üreticileri,**
@@ -44,6 +44,8 @@ Bu lisans, modelin bütünlüğünü korur. Modeli ölçeklendirebilirsiniz (bü
 ### D. Aynı Lisansla Paylaş (SA - Share Alike)
 Eğer bir model "Remiks" edilmeye açıksa ve SA etiketi varsa, sizin yaptığınız yeni (modifiye edilmiş) tasarım da aynı lisansla, yani ücretsiz ve açık kaynaklı olarak paylaşılmalıdır. Bu modeli modifiye edip "özel tasarımım" diyerek parayla satamazsınız.
 
+![Creative Commons lisanslarının temel mantığını anlatan şema](/images/cc-license-map.png "BY, NC, ND, SA bileşenleriyle lisans okuma mantığı.")
+
 ---
 
 ## 2. Kullanım Hakları Karşılaştırma Tablosu
@@ -68,6 +70,8 @@ Aşağıdaki tablo, karşılaştığınız lisans kombinasyonlarına göre yapab
 
 * **Risk:** Büyük markalar, "Trade Dress" denilen ürünün genel görünüş haklarını korumak için yapay zeka botları kullanır. 
 * **Sonuç:** Dükkanınızın telif ihtarıyla anında kapanması ve yasal takip süreci.
+
+![Lisans uygun olsa bile marka/karakter IP haklarının ayrı bir risk alanı olduğunu gösteren görsel](/images/ip-character-risk.png "Model lisansı ≠ marka/karakter hakları. İkisi farklı katman.")
 
 ---
 

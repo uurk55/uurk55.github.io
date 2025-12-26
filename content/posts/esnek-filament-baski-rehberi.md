@@ -66,8 +66,6 @@ PLA'nın kimyasal yapısının esnetilmiş halidir.
 *   **Kullanım:** Darbe alacak ama formunu koruması gereken parçalar (RC araba tamponları).
 *   **Basılabilirlik:** Standart PLA ayarlarıyla (biraz yavaşlatarak) basılabilir. En kolayıdır.
 
-![TPU ve TPE arasındaki esneme farkını gösteren grafik](/images/tpu-vs-tpe-comparison.jpg "TPU (Solda) daha rijit dururken, TPE (Sağda) yer çekimine yenilir.")
-
 ---
 
 ## 3. Basım Teknikleri: Başarının 3 Altın Kuralı

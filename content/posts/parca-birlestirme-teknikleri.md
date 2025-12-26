@@ -20,10 +20,11 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/parca-birlestirme-cover.jpg"
-    alt: "İki parçaya ayrılmış bir 3D modelin birleştirilme aşaması, yapıştırıcılar ve sıcak somun uygulama aletleri"
-    caption: "Yazıcınızın boyutu 22cm olabilir ama hayalleriniz 2 metre olabilir. Sırrı: Doğru birleştirmede."
-    relative: false
+  image: "/images/parca-birlestirme-cover.png"
+  alt: "Birden fazla parçaya ayrılmış büyük bir 3D model ve birleştirme ekipmanları"
+  caption: "Yazıcınızın boyutu sınırlı olabilir, ama doğru birleştirme ile projeleriniz sınırsızdır."
+  relative: false
+
 ---
 
 Standart bir 3D yazıcının baskı hacmi genellikle 22x22x25 cm civarındadır. Ancak hayallerimiz genelde bu kutuya sığmaz. Tam boy bir kask (Cosplay), 1 metrelik bir RC uçak kanadı veya devasa bir mimari maket basmak istediğinizde tek bir seçeneğiniz kalır: **Modeli parçalara bölmek ve sonra birleştirmek.**
@@ -43,6 +44,8 @@ Modern dilimleyicilerde "Cut" (Kes) aracı içinde **"Add Connectors" (Bağlant�
 *   **Snap (Çıtçıt):** Küçük, yük binmeyen modeller için.
 *   **Dowel (Pim):** En sağlam yöntemdir. Yazılım, kesilen yüzeylere otomatik delikler açar. Siz de ayrıca "Pim" basarsınız.
     *   **Teknik İpucu:** Pimleri (Dowels) her zaman **yatay** basın. Dikey basılan pimler katman yerlerinden kolayca kırılır. Yatay basılan pimler ise yükü lifleri boyunca taşır.
+
+![Pim (dowel) kullanılarak hizalanmış iki 3D baskı parça](/images/dowel-connector-birlestirme.png)
 
 ## 2. Kimyasal Birleştirme (Yapıştırıcılar)
 
@@ -97,8 +100,6 @@ Bu, dışı tırtıklı, içi dişli pirinç bir somundur.
     5.  Soğuduğunda, plastik somunun tırtıklarına kilitlenir. Artık o somunu oradan atom bombası gelse çıkaramaz.
 
 Bu teknik, parçalarınızı "oyuncak" seviyesinden "endüstriyel ürün" seviyesine taşır.
-
-![Bir havya kullanılarak 3D baskı parçaya pirinç vida yuvasının (heat set insert) yerleştirilmesi](/images/heat-set-insert.jpg "Plastiğe metal gücü katmak: Heat Set Insert uygulaması.")
 
 ---
 

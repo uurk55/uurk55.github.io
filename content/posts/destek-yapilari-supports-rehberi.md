@@ -101,8 +101,6 @@ Yazıcı, desteğin gövdesini hızlı ve seyrek basar (örneğin %15 dolgu). An
 Ağaç desteklerin tabanları bazen çok küçük olur ve baskı sırasında devrilebilir.
 *   **Çözüm:** Slicer'da "Enable Support Brim" ayarını açın. Sadece desteklerin altına geniş bir etek örerek devrilmelerini engeller.
 
-![Slicer yazılımındaki detaylı destek ayarları menüsü: Z-distance, Interface Density ve X/Y distance](/images/slicer-support-settings.jpg "Bu ayarlar, desteklerin kaderini belirler. Ezbere gitmeyin.")
-
 ---
 
 ## 4. Manuel Müdahale: Kontrolü Eline Almak

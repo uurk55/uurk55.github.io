@@ -15,10 +15,10 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/yonetim-rehberi-cover.jpg"
-    alt: "Takvim, saat ve atık filament kutusu ile dolu bir 3D baskı masası"
-    caption: "Para kazanmak sadece satmak değildir; zamanı ve hatayı yönetmektir."
-    relative: false
+  image: "/images/yonetim-rehberi-cover.png"
+  alt: "Takvim, saat ve fire olmuş 3D baskılarla dolu bir atölye masası"
+  caption: "Para kazanmak sadece satmak değildir; zamanı ve hatayı yönetmektir."
+  relative: false
 ---
 
 Dükkanınızı açtınız, siparişler gelmeye başladı. Harika! Ama bir süre sonra tuhaf bir şey fark ettiniz: Sürekli çalışıyorsunuz, makine hiç durmuyor, filamentler su gibi gidiyor ama ay sonunda cebinize kalan para, harcadığınız emeğe değmiyor.

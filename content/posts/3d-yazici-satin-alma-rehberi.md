@@ -47,7 +47,7 @@ Eski efsane Ender 3 V2'yi unutun. O artık tarih oldu. **Creality**, V3 serisiyl
 Eğer ABS, ASA gibi zorlu malzemeler basacaksanız açık kasalı yazıcılar (yukarıdakiler) işinizi görmez.
 *   **Model Önerisi:** **Creality K1C**, fiyat/performans olarak çok güçlüdür. **Bambu Lab P1S** ise ekosistem ve kolaylık olarak öndedir.
 
-![Bambu Lab A1 Mini ve Creality Ender 3 V3 yan yana](/images/fdm-recommendations.jpg "Solda konfor (Bambu), sağda fiyat/performans (Creality).")
+![Filament ile çalışan masaüstü 3D yazıcı](/images/fdm-3d-yazici-genel.png "Filament kullanarak katman katman üretim yapan masaüstü bir 3D yazıcı")
 
 ---
 
@@ -63,6 +63,8 @@ SLA dünyasının "Volkswagen"i **Elegoo**'dur. Parçası boldur, kullanımı ba
 #### 2. "Tabla Ayarıyla Uğraşamam" Diyenlere: Anycubic Photon Mono M5s
 Reçine yazıcılarda tabla ayarı kaçarsa baskı yapışmaz. **Anycubic**, M5s serisi ile "Leveling-Free" (Ayarsız) sistemi getirdi.
 *   **Neden Almalısın:** Sensörleri sayesinde tablanın düz olup olmadığını kendi anlar. Başlangıç için büyük kolaylıktır.
+
+![Reçine ile çalışan masaüstü 3D yazıcı](/images/sla-3d-yazici-genel.png "Reçine kullanarak yüksek detaylı baskı alan masaüstü 3D yazıcı")
 
 ---
 

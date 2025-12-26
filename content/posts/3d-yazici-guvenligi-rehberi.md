@@ -15,10 +15,11 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/guvenlik-rehberi-cover.jpg"
-    alt: "Duman dedektörü ve yangın söndürücü yanında çalışan bir 3D yazıcı"
+    image: "/images/guvenlik-rehberi-cover.png"
+    alt: "Ev tipi bir 3D yazıcı yakınında duman dedektörü ve yangın söndürücü bulunan güvenli bir çalışma alanı"
     caption: "Güvenlik, kaza olmadan önce alınan önlemdir. Sonrası pişmanlıktır."
     relative: false
+
 ---
 
 Dürüst olalım: 3D yazıcıyı kurduk, ilk baskıyı aldık ve o hipnotize edici mekanik hareketi izlerken aklımıza gelen son şey "Güvenlik" oldu.
@@ -36,7 +37,7 @@ Bu terimi sık duyacaksınız. Termal Kaçak, yazıcının sıcaklık sensörün
 *   **Benim Önlemim:** Yazıcınızın yazılımında (Marlin/Klipper) bu korumanın açık olduğundan emin olun.
 *   **Akıllı Priz Hayat Kurtarır:** Ben tüm yazıcılarımı, telefondan kontrol edilebilen bir **Akıllı Priz'e (Smart Plug)** bağlarım. Evden çıktığımda uzaktan kamerayla bakar, bir terslik görürsem elektriği telefondan keserim. Bu 300 liralık parça, binlerce liralık hasarı önler.
 
-![3D yazıcının üzerine monte edilmiş bir duman dedektörü](/images/smoke-detector.jpg "Basit bir duman dedektörü, en ucuz sigortanızdır.")
+![Çalışan bir 3D yazıcının yakınında konumlandırılmış duman dedektörü](/images/smoke-detector-3dprinter.png "Basit bir duman dedektörü, en ucuz sigortanızdır.")
 
 ## 2. Görünmez Düşman: Hava Kalitesi ve Zehirli Gazlar
 
@@ -48,6 +49,8 @@ FDM yazıcılarda **PLA** basarken çıkan koku şekerli ve zararsızdır (mıs�
 **Çözüm:**
 1.  ABS/ASA basacaksanız yazıcınız ya kapalı kasa olsun ya da penceresi açık bir odada basın.
 2.  SLA yazıcı kullanıyorsanız, odada aktif hava sirkülasyonu şarttır.
+
+![Havalandırılan bir odada konumlandırılmış 3D yazıcı ve temiz hava akışını simgeleyen güvenli kurulum](/images/ventilation-3dprinting-safety.png "Koku yoksa sorun yok sanma: havalandırma en temel güvenlik ekipmanıdır.")
 
 ## 3. Mekanik Tehlikeler: Parmaklar ve Yanıklar
 

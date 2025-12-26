@@ -15,10 +15,11 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/ilk-urun-secimi-cover.jpg"
-    alt: "Masada duran farklı 3D baskı ürünleri ve bir hesap makinesi"
-    caption: "Ustalık sadece basmakta değil, satılabilecek olanı hatasız üretmektedir."
-    relative: false
+  image: "/images/ilk-urun-secimi-cover.png"
+  alt: "Masada farklı 3D baskı ürünleri, hesap makinesi ve not defteri"
+  caption: "İlk üründe mesele basmak değil, doğru ürünü seçmektir."
+  relative: false
+
 ---
 
 3D yazıcınızın karşısında geçirdiğiniz o hobi dolu saatler artık yerini profesyonel bir üretim disiplinine bırakıyor. Bu noktada çoğu yeni girişimcinin yaptığı en büyük hata, **"basması keyifli"** olanı **"satılması kârlı"** olanla karıştırmaktır.

@@ -20,10 +20,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/tasarim-hatalari-cover.jpg"
-    alt: "Hatalı basılmış, kırık ve birbirine uymayan 3D parçalar ile bilgisayar ekranındaki CAD çizimi"
-    caption: "Bu hatalar yazıcıdan değil, çizim masasındaki kararlardan kaynaklanıyor."
-    relative: false
+  image: "/images/tasarim-hatalari-cover.png"
+  alt: "Hatalı basılmış ve birbirine uymayan 3D baskı parçaları ile ekranda CAD tasarımı"
+  caption: "Bu hatalar yazıcıdan değil, çizim masasındaki kararlardan kaynaklanıyor."
+  relative: false
 ---
 
 3D modelleme programlarını (Tinkercad, Fusion 360) öğrendiniz, bir şeyler çizip bastınız. Ama elinize aldığınız parça ya elinizde kırıldı, ya kapağı kapanmadı ya da dilimleyici (Slicer) programı modeli "bozuk" olarak işaretledi.
@@ -66,8 +66,6 @@ Bir parçanın sağlamlığı, basıldığı yöne göre değişir. FDM baskıla
 *   **Senaryo:** Dikey duran ince, uzun bir çubuk tasarladınız. Bunu elinizle büktüğünüzde "çıt" diye katman yerlerinden kopar.
 *   **Çözüm:** Aynı çubuğu yatay olarak tasarlayıp basarsanız, plastik lifleri boylu boyunca uzanır ve kırılması çok zorlaşır.
 *   **Ders:** Tasarımı yaparken, parçanın maruz kalacağı kuvveti düşünün. Yük binecek yön, katman çizgilerine **dik** olmamalıdır.
-
-![Dikey ve yatay basılmış iki parçanın kırılma testini gösteren grafik](/images/layer-orientation.jpg "Yatay basılan parça, dikey basılana göre kat kat daha sağlamdır.")
 
 ## 4. Hata: Fil Ayağını Unutmak (Elephant's Foot)
 

@@ -20,10 +20,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/satilabilir-tasarim-cover.jpg"
-    alt: "Profesyonelce fotoğraflanmış, estetik ve fonksiyonel bir 3D baskı ürünü"
-    caption: "Satışın anahtarı sadece çizimde değil, o çizimin sunduğu çözümde ve sunumundadır."
-    relative: false
+  image: "/images/satilabilir-tasarim-cover.png"
+  alt: "Fonksiyonel ve estetik bir 3D baskı ürününün profesyonel sunumu"
+  caption: "Satılabilir bir model, sadece çizim değil; çözüm ve doğru sunumdur."
+  relative: false
 ---
 
 3D modelleme platformlarında binlerce ücretsiz model varken, insanlar neden bazı modellere para öder? Bir tasarımcı olarak hobi amaçlı çizimden ticari tasarıma geçerken odaklanmanız gereken nokta, "ben ne çizmek istiyorum" değil, **"pazarın neye ihtiyacı var"** sorusudur.
@@ -43,6 +43,8 @@ Bu rehberde, dijital dosyalarınızı veya baskılarınızı gelire dönüştür
 
 **Tasarım Kuralı:** Ürününüz, kullanıcının yaşadığı spesifik bir "acıyı" veya "dağınıklığı" gidermelidir.
 
+![Fonksiyonel ve niş odaklı 3D baskı ürün örnekleri](/images/fonksiyonel-nis-3d-model.png)
+
 ## 2. DFAM (Design for Additive Manufacturing) Kriterleri
 
 Müşteri modelinizi satın alıp bastığında sorun yaşarsa, kötü yorum yapar ve iade ister. "Satılabilir" model, "Kolay Basılabilir" modeldir. Tasarım aşamasında şunlara dikkat etmelisiniz:
@@ -50,6 +52,8 @@ Müşteri modelinizi satın alıp bastığında sorun yaşarsa, kötü yorum yap
 *   **Desteksiz Tasarım (Support-Free):** Mümkün olan her yüzeyi 45 derece kuralına göre eğimli tasarlayın. Destek temizlemek zahmetlidir ve yüzey kalitesini bozar. "No Support Needed" (Destek Gerektirmez) etiketi, satışları doğrudan artırır.
 *   **Tolerans Payları:** Hareketli veya birbirine geçen parçalar tasarlıyorsanız (vida-somun, kapak), her yazıcının kalibrasyonunun mükemmel olmadığını varsayın. Mutlaka **0.2mm - 0.3mm** arası güvenlik boşlukları bırakın.
 *   **Malzeme Optimizasyonu:** Gereksiz kalın duvarlardan kaçının. Müşteri, modelin ne kadar filament harcayacağını ve ne kadar süreceğini hesaplar. Ekonomik modeller daha çok tercih edilir.
+
+![Desteksiz ve destekli 3D baskı tasarım karşılaştırması](/images/dfam-support-vs-nosupport.jpg)
 
 ## 3. Sunum ve Pazarlama: Görsel Her Şeydir
 

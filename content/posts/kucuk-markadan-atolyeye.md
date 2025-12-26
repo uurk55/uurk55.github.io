@@ -15,7 +15,7 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/buyume-stratejileri-cover.jpg"
+    image: "/images/buyume-stratejileri-cover.png"
     alt: "Tek bir yazıcıdan devasa bir 'Print Farm'a dönüşen atölye görseli"
     caption: "Büyümek; sadece daha fazla makine değil, daha fazla yönetim demektir."
     relative: false
@@ -46,8 +46,6 @@ Yeni bir makine almadan önce kendinize şu soruyu dürüstçe sorun: **Mevcut m
 *   **Baskı Darboğazı:** Yazıcılar 7/24 çalışıyor ama siparişler birikiyorsa -> **Çözüm:** Yeni Yazıcı Alın.
 *   **İşçilik Darboğazı:** Yazıcılar basıyor ama siz destekleri sökemiyor, paketleyemiyor, kargoya yetiştiremiyorsunuz -> **Çözüm:** Yeni yazıcı ALMAYIN. Destek sökmesi için **Part-Time Eleman** alın.
 *   **Tasarım Darboğazı:** Sürekli yeni model çizmeniz gerekiyor ama vaktiniz yok -> **Çözüm:** Tasarımı dışarıdan (Freelance) alın veya stoklu ürünlere odaklanın.
-
-![Üretim hattındaki darboğazları gösteren bir şema: Yazıcılar hızlı, paketleme yavaş](/images/bottleneck-analysis.jpg "Zincir, en zayıf halkası kadar hızlıdır.")
 
 ---
 

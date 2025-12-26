@@ -15,10 +15,10 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/ekipman-rehberi-cover.jpg"
-    alt: "Bir atölye masasında dijital kumpas, sprey yapıştırıcı ve temizleme aletleri"
+    image: "/images/ekipman-rehberi-cover.png"
+    alt: "3D yazıcı atölyesinde temel el aletleriyle düzenli bir çalışma masası"
     caption: "Ustalık sadece makinede değil, doğru aleti doğru zamanda kullanmaktadır."
-    relative: false
+
 ---
 
 3D yazıcınızı aldınız, kurdunuz, bakımını öğrendiniz. Artık "Maker" olma yolundasınız. Ama internete girip "3D yazıcı aksesuarları" yazdığınızda karşınıza çıkan o sonsuz alışveriş listesi gözünüzü korkutuyor, değil mi?
@@ -56,6 +56,8 @@ Evet, bildiğimiz ince iğne.
 Kolonya değil, saf alkol.
 *   **Neden Şart?** Tabladaki parmak izi yağını temizlemek için. Yağlı tablaya baskı yapışmaz.
 
+![3D baskı için temel el aletleri: dijital kumpas, yan keski ve nozzle temizleme iğneleri](/images/essential-3d-printing-tools.png "3D baskının gerçek başlangıcı makineden değil, bu aletlerden geçer.")
+
 ---
 
 ## 2. ⭐ Hayat Kurtarıcılar (Şiddetle Tavsiye Edilir)
@@ -88,6 +90,8 @@ Başlangıç seviyesinde bunlara para harcamayın. İhtiyaç doğarsa alırsın�
 *   ❌ **Pahalı "Sessizleştirme" Ayakları:** Yazıcınız zaten modern ve sessiz sürücülere sahipse, altına koyacağınız süslü yaylı ayaklar çok bir şey değiştirmez. Hatta yazıcıyı sallandırıp baskı kalitesini bozabilir.
 *   ❌ **Lazer Gravür Modülü:** "Yazıcını lazere çevir" eklentileri genelde zayıftır (1.6W - 5W) ve tehlikelidir. O parayı filamente saklayın.
 *   ❌ **Pahalı Filament Kurutma Kutuları:** İlk günden 2000-3000 TL buna vermeyin. Karton kutu + yazıcı tablasının ısısı bile iş görür.
+
+![Atölye masasında kenara bırakılmış gereksiz 3D yazıcı aksesuarları](/images/unnecessary-3d-printing-accessories.png "Her satılan ekipman gerçekten gerekli değildir.")
 
 ---
 

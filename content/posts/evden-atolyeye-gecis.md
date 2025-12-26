@@ -20,10 +20,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/evden-atolyeye-gecis-cover.jpg"
-    alt: "Ev ortamında sıkışık duran 3D yazıcılar ve geniş, düzenli bir atölye görseli yan yana"
-    caption: "Atölyeye geçmek bir statü değil, bir zorunluluk olmalıdır."
-    relative: false
+  image: "/images/evden-atolyeye-gecis-cover.png"
+  alt: "Ev ortamında sıkışık duran 3D yazıcılar ve düzenli bir atölye karşılaştırması"
+  caption: "Atölyeye geçmek bir statü değil, bir zorunluluk olmalıdır."
+  relative: false
 ---
 
 3D baskı işine giren herkesin hayali bellidir: Havalı, sanayi tipi rafları olan, onlarca yazıcının vızır vızır çalıştığı o "Rüya Atölye".

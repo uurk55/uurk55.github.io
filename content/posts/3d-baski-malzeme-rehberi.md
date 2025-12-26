@@ -81,8 +81,6 @@ Yukarıda bahsettiğim eriyen telefon tutacağından sonra, bir de PLA ile saks�
 
 İşte geldik listenin yaramaz çocuğuna. **TPU (Termoplastik Poliüretan)**, sert plastik değildir. Lastik gibidir, bükülür, sıkışır, geri eski haline döner.
 
-![Esnek bir TPU baskının elle büküldüğü an](/images/malzeme-tpu.jpg "TPU ile telefon kılıfı, conta, tekerlek basabilirsiniz.")
-
 **Neden TPU?**
 *   **Esneklik:** Telefon kılıfı, drone koruması, RC araba tekerleği, kapı stoperi...
 *   **Kırılmaz:** Yere atın, zıplar.

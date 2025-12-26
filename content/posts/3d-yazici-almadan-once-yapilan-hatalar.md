@@ -15,11 +15,12 @@ comments: true
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/mistakes-cover.jpg"
-    alt: "Kafasını ellerinin arasına almış, hatalı baskıya bakan üzgün bir kullanıcı"
-    caption: "Tecrübe, yenen kazıkların bileşkesidir. Siz yemeyin diye anlatıyorum."
+    image: "/images/3d-yazici-almadan-once-hatalar-cover.png"
+    alt: "Başarısız baskıya bakan, hayal kırıklığı yaşamış bir 3D yazıcı kullanıcısı"
+    caption: "Tecrübe, yapılan hataların toplamıdır. Siz yapmayın diye yazıyorum."
     relative: false
 ---
+
 
 Bir önceki yazımızda **[İhtiyaçlarınıza Göre Doğru Makineyi Nasıl Seçersiniz?]({{< ref "posts/3d-yazici-satin-alma-rehberi.md" >}})** konusunu konuştuk. Model kafanızda netleşti, kredi kartınız elinizde ve o "Satın Al" butonuna basmak üzeresiniz...
 
@@ -47,8 +48,6 @@ Eski nesil veya ucuz fanlara sahip yazıcılar, çalışırken adeta bir saç ku
 "Masanın köşesine sığar ya" demeyin. Yazıcılar hareket eder!
 *   **FDM'de:** Özellikle benim kullandığım Ender serisi gibi "Bed Slinger" modellerde, tabla öne ve **arkaya** hareket eder. Yazıcıyı duvara sıfır koyamazsınız! Arkada kablo ve tabla için en az 15-20 cm boşluk gerekir.
 *   **SLA'da:** Kapağı yukarı doğru açmak için raf aralığının yüksek olması gerekir.
-
-![Hareket halindeki bir FDM yazıcının arkasındaki kabloyu sıkıştırması](/images/printer-space-error.jpg "Yazıcı sadece durduğu yeri değil, hareket ettiği yeri de kaplar.")
 
 ### 4. Sadece Yazıcı Fiyatına Odaklanmak (Gizli Maliyetler)
 Yazıcı 15.000 TL ise, bütçeniz 15.000 TL olmamalı. O makine tek başına bir hiçtir.

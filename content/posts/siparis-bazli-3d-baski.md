@@ -20,10 +20,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowPostNavLinks: true
 cover:
-    image: "/images/siparis-bazli-uretim-cover.jpg"
-    alt: "3D yazıcı başında bekleyen sipariş listesi ve saat görseli"
-    caption: "Stok tutmamak özgürlüktür, ancak zamana karşı yarış başlatır."
-    relative: false
+  image: "/images/siparis-bazli-uretim-cover.png"
+  alt: "3D yazıcı, bekleyen sipariş listesi ve zaman baskısını simgeleyen saat"
+  caption: "Stok tutmamak özgürlüktür, ancak zamana karşı yarış başlatır."
+  relative: false
 ---
 
 E-ticaretin en büyük kabusu "Stok Maliyeti"dir. Binlerce liralık ürün basarsınız, rafa koyarsınız ve satılmazsa o para çöp olur.
@@ -46,6 +46,8 @@ Neden herkes stok yapmıyor? Çünkü PoD modelinin finansal özgürlüğü çok
 *   **Sınırsız Varyasyon:** Stok tutmadığınız için müşteriye 50 farklı renk veya isim yazma seçeneği sunabilirsiniz. Stoklu çalışsaydınız her renkten 10 tane basmak zorunda kalırdınız.
 *   **Depo Derdi Yok:** Evinizin bir köşesi deponuzdur. Binlerce kutuya ihtiyacınız yoktur.
 
+![Sipariş geldiğinde üretimin başlaması](/images/siparis-geldi-an.png)
+
 ---
 
 ### 2. Madalyonun Diğer Yüzü: Operasyonel Riskler ⚠️
@@ -56,6 +58,8 @@ Neden herkes stok yapmıyor? Çünkü PoD modelinin finansal özgürlüğü çok
 Tek bir yazıcınız varsa, üretim kapasiteniz bellidir.
 *   **Örnek:** Ürününüz 4 saatte basılıyor. Günde maksimum 6 tane basabilirsiniz (uyumazsanız).
 *   **Kriz:** Kampanya döneminde 20 sipariş gelirse, son müşterinin ürününü basmanız 4 gün sürer. Geç kargo = Kötü yorum.
+
+![Tek yazıcıyla biriken siparişler](/images/tek-yazici-darbogaz.png)
 
 #### B. Tek Nokta Hatası (Single Point of Failure)
 Stoklu çalışırken makine bozulursa, raftan alıp gönderirsiniz. Ama PoD modelinde makine bozulursa, dükkan kapanır.
@@ -76,6 +80,8 @@ Satışlarınızın %80'i, ürünlerinizin %20'sinden gelecektir.
 Her sipariş için makineyi ısıtıp soğutmak zaman ve elektrik israfıdır.
 *   **Yanlış:** Sabah 1 sipariş geldi bas, öğlen 1 sipariş geldi bas.
 *   **Doğru:** Siparişleri biriktir (Platformun kargo süresine göre). Akşam 5 siparişi tek seferde, tek tablada (Plate) bas.
+
+![Aynı üründen toplu baskı alma](/images/batch-uretim-3d-baski.png)
 
 {{< tip-box title="💡 Teknik İpucu: İşlem Süresi (Processing Time)" >}}
 Etsy veya Trendyol'da ürün açarken "Kargoya Veriliş Süresi"ni asla **1 gün** yapmayın.

@@ -60,7 +60,7 @@ Potansiyel müşterileriniz her yerde! İşte odaklanabileceğiniz dört ana gru
 ![Yeni bir ürünün (örneğin ergonomik bir mouse) 3D baskı prototipi.](/images/product-prototype-print.png)
 
 #### 🎲 Hobiciler, Sanatçılar ve Oyuncular
-* **İhtiyaçları:** ** Masaüstü rol yapma oyunu figürleri, heykellerinin küçük ölçekli kopyaları, özel "cosplay" kostüm parçaları.
+* **İhtiyaçları:** Masaüstü rol yapma oyunu figürleri, heykellerinin küçük ölçekli kopyaları, özel "cosplay" kostüm parçaları.
 * **Nasıl Ulaşılır?:** Facebook ve Reddit'teki ilgili hobi gruplarında aktif olun. Instagram'da bastığınız figürlerin yüksek kaliteli fotoğraflarını paylaşın.
 
 ![Bir hobici tarafından boyanmış, detaylı bir 3D baskı minyatür figür.](/images/hobbyist-miniature-print.png)
@@ -113,15 +113,14 @@ Başlangıçta korkmayın! Çevrenizdeki bir mobilyacının kırık bir plastik 
 
 3D baskı servisi vermek, sadece yazıcınızın boş zamanını paraya çevirmek değil, aynı zamanda çevrenizdeki insanların ve işletmelerin sorunlarını çözen, onlara değer katan bir hizmet sağlayıcısı olmaktır. Bu iş modeli, düşük risk ve yüksek potansiyel ile girişimcilik dünyasına harika bir giriş kapısı sunar.
 
+Tüm bu ticari faaliyetleri yaparken (Ürün satışı, hizmet satışı), devletin de bir ortağınız olduğunu unutmayın. Para kazanmaya başladığınız an, vergi sorumluluğunuz başlar.
+
 ### Yolculuğun Bir Sonraki Durağı
 
-İster kendi ürününüzü satın ister hizmet verin, başarının anahtarı potansiyel müşterilere ulaşmaktır.
+Para kazanmak güzeldir ama maliyeyle başınızın dertte olması hiç güzel değildir. Şahıs şirketi mi, Ltd. mi? Genç girişimci desteği nedir? E-Fatura nasıl kesilir?
 
 <div class="post-cta-box">
-<h3>Şimdi Sırada Ne Var?</h3>
-<p>3D baskı işiniz için sosyal medyayı nasıl etkili bir şekilde kullanacağınızı, marka kimliği oluşturmayı ve müşteri kitlenizi büyütmeyi öğrenin.</p>
-<a href="{{< ref "posts/sosyal-medya-pazarlama-3d.md" >}}" class="cta-button">Sosyal Medya Pazarlama Rehberine Git →</a>
+<h3>Sırada: Vergi ve Yasal Konular (Türkiye Özelinde)</h3>
+<p>Şahıs şirketi kurma adımları, vergi muafiyetleri ve yasal bir işletme olmanın yol haritası.</p>
+<a href="{{< ref "posts/vergi-ve-yasal-konular-turkiye.md" >}}" class="cta-button">Yasal Rehbere Git →</a>
 </div>
-
-### Deneyimlerinizi Paylaşın!
-Siz 3D baskı servisi vermeyi düşündünüz mü? Çevrenizde ne gibi potansiyel müşteriler olduğunu düşünüyorsunuz? Fikirlerinizi yorumlarda paylaşın!

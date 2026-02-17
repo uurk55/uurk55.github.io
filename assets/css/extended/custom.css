@@ -5162,40 +5162,40 @@ html {
 
 /* Menüdeki hesaplama linkini identifier ile yakala */
 .menu-highlight-btn a {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; /* Modern Mavi Gradient */
+    background: transparent !important;
     color: white !important;
-    padding: 8px 20px !important; /* Daha yatay, daha ince */
-    border-radius: 6px !important; /* Hafif yuvarlatılmış, tam yuvarlak değil */
-    font-weight: 600 !important;
-    font-size: 0.9rem !important;
-    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2) !important; /* Mavi gölge */
+    padding: 12px 30px !important; /* Geniş ve ferah iç boşluk */
+    border: 1px solid rgba(255, 255, 255, 0.4) !important; /* Şık, ince beyaz çerçeve */
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
     transition: all 0.3s ease !important;
-    border: 1px solid rgba(255,255,255,0.1) !important;
-    text-transform: none !important; /* Büyük harf zorunluluğunu kaldır, daha kibar */
-    letter-spacing: normal !important;
-    margin-left: 10px !important;
+    text-transform: none !important;
+    letter-spacing: 0.5px !important;
+    margin-left: 15px !important;
     display: inline-flex !important;
     align-items: center;
+    box-shadow: none !important;
 }
 
 /* Hover efekti */
 .menu-highlight-btn a:hover {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important; /* Koyu maviye geçiş */
+    background: white !important; /* Üzerine gelince beyaz olsun */
+    color: #333 !important; /* Yazı rengi koyu olsun */
+    border-color: white !important;
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3) !important;
-    opacity: 1 !important;
-    border-color: rgba(255,255,255,0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Mobilde menü görünümü */
 @media screen and (max-width: 768px) {
     .menu-highlight-btn a {
-        margin: 15px 0 !important; /* Mobilde dikey boşluk */
-        width: 100% !important; /* Tam genişlik */
+        margin: 15px 0 !important;
+        width: 100% !important;
         text-align: center;
         justify-content: center;
         padding: 12px 0 !important;
-        background: var(--primary) !important; /* Mobilde düz renk daha iyi olabilir */
-        box-shadow: none !important;
+        background: rgba(255,255,255,0.1) !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
     }
 }

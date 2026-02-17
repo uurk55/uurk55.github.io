@@ -109,7 +109,7 @@ buildFuture = true
     weight = 50
 
   [[menu.main]]
-    name = "3D Model Fiyat Hesaplama"
+    name = "3D Baskı Maliyet Hesaplama"
     url = "/maliyet-hesaplama/"
     weight = 100
 

@@ -5157,38 +5157,43 @@ html {
 }
 
 /* ============================================= */
-/* --- ÖZEL MENÜ BUTONU (3D Model Fiyat Hesaplama) --- */
+/* --- ÖZEL MENÜ BUTONU (3D Baskı Maliyet Hesaplama) --- */
 /* ============================================= */
 
 /* Menüdeki hesaplama linkini yakala ve butonlaştır */
 .menu a[href="/maliyet-hesaplama/"] {
-    background: var(--primary);
+    background-color: var(--primary) !important;
     color: white !important; /* Yazı rengi beyaz */
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
-    margin-left: 10px; /* Diğer menülerden ayır */
-    display: inline-flex;
+    padding: 10px 20px !important;
+    border-radius: 50px !important; /* Tam yuvarlak köşeler */
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3) !important;
+    margin-left: 15px !important; /* Diğer menülerden ayır */
+    display: inline-flex !important;
     align-items: center;
-    border: 1px solid transparent;
+    border: 2px solid transparent !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Hover efekti */
 .menu a[href="/maliyet-hesaplama/"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.3);
-    opacity: 0.9;
-    border-color: rgba(255,255,255,0.2);
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.4) !important;
+    opacity: 1 !important;
+    background-color: #212529 !important; /* Biraz daha koyu ton */
+    border-color: rgba(255,255,255,0.1) !important;
 }
 
 /* Mobilde menü görünümü */
 @media screen and (max-width: 768px) {
     .menu a[href="/maliyet-hesaplama/"] {
-        margin: 10px 0; /* Mobilde dikey boşluk */
-        width: 100%; /* Tam genişlik */
+        margin: 15px 0 !important; /* Mobilde dikey boşluk */
+        width: 100% !important; /* Tam genişlik */
         text-align: center;
         justify-content: center;
+        padding: 12px 0 !important;
     }
 }

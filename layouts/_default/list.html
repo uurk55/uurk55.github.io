@@ -33,7 +33,7 @@
         <a href="{{ .Permalink }}" class="popular-post-card">
             <div class="popular-post-image">
                 {{ with .Params.cover.image }}
-                    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+                    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
                 {{ else }}
                     <div class="image-placeholder-sidebar"></div>
                 {{ end }}

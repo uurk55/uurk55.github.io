@@ -2,7 +2,7 @@
     <a href="{{ .RelPermalink }}" class="post-card-link">
         <div class="post-card-image-v2">
             {{ with .Params.cover.image }}
-                <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+                <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
             {{ else }}
                 <div class="image-placeholder-v2"></div>
             {{ end }}

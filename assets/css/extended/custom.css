@@ -695,11 +695,8 @@ body > footer.footer:not(.footer-v2) {
     border-radius: var(--radius);
     padding: 50px 30px;
     border: 1px solid rgba(184, 167, 167, 0.712);
-    
-    /* --- YENİ EKLENEN SATIRLAR --- */
-    max-width: 900px; /* Kutunun maksimum genişliğini 900px ile sınırla */
-    margin: 0 auto 40px auto; /* Üst:0, Sağ/Sol:auto (ortala), Alt:40px */
-    text-align: center; /* AÇIKLAMA: İçindeki tüm metinleri ortalar. */
+    /* Orijinal ayarlara dönüş - max-width ve margin kaldırıldı */
+    text-align: center;
 }
 
 .landing-container {
@@ -806,38 +803,599 @@ body > footer.footer:not(.footer-v2) {
     cursor: pointer;
 }
 /* ============================================= */
-/* --- YENİ HERO BÖLÜMÜ STİLLERİ --- */
+/* --- HESAPLAMA SAYFASI HERO STİLLERİ (ÖZEL) --- */
 /* ============================================= */
 
+/* Ana Sayfa Hero Bölümü Eksik Stili - DÜZELTME */
 .hero-section {
-    position: relative; /* İçerideki overlay ve container için referans noktası */
+    position: relative;
     background-image: url('/images/hero-arkaplan.png');
-    background-size: cover; /* Resmi tüm alanı kaplayacak şekilde ayarla */
-    background-position: center center; /* Resmi ortala */
-    padding: 120px 0; /* Bölümün yüksekliğini ve iç boşluğunu ayarla */
-    color: #ffffff; /* İçindeki tüm yazıların rengini beyaz yap */
-    text-align: center; /* İçindeki her şeyi ortala */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
 }
 
-/* Arka plan resminin üzerine metnin okunurluğunu artıran siyah katman */
-.hero-section .hero-overlay {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* %50 şeffaflıkta siyah. */
-    z-index: 1; /* Katmanın metnin arkasında kalmasını sağlar */
+    background-color: rgba(0, 0, 0, 0.6); /* Biraz daha koyu overlay */
+    z-index: 1;
 }
 
-/* Hero içeriğini tutan ve genişliğini sınırlayan container */
 .hero-container {
-    max-width: 900px; /* Hero içeriğinin maksimum genişliği */
-    margin: 0 auto; /* Otomatik ortalama */
-    padding: 0 var(--gap); /* Kenar boşlukları */
-    position: relative; /* Overlay katmanının üzerine çıkması için */
-    z-index: 2; /* Metinlerin overlay'in üzerinde olmasını sağlar */
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
 }
+
+/* Hesaplama Sayfası Genişlik Ayarı - TAM GENİŞLİK */
+.calculator-page {
+    width: 100%;
+    max-width: 1600px; /* Çok daha geniş */
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: var(--background);
+}
+
+/* ÖNEMLİ: Hesaplama sayfasında ana main container kısıtlamasını kaldır */
+.main:has(.calculator-page),
+body:has(.calculator-page) .main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* Hesaplama sayfası için landing-container ayarı */
+.calculator-page .landing-container {
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Başlık alanını zorla ortala ve genişlet */
+.calculator-page .calculator-hero {
+    width: 100%;
+    text-align: center !important;
+    padding: 60px 20px;
+    background-color: var(--code-bg); /* Hafif gri fon */
+    margin-bottom: 40px;
+}
+
+.calculator-page .hero-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.calculator-page .calculator-hero h1 {
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kartların bulunduğu container */
+.calculator-page .calculator-container {
+    max-width: 1200px !important; /* Çok geniş ekranlarda sonsuza kadar gitmesin, okunabilir kalsın */
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Form ve Sonuç kartlarını yan yana (veya alt alta) tam genişlikte göster */
+.calculator-form, 
+.result-card {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* --- YENİ GRİD DÜZENİ --- */
+/* Hesaplama formunu 2 sütunlu yap */
+.calculator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start; /* Kartların yukarı hizalı olması için */
+}
+
+/* Mobilde tek sütuna düşür */
+@media (max-width: 900px) {
+    .calculator-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hesapla butonunu tüm genişliğe yay */
+.form-actions {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+}
+
+/* --- KOMPAKT SONUÇ KARTI --- */
+.result-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px; /* Köşeleri biraz daha keskinleştir */
+    padding: 0;
+    margin-top: 30px; /* Boşluğu azalt */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important; /* Gölgeyi hafiflet */
+    overflow: hidden;
+    position: relative;
+    color: #1e293b !important;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Başlık alanı kompakt */
+.result-header {
+    padding: 20px 25px; /* Padding azaltıldı */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+    background-color: #ffffff !important;
+}
+
+.result-header h2 {
+    font-size: 1.25rem; /* Font küçüldü */
+    font-weight: 700;
+    color: #0f172a !important;
+    margin: 0;
+}
+
+/* Fiyat alanı kompakt */
+.result-main-price {
+    text-align: center;
+    padding: 30px 20px; /* Padding azaltıldı (50->30) */
+    background-color: #f8fafc !important;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.price-value {
+    font-size: 3rem; /* 4.5rem -> 3rem düşürüldü */
+    font-weight: 800;
+    color: #0f172a !important;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 10px 0; /* Margin eklendi */
+}
+
+.price-label {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.price-subtext {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Detaylar alanı kompakt */
+.result-details {
+    padding: 25px; /* 40px -> 25px */
+    background-color: #ffffff !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px; /* Gap ayarlandı */
+}
+
+
+/* Sayfa Taşmasını Engelleme */
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.calculator-hero {
+    position: relative;
+    background-color: transparent;
+}
+
+/* ============================================= */
+/* --- ANA SAYFA HERO DÜZELTMESİ --- */
+/* ============================================= */
+.first-entry {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 320px;
+    background: var(--entry);
+    margin: var(--gap) 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid var(--border-color);
+}
+
+.first-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.first-entry .entry-header {
+    overflow: hidden;
+    z-index: 1;
+    padding: var(--gap);
+}
+
+.first-entry .entry-content {
+    margin: 8px 0;
+    color: var(--secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.first-entry .entry-footer {
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.first-entry .entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* ESKİ BOZUK KOD SİLİNDİ - YENİSİ YUKARIDA TANIMLI */
+
+
+.calculator-hero h1 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    text-transform: uppercase; /* Daha afilli */
+}
+
+.calculator-hero .subtitle {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+/* ============================================= */
+/* --- TOOLTIP STİLLERİ (BİLGİ İKONU) --- */
+/* ============================================= */
+.info-tooltip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--border-color);
+    color: var(--secondary);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: help;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.info-tooltip:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Tooltip Baloncuğu */
+.info-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* İkonun üstünde */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: normal;
+    white-space: normal;
+    width: max-content;
+    max-width: 250px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+/* Tooltip Oku */
+.info-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.info-tooltip:hover::after,
+.info-tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================= */
+/* --- HESAP MAKİNESİ FORM DÜZENİ (TEK SÜTUN) --- */
+/* ============================================= */
+
+/* Grid yapılarını ekran boyutuna göre ayarla */
+.calc-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Masaüstünde 2 sütun */
+    gap: 30px; /* Daha geniş boşluk */
+    margin-bottom: 30px;
+}
+
+.calc-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Masaüstünde 3 sütun */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Mobilde tek sütuna düşür */
+@media (max-width: 768px) {
+    .calc-grid-2, .calc-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Input alanlarını güzelleştir */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--content);
+}
+
+.form-select, .form-control, .input-wrapper input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: var(--card-background);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+}
+
+.form-select:focus, .form-control:focus, .input-wrapper input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+    outline: none;
+}
+
+/* Input Wrapper (Suffix/Prefix için) */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-prefix {
+    position: absolute;
+    left: 15px;
+    color: var(--secondary);
+    pointer-events: none;
+}
+
+.input-suffix {
+    position: absolute;
+    right: 15px;
+    color: var(--secondary);
+    pointer-events: none;
+    font-size: 0.9em;
+}
+
+.input-wrapper input {
+    padding-left: 15px; /* Varsayılan */
+}
+.input-wrapper .input-prefix + input {
+    padding-left: 30px;
+}
+
+/* ============================================= */
+/* --- SONUÇ KARTI (PROFESYONEL FATURA - TEMİZ) --- */
+/* ============================================= */
+
+.result-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px; /* Daha yumuşak köşeler */
+    padding: 0;
+    margin-top: 50px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08) !important; /* Daha yumuşak, yaygın gölge */
+    overflow: hidden;
+    position: relative;
+    color: #1e293b !important; /* Slate 800 - Çok koyu gri, siyah değil ama net */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Üst kısım dekoratif çizgi - Mavi gradient */
+.result-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    z-index: 10;
+}
+
+.result-header {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+    background-color: #ffffff !important; /* Başlık da beyaz olsun, ferah */
+}
+
+.result-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0f172a !important; /* Slate 900 - Neredeyse siyah */
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.result-badge {
+    background-color: #eff6ff !important; /* Çok açık mavi */
+    color: #2563eb !important; /* Canlı mavi */
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #dbeafe;
+}
+
+.result-main-price {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8fafc !important; /* Fiyat alanı hafif gri ayrılsın */
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.price-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #64748b !important; /* Slate 500 */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.price-value {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #0f172a !important;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.price-subtext {
+    font-size: 1rem;
+    color: #94a3b8 !important;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.result-details {
+    padding: 40px;
+    background-color: #ffffff !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Detayları 2 sütuna yayalım */
+    gap: 20px 40px; /* Satır ve sütun boşlukları */
+}
+
+@media (max-width: 768px) {
+    .result-details {
+        grid-template-columns: 1fr; /* Mobilde tek sütun */
+        gap: 15px;
+        padding: 30px 20px;
+    }
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e2e8f0; /* Kesikli çizgi - Fatura hissi */
+    font-size: 1rem;
+    color: #334155 !important;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+/* Toplam Maliyet ve Kar satırları tam genişlikte olsun ve daha belirgin olsun */
+.detail-total-cost, .detail-profit {
+    grid-column: 1 / -1; /* Tüm sütunları kapla */
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.detail-total-cost {
+    background-color: #f1f5f9;
+    color: #475569 !important;
+    font-weight: 600;
+}
+
+.detail-profit {
+    background-color: #ecfdf5; /* Yeşil zemin */
+    color: #059669 !important; /* Yeşil yazı */
+    font-weight: 700;
+    border: 1px solid #d1fae5;
+}
+
+.detail-row strong {
+    font-family: 'Courier New', Courier, monospace; /* Rakamlar monospaced - Fatura hissi */
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0f172a !important;
+}
+
+.detail-profit strong {
+    color: #059669 !important;
+}
+
+.detail-divider {
+    display: none; /* Grid yapısında gerek kalmadı */
+}
+
 
 .hero-title {
     font-size: 3.5rem; /* Büyük, etkili başlık boyutu */
@@ -1016,24 +1574,8 @@ body > footer.footer:not(.footer-v2) {
 
 
 /* Mobil Cihazlar için Ayarlama */
-@media (max-width: 768px) {
-    .featured-category-section {
-        flex-direction: column; /* Mobilde alt alta gelsin */
-        padding: 25px;
-        gap: 25px;
-    }
-}
-/* Öne çıkan kategori bölümü için ters layout */
-.featured-category-section.layout-reverse {
-    flex-direction: row-reverse;
-}
 
-/* Mobil için ters layoutu sıfırla */
-@media (max-width: 768px) {
-    .featured-category-section.layout-reverse {
-        flex-direction: column; 
-    }
-}
+
 /* ============================================= */
 /* --- VURGU RENGİ VE GELİŞMİŞ ANİMASYONLAR --- */
 /* ============================================= */
@@ -3294,7 +3836,10 @@ html {
     grid-template-columns: 250px 1fr;
     gap: 50px;
 }
-.post-toc-sidebar {}
+.post-toc-sidebar {
+    /* boş bırakmak yerine en azından blok seviyede kalsın */
+    display: block;
+}
 
 .sticky-toc {
     position: sticky;
@@ -3411,6 +3956,340 @@ html {
 .share-buttons_button svg path {
     fill: currentColor;
 }
+/* ============================================= */
+/* --- 3D COST CALCULATOR REDESIGN (PREMIUM) --- */
+/* ============================================= */
+
+:root {
+    --calc-primary: #2563eb;
+    --calc-primary-hover: #1d4ed8;
+    --calc-bg: #f8fafc;
+    --calc-surface: #ffffff;
+    --calc-border: #e2e8f0;
+    --calc-text: #0f172a;
+    --calc-text-light: #64748b;
+    --calc-radius: 12px;
+    --calc-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --calc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+.calculator-page {
+    background-color: var(--calc-bg);
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.calculator-page .landing-hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: -40px; /* Overlap effect */
+}
+
+.calculator-page .landing-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.calculator-page .landing-hero .subtitle {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.calculator-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    position: relative;
+    z-index: 10;
+}
+
+/* --- SECTIONS --- */
+.calc-section {
+    background: var(--calc-surface);
+    border-radius: var(--calc-radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--calc-shadow);
+    border: 1px solid var(--calc-border);
+}
+
+.calc-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--calc-border);
+}
+
+.calc-section-number {
+    width: 28px;
+    height: 28px;
+    background-color: var(--calc-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.calc-section-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--calc-text);
+}
+
+/* --- GRIDS --- */
+.calc-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.calc-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+    .calc-grid-2, .calc-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- FORM ELEMENTS --- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--calc-text);
+}
+
+.form-text {
+    font-size: 0.75rem;
+    color: var(--calc-text-light);
+    line-height: 1.4;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input,
+.form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--calc-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    color: var(--calc-text);
+}
+
+.input-wrapper input:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--calc-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-prefix {
+    position: absolute;
+    left: 12px;
+    color: var(--calc-text-light);
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-suffix {
+    position: absolute;
+    right: 12px;
+    color: var(--calc-text-light);
+    font-size: 0.85rem;
+    pointer-events: none;
+}
+
+.input-wrapper input[type="number"] {
+    padding-right: 40px; /* Space for suffix */
+}
+
+.input-wrapper .input-prefix + input {
+    padding-left: 30px;
+}
+
+/* --- TIME INPUT GROUP --- */
+.time-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.time-input-group .input-wrapper {
+    flex: 1;
+}
+
+/* --- BUTTON --- */
+.form-actions {
+    margin-top: 32px;
+}
+
+.btn-calculate {
+    width: 100%;
+    background-color: var(--calc-primary);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.btn-calculate:hover {
+    background-color: var(--calc-primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-calculate:active {
+    transform: translateY(1px);
+}
+
+/* --- RESULT CARD --- */
+.result-card {
+    margin-top: 40px;
+    background: #1e293b; /* Dark theme for contrast */
+    color: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.result-card.hidden {
+    display: none;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.result-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #f1f5f9;
+}
+
+.result-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.result-main-price {
+    text-align: center;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.price-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #38bdf8; /* Light blue accent */
+    line-height: 1.1;
+}
+
+.price-subtext {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.result-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+.detail-row strong {
+    color: white;
+}
+
+.detail-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+}
+
+.detail-risk {
+    color: #f87171; /* Red tint for cost/risk */
+}
+
+.detail-risk strong {
+    color: #fca5a5;
+}
+
+.detail-total-cost {
+    font-weight: 600;
+}
+
+.detail-profit {
+    color: #4ade80; /* Green tint for profit */
+}
+
+.detail-profit strong {
+    color: #86efac;
+}
+
 
 /* ============================================= */
 /* --- İLGİLİ YAZILAR BÖLÜMÜ STİLİ --- */

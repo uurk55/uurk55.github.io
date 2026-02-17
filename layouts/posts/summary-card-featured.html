@@ -4,7 +4,7 @@
         
         <div class="post-card-image-v2">
             {{ with $page.Params.cover.image }}
-                <img src="{{ . | relURL }}" alt="{{ $page.Title }}">
+                <img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy" decoding="async">
             {{ else }}
                 <div class="image-placeholder-v2"></div>
             {{ end }}

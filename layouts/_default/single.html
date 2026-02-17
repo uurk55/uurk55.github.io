@@ -33,7 +33,7 @@
         
         {{- if .Params.cover.image -}}
         <div class="post-cover">
-            <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+            <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy" decoding="async">
             {{- if .Params.cover.caption }}<p class="post-cover-caption">{{ .Params.cover.caption }}</p>{{- end -}}
         </div>
         {{- end -}}

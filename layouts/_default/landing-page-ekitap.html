@@ -1,140 +1,383 @@
 {{ define "main" }}
-<div class="landing-page-wrapper">
-    <div class="landing-hero">
-        <div class="landing-container">
-            <h1>3D Yazıcınızı Bir Gelir Makinesine Dönüştürmeye Hazır Mısınız?</h1>
-            <p class="subtitle">Bu harika hobiyi kârlı bir işe dönüştürmenin yollarını arıyor ama nereden başlayacağınızı bilemiyor musunuz? Hazırlamakta olduğum <strong>"Mikro Fabrika"</strong> e-kitabı, fikirden ürüne, üründen gelire giden yolda sizin en yakın yol arkadaşınız olacak.</p>
+<div class="landing-page-wrapper calculator-page">
+    <div class="calculator-hero">
+        <div class="hero-container">
+            <h1>3D Baskı Maliyet Hesaplama</h1>
+            <p class="subtitle">Profesyonel fiyatlandırma için tüm giderleri detaylıca hesaplayın.</p>
         </div>
     </div>
 
     <div class="landing-content">
         <div class="landing-container">
-            {{/* --- GERİ SAYIM SAYACI YENİ YERİNDE --- */}}
-        <div class="countdown-wrapper"></div>
-            <h4 class="countdown-heading">KİTABIN YAYINLANMASINA KALAN SÜRE</h4>
-        <div id="countdown-timer" class="countdown-container">
-            <div class="countdown-item">
-                <span id="days">00</span>
-                <div class="countdown-label">Gün</div>
-            </div>
-            <div class="countdown-item">
-                <span id="hours">00</span>
-                <div class="countdown-label">Saat</div>
-            </div>
-            <div class="countdown-item">
-                <span id="minutes">00</span>
-                <div class="countdown-label">Dakika</div>
-            </div>
-            <div class="countdown-item">
-                <span id="seconds">00</span>
-                <div class="countdown-label">Saniye</div>
-            </div>
-        </div>
-        
-
-
-
-            <h2>Bu Kitapta Neler Bulacaksınız?</h2>
-<ul class="feature-list-ekitap">
-    <li>
-        <span class="icon">🎯</span>
-        <div>
-            <strong>Kârlı Pazar Nişleri ve 50+ Ürün Fikri:</strong> Sadece ne basacağınızı değil, neyin gerçekten sattığını öğrenin. Rekabetin az olduğu, kâr marjı yüksek niş pazarları ve test edilmiş ürün fikirlerini keşfedin.
-        </div>
-    </li>
-    <li>
-        <span class="icon">📈</span>
-        <div>
-            <strong>Doğru Fiyatlandırma Stratejileri:</strong> Emeğinizin karşılığını almak için malzeme, zaman ve elektrik maliyetlerinizi nasıl hesaplayacağınızı ve üzerine ne kadar kâr koymanız gerektiğini anlatan pratik formüller.
-        </div>
-    </li>
-    <li>
-        <span class="icon">🛒</span>
-        <div>
-            <strong>Sıfırdan Etsy'de Satış İmparatorluğu Kurma:</strong> Adım adım dükkan açmaktan, SEO uyumlu, müşteriyi yakalayan ürün listeleri oluşturmaya ve Instagram ile dükkanınıza trafik çekmeye kadar her şey.
-        </div>
-    </li>
-    <li>
-        <span class="icon">📋</span>
-        <div>
-            <strong>Kullanıma Hazır Şablonlar ve Kontrol Listeleri:</strong> Maliyetlerinizi ve kârınızı kolayca takip etmek için tasarlanmış Excel şablonları ve her adıımda yanınızda olacak kontrol listeleri.
-        </div>
-    </li>
-    <li>
-        <span class="icon">✨</span>
-        <div>
-            <strong>Profesyonel Yüzey İşleme Sırları:</strong> Baskılarınızı, müşterilerin hayran kalacağı pürüzsüz ve "satışa hazır" ürünlere dönüştürmek için en etkili zımparalama, astarlama ve boyama teknikleri.
-        </div>
-    </li>
-    <li>
-        <span class="icon">⚠️</span>
-        <div>
-            <strong>Kaçınılması Gereken 10 Ölümcül Hata:</strong> Sizi aylar sürecek deneme-yanılmalardan ve yüzlerce liralık malzeme israfından kurtaracak, en sık yapılan başlangıç hataları ve pratik çözümleri.
-        </div>
-    </li>
-</ul>
-{{/* --- YENİ BÖLÜM: KİMLER İÇİN / KİMLER İÇİN DEĞİL --- */}}
-<div class="target-audience-section">
-    <div class="audience-column">
-        <h3 class="audience-title for">✅ Bu Kitap Kimler İçin?</h3>
-        <ul class="audience-list">
-            <li>Hobisini bir sonraki seviyeye taşımak isteyenler.</li>
-            <li>Ek gelir veya tam zamanlı bir iş kurma hayali olanlar.</li>
-            <li>"Ne satacağımı bilmiyorum" diyen yaratıcı ruhlar.</li>
-            <li>Etsy gibi platformlarda satış yapmak isteyenler.</li>
-            <li>Sıfırdan bir marka yaratmak isteyen girişimciler.</li>
-        </ul>
-    </div>
-    <div class="audience-column">
-        <h3 class="audience-title not-for">❌ Bu Kitap Kimler İçin Değil?</h3>
-        <ul class="audience-list">
-            <li>Sadece teknik baskı ayarlarını öğrenmek isteyenler.</li>
-            <li>Hızlıca zengin olma hayali kuranlar.</li>
-            <li>Pazarlama ve müşteri ilişkilerine zaman ayırmak istemeyenler.</li>
-            <li>Tasarım yapmaktan keyif almayanlar.</li>
-            <li>Sadece hobi olarak kalmasını isteyenler.</li>
-        </ul>
-    </div>
-</div>
-            <hr>
-
-            {{/* --- YENİ BÖLÜM: YAZAR GÜVENİLİRLİK KUTUSU --- */}}
-            <div class="author-box-ekitap">
-                <div class="author-box-logo">
-                    <img src="{{ "logo.png" | absURL }}" alt="Edu 3D Model Dünyası Logo">
-                </div>
-                <div class="author-box-content">
-                    <h4>Bu Rehberi Neden Ben Hazırladım?</h4>
-                    <p>"Bu yolculuktan geçen biri olarak, tüm deneme-yanılmalarımı, başarılarımı ve başarısızlıklarımı tek bir kaynakta topladım. Amacım, sizin aylar sürebilecek hatalar yapmanızı engelleyerek, en kısa yoldan kâr etmeye başlamanızı sağlamak." - Uğur K.</p>
-                </div>
-            </div>
-
-            <section class="email-signup-section-ekitap">
-    <h2>İlk Haberdar Olan Siz Olun ve Lansman İndirimini Kaçırmayın!</h2>
-    <p>Aşağıdaki forma e-posta adresinizi bırakın. E-kitap yayınlandığı an size <strong>özel bir indirim koduyla</strong> birlikte haber vereceğim.</p>
-            
-            <div class="convertkit-form-container">
-                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-                <form action="https://app.convertkit.com/forms/8307581/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8307581" data-uid="30430e4c7f" data-format="inline" data-version="5">
-                    <div data-element="fields" data-stacked="false" class="formkit-fields">
-                        <div class="formkit-field">
-                            <input class="formkit-input" name="email_address" aria-label="Email Adresi" placeholder="E-posta adresinizi girin..." required type="email">
+            <div class="calculator-container">
+                <form id="cost-calculator-form" class="calculator-form">
+                    
+                    <!-- BÖLÜM 1: YAZICI VE MALZEME -->
+                    <div class="calc-section">
+                        <div class="calc-section-header">
+                            <span class="calc-section-number">1</span>
+                            <h3>Yazıcı ve Malzeme</h3>
                         </div>
-                        <button data-element="submit" class="formkit-submit formkit-submit">
-                            <span>Abone Ol</span>
+                        <div class="calc-grid-2">
+                            <div class="form-group">
+                                <label for="printerModel">Yazıcı Modeli <span class="info-tooltip" data-tooltip="Kullandığınız 3D yazıcı modelini buradan seçebilirsiniz. Seçim yaptığınızda, üretici verilerine dayanan ortalama güç tüketimi (Watt) değeri otomatik olarak ilgili alana doldurulacaktır. Listenizde olmayan bir model için 'Özel' seçeneğini kullanabilirsiniz.">?</span></label>
+                                <select id="printerModel" class="form-select">
+                                    <option value="" disabled selected>Seçiniz...</option>
+                                    <option value="custom">Özel / Listede Yok</option>
+                                    <optgroup label="Creality">
+                                        <option value="Creality K1 / K1C">Creality K1 / K1C</option>
+                                        <option value="Creality K1 Max">Creality K1 Max</option>
+                                        <option value="Creality Ender 3 / V2">Creality Ender 3 / V2</option>
+                                        <option value="Creality Ender 3 S1 / Pro">Creality Ender 3 S1 / Pro</option>
+                                        <option value="Creality CR-10 / CR-10S">Creality CR-10 / CR-10S</option>
+                                    </optgroup>
+                                    <optgroup label="Bambu Lab">
+                                        <option value="Bambu Lab P1P / P1S">Bambu Lab P1P / P1S</option>
+                                        <option value="Bambu Lab X1 / X1C">Bambu Lab X1 / X1C</option>
+                                        <option value="Bambu Lab A1 / Mini">Bambu Lab A1 / Mini</option>
+                                    </optgroup>
+                                    <optgroup label="Prusa">
+                                        <option value="Prusa MK3S+">Prusa MK3S+</option>
+                                        <option value="Prusa MK4">Prusa MK4</option>
+                                    </optgroup>
+                                    <optgroup label="Diğer">
+                                        <option value="Anycubic Kobra / Kobra 2">Anycubic Kobra / Kobra 2</option>
+                                        <option value="Elegoo Neptune 4">Elegoo Neptune 4</option>
+                                        <option value="Sovol SV06 / SV06 Plus">Sovol SV06 / SV06 Plus</option>
+                                        <option value="Genel FDM">Genel FDM Yazıcı</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="printerPower">Güç Tüketimi (Watt) <span class="info-tooltip" data-tooltip="Yazıcınızın çalışırken saatte ortalama kaç Watt elektrik tükettiğini gösteren değerdir. Etiket değerinden ziyade ortalama çalışma tüketimi (yaklaşık 150W-350W arası) baz alınmalıdır. Bu değer, elektrik faturası maliyetini hesaplamak için kullanılır.">?</span></label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="printerPower" min="0" step="10" placeholder="Örn: 350">
+                                    <span class="input-suffix">W</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-grid-2">
+                            <div class="form-group">
+                                <label for="materialType">Malzeme Tipi</label>
+                                <select id="materialType" class="form-select">
+                                    <option>PLA (Standart)</option>
+                                    <option>PLA+ / Tough PLA</option>
+                                    <option>PETG</option>
+                                    <option>ABS / ASA</option>
+                                    <option>TPU / Esnek</option>
+                                    <option>Reçine</option>
+                                    <option>Diğer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="filamentPrice">Filament KG Fiyatı <span class="info-tooltip" data-tooltip="Satın aldığınız 1 makara (genellikle 1 kg / 1000g) filamentin KDV dahil toplam fiyatıdır. Malzeme maliyeti bu fiyat üzerinden gram başına hesaplanır.">?</span></label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₺</span>
+                                    <input type="number" id="filamentPrice" min="0" step="0.01" placeholder="Örn: 450">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BÖLÜM 2: BASKI DETAYLARI -->
+                    <div class="calc-section">
+                        <div class="calc-section-header">
+                            <span class="calc-section-number">2</span>
+                            <h3>Baskı Detayları</h3>
+                        </div>
+                        <div class="calc-grid-2">
+                            <div class="form-group">
+                                <label for="filamentWeight">Model Ağırlığı <span class="info-tooltip" data-tooltip="Baskı alacağınız modelin, destekler (support) ve yapı tablası yapışma alanları (brim/raft) dahil dilimleyici (slicer) programındaki toplam ağırlığıdır.">?</span></label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="filamentWeight" min="0" step="1" placeholder="Örn: 125">
+                                    <span class="input-suffix">gr</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Baskı Süresi <span class="info-tooltip" data-tooltip="Dilimleyici (slicer) programının hesapladığı tahmini baskı süresidir. Bu süre, elektrik tüketimi ve yazıcı yıpranma payı hesaplamalarında temel alınır.">?</span></label>
+                                <div class="time-input-group">
+                                    <div class="input-wrapper">
+                                        <input type="number" id="printHours" min="0" step="1" placeholder="0">
+                                        <span class="input-suffix">sa</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="number" id="printMinutes" min="0" max="59" step="1" placeholder="0">
+                                        <span class="input-suffix">dk</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BÖLÜM 3: İŞÇİLİK VE GİDERLER -->
+                    <div class="calc-section">
+                        <div class="calc-section-header">
+                            <span class="calc-section-number">3</span>
+                            <h3>İşçilik ve Giderler</h3>
+                        </div>
+                        <div class="calc-grid-2">
+                            <div class="form-group">
+                                <label>Hazırlık ve Son İşlem <span class="info-tooltip" data-tooltip="Baskı öncesi hazırlık (tabla temizliği, filament takma) ve baskı sonrası işlemler (destek sökme, zımparalama, boyama) için harcadığınız toplam süredir.">?</span></label>
+                                <div class="time-input-group">
+                                    <div class="input-wrapper">
+                                        <input type="number" id="prepHours" min="0" step="1" placeholder="0">
+                                        <span class="input-suffix">sa</span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="number" id="prepMinutes" min="0" max="59" step="1" placeholder="30">
+                                        <span class="input-suffix">dk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="laborRate">Saatlik İşçilik Ücreti <span class="info-tooltip" data-tooltip="Kendi emeğinize biçtiğiniz saatlik değerdir. Hazırlık ve son işlem süreçlerinde harcadığınız zamanın parasal karşılığını belirler.">?</span></label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₺</span>
+                                    <input type="number" id="laborRate" min="0" step="1" value="150">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-grid-3">
+                            <div class="form-group">
+                                <label for="electricityPrice">Elektrik (kW/h) <span class="info-tooltip" data-tooltip="Bulunduğunuz bölgedeki 1 kW elektrik birim fiyatıdır (Vergiler dahil). Elektrik faturanızdan bu birim fiyatı öğrenebilirsiniz. (Ortalama 3.5₺ - 5.0₺ arası)">?</span></label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₺</span>
+                                    <input type="number" id="electricityPrice" min="0" step="0.01" value="3.50">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="wearRate">Yazıcı Bakım <span class="info-tooltip" data-tooltip="Yazıcınızın her çalışma saati başına ayırdığınız amortisman veya bakım bütçesidir. Nozzle değişimi, kayış bakımı gibi gelecekteki giderler için biriktirilir.">?</span></label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₺</span>
+                                    <input type="number" id="wearRate" min="0" step="0.5" value="2.00">
+                                    <span class="input-suffix">/sa</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="extraCosts">Ek Giderler <span class="info-tooltip" data-tooltip="Bu proje için yapılan spesifik harcamalardır. Örn: Kargo ücreti, kullanılan boya, yapıştırıcı, paketleme malzemesi, vida/somun gibi sarf malzemeler.">?</span></label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₺</span>
+                                    <input type="number" id="extraCosts" min="0" step="1" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BÖLÜM 4: KÂRLILIK VE RİSK -->
+                    <div class="calc-section">
+                        <div class="calc-section-header">
+                            <span class="calc-section-number">4</span>
+                            <h3>Kârlılık ve Risk</h3>
+                        </div>
+                        <div class="calc-grid-2">
+                            <div class="form-group">
+                                <label for="errorMargin">Hata / Fire Payı (%) <span class="info-tooltip" data-tooltip="Baskının başarısız olma ihtimaline (elektrik kesintisi, tıkanma vb.) karşı maliyeti koruma oranıdır. Riskli ve uzun baskılarda %20-%30, standart baskılarda %10 önerilir.">?</span></label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="errorMargin" min="0" step="1" value="10">
+                                    <span class="input-suffix">%</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="profitMargin">Kâr Oranı (Maliyet Üzerine %) <span class="info-tooltip" data-tooltip="Toplam maliyetin üzerine eklemek istediğiniz net kâr yüzdesidir. Bu oran, emeğinizin ve ticari riskinizin karşılığı olarak fiyatı belirler.">?</span></label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="profitMargin" min="0" step="1" value="50">
+                                    <span class="input-suffix">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-calculate">
+                            <span class="btn-icon">🖩</span> HESAPLA
                         </button>
                     </div>
                 </form>
 
-                
+                <!-- SONUÇ KARTI -->
+                <div id="result-card" class="result-card hidden">
+                    <div class="result-header">
+                        <h2>Hesaplanan Teklif</h2>
+                        <div class="result-badge">Tahmini</div>
+                    </div>
+                    
+                    <div class="result-main-price">
+                        <span class="price-label">Önerilen Satış Fiyatı</span>
+                        <div class="price-value" id="summarySalePrice">₺0,00</div>
+                        <div class="price-subtext">KDV hariç net tutar</div>
+                    </div>
 
-                {{/* --- YENİ BÖLÜM: GİZLİLİK GÜVENCESİ --- */}}
-                <div class="privacy-assurance">
-                    <span>🔒</span>
-                    <p>Gizliliğinize saygı duyuyoruz. E-postanız güvende.</p>
+                    <div class="result-details">
+                        <div class="detail-row">
+                            <span>Malzeme Maliyeti</span>
+                            <strong id="summaryMaterial">₺0,00</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span>Enerji Maliyeti</span>
+                            <strong id="summaryElectricity">₺0,00</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span>İşçilik</span>
+                            <strong id="summaryLabor">₺0,00</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span>Bakım & Yıpranma</span>
+                            <strong id="summaryWear">₺0,00</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span>Ek Giderler</span>
+                            <strong id="summaryExtra">₺0,00</strong>
+                        </div>
+                        <div class="detail-row detail-risk">
+                            <span>Hata / Fire Payı</span>
+                            <strong id="summaryError">₺0,00</strong>
+                        </div>
+                        <div class="detail-divider"></div>
+                        <div class="detail-row detail-total-cost">
+                            <span>Toplam Maliyet</span>
+                            <strong id="summaryBaseCost">₺0,00</strong>
+                        </div>
+                        <div class="detail-row detail-profit">
+                            <span>Net Kâr (<span id="summaryMargin">0%</span>)</span>
+                            <strong id="summaryProfit">₺0,00</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+(function () {
+    // Para birimi formatlama fonksiyonu
+    function formatCurrency(value) {
+        return value.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " ₺";
+    }
+
+    // Yazıcı ön ayarları (Watt değerleri)
+    var printerPresets = {
+        "Creality K1 / K1C": 350,
+        "Creality K1 Max": 450,
+        "Creality Ender 3 / V2": 120,
+        "Creality Ender 3 S1 / Pro": 220,
+        "Creality CR-10 / CR-10S": 270,
+        "Prusa MK3S+": 250,
+        "Prusa MK4": 280,
+        "Bambu Lab P1P / P1S": 300,
+        "Bambu Lab X1 / X1C": 350,
+        "Bambu Lab A1 / Mini": 100,
+        "Anycubic Kobra / Kobra 2": 220,
+        "Elegoo Neptune 4": 250,
+        "Sovol SV06 / SV06 Plus": 320,
+        "Genel FDM": 180
+    };
+
+    // Yazıcı seçilince güç tüketimini otomatik doldur
+    function applyPrinterPreset() {
+        var select = document.getElementById("printerModel");
+        var powerInput = document.getElementById("printerPower");
+        if (!select || !powerInput) return;
+
+        var val = select.value;
+        if (printerPresets[val]) {
+            powerInput.value = printerPresets[val];
+            // Kullanıcıya değiştiğini belli etmek için ufak bir animasyon efekti (opsiyonel)
+            powerInput.style.backgroundColor = "#e0f2fe";
+            setTimeout(function() { powerInput.style.backgroundColor = ""; }, 500);
+        }
+    }
+
+    // Hesaplama Fonksiyonu
+    function handleCalculate(event) {
+        event.preventDefault();
+
+        // Değerleri al
+        var filamentPrice = parseFloat(document.getElementById("filamentPrice").value) || 0;
+        var filamentWeight = parseFloat(document.getElementById("filamentWeight").value) || 0;
+
+        var printerPower = parseFloat(document.getElementById("printerPower").value) || 0;
+        
+        // Baskı Süresi (Saat + Dakika)
+        var printHoursInput = parseFloat(document.getElementById("printHours").value) || 0;
+        var printMinutesInput = parseFloat(document.getElementById("printMinutes").value) || 0;
+        var totalPrintHours = printHoursInput + (printMinutesInput / 60);
+
+        var electricityPrice = parseFloat(document.getElementById("electricityPrice").value) || 0;
+        var wearRate = parseFloat(document.getElementById("wearRate").value) || 0;
+
+        // Hazırlık Süresi (Saat + Dakika)
+        var prepHoursInput = parseFloat(document.getElementById("prepHours").value) || 0;
+        var prepMinutesInput = parseFloat(document.getElementById("prepMinutes").value) || 0;
+        var totalPrepHours = prepHoursInput + (prepMinutesInput / 60);
+
+        var laborRate = parseFloat(document.getElementById("laborRate").value) || 0;
+        var errorMargin = parseFloat(document.getElementById("errorMargin").value) || 0;
+        var profitMargin = parseFloat(document.getElementById("profitMargin").value) || 0;
+        var extraCosts = parseFloat(document.getElementById("extraCosts").value) || 0;
+
+        // Hesaplamalar
+        // 1. Malzeme Maliyeti
+        var filamentCost = (filamentPrice / 1000) * filamentWeight;
+
+        // 2. Elektrik Maliyeti (kW * Saat * Birim Fiyat)
+        var kwh = (printerPower * totalPrintHours) / 1000;
+        var electricityCost = kwh * electricityPrice;
+
+        // 3. Yıpranma Maliyeti
+        var wearCost = wearRate * totalPrintHours;
+
+        // 4. İşçilik Maliyeti
+        var laborCost = totalPrepHours * laborRate;
+
+        // Ara Toplam
+        var subtotal = filamentCost + electricityCost + wearCost + laborCost + extraCosts;
+
+        // 5. Hata Payı
+        var errorCost = subtotal * (errorMargin / 100);
+
+        // Toplam Maliyet
+        var baseCost = subtotal + errorCost;
+
+        // Satış Fiyatı (Maliyet + Kâr)
+        var salePrice = baseCost * (1 + profitMargin / 100);
+        var profitAmount = salePrice - baseCost;
+
+        // Sonuçları Yazdır
+        document.getElementById("summaryMaterial").textContent = formatCurrency(filamentCost);
+        document.getElementById("summaryElectricity").textContent = formatCurrency(electricityCost);
+        document.getElementById("summaryLabor").textContent = formatCurrency(laborCost);
+        document.getElementById("summaryWear").textContent = formatCurrency(wearCost);
+        document.getElementById("summaryExtra").textContent = formatCurrency(extraCosts);
+        document.getElementById("summaryError").textContent = formatCurrency(errorCost);
+
+        document.getElementById("summaryBaseCost").textContent = formatCurrency(baseCost);
+        document.getElementById("summarySalePrice").textContent = formatCurrency(salePrice);
+        document.getElementById("summaryProfit").textContent = formatCurrency(profitAmount);
+        document.getElementById("summaryMargin").textContent = "%" + profitMargin;
+
+        // Sonuç kartını göster ve kaydır
+        var resultCard = document.getElementById("result-card");
+        resultCard.classList.remove("hidden");
+        
+        // Hafif bir gecikmeyle kaydır ki klavye kapansın vs.
+        setTimeout(function() {
+            resultCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
+    }
+
+    // Event Listener'lar
+    var form = document.getElementById("cost-calculator-form");
+    if (form) {
+        form.addEventListener("submit", handleCalculate);
+    }
+
+    var printerModelSelect = document.getElementById("printerModel");
+    if (printerModelSelect) {
+        printerModelSelect.addEventListener("change", applyPrinterPreset);
+    }
+})();
+</script>
 {{ end }}

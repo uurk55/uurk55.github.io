@@ -75,11 +75,13 @@
     
     {{/* --- BÖLÜM 5: EN ÇOK OKUNANLAR --- */}}
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
-    {{ if $featured_pages }}
+    {{ if gt (len $featured_pages) 0 }}
+        {{ $featured_sorted := sort $featured_pages "Date" "desc" }}
+        {{ $featured_to_show := first 2 $featured_sorted }}
         <section class="most-read-section">
             <h2 class="homepage-section-title">Öne Çıkanlar</h2>
             <div class="featured-posts-grid">
-                {{ range $featured_pages }}
+                {{ range $featured_to_show }}
                     {{ .Render "summary-card-featured" }}
                 {{ end }}
             </div>
@@ -90,7 +92,6 @@
 <section class="latest-posts-section">
     <h2 class="homepage-section-title">En Son Yazılar</h2>
     <div class="all-posts-grid">
-        {{/* <<< DEĞİŞİKLİK: Tekrar 6 yazı çeken Paginator'a döndük */}}
         {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 6 }}
         {{ range $paginator.Pages }}
             {{ .Render "summary-card-compact" }}
@@ -105,7 +106,7 @@
 <section class="author-box-section">
     <div class="author-box-container">
         <div class="author-box-avatar">
-            <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo">
+            <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" loading="lazy" decoding="async">
         </div>
         <div class="author-box-content">
             <h2 class="homepage-section-title no-border">Benim Hikayem</h2>

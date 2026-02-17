@@ -5164,27 +5164,27 @@ html {
 .menu-highlight-btn a {
     background: transparent !important;
     color: white !important;
-    padding: 12px 30px !important; /* Geniş ve ferah iç boşluk */
-    border: 1px solid rgba(255, 255, 255, 0.4) !important; /* Şık, ince beyaz çerçeve */
-    border-radius: 6px !important;
-    font-weight: 500 !important;
-    font-size: 0.95rem !important;
+    padding: 0 !important; /* Boşluk yok, sadece yazı */
+    border: none !important; /* Çerçeve yok */
+    border-radius: 0 !important;
+    font-weight: 800 !important; /* Çok kalın yazı */
+    font-size: 1rem !important;
     transition: all 0.3s ease !important;
-    text-transform: none !important;
-    letter-spacing: 0.5px !important;
-    margin-left: 15px !important;
+    text-transform: uppercase !important; /* Büyük harf, dikkat çekici */
+    letter-spacing: 1px !important;
+    margin-left: 20px !important;
     display: inline-flex !important;
     align-items: center;
     box-shadow: none !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3) !important; /* Güçlü parlama/gölge efekti */
 }
 
 /* Hover efekti */
 .menu-highlight-btn a:hover {
-    background: white !important; /* Üzerine gelince beyaz olsun */
-    color: #333 !important; /* Yazı rengi koyu olsun */
-    border-color: white !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    background: transparent !important;
+    color: var(--accent) !important; /* Temanın vurgu rengine dönsün */
+    transform: scale(1.05) !important; /* Hafif büyüme */
+    text-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent) !important; /* Vurgu renginde parlama */
 }
 
 /* Mobilde menü görünümü */
@@ -5194,8 +5194,8 @@ html {
         width: 100% !important;
         text-align: center;
         justify-content: center;
-        padding: 12px 0 !important;
-        background: rgba(255,255,255,0.1) !important;
-        border: 1px solid rgba(255,255,255,0.2) !important;
+        padding: 10px 0 !important;
+        background: rgba(255,255,255,0.05) !important; /* Mobilde çok hafif bir zemin olabilir tıklanabilirlik için */
+        border-radius: 8px !important;
     }
 }

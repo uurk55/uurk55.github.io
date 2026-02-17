@@ -5162,29 +5162,29 @@ html {
 
 /* Menüdeki hesaplama linkini identifier ile yakala */
 .menu-highlight-btn a {
-    background-color: var(--primary) !important;
-    color: white !important; /* Yazı rengi beyaz */
-    padding: 10px 20px !important;
-    border-radius: 50px !important; /* Tam yuvarlak köşeler */
-    font-weight: 700 !important;
-    font-size: 0.95rem !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; /* Modern Mavi Gradient */
+    color: white !important;
+    padding: 8px 20px !important; /* Daha yatay, daha ince */
+    border-radius: 6px !important; /* Hafif yuvarlatılmış, tam yuvarlak değil */
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2) !important; /* Mavi gölge */
     transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3) !important;
-    margin-left: 15px !important; /* Diğer menülerden ayır */
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    text-transform: none !important; /* Büyük harf zorunluluğunu kaldır, daha kibar */
+    letter-spacing: normal !important;
+    margin-left: 10px !important;
     display: inline-flex !important;
     align-items: center;
-    border: 2px solid transparent !important;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 /* Hover efekti */
 .menu-highlight-btn a:hover {
-    transform: translateY(-3px) !important;
-    box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.4) !important;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important; /* Koyu maviye geçiş */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3) !important;
     opacity: 1 !important;
-    background-color: #212529 !important; /* Biraz daha koyu ton */
-    border-color: rgba(255,255,255,0.1) !important;
+    border-color: rgba(255,255,255,0.2) !important;
 }
 
 /* Mobilde menü görünümü */
@@ -5195,5 +5195,7 @@ html {
         text-align: center;
         justify-content: center;
         padding: 12px 0 !important;
+        background: var(--primary) !important; /* Mobilde düz renk daha iyi olabilir */
+        box-shadow: none !important;
     }
 }

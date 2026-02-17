@@ -5160,8 +5160,8 @@ html {
 /* --- ÖZEL MENÜ BUTONU (3D Baskı Maliyet Hesaplama) --- */
 /* ============================================= */
 
-/* Menüdeki hesaplama linkini yakala ve butonlaştır */
-.menu a[href="/maliyet-hesaplama/"] {
+/* Menüdeki hesaplama linkini identifier ile yakala */
+.menu-highlight-btn a {
     background-color: var(--primary) !important;
     color: white !important; /* Yazı rengi beyaz */
     padding: 10px 20px !important;
@@ -5179,7 +5179,7 @@ html {
 }
 
 /* Hover efekti */
-.menu a[href="/maliyet-hesaplama/"]:hover {
+.menu-highlight-btn a:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.4) !important;
     opacity: 1 !important;
@@ -5189,7 +5189,7 @@ html {
 
 /* Mobilde menü görünümü */
 @media screen and (max-width: 768px) {
-    .menu a[href="/maliyet-hesaplama/"] {
+    .menu-highlight-btn a {
         margin: 15px 0 !important; /* Mobilde dikey boşluk */
         width: 100% !important; /* Tam genişlik */
         text-align: center;

@@ -110,6 +110,7 @@ buildFuture = true
 
   [[menu.main]]
     name = "3D Baskı Maliyet Hesaplama"
+    identifier = "menu-highlight-btn"
     url = "/maliyet-hesaplama/"
     weight = 100
 

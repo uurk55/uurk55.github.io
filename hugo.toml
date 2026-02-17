@@ -99,11 +99,6 @@ buildFuture = true
     weight = 35
 
   [[menu.main]]
-    name = "Baskı Hesapla"
-    url = "/maliyet-hesaplama/"
-    weight = 38
-
-  [[menu.main]]
     name = "Hakkımda"
     url = "/hakkimda/" 
     weight = 40
@@ -112,6 +107,11 @@ buildFuture = true
     name = "İletişim"
     url = "/iletisim/"
     weight = 50
+
+  [[menu.main]]
+    name = "3D Model Fiyat Hesaplama"
+    url = "/maliyet-hesaplama/"
+    weight = 100
 
   # [[menu.main]]
   #   name = "Maliyet Hesaplama"

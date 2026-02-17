@@ -24,6 +24,7 @@ main.main {
 
     /* --- Ana Renk Paleti --- */
     --primary: #343A40; /* Şık bir koyu gri */
+    --primary-rgb: 52, 58, 64; /* RGB versiyonu */
     --primary-content: #FFFFFF; /* Mavi butonların üzerindeki yazı rengi */
     --background: #F8F9FA; /* Çok hafif kırık beyaz, göz yormayan arkaplan */
     --content: #212529; /* Ana metin rengi (koyu gri) */
@@ -5152,5 +5153,42 @@ html {
     .faz-arrow {
         transform: rotate(90deg);
         align-self: center;
+    }
+}
+
+/* ============================================= */
+/* --- ÖZEL MENÜ BUTONU (3D Model Fiyat Hesaplama) --- */
+/* ============================================= */
+
+/* Menüdeki hesaplama linkini yakala ve butonlaştır */
+.menu a[href="/maliyet-hesaplama/"] {
+    background: var(--primary);
+    color: white !important; /* Yazı rengi beyaz */
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+    margin-left: 10px; /* Diğer menülerden ayır */
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+/* Hover efekti */
+.menu a[href="/maliyet-hesaplama/"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.3);
+    opacity: 0.9;
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* Mobilde menü görünümü */
+@media screen and (max-width: 768px) {
+    .menu a[href="/maliyet-hesaplama/"] {
+        margin: 10px 0; /* Mobilde dikey boşluk */
+        width: 100%; /* Tam genişlik */
+        text-align: center;
+        justify-content: center;
     }
 }

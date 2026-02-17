@@ -1012,13 +1012,27 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 320px;
+    /* min-height: 320px;  <-- BU SATIR GÖRSELİ ZORLUYORDU, KALDIRILDI */
     background: var(--entry);
     margin: var(--gap) 0;
     border-radius: var(--radius);
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     border: 1px solid var(--border-color);
+}
+
+.first-entry .entry-cover {
+    overflow: hidden;
+    margin: 0; /* Boşlukları sıfırla */
+}
+
+.first-entry .entry-cover img {
+    width: 100%;
+    height: auto; /* Kırpılmayı önler, orantılı küçültür */
+    object-fit: contain; /* Görselin tamamını gösterir */
+    display: block;
+    max-height: 600px; /* Çok uzun görseller ekranı kaplamasın diye sınır */
+    margin: 0 auto;
 }
 
 .first-entry:hover {

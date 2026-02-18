@@ -144,3 +144,9 @@ Kendi ürününüzü satmak ile "Baskı Hizmeti" vermek tamamen farklı iş mode
 <p>Yerel işletmeler, öğrenciler ve mühendisler için prototipleme hizmeti nasıl sunulur? Hizmet fiyatlandırması ve müşteri yönetimi.</p>
 <a href="{{< ref "posts/3d-baski-servis-vermek.md" >}}" class="cta-button">Baskı Hizmeti Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Atölye ölçeğine geçerken her baskının gerçek maliyetini görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

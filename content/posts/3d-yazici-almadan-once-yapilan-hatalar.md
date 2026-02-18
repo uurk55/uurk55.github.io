@@ -103,3 +103,9 @@ Yazıcınızın türüne göre aşağıdaki kurulum rehberlerinden birini seçin
     <a href="{{< ref "posts/sla-yazici-kurulum-guvenlik-rehberi.md" >}}" class="cta-button">🧪 SLA (Reçine) Kurulum Rehberi →</a>
 </div>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Yeni yazıcınızla satış yapmayı düşünüyorsanız, başlamadan önce bir baskının size gerçekten kaça mal olduğunu görmek için 3D Baskı Maliyet Hesaplama aracını deneyebilirsiniz.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

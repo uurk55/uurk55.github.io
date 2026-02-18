@@ -131,3 +131,9 @@ Hem fiziksel hem de dijital ürünler sattınız, işler büyüdü. Artık evini
 <p>Büyüme sancıları, evden çalışmanın sınırları ve bir atölye kiralamanın maliyet-fayda analizi.</p>
 <a href="{{< ref "posts/evden-atolyeye-gecis.md" >}}" class="cta-button">Atölye Geçiş Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Dijital model satarken fiziksel baskı teklifleri de veriyorsan, gerçek maliyeti görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

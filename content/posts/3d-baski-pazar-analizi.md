@@ -156,3 +156,9 @@ Duygusal fiyatlandırmayı bırakıp, gerçek bir işletme gibi hesap yapma vakt
     <p>Ürününüze değer biçerken yapılan en büyük hatalar. Maliyet artı kâr mı, yoksa pazar odaklı fiyatlandırma mı? Doğru rakamı bulma rehberi.</p>
     <a href="{{< ref "posts/fiyatlandirma-stratejisi-rehberi.md" >}}" class="cta-button">Fiyatlandırma Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+    <h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+    <p>Seçtiğin ürün için filament, elektrik ve işçiliği görerek gerçekçi bir başlangıç fiyatı oluşturmak için hesaplayıcıyı kullanabilirsin.</p>
+    <a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

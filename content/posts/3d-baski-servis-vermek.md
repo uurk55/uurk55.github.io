@@ -124,3 +124,9 @@ Para kazanmak güzeldir ama maliyeyle başınızın dertte olması hiç güzel d
 <p>Şahıs şirketi kurma adımları, vergi muafiyetleri ve yasal bir işletme olmanın yol haritası.</p>
 <a href="{{< ref "posts/vergi-ve-yasal-konular-turkiye.md" >}}" class="cta-button">Yasal Rehbere Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Müşterilere proje bazlı teklif verirken, saatlik ücret ve makine giderlerini net görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

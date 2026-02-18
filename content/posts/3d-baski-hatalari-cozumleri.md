@@ -183,3 +183,9 @@ Yazıcıyı ne sıklıkla yağlamalı? Nozzle ne zaman değişmeli? Kayışları
 <p>Kriz anını bekleme, önlemini al. Haftalık, aylık ve yıllık bakım rutinleri ile yazıcını 'sıfır' kondisyonunda tut.</p>
 <a href="{{< ref "posts/3d-yazici-bakim-rehberi.md" >}}" class="cta-button">Bakım Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Hataları azalttıkça fire oranınız ve çöpe giden filament miktarı düşer. Bu etkinin gerçek maliyete yansımasını görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

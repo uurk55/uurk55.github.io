@@ -167,3 +167,9 @@ Stok maliyeti olmadan, **"Sipariş Üzerine Üretim" (Print on Demand)** modeliy
 <p>Stok maliyeti olmadan çalışmanın avantajları ve kriz yönetimi. Acil durumlarda üretim planlaması nasıl yapılır?</p>
 <a href="{{< ref "posts/siparis-bazli-3d-baski.md" >}}" class="cta-button">Sipariş Yönetimi Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Hangi pazaryerinde satarsan sat, komisyonlar ve giderler sonrası cebine ne kaldığını görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

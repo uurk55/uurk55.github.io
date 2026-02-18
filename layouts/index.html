@@ -12,7 +12,26 @@
 
 <div class="homepage-content">
 
-    {{/* --- BÖLÜM 2: İKONLU KATEGORİ REHBERİ ("KONULARI KEŞFET") --- */}}
+    <section class="who-for-section">
+        <h2 class="homepage-section-title">Kimler İçin?</h2>
+        <p class="section-subtitle">3D baskıyı sadece hobi değil, sürdürülebilir bir gelir kaynağı olarak görmek isteyenler için.</p>
+        <div class="who-for-grid">
+            <div class="who-for-card">
+                <h3>Hobiciler</h3>
+                <p>Akşamları ve hafta sonlarını değerlendirip baskılarının gerçek maliyetini bilerek üretmek isteyenler.</p>
+            </div>
+            <div class="who-for-card">
+                <h3>Yan Gelir Arayanlar</h3>
+                <p>Evden sipariş alıp zamanını, elektrik ve bakım giderlerini hesaba katarak kârlı çalışanlar.</p>
+            </div>
+            <div class="who-for-card">
+                <h3>Atölye Kurmak İsteyenler</h3>
+                <p>Fiyatlandırma, fire ve gizli giderleri yöneterek ciddi bir 3D baskı atölyesi kurmayı hedefleyenler.</p>
+            </div>
+        </div>
+    </section>
+
+    {{/* --- BÖLÜM 3: İKONLU KATEGORİ REHBERİ ("KONULARI KEŞFET") --- */}}
     <section class="icon-category-section">
         <h2 class="homepage-section-title">Konuları Keşfet</h2>
         <p class="section-subtitle">Nereden başlayacağınızı bilmiyor musunuz? İşte size bir rehber.</p>
@@ -45,7 +64,7 @@
         </div>
     </section>
 
-    {{/* --- BÖLÜM 3: ÖNE ÇIKAN KATEGORİ (BAŞLANGIÇ REHBERİ) --- */}}
+    {{/* --- BÖLÜM 4: ÖNE ÇIKAN KATEGORİ (BAŞLANGIÇ REHBERİ) --- */}}
     <section class="featured-category-section">
     <div class="featured-category-image">
         <img src="/images/baslangic-rehberi-kategori.png" alt="3D baskı dünyasına ilk adımı atan bir kişi">
@@ -59,7 +78,7 @@
     </div>
 </section>
 
-    {{/* --- BÖLÜM 4: ÖNE ÇIKAN KATEGORİ (PARA KAZANMA) --- */}}
+    {{/* --- BÖLÜM 5: ÖNE ÇIKAN KATEGORİ (PARA KAZANMA) --- */}}
     <section class="featured-category-section layout-reverse">
     <div class="featured-category-image">
         <img src="/images/para-kazanma-kategori.png" alt="3D baskı ile para kazanma konsepti">
@@ -73,7 +92,7 @@
     </div>
 </section>
     
-    {{/* --- BÖLÜM 5: EN ÇOK OKUNANLAR --- */}}
+    {{/* --- BÖLÜM 6: EN ÇOK OKUNANLAR --- */}}
     {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
     {{ if gt (len $featured_pages) 0 }}
         {{ $featured_sorted := sort $featured_pages "Date" "desc" }}
@@ -88,7 +107,7 @@
         </section>
     {{ end }}
 
-    {{/* --- BÖLÜM 6: EN SON YAZILAR --- */}}
+    {{/* --- BÖLÜM 7: EN SON YAZILAR --- */}}
 <section class="latest-posts-section">
     <h2 class="homepage-section-title">En Son Yazılar</h2>
     <div class="all-posts-grid">
@@ -102,7 +121,7 @@
     </div>
 </section>
 
-    {{/* --- BÖLÜM 7: BENİM HİKAYEM (YENİ YAPI) --- */}}
+    {{/* --- BÖLÜM 8: BENİM HİKAYEM (YENİ YAPI) --- */}}
 <section class="author-box-section">
     <div class="author-box-container">
         <div class="author-box-avatar">
@@ -116,7 +135,7 @@
     </div>
 </section>
 
-    {{/* --- YENİ SIRA: BÖLÜM 8: E-POSTA ABONELİK KUTUSU --- */}}
+    {{/* --- YENİ SIRA: BÖLÜM 9: E-POSTA ABONELİK KUTUSU --- */}}
     <section class="email-signup-box">
         <div class="email-signup-content">
             <h3>3D Baskı İpuçlarını ve Fırsatları Kaçırma!</h3>

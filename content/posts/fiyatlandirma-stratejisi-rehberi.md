@@ -159,3 +159,9 @@ Dükkan açmak kolay, doğru platformu seçmek zordur. Etsy'de döviz kazanmak, 
 <p>Etsy, Shopier, Amazon ve Dolap... Komisyon oranları, trafik kaynakları ve başlangıç için en doğru platformu seçme rehberi.</p>
 <a href="{{< ref "posts/3d-baski-pazaryerleri-rehberi.md" >}}" class="cta-button">Pazaryeri Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Filament, elektrik, bakım ve işçilik kalemlerini tek seferde görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

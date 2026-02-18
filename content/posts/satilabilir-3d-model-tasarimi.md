@@ -86,3 +86,9 @@ Tasarım yaparken gözden kaçan, ancak baskı masasında hüsranla sonuçlanan 
 <p>Non-manifold yüzeyler, yetersiz duvar kalınlıkları ve tolerans problemleri. Tasarımcıların en sık düştüğü teknik tuzaklar ve çözümleri.</p>
 <a href="{{< ref "posts/tasarimda-yapilan-hatalar.md" >}}" class="cta-button">Tasarım Hataları Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Tasarladığın modellerin baskı maliyetini görmek ve fiyat belirlerken elini güçlendirmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

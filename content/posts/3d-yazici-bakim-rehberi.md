@@ -145,3 +145,9 @@ Makinenizin bakımı tamam ve ilk günkü gibi performanslı çalışıyor. Peki
 <p>Kumpastan spatulaya, deburrer'dan saklama kutularına kadar; bir 3D baskı atölyesinde mutlaka bulunması gereken ek ekipmanları listeledik.</p>
 <a href="{{< ref "posts/3d-yazici-ek-ekipmanlar.md" >}}" class="cta-button">Gerekli Ek Ekipmanlar Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Düzenli bakım sayesinde arızaları ve başarısız baskıları azalttığınızda, maliyet tarafındaki etkisini görmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsiniz.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

@@ -120,3 +120,9 @@ Küçük bir markadan, kurumsal bir üretim atölyesine dönüşüm sancıları.
 <p>İşleri büyütürken yapılan hatalar. Personel yönetimi, üretim takibi ve sürdürülebilir büyümenin formülü.</p>
 <a href="{{< ref "posts/kucuk-markadan-atolyeye.md" >}}" class="cta-button">Büyüme Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Evden atölyeye geçerken kârlı kalmak için her baskının gerçek maliyetini görmek istersen hesaplayıcıyı kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

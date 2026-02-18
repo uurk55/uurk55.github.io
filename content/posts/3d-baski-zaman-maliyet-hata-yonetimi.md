@@ -140,3 +140,9 @@ Logonuzdan paketlemenize, ürünün hikayesinden müşteriye verdiğiniz hisse k
 <p>Sıradan bir satıcıdan, takip edilen bir markaya dönüşmek. Ürünlerinize nasıl karakter kazandırırsınız?</p>
 <a href="{{< ref "posts/markalasma-ve-hikaye-anlatimi.md" >}}" class="cta-button">Markalaşma Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Zaman, fire ve gizli giderleri rakamlara dökmek için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

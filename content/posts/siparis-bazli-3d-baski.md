@@ -148,3 +148,9 @@ Sistemi kurduk, dükkanı açtık, ilk sipariş "Çınn!" sesiyle telefonumuza d
 <p>Yanlış paketleme, eksik adres, unutulan hediyeler... İlk siparişlerinizi felakete değil, 5 yıldızlı bir deneyime dönüştürme rehberi.</p>
 <a href="{{< ref "posts/ilk-10-sipariste-yapilan-hatalar.md" >}}" class="cta-button">Hata ve Çözüm Rehberine Git →</a>
 </div>
+
+<div class="post-cta-box">
+<h3>3D Baskı Maliyetini Hemen Hesapla</h3>
+<p>Sipariş bazlı çalışırken her işin gerçek maliyetini bilmek ve teklif verirken sürpriz yaşamamak için 3D Baskı Maliyet Hesaplama aracını kullanabilirsin.</p>
+<a href="/maliyet-hesaplama/" class="cta-button">Maliyet Hesaplayıcıyı Aç →</a>
+</div>

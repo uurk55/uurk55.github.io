@@ -260,6 +260,24 @@ a.card-link {
     display: none;
 }
 
+/* --- REKLAM ALANLARI GENEL STİLİ --- */
+.ad-slot {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius);
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.ad-slot-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
 .pagination li.next a,
 .pagination li.previous a {
     font-weight: bold;

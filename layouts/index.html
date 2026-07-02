@@ -4,9 +4,52 @@
 <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-container">
-        <h1 class="hero-title">Hayal Et, Tasarla, Gerçeğe Dönüştür</h1>
-        <p class="hero-subtitle">3D baskı dünyasına ilk adımınızı atın, projelerinizi hayata geçirin ve yaratıcılığınızın sınırlarını zorlayın.</p>
-        <a href="/buradan-basla/" class="hero-button">BURADAN BAŞLA</a>
+        <h1 class="hero-title">3D Yazıcını Gelir Kapısına Çevir</h1>
+        <p class="hero-subtitle">Satılacak ürün fikirleri, başlangıç rehberleri ve gerçek rakamlarla baskıdan kazanç stratejileri.</p>
+        <a href="/buradan-basla/" class="hero-button">Başlangıç Rehberi →</a>
+    </div>
+</section>
+
+{{/* --- BÖLÜM 2: 30 GÜN CHALLENGE --- */}}
+<section class="challenge-section">
+    <svg class="challenge-decor challenge-decor-triangle" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+        <polygon points="300,0 300,220 100,0" fill="var(--accent)" opacity="0.25"></polygon>
+    </svg>
+    <svg class="challenge-decor challenge-decor-triangle-sm" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+        <polygon points="0,0 120,0 0,90" fill="var(--accent)" opacity="0.24"></polygon>
+    </svg>
+    <svg class="challenge-decor challenge-decor-rings" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <circle cx="60" cy="140" r="85" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.25"></circle>
+        <circle cx="60" cy="140" r="55" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.25"></circle>
+    </svg>
+    <svg class="challenge-decor challenge-decor-ring-br" viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+        <circle cx="70" cy="70" r="60" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.24"></circle>
+    </svg>
+    <svg class="challenge-decor challenge-decor-hexagon" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <polygon points="50,4 93,27 93,73 50,96 7,73 7,27" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.24"></polygon>
+    </svg>
+    <div class="challenge-container">
+        <h2 class="challenge-title">30 Gün, 30 Ürün Challenge</h2>
+        <p class="challenge-subtitle">Her gün bir ürün basıyor, Dolap'ta satıyorum. Gerçek maliyetler, gerçek satışlar, gerçek rakamlar — hepsini adım adım paylaşıyorum.</p>
+        <div class="challenge-stats">
+            <div class="challenge-stat">
+                <span class="challenge-stat-number">30</span>
+                <span class="challenge-stat-label">Gün</span>
+            </div>
+            <div class="challenge-stat">
+                <span class="challenge-stat-number">30</span>
+                <span class="challenge-stat-label">Ürün</span>
+            </div>
+            <div class="challenge-stat">
+                <span class="challenge-stat-number">%100</span>
+                <span class="challenge-stat-label">Şeffaf</span>
+            </div>
+        </div>
+        <div class="challenge-buttons">
+            <a href="https://instagram.com/edu3dmodel" target="_blank" rel="noopener" class="challenge-btn"><i class="fab fa-instagram"></i> Instagram'da Takip Et</a>
+            <a href="https://tiktok.com/@edu3dmodel" target="_blank" rel="noopener" class="challenge-btn-outline"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://youtube.com/@edu3dmodel" target="_blank" rel="noopener" class="challenge-btn-outline"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
     </div>
 </section>
 
@@ -14,120 +57,127 @@
 
     <section class="who-for-section">
         <h2 class="homepage-section-title">Kimler İçin?</h2>
-        <p class="section-subtitle">3D baskıyı sadece hobi değil, sürdürülebilir bir gelir kaynağı olarak görmek isteyenler için.</p>
         <div class="who-for-grid">
             <div class="who-for-card">
+                <i class="fas fa-house-laptop"></i>
                 <h3>Hobiciler</h3>
-                <p>Akşamları ve hafta sonlarını değerlendirip baskılarının gerçek maliyetini bilerek üretmek isteyenler.</p>
+                <p>Gerçek maliyeti bilerek üretmek isteyenler.</p>
             </div>
             <div class="who-for-card">
+                <i class="fas fa-sack-dollar"></i>
                 <h3>Yan Gelir Arayanlar</h3>
-                <p>Evden sipariş alıp zamanını, elektrik ve bakım giderlerini hesaba katarak kârlı çalışanlar.</p>
+                <p>Evden sipariş alıp kârlı çalışmak isteyenler.</p>
             </div>
             <div class="who-for-card">
+                <i class="fas fa-industry"></i>
                 <h3>Atölye Kurmak İsteyenler</h3>
-                <p>Fiyatlandırma, fire ve gizli giderleri yöneterek ciddi bir 3D baskı atölyesi kurmayı hedefleyenler.</p>
+                <p>Ciddi bir 3D baskı atölyesi kurmayı hedefleyenler.</p>
             </div>
         </div>
     </section>
 
-    <div class="ad-slot">
-        <span class="ad-slot-label">Reklam Alanı</span>
-        <!-- Reklam ağından aldığınız kodu buraya yapıştırın (örn. Google AdSense) -->
-    </div>
+    {{/* --- BÖLÜM 6+7: YAZILAR (ÖNE ÇIKAN + SON YAZILAR BİRLEŞİK) --- */}}
+    {{ $allPosts := sort (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) "Date" "desc" }}
+    {{ $featuredPosts := where $allPosts "Params.featured" true }}
+    {{ $bigCard := "" }}
+    {{ if gt (len $featuredPosts) 0 }}
+        {{ $bigCard = index $featuredPosts 0 }}
+    {{ else if gt (len $allPosts) 0 }}
+        {{ $bigCard = index $allPosts 0 }}
+    {{ end }}
+    {{ if $bigCard }}
+    {{ $bigCardPath := $bigCard.File.Path }}
+    {{ $sideList := first 5 (where $allPosts "File.Path" "ne" $bigCardPath) }}
+    <section class="posts-section">
+        <h2 class="homepage-section-title">Yazılar</h2>
+        <div class="posts-layout">
+            <a href="{{ $bigCard.RelPermalink }}" class="posts-featured-card">
+                <div class="posts-featured-image">
+                    {{ with $bigCard.Params.cover.image }}
+                        <img src="{{ . | relURL }}" alt="{{ $bigCard.Title }}" loading="lazy" decoding="async">
+                    {{ else }}
+                        <div class="image-placeholder-v2"></div>
+                    {{ end }}
+                </div>
+                <div class="posts-featured-content">
+                    <div class="posts-featured-meta">
+                        {{ with $bigCard.Params.categories }}
+                            <span class="meta-category"><i class="fas fa-folder-open"></i> {{ index . 0 }}</span>
+                        {{ end }}
+                        <span><i class="far fa-calendar-alt"></i> {{ partial "format-turkish-date.html" $bigCard.PublishDate }}</span>
+                    </div>
+                    <h3>{{ $bigCard.Title }}</h3>
+                    <p>{{ if $bigCard.Description }}{{ $bigCard.Description }}{{ else }}{{ $bigCard.Summary | plainify | htmlUnescape | truncate 160 }}{{ end }}</p>
+                </div>
+            </a>
+            <div class="posts-side-col">
+                <div class="posts-side-list">
+                    {{ range $sideList }}
+                    <a href="{{ .RelPermalink }}" class="posts-side-item">
+                        {{ $post := . }}
+                        <div class="posts-side-thumb">
+                            {{ with $post.Params.cover.image }}
+                                <img src="{{ . | relURL }}" alt="{{ $post.Title }}" loading="lazy" decoding="async">
+                            {{ else }}
+                                <div class="image-placeholder-v2"></div>
+                            {{ end }}
+                        </div>
+                        <div class="posts-side-content">
+                            <h4>{{ .Title }}</h4>
+                            <span class="posts-side-date">{{ partial "format-turkish-date.html" .PublishDate }}</span>
+                        </div>
+                    </a>
+                    {{ end }}
+                </div>
+                <div class="view-all-posts-container">
+                    <a href="{{ "/posts/" | relLangURL }}" class="btn">Tüm Yazıları Gör →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
 
-    {{/* --- BÖLÜM 3: İKONLU KATEGORİ REHBERİ ("KONULARI KEŞFET") --- */}}
+    {{/* --- BÖLÜM 3: KATEGORİLER --- */}}
     <section class="icon-category-section">
-        <h2 class="homepage-section-title">Konuları Keşfet</h2>
-        <p class="section-subtitle">Nereden başlayacağınızı bilmiyor musunuz? İşte size bir rehber.</p>
+        <h2 class="homepage-section-title">Kategoriler</h2>
+        {{ $topCategories := first 6 (.Site.Taxonomies.categories.ByCount).Reverse }}
         <div class="icon-grid">
-            {{ range .Site.Taxonomies.categories.ByCount }}
+            {{ range $topCategories }}
             <a href="{{ .Page.Permalink }}" class="icon-grid-item">
                 <span class="icon">
-                    {{ if eq .Page.Title "Para Kazanma" }}💰
-                    {{ else if eq .Page.Title "Teknik İpuçları" }}💡
-                    {{ else if eq .Page.Title "Yazıcı İncelemeleri" }}🔧
-                    {{ else if eq .Page.Title "Tasarım" }}🎨
-                    {{ else if eq .Page.Title "Başlangıç Rehberi" }}🚀
-                    {{ else if eq .Page.Title "Kaynaklar" }}📚
-                    {{ else if eq .Page.Title "İleri Seviye" }}🎓
-                    {{ else if eq .Page.Title "Girişimcilik" }}📈
-                    {{ else if eq .Page.Title "Teknoloji Karşılaştırma" }}⚖️
-                    {{ else if eq .Page.Title "Temel Bilgi ve Kurulum" }}🔌
-                    {{ else if eq .Page.Title "Beceri Geliştirme ve İleri Teknikler" }}🧠
-                    {{ else }}📂
+                    {{ if eq .Name "para kazanma" }}<i class="fas fa-coins"></i>
+                    {{ else if eq .Name "teknik ipuçları" }}<i class="fas fa-wrench"></i>
+                    {{ else if eq .Name "donanım ve ekipman" }}<i class="fas fa-microchip"></i>
+                    {{ else if eq .Name "başlangıç rehberi" }}<i class="fas fa-flag-checkered"></i>
+                    {{ else if eq .Name "tasarım ve modelleme" }}<i class="fas fa-cube"></i>
+                    {{ else if eq .Name "temel bilgi ve kurulum" }}<i class="fas fa-plug"></i>
+                    {{ else if eq .Name "tasarım" }}<i class="fas fa-pen-ruler"></i>
+                    {{ else if eq .Name "beceri geliştirme ve ileri teknikler" }}<i class="fas fa-graduation-cap"></i>
+                    {{ else if eq .Name "kaynaklar" }}<i class="fas fa-book-open"></i>
+                    {{ else if eq .Name "teknoloji karşılaştırma" }}<i class="fas fa-scale-balanced"></i>
+                    {{ else if eq .Name "yazıcı incelemeleri" }}<i class="fas fa-print"></i>
+                    {{ else }}<i class="fas fa-folder"></i>
                     {{ end }}
                 </span>
                 <h3>{{ .Page.Title }}</h3>
+                <span class="icon-grid-count">{{ .Count }} yazı</span>
             </a>
             {{ end }}
-            
-            <a href="{{ "/categories/" | relLangURL }}" class="icon-grid-item all-categories-link">
-                <span class="icon">🗂️</span>
-                <h3>Tüm Kategoriler</h3>
+            <a href="{{ "/categories/" | relLangURL }}" class="icon-grid-item all-categories-card">
+                <span class="icon"><i class="fas fa-grip"></i></span>
+                <h3>Tüm Kategoriler →</h3>
             </a>
         </div>
     </section>
 
-    {{/* --- BÖLÜM 4: ÖNE ÇIKAN KATEGORİ (BAŞLANGIÇ REHBERİ) --- */}}
-    <section class="featured-category-section">
-    <div class="featured-category-image">
-        <img src="/images/baslangic-rehberi-kategori.png" alt="3D baskı dünyasına ilk adımı atan bir kişi">
-    </div>
-    <div class="featured-category-content">
-        <h2 class="homepage-section-title no-border">Başlangıç Rehberi</h2>
-        {{/* --- DEĞİŞİKLİK 1 --- */}}
-        <p class="featured-category-description">3D baskı dünyasına ilk adımınızı mı atıyorsunuz? Bu bölümde, doğru yazıcıyı seçmekten ilk başarılı baskınızı almaya kadar bilmeniz gereken her şeyi adım adım anlatan rehberler bulacaksınız.</p>
-        {{/* --- DEĞİŞİKLİK 2 --- */}}
-        <a href="{{ "categories/başlangıç-rehberi" | absURL }}" class="btn">Rehbere Göz At →</a>
-    </div>
-</section>
-
-    {{/* --- BÖLÜM 5: ÖNE ÇIKAN KATEGORİ (PARA KAZANMA) --- */}}
-    <section class="featured-category-section layout-reverse">
-    <div class="featured-category-image">
-        <img src="/images/para-kazanma-kategori.png" alt="3D baskı ile para kazanma konsepti">
-    </div>
-    <div class="featured-category-content">
-        <h2 class="homepage-section-title no-border">3D Baskı ile Para Kazanma</h2>
-        {{/* --- DEĞİŞİKLİK 3 --- */}}
-        <p class="featured-category-description">Hobinizi bir gelir kapısına dönüştürmek mi istiyorsunuz? Bu bölümde, 3D baskı ile nasıl pasif gelir elde edeceğinizi, hangi ürünlerin satıldığını ve kendi işinizi nasıl kurabileceğinizi anlatan rehberler bulacaksınız.</p>
-        {{/* --- DEĞİŞİKLİK 4 --- */}}
-        <a href="{{ "categories/para-kazanma" | absURL }}" class="btn">Gelir Elde Etmeye Başla →</a>
-    </div>
-</section>
-    
-    {{/* --- BÖLÜM 6: EN ÇOK OKUNANLAR --- */}}
-    {{ $featured_pages := where .Site.RegularPages "Params.featured" true }}
-    {{ if gt (len $featured_pages) 0 }}
-        {{ $featured_sorted := sort $featured_pages "Date" "desc" }}
-        {{ $featured_to_show := first 2 $featured_sorted }}
-        <section class="most-read-section">
-            <h2 class="homepage-section-title">Öne Çıkanlar</h2>
-            <div class="featured-posts-grid">
-                {{ range $featured_to_show }}
-                    {{ .Render "summary-card-featured" }}
-                {{ end }}
-            </div>
-        </section>
-    {{ end }}
-
-    {{/* --- BÖLÜM 7: EN SON YAZILAR --- */}}
-<section class="latest-posts-section">
-    <h2 class="homepage-section-title">En Son Yazılar</h2>
-    <div class="all-posts-grid">
-        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 6 }}
-        {{ range $paginator.Pages }}
-            {{ .Render "summary-card-compact" }}
-        {{ end }}
-    </div>
-    <div class="view-all-posts-container">
-        <a href="{{ "/posts/" | relLangURL }}" class="btn">Tüm Yazıları Gör →</a>
-    </div>
-</section>
-
     {{/* --- BÖLÜM 8: BENİM HİKAYEM (YENİ YAPI) --- */}}
 <section class="author-box-section">
+    <svg class="author-box-decor author-box-decor-triangle" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <polygon points="200,0 200,140 70,0" fill="var(--accent)" opacity="0.12"></polygon>
+    </svg>
+    <svg class="author-box-decor author-box-decor-ring" viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+        <circle cx="40" cy="120" r="60" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.13"></circle>
+    </svg>
     <div class="author-box-container">
         <div class="author-box-avatar">
             <img src="{{ "logo.png" | absURL }}" alt="{{ .Site.Title }} logo" loading="lazy" decoding="async">
@@ -135,16 +185,30 @@
         <div class="author-box-content">
             <h2 class="homepage-section-title no-border">Benim Hikayem</h2>
             <p class="author-box-description">Merhaba, ben Uğur. Bu platformu, 3D baskıyı bir hobiden finansal özgürlüğe dönüştürme potansiyelini keşfetmek isteyenler için bir yol haritası sunmak amacıyla kurdum. Kendi deneme-yanılma yolculuğumda öğrendiğim her şeyi sizinle paylaşıyorum.</p>
-            <a href="/hakkimda/" class="btn">Daha Fazlasını Keşfet →</a>
+            <div class="author-cta-group">
+                <a href="/hakkimda/" class="btn">Daha Fazlasını Keşfet →</a>
+                <span class="author-cta-divider"></span>
+                <div class="author-social-links">
+                    <a href="https://instagram.com/edu3dmodel" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@edu3dmodel" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://youtube.com/@edu3dmodel" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
     {{/* --- YENİ SIRA: BÖLÜM 9: E-POSTA ABONELİK KUTUSU --- */}}
     <section class="email-signup-box">
+        <svg class="email-signup-decor email-signup-decor-triangle" viewBox="0 0 220 220" aria-hidden="true" focusable="false">
+            <polygon points="220,0 220,160 80,0" fill="var(--accent)" opacity="0.18"></polygon>
+        </svg>
+        <svg class="email-signup-decor email-signup-decor-ring" viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+            <circle cx="30" cy="130" r="65" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.19"></circle>
+        </svg>
         <div class="email-signup-content">
-            <h3>3D Baskı İpuçlarını ve Fırsatları Kaçırma!</h3>
-            <p>En yeni rehberler, ürün fikirleri ve e-kitap çıktığında özel indirimler doğrudan e-postana gelsin.</p>
+            <h3>Baskıdan Kazanç İpuçları E-postana Gelsin</h3>
+            <p>Satılacak ürün fikirleri, gerçek maliyet/kâr rakamları ve yeni rehberler. Ayda birkaç e-posta, spam yok.</p>
             <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
             <form action="https://app.kit.com/forms/8307581/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8307581" data-uid="30430e4c7f" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}' min-width="400 500 600 700 800"><div data-style="clean"><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="false" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Adresi" placeholder="Email Adresi" required type="email"></div><button data-element="submit" class="formkit-submit formkit-submit"><div class="formkit-spinner"><div></div><div></div><div></div></div><span>Abone Ol</span></button></div><div class="formkit-powered-by-convertkit-container"><a href="https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic" data-element="powered-by" class="formkit-powered-by-convertkit" data-variant="dark" target="_blank" rel="nofollow">Built with Kit</a></div></div>
             </form>

@@ -22,12 +22,6 @@ Bu, en çok aldığım ve cevabı en çok değişen soru! "En iyi yazıcı" diye
 </div>
 </details>
 
-<details>
-<summary>E-kitap ne zaman çıkacak?</summary>
-<div class="faq-content">
-"3D Baskı ile Gelir Elde Etme" konulu e-kitap üzerinde yoğun bir şekilde çalışıyorum. Çıktığında ilk haberdar olmak ve özel lansman indiriminden faydalanmak için ana sayfadaki veya menüdeki <a href="/ekitap/">E-Kitap Bekleme Listesine</a> katılabilirsiniz.
-</div>
-</details>
 
 ---
 

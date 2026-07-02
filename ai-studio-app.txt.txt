@@ -1,0 +1,435 @@
+App.tsx
+import React from 'react';
+import { 
+  Search, Instagram, Link as LinkIcon, ChevronRight, Clock, Calendar, Tag, 
+  Banknote, Wrench, Palette, Lightbulb, Rocket, Monitor, Settings, BookOpen, Layers, LayoutGrid 
+} from 'lucide-react';
+
+const Header = () => (
+  <header className="sticky top-0 z-50 w-full border-b border-slate-700 bg-slate-800/95 backdrop-blur-md">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center justify-between h-20">
+        {/* Logo */}
+        <div className="flex-shrink-0 flex items-center gap-3">
+          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <span className="text-slate-900 font-display font-bold text-xl">E</span>
+          </div>
+          <div>
+            <h1 className="font-display font-bold text-xl tracking-tight text-white">Edu 3D Model</h1>
+            <p className="text-[10px] uppercase tracking-widest text-slate-300 font-medium">Fikirden Ürüne</p>
+          </div>
+        </div>
+
+        {/* Search & Social */}
+        <div className="hidden md:flex items-center gap-6">
+          <div className="relative group">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-white transition-colors" />
+            <input 
+              type="text" 
+              placeholder="Blogda ara..." 
+              className="w-64 pl-10 pr-4 py-2 bg-slate-900/50 border-transparent rounded-full text-sm text-white focus:bg-slate-900/80 focus:border-slate-600 focus:ring-1 focus:ring-slate-600 transition-all outline-none placeholder:text-slate-400"
+            />
+          </div>
+          <div className="flex items-center gap-4 text-slate-300">
+            <a href="#" className="hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+            <a href="#" className="hover:text-white transition-colors"><LinkIcon className="w-5 h-5" /></a>
+          </div>
+        </div>
+      </div>
+      
+      {/* Navigation */}
+      <nav className="hidden md:flex items-center gap-8 pb-4 overflow-x-auto">
+        {['Anasayfa', 'Blog', 'Kategoriler', 'SSS', 'Hakkımda', 'İletişim'].map((item) => (
+          <a key={item} href="#" className="text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap">
+            {item}
+          </a>
+        ))}
+        <a href="#" className="text-sm font-bold text-white hover:text-slate-200 transition-colors uppercase tracking-wider whitespace-nowrap ml-auto">
+          3D Baskı Maliyet Hesaplama
+        </a>
+      </nav>
+    </div>
+  </header>
+);
+
+const Hero = () => (
+  <section className="relative bg-slate-800 pt-16 pb-32">
+    <div className="absolute inset-0 overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1631541909061-71e34a48c937?q=80&w=2070&auto=format&fit=crop" 
+        alt="3D Printer" 
+        className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-zinc-50 via-slate-800/80 to-slate-800/40"></div>
+    </div>
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-lg max-w-4xl mx-auto">
+        Hayal Et, Tasarla, <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Gerçeğe Dönüştür</span>
+      </h2>
+      <p className="text-lg md:text-2xl text-slate-200 mb-10 font-light drop-shadow-md max-w-2xl mx-auto">
+        3D baskı dünyasına ilk adımınızı atın, projelerinizi hayata geçirin ve yaratıcılığınızın sınırlarını zorlayın.
+      </p>
+      <button className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-slate-100 transition-transform hover:scale-105 shadow-xl">
+        Buradan Başla
+      </button>
+    </div>
+  </section>
+);
+
+const TargetAudience = () => {
+  const items = [
+    { title: 'Hobiciler', desc: 'Akşamları ve hafta sonlarını değerlendirip baskılarının gerçek maliyetini bilerek üretmek isteyenler.', icon: Rocket, color: 'bg-blue-500' },
+    { title: 'Yan Gelir Arayanlar', desc: 'Evden sipariş alıp zamanını, elektrik ve bakım giderlerini hesaba katarak kârlı çalışanlar.', icon: Banknote, color: 'bg-emerald-500' },
+    { title: 'Atölye Kurmak İsteyenler', desc: 'Fiyatlandırma, fire ve gizli giderleri yöneterek ciddi bir 3D baskı atölyesi kurmayı hedefleyenler.', icon: Settings, color: 'bg-purple-500' },
+  ];
+
+  return (
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 -mt-20 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {items.map((item, idx) => {
+          const Icon = item.icon;
+          return (
+            <div key={idx} className="bg-white p-8 rounded-2xl shadow-xl shadow-zinc-200/50 hover:-translate-y-2 transition-transform duration-300 group relative overflow-hidden">
+              <div className={`absolute top-0 left-0 w-full h-1 ${item.color}`}></div>
+              <div className={`w-12 h-12 rounded-xl ${item.color} bg-opacity-10 flex items-center justify-center mb-6`}>
+                <Icon className={`w-6 h-6 ${item.color.replace('bg-', 'text-')}`} />
+              </div>
+              <h4 className="font-display text-xl font-bold text-zinc-900 mb-3">{item.title}</h4>
+              <p className="text-zinc-600 leading-relaxed text-sm">{item.desc}</p>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+  );
+};
+
+const Categories = () => {
+  const cats = [
+    { name: 'Para Kazanma', icon: Banknote, color: 'text-emerald-600', bg: 'bg-emerald-50' },
+    { name: 'Beceri Geliştirme', icon: Wrench, color: 'text-blue-600', bg: 'bg-blue-50' },
+    { name: 'Tasarım', icon: Palette, color: 'text-purple-600', bg: 'bg-purple-50' },
+    { name: 'Teknik İpuçları', icon: Lightbulb, color: 'text-amber-600', bg: 'bg-amber-50' },
+    { name: 'Başlangıç Rehberi', icon: Rocket, color: 'text-rose-600', bg: 'bg-rose-50' },
+    { name: 'Donanım & Ekipman', icon: Monitor, color: 'text-indigo-600', bg: 'bg-indigo-50' },
+    { name: 'Kurulum', icon: Settings, color: 'text-slate-600', bg: 'bg-slate-50' },
+    { name: 'Kaynaklar', icon: BookOpen, color: 'text-teal-600', bg: 'bg-teal-50' },
+    { name: 'Modelleme', icon: Layers, color: 'text-orange-600', bg: 'bg-orange-50' },
+    { name: 'Tüm Kategoriler', icon: LayoutGrid, color: 'text-zinc-900', bg: 'bg-zinc-100' },
+  ];
+
+  return (
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-zinc-100/50 rounded-3xl my-8">
+      <div className="mb-12 text-center md:text-left">
+        <h3 className="font-display text-3xl font-bold text-zinc-900 mb-4">Konuları Keşfet</h3>
+        <p className="text-zinc-500 text-lg">Nereden başlayacağınızı bilmiyor musunuz? İşte size bir rehber.</p>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        {cats.map((cat, idx) => {
+          const Icon = cat.icon;
+          return (
+            <a key={idx} href="#" className="group bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md hover:border-zinc-200 transition-all flex flex-col items-center justify-center text-center gap-4">
+              <div className={`w-14 h-14 rounded-full ${cat.bg} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                <Icon className={`w-6 h-6 ${cat.color}`} />
+              </div>
+              <span className="font-medium text-sm text-zinc-800 group-hover:text-zinc-900">{cat.name}</span>
+            </a>
+          )
+        })}
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection = () => (
+  <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Feature 1 */}
+      <div className="bg-white rounded-3xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:shadow-zinc-200/40 transition-all flex flex-col sm:flex-row gap-6 items-center">
+        <div className="w-full sm:w-1/3 aspect-square rounded-2xl overflow-hidden flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop" alt="Başlangıç" className="w-full h-full object-cover" />
+        </div>
+        <div className="space-y-4">
+          <h3 className="font-display text-2xl font-bold text-zinc-900 tracking-tight">Başlangıç Rehberi</h3>
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            Doğru yazıcıyı seçmekten ilk başarılı baskınızı almaya kadar bilmeniz gereken her şeyi adım adım anlatan rehberler.
+          </p>
+          <button className="inline-flex items-center gap-1 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+            Rehbere Göz At <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* Feature 2 */}
+      <div className="bg-white rounded-3xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:shadow-zinc-200/40 transition-all flex flex-col sm:flex-row gap-6 items-center">
+        <div className="w-full sm:w-1/3 aspect-square rounded-2xl overflow-hidden flex-shrink-0">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=800&auto=format&fit=crop" alt="Para Kazanma" className="w-full h-full object-cover" />
+        </div>
+        <div className="space-y-4">
+          <h3 className="font-display text-2xl font-bold text-zinc-900 tracking-tight">3D Baskı ile Para Kazanma</h3>
+          <p className="text-sm text-zinc-600 leading-relaxed">
+            Hobinizi gelire dönüştürün. Pasif gelir elde etme, ürün satışı ve kendi işinizi kurma rehberleri.
+          </p>
+          <button className="inline-flex items-center gap-1 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors">
+            Gelir Elde Etmeye Başla <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+const PostCard = ({ image, title, desc, category, date, readTime, isFeatured = false }: any) => (
+  <article className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:shadow-zinc-200/40 transition-all duration-300">
+    <div className="relative aspect-[16/9] overflow-hidden bg-zinc-100">
+      <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      {isFeatured && (
+        <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md">
+          Öne Çıkan
+        </div>
+      )}
+    </div>
+    <div className="p-6 flex flex-col flex-grow">
+      <h4 className="font-display text-xl font-bold text-zinc-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+        {title}
+      </h4>
+      <p className="text-zinc-600 mb-6 line-clamp-3 text-sm leading-relaxed flex-grow">
+        {desc}
+      </p>
+      <div className="flex items-center gap-4 text-xs font-medium text-zinc-500 uppercase tracking-wide pt-4 border-t border-zinc-100">
+        <div className="flex items-center gap-1.5 text-blue-600">
+          <Tag className="w-3.5 h-3.5" />
+          {category}
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Calendar className="w-3.5 h-3.5" />
+          {date}
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Clock className="w-3.5 h-3.5" />
+          {readTime}
+        </div>
+      </div>
+    </div>
+  </article>
+);
+
+const FeaturedPosts = () => {
+  const posts = [
+    {
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop',
+      title: 'Vergi ve Yasal Konular (Türkiye Özelinde): 3D Baskı İşinizi Yasal Çerçeveye Oturtun',
+      desc: '3D baskı hobinizi resmi bir işletmeye dönüştürürken bilmeniz gerekenler. Şahıs şirketi, esnaf muaflığı ve genç girişimci destekleri hakkında genel bilgilendirme ve uyarılar.',
+      category: 'Para Kazanma',
+      date: '19 Aralık 2025',
+      readTime: '4 dk'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop',
+      title: '3D Baskı Ürünlerini Nerede Satmalı? Tüm Pazaryerleri ve Satış Kanalları Rehberi',
+      desc: 'Shopier, Dolap, Trendyol ve Etsy. Hangi platform kime göre? Komisyon oranları ve en önemlisi: Şirket kurmadan satış yapmanın yasal sınırları ve vergi riskleri.',
+      category: 'Para Kazanma',
+      date: '3 Ekim 2025',
+      readTime: '4 dk'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop',
+      title: '3D Baskı Atölyesi İçin Doğru Ekipman Seçimi',
+      desc: 'Hangi yazıcıyla başlamalı? Reçine mi FDM mi? Atölyenizi kurarken bütçenizi en verimli şekilde kullanmanın yolları ve dikkat etmeniz gerekenler.',
+      category: 'Donanım & Ekipman',
+      date: '15 Eylül 2025',
+      readTime: '5 dk'
+    }
+  ];
+
+  return (
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h3 className="font-display text-3xl font-bold text-zinc-900 mb-10">Öne Çıkanlar</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {posts.map((post, idx) => <PostCard key={idx} {...post} isFeatured />)}
+      </div>
+    </section>
+  );
+};
+
+const LatestPosts = () => {
+  const posts = [
+    {
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop',
+      title: 'Vergi ve Yasal Konular (Türkiye Özelinde): 3D Baskı İşinizi Yasal Çerçeveye Oturtun',
+      desc: '3D baskı hobinizi resmi bir işletmeye dönüştürürken bilmeniz gerekenler. Şahıs şirketi, esnaf muaflığı ve genç girişimci destekleri hakkında genel bilgilendirme ve uyarılar.',
+      category: 'Para Kazanma',
+      date: '19 Aralık 2025',
+      readTime: '4 dk'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop',
+      title: '3D Baskı Servisi Vermek: Yerel İşletmeler İçin Nasıl Hizmet Sunulur?',
+      desc: 'Kendi ürünlerinizi tasarlamadan da 3D baskıdan para kazanın. 3D yazıcınızı bir hizmet aracına dönüştürerek yerel işletmelere, mimarlara ve hobicilere nasıl baskı hizmeti sunacağınızı öğrenin.',
+      category: 'Para Kazanma',
+      date: '12 Aralık 2025',
+      readTime: '4 dk'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2070&auto=format&fit=crop',
+      title: 'Küçük Markadan Atölyeye: Ne Zaman Büyümeli, Ne Zaman Durmalı?',
+      desc: 'Daha fazla yazıcı almak çözüm mü, yoksa yeni bir sorun mu? İşletmenizi ölçeklendirirken (Scaling) yapılan hatalar, personel yönetimi ve "Sürdürülebilir Büyüme" matematiği.',
+      category: 'Para Kazanma',
+      date: '5 Aralık 2025',
+      readTime: '4 dk'
+    }
+  ];
+
+  return (
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h3 className="font-display text-3xl font-bold text-zinc-900 mb-10">En Son Yazılar</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        {posts.map((post, idx) => <PostCard key={idx} {...post} />)}
+      </div>
+      <div className="flex justify-center">
+        <button className="inline-flex items-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 transition-colors">
+          Tüm Yazıları Gör <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+const AboutMe = () => (
+  <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div className="bg-white rounded-3xl p-8 md:p-12 border border-zinc-100 shadow-xl shadow-zinc-200/40 text-center relative overflow-hidden">
+      {/* Decorative background element */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-32 bg-gradient-to-b from-zinc-50 to-transparent"></div>
+      
+      <div className="relative z-10 flex flex-col items-center">
+        <div className="w-32 h-32 rounded-full p-1 bg-white shadow-md mb-8 ring-1 ring-zinc-200">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" alt="Uğur" className="w-full h-full rounded-full object-cover" />
+        </div>
+        <h3 className="font-display text-3xl font-bold text-zinc-900 mb-6">Benim Hikayem</h3>
+        <p className="text-lg text-zinc-600 leading-relaxed max-w-2xl mb-8">
+          Merhaba, ben Uğur. Bu platformu, 3D baskıyı bir hobiden finansal özgürlüğe dönüştürme potansiyelini keşfetmek isteyenler için bir yol haritası sunmak amacıyla kurdum. Kendi deneme-yanılma yolculuğumda öğrendiğim her şeyi sizinle paylaşıyorum.
+        </p>
+        <button className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-full font-medium hover:bg-zinc-800 transition-colors">
+          Daha Fazlasını Keşfet <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  </section>
+);
+
+const Newsletter = () => (
+  <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mb-16">
+    <div className="bg-zinc-900 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-zinc-900/20">
+      {/* Abstract background shapes */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 max-w-2xl mx-auto">
+        <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">3D Baskı İpuçlarını ve Fırsatları Kaçırma!</h3>
+        <p className="text-zinc-400 text-lg mb-10">
+          En yeni rehberler, ürün fikirleri ve e-kitap çıktığında özel indirimler doğrudan e-postana gelsin.
+        </p>
+        <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="E-posta adresiniz" 
+            className="flex-grow px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/20 transition-all"
+            required
+          />
+          <button 
+            type="submit" 
+            className="px-8 py-4 rounded-full bg-white text-zinc-900 font-bold hover:bg-zinc-100 transition-colors whitespace-nowrap"
+          >
+            Abone Ol
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+);
+
+const Footer = () => (
+  <footer className="bg-zinc-950 text-zinc-400 py-16 border-t border-zinc-900">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="col-span-1 md:col-span-1">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+              <span className="text-zinc-900 font-display font-bold text-lg">E</span>
+            </div>
+            <span className="font-display font-bold text-xl text-white">Edu 3D Model</span>
+          </div>
+          <p className="text-sm leading-relaxed">
+            3D baskı teknolojisiyle hobinizi bir iş modeline dönüştürmenize yardımcı oluyorum. Fikirden ürüne, üründen gelire...
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Site Haritası</h4>
+          <ul className="space-y-4 text-sm">
+            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Kategoriler</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Buradan Başla</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">SSS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Daha Fazlası</h4>
+          <ul className="space-y-4 text-sm">
+            <li><a href="#" className="hover:text-white transition-colors">Hakkımda</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">İletişim</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">E-Kitap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Yasal</h4>
+          <ul className="space-y-4 text-sm">
+            <li><a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Çerez Politikası</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Kullanım Şartları</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="pt-8 border-t border-zinc-800 text-center text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>© 2026 Edu 3D Model Dünyası - Tüm Hakları Saklıdır.</p>
+        <div className="flex items-center gap-4">
+          <a href="#" className="hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+          <a href="#" className="hover:text-white transition-colors"><LinkIcon className="w-5 h-5" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900 selection:bg-zinc-900 selection:text-white">
+      <Header />
+      <main>
+        <Hero />
+        <TargetAudience />
+        <Categories />
+        <FeatureSection />
+        <FeaturedPosts />
+        <LatestPosts />
+        <AboutMe />
+        <Newsletter />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+- ----- CSS -----
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}

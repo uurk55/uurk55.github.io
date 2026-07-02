@@ -1,4 +1,4 @@
 <div class="tip-box">
-    {{ if .Get "title" }}<h4>{{ .Get "title" }}</h4>{{ else }}<h4>💡 İpucu</h4>{{ end }}
+    {{ if .Get "title" }}<h4>{{ .Get "title" }}</h4>{{ else }}<h4><i class="fas fa-lightbulb"></i> İpucu</h4>{{ end }}
     {{ .Inner | .Page.RenderString }}
 </div>

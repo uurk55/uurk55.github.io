@@ -16,7 +16,6 @@ Benimle bir proje hakkında konuşmak, işbirliği teklif etmek veya sadece bir 
     <p>Mesaj atmadan önce, aklınızdaki sorunun cevabını belki de sizin için hazırladığım bu bölümde bulabilirsiniz!</p>
     <ul>
         <li><a href="/sss/#hangi-yazici">Hangi 3D yazıcıyı tavsiye edersin?</a></li>
-        <li><a href="/sss/#e-kitap">E-kitap ne zaman çıkacak?</a></li>
         <li><a href="/sss/#isbirligi">İşbirliği ve reklam şartların nelerdir?</a></li>
         <li><a href="/sss/#stl-satis">STL dosyalarımı nerede satabilirim?</a></li>
     </ul>

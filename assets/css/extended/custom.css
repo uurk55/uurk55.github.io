@@ -310,15 +310,37 @@ a.card-link {
 }
 
 .pagination li.active a {
-    background-color: var(--primary);
-    color: var(--accent);
-    border-color: var(--primary);
+    background-color: var(--accent);
+    color: var(--primary);
+    border-color: var(--accent);
     font-weight: bold;
 }
 
 .pagination li.disabled {
     display: none;
 }
+
+/* Düz metin oklarını (« ») Font Awesome ikonlarıyla değiştir */
+.pagination a[aria-label="First"] span,
+.pagination a[aria-label="Previous"] span,
+.pagination a[aria-label="Next"] span,
+.pagination a[aria-label="Last"] span {
+    font-size: 0;
+}
+
+.pagination a[aria-label="First"]::before,
+.pagination a[aria-label="Previous"]::before,
+.pagination a[aria-label="Next"]::before,
+.pagination a[aria-label="Last"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+.pagination a[aria-label="First"]::before { content: "\f100"; }
+.pagination a[aria-label="Previous"]::before { content: "\f053"; }
+.pagination a[aria-label="Next"]::before { content: "\f054"; }
+.pagination a[aria-label="Last"]::before { content: "\f101"; }
 
 /* --- REKLAM ALANLARI GENEL STİLİ --- */
 .ad-slot {
@@ -2270,7 +2292,6 @@ body, html {
     width: 50px;
     height: 50px;
     border-radius: 50%; /* Yuvarlak yapar */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -2339,98 +2360,6 @@ body, html {
 .search-widget-final-enhanced #search-input-final:focus {
     border-color: var(--accent) !important;
     box-shadow: 0 0 8px 0px var(--accent);
-}
-/* ============================================= */
-/* --- BLOG LİSTESİ SIDEBAR STİLLERİ --- */
-/* ============================================= */
-
-/* Ana taşıyıcı için Grid yapısı */
-.page-with-sidebar {
-    display: grid;
-    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
-    gap: 40px; /* Sütunlar arası boşluk */
-}
-
-/* Sidebar genel stilleri */
-.sidebar-left {
-    width: 100%;
-}
-
-.widget {
-    background-color: var(--card-background);
-    padding: 25px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    margin-bottom: 30px;
-}
-
-.widget-title {
-    font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.widget-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.widget-list li {
-    margin-bottom: 10px;
-}
-
-.widget-list li:last-child {
-    margin-bottom: 0;
-}
-
-.widget-list li a {
-    text-decoration: none;
-    color: var(--content);
-    display: flex;
-    justify-content: space-between;
-    transition: color 0.2s ease;
-}
-
-.widget-list li a:hover {
-    color: var(--accent-dark);
-}
-
-.widget-list li a span {
-    color: var(--secondary);
-    font-size: 0.9em;
-}
-
-/* Sidebar'daki arama kutusunun ID'sini değiştirerek header'daki ile çakışmasını önledik,
-   bu yüzden stillerini de ayrı veriyoruz. */
-#search-input-sidebar {
-    width: 100%;
-    padding: 10px 15px !important; /* !important ile önceliği artırıyoruz */
-    border: 1px solid var(--border-color) !important;
-    border-radius: var(--radius) !important;
-}
-
-/* MOBİL UYUMLULUK */
-@media (max-width: 992px) {
-    .page-with-sidebar {
-        grid-template-columns: 1fr; /* Tek sütuna düşür */
-        gap: 0; /* Boşluğu sıfırla */
-    }
-
-    .main-content-right {
-       margin-top: 40px; /* Mobilde sidebar ile içerik arasına boşluk koy */
-    }
-}
-/* Sidebar'daki aktif kategori linkini vurgular */
-.widget-list li.active-widget-link a {
-    color: var(--accent-dark);
-    font-weight: bold;
-}
-
-.widget-list li.active-widget-link a span {
-    color: var(--accent-dark);
 }
 /* ============================================= */
 /* --- YENİ BLOG LİSTE GÖRÜNÜMÜ VE DÜZELTMELER --- */
@@ -2541,197 +2470,6 @@ body, html {
 .sidebar-left .search-widget-final-enhanced:focus-within #search-input-sidebar {
     padding-left: 15px !important;
 }
-/* ============================================= */
-/* --- BLOG LİSTESİ SIDEBAR & LİSTE GÖRÜNÜMÜ --- */
-/* ============================================= */
-
-/* 1. SIDEBAR VE İKİ SÜTUNLU ANA YAPI */
-
-.page-with-sidebar {
-    display: grid;
-    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
-    gap: 40px;
-}
-
-.sidebar-left {
-    width: 100%;
-}
-
-.widget {
-    background-color: var(--card-background);
-    padding: 25px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    margin-bottom: 30px;
-}
-
-.widget-title {
-    font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.widget-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.widget-list li {
-    margin-bottom: 10px;
-}
-.widget-list li:last-child { margin-bottom: 0; }
-
-.widget-list li a {
-    text-decoration: none;
-    color: var(--content);
-    display: flex;
-    justify-content: space-between;
-    transition: color 0.2s ease;
-}
-
-.widget-list li a:hover {
-    color: var(--accent-dark);
-}
-
-.widget-list li a span {
-    color: var(--secondary);
-    font-size: 0.9em;
-}
-
-.widget-list li.active-widget-link a,
-.widget-list li.active-widget-link a span {
-    color: var(--accent-dark);
-    font-weight: bold;
-}
-
-/* 2. SIDEBAR ARAMA İKONU DÜZELTMESİ */
-#search-input-sidebar {
-    padding-left: 15px !important;
-}
-
-.sidebar-left .search-widget-final-enhanced {
-    position: relative;
-}
-
-.sidebar-left .search-widget-final-enhanced svg {
-    display: none; /* Sidebar'da arama ikonunu tamamen gizliyoruz */
-}
-
-/* 3. YENİ LİSTE GÖRÜNÜMÜ (IZGARA YERİNE) */
-
-.post-list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.post-list-item {
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    transition: all 0.3s ease;
-    display: flex;
-}
-
-.post-list-item:hover {
-    border-color: var(--accent);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transform: translateY(-5px);
-}
-
-.post-list-link {
-    display: contents;
-    text-decoration: none;
-    color: inherit;
-}
-
-.post-list-image-container {
-    flex-basis: 300px;
-    flex-shrink: 0;
-}
-
-.post-list-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--radius) 0 0 var(--radius);
-}
-
-.post-list-content {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.compact-card .post-list-category {
-    display: inline-block;
-    background-color: var(--accent);
-    color: var(--primary) !important;
-    padding: 3px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-    align-self: flex-start;
-}
-
-.post-list-title {
-    font-size: 1.5rem;
-    margin: 0 0 10px 0;
-}
-
-.post-list-summary {
-    font-size: 0.95rem;
-    color: var(--secondary);
-    line-height: 1.6;
-    flex-grow: 1;
-}
-
-.post-list-meta {
-    font-size: 0.85rem;
-    color: var(--secondary);
-    margin-top: 20px;
-}
-
-.post-list-meta .meta-separator {
-    margin: 0 5px;
-}
-
-/* 4. MOBİL UYUMLULUK */
-@media (max-width: 992px) {
-    .page-with-sidebar {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    .main-content-right {
-       margin-top: 40px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .post-list-item {
-        flex-direction: column;
-    }
-    .post-list-image-container {
-       height: 200px;
-       flex-basis: auto;
-    }
-    .post-list-image-container img {
-        border-radius: var(--radius) var(--radius) 0 0;
-    }
-}
-/* ============================================= */
-/* --- BLOG LİSTESİ ÜST BOŞLUK AYARI --- */
-/* ============================================= */
-
-/* Blog listesi sayfasının üstüne boşluk ekler */
-.page-with-sidebar {
-    margin-top: 40px;
-}
-/* ============================================= */
 /* --- HAKKIMDA SAYFASI YENİ TASARIMI --- */
 /* ============================================= */
 
@@ -2916,29 +2654,73 @@ body, html {
 
 .page-with-sidebar {
     display: grid;
-    grid-template-columns: 300px 1fr; /* 300px sidebar (sol), kalan alan ana içerik (sağ) */
+    grid-template-columns: 320px 1fr; /* 320px sidebar (sol), kalan alan ana içerik (sağ) */
     gap: 40px;
     margin-top: 40px; /* Üst menüyle arasına boşluk koyar */
 }
 
 .sidebar-left {
     width: 100%;
+    min-width: 0;
+}
+
+.main-content-right {
+    width: 100%;
+    min-width: 0;
 }
 
 .widget {
-    background-color: var(--card-background);
-    padding: 25px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 .widget-title {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--accent-dark);
     margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 16px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(201, 143, 45, 0.3);
+}
+
+.sidebar-search-form {
+    position: relative;
+}
+
+.sidebar-search-form input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: var(--card-background);
+    color: var(--content);
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-search-form input::placeholder {
+    color: var(--secondary);
+}
+
+.sidebar-search-form input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(201, 143, 45, 0.15);
+}
+
+.sidebar-search-form button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--accent-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .widget-list {
@@ -2948,7 +2730,7 @@ body, html {
 }
 
 .widget-list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .widget-list li:last-child { margin-bottom: 0; }
 
@@ -2956,7 +2738,10 @@ body, html {
     text-decoration: none;
     color: var(--content);
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    padding: 6px 0;
     transition: color 0.2s ease;
 }
 
@@ -2964,13 +2749,17 @@ body, html {
     color: var(--accent-dark);
 }
 
-.widget-list li a span {
-    color: var(--secondary);
-    font-size: 0.9em;
+.widget-list-count {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+    background-color: rgba(201, 143, 45, 0.12);
+    padding: 2px 9px;
+    border-radius: 20px;
 }
 
-.widget-list li.active-widget-link a,
-.widget-list li.active-widget-link a span {
+.widget-list li.active-widget-link a {
     color: var(--accent-dark);
     font-weight: bold;
 }
@@ -3056,19 +2845,6 @@ body, html {
 }
 
 
-/* 3. SIDEBAR ARAMA İKONU DÜZELTMESİ */
-
-#search-input-sidebar {
-    padding-left: 15px !important;
-}
-
-.sidebar-left .search-widget-final-enhanced {
-    position: relative;
-}
-
-.sidebar-left .search-widget-final-enhanced svg {
-    display: none; /* Sidebar'da ikonu tamamen gizliyoruz */
-}
 
 
 /* 4. MOBİL UYUMLULUK */
@@ -3700,13 +3476,22 @@ body, html {
 }
 
 .post-card-grid-final {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    width: 100%;
+    gap: 25px;
+    box-sizing: border-box;
 }
 .post-card-v2 {
     display: flex; flex-direction: column; background-color: var(--card-background);
     border: 1px solid var(--border-color); border-radius: var(--radius);
     text-decoration: none; color: var(--content); transition: all 0.2s ease-in-out;
     overflow: hidden;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
 }
 .post-card-image-v2 {
     height: 180px; width: 100%; overflow: hidden;
@@ -3720,7 +3505,7 @@ body, html {
     font-size: 2.5rem; color: var(--secondary); font-weight: bold;
 }
 .post-card-content-v2 {
-    padding: 20px; display: flex; flex-direction: column; flex-grow: 1;
+    padding: 28px; display: flex; flex-direction: column; flex-grow: 1;
 }
 .post-card-v2 .post-title {
     font-size: 1.2rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px;
@@ -3744,10 +3529,6 @@ body, html {
 .post-status-v2 {
     font-size: 0.7rem; font-weight: bold; padding: 3px 8px; border-radius: 20px; line-height: 1;
 }
-.post-card-v2.published:hover {
-    border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-.post-card-v2.published:hover .post-card-image-v2 img { transform: scale(1.05); }
 .post-card-v2.published .post-status-v2 { background-color: #28a745; color: #fff; }
 .post-card-v2.planned { cursor: not-allowed; }
 .post-card-v2.planned .post-title,
@@ -3902,15 +3683,14 @@ html {
 /* 2. Fare üzerine gelince uygulanacak efektleri tanımlıyoruz */
 
 .post-card-v2.published:hover {
-    /* Mevcut hover efektlerini koruyoruz */
     border-color: var(--accent);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
-/* Fare üzerine gelince kapak fotoğrafını %5 büyüt */
+/* Fare üzerine gelince kapak fotoğrafını büyüt */
 .post-card-v2.published:hover .post-card-image-v2 img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 /* Fare üzerine gelince "YAYINLANDI" etiketine bir parlama ekle */
@@ -4161,81 +3941,72 @@ html {
     display: none !important;
 }
 /* ============================================= */
-/* --- KATEGORİ SAYFASI BAŞLIK KUTUSU --- */
+/* --- BLOG/KATEGORİ SAYFASI: BREADCRUMB + SADE BAŞLIK --- */
 /* ============================================= */
 
-.category-header-box {
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 30px;
-    margin-bottom: 40px; /* Altındaki yazı listesiyle arasını açar */
+.simple-breadcrumb {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 16px;
 }
 
-.category-header-box h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 10px;
+.simple-breadcrumb a {
+    color: var(--secondary);
+    text-decoration: none;
 }
 
-.category-header-box p {
+.simple-breadcrumb a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.simple-breadcrumb-sep {
+    color: var(--accent);
+    margin: 0 6px;
+}
+
+.simple-breadcrumb-current {
+    color: var(--content);
+    font-weight: 600;
+}
+
+.simple-page-hero {
+    padding: 6px 0 32px 0;
+    text-align: left;
+}
+
+.simple-page-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: var(--content);
+}
+
+.simple-page-title-icon {
+    color: var(--accent);
+    font-size: 0.85em;
+    display: inline-flex;
+}
+
+.simple-page-description {
     font-size: 1.1rem;
     color: var(--secondary);
-    margin-bottom: 0;
-}
-/* ============================================= */
-/* --- BLOG/KATEGORİ SAYFASI BAŞLIK TASARIMI --- */
-/* ============================================= */
-
-.category-hero-section-v3 {
-    position: relative;
-    padding: 40px; /* <<< DEĞİŞİKLİK: Dikey boşluğu 60px'ten 40px'e düşürdük */
-    margin-bottom: 40px;
-    border-radius: var(--radius);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    color: #fff;
-    background-color: var(--primary);
-}
-
-.category-hero-overlay {
-    position: absolute;
-    top: -20px; right: -20px; bottom: -20px; left: -20px;
-    background: inherit;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px) brightness(0.6);
-    z-index: 1;
-}
-
-.category-hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-.category-hero-title {
-    font-size: 2.5rem; /* <<< DEĞİŞİKLİK: Başlık fontunu kutuyla orantılı olarak küçülttük */
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.category-hero-description {
-    font-size: 1.2rem;
     max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    opacity: 0.9;
+    margin: 0;
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .category-hero-title { font-size: 2.2rem; }
-    .category-hero-description { font-size: 1rem; }
+    .simple-page-hero {
+        padding: 4px 0 24px 0;
+    }
+    .simple-page-title {
+        font-size: 1.7rem;
+    }
 }
 /* ============================================= */
 /* --- FİLTREYİ TEMİZLE LİNKİ STİLİ (GERİ GELDİ) --- */
@@ -4254,45 +4025,6 @@ html {
     text-decoration: underline;
 }
 /* ============================================= */
-/* --- LİSTE SAYFASI BAŞLIK TASARIMI (FİNAL) --- */
-/* ============================================= */
-
-.category-hero-final {
-    background-color: var(--primary);
-    border-radius: var(--radius);
-    padding: 40px; /* <<< DEĞİŞİKLİK: Dikey boşluğu 50px'ten 40px'e düşürdük */
-    margin-bottom: 40px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.category-hero-title-final {
-    font-size: 2.5rem; /* <<< DEĞİŞİKLİK: Başlık fontunu kutuyla orantılı olarak küçülttük */
-    color: var(--on-dark);
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.category-hero-description-final {
-    font-size: 1.2rem;
-    color: rgba(245,242,236,0.8);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
-/* ============================================= */
-/* --- BLOG/KATEGORİ VARSAYILAN ARKA PLAN --- */
-/* ============================================= */
-
-/* Kategori hero bölümüne, eğer HTML içinde bir 'style' ile resim atanmamışsa,
-   bu varsayılan arka plan resmini ve rengini uygula. */
-.category-hero-section-v3 {
-    background-color: var(--primary);
-    background-image: url('/images/cat-bg-default.png');
-    background-size: cover;
-    background-position: center;
-}
-/* ============================================= */
 /* --- POPÜLER YAZILAR WIDGET TASARIMI (FİNAL) --- */
 /* ============================================= */
 
@@ -4308,7 +4040,7 @@ html {
 }
 .popular-post-card {
     display: flex;
-    align-items: center; /* <<< DEĞİŞİKLİK: Dikey hizalamayı garantiler */
+    align-items: flex-start;
     gap: 12px;
     text-decoration: none;
     border-radius: var(--radius);
@@ -4322,8 +4054,8 @@ html {
 }
 
 .popular-post-image {
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     flex-shrink: 0;
     border-radius: var(--radius);
     overflow: hidden;
@@ -4350,10 +4082,19 @@ html {
     font-weight: 500;
     color: var(--content);
     font-size: 0.9rem;
-    line-height: 1.3; /* <<< DEĞİŞİKLİK: Satır aralığını minimuma indirir */
-    margin: 0;          /* <<< DEĞİŞİKLİK: Tüm dış boşlukları sıfırlar */
-    padding: 0;         /* <<< DEĞİŞİKLİK: Tüm iç boşlukları sıfırlar */
-    display: block;     /* <<< DEĞİŞİKLİK: Elementin tam genişliği kullanmasını sağlar */
+    line-height: 1.3;
+    margin: 0 0 4px 0;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.popular-post-date {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--secondary);
 }
 /* ============================================= */
 /* --- SSS SAYFASI TASARIMI (GELİŞTİRİLMİŞ v2) --- */

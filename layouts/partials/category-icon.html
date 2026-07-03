@@ -1,0 +1,14 @@
+{{- $name := . -}}
+{{- if eq $name "para kazanma" }}<i class="fas fa-coins"></i>
+{{- else if eq $name "teknik ipuçları" }}<i class="fas fa-wrench"></i>
+{{- else if eq $name "donanım ve ekipman" }}<i class="fas fa-microchip"></i>
+{{- else if eq $name "başlangıç rehberi" }}<i class="fas fa-flag-checkered"></i>
+{{- else if eq $name "tasarım ve modelleme" }}<i class="fas fa-cube"></i>
+{{- else if eq $name "temel bilgi ve kurulum" }}<i class="fas fa-plug"></i>
+{{- else if eq $name "tasarım" }}<i class="fas fa-pen-ruler"></i>
+{{- else if eq $name "beceri geliştirme ve ileri teknikler" }}<i class="fas fa-graduation-cap"></i>
+{{- else if eq $name "kaynaklar" }}<i class="fas fa-book-open"></i>
+{{- else if eq $name "teknoloji karşılaştırma" }}<i class="fas fa-scale-balanced"></i>
+{{- else if eq $name "yazıcı incelemeleri" }}<i class="fas fa-print"></i>
+{{- else }}<i class="fas fa-folder"></i>
+{{- end -}}

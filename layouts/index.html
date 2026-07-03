@@ -128,21 +128,7 @@
         <div class="icon-grid">
             {{ range $topCategories }}
             <a href="{{ .Page.Permalink }}" class="icon-grid-item">
-                <span class="icon">
-                    {{ if eq .Name "para kazanma" }}<i class="fas fa-coins"></i>
-                    {{ else if eq .Name "teknik ipuçları" }}<i class="fas fa-wrench"></i>
-                    {{ else if eq .Name "donanım ve ekipman" }}<i class="fas fa-microchip"></i>
-                    {{ else if eq .Name "başlangıç rehberi" }}<i class="fas fa-flag-checkered"></i>
-                    {{ else if eq .Name "tasarım ve modelleme" }}<i class="fas fa-cube"></i>
-                    {{ else if eq .Name "temel bilgi ve kurulum" }}<i class="fas fa-plug"></i>
-                    {{ else if eq .Name "tasarım" }}<i class="fas fa-pen-ruler"></i>
-                    {{ else if eq .Name "beceri geliştirme ve ileri teknikler" }}<i class="fas fa-graduation-cap"></i>
-                    {{ else if eq .Name "kaynaklar" }}<i class="fas fa-book-open"></i>
-                    {{ else if eq .Name "teknoloji karşılaştırma" }}<i class="fas fa-scale-balanced"></i>
-                    {{ else if eq .Name "yazıcı incelemeleri" }}<i class="fas fa-print"></i>
-                    {{ else }}<i class="fas fa-folder"></i>
-                    {{ end }}
-                </span>
+                <span class="icon">{{ partial "category-icon.html" .Name }}</span>
                 <h3>{{ .Page.Title }}</h3>
                 <span class="icon-grid-count">{{ .Count }} yazı</span>
             </a>

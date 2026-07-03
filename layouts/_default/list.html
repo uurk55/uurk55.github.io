@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="page-with-sidebar">
-    
+
     <aside class="sidebar-left">
         <div class="sticky-sidebar-wrapper">
             <div class="widget">
@@ -19,7 +19,10 @@
                 <ul class="widget-list">
                     {{- range .Site.Taxonomies.categories.ByCount -}}
                     <li class="{{ if eq .Page.Title $.Title }}active-widget-link{{ end }}">
-                        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}<span>({{ .Count }})</span></a>
+                        <a href="{{ .Page.Permalink }}">
+                            <span>{{ .Page.Title }}</span>
+                            <span class="widget-list-count">{{ .Count }}</span>
+                        </a>
                     </li>
                     {{- end -}}
                 </ul>
@@ -40,52 +43,66 @@
             </div>
             <div class="popular-post-content">
                 <span class="popular-post-title">{{ .Title }}</span>
+                <span class="popular-post-date">{{ partial "format-turkish-date.html" .PublishDate }}</span>
             </div>
         </a>
         {{- end -}}
     </div>
 </div>
 {{ end }}
-        </div> 
+        </div>
     </aside>
 
     <main class="main-content-right">
-        
-        {{ $title := "Tüm Yazılar" }}
-        {{ $description := "En yeni içerikleri ve rehberleri burada bulabilirsiniz." }}
-        {{ $bgImage := "" }}
+
+        {{ $title := "Blog" }}
+        {{ $description := "Gerçek deneyimler, rehberler ve baskıdan kazanç stratejileri - tümü tek yerde." }}
+        {{ $categoryName := "" }}
 
         {{ if eq .Kind "term" }}
             {{ $title = .Title }}
+            {{ $categoryName = .Data.Term | lower }}
             {{ $categoryContentPages := where site.Pages "Section" "categories" }}
             {{- range $categoryContentPages -}}
                 {{- if eq (.Title | urlize) ($.Title | urlize) -}}
                     {{- $description = .Description -}}
-                    {{- with .Params.cover.image -}}
-                        {{- $bgImage = printf "/images/%s" . | relURL -}}
-                    {{- end -}}
                 {{- end -}}
             {{- end -}}
-        {{ else }}
-            {{ $bgImage = "/images/cat-bg-default.png" | relURL }}
         {{ end }}
 
-        {{/* --- ANA DEĞİŞİKLİK BURADA --- */}}
-        <div class="category-hero-section-v3" {{ if $bgImage }}style="background-image: url('{{ $bgImage }}');"{{ end }}>
-            <div class="category-hero-overlay"></div>
-            <div class="category-hero-content">
-                <h1 class="category-hero-title">{{ $title }}</h1>
-                {{ with $description }}
-                    <p class="category-hero-description">{{ . }}</p>
+        <nav class="simple-breadcrumb">
+            <a href="{{ "" | relLangURL }}">Ana Sayfa</a>
+            {{ if eq .Kind "term" }}
+                <span class="simple-breadcrumb-sep">→</span>
+                <a href="{{ "/categories/" | relLangURL }}">Kategoriler</a>
+                <span class="simple-breadcrumb-sep">→</span>
+                <span class="simple-breadcrumb-current">{{ $title }}</span>
+            {{ else }}
+                <span class="simple-breadcrumb-sep">→</span>
+                <span class="simple-breadcrumb-current">Blog</span>
+            {{ end }}
+        </nav>
+
+        <div class="simple-page-hero">
+            <h1 class="simple-page-title">
+                {{ if eq .Kind "term" }}
+                    <span class="simple-page-title-icon">{{ partial "category-icon.html" $categoryName }}</span>
+                {{ else }}
+                    <span class="simple-page-title-icon"><i class="fas fa-newspaper"></i></span>
                 {{ end }}
-            </div>
+                {{ $title }}
+            </h1>
+            {{ with $description }}
+                <p class="simple-page-description">{{ . }}</p>
+            {{ end }}
         </div>
-        
+
         <div class="post-card-grid-final">
             {{- range .Paginator.Pages }}
                 {{ .Render "summary-card-compact" }}
             {{- end }}
         </div>
+
         {{- partial "pagination.html" . -}}
     </main>
 </div>

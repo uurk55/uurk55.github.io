@@ -888,6 +888,11 @@ body > footer.footer:not(.footer-v2) {
 /* Ana Sayfa Hero Bölümü Eksik Stili - DÜZELTME */
 .hero-section {
     position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     background-image: url('/images/hero-arkaplan.png');
     background-size: cover;
     background-position: center;
@@ -899,6 +904,11 @@ body > footer.footer:not(.footer-v2) {
     text-align: center;
     color: #fff;
     margin-bottom: 40px;
+    overflow: hidden;
+}
+
+main.main:has(> .hero-section) {
+    margin-top: 0;
 }
 
 .hero-overlay {
@@ -1562,8 +1572,8 @@ body, html {
 
 .hero-button {
     display: inline-block;
-    background-color: var(--primary);
-    color: var(--accent);
+    background-color: var(--accent);
+    color: var(--primary);
     padding: 15px 35px;
     border-radius: var(--radius);
     text-decoration: none;
@@ -1574,7 +1584,7 @@ body, html {
 }
 
 .hero-button:hover {
-    background-color: #000000;
+    background-color: var(--accent-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -1859,9 +1869,9 @@ body, html {
 
 .icon-grid-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-    border-color: var(--primary);
-    color: var(--primary);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    border-color: var(--accent);
+    color: var(--content);
 }
 
 .icon-grid-item .icon {
@@ -1892,28 +1902,27 @@ body, html {
     white-space: nowrap;
 }
 
-.icon-grid-item.all-categories-card {
-    grid-column: 2 / 3;
+.all-categories-band {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 14px 18px;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
     color: var(--accent-dark);
     font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: all 0.2s ease-in-out;
 }
 
-.icon-grid-item.all-categories-card:hover {
-    color: var(--primary);
-}
-
-.icon-grid-item.all-categories-card h3 {
-    flex-grow: 0;
-}
-
-@media (max-width: 768px) {
-    .icon-grid-item.all-categories-card {
-        grid-column: 1 / -1;
-        max-width: 260px;
-        margin: 0 auto;
-        width: 100%;
-    }
+.all-categories-band:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    border-color: var(--accent);
+    color: var(--accent-dark);
 }
 
 
@@ -2159,11 +2168,6 @@ body, html {
 /* ============================================= */
 /* --- HEADER & MENÜ GELİŞTİRMELERİ (BİRLEŞİK) --- */
 /* ============================================= */
-
-/* 1. Menü ve Hero arasına boşluk ekleme */
-.hero-section {
-    margin-top: 30px;
-}
 
 /* 2. E-Kitap butonunu öne çıkarma */
 .header-main-nav .cta-button a {
@@ -3103,59 +3107,6 @@ body, html {
     margin-bottom: 40px; 
 }
 
-.who-for-section {
-    margin-top: 80px;
-}
-
-.who-for-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.who-for-card {
-    text-align: center;
-    padding: 0;
-}
-
-.who-for-card i {
-    font-size: 1.6rem;
-    color: var(--accent-dark);
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.who-for-card h3 {
-    margin-top: 0;
-    margin-bottom: 6px;
-    font-size: 1.1rem;
-    color: var(--content);
-}
-
-.who-for-card p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: var(--secondary);
-    line-height: 1.5;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-@media (max-width: 992px) {
-    .who-for-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 700px) {
-    .who-for-grid {
-        grid-template-columns: 1fr;
-    }
-    .who-for-section {
-        margin-top: 50px;
-    }
-}
 /* ============================================= */
 /* --- ANA SAYFA "YAZILAR" BÖLÜMÜ (EDITORIAL) --- */
 /* ============================================= */
@@ -3195,13 +3146,32 @@ body, html {
 
 .posts-featured-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
     transform: translateY(-3px);
 }
 
 .posts-featured-image {
+    position: relative;
     aspect-ratio: 2 / 1;
     overflow: hidden;
+}
+
+.posts-featured-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--accent);
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
 }
 
 .posts-featured-image img {
@@ -3213,7 +3183,7 @@ body, html {
 }
 
 .posts-featured-card:hover .posts-featured-image img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 .posts-featured-content {
@@ -3251,6 +3221,16 @@ body, html {
     align-items: center;
     text-decoration: none;
     color: var(--content);
+    padding: 8px;
+    margin: -8px;
+    border-radius: var(--radius);
+    transition: all 0.25s ease;
+}
+
+.posts-side-item:hover {
+    background-color: var(--card-background);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
 }
 
 .posts-side-thumb {
@@ -3266,6 +3246,11 @@ body, html {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.posts-side-item:hover .posts-side-thumb img {
+    transform: scale(1.08);
 }
 
 .posts-side-content h4 {

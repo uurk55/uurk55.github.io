@@ -55,33 +55,14 @@
 
 <div class="homepage-content">
 
-    <section class="who-for-section">
-        <h2 class="homepage-section-title">Kimler İçin?</h2>
-        <div class="who-for-grid">
-            <div class="who-for-card">
-                <i class="fas fa-house-laptop"></i>
-                <h3>Hobiciler</h3>
-                <p>Gerçek maliyeti bilerek üretmek isteyenler.</p>
-            </div>
-            <div class="who-for-card">
-                <i class="fas fa-sack-dollar"></i>
-                <h3>Yan Gelir Arayanlar</h3>
-                <p>Evden sipariş alıp kârlı çalışmak isteyenler.</p>
-            </div>
-            <div class="who-for-card">
-                <i class="fas fa-industry"></i>
-                <h3>Atölye Kurmak İsteyenler</h3>
-                <p>Ciddi bir 3D baskı atölyesi kurmayı hedefleyenler.</p>
-            </div>
-        </div>
-    </section>
-
     {{/* --- BÖLÜM 6+7: YAZILAR (ÖNE ÇIKAN + SON YAZILAR BİRLEŞİK) --- */}}
     {{ $allPosts := sort (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) "Date" "desc" }}
     {{ $featuredPosts := where $allPosts "Params.featured" true }}
     {{ $bigCard := "" }}
+    {{ $isFeatured := false }}
     {{ if gt (len $featuredPosts) 0 }}
         {{ $bigCard = index $featuredPosts 0 }}
+        {{ $isFeatured = true }}
     {{ else if gt (len $allPosts) 0 }}
         {{ $bigCard = index $allPosts 0 }}
     {{ end }}
@@ -93,6 +74,9 @@
         <div class="posts-layout">
             <a href="{{ $bigCard.RelPermalink }}" class="posts-featured-card">
                 <div class="posts-featured-image">
+                    {{ if $isFeatured }}
+                        <span class="posts-featured-badge"><i class="fas fa-star"></i> Öne Çıkan</span>
+                    {{ end }}
                     {{ with $bigCard.Params.cover.image }}
                         <img src="{{ . | relURL }}" alt="{{ $bigCard.Title }}" loading="lazy" decoding="async">
                     {{ else }}
@@ -140,7 +124,7 @@
     {{/* --- BÖLÜM 3: KATEGORİLER --- */}}
     <section class="icon-category-section">
         <h2 class="homepage-section-title">Kategoriler</h2>
-        {{ $topCategories := first 6 (.Site.Taxonomies.categories.ByCount).Reverse }}
+        {{ $topCategories := first 6 .Site.Taxonomies.categories.ByCount }}
         <div class="icon-grid">
             {{ range $topCategories }}
             <a href="{{ .Page.Permalink }}" class="icon-grid-item">
@@ -163,11 +147,10 @@
                 <span class="icon-grid-count">{{ .Count }} yazı</span>
             </a>
             {{ end }}
-            <a href="{{ "/categories/" | relLangURL }}" class="icon-grid-item all-categories-card">
-                <span class="icon"><i class="fas fa-grip"></i></span>
-                <h3>Tüm Kategoriler →</h3>
-            </a>
         </div>
+        <a href="{{ "/categories/" | relLangURL }}" class="all-categories-band">
+            <i class="fas fa-grip"></i> Tüm Kategoriler →
+        </a>
     </section>
 
     {{/* --- BÖLÜM 8: BENİM HİKAYEM (YENİ YAPI) --- */}}

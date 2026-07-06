@@ -1,6 +1,6 @@
 ---
 title: "Kategoriler"
-_build:
+build:
   list: never
   render: never
 ---

@@ -550,60 +550,9 @@ a.card-link {
     margin: 0 auto;
     line-height: 1.5;
 }
-/* --- E-POSTA ABONELİK KUTUSU --- */
-.email-signup-box {
-    background-color: var(--code-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 40px;
-    margin: 60px 0;
-    text-align: center;
-}
-
-.email-signup-content h3 {
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: var(--primary);
-}
-
-.email-signup-content p {
-    font-size: 1.1em;
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    color: var(--secondary);
-}
-
-/* ConvertKit Formunu Hedefleme */
-.email-signup-box .formkit-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-.email-signup-box .formkit-field {
-    margin-bottom: 10px;
-}
-.email-signup-box .formkit-input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    font-size: 1em;
-}
-.email-signup-box .formkit-submit {
-    width: 100%;
-    padding: 12px 25px;
-    border: none;
-    background-color: var(--primary) !important;
-    color: var(--primary-content) !important;
-    font-weight: bold;
-    border-radius: var(--radius);
-    cursor: pointer;
-    transition: filter 0.2s;
-    font-size: 1em;
-}
-.email-signup-box .formkit-submit:hover {
-    filter: brightness(1.1);
-}
+/* E-posta abonelik kutusunun asıl stili aşağıda "CONVERTKIT FORM STİLİ
+   UYARLAMASI" bölümünde tanımlı (koyu tema, tek kaynak). Burada eski/ölü
+   bir kopya duruyordu, kaldırıldı. */
 /* ============================================= */
 /* --- İÇERİK STİLLERİNİ ZENGİNLEŞTİRME --- */
 /* ============================================= */
@@ -612,6 +561,10 @@ a.card-link {
 .post-content {
     font-size: 1.1rem; /* Yazı boyutunu biraz büyütelim */
     line-height: 1.8;  /* Satır aralığını artıralım */
+}
+
+.post-content p {
+    text-wrap: pretty; /* Tek kelimenin yalnız başına alt satıra sarkmasını önler */
 }
 
 /* Alt Başlıklar (H2) için stil */
@@ -2481,18 +2434,18 @@ body, html {
     gap: 60px; /* <<< DEĞİŞİKLİK: Aradaki boşluğu biraz artırdık */
 }
 
-/*
 .about-sidebar .sticky-sidebar {
     position: sticky;
     top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
 }
-    */
 
 .about-profile {
     text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0;
+    margin-bottom: 18px;
+    border-bottom: none;
     /* <<< YENİ: Tam ortalamak için flexbox ekliyoruz */
     display: flex;
     flex-direction: column;
@@ -2560,13 +2513,6 @@ body, html {
 /* --- İLETİŞİM SAYFASI YENİ TASARIMI --- */
 /* ============================================= */
 
-.contact-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Form alanı daha geniş, bilgi alanı daha dar */
-    gap: 50px;
-    margin-top: 40px;
-}
-
 .contact-form-column form {
     display: flex;
     flex-direction: column;
@@ -2582,71 +2528,32 @@ body, html {
 .contact-form-column input,
 .contact-form-column textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 13px 16px;
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     font-size: 1rem;
     margin-top: 5px;
     background-color: var(--card-background);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-form-column input:hover,
+.contact-form-column textarea:hover {
+    border-color: rgba(201, 143, 45, 0.4);
 }
 .contact-form-column input:focus,
 .contact-form-column textarea:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 5px 0px var(--accent);
+    box-shadow: 0 0 0 3px rgba(201, 143, 45, 0.15);
     outline: none;
 }
 
 .contact-form-column textarea {
-    min-height: 180px;
+    min-height: 160px;
     resize: vertical;
 }
 
 .contact-form-column button.btn {
     align-self: flex-start; /* Butonu sola daya */
-}
-
-.contact-info-column .contact-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: var(--content);
-    margin-bottom: 20px;
-    transition: all 0.2s ease;
-}
-.contact-info-column .contact-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.contact-info-column .contact-card i {
-    font-size: 2rem;
-    color: var(--accent-dark);
-}
-
-.contact-info-column .contact-card strong {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 3px;
-}
-.contact-info-column .contact-card span {
-    font-size: 0.9rem;
-    color: var(--secondary);
-}
-
-.contact-info-column hr {
-    margin: 30px 0;
-}
-
-/* Mobil için tek sütuna dönüştür */
-@media (max-width: 992px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
 }
 /* ============================================= */
 /* --- BLOG LİSTESİ VE SIDEBAR FİNAL STİLLERİ --- */
@@ -3246,57 +3153,32 @@ body, html {
     height: 100%; /* Kartın tüm yüksekliğini kapla */
 }
 /* ============================================= */
-/* --- İLETİŞİM SAYFASI SSS HATIRLATMA KUTUSU --- */
+/* --- İLETİŞİM SAYFASI SSS HATIRLATMA NOTU --- */
 /* ============================================= */
 
-.sss-reminder-box {
-    background-color: var(--code-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.sss-reminder-box h3 {
-    margin-top: 0;
-    text-align: center;
-}
-
-.sss-reminder-box p {
-    text-align: center;
+.sss-quick-hint {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
     color: var(--secondary);
-    margin-bottom: 25px;
+    margin: 4px 0 12px 0;
 }
 
-.sss-reminder-box ul {
-    list-style: none;
-    padding: 0;
-    columns: 2; /* Soruları iki sütuna böl (geniş ekranlar için) */
-    gap: 20px;
-}
-
-.sss-reminder-box ul li a {
-    display: block;
-    padding: 12px 15px;
-    background-color: var(--card-background);
-    text-decoration: none;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    margin-bottom: 10px;
-    transition: all 0.2s ease;
-}
-
-.sss-reminder-box ul li a:hover {
-    border-color: var(--accent);
+.sss-quick-hint i {
     color: var(--accent-dark);
-    transform: translateY(-2px);
 }
 
-/* Mobilde tek sütuna düşür */
-@media (max-width: 768px) {
-    .sss-reminder-box ul {
-        columns: 1;
-    }
+.sss-quick-hint a {
+    color: var(--accent-dark);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Hatırlatma notundan hemen sonra gelen "İletişim Formu" başlığının
+   üst boşluğunu daralt, forma derli toplu geçilsin */
+.sss-quick-hint + .contact-form-column h3 {
+    margin-top: 0.4em;
 }
 /* ============================================= */
 /* --- İLETİŞİM FORMU "KONU" MENÜSÜ STİLİ --- */
@@ -3304,11 +3186,12 @@ body, html {
 
 .contact-form-column select {
     width: 100%;
-    padding: 12px 15px;
+    padding: 13px 16px;
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     font-size: 1rem;
     background-color: var(--card-background);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -3319,9 +3202,12 @@ body, html {
     cursor: pointer;
 }
 
+.contact-form-column select:hover {
+    border-color: rgba(201, 143, 45, 0.4);
+}
 .contact-form-column select:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 5px 0px var(--accent);
+    box-shadow: 0 0 0 3px rgba(201, 143, 45, 0.15);
     outline: none;
 }
 /* ============================================= */
@@ -3863,7 +3749,7 @@ html {
     background-color: #22262B;
     border: none;
     border-radius: var(--radius);
-    padding: 50px;
+    padding: 36px 32px 32px;
 }
 
 .email-signup-decor {
@@ -3889,24 +3775,42 @@ html {
 .email-signup-content {
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .email-signup-content h3 {
+    font-size: 1.35em;
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--on-dark);
 }
 
 .email-signup-content p {
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 22px auto;
     color: rgba(245, 242, 236, 0.8);
+}
+
+/* ConvertKit Formunu Hedefleme */
+.email-signup-box .formkit-form {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+.email-signup-box .formkit-field {
+    margin-bottom: 10px;
 }
 
 /* E-posta giriş alanını (input) stilize ediyoruz */
 .email-signup-box .formkit-input {
     font-family: inherit; /* Sitenin genel fontunu kullan */
+    width: 100%;
     border: 1px solid rgba(245, 242, 236, 0.25) !important;
     border-radius: var(--radius) !important;
     background-color: rgba(255, 255, 255, 0.06) !important;
     color: var(--on-dark) !important;
-    padding: 15px !important; /* İç boşluğu artır */
+    padding: 11px 14px !important;
     transition: all 0.2s ease-in-out;
 }
 
@@ -3923,11 +3827,13 @@ html {
 /* "Abone Ol" butonunu stilize ediyoruz */
 .email-signup-box .formkit-submit {
     font-family: inherit; /* Sitenin genel fontunu kullan */
+    width: 100%;
+    text-align: center;
     background-color: var(--accent) !important;
     color: var(--primary) !important;
     border-radius: var(--radius) !important;
     font-weight: bold !important;
-    padding: 15px 30px !important;
+    padding: 11px 22px !important;
     transition: all 0.3s ease !important;
 }
 
@@ -4192,6 +4098,63 @@ html {
 
 .about-main-content .post-content blockquote p {
     margin: 0;
+}
+
+/* Bölüm başlıklarının altındaki yatay çizgiyi kaldır (SSS sayfasıyla tutarlılık) */
+.about-main-content .post-content h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+.about-main-content .post-content h3 {
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.about-main-content .post-content p {
+    margin-bottom: 1em;
+}
+
+/* Bir cümlenin hemen altındaki alıntı kutusunu cümleyle görsel olarak bağla */
+.about-main-content .post-content p + blockquote {
+    margin-top: 0.6em;
+}
+
+.about-main-content .post-content blockquote {
+    margin: 1.1em 0;
+}
+
+/* Hakkımda sayfasındaki liste madde işaretlerini (eski '›' karakteri)
+   temiz bir Font Awesome oku ile değiştir; sadece bu sayfaya özel */
+.about-main-content .post-content ul li::before {
+    content: "\f105"; /* fa-angle-right */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--accent);
+}
+
+/* "Burada, birlikte:" listesi kendi ikonunu taşıyor (span.icon içindeki FA
+   simgesi), bu yüzden genel ok işaretini burada tekrar göstermeyelim */
+.about-main-content .post-content ul.icon-list-about li::before {
+    content: none;
+}
+
+.about-main-content .post-content ul.icon-list-about li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding-left: 0;
+}
+
+.about-main-content .post-content ul.icon-list-about .icon {
+    color: var(--accent);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    flex-shrink: 0;
+    width: 1.4em;
+    text-align: center;
 }
 /* ============================================= */
 /* --- E-KİTAP E-POSTA FORMU BÖLÜMÜ --- */
@@ -5239,65 +5202,6 @@ html {
     .featured-posts-grid {
         grid-template-columns: 1fr;
     }
-}
-/* ============================================= */
-/* --- İLETİŞİM SAYFASI - İŞBİRLİĞİ KUTUSU (v2) --- */
-/* ============================================= */
-
-.collaboration-box {
-    background-color: var(--code-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 40px;
-    margin: 40px 0;
-}
-
-.collaboration-box h3 {
-    margin-top: 0;
-    text-align: center;
-    font-size: 1.8rem; /* Başlığı biraz büyütelim */
-}
-
-.collaboration-box p {
-    text-align: center;
-    color: var(--secondary);
-    margin-bottom: 30px; /* Liste ile arasını açalım */
-}
-
-.collaboration-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px; /* Listenin maksimum genişliğini belirleyelim */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Esnek ızgara yapısı */
-    gap: 20px;
-}
-
-.collaboration-list li {
-    font-size: 1.1rem; /* Metni biraz büyütelim */
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 15px; /* İkon ve metin arası boşluk */
-    background-color: var(--card-background); /* Her maddeye beyaz arka plan */
-    padding: 20px; /* İç boşluk */
-    border-radius: var(--radius);
-    border: 1px solid var(--border-color);
-    transition: all 0.2s ease-in-out;
-}
-
-.collaboration-list li:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.collaboration-list li i {
-    color: var(--accent-dark);
-    font-size: 1.5rem; /* İkonları büyütelim */
-    width: 30px; /* İkonların hizalı durması için sabit genişlik */
-    text-align: center;
 }
 /* ============================================= */
 /* --- E-KİTAP SAYFASI - ÖZELLİK LİSTESİ --- */

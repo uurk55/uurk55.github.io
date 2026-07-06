@@ -1,0 +1,8 @@
+{{ $q := .Get "q" }}
+{{ $a := .Page.RenderString (.Inner | safeHTML) }}
+{{ $entry := dict "@type" "Question" "name" $q "acceptedAnswer" (dict "@type" "Answer" "text" ($a | plainify)) }}
+{{ .Page.Scratch.Add "faqs" (slice $entry) }}
+<details>
+<summary>{{ $q }}</summary>
+<div class="faq-content">{{ $a }}</div>
+</details>

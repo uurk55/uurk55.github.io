@@ -1138,9 +1138,11 @@ body:has(.calculator-page) .main {
 }
 
 
-/* Sayfa Taşmasını Engelleme */
+/* Sayfa Taşmasını Engelleme (overflow-x: hidden yerine clip kullanılıyor;
+   hidden, overflow-y'yi auto'ya zorlayıp body/html'i bir scroll container'a
+   çevirerek position: sticky elemanlarını (İçindekiler menüsü) bozuyordu) */
 body, html {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -4100,21 +4102,26 @@ html {
 /* --- SSS SAYFASI TASARIMI (GELİŞTİRİLMİŞ v2) --- */
 /* ============================================= */
 
-/* Her bir soru-cevap bloğu */
+/* Her bir soru-cevap bloğu (kapalıyken de kutu/kart olarak görünür, ama sönük) */
 .post-content details {
-    background-color: transparent; /* Arka planı kaldırıyoruz */
-    border: none;
-    border-bottom: 1px solid var(--border-color); /* Sadece alt çizgi */
-    border-radius: 0;
-    margin-bottom: 0;
+    background-color: var(--card-background); /* Sayfa fonundan hafifçe ayrışan beyaz kutu */
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--border-color); /* Kapalıyken nötr, açılınca altın olacak */
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    padding: 0 1.1rem;
     transition: all 0.2s ease-in-out;
+}
+
+.post-content details:hover {
+    background-color: var(--code-bg);
 }
 
 /* Soru başlığı */
 .post-content details summary {
     font-size: 1.3rem; /* Fontu biraz büyütelim */
     font-weight: 600;
-    padding: 1.5rem 0; /* Sadece dikey boşluk */
+    padding: 1rem 0; /* Sadece dikey boşluk */
     cursor: pointer;
     outline: none;
     list-style: none; /* Varsayılan ikonu tamamen kaldır */
@@ -4130,12 +4137,22 @@ html {
 
 /* Cevap bölümü */
 .post-content details .faq-content {
-    padding: 0 0 1.5rem 40px; /* Soldan ikon kadar boşluk bırak */
-    line-height: 1.8;
+    padding: 0 0 1rem 40px; /* Soldan ikon kadar boşluk bırak */
+    line-height: 1.7;
     color: var(--secondary); /* Cevap metnini daha yumuşak bir renkte göster */
 }
 
-/* Açık durumdaki blok */
+/* Açık durumdaki blok: kapalı karttan daha belirgin zemin + altın sol çizgi */
+.post-content details[open] {
+    background-color: var(--code-bg);
+    border-color: var(--border-color);
+    border-left-color: var(--accent);
+}
+
+.post-content details[open]:hover {
+    background-color: var(--code-bg);
+}
+
 .post-content details[open] summary {
     color: var(--accent-dark);
 }

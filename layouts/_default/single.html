@@ -58,6 +58,13 @@
     
         {{- partial "related.html" . -}}
 
+        {{- $faqs := .Scratch.Get "faqs" }}
+        {{- if $faqs }}
+        <script type="application/ld+json">
+{{ jsonify (dict "indent" "  ") (dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $faqs) | safeJS }}
+        </script>
+        {{- end }}
+
         {{- if .Params.comments }}
         <div id="comments" style="margin-top: 40px;">
             <hr><h2>Yorumlar</h2>

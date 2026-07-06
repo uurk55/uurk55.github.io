@@ -4,7 +4,7 @@ date: 2025-09-16T10:00:00+03:00
 draft: false
 description: "3D baskı dünyasında yasal mayın tarlasına basmadan ilerlemek. Creative Commons lisansları, IP hakları ve ticari etik üzerine derinlemesine rehber."
 tags: ["Telif Hakları", "3D Model Telif", "Etik", "Creative Commons", "Tasarım Hakları", "Fikri Mülkiyet"]
-categories: ["Tasarım ve Modelleme"]
+categories: ["Tasarım"]
 faz: ["Faz 2"]
 series: ["3D Tasarım ve Etik Serisi"]
 author: "Uğur Kapancı"

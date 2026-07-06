@@ -5,7 +5,7 @@ featured: false
 draft: false
 description: "Evinizin ortasında 260 dereceye ısınan bir cihaz çalışıyor. Peki ne kadar güvendesiniz? Termal kaçak, zehirli gazlar ve 'akıllı priz' gibi hayat kurtaran önlemler."
 tags: ["3D Yazıcı Güvenliği", "Thermal Runaway", "Yangın Riski", "Reçine Zehirlenmesi", "ABS Kokusu", "Atölye Güvenliği", "Baskı Ortamı"]
-categories: ["Temel Bilgi ve Kurulum"]
+categories: ["Başlangıç Rehberi"]
 faz: ["Faz 1"]
 series: ["3D Baskı Temelleri Serisi"]
 author: "Uğur Kapancı"

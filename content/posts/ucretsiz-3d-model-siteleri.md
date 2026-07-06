@@ -5,7 +5,7 @@ featured: false
 draft: false
 description: "Piyasada milyonlarca STL var ama yarısı çöp. Vaktinizi boşa harcamayacak, 2025'in en iyi 5 model sitesini (Printables'tan MakerWorld'e) artısıyla eksisiyle masaya yatırıyoruz."
 tags: ["Ücretsiz 3D Model", "STL İndir", "3D Baskı Modelleri", "Printables", "Thingiverse", "MakerWorld", "MyMiniFactory", "Cults3D", "Kaynaklar", "Başlangıç Rehberi"]
-categories: ["Kaynaklar"]
+categories: ["Başlangıç Rehberi"]
 faz: ["Faz 2"]
 series: ["3D Baskı Rehberleri"]
 author: "Uğur Kapancı"

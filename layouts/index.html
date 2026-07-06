@@ -122,7 +122,7 @@
     {{ end }}
 
     {{/* --- BÖLÜM 3: KATEGORİLER --- */}}
-    <section class="icon-category-section">
+    <section class="icon-category-section" id="kategoriler">
         <h2 class="homepage-section-title">Kategoriler</h2>
         {{ $topCategories := first 6 .Site.Taxonomies.categories.ByCount }}
         <div class="icon-grid">

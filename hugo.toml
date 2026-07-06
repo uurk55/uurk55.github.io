@@ -88,11 +88,6 @@ buildFuture = true
     url = "/posts/"
     weight = 20
 
-  [[menu.main]]
-    name = "Kategoriler"
-    url = "/categories/"
-    weight = 30
-
    [[menu.main]]
     name = "SSS"
     url = "/sss/"

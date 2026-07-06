@@ -5,7 +5,7 @@
   image: "cat-bg-teknik.png"
 
 - category: "Beceri Geliştirme ve İleri Teknikler"
-  image: "BURAYA-İLGİLİ-RESMİN-DOSYA-ADINI-YAZ.png"
+  image: "multi-color-printing-cover.png"
 
 - category: "Tasarım"
   image: "cat-bg-default.png"
@@ -24,5 +24,8 @@
 
 - category: "Yazıcı İncelemeleri"
   image: "cat-bg-inceleme.png"
+
+- category: "Donanım ve Ekipman"
+  image: "essential-3d-printing-tools.png"
 
 # Yeni kategori eklersen, bu listeye aynı formatta ekleyebilirsin.
